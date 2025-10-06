@@ -1,0 +1,133 @@
+{
+  "lectureId": "1_r5zqwxag",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "01b",
+  "title": "Basic concepts",
+  "videoTitle": "ME40 - 29 Aug 2025 - Lecture 1b (edited)",
+  "module": "module-one",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "topic": "Introduction",
+  "subtopics": [
+    {
+      "key": "Fa25-L1b-1.0",
+      "title": "PrairieLearn and PrairieTest",
+      "summary": "How to show your work on your PrairieLearn homework. Please log onto PrairieTest.",
+      "time_range": "00:00 - 01:51",
+      "topics": ["Introduction"],
+      "detailed_summary": "The instructor covered logistics for homework submission on **PrairieLearn**, instructing students to upload **one PDF** of their work (including photos of handwritten notes) as accreditation depends on it. Students are encouraged to report errors using the system's error button or by messaging the instructor. For assessments and quizzes, the **PrairieTest** platform is introduced, which is used for computer-based testing at SDH, and students are advised to log in and **stay ahead** in the course work.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-2.0",
+      "title": "Learning Objectives",
+      "summary": "",
+      "time_range": "01:52 - 02:59",
+      "topics": ["Introduction"],
+      "detailed_summary": "The segment outlines the **learning objectives** for the lecture, focusing on **basic concepts of thermodynamics** like postulates, systems, equilibrium, process, and cycle, along with defining **independent and dependent properties** and **pure substances**. The goal is for students to be able to **determine all thermodynamic properties** using the **pyCalor** Python module, a calculation tool written by Professor Frenklach.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-3.0",
+      "title": "Thermodynamics",
+      "summary": "It is the science of energy.",
+      "time_range": "03:00 - 06:12",
+      "topics": ["Introduction"],
+      "detailed_summary": "Thermodynamics is introduced as the **science of energies**, historically focused on converting **heat to work** and vice-versa. The field's origin is traced to **Sadi Carnot** in the 19th century, whose work on engine efficiency contributed to the **Second Law of Thermodynamics**, and to **Julius Robert von Mayer** (a physician), who developed the idea of the **First Law**. The term \"thermodynamics\" comes from Greek/Latin for \"heat\" and \"power.\" While the field has branched into chemistry and information theory, the course will retain the focus on **mechanical work** and treat systems as a **continuum**, consistent with the axiom of **conservation of energy**. The microscopic view of disordered atomic motion is left to courses like statistical mechanics.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-4.0",
+      "title": "Thermodynamic Postulates and Systems",
+      "summary": "The fundamental laws are assumed as postulates based on experimental evidence. The first thing you should do when you do a thermodynamics problem is to draw a boundary.  Describes the State Postulate.",
+      "time_range": "06:13 - 08:31",
+      "topics": ["Introduction"],
+      "detailed_summary": "The segment focuses on the **postulate-based approach** of thermodynamics and the critical first step in problem-solving: defining a **volume/boundary** where **heat and work interactions** occur. It introduces the concept of an **equation of state**, explaining that if one can measure a sufficient number of **independent properties** (typically two), all other properties of the system can be determined. This principle is illustrated using the **Ideal Gas Law** ($P=f(V,T)$), where knowing two independent properties provides **complete information** about the system's state.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-5.0",
+      "title": "Independent and Dependent Properties",
+      "summary": "For a pure substance, if we know two independent variables, we then can determine a third dependent property. We can determine the properties of a pure substance using pyCalor. ",
+      "time_range": "08:32 - 13:29",
+      "topics": ["Introduction"],
+      "detailed_summary": "This section uses **multivariable calculus** to illustrate the relationship between **two independent properties** ($X_1, X_2$) and the resulting **dependent property** ($X_3$), emphasizing that fixing $X_1$ and $X_2$ defines a specific point on a surface, which also yields information about the **derivatives** (rate of change). This principle is valid for a **pure substance** (like nitrogen or air, but not air with condensed liquid oxygen). The lecture connects this to the **pyCalor Python module**, where defining the substance and **two independent properties** creates a state object ($\text{ST}$) from which all other properties (e.g., $\text{ST.U}$) can be calculated, thereby simplifying complex calculations in a cycle (e.g., using a PV diagram).",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-6.0",
+      "title": "Energy",
+      "summary": "Historical development of energy. The term energy was coined by Thomas Young. Lord Kelvin proposed that it be used in Thermodynamics (1852). Later on the term internal energy and its symbol U were introduced by R. Clausius and W. Rankine.",
+      "time_range": "13:30 - 20:27",
+      "topics": ["Introduction"],
+      "detailed_summary": "The segment delves into the history and nomenclature of **energy**, which was coined by **Thomas Young** (1807), proposed for thermodynamics by **Lord Kelvin** (1852), and given the symbol **U** for **Internal Energy** by **Rudolf Clausius**. The discussion emphasizes that thermodynamics is interested in **changes in energy** from a **reference state**, not absolute values. **Little $u$** ($u$) is defined as **internal energy per mass** (J/kg) for a **simplified system** where motion, gravity, and external fields are **neglected**. In this case, $u$ depends only on two independent properties (e.g., T and specific volume), allowing its values to be **tabulated** (or calculated by pyCalor). **Big $U$** ($U$) is the **total internal energy** (Joules).",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-7.0",
+      "title": "Internal energy",
+      "summary": "The internal energy of a system is the sum of all forms of the microscope energies. We denote internal energy as U. ",
+      "time_range": "20:28 - 21:50",
+      "topics": ["Introduction"],
+      "detailed_summary": "This section explains the **storage mechanisms** that contribute to a system's **internal energy**. These mechanisms include: **Translational** energy (kinetic energy of gas molecules), energy from **strong interactions** (like hydrogen bonding in condensed water), and **Chemical energy** (from reactions). All these forms of stored energy collectively constitute the system's internal energy.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-8.0",
+      "title": "Determining the properties of nitrogen",
+      "summary": "Prof. Schutzius shows how by knowing two independent properties we know multiple dependent properties, in addition to the one dependent property we mentioned before. That additional information comes from taking the derivative of the line at that point. ",
+      "time_range": "21:51 - 23:40",
+      "topics": ["Introduction"],
+      "detailed_summary": "The instructor returns to the concept that **two independent properties** ($X_1, X_2$) provide complete information about a system's state. Using a plot of **Internal Energy ($U$) vs. Specific Volume ($v$) and entropy ($S$)**, the lecture demonstrates how to determine other properties using **derivatives**. Specifically, the **derivative** of $U$ with respect to $v$ at constant $S$ yields **pressure (P)**, and the derivative of $U$ with respect to $S$ at constant $v$ yields **temperature (T)**. This illustrates that once the point is defined by $X_1$ and $X_2$, all other properties follow from mathematical relations.",
+      "examples": ["nitrogenInternalEnergyPressureVolumePlot"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-9.0",
+      "title": "Group work",
+      "summary": "",
+      "time_range": "23:41 - 25:20",
+      "topics": ["Introduction"],
+      "detailed_summary": "The instructor initiates a **group work** session to enhance learning. The problem involves a **rigid container (constant volume and mass)** of a substance at a known **State 1** that undergoes a process of **heating**. Students are asked to determine: 1) the **change in internal energy** of the system, and 2) how to **determine the final state (State 2)** after the heat transfer. Students are instructed to put their names down and be ready to answer once the accompanying poll is launched.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-10.0",
+      "title": "Thermodynamics: State of a pure substance",
+      "summary": "Defines the saturation dome and the different phases. ",
+      "time_range": "25:21 - 26:39",
+      "topics": ["Introduction"],
+      "detailed_summary": "This segment introduces the **graphical representation** of a pure substance's state, specifically using a **Pressure ($P$) vs. Specific Volume ($v$) plot** for water. The plot includes the **saturation regions**, which outline the **\"dome\"** where liquid and vapor phases coexist. The different state regions shown include liquid, vapor, and **superheated vapor**, and the plot can also feature **isotherms** (lines of constant temperature) to help determine the system's state.",
+      "examples": ["waterPhaseDiagram"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-11.0",
+      "title": "Thermodynamics: Equilibrium",
+      "summary": "",
+      "time_range": "26:40 - 27:23",
+      "topics": ["Introduction"],
+      "detailed_summary": "The discussion introduces the concept of a **process** (specifically, a constant volume process) and the idea of a **quasi-equilibrium process**. The segment uses an example of a piston-cylinder setup to visualize a quasi-equilibrium process, which is one where the system is displaced slowly.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L1b-12.0",
+      "title": "Thermodynamics: Transformation or Process",
+      "summary": "Transformation from state 1 to state 2. A transformation is reversible when the successive states differ by infinitesimals from equilibrium states. ",
+      "time_range": "27:24 - 29:29",
+      "topics": ["Introduction"],
+      "detailed_summary": "Continuing the piston-cylinder example, the lecture compares a **slow (quasi-equilibrium) compression** versus a **very fast compression**. The comparison shows that the final temperature is **lower** in the slow process than in the fast process. The higher temperature in the fast process is explained as being due to **friction and heat** generated by the rapid movement of the fluid and the chaotic \"banging\" of atoms.",
+      "examples": ["waterPhaseDiagram"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

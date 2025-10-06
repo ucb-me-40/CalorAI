@@ -1,0 +1,103 @@
+{
+  "problem_id": "symbolicAnswerEquilibrium-no-ID",
+  "course_context": {
+    "course_id": "ME40",
+    "course_title": "Thermodynamics",
+    "term": "Fall 2025",
+    "module": "module-one",
+    "software_requirement": {
+      "tool": "None (Symbolic)",
+      "instruction": "This is a symbolic problem and does not require the use of property software. However, students should recognize that the given $U-V-T$ relations are generalized state functions, analogous to internal energy expressions derived for ideal gases ($U = m c_v T$).",
+      "pycalor_note": "pyCalor is the required property software for all numerical problems in ME40."
+    }
+  },
+  "problem_metadata": {
+    "title_original": "Equilibrium",
+    "title_cleaned": "Symbolic: Thermal Equilibrium of Coupled Systems (U-V-T Relations)",
+    "topic": "Properties",
+    "tags": [
+      "tschutzius",
+      "Fa25",
+      "medium",
+      "alpha",
+      "Symbolic_Answer",
+      "Equilibrium"
+    ],
+    "type": "v3"
+  },
+  "question": {
+    "question_summary": "Determine the equilibrium temperature ($T_{\\text{eq}}$) of two systems separated by a diathermal wall, given their $U-V-T$ state relations and the total internal energy ($U_{\\text{tot}}$).",
+    "problem_statement_cleaned": "Two systems, (1) and (2), are separated by a **diathermal wall** (allowing heat transfer). The total energy in the composite system is $U_{\\text{tot}}$. Their $U-V-T$ relations are given by:\n\nSystem 1: $$U_{(1)} = \\frac{\\{\\{params.numerator1\\}\\}}{\\{\\{params.denominator1\\}\\}} m_{(1)} R_{(1)} T_{(1)} - \\frac{a m_{(1)}}{v_{(1)}} $$\n\nSystem 2: $$U_{(2)} = \\frac{\\{\\{params.numerator2\\}\\}}{\\{\\{params.denominator2\\}\\}} m_{(2)} R_{(2)} T_{(2)}$$\n\nWhere $a$ is a constant, $m$ is mass, $R$ is the specific gas constant, $T$ is temperature, and $v$ is specific volume. What is the temperature of the system (2) once it reaches equilibrium?",
+    "given_variables": [
+      "Initial Relations for $U_1$ and $U_2$",
+      "Total Energy: $U_{\\text{tot}}$",
+      "Wall type: Diathermal (implies thermal equilibrium: $T_1 = T_2$)",
+      "Coefficients: $\\{\\{params.numerator1\\}\\}/\\{\\{params.denominator1\\}\\}$, $\\{\\{params.numerator2\\}\\}/\\{\\{params.denominator2\\}\\}$ (let $C_1$ and $C_2$ be these fractions, respectively)",
+      "System parameters: $m_1, R_1, v_1, m_2, R_2, a$ (all treated as constants)"
+    ],
+    "goal": "Determine the equilibrium temperature, $T_{\\text{eq}}$, as a symbolic expression."
+  },
+  "solution_analysis": {
+    "governing_law": "First Law of Thermodynamics (Energy Conservation) and the Zeroth Law (Thermal Equilibrium).",
+    "physical_model": "A **composite closed system** where the total internal energy is conserved ($U_{\\text{tot}} = U_1 + U_2 = \\text{constant}$). The **diathermal wall** ensures that the systems achieve thermal equilibrium, where $T_1 = T_2 = T_{\\text{eq}}$.",
+    "fundamental_equation": {
+      "energy_conservation": "The total energy remains constant: $U_{\\text{tot}} = U_1 + U_2$.",
+      "equilibrium_condition": "At equilibrium: $T_1 = T_2 = T_{\\text{eq}}$."
+    },
+    "derivation_steps": [
+      "**Step 1: Set up the Energy Balance at Equilibrium**\nSubstitute $U_1$ and $U_2$ into $U_{\\text{tot}} = U_1 + U_2$, setting $T_1 = T_2 = T_{\\text{eq}}$:\n$$U_{\\text{tot}} = \\left( \\frac{N_1}{D_1} m_1 R_1 T_{\\text{eq}} - \\frac{a m_1}{v_1} \\right) + \\left( \\frac{N_2}{D_2} m_2 R_2 T_{\\text{eq}} \\right)$$\n",
+      "**Step 2: Isolate the Terms Containing $T_{\\text{eq}}$**\nMove the constant term from System 1's energy relation (the $a$ term) to the left side:\n$$U_{\\text{tot}} + \\frac{a m_1}{v_1} = \\left( \\frac{N_1}{D_1} m_1 R_1 T_{\\text{eq}} \\right) + \\left( \\frac{N_2}{D_2} m_2 R_2 T_{\\text{eq}} \\right)$$\n",
+      "**Step 3: Solve for the Equilibrium Temperature $T_{\\text{eq}}$**\nFactor out $T_{\\text{eq}}$ and divide:\n$$T_{\\text{eq}} = \\frac{U_{\\text{tot}} + \\frac{a m_1}{v_1}}{\\frac{N_1}{D_1} m_1 R_1 + \\frac{N_2}{D_2} m_2 R_2}$$\n\n*(Note: For the final symbolic answer, $N_1$, $D_1$, $N_2$, and $D_2$ are the placeholders for \\{\\{params.numerator1\\}\\}, \\{\\{params.denominator1\\}\\}, etc.)*"
+    ],
+    "final_symbolic_answer": {
+      "format": "Use the required symbolic variables in the final expression.",
+      "expression": "\\frac{U_{\\text{tot}} + \\frac{a m_1}{v_1}}{\\frac{\\{\\{params.numerator1\\}\\}}{\\{\\{params.denominator1\\}\\}} m_1 R_1 + \\frac{\\{\\{params.numerator2\\}\\}}{\\{\\{params.denominator2\\}\\}} m_2 R_2}"
+    }
+  },
+  "references": {
+    "book_reference": {
+      "title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "authors": "Yunus A. Çengel and Michael A. Boles",
+      "relevant_chapters": [
+        {
+          "chapter_number": 1,
+          "title": "Introduction and Basic Concepts",
+          "sections": [
+            "State and Equilibrium",
+            "Temperature and the Zeroth Law of Thermodynamics"
+          ]
+        },
+        {
+          "chapter_number": 2,
+          "title": "Energy, Energy Transfer, and General Energy Analysis",
+          "sections": [
+            "The First Law of Thermodynamics"
+          ]
+        }
+      ]
+    },
+    "lecture_reference": {
+      "module": "Module 1",
+      "topic": "Properties",
+      "subtopics_inferred": [
+        {
+          "topic_area": "Introduction and Basic Concepts",
+          "key": "Fa25-L1a-7.0",
+          "relevance": "Covers the fundamental concepts of **Thermal Equilibrium** (Zeroth Law) and **Energy Conservation** (First Law), which form the basis for solving this system of equations."
+        },
+        {
+          "topic_area": "State Relations and Internal Energy",
+          "key": "Fa25-L3a-7.0",
+          "relevance": "This segment introduces and uses state relations, like the generalized $U-V-T$ function, to determine internal energy as a property of state."
+        }
+      ]
+    },
+    "related_examples": [
+      {
+        "problem_title": "waterPropertiesPyCalor",
+        "topic": "Properties",
+        "relevance": "This example reinforces the fundamental concept that internal energy is a property of state, which is implicitly used in defining the $U-V-T$ relations for the system."
+      }
+    ]
+  }
+}

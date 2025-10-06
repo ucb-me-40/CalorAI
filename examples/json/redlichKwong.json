@@ -1,0 +1,41 @@
+{
+  "problem_title": "redlichKwong",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "hard"
+  ],
+  "topic": "Properties",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_blyiho9t",
+      "subtopics": [
+        {
+          "key": "Fa25-L3b-6.0",
+          "title": "van der Waals equation of state"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 3,
+      "title": "Properties of Pure Substances",
+      "sections": [
+        "Other Equations of State"
+      ]
+    },
+    "notes": ""
+  },
+  "problem_statement_raw": "Goal: Plot the isotherms at the critical point of water using `pyCalor` and the Redlich-Kwong equation of state.",
+  "physical_laws_and_assumptions": "Pure substance. Dependent properties only depend upon two independent properties. The Redlich-Kwong equation for water can be written as: $$p = \\frac{R T}{v - b} - \\frac{a}{v \\sqrt{T} (v + b)} $$ where $p$ is pressure, $v$ is specific volume, $R$ is the specific gas constant, $T$ is temperature, and $a$ and $b$ are constants.",
+  "solution_code": [
+    {
+      "step_name": "Properties",
+      "code": "## 5. Properties (Code Cell)\n!pip install pyCalor\n\nfrom pyCalor import thermo as th\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# critical point of water\nTc_K = 647.096 \npc_Pa = 22.060e6\n\n# triple point of water\nTtp_K = 273.16\nptp_Pa = 611.6"
+    },
+    {
+      "step_name": "Calculations",
+      "code": "# 6. Calculations (Code Cell)\n\n# Specific volume in m^3/kg\nv_m3PerKg = np.linspace(0.8e-3, 1, 100)\n\n# Use pyCalor to get the constants for the Redlich-Kwong EoS for water\nsubstance = 'water'\n\nst = th.state(substance, T=(Tc_K, 'K'), p=(pc_Pa/1000, 'kpa'), eq_of_state='Redlich_Kwong')\nR_JperKgPerK = st.R\na_RK = st.a_RK\nb_RK = st.b_RK\n\n# Redlich-Kwong equation\ndef p_RK(T, v):\n    # T in K, v in m^3/kg, R in J/kgK, p in Pa\n    p = (R_JperKgPerK * T) / (v - b_RK) - a_RK / (v * np.sqrt(T) * (v + b_RK))\n    return p\n\n# Calculate pressure for the critical isotherm (Tc)\np_RK_Tc_Pa = p_RK(Tc_K, v_m3PerKg)\np_RK_Ttp_Pa = p_RK(Ttp_K, v_m3PerKg)\n\n# Plotting\nplt.figure(figsize=(10, 6))\n\n# Redlich-Kwong isotherms\nplt.plot(v_m3PerKg, p_RK_Tc_Pa/1e6, 'r-', label=f'$T_c = {Tc_K:.0f}$ K (RK EoS)')\nplt.plot(v_m3PerKg, p_RK_Ttp_Pa/1e6, 'b--', label=f'$T_{{tp}} = {Ttp_K:.0f}$ K (RK EoS)')\n\n# Critical point marker\nplt.plot(st.v, st.p/1e6, 'ro', markersize=8, label='Critical Point')\n\n# Compare with pyCalor/CoolProp\nv_list = []\np_list = []\nfor v_i in v_m3PerKg:\n    try:\n        st_coolprop = th.state(substance, T=(Tc_K, 'K'), v=(v_i, 'm3/kg'))\n        v_list.append(st_coolprop.v)\n        p_list.append(st_coolprop.p)\n    except:\n        pass\n\nplt.plot(v_list, np.array(p_list)/1e6, 'g--', label='$T_c$ (CoolProp)')\n\nax = plt.gca()\nxmin = 0.8e-3\nxmax = 1\nax.set_xlim([xmin, xmax])\nymin = 0\nymax = 25\nax.set_ylim([ymin, ymax])\n\nax.set_xlabel('$v$ (m$^3$/kg)')\nax.set_ylabel('$p$ (MPa)')"
+    }
+  ],
+  "pedagogical_summary": "We were able to plot critical temperature isotherms for water using `pyCalor`, the Redlich-Kwong equation of state. The isotherms match very well for specific volume values greater than the critical specific volume. It would be interesting to see how this equation of state behaves for temperature values less than the critical temperature. Especially if it is possible to define the lines of saturation using this equation of state."
+}

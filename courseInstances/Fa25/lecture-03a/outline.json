@@ -1,0 +1,83 @@
+{
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "lectureId": "1_qk0vncag",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "03a",
+  "title": "Pure Substance",
+  "videoTitle": "ME40 - 8 Sept 2025 - Lecture 3a (edited)",
+  "module": "module-one",
+  "topic": "Properties",
+  "subtopics": [
+    {
+      "key": "Fa25-L3a-1.0",
+      "title": "Learning Objectives",
+      "summary": "Prof. Schutzius explains the learning objectives for this lecture.",
+      "time_range": "00:00 - 00:50",
+      "topics": ["Properties"],
+      "detailed_summary": "This segment starts the lecture by stating the current topic is **pure substances**. The lecturer asks students to register on **us.prairietest.com** and then outlines the learning objectives: discussing the concept of a **pure substance**, illustrating it on various **diagrams** to be used throughout the semester, and developing **procedures to determine thermodynamic properties**. The plan is to teach the 'hand tool' (tables) and then show the 'power tool' (computational methods), with the expectation that students will use the power tool.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3a-2.0",
+      "title": "Pure Substance",
+      "summary": "Prof. Schutzius explains what a pure substance is.",
+      "time_range": "00:51 - 05:08",
+      "topics": ["Properties"],
+      "detailed_summary": "This section explains what a **pure substance** is. A substance must have a **uniform chemical composition throughout**. Examples given are **water** (in multiple phases) and **nitrogen**. The lecture clarifies that a mixture like air is a pure substance, but warns that if one component is condensed out (e.g., **condensing oxygen out of air**), the **ratio is no longer the same**, and it **ceases to be a pure substance**.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3a-3.0",
+      "title": "Phase change processes of pure substances",
+      "summary": "Prof. Schutzius explains phase change processes. Defines subcooled liquids, saturated liquid-vapor mixtures, and superheated vapor. During the transformation from a saturated liquid to vapor this occurs at constant temperature and pressure. ",
+      "time_range": "05:09 - 06:32",
+      "topics": ["Properties"],
+      "detailed_summary": "This segment introduces the process of **phase change** by discussing the concepts of **compressed liquid, saturated liquid, saturated mixture, saturated vapor, and superheated vapor**. The lecture focuses on how these phases relate to **pressure and temperature** for a pure substance and begins to set up the visualization of this process on a diagram.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3a-4.0",
+      "title": "(p,v,T) surface of a pure substance",
+      "summary": "For a pure substance, you only need two independent property to determine a third dependent property. Think about the ideal gas equation as an example. ",
+      "time_range": "06:33 - 15:50",
+      "topics": ["Properties"],
+      "detailed_summary": "This long segment is devoted to illustrating the phase change process using the **Temperature-Specific Volume (T-v) diagram**. The concepts of **isobaric lines (constant pressure lines)** and the **saturated liquid and saturated vapor lines** are introduced, forming the **vapor dome**. The segment discusses the **critical point** where the saturated liquid and saturated vapor states become identical, and it defines the **supercritical fluid region**. It then introduces the **quality ($x$)** property, which is the mass fraction of vapor in the saturated mixture, and explains that $x$ ranges from 0 (saturated liquid) to 1 (saturated vapor).",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3a-5.0",
+      "title": "Property diagrams for phase change processes: Terminology",
+      "summary": "The book explains what the different phases are called. Compress liquid region, saturated liquid-vapor region, superheated vapor region. Supercritical fluid.",
+      "time_range": "15:51 - 22:29",
+      "topics": ["Properties"],
+      "detailed_summary": "This section reinforces the **terminology** used in property diagrams. It defines and locates the **compressed liquid region** (or subcooled liquid), the **saturated liquid-vapor mixture region** (inside the dome), the **superheated vapor region** (outside the dome, right side), and the **supercritical fluid region**. The lecture then introduces the **Pressure-Specific Volume (P-v) diagram**, which also contains the vapor dome, but with **isothermal lines (constant temperature lines)** used for visualization.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3a-6.0",
+      "title": "Property tables",
+      "summary": "Prof. Schutzius explains how one can determine properties the old fashioned way using property tables. ",
+      "time_range": "22:30 - 29:19",
+      "topics": ["Properties"],
+      "detailed_summary": "This segment explains the **old-fashioned way** of determining properties using **property tables** (like steam tables). The lecturer demonstrates how to use the tables to identify the phase of a substance based on a single given property (e.g., specific volume, $v$) and how to find the corresponding pressure or temperature. The concept of **interpolation** for finding values between those listed in the tables is also introduced, with a mention that this method assumes linearity.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3a-7.0",
+      "title": "Determine the properties of water at 200 deg. C and 150 kPa",
+      "summary": "Here Prof. Schutzius shows you how you can determine the properties of water using pressure and temperature as an input. These are independent properties because it's not in the saturated liquid-vapor region. The python package we use for this is pyCalor.",
+      "time_range": "29:20 - 30:45",
+      "topics": ["Properties"],
+      "detailed_summary": "The segment introduces an example problem to **determine the properties of water** given the input of **temperature ($T=200^{\\circ}\\text{C}$) and pressure ($P=150\\text{ kPa}$)**. The lecturer notes that these are **independent properties** because the state is *not* in the saturated liquid-vapor region. It is hypothesized that the state is a **superheated vapor** due to the high temperature. The segment then shows how to use a computational tool (pyCalor, Python, dot notation) to define a substance object and directly access properties like internal energy ($u$) and specific volume ($v$).",
+      "examples": ["waterPropertiesPyCalor"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

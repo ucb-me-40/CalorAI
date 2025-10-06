@@ -1,0 +1,60 @@
+{
+  "lectureId": "1_unz2msb6",
+  "courseCaptureId": "rtl_course_capture",
+  "lecture": "07-prework-entropyProblems",
+  "title": "Entropy Problems",
+  "videoTitle": "ME40 - Video 7 - Entropy Problems (edited)",
+  "module": "module-two",
+  "year": "Fa23",
+  "instructor": "tschutzius",
+  "topics": [
+    {
+      "name": "Entropy",
+      "description": "Entropy application problems."
+    }
+  ],
+  "subtopics": [
+    {
+      "key": "L7e-4.1",
+      "topic": "Nozzle Analysis: Isentropic vs. Actual Process",
+      "summary": "Introduction to analyzing a **nozzle** problem. Compares the **ideal (isentropic)** process ($$\\Delta s = 0$$) with the **actual (irreversible)** process, showing how irreversibility leads to an increase in entropy ($$s_2 > s_{2s}$$) and affects the outlet temperature and velocity.",
+      "time_range": "00:00 - 02:45"
+    },
+    {
+      "key": "L7e-4.2",
+      "topic": "Governing Equations for Nozzle Analysis",
+      "summary": "Establishes the governing equations: **Energy Balance** (First Law for steady-flow, adiabatic nozzle): $$h_1 + \\\\frac{V_1^2}{2} = h_2 + \\\\frac{V_2^2}{2}$$ and the definition of **Isentropic Efficiency** ($$\\eta_N$$): $$\\eta_N = \\\\frac{V_2^2}{V_{2s}^2}$$, where $V_{2s}$$ is the outlet velocity for the isentropic case.",
+      "time_range": "02:45 - 04:30"
+    },
+    {
+      "key": "L7e-4.3",
+      "topic": "Calculating Isentropic Outlet Properties ($T_{2s}$)",
+      "summary": "Detailed calculation of the **isentropic outlet temperature** ($$T_{2s}$$) using the **Isentropic Relations** for ideal gases: $$\\frac{T_{2s}}{T_1} = \\\\left(\\\\frac{P_2}{P_1}\\\\right)^{(k-1)/k}$$ where $k$$ is the specific heat ratio, an essential step before applying nozzle efficiency.",
+      "time_range": "04:30 - 07:15"
+    },
+    {
+      "key": "L7e-4.4",
+      "topic": "Calculating Isentropic Outlet Velocity ($V_{2s}$)",
+      "summary": "Calculation of the **isentropic outlet velocity** ($$V_{2s}$$) using the energy balance applied to the isentropic process. Simplifies by assuming constant specific heat ($$\\Delta h = c_p \\\\Delta T$$) and that the inlet velocity is small ($$V_1 \\\\approx 0$$).",
+      "time_range": "07:15 - 10:00"
+    },
+    {
+      "key": "L7e-4.5",
+      "topic": "Calculating Actual Outlet Velocity ($V_{2a}$)",
+      "summary": "Uses the definition of **Isentropic Efficiency** to calculate the **actual outlet velocity** ($$V_{2a}$$) from the previously determined isentropic velocity ($$V_{2s}$$). $V_{2a} = \\\\sqrt{\\\\eta_N \\\\cdot V_{2s}^2}$$.",
+      "time_range": "10:00 - 11:45"
+    },
+    {
+      "key": "L7e-4.6",
+      "topic": "Calculating Actual Outlet Temperature ($T_{2a}$)",
+      "summary": "Calculates the **actual outlet temperature** ($$T_{2a}$$) by reapplying the **Energy Balance** with the actual outlet velocity ($$V_{2a}$$). Highlights that $T_{2a} > T_{2s}$$ due to the irreversibilities (entropy generation).",
+      "time_range": "11:45 - 14:30"
+    },
+    {
+      "key": "L7e-4.7",
+      "topic": "T-s Diagram Visualization of Nozzle Process",
+      "summary": "Visualizes the entire process on a **T-s Diagram** . Shows the vertical line for the ideal isentropic process (1 to 2s) and the line moving to the right for the actual irreversible process (1 to 2a), confirming the increase in entropy.",
+      "time_range": "14:30 - 17:00"
+    }
+  ]
+}

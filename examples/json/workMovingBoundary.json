@@ -1,0 +1,47 @@
+{
+  "problem_title": "workMovingBoundary",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "medium"
+  ],
+  "topic": "Closed Systems",
+  "notes": "",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_fclugwz7",
+      "subtopics": [
+        {
+          "key": "Fa25-L4a-4.0",
+          "title": "Moving boundary polytropic processes"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 4,
+      "title": "Energy Analysis of Closed Systems",
+      "sections": [
+        "Moving Boundary Work",
+        "Energy Balance for Closed Systems"
+      ]
+    }
+  },
+  "problem_statement_raw": "Goal: Define formulas for the boundary work done by the expansion of an ideal gas in a piston cylinder device for isothermal and isobaric processes Create plots of pressure vs. volume for isothermal and isobaric expansion processes. Compare the boundary work done by isothermal and isobaric expansion processes assuming the same initial state and the same final volume.",
+  "schematic_raw": "Show a piston expanding some distance. The control volume should be drawn inside of the piston cylinder.Heat should be transferred in. Work should be shown to be transferred out.",
+  "physical_laws_and_assumptions": "Ideal gas law applies Neglect changes in kinetic and potential energy. Work is transferred only through boundary work ($p dV$). Moving Boundary Work $$\\delta W_\\text{b} = F \\delta s $$ If the piston is moved in a quasi-equilibrium manner, then: $$\\delta W_\\text{b} = F ds $$ $$\\delta W_\\text{b} = p A ds = p dV $$ Integrating: $$W_\\text{b} = \\int_1^2pdV \\text{ = [J]} \\tag{1}$$ We can only evaluate this integral if we know the relationship between $p$ and $V$. We need to know: $$p = f(V) $$ Pressure-Volume relationships: Polytropic In a polytropic process, we have: $$p V^n = \\text{const.} $$ From equation (1), we can then write: $$W_\\text{b} = C \\int_1^2 \\frac{1}{V^n} dV \\tag{2}$$ where, if we know the conditions at state 1, we have: $$C = p_1 V_1^n $$ If $n = 1$, as is this case for an isothermal process, we have: $$W_\\text{b} = p_1 V_1 \\ln \\frac{V_2}{V_1} $$ If $n = 0$, as is this case for an isobaric process, we have: $$W_\\text{b} = p_1 \\left( V_2 - V_1 \\right) $$ Comments $n=1$ for an isothermal process for an ideal gas because: $$ p V = m R T$$ If $T = \\text{const}$, then $m R T = \\text{const}$. We can also show that the boundary work for an isobaric process is: $$\\int_1^2pdV = p\\int_1^2dV = p (V_2 - V_1)$$",
+  "solution_code": [
+    {
+      "step_name": "5. Properties",
+      "code": "import matplotlib.pyplot as plt\nimport numpy as np\n\ninitial_pressure = 100e3 # Pa\ninitial_volume = 1     # m^3\npolytropic_index_isothermal = 1 # n = 1 for an isothermal process\npolytropic_index_isobaric = 0 # n = 0 for an isobaric process\nfinal_volume = 5       # m^3 "
+    },
+    {
+      "step_name": "6. Calculations",
+      "code": "# Define the two pressure-volume relationships\ndef pressure_isothermal(V, P1, V1, n=1):\n    \"\"\"p * V^n = constant, for n=1 (isothermal)\"\"\"\n    return P1 * (V1 / V)**n\n\ndef pressure_isobaric(V, P1):\n    \"\"\"p = constant\"\"\"\n    return P1\n\n# Define the work calculation formulas (to compare with plot area)\ndef work_isothermal(P1, V1, V2):\n    \"\"\"W_b = P1 * V1 * ln(V2/V1)\"\"\"\n    import numpy as np\n    return P1 * V1 * np.log(V2 / V1)\n\ndef work_isobaric(P1, V1, V2):\n    \"\"\"W_b = P1 * (V2 - V1)\"\"\"\n    return P1 * (V2 - V1)\n\n# Calculate the work values\nW_iso = work_isothermal(initial_pressure, initial_volume, final_volume)\nW_isobar = work_isobaric(initial_pressure, initial_volume, final_volume)\n\n# Generate volume range for plotting\nV_range = np.linspace(initial_volume, final_volume, 100)\n\n# Calculate pressures for plotting\nP_iso = pressure_isothermal(V_range, initial_pressure, initial_volume, polytropic_index_isothermal)\nP_isobar = pressure_isobaric(V_range, initial_pressure)\n\n# Plotting\nplt.figure(figsize=(8, 5))\nplt.plot(V_range, P_iso / 1000, 'r-', label='Isothermal (n=1)')\nplt.plot(V_range, P_isobar / 1000, 'b-', label='Isobaric (n=0)')\n\n# Fill area under the curves to visually represent work\nplt.fill_between(V_range, P_iso / 1000, color='r', alpha=0.1)\nplt.fill_between(V_range, P_isobar / 1000, color='b', alpha=0.1)\n\n# Add initial and final states\nplt.plot(initial_volume, initial_pressure / 1000, 'ko', label='Initial State')\nplt.plot(final_volume, P_iso[-1] / 1000, 'ro', label='Isothermal Final State')\nplt.plot(final_volume, P_isobar[-1] / 1000, 'bo', label='Isobaric Final State')\n\n# Add labels and title\nplt.xlabel('Volume V ($m^3$)')\nplt.ylabel('Pressure P (kPa)')\nplt.title('Boundary Work for Isothermal vs. Isobaric Expansion')\nplt.legend()\nplt.grid(True)\nplt.show()\n\nprint(f\"Initial State: P1 = {initial_pressure/1000:.0f} kPa, V1 = {initial_volume:.1f} m^3\")\nprint(f\"Final Volume: V2 = {final_volume:.1f} m^3\")\nprint(f\"Boundary Work for Isothermal Expansion: W_b = {W_iso:.2f} J\")\nprint(f\"Boundary Work for Isobaric Expansion: W_b = {W_isobar:.2f} J\")\nprint(f\"Work difference (Isobaric - Isothermal): {W_isobar - W_iso:.2f} J\")"
+    },
+    {
+      "step_name": "Summary and Reasoning",
+      "code": "# The summary and reasoning are in the final Markdown cell, not a code cell."
+    }
+  ],
+  "pedagogical_summary": "Reasoning For the isothermal expansion We see that as the volume increases, the pressure decreases as $1/V$, which is what we would expect from the ideal gas law. We also see from this that we are able to relate pressure to volume for this process. That means we will be able to determine the boundary work done for such a process. This will be useful when we start to analyze cycles, such as the Carnot cycle, which has isothermal expansion and compression processes. We also see that the boundary work done in expansion is positive, which is what we expected. For the isobaric expansion We see that the work transferred out for the isobaric expansion process is larger than the isothermal, which is what we would expect since the area under the pressure-volume curve is higher for the isobaric vs. the isothermal."
+}

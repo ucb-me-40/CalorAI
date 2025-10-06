@@ -1,0 +1,23 @@
+{
+  "instructor": "tschutzius",
+  "year": "Fa23",
+  "lectureId": "1_gytyosq5",
+  "courseCaptureId": "rtl_course_capture",
+  "lecture": "04-prework-specificHeat",
+  "title": "Energy Analysis of Closed Systems",
+  "videoTitle": "ME40 - Video 4 - Specific Heat (edited)",
+  "module": "module-one",
+  "topic": ["Closed Systems"],
+  "subtopics": [
+    {
+      "key": "Fa23-L4p-1.0",
+      "title": "Definition of Specific Heat",
+      "summary": "Introduces **Specific Heat** as the property that quantifies the energy required to raise the temperature of a unit mass of a substance by one degree (Celsius or Kelvin).",
+      "time_range": "00:00 - 10:40",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "The section defines **specific heat ($c$)** as the fundamental property that quantifies the amount of heat energy ($Q$) required to raise the temperature ($\\Delta T$) of a unit mass ($m$) of a substance. It is the parameter that dictates the temperature response of a system to a given heat transfer. The concept is illustrated by comparing materials like iron and water: for the same amount of heat transferred, water's temperature rises minimally compared to iron's, demonstrating water's **high specific heat capacity** and its ability to store a large amount of energy. Specific heat is shown to be non-constant, varying based on the **nature of the substance** and the molecular **modes of energy storage**. The lecture notes that substances with more available molecular modes (e.g., rotational and vibrational modes) generally exhibit a higher specific heat. Finally, the lecture introduces two types of specific heat, which are especially relevant for gases, as the heat transferred depends on the process path: **Specific Heat at Constant Volume ($c_v$)** for isochoric processes (e.g., in an automobile engine) and **Specific Heat at Constant Pressure ($c_p$)**. The core mathematical relationship is given by $Q = m c \\Delta T$.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

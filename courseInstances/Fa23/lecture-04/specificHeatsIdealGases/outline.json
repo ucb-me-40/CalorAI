@@ -1,0 +1,53 @@
+{
+  "lectureId": "1_po01te89",
+  "courseCaptureId": "rtl_course_capture",
+  "lecture": "04-prework-specificHeatIdealGases",
+  "title": "Energy Analysis of Closed Systems",
+  "videoTitle": "ME40 - Video 4 - Specific Heats and Ideal Gases (edited)",
+  "module": "module-one",
+  "year": "Fa23",
+  "instructor": "tschutzius",
+  "topics": "Closed Systems",
+  "subtopics": [
+    {
+      "key": "Fa23-L4q-1.0",
+      "title": "Joule's experiment",
+      "summary": "Joule's experiments demonstrated the equivalence of heat and mechanical work and showed that the internal energy of an ideal gas is dependent only on temperature, not volume or pressure.",
+      "time_range": "00:00 - 04:04",
+      "topics": ["Closed Systems","Properties"],
+      "detailed_summary": "This section reviews James Joule's experiments from the 1850s, which aimed to establish a relationship between mechanical work and heat. The first experiment involved a paddle wheel spinning in water, powered by a dropping weight, with a thermometer recording the temperature rise, directly linking mechanical work input to a heat equivalent. The second, more complex experiment involved two bulbs connected by a valve and submerged in a liquid bath: one bulb contained high-pressure air, and the other was evacuated. Upon opening the valve, the air underwent free expansion into the vacuum. By treating the two-bulb system and the bath as a control volume, and observing that there was no significant temperature change in the bath, Joule was able to conclude that the internal energy of the gas is not a function of volume or pressure, only temperature ($U=U(T)$).",
+      "examples": [""],
+      "tags": ["tschutzius","beta"]
+    },
+    {
+      "key": "Fa23-L4q-2.0",
+      "title": "Internal energy of an ideal gas",
+      "summary": "The internal energy of an ideal gas only depends on temperature.",
+      "time_range": "04:05 - 09:51",
+      "topics": ["Closed Systems","Properties"],
+      "detailed_summary": "The key takeaway from Joule's free expansion experiment is the demonstration that for an **ideal gas**, the internal energy ($\\mathbf{U}$) is a function of temperature only ($U=U(T)$). Consequently, the change in internal energy ($\\Delta U$) for an ideal gas is calculated by integrating the specific heat at constant volume ($c_v$) over the temperature range: $\\Delta U = \\int m c_v(T) dT$. For engineering applications, especially over a small temperature range, the $\\Delta U$ equation is often simplified using an average specific heat value ($c_{v,avg}$) as $\\Delta U = c_{v,avg} \\Delta T$. Similarly, the **enthalpy** ($H$) of an ideal gas is also temperature-dependent only, and its change ($\\Delta H$) is calculated using the specific heat at constant pressure ($c_p$): $\\Delta H = \\int m c_p(T) dT$ (or $\\Delta H = m c_{p,avg} \\Delta T$ using the average specific heat approximation). For accurate, temperature-dependent values of $c_p$ and $c_v$, the instructor recommends using the python module pyCalor.",
+      "examples": [""],
+      "tags": ["tschutzius","beta"]
+    },
+    {
+      "key": "Fa23-L4q-3.0",
+      "title": "Using tables to determine the properties of an ideal gas",
+      "summary": "Prof. Schutzius doesn't recommend using tables to determine the properties of an ideal gas. He suggests using pyCalor (python module for determining thermodynamic properties).",
+      "time_range": "09:52 - 14:17",
+      "topics": ["Closed Systems","Properties"],
+      "detailed_summary": "The discussion addresses the methods for obtaining ideal gas properties, particularly highlighting the challenges with using **thermodynamic tables** (like Table A-17). The instructor advises **against** relying on these tables for ideal gas calculations. Use the python module pyCalor to determine the properties of an ideal gas if you want to be very accurate.",
+      "examples": [""],
+      "tags": ["tschutzius","beta"]
+    },
+    {
+      "key": "Fa23-L4q-4.0",
+      "title": "Specific heats as a function of temperature and the relationship between $c_p$ and $c_v$",
+      "summary": "The difference between the specific heat at constant pressure ($c_p$) and specific heat at constant volume ($c_v$) for an ideal gas is equal to the gas constant ($R$), given by the relationship $\\mathbf{c_p = c_v + R}$.",
+      "time_range": "14:18 - 16:32",
+      "topics": ["Closed Systems","Properties"],
+      "detailed_summary": "This segment establishes the relationship between the two main specific heats for an ideal gas. By starting with the definition of enthalpy ($H=U+PV$), substituting the **ideal gas equation** ($PV=RT$), and taking the differential, the fundamental relationship is derived. The steps are: $H = U + RT$, leading to $dH = dU + R dT$. Replacing the differentials with their specific heat definitions ($dH = C_p dT$ and $dU = C_v dT$) yields $C_p dT = C_v dT + R dT$. This simplifies to the key equation: $\\mathbf{C_p = C_v + R}$. This relationship confirms that the difference between $C_p$ and $C_v$ is equal to the specific gas constant $R$ (on a mass basis, J/kg$\\cdot$K) or the universal gas constant $\\bar{R}$ (on a molar basis, J/mol$\\cdot$K), with $C_p$ always being greater than $C_v$.",
+      "examples": [""],
+      "tags": ["tschutzius","beta"]
+    }
+  ]
+}

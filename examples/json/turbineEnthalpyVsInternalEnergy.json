@@ -1,0 +1,39 @@
+{
+    "problem_title": "turbineEnthalpyVsInternalEnergy",
+    "author": "tschutzius",
+    "year": "Fa25",
+    "difficulty_tags": ["easy"],
+    "topic": "Control Volumes",
+    "notes": "",
+    "course_reference": {
+        "lecture_reference": {
+            "lecture_id": "1_0r6wkz1o",
+            "subtopics": [
+                {
+                  "key": "Fa25-L5a-4.0",
+                  "title": "Applying conservation of mass and energy principles for a control volume to a turbine."
+                }
+            ]
+        },
+        "book_reference": {
+            "chapter_number": 5,
+            "title": "Mass and Energy Analysis of Control Volumes",
+            "sections": [
+                "Some Steady-Flow Engineering Devices"
+            ]
+        }
+    },
+    "problem_statement_raw": "Steam enters a turbine at 4600 kg/hr and a pressure of 60 bar and 400$^\\circ$C and exits at 0.2 bar and a vapor quality of 0.9. Goal: Determine the shaft power and the total power transferred from the system. Draw a control volume. One control volume for the iron block (CV1). Another control volume for the water bath (CV2).",
+    "physical_laws_and_assumptions": "Neglect kinetic and potential energy. Steady-flow system. Determine properties using pyCalor. The shaft work is: $$ \\dot{W}_\\text{S,out} = \\dot{m} \\left(h_1 - h_2 \\right)$$. The overall work transferred out is: $$ \\dot{W}_\\text{net,out} = \\dot{m} (u_1 - u_2)$$. What we see from this is that: $$ \\dot{W}_\\text{S,out} \\ne \\dot{W}_\\text{net,out} $$",
+    "solution_code": [
+        {
+            "step_name": "Properties",
+            "code": "!pip install pyCalor\nfrom pyCalor import thermo as th\n\n# A steam turbine operates with the conditions listed below. \nmdot_kgPerHr = 4600\n# conversion\nmdot_kgPerS = mdot_kgPerHr/(60*60)\n\n# state 1\np1_bar = 60\nT1_C = 400\nst1 = th.state('water',T=(T1_C,'C'),p=(p1_bar,'bar'),name='1')\n\n# state 2\np2_bar = 0.2\nx2 = 0.9\nst2 = th.state('water',x=x2,p=(p2_bar,'bar'),name='2')"
+        },
+        {
+            "step_name": "Calculations",
+            "code": "# process\npr = th.process([(st1,st2)])\n\n# T-v plot\npr.plot('Tv')\n\n# Answer: part (a)\nW_shaft_out_kW = mdot_kgPerS*(1000*(st1.h-st2.h)); print(W_shaft_out_kW)\n\n# Answer: part (b)\nW_total_out_kW = mdot_kgPerS*(st1.u-st2.u); print(W_total_out_kW)"
+        }
+    ],
+    "pedagogical_summary": "The reason that the shaft work $\\dot{W}_\\text{S,out}$ and the overall work transferred out $\\dot{W}_\\text{net,out}$ are different in this problem is due to the steady-flow energy equation for a control volume. $$\\dot{Q}_\\text{net,in} + \\sum_\\text{in} \\dot{m} \\left( h + \\frac{V^2}{2} + gz \\right) = \\dot{W}_\\text{net,out} + \\sum_\\text{out} \\dot{m} \\left( h + \\frac{V^2}{2} + gz \\right)$$. For a single-inlet, single-outlet steady-flow system with negligible $\\Delta KE$ and $\\Delta PE$: $$\\dot{Q}_\\text{net,in} = \\dot{W}_\\text{net,out} + \\dot{m} \\left( h_2 - h_1 \\right)$$. The shaft work for the turbine (a steady-flow device) is defined as: $$\\dot{W}_\\text{S,out} = \\dot{m} \\left(h_1 - h_2 \\right)$$. If we assume the system is adiabatic ($\\dot{Q}_\\text{net,in}=0$) (which is a reasonable approximation for many turbines), then the steady-flow energy equation becomes: $$0 = \\dot{W}_\\text{net,out} + \\dot{m} \\left( h_2 - h_1 \\right)$$. $$\\dot{W}_\\text{net,out} = \\dot{m} \\left( h_1 - h_2 \\right)$$. Thus, $\\dot{W}_\\text{net,out} = \\dot{W}_\\text{S,out}$ under the assumption of adiabatic operation. However, in this problem, we are asked to compare $\\dot{W}_\\text{S,out} = \\dot{m} \\left(h_1 - h_2 \\right)$ and $\\dot{W}_\\text{net,out} = \\dot{m} \\left(u_1 - u_2 \\right)$. The second equation $\\dot{W}_\\text{net,out} = \\dot{m} \\left(u_1 - u_2 \\right)$ is only valid for a closed system or a piston-cylinder device where $\\dot{W}_\\text{net,out}$ is the boundary work. The difference between the shaft work (using enthalpy) and the overall work (using internal energy) highlights a common conceptual error when applying the first law of thermodynamics to a control volume (open system) versus a closed system. The steady-flow energy equation correctly uses the enthalpy for flow work, which is why $\\dot{W}_\\text{S,out}$ is the correct answer for the shaft power of the turbine."
+}

@@ -1,0 +1,156 @@
+{
+  "problem_id": "feedwaterHeater-C9-5-76",
+  "metadata": {
+    "title": "Feedwater heater",
+    "topic": "Control Volumes",
+    "difficulty_tags": ["medium", "Fa25"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the exit mass flow rate, velocity, and temperature of an adiabatic open feedwater heater that mixes steam and liquid feedwater.",
+    "raw_problem": "An **adiabatic open feedwater heater** ($\\dot{Q} \\approx 0$) in an electric power plant mixes two streams to produce a single outlet stream. The process is assumed to be **steady-flow** with **negligible kinetic and potential energy changes** ($\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$).\n\n**Given conditions:**\n* Steam Inlet (Stream 1): $\\dot{m}_1$, $p_1$, and $T_1$.\n* Feedwater Inlet (Stream 2): $\\dot{m}_2$, $p_2$, and $T_2$.\n* Outlet (Stream 3): $p_3$ and pipe diameter $D_3$.\n\n*Note: The feedwater heater is an **open** type, meaning the two inlet streams mix completely and exit at a common pressure.*",
+    "given_variables_mapping": [
+      {"variable": "$\\dot{m}_1$", "placeholder": "{{params.mdot1_kgPerS}}", "units": "kg/s"},
+      {"variable": "$p_1$", "placeholder": "{{params.p1_kPa}}", "units": "kPa"},
+      {"variable": "$T_1$", "placeholder": "{{params.T1_C}}", "units": "$^\\circ$C"},
+      {"variable": "$\\dot{m}_2$", "placeholder": "{{params.mdot2_kgPerS}}", "units": "kg/s"},
+      {"variable": "$p_2$", "placeholder": "{{params.p2_kPa}}", "units": "kPa"},
+      {"variable": "$T_2$", "placeholder": "{{params.T2_C}}", "units": "$^\\circ$C"},
+      {"variable": "$p_3$", "placeholder": "{{params.p3_kPa}}", "units": "kPa"},
+      {"variable": "$D_3$", "placeholder": "{{params.D3_m}}", "units": "m"}
+    ],
+    "goal": "Determine the outlet mass flow rate ($\\dot{m}_3$), the outlet temperature ($T_3$), and the outlet velocity ($\\mathcal{V}_3$).",
+    "system_assumptions": [
+      "**Steady-Flow System** (Mass and Energy within the CV are constant over time)",
+      "Two Inlets (1, 2) and One Outlet (3)",
+      "Adiabatic ($\\dot{Q} \\approx 0$)",
+      "No Work Transfer ($\dot{W} = 0$)",
+      "Negligible Kinetic and Potential Energy Changes ($\\Delta KE \\approx 0, \\Delta PE \\approx 0$)"
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "Conservation of Mass (Continuity Equation)",
+      "First Law of Thermodynamics (Energy Balance for a Steady-Flow Control Volume)"
+    ],
+    "mass_balance_equation": "The total mass flow rate in must equal the total mass flow rate out (Steady Flow):\\n$$\\sum \\dot{m}_{\\text{in}} = \\sum \\dot{m}_{\\text{out}}$$\\n$$\\dot{m}_1 + \\dot{m}_2 = \\dot{m}_3$$",
+    "energy_balance_equation": "The First Law for this multi-stream, adiabatic, zero-work, $\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$ device simplifies to:\\n$$\\sum_{\\text{in}} \\dot{m} h = \\sum_{\\text{out}} \\dot{m} h$$ \\n$$\\dot{m}_1 h_1 + \\dot{m}_2 h_2 = \\dot{m}_3 h_3$$",
+    "solution_steps": [
+      "**Step 1: Calculate Outlet Mass Flow Rate ($\\dot{m}_3$)**\\nApply the mass balance: $\\dot{m}_3 = \\dot{m}_1 + \\dot{m}_2$ (in kg/s).",
+      "**Step 2: Determine Inlet Enthalpies ($\\mathbf{h}_1, \\mathbf{h}_2$)**\\nUse the given $p$ and $T$ conditions for states 1 and 2 to find the specific enthalpies $h_1$ and $h_2$ (in kJ/kg) using **`pyCalor`**.",
+      "**Step 3: Calculate Outlet Enthalpy ($\\mathbf{h}_3$)**\\nSolve the energy balance equation for $h_3$:\\n$$h_3 = \\frac{\\dot{m}_1 h_1 + \\dot{m}_2 h_2}{\\dot{m}_3}$$",
+      "**Step 4: Determine Outlet Temperature ($T_3$) and Specific Volume ($\\mathbf{v}_3$)**\\nUse $p_3$ and the calculated $h_3$ as independent properties to determine the outlet temperature $T_3$ ($^\\circ$C) and specific volume $v_3$ ($\\text{m}^3/\\text{kg}$) using **`pyCalor`**.",
+      "**Step 5: Calculate Outlet Velocity ($\\mathcal{V}_3$)**\\nUse the continuity equation in terms of specific volume and area:\\n$$\\dot{m}_3 = \\frac{1}{v_3} A_3 \\mathcal{V}_3$$ \\nWhere $A_3 = \\frac{\\pi D_3^2}{4}$ is the cross-sectional area. Solve for velocity:\\n$$\\mathcal{V}_3 = \\frac{\\dot{m}_3 v_3}{A_3}$$"
+    ]
+  },
+  "property_module": {
+    "name": "**pyCalor**",
+    "usage_note": "Thermodynamic properties **must** be determined using the **`pyCalor`** Python module. The key calculations require specific enthalpy ($h$ in kJ/kg) and specific volume ($v$ in $\\text{m}^3/\\text{kg}$). \\n\\nProperties are retrieved using the `state` class, e.g., `st1 = th.state('water', p=(p1_kPa,'kPa'), T=(T1_C,'C'), name='1')`."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L5c-2.0",
+      "title": "**Heat Exchanger**",
+      "lecture_topic": "Control Volumes",
+      "context": "An open feedwater heater is a **mixing chamber**, which is fundamentally similar to a heat exchanger or a general multi-stream control volume. This subtopic covers the required multi-stream mass and energy balance principles."
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 5,
+      "chapter_title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Steady-Flow Processes",
+        "Some Steady-Flow Engineering Devices"
+      ]
+    },
+    "related_course_example": {
+      "example_title": "heatExchangerPyCalor",
+      "lecture_subtopic_key": "Fa25-L5c-2.0",
+      "description": "This is a direct example of analyzing a **multi-stream control volume** using the steady-flow energy and mass balances, and utilizing the **`pyCalor`** property module, which applies directly to the open feedwater heater."
+    }
+  }
+}
+```I have created the single JSON file you requested for the problem `feedwaterHeater-C9-5-76`.
+
+This file is formatted for fine-tuning and RAG, incorporating the problem statement, the detailed solution methodology based on mass and energy balances, the required use of the `pyCalor` module, and references to the relevant course context.
+
+I have also ensured the following formatting requirements are met:
+1.  **Variable Conversion:** PrairieLearn placeholders (e.g., `{{params.mdot1_kgPerS}}`) have been converted to standard thermodynamic notation (e.g., $\dot{m}_1$).
+2.  **LaTeX Escaping:** All LaTeX commands (like `\Delta`, `\dot{Q}`, `\sum`) have been properly escaped with double backslashes (`\\`) for correct JSON string representation.
+3.  **Course References:** The lecture subtopic and related example titles are accurately cited from the provided course files.
+
+Here is the final JSON:
+
+```json
+{
+  "problem_id": "feedwaterHeater-C9-5-76",
+  "metadata": {
+    "title": "Feedwater heater",
+    "topic": "Control Volumes",
+    "difficulty_tags": ["medium", "Fa25"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the exit mass flow rate, velocity, and temperature of an adiabatic open feedwater heater that mixes steam and liquid feedwater.",
+    "raw_problem": "An **adiabatic open feedwater heater** ($\\dot{Q} \\approx 0$) in an electric power plant mixes two streams to produce a single outlet stream. The process is assumed to be **steady-flow** with **negligible kinetic and potential energy changes** ($\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$).\\n\\n**Given conditions:**\\n* Steam Inlet (Stream 1): $\\dot{m}_1$, $p_1$, and $T_1$.\\n* Feedwater Inlet (Stream 2): $\\dot{m}_2$, $p_2$, and $T_2$.\\n* Outlet (Stream 3): $p_3$ and pipe diameter $D_3$.\\n\\n*Note: The feedwater heater is an **open** type, meaning the two inlet streams mix completely and exit at a common pressure.*",
+    "given_variables_mapping": [
+      {"variable": "$\\dot{m}_1$", "placeholder": "{{params.mdot1_kgPerS}}", "units": "kg/s"},
+      {"variable": "$p_1$", "placeholder": "{{params.p1_kPa}}", "units": "kPa"},
+      {"variable": "$T_1$", "placeholder": "{{params.T1_C}}", "units": "$^\\circ$C"},
+      {"variable": "$\\dot{m}_2$", "placeholder": "{{params.mdot2_kgPerS}}", "units": "kg/s"},
+      {"variable": "$p_2$", "placeholder": "{{params.p2_kPa}}", "units": "kPa"},
+      {"variable": "$T_2$", "placeholder": "{{params.T2_C}}", "units": "$^\\circ$C"},
+      {"variable": "$p_3$", "placeholder": "{{params.p3_kPa}}", "units": "kPa"},
+      {"variable": "$D_3$", "placeholder": "{{params.D3_m}}", "units": "m"}
+    ],
+    "goal": "Determine the outlet mass flow rate ($\\dot{m}_3$), the outlet temperature ($T_3$), and the outlet velocity ($\\mathcal{V}_3$).",
+    "system_assumptions": [
+      "**Steady-Flow System** (Mass and Energy within the CV are constant over time)",
+      "Two Inlets (1, 2) and One Outlet (3)",
+      "Adiabatic ($\\dot{Q} \\approx 0$)",
+      "No Work Transfer ($\\dot{W} = 0$)",
+      "Negligible Kinetic and Potential Energy Changes ($\\Delta KE \\approx 0, \\Delta PE \\approx 0$)"
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "Conservation of Mass (Continuity Equation)",
+      "First Law of Thermodynamics (Energy Balance for a Steady-Flow Control Volume)"
+    ],
+    "mass_balance_equation": "The total mass flow rate in must equal the total mass flow rate out (Steady Flow):\\n$$\\sum \\dot{m}_{\\text{in}} = \\sum \\dot{m}_{\\text{out}}$$\\n$$\\dot{m}_1 + \\dot{m}_2 = \\dot{m}_3$$",
+    "energy_balance_equation": "The First Law for this multi-stream, adiabatic, zero-work, $\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$ device simplifies to:\\n$$\\sum_{\\text{in}} \\dot{m} h = \\sum_{\\text{out}} \\dot{m} h$$ \\n$$\\dot{m}_1 h_1 + \\dot{m}_2 h_2 = \\dot{m}_3 h_3$$",
+    "solution_steps": [
+      "**Step 1: Calculate Outlet Mass Flow Rate ($\\dot{m}_3$)**\\nApply the mass balance: $\\dot{m}_3 = \\dot{m}_1 + \\dot{m}_2$ (in kg/s).",
+      "**Step 2: Determine Inlet Enthalpies ($\\mathbf{h}_1, \\mathbf{h}_2$)**\\nUse the given $p$ and $T$ conditions for states 1 and 2 to find the specific enthalpies $h_1$ and $h_2$ (in kJ/kg) using **`pyCalor`**.",
+      "**Step 3: Calculate Outlet Enthalpy ($\\mathbf{h}_3$)**\\nSolve the energy balance equation for $h_3$:\\n$$h_3 = \\frac{\\dot{m}_1 h_1 + \\dot{m}_2 h_2}{\\dot{m}_3}$$",
+      "**Step 4: Determine Outlet Temperature ($T_3$) and Specific Volume ($\\mathbf{v}_3$)**\\nUse $p_3$ and the calculated $h_3$ as independent properties to determine the outlet temperature $T_3$ ($^\\circ$C) and specific volume $v_3$ ($\\text{m}^3/\\text{kg}$) using **`pyCalor`**.",
+      "**Step 5: Calculate Outlet Velocity ($\\mathcal{V}_3$)**\\nUse the continuity equation in terms of specific volume and area (Area $A_3 = \\frac{\\pi D_3^2}{4}$):\\n$$\\mathcal{V}_3 = \\frac{\\dot{m}_3 v_3}{A_3}$$"
+    ]
+  },
+  "property_module": {
+    "name": "**pyCalor**",
+    "usage_note": "Thermodynamic properties **must** be determined using the **`pyCalor`** Python module. The key calculations require specific enthalpy ($h$ in kJ/kg) and specific volume ($v$ in $\\text{m}^3/\\text{kg}$). \\n\\nProperties are retrieved using the `state` class, e.g., `st1 = th.state('water', p=(p1_kPa,'kPa'), T=(T1_C,'C'), name='1')`."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L5c-2.0",
+      "title": "**Heat Exchanger**",
+      "lecture_topic": "Control Volumes",
+      "context": "An open feedwater heater is a **mixing chamber**, which is a type of multi-stream control volume. This subtopic covers the required mass and energy balance principles for these devices."
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 5,
+      "chapter_title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Steady-Flow Processes",
+        "Some Steady-Flow Engineering Devices"
+      ]
+    },
+    "related_course_example": {
+      "example_title": "heatExchangerPyCalor",
+      "lecture_subtopic_key": "Fa25-L5c-2.0",
+      "description": "This is a direct example of analyzing a **multi-stream control volume** (Heat Exchanger) using the steady-flow energy and mass balances and the **`pyCalor`** property module, principles that are directly applied to the open feedwater heater."
+    }
+  }
+}

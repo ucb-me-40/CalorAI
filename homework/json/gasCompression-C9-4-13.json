@@ -1,0 +1,94 @@
+{
+  "problem_id": "gasCompression-C9-4-13",
+  "course_context": {
+    "course_id": "ME40",
+    "course_title": "Thermodynamics",
+    "term": "Fall 2025",
+    "module": "module-one",
+    "software_requirement": {
+      "tool": "pyCalor",
+      "instruction": "Students are required to use the custom `pyCalor` Python module (or its principles) for determining thermodynamic properties in general. This specific problem is a closed system boundary work calculation that does not require property lookup (enthalpy, entropy, etc.), but relies on direct integration of the pressure-volume relation. The `pyCalor` `state` class, documented in the README, is the standard for property handling in this course.",
+      "pycalor_note": "pyCalor is used for teaching undergraduate thermodynamics (ME40) at UC Berkeley."
+    }
+  },
+  "problem_metadata": {
+    "title_original": "Vapor/Gas Expansion",
+    "title_cleaned": "Closed System Boundary Work: P-V Compression (Linear Path)",
+    "topic": "Closed Systems",
+    "tags": [
+      "spalliston",
+      "Fa23",
+      "easy",
+      "release",
+      "LO4a",
+      "First_Law",
+      "Boundary_Work"
+    ],
+    "type": "v3"
+  },
+  "question": {
+    "problem_statement_raw": "A gas is compressed from an initial volume of {{params.vol}} m$^3$ to a final volume of {{params.volfinal}} m$^3$. During the quasi-equilibrium process, the pressure changes with volume according to the relation $P=aV + b$ where $a = {{params.a}}$ kPa/m$^3$ and $b =  {{params.b}}$ kPa. Calculate the work done during this process.",
+    "problem_statement_cleaned": "A gas is compressed from an initial volume of $V_1 = \\{\\{params.vol\\}\\}$ m$^3$ to a final volume of $V_2 = \\{\\{\\text{params.volfinal}\\}\\}$ m$^3$. During the quasi-equilibrium process, the pressure changes with volume according to the relation $P=aV + b$, where $a = \\{\\{params.a\\}\\}$ kPa/m$^3$ and $b = \\{\\{params.b\\}\\}$ kPa. Calculate the work done during this process, $W$ [kJ].",
+    "variables": {
+      "V1": "\\{\\{params.vol\\}\\}",
+      "V2": "\\{\\{\\text{params.volfinal}\\}\\}",
+      "a": "\\{\\{params.a\\}\\}",
+      "b": "\\{\\{params.b\\}\\}",
+      "W": "Work done [kJ]"
+    }
+  },
+  "solution_analysis": {
+    "governing_law": "First Law of Thermodynamics for a Closed System (Work Transfer).",
+    "physical_model": "Quasi-equilibrium boundary work for a closed system. The work is the area under the process curve on a $P-V$ diagram.",
+    "fundamental_equation": {
+      "work_integral": "$W = \\int_{V_1}^{V_2} P dV$",
+      "analytical_solution": "$W = \\int_{V_1}^{V_2} (aV + b) dV = \\left[ \\frac{aV^2}{2} + bV \\right]_{V_1}^{V_2} = \\frac{a}{2}(V_2^2 - V_1^2) + b(V_2 - V_1)$"
+    },
+    "calculation_logic": "The `server.py` implementation calculates the work by numerically integrating the linear $P-V$ relation using the trapezoidal rule (`numpy.trapz`) from the initial volume $V_1$ to the final volume $V_2$. The units are $\\text{kPa} \\cdot \\text{m}^3 = \\text{kJ}$. Since $V_2 < V_1$ (compression), the result of the integral $W$ is negative.",
+    "server_logic_variables": {
+      "V1_py": "vi",
+      "V2_py": "vf",
+      "W_result_py": "W"
+    }
+  },
+  "references": {
+    "book_reference": {
+      "title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "authors": "Yunus A. Çengel and Michael A. Boles",
+      "relevant_chapters": [
+        {
+          "chapter_number": 2,
+          "title": "Energy, Energy Transfer, and General Energy Analysis",
+          "sections": [
+            "Energy Transfer by Work",
+            "Mechanical Forms of Work",
+            "The First Law of Thermodynamics"
+          ]
+        }
+      ]
+    },
+    "lecture_reference": {
+      "module": "Module 1",
+      "topic": "First Law",
+      "subtopics": [
+        {
+          "key": "Fa25-L1a-7.0",
+          "title": "Introduction to the first law of thermodynamics",
+          "detailed_summary_excerpt": "The law is mathematically expressed as $\\Delta U = Q - W$, relating the change in a system's internal energy ($\\Delta U$) to the energy transferred via heat ($Q$) and work ($W$). The sign convention for work ($W$) is positive when done *by* the system (expansion) and negative when done *on* the system (compression)."
+        }
+      ]
+    },
+    "similar_examples": [
+      {
+        "problem_title": "compressorAdiabaticNitrogen",
+        "topic": "Entropy / Compressor Work (Control Volume)",
+        "relevance": "Relates to the general topic of **compression** and **work input** for a thermodynamic system, although this example uses a Control Volume."
+      },
+      {
+        "problem_title": "compressorMultistageCoolingPyCalor",
+        "topic": "Entropy / Minimizing Compressor Work (Control Volume)",
+        "relevance": "Another example focusing on **compressor work** calculation in the course context."
+      }
+    ]
+  }
+}

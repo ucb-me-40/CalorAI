@@ -1,0 +1,66 @@
+{
+  "problem_id": "condensationHeatExchanger",
+  "metadata": {
+    "title": "Rate of Condensation of Water in Heat Exchanger",
+    "topic": "Control Volumes",
+    "difficulty_tags": ["medium", "Fa25"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the rate of condensation of steam in a power plant condenser given the cooling water's mass flow rate and temperature change.",
+    "raw_problem": "Steam is to be condensed in the condenser of a steam power plant at a temperature of $T_s$ ($^\\circ\\text{C}$) with cooling water from a nearby lake. The lake water enters the tubes of the condenser at $T_{w, \\text{in}}$ ($^\\circ\\text{C}$) at a rate of $\\dot{m}_w$ (kg/s) and leaves at $T_{w, \\text{out}}$ ($^\\circ\\text{C}$).",
+    "given_variables_mapping": [
+      {"variable": "$T_s$", "placeholder": "{{params.steamTemperature}}", "units": "$^\\circ$C"},
+      {"variable": "$T_{w, \\text{in}}$", "placeholder": "{{params.waterInletTemperature}}", "units": "$^\\circ$C"},
+      {"variable": "$T_{w, \\text{out}}$", "placeholder": "{{params.waterOutletTemperature}}", "units": "$^\\circ$C"},
+      {"variable": "$\\dot{m}_w$", "placeholder": "{{params.waterMassFlowRate}}", "units": "kg/s"}
+    ],
+    "goal": "Determine the rate of condensation of the steam, $\\dot{m}_{\\text{cond}}$ (in kg/s).",
+    "system_assumptions": [
+      "**Steady-Flow System** (Condenser/Heat Exchanger)",
+      "Two Fluid Streams (Steam and Cooling Water)",
+      "Adiabatic overall (Condenser is well-insulated, $\\dot{Q}_{\\text{surroundings}} \\approx 0$)",
+      "Neglect kinetic and potential energy changes ($\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$)",
+      "Cooling water behaves as an incompressible substance with constant specific heat ($c_p$).",
+      "Condensation occurs at constant temperature, $T_s$."
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "First Law of Thermodynamics (Energy Balance for a Steady-Flow Control Volume)",
+      "Conservation of Mass (Continuity Equation)"
+    ],
+    "energy_balance_equation": "For an adiabatic, steady-flow heat exchanger with two streams (1-2 is steam, 3-4 is cooling water):\\n$$\\sum \\dot{m}_{\\text{in}} h_{\\text{in}} = \\sum \\dot{m}_{\\text{out}} h_{\\text{out}}$$\\n\\nSpecifically, the heat lost by the condensing steam ($\\dot{Q}_{\\text{steam}}$) must equal the heat gained by the cooling water ($\\dot{Q}_{\\text{water}}$):\\n$$\\dot{Q}_{\\text{water}} = \\dot{Q}_{\\text{steam}}$$\\n$$\\dot{m}_w (h_{w, \\text{out}} - h_{w, \\text{in}}) = \\dot{m}_{\\text{cond}} (h_{s, \\text{in}} - h_{s, \\text{out}})$$",
+    "property_relations": "1. **Cooling Water (Incompressible Liquid):** The enthalpy change is $\\Delta h \\approx c_p \\Delta T$. We use the liquid specific heat capacity for water, $c_p \\approx 4.18 \\text{ kJ}/(\\text{kg}\\cdot\\text{K})$.\\n$$\\dot{Q}_{\\text{water}} = \\dot{m}_w c_p (T_{w, \\text{out}} - T_{w, \\text{in}})$$\\n\\n2. **Condensing Steam (Phase Change):** The heat removed during condensation is the latent heat, $h_{fg}$, which is the difference between the specific enthalpy of saturated vapor ($h_g$) and saturated liquid ($h_f$) at the condensation temperature $T_s$. The enthalpy change is $\\Delta h_{\\text{steam}} = h_{fg}$.\\n$$\\dot{Q}_{\\text{steam}} = \\dot{m}_{\\text{cond}} h_{fg}$$",
+    "solution_steps": [
+      "**Step 1: Calculate Heat Gained by Cooling Water ($\\mathbf{\\dot{Q}_{\\text{water}}}$)**\\nUse the given mass flow rate and temperature change, assuming constant specific heat for liquid water, $c_p = 4.18 \\text{ kJ}/(\\text{kg}\\cdot\\text{K})$:\\n$$\\dot{Q}_{\\text{water}} = \\dot{m}_w c_p (T_{w, \\text{out}} - T_{w, \\text{in}})$$",
+      "**Step 2: Determine the Latent Heat of Condensation ($\\mathbf{h_{fg}}$)**\\nUse the saturation temperature $T_s$ and the **`pyCalor`** module to find the specific enthalpy of vaporization, $h_{fg}$, of water:\\n$$\\mathbf{h_{fg}} = h_g(T_s) - h_f(T_s)$$",
+      "**Step 3: Calculate the Rate of Condensation ($\\mathbf{\\dot{m}_{\\text{cond}}}$)**\\nSet the heat gained by the water equal to the heat lost by the steam and solve for $\\dot{m}_{\\text{cond}}$:\\n$$\\dot{m}_{\\text{cond}} = \\frac{\\dot{Q}_{\\text{water}}}{h_{fg}}$$"
+    ]
+  },
+  "property_module": {
+    "name": "**pyCalor**",
+    "usage_note": "The latent heat of vaporization, $h_{fg}$, for water at temperature $T_s$ **must** be determined using the **`pyCalor`** Python module. This involves finding $h_g$ (saturated vapor) and $h_f$ (saturated liquid) at the specified temperature."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L5c-2.0",
+      "title": "**Heat Exchanger**",
+      "lecture_topic": "Control Volumes",
+      "context": "This subtopic specifically covers the energy and mass analysis of heat exchangers, which are multi-stream steady-flow devices, and is the core theoretical basis for this problem."
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 5,
+      "chapter_title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Some Steady-Flow Engineering Devices"
+      ]
+    },
+    "related_course_example": {
+      "example_title": "heatExchangerPyCalor",
+      "lecture_subtopic_key": "Fa25-L5c-2.0",
+      "description": "This example demonstrates the application of the **multi-stream steady-flow energy balance** to a heat exchanger, including the use of **`pyCalor`** to find properties for both phase-changing (R-134a) and non-phase-changing (water) fluids."
+    }
+  }
+}

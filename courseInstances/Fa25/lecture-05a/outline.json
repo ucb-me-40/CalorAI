@@ -1,0 +1,53 @@
+{
+  "lectureId": "1_0r6wkz1o",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "05a",
+  "title": "Mass and Energy Analysis of Control Volumes",
+  "videoTitle": "ME40 - 17 Sept 2025 - Lecture 5a (edited)",
+  "module": "module-one",
+  "topic": "Control Volumes",
+  "subtopics": [
+    {
+      "key": "Fa25-L5a-1.0",
+      "title": "Cooling of a solid block",
+      "summary": "Prof. Schutzius analyzes the cooling of a solid block. Iron of m = 50 kg with an initial temperature of 80 deg C  is dropped into a water bath of volume 0.5 cubic meters and initially at a temperature of 25 deg C. Determine the temperature when equilibrium is reached.",
+      "time_range": "00:22 - 11:13",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This segment completes an **example problem for a closed system** (the cooling of a solid block) that was introduced in a previous lecture. The problem involves a hot piece of iron dropped into a cold water bath. The overall process is treated as **adiabatic** with **no work exchange**. The core principle applied is the **conservation of energy** for the combined system, stating that the change in the system's **internal energy** is zero ($\\\\Delta U = 0$). The goal is to determine the final equilibrium temperature ($T_2$) by summing the change in internal energy for the iron and the water, using the approximation $\\\\Delta U \\\\approx m C \\\\Delta T$.",
+      "examples": ["coolingSolidBlock"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L5a-2.0",
+      "title": "Develop the conservation of mass principle",
+      "summary": "Here Prof. Schutzius derives conservation of mass for a control volume.",
+      "time_range": "11:14 - 28:44",
+      "topics": ["Control Volumes"],
+      "detailed_summary": "This section is dedicated to developing the **Conservation of Mass Principle** for a **Control Volume (CV)**. The derivation uses the **Reynolds Transport Theorem (RTT)** to relate the time rate of change of mass in the system to the change of mass within the CV plus the net mass flow across the boundaries. The final result is the rate form of the mass balance equation: $\\\\frac{dM_{CV}}{dt} = \\\\sum_{in} \\\\dot{m}_{in} - \\\\sum_{out} \\\\dot{m}_{out}$. The lecturer then simplifies this for **steady flow**, where the mass of the CV is constant, leading to the condition that the mass flow rate in must equal the mass flow rate out: $\\\\sum \\\\dot{m}_{in} = \\\\sum \\\\dot{m}_{out}$.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L5a-3.0",
+      "title": "Developing the conservation of energy equation for a control volume",
+      "summary": "In addition to heat and work, mass can transfer energy into a control volume. Here Prof. Schutzius does this analysis. He also develops the enthalpy property, which he shows is the result of separating flow work from total work. The remaining work term is then useful shaft work.",
+      "time_range": "28:45 - 40:34",
+      "topics": ["Control Volumes"],
+      "detailed_summary": "The focus shifts to developing the **Conservation of Energy Equation** for a **Control Volume**. This analysis accounts for energy transfer via heat, work, and mass flow. A crucial step is the separation of **total work** into **flow work (\\\\dot{W}_{flow})** and **shaft work (\\\\dot{W}_{shaft})**. The derivation then introduces the property of **enthalpy ($h = u + Pv$)**, which conveniently combines the internal energy ($u$) carried by the mass flow with the necessary flow work ($Pv$). This results in the final energy term carried by the mass flow being a combination of $h + ke + pe$.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L5a-4.0",
+      "title": "Applying conservation of mass and energy principles for a control volume to a turbine.",
+      "summary": "",
+      "time_range": "40:35 - 48:58",
+      "topics": ["Control Volumes"],
+      "detailed_summary": "This segment applies the derived principles to an example problem involving a **steam turbine**. The goal is to determine the **rate of work output (\\\\dot{W}_{out})** of the turbine. The full **Steady Flow Energy Equation (SFEE)** is applied, including changes in enthalpy (\\\\Delta h), kinetic energy (\\\\Delta ke), and potential energy (\\\\Delta pe). The lecturer demonstrates how the enthalpy change terms dominate, allowing for a simplification of the equation to primarily: $\\\\dot{W}_{out} = \\\\dot{m} (h_1 - h_2)$, where $h_1$ and $h_2$ are specific enthalpies at the inlet and exit, respectively. The final work output is calculated using the property values obtained from steam tables (pyCalor).",
+      "examples": ["turbineEnthalpyVsInternalEnergy"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

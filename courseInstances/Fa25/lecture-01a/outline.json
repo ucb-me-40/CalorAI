@@ -1,0 +1,93 @@
+{
+  "lectureId": "1_mtmivyvl",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "01a",
+  "title": "Class plan and rules; Challenges in Decarbonizing our Energy",
+  "videoTitle": "ME40 - 27 Aug 2025 - Lecture 1a (edited)",
+  "module": "module-one",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "topic": "Introduction",
+  "subtopics": [
+    {
+      "key": "Fa25-L1a-1.0",
+      "title": "Course theme",
+      "summary": "This course is chiefly concerned with energy and its transformations.",
+      "time_range": "00:11 - 00:47",
+      "topics": [""],
+      "detailed_summary": "The core theme of the thermodynamics course is **energy** and its transformation. The instructor highlights three main, timely areas: **energy conversion** (citing photovoltaics as the fastest-growing area), **energy consumption** (citing data centers and large language models), and **energy storage** (necessary because renewable sources are intermittent). These topics collectively form the central focus of the course.",
+      "examples": [""],
+      "tags": ["tschutzius", "beta"]
+    },
+    {
+      "key": "Fa25-L1a-2.0",
+      "title": "Instructional staff",
+      "summary": "GSIs: Cassidy McCormick, Jessica Wu; Reader: Dheer",
+      "time_range": "00:48 - 02:18",
+      "topics": [""],
+      "detailed_summary": "The instructional staff includes **Cassie McCormick** (Head GSI), **Jessica Woo** (GSI), and **Dear Baldwa** (Reader). The instructor introduces himself, noting he has taught thermodynamics for 11 years, including 10 years overseas at **ETH Zurich**, where Albert Einstein was a student. He recounts an anecdote about Einstein, who was famously a \"very bad student\" and was helped by a friend with his coursework and later got his first job at the **patent office in Bern**. The instructor connects this story to the city of Bern's Glockenspiel (big clock) as a potential source of inspiration for Einstein's daily thoughts on time.",
+      "examples": [""],
+      "tags": ["tschutzius", "beta"]
+    },
+    {
+      "key": "Fa25-L1a-3.0",
+      "title": "Course learning objectives",
+      "summary": "The course objectives focus on understanding and applying the First and Second Laws of Thermodynamics, moving from foundational concepts and simple problems to analyzing bigger systems and thermodynamic data using Python.",
+      "time_range": "02:19 - 03:43",
+      "topics": [""],
+      "detailed_summary": "The main learning objectives are centered on mastering the **First and Second Laws of Thermodynamics** to the point of being able to articulate them clearly. Students will first solve simple, single-answer problems involving both laws. The course then transitions to applying these laws to much bigger systems, including the study of **perpetual motion cycles** (cycles that violate the First and Second Laws). A key modern component is the shift from using old-school appendix tables to utilizing **Python modules** for handling and determining thermodynamic data, which is presented as a crucial skill for the course.",
+      "examples": [""],
+      "tags": ["tschutzius", "beta"]
+    },
+    {
+      "key": "Fa25-L1a-4.0",
+      "title": "Course logistics and grading",
+      "summary": "Course material is organized into three modules (First Law, Second Law, Applications). Assessments are handled through the PrairieLearn website, and the grading is weighted heavily toward exams, with a final exam replacement policy and a 3% extra credit option for early PrairieLearn certification.",
+      "time_range": "03:44 - 06:50",
+      "topics": [""],
+      "detailed_summary": "The course is organized into three main modules: **First Law, Second Law, and Applications**. Homework and assessments are administered via the **PrairieLearn** website, and students are strongly encouraged to complete the first three homework assignments and master the Python property determination module. The course grading breakdown is: **Homeworks (10%)**, **Quiz 1 (15%)** (focused on property determination, the only quiz), **Midterm 1 (20%)**, **Midterm 2 (25%)**, and **Final Exam (30%)**. A key policy is the **Final Exam Replacement** rule, which allows the final exam grade to replace a lower grade from a midterm or Quiz 1. All assessments are **open book, open notes, and open internet**, but communication (open discussion) is strictly prohibited. The instructor offers a **3% extra credit** incentive for students who become certified on two specific modules within PrairieLearn.",
+      "examples": [""],
+      "tags": ["tschutzius", "beta"]
+    },
+    {
+      "key": "Fa25-L1a-5.0",
+      "title": "Challenges in decarbonizing",
+      "summary": "A key part of America's plan to slash carbon emissions: Plug in (almost) everything.",
+      "time_range": "06:51 - 15:00",
+      "topics": [""],
+      "detailed_summary": "The discussion on decarbonization begins with a comparison of CO2 emissions versus national wealth for major global markets (US, China, Germany), highlighting the US as a key focus for mechanical engineers. The core of the current decarbonization challenge is the shift in strategy. In California, the financial incentive for rooftop solar under **NEM 2.0** was drastically reduced by **75%** with the introduction of **NEM 3.0**. The new strategy emphasizes **electrification**, which involves replacing natural gas appliances (stoves, water heaters) with electric alternatives like induction cooktops and **heat pump water heaters**. This creates a massive market and challenge for mechanical engineers to innovate in designing compact and efficient electric and **thermal storage** systems to overcome installation hurdles in existing infrastructure.",
+      "examples": [""],
+      "tags": ["tschutzius", "beta"]
+    },
+    {
+      "key": "Fa25-L1a-6.0",
+      "title": "Data centers and energy consumption",
+      "summary": "Data centers, especially those for large language models, consume immense and rapidly growing energy, primarily due to the heat generated, requiring innovative thermal management solutions like liquid cooling and the use of thermal/battery storage.",
+      "time_range": "15:01 - 19:12",
+      "topics": [""],
+      "detailed_summary": "Data centers, particularly those powering **large language models (LLMs)** like ChatGPT, represent a rapidly growing area of energy consumption, with a single large center consuming power equivalent to a small town. The primary challenge is managing the tremendous amount of waste **heat** generated by the servers, which is currently removed by power-intensive **chillers** (large air conditioners). This high-density energy challenge necessitates innovative thermal management strategies, such as **liquid cooling**, where servers are submerged in dielectric fluids. Furthermore, the intermittent nature of renewable energy (solar and wind) drives the need for **thermal and battery storage**. For data centers, **cold thermal storage** is highlighted as a solution to run chillers during off-peak hours (at night) when electricity is cheaper, storing the \"cold\" for use during the day.",
+      "examples": [""],
+      "tags": ["tschutzius", "beta"]
+    },
+    {
+      "key": "Fa25-L1a-7.0",
+      "title": "Introduction to the first law of thermodynamics",
+      "summary": "This segment introduces the First Law of Thermodynamics, which formalizes the principle of **Conservation of Energy**, defining its components (internal energy, heat, and work) and establishing sign conventions for thermodynamic systems.",
+      "time_range": "19:13 - 40:13",
+      "topics": [""],
+      "detailed_summary": "The introduction to the First Law of Thermodynamics establishes the fundamental principle of **Conservation of Energy**. The law is mathematically expressed as $\\Delta U = Q - W$, relating the change in a system's internal energy ($\\Delta U$) to the energy transferred via **heat ($Q$)** and **work ($W$)**. The lecture defines a **system** and its **boundary**, which are crucial for applying the law. It clarifies the **sign conventions** for heat and work: **Heat ($Q$)** is positive when added to the system, and **Work ($W$)** is positive when done *by* the system. This foundational law is essential for subsequent course modules, including the analysis of engineering cycles and non-violating perpetual motion concepts.",
+      "examples": [""],
+      "tags": ["tschutzius", "beta"]
+    },
+    {
+      "key": "Fa25-L1a-8.0",
+      "title": "Closing remarks",
+      "summary": "Thermodynamics is a funny subject. The first time you go through it you don't understand it at all. The second time...",
+      "time_range": "40:14 - 40:46",
+      "topics": [""],
+      "detailed_summary": "The closing remarks feature a famous quote from the German physicist **Arnold Sommerfeld** on the experience of learning thermodynamics. The quote suggests that initially, the subject is completely unintelligible, becomes partially clear upon the second pass, and finally, by the third pass, one accepts their lack of full understanding but has become accustomed to it.",
+      "examples": [""],
+      "tags": ["tschutzius", "beta"]
+    }
+  ]
+}

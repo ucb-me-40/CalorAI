@@ -1,0 +1,82 @@
+{
+  "problem_title": "heatExchangerPyCalor",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": ["easy"],
+  "topic": "Control Volumes",
+  "lecture_reference": {
+    "lecture_id": "1_97hqf37r",
+    "subtopics": [
+      {
+        "key": "Fa25-L5c-2.0",
+        "title": "Heat Exchanger"
+      }
+    ]
+  },
+  "book_reference": {
+    "chapter_number": 5,
+    "title": "Mass and Energy Analysis of Control Volumes",
+    "sections": ["Some Steady-Flow Engineering Devices"]
+  },
+  "notes": "",
+  "problem_statement_raw": "R-134a enters a heat exchanger as a vapor with a mass flow rate of 6 kg/min and leaves as a subcooled liquid. It is cooled by water that enters the heat exchanger at 15$^\\circ$C and 300 kPa and exits at 25$^\\circ$C. R-134a enters the heat exchanger at 70$^\\circ$C and 1 MPa and leaves at 35$^\\circ$C. \n\nGoal: \n* Determine the mass flow rate of the cooling water.\n* Determine the heat transfer rate from the refrigerant to the water.",
+  "physical_laws_and_assumptions": "Schematic\nDraw a heat exchanger with two control volumes: One for water and the other for the refrigerant (R-134a). \n\nAssumptions and Approximations\n* Neglect kinetic and potential energy\n* Steady-flow system\n* Determine properties using `pyCalor`.  \n* We assume that there is no pressure drop across the heat exchanger from the inlets to the outlets. \n    \nPhysical Laws and Governing Equations\nWater control volume, state 1 to 2\nConservation of mass:\n$$\\frac{dm_\\text{CV}}{dt} = \\dot{m}_\\text{in} - \\dot{m}_\\text{out} $$\n\nSteady flow:\n$$0 = \\dot{m}_\\text{in} - \\dot{m}_\\text{out} $$\n$$\\dot{m}_\\text{in} = \\dot{m}_\\text{out} = \\dot{m}_\\text{water}$$\n\nConservation of energy:\nConservation of mass:\n$$\\frac{dE_\\text{CV}}{dt} = \\dot{E}_\\text{in} - \\dot{E}_\\text{out} $$\n\nSteady flow:\n$$0 = \\dot{E}_\\text{in} - \\dot{E}_\\text{out} $$\n$$\\dot{E}_\\text{in} = \\dot{E}_\\text{out}$$\n\n$$\\dot{W}_\\text{in} + \\dot{Q}_\\text{in} + \\dot{m}_\\text{water} \\left(h_1 + (w_1^2/2) + g z_1 \\right) = \\dot{W}_\\text{out} + \\dot{Q}_\\text{out} + \\dot{m}_\\text{water} \\left(h_2 + (w_2^2/2) + g z_2 \\right)$$\n\nNeglecting changes in kinetic and potential energy; no work transfer; heat is transferred into the water:\n$$\\left( \\dot{Q}_\\text{in} \\right)_\\text{water} = \\dot{m}_\\text{water} \\left( h_2 - h_1 \\right)$$\n\nR-134a control volume, state 3 to 4\nConservation of mass:\n$$\\frac{dm_\\text{CV}}{dt} = \\dot{m}_\\text{in} - \\dot{m}_\\text{out} $$\n\nSteady flow:\n$$0 = \\dot{m}_\\text{in} - \\dot{m}_\\text{out} $$\n$$\\dot{m}_\\text{in} = \\dot{m}_\\text{out} = \\dot{m}_\\text{R-134a}$$\n\nSteady flow:\n$$0 = \\dot{E}_\\text{in} - \\dot{E}_\\text{out} $$\n$$\\dot{E}_\\text{in} = \\dot{E}_\\text{out}$$\n\n$$\\dot{W}_\\text{in} + \\dot{Q}_\\text{in} + \\dot{m}_\\text{R-134a} \\left(h_3 + (w_3^2/2) + g z_3 \\right) = \\dot{W}_\\text{out} + \\dot{Q}_\\text{out} + \\dot{m}_\\text{R-134a} \\left(h_4 + (w_4^2/2) + g z_4 \\right)$$\n\nNeglecting changes in kinetic and potential energy; no work transfer; heat is transferred out of the refrigerant:\n$$\\left( \\dot{Q}_\\text{out} \\right)_\\text{R-134a} = \\dot{m}_\\text{R-134a} \\left( h_3 - h_4 \\right)$$\n\nCombining water and R-134a control volumes\nThere is no heat or work transferred in or out of the heat exchanger; therefore:\n\n$$\\left( \\dot{Q}_\\text{out} \\right)_\\text{R-134a} = \\left( \\dot{Q}_\\text{in} \\right)_\\text{water}$$\n\nTherefore, we can combine the above equations and solve for the water mass flow rate:\n\n$\\dot{m}_\\text{water} = \\dot{m}_\\text{R-134a} \\frac{\\left( h_3 - h_4 \\right)}{\\left( h_2 - h_1 \\right)}$\n\nWe see from this that we need to know the enthalpies at the inlets and outlets of the heat exchanger. From that we can calculate the water mass flow rate. ",
+  "solution_code": [
+    {
+      "step_name": "Properties",
+      "code": [
+        "# Water is used to cool a refrigerant (R-134a). ",
+        "!pip install pyCalor",
+        "from pyCalor import thermo as th",
+        "",
+        "# Here are the inlet (state 1) and outlet (state 2) conditions of the water:",
+        "# state 1",
+        "T1_K = 15+273.15",
+        "p1_MPa = 300/1000",
+        "water_1 = th.state('water',p=(p1_MPa,'Mpa'),T=(T1_K,'K'),name='1')",
+        "h1_kJperKg = water_1.h # kJ/kg",
+        "",
+        "# state 2",
+        "T2_K = 25+273.15",
+        "p2_MPa = p1_MPa",
+        "water_2 = th.state('water',p=(p2_MPa,'Mpa'),T=(T2_K,'K'),name='2')",
+        "h2_kJperKg = water_2.h # kJ/kg",
+        "",
+        "# convert to SI units",
+        "h1_JperKg = h1_kJperKg*1000; print(h1_JperKg) # J/kg",
+        "h2_JperKg = h2_kJperKg*1000; print(h2_JperKg) # J/kg",
+        "",
+        "# Here are the inlet (state 3) and outlet (state 4) properties of the refrigerant as well as its mass flow rate, which is given:",
+        "fluid = 'R134a'",
+        "",
+        "# state 3",
+        "T3_K = 70+273.15",
+        "p3_Pa = 1e6",
+        "st3 = th.state(fluid,p=(p3_Pa,'Pa'),T=(T3_K,'K'),name='3')",
+        "h3_JperKg = st3.h*1e3",
+        "",
+        "# state 4",
+        "T4_K = 35+273.15",
+        "p4_Pa = p3_Pa",
+        "st4 = th.state(fluid,p=(p4_Pa,'Pa'),T=(T4_K,'K'),name='4')",
+        "h4_JperKg = st4.h*1e3",
+        "",
+        "# mass flow rate of the refrigerant",
+        "mdot_r134a_kgPerMin = 6",
+        "mdot_r134a_kgPerS = mdot_r134a_kgPerMin/60"
+      ]
+    },
+    {
+      "step_name": "Calculations",
+      "code": [
+        "## 6 Calculations (Code Cell)",
+        "mdot_water_kgPerS = mdot_r134a_kgPerS*(h3_JperKg-h4_JperKg)/(h2_JperKg-h1_JperKg)",
+        "print('(a): water mass flow rate: {0:1.4f} kg/s'.format(mdot_water_kgPerS))",
+        "",
+        "Qout_r134a_JperS = mdot_r134a_kgPerS*(h3_JperKg - h4_JperKg)",
+        "print('(b): Q_out_r134a: {0:1.4f} J/s'.format(Qout_r134a_JperS))"
+      ]
+    }
+  ],
+  "pedagogical_summary": "Heat is transferred out of the refrigerant and into the water. "
+}

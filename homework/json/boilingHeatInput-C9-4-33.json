@@ -1,0 +1,73 @@
+{
+  "problem_id": "boilingHeatInput-C9-4-33",
+  "metadata": {
+    "title": "Water Vapor Boiling/Heating (Two-Stage Closed System)",
+    "topic": "Closed Systems",
+    "difficulty_tags": ["medium", "Fa23", "release"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Calculate the total heat transfer required to first fully vaporize a water mixture at constant pressure, and then superheat it at constant volume.",
+    "raw_problem": "A $V_{\\text{initial}}$ (L) vessel initially contains a mixture of liquid water and vapor at $T_1$ ($^\\circ$C) with $x_1$ percent quality. The mixture is then heated until its temperature is $T_3$ ($^\\circ$C). Calculate the heat transfer, $Q$, required for this process. Assume that the vessel operates at **constant pressure** (i.e. expands) during the vaporization and afterwards it is heated at **constant volume**.",
+    "given_variables_mapping": [
+      {"variable": "$V_{\\text{initial}}$", "placeholder": "{{params.vol}}", "units": "L"},
+      {"variable": "$T_1$", "placeholder": "{{params.temp}}", "units": "$^\\circ$C"},
+      {"variable": "$x_1$", "placeholder": "{{params.x}}", "units": "%"},
+      {"variable": "$T_3$", "placeholder": "{{params.tempf}}", "units": "$^\\circ$C"}
+    ],
+    "goal": "Calculate the total heat transfer, $Q$ (in $\\text{kJ}$), required for the entire process (State 1 $\\rightarrow$ State 3).",
+    "system_assumptions": [
+      "**Closed System** (Constant mass $m$)",
+      "Process 1 $\\rightarrow$ 2 is **Constant Pressure** ($P_2 = P_1$)",
+      "Process 2 $\\rightarrow$ 3 is **Constant Volume** ($V_3 = V_2$)",
+      "Neglect changes in kinetic and potential energy ($\\Delta KE = 0, \\Delta PE = 0$)"
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "First Law of Thermodynamics for a Closed System (Non-Flow Energy Equation)",
+      "Definition of Enthalpy ($h = u + Pv$)"
+    ],
+    "energy_balance_equation": "The total heat transfer $Q$ is the sum of the heat transferred in the two distinct processes:\\n$$\\mathbf{Q = Q_{12} + Q_{23}}$$\\n\\n1. **Process 1 $\\rightarrow$ 2 (Constant P, Expansion):** The First Law simplifies to the change in enthalpy:\\n$$\\mathbf{Q_{12} = m (h_2 - h_1)}$$\\n\\n2. **Process 2 $\\rightarrow$ 3 (Constant V, No work):** The First Law simplifies to the change in internal energy:\\n$$\\mathbf{Q_{23} = m (u_3 - u_2)}$$\\n\\nTotal Heat Transfer: $Q = m [ (h_2 - h_1) + (u_3 - u_2) ]$",
+    "solution_steps": [
+      "**Step 1: Determine Mass ($m$) and State 1 Enthalpy ($\\\\mathbf{h_1}$)**\\nUse $T_1$ and $x_1$ with **`pyCalor`** to find the initial specific volume $v_1$ and specific enthalpy $h_1$. Calculate mass: $m = V_{\\text{initial}} / v_1$ (must convert $V_{\\text{initial}}$ from L to $\\text{m}^3$).",
+      "**Step 2: Determine State 2 Properties ($\\\\mathbf{h_2, v_2}$)**\\nState 2 is saturated vapor ($x_2=1$) at the same temperature $T_1$. Use **`pyCalor`** to find $h_2$, $v_2$, and $u_2$.",
+      "**Step 3: Determine State 3 Internal Energy ($\\\\mathbf{u_3}$)**\\nState 3 is defined by $T_3$ and $v_3 = v_2$ (Constant Volume heating from State 2). Use **`pyCalor`** with $T_3$ and $v_3$ to find the final specific internal energy $u_3$.",
+      "**Step 4: Calculate Total Heat Transfer ($Q$)**\\nCalculate the total heat transfer $Q$ using the mass $m$ and the specific energy changes from the two processes:\\n$$\\mathbf{Q = m [ (h_2 - h_1) + (u_3 - u_2) ]}$$"
+    ]
+  },
+  "property_module": {
+    "name": "**pyCalor**",
+    "usage_note": "All properties ($v, h, u$) for water/steam at states 1, 2, and 3 must be determined using the **`pyCalor`** Python module. This involves finding properties for a saturated mixture (State 1), saturated vapor (State 2), and superheated vapor (State 3)."
+  },
+  "references": {
+    "course_outline_module_1": [
+      {
+        "key": "Fa25-L4c-1.0",
+        "title": "**Electric heating of water vapor at constant pressure**",
+        "lecture_topic": "Closed Systems",
+        "context": "This subtopic is directly relevant as it introduces the crucial simplification for the first stage of the problem (constant pressure, closed system: $\\\\mathbf{Q = m \\\\Delta h}$) using the same working fluid, **water vapor**."
+      },
+      {
+        "key": "Fa25-L4c-2.0",
+        "title": "**Closed System Example**",
+        "lecture_topic": "Closed Systems",
+        "context": "This comprehensive example subtopic covers the general approach to solving a multi-stage or complex **Closed System** problem using the First Law, which is necessary for integrating the two distinct processes (Constant $P$ and Constant $V$) in this problem."
+      }
+    ],
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 4,
+      "chapter_title": "Energy Analysis of Closed Systems",
+      "sections": [
+        "Moving Boundary Work",
+        "The First Law of Thermodynamics for Closed Systems"
+      ]
+    },
+    "related_course_example": {
+      "example_title": "**electricHeatingWaterVaporConstantPressure**",
+      "lecture_subtopic_key": "Fa25-L4c-1.0",
+      "description": "This is the primary related example as it demonstrates the use of **water properties** and the core equation $\\\\mathbf{Q = m \\\\Delta h}$ for a **constant pressure closed system** (Process 1 $\\rightarrow$ 2)."
+    }
+  }
+}

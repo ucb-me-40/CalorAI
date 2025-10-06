@@ -1,0 +1,66 @@
+{
+  "lectureId": "1_m7wk2v5u",
+  "courseCaptureId": "rtl_course_capture",
+  "lecture": "07-prework-entropy",
+  "title": "Entropy",
+  "videoTitle": "ME40 - Video 7 - Entropy (edited)",
+  "module": "module-two",
+  "year": "Fa23",
+  "instructor": "tschutzius",
+  "topics": [
+    {
+      "name": "Entropy",
+      "description": "Entropy."
+    }
+  ],
+  "subtopics": [
+    {
+      "key": "L7e-2.1",
+      "topic": "Reversible vs. Irreversible Work Example",
+      "summary": "Demonstrates the concept of reversibility using an ideal gas and tiny weights. The **irreversible process** (removing all weights at once) yields less work than the **reversible process** (removing tiny weights sequentially), showing that the latter is the maximum possible work.",
+      "time_range": "00:00 - 03:00"
+    },
+    {
+      "key": "L7e-2.2",
+      "topic": "Clausius Inequality",
+      "summary": "Introduces the **Clausius Inequality**, which is the mathematical statement of the second law for a cycle: $$\\oint \\\\frac{\\delta Q}{T} \\\\le 0$$. This inequality holds for all cycles (reversible and irreversible).",
+      "time_range": "03:00 - 05:00"
+    },
+    {
+      "key": "L7e-2.3",
+      "topic": "Introduction to Entropy (S)",
+      "summary": "Defines **Entropy** ($$S$$) as a property of the system, based on the equality for a reversible cycle: $$\\oint \\\\frac{\\delta Q}{T} = 0$$. Therefore, for a reversible process, the differential change in entropy is $$\\text{d}S = \\\\left(\\\\frac{\\delta Q}{T}\\\\right)_{\\\\text{rev}}$$.",
+      "time_range": "05:00 - 08:30"
+    },
+    {
+      "key": "L7e-2.4",
+      "topic": "Isentropic Process",
+      "summary": "Defines an **Isentropic Process** as a reversible, adiabatic process. Since both $$\\delta Q=0$$ (adiabatic) and irreversibilities are zero (reversible), then $$\\text{d}S=0$$. Entropy remains constant in an isentropic process.",
+      "time_range": "08:30 - 09:30"
+    },
+    {
+      "key": "L7e-2.5",
+      "topic": "The Increase of Entropy Principle",
+      "summary": "Introduces the **Increase of Entropy Principle** for an isolated system: $$\\Delta S_{\\\\text{isolated}} \\\\ge 0$$. This principle is derived from the Clausius inequality and confirms that the entropy of a closed system can never decrease.",
+      "time_range": "09:30 - 11:30"
+    },
+    {
+      "key": "L7e-2.6",
+      "topic": "Total Entropy Change (Generation)",
+      "summary": "The **total entropy change** in a process is defined by the sum of heat transfer and entropy generation ($$S_{\\\\text{gen}}$$): $$\\Delta S = \\\\int_{1}^{2} \\\\frac{\\delta Q}{T} + S_{\\\\text{gen}}$$. For a process to be possible, we must have $$\\Delta S \\\\ge 0$$ for the isolated system.",
+      "time_range": "11:30 - 13:00"
+    },
+    {
+      "key": "L7e-2.7",
+      "topic": "Entropy Change for Solids and Liquids",
+      "summary": "Derives the entropy change for solids and liquids, assuming constant specific heat ($$c$$): $$\\Delta s \\\\approx c \\\\ln \\\\left(\\\\frac{T_2}{T_1}\\\\right)$$.",
+      "time_range": "13:00 - 14:30"
+    },
+    {
+      "key": "L7e-2.8",
+      "topic": "Entropy Change During Phase Change",
+      "summary": "Calculates the entropy change during a phase change (like melting/freezing or boiling/condensation) at constant temperature ($$T_0$$): $$\\Delta S = \\\\frac{Q}{T_0} = \\\\frac{m h_{\\\\text{fusion/vaporization}}}{T_0}$$ (or $$\\Delta s = \\\\frac{h}{T_0}$$ on a per-mass basis).",
+      "time_range": "14:30 - 17:57"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "lectureId": "1_97hqf37r",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "05c",
+  "title": "Mass and Energy Analysis of Control Volumes",
+  "videoTitle": "ME40 - 22 Sept 2025 - Lecture 5c (edited)",
+  "module": "module-one",
+  "topic": "Control Volumes",
+  "subtopics": [
+    {
+      "key": "Fa25-L5c-1.0",
+      "title": "Throttling and Expansion Valves",
+      "summary": "In this problem, Prof. Schutzius analyzes a throttling process. This is an important component of a refrigeration system.",
+      "time_range": "00:28 - 19:45",
+      "topics": ["Control Volumes","Refrigeration"],
+      "detailed_summary": "The segment focuses on **throttling valves/expansion valves** within a refrigeration cycle, emphasizing that it is an **isenthalpic process** ($\\mathbf{h_{\\text{in}} = h_{\\text{out}}}$). This condition is met by assuming **no work** and **no heat transfer** (adiabatic/insulated, which is valid for a small orifice or porous plug). This expansion causes a temperature decrease, known as the **Joule-Thompson effect**. The process is visualized on a **pressure-enthalpy (p-h) diagram**, where a saturated liquid at high pressure ($x=0$) expands along a constant enthalpy line into a two-phase liquid-vapor mixture at lower pressure.",
+      "examples": ["throttlingPyCalor"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L5c-2.0",
+      "title": "Heat Exchanger",
+      "summary": "Example: Energy analysis of a steady flow system: Heat exchanger: R134a refrigerant. It enters a heat exchanger as a vapor with a mass flow rate of 6 kg/min and leaves as a subcooled liquid. Neglect pressure drops. Determine the mass flow rate of the cooling water and the heat transfer rate from the refrigerant to the water.",
+      "time_range": "19:46 - 41:14",
+      "topics": ["Control Volumes"],
+      "detailed_summary": "The segment analyzes a **heat exchanger** under **Steady-Flow Energy Analysis (SFEA)**. The overall energy balance for the adiabatic heat exchanger simplifies to $\\mathbf{\\sum \\dot{m}_{\\text{in}} h_{\\text{in}} = \\sum \\dot{m}_{\\text{out}} h_{\\text{out}}}$. Applying this to the two streams (refrigerant, $R$, and water, $w$): $\\mathbf{\\dot{m}_R (h_1 - h_2) = \\dot{m}_w (h_4 - h_3)}$. The problem involves determining the mass flow rate of the cooling water ($\\dot{m}_w$) and the heat transfer rate from the refrigerant to the water ($\\mathbf{\\dot{Q}_{\\text{out}} = \\dot{m}_R (h_1 - h_2)}$), which is also equal to the heat gained by the water ($\\mathbf{\\dot{Q}_{\\text{in}} = \\dot{m}_w (h_4 - h_3)}$).",
+      "examples": ["heatExchangerPyCalor"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L5c-3.0",
+      "title": "Energy analysis of unsteady flow processes",
+      "summary": "Prof. Schutzius explains how one can analyze an unsteady flow process.",
+      "time_range": "41:15 - 50:26",
+      "topics": ["Control Volumes"],
+      "detailed_summary": "The segment introduces **unsteady-flow analysis**, where **mass and energy within the Control Volume (CV) change over time** (e.g., tank charging/discharging). The governing equations are the **General Mass Balance** ($\\mathbf{\\dot{m}_{\\text{in}} - \\dot{m}_{\\text{out}} = \\frac{dm_{\\text{CV}}}{dt}}$) and the **General Energy Balance**.",
+      "examples": ["co2ReliefModeling"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

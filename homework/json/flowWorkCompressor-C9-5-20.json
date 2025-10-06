@@ -1,0 +1,66 @@
+{
+  "problem_id": "flowWorkCompressor-C9-5-20",
+  "metadata": {
+    "title": "Flow Work with Ideal Gas in Compressor",
+    "topic": "Control Volumes",
+    "difficulty_tags": ["easy", "Fa25"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the change in specific flow work for air passing through a compressor, given the inlet and exit states.",
+    "raw_problem": "An air compressor compresses $V_1$ ($\\text{L}$) of air at $p_1$ (kPa) and $T_1$ ($^\\circ\\text{C}$) to $p_2$ (kPa) at $T_2$ ($^\\circ\\text{C}$). Determine the specific flow work required by the compressor.",
+    "given_variables_mapping": [
+      {"variable": "$V_1$", "placeholder": "{{params.intakeVolume}}", "units": "L"},
+      {"variable": "$p_1$", "placeholder": "{{params.initialPressure}}", "units": "kPa"},
+      {"variable": "$T_1$", "placeholder": "{{params.initialTemperature}}", "units": "$^\\circ$C"},
+      {"variable": "$p_2$", "placeholder": "{{params.finalPressure}}", "units": "kPa"},
+      {"variable": "$T_2$", "placeholder": "{{params.finalTemperature}}", "units": "$^\\circ$C"}
+    ],
+    "goal": "Determine the net specific flow work, $\\Delta w_{\\text{flow}}$ (in $\\text{kJ/kg}$).",
+    "system_assumptions": [
+      "**Steady-Flow System** (Compressor)",
+      "One Inlet (1) and One Outlet (2)",
+      "**Air is an Ideal Gas**",
+      "Specific heats $c_p$ and $c_v$ are constant."
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "Definition of Flow Work (or Flow Energy)",
+      "Ideal Gas Equation of State (and relationship to enthalpy)"
+    ],
+    "flow_work_definition": "The specific flow work ($w_{\\text{flow}}$), or flow energy, is the energy required to push a fluid element into or out of the control volume. It is defined as:\\n$$w_{\\text{flow}} = P v$$ \\nWhere $P$ is pressure and $v$ is specific volume. The net flow work is the difference between the flow work leaving and the flow work entering the compressor:\\n$$\\Delta w_{\\text{flow}} = w_{\\text{flow, out}} - w_{\\text{flow, in}} = P_2 v_2 - P_1 v_1$$",
+    "ideal_gas_simplification": "For an Ideal Gas, the relationship between specific enthalpy ($h$) and specific internal energy ($u$) is $h = u + P v$. Therefore, the specific flow work can be expressed as:\\n$$P v = h - u$$ \\nSubstituting this into the net flow work equation:\\n$$\\Delta w_{\\text{flow}} = (h_2 - u_2) - (h_1 - u_1)$$ \\n*For air (an ideal gas), this can also be expressed in terms of constant specific heats:*\\n$$\\Delta w_{\\text{flow}} = (c_p T_2 - c_v T_2) - (c_p T_1 - c_v T_1) = R (T_2 - T_1)$$\\n*The solution should use the form based on specific enthalpy and internal energy, where $h = c_p T_{\\text{abs}}$ and $u = c_v T_{\\text{abs}}$.*",
+    "solution_steps": [
+      "**Step 1: Determine Specific Enthalpy ($h$) and Internal Energy ($u$) at the Inlet (1)**\\nUse the absolute temperature $T_1$ to find the specific enthalpy $h_1$ and internal energy $u_1$ (in $\\text{kJ/kg}$), assuming $h = c_p T_{\\text{abs}}$ and $u = c_v T_{\\text{abs}}$ for an ideal gas with constant specific heats.",
+      "**Step 2: Determine Specific Enthalpy ($h$) and Internal Energy ($u$) at the Exit (2)**\\nUse the absolute temperature $T_2$ to find the specific enthalpy $h_2$ and internal energy $u_2$ (in $\\text{kJ/kg}$).",
+      "**Step 3: Calculate the Net Specific Flow Work ($\\Delta w_{\\text{flow}}$)**\\nCalculate the difference between the flow work leaving and the flow work entering:\\n$$\\Delta w_{\\text{flow}} = (h_2 - u_2) - (h_1 - u_1)$$ \\n*Note: Since the problem does not provide $c_p$ or $c_v$, the student must look up these values for air, typically $c_p \\approx 1.007 \\text{ kJ}/(\\text{kg}\\cdot\\text{K})$ and $c_v \\approx 0.718 \\text{ kJ}/(\\text{kg}\\cdot\\text{K})$.*"
+    ]
+  },
+  "property_module": {
+    "name": "**Ideal Gas Model**",
+    "usage_note": "Although the core problem relies on the ideal gas relations ($h = c_p T$, $u = c_v T$, $h - u = R T$), the concept of specific flow work is introduced within the framework of **`pyCalor`** and steady-flow energy analysis. Since the property module is not strictly necessary for this ideal gas calculation, the constants for air must be used."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L5b-3.0",
+      "title": "Example: Energy Analysis of a Steady-flow System: Compressor",
+      "lecture_topic": "Control Volumes",
+      "context": "Compressors are a key steady-flow engineering device, and the analysis of flow work ($P v$) is critical to understanding the difference between the closed system and control volume energy balances."
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 5,
+      "chapter_title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Forms of Energy",
+        "Some Steady-Flow Engineering Devices"
+      ]
+    },
+    "related_course_example": {
+      "example_title": "compressorPyCalor",
+      "lecture_subtopic_key": "Fa25-L5b-3.0",
+      "description": "Example: Energy Analysis of a Steady-flow System: Compressor."
+    }
+  }
+}

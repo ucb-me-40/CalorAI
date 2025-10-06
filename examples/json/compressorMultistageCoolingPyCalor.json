@@ -1,0 +1,43 @@
+{
+  "problem_title": "compressorMultistageCoolingPyCalor",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "medium"
+  ],
+  "topic": "Entropy",
+  "notes": ".",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "",
+      "subtopics": [
+        {
+          "key": "Fa25-L7c-3.0",
+          "title": "Multisage Compressor With Cooling"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 7,
+      "title": "Entropy",
+      "sections": [
+        "Reversible Steady-Flow Work",
+        "Minimizing Compressor Work"
+      ]
+    }
+  },
+  "problem_statement_raw": "Air is compressed in a two-stage compressor from 100 kPa and 295 K to 900 kPa. An intercooler is used to cool the air back to 295 K at a pressure of 300 kPa. All processes are isentropic, and a mass flow rate of 0.2 kg/s is maintained. \n\nGoal:\n(a) Determine the total work input for the compressor. \n(b) Determine the work input if the air was compressed in a single stage isentropic compressor.",
+  "schematic": "Draw the schematic that shows a two-stage compressor with an intercooler (heat exchanger) in between.",
+  "physical_laws_and_assumptions": "Control Volume (mass crosses the boundary).\nAir is an Ideal Gas (constant specific heats, $c_p$, $c_v$, $R$).\nNeglect kinetic and potential energy ($\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$).\nIsentropic Process for both compressor stages ($\\Delta s = 0$).\nSteady-flow process ($\\Delta m_{\\text{CV}}= 0$, $\\Delta E_{\\text{CV}}= 0$).\nIntercooler is isobaric on the air side ($p_2 = p_3$).\nIntercooler cools back to initial temperature ($T_3 = T_1$).\nSingle inlet and outlet for each component.\n\nThe total work is the sum of the work for each compressor stage:\n$$ \\frac{\\dot{W}_{\\text{in,total}}}{\\dot{m}} = \\frac{\\dot{W}_{\\text{in,stage 1}}}{\\dot{m}} + \\frac{\\dot{W}_{\\text{in,stage 2}}}{\\dot{m}} $$\n\nFor each stage, the energy balance for a steady-flow adiabatic device gives the shaft work per unit mass:\n$$ \\frac{\\dot{W}_{\\text{in}}}{\\dot{m}} = h_{\\text{out}} - h_{\\text{in}} $$\n\nSo, the total work is:\n$$ \\frac{\\dot{W}_{\\text{in,total}}}{\\dot{m}} = (h_2 - h_1) + (h_4 - h_3) $$\n\nFor the isentropic process of an ideal gas, we can use the T-P relation:\n$$ \\left( \\frac{T_2}{T_1} \\right)_{s = const} = \\left(\\frac{p_2}{p_1} \\right)^{(k-1)/k} $$\n\nAnd the enthalpy change:\n$$ h_{\\text{out}} - h_{\\text{in}} = c_p (T_{\\text{out}} - T_{\\text{in}}) $$\n\nFor Minimum Work Input:\nFor a two-stage compressor with intercooling, the minimum work input occurs when the intermediate pressure $p_i$ is the geometric mean of the inlet and final pressures:\n$$ p_i = \\sqrt{p_1 p_f} $$\n\nIn this problem, the intermediate pressure is given as $p_2 = 300 \\text{ kPa}$. We can check if this is the optimal pressure.\n$$ p_{\\text{optimal}} = \\sqrt{(100 \\text{ kPa}) \\times (900 \\text{ kPa})} = \\sqrt{90000} \\text{ kPa} = 300 \\text{ kPa} $$\nThe given pressure is the optimal one.",
+  "pedagogical_summary": "Multistage vs. Single Stage: For a multi-stage compressor with intercooling, the total work input is the sum of the work input for each stage. The advantage of the intercooler is that it lowers the specific volume of the gas, $\\nu_3 < \\nu_2$, thus decreasing the work input for the second stage. This is why the total work for the two-stage compressor ($W_{\\text{in}} = 59.1 \\text{ kW}$) is less than the work for the single-stage compressor ($W_{\\text{in,single}} = 78.5 \\text{ kW}$). \nOptimal Intercooling Pressure: The work input is minimized when the compression ratio is the same for each stage. Since the inlet and final temperatures are the same, the minimum work input occurs when $p_2 / p_1 = p_4 / p_3$, which leads to $p_{\\text{intermediate}} = \\sqrt{p_1 p_{\\text{final}}}$. In this case, $p_{\\text{intermediate}} = \\sqrt{100 \\times 900} = 300 \\text{ kPa}$, which is the pressure given in the problem.\nThermodynamic Basis: The work input for a steady-flow, reversible (isentropic) compression is given by the change in enthalpy: $\\frac{\\dot{W}_{\\text{in}}}{\\dot{m}} = \\Delta h$. Using the pyCalor library (which uses the fundamental property relations for real fluids) is the most accurate approach, as opposed to assuming constant specific heats for the entire process.",
+  "solution_code": [
+    {
+      "step_name": "Determine Stage Properties",
+      "code": "## 5. Properties (Code Cell)\n!pip install pyCalor\nfrom pyCalor import thermo as th\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Given\np1_Pa = 100000 # Pa (100 kPa)\nT1_K = 295 # K\np4_Pa = 900000 # Pa (900 kPa)\np2_Pa = 300000 # Pa (300 kPa) - Intercooler pressure\nT3_K = 295 # K - Cooled back to initial temperature\nmdot_kgPerS = 0.2 # kg/s\nsubstance = 'air'\n\n# State 1: T1, p1\nst1 = th.state(substance,T=(T1_K,'K'),p=(p1_Pa,'Pa'),name='1')\nh1_JperKg = st1.h*1e3 # Convert kJ/kg to J/kg\ns1_JperKgperK = st1.s*1e3 # Convert kJ/kg K to J/kg K\n\n# State 2: p2, s2=s1\ns2_JperKgperK = s1_JperKgperK\nst2 = th.state(substance,s=(s2_JperKgperK,'J/kg K'),p=(p2_Pa,'Pa'),name='2')\nh2_JperKg = st2.h*1e3\nT2_K = st2.T\n\n# State 3: T3, p3=p2\nT3_K = T1_K\np3_Pa = p2_Pa\nst3 = th.state(substance,T=(T3_K,'K'),p=(p3_Pa,'Pa'),name='3')\nh3_JperKg = st3.h*1e3\ns3_JperKgperK = st3.s*1e3\n\n# State 4: p4, s4=s3\ns4_JperKgperK = s3_JperKgperK\nst4 = th.state(substance,s=(s4_JperKgperK,'J/kg K'),p=(p4_Pa,'Pa'),name='4')\nh4_JperKg = st4.h*1e3\nT4_K = st4.T"
+    },
+    {
+      "step_name": "Calculate Total and Single-Stage Work",
+      "code": "# 6 Calculations (Code Cell)\n# Work in\nWdot_W = mdot_kgPerS*((h2_JperKg - h1_JperKg)+(h4_JperKg - h3_JperKg))\nWdot_kW = Wdot_W/1000# ; print(Wdot_kW)\nprint('(a) Wdot_kW = {0:1.1f} kW.'.format(Wdot_kW))\n\n# Now we can see how much work we would have to do if we were to do the same process with a single compressor.\ns2_JperKgperK_ = s1_JperKgperK\nst2_ = th.state(substance,s=(s2_JperKgperK_,'J/kg K'),p=(p4_Pa,'Pa'),name='2_')\n\nh2_JperKg_ = st2_.h*1e3\nT2_K_ = st2_.T\nWdot_W_ = mdot_kgPerS*((h2_JperKg_ - h1_JperKg))\nWdot_kW_ = Wdot_W_/1000# ; print(Wdot_kW)\nprint('(b) Wdot_kW = {0:1.1f} kW.'.format(Wdot_kW_))"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "problem_title": "adiabaticExpansion",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "hard"
+  ],
+  "topic": "Properties",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_fclugwz7",
+      "subtopics": [
+        {
+          "key": "Fa25-L4a-5.0",
+          "title": "Moving boundary work: Adiabatic process"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 4,
+      "title": "Energy Analysis of Closed Systems",
+      "sections": [
+        "Moving Boundary Work",
+        "Energy Balance for Closed Systems",
+        "Specific Heats",
+        "Internal Energy, Enthalpy, and Specific Heats of Ideal Gases"
+      ]
+    },
+    "notes": ""
+  },
+  "problem_statement_raw": "Goal: Show that for an ideal gas in a closed system undergoing adiabatic expansion, that $ p V^\\kappa = \\text{const} $.",
+  "schematic": "Show a piston expanding some distance. The control volume should be drawn inside of the piston cylinder. No heat should be transferred in or out. Work should be shown to be transferred out.",
+  "physical_laws_and_assumptions": "Assumptions and Approximations:\nIdeal gas law applies\nNo heat transfer.\nNeglect changes in kinetic and potential energy.\nWork is transferred only through boundary work ($p dV$).\nConstant values for specific heat\n\nPhysical Laws and Governing Equations:\nConservation of energy\nDefinition of specific heat and its relation to changes in internal energy\n\n$$\\Delta E_\\text{CV} = E_\\text{in} - E_\\text{out} $$\n\n$$\\Delta U + \\Delta KE + \\Delta PE = (W_\\text{in} + Q_\\text{in}) - (W_\\text{out} + Q_\\text{out}) $$\n\n$$\\Delta U = - W_\\text{out}$$\n\n$$\\Delta U = - W_\\text{out}$$\n\nWe can write this in differential form:\n\n$$dU = - \\delta W_\\text{out} $$\n\n$$dU = - p dV \\tag{1}$$\n\nRecall the definition of $c_V$:\n\n$$c_V = \\left( \\frac{\\partial u}{\\partial T} \\right)_V$$\n\nThat is, if we transfer heat to a control volume, and if the volume is kept constant, then changes in internal energy can be related to changes in temperature through a constant. \n\n$$\\implies du = c_V dT \\tag{2}$$\n\nCombining equations (1) and (2), and including the mass of the gas in the piston, $m$, we have:\n\n$$m du = m c_V dT = - p dV \\tag{3}$$\n\nWe would like to replace temperature with $p$ and $V$. For this we can use the ideal gas law:\n\n$$p V = m R T \\tag{4}$$\n\nTaking the differential:\n\n$$d \\left(p V\\right) = m R dT$$\n\n$$V dp + p dV = m R dT$$\n\nRearranging:\n\n$$dT = \\frac{V dp + p dV}{m R} \\tag{5}$$\n\nCombining equations (5) and (3), we have:\n\n$$m c_V \\left( \\frac{V dp + p dV}{m R} \\right) = - p dV$$\n\nSimplifying:\n\n$$c_V \\left( V dp + p dV \\right) = - R p dV$$\n\n$$ c_V V dp + c_V p dV + R p dV = 0 $$\n\n$$ (c_V + R) p dV + c_V V dp = 0 $$\n\n$$ \\frac{(c_V + R)}{c_V}\\frac{dV}{V} + \\frac{dp}{p} = 0 $$\n\n$$ \\frac{(c_V + R)}{c_V}\\int \\frac{dV}{V} + \\int \\frac{dp}{p} = 0 $$\n\n$$ \\frac{(c_V + R)}{c_V} \\ln V + \\ln p = \\text{const} $$\n\nAssuming constant specific heats, we can define a constant:\n\n$$ \\kappa \\equiv \\frac{(c_V + R)}{c_V} \\tag{7}$$\n\n$$ \\kappa \\ln V + \\ln p = \\text{const} $$\n\n$$ \\ln V^\\kappa + \\ln p = \\text{const} $$\n\n$$ \\ln pV^\\kappa = \\text{const} $$\n\n$$ pV^\\kappa = \\text{const} \\tag{8}$$",
+  "pedagogical_summary": "We were able to prove that $p V^\\kappa = \\text{constant}$ for an adiabatic expansion process. We also see from this that we are able to relate pressure to volume for a process from A to B. That means we will be able to determine the boundary work done for such a process. This will be useful when we start to analyze cycles, such as the Carnot cycle, which has adiabatic expansion and compression processes.",
+  "solution_code": [
+    {
+      "step_name": "Define Initial and Process Variables",
+      "code": "## 5. Properties (Code Cell)\n# we can determine the specific heat of air at room temperature and pressure conditions\n!pip install pyCalor\nfrom pyCalor import thermo as th\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nT_C = 20\np_Pa = 101325\nsubstance = 'air'\n\nst = th.state(substance,T=(T_C,'C'),p=(p_Pa,'Pa'))\ncp_kJperKgPerK = st.cp\ncv_kJperKgPerK = st.cv\nR_kJperKgPerK = st.R\n\nk = cp_kJperKgPerK/cv_kJperKgPerK"
+    },
+    {
+      "step_name": "Calculate Final State and Work",
+      "code": "## 6. Calculations (Code Cell)\n# Calculate other properties using the definitions from the derivations above\n\n# Ideal Gas Law\n# p V = m R T => m = p V / (R T)\n# We need an initial volume, V_A. Let's assume some values for the initial state A\nV_A = 0.01 # m^3\nm_kg = (p_Pa * V_A) / (R_kJperKgPerK * 1000 * (T_C + 273.15)) # Convert R to J/kg-K and T to K\n\n# Now, calculate a final volume V_B (expansion)\nV_B = 0.05 # m^3\n\n# State B Calculation\n# Adiabatic process: p V^k = constant\nP_final_adiabatic = p_Pa * (V_A/V_B)**k # (Pa)\nT_final_adiabatic = P_final_adiabatic * V_B / (m_kg * R_kJperKgPerK * 1000) - 273.15 # Convert R and back to C\n\n# Boundary Work (Adiabatic)\n# W_b = (p_B V_B - p_A V_A) / (1-k)\nW_b_J = (P_final_adiabatic * V_B - p_Pa * V_A) / (1-k)\n\n# Print results\nprint(f\"Initial State (A): p={p_Pa/1000:.2f} kPa, T={T_C:.2f} C, V={V_A:.4f} m^3, k={k:.4f}\")\nprint(f\"Mass of gas: m={m_kg*1000:.2f} g\")\nprint(f\"Final State (B - Adiabatic): p={P_final_adiabatic/1000:.2f} kPa, T={T_final_adiabatic:.2f} C, V={V_B:.4f} m^3\")\nprint(f\"Boundary Work Done: W_b={W_b_J:.2f} J\")\n\n# Plotting the P-V diagram\nV_range = np.linspace(V_A, V_B, 100)\nP_adiabatic = p_Pa * (V_A/V_range)**k\n\nplt.figure(figsize=(8, 6))\nplt.plot(V_range, P_adiabatic/1000, label='Adiabatic Process ($pV^\\kappa$=const)', color='blue')\nplt.plot(V_A, p_Pa/1000, 'o', color='red', markersize=8)\nplt.annotate('A', xy=(V_A, p_Pa/1000), xytext=(-10, 5), textcoords='offset points', ha='center', fontsize=12)\nplt.plot(V_B, P_final_adiabatic/1000, 'o', color='black', markersize=8)\nplt.annotate('B', xy=(V_B, P_final_adiabatic/1000), xytext=(5, 5), textcoords='offset points', ha='center', fontsize=12)\n# Add labels and title\nplt.xlabel('$V$ (m^3)', fontsize=14)\nplt.ylabel('$p$ (kPa)', fontsize=14) # Changed Pa to kPa for plot clarity\nplt.title('P-V Diagram for Adiabatic Expansion')\nplt.grid(True)\nplt.legend()\nplt.show()"
+    }
+  ]
+}

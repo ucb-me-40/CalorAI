@@ -1,0 +1,63 @@
+{
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "lectureId": "1_3375c5yj",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "04c",
+  "title": "Energy Analysis of Closed Systems",
+  "videoTitle": "ME40 - 15 Sept 2025 - Lecture 4c (edited)",
+  "module": "module-one",
+  "topic": "Closed Systems",
+  "subtopics": [
+    {
+      "key": "Fa25-L4c-1.0",
+      "title": "Electric heating of water vapor at constant pressure",
+      "summary": "We are transferring electrical work into a piston cylinder. The system is kept at constant pressure. Heat is transferred in. Determine the final temperature of the steam. Determine the difference in enthalpy between the initial and final state.",
+      "time_range": "00:29 - 19:46",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This segment introduces and solves an **energy balance problem for a closed system** (fixed mass) involving water vapor in a piston-cylinder device. The process involves **electrical work transferred in ($W_{e, in}$) and heat transfer ($Q$)** while the system is maintained at **constant pressure**. The key theoretical derivation shows that for a constant pressure closed system, the boundary work can be absorbed into the internal energy term ($U$), resulting in a simplified energy balance where $Q_{net, in} + W_{e, in} = \Delta H$ (or $Q_{net, in} + W_{e, in} = m \\\\Delta h$). The example is solved using **superheated steam tables** to determine the final temperature and the change in enthalpy.",
+      "examples": ["electricHeatingWaterVaporConstantPressure"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4c-2.0",
+      "title": "Electrical heating and cooling of a cylinder containing nitrogen at constant pressure",
+      "summary": "A piston cylinder contains nitrogen. Electrical work is transferred in and heat is transferred out. Boundary work is done. The initial state is given. Determine the final temperature.",
+      "time_range": "19:47 - 37:25",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This section solves a second closed-system problem, this time involving **Nitrogen ($N_2$) gas** in a constant-pressure piston-cylinder device. The process involves **electrical work input ($W_{e, in}$), heat loss ($Q_{out}$), and boundary work**. Since Nitrogen is treated as an **ideal gas**, the enthalpy change ($\\Delta h$) is approximated using the **constant pressure specific heat ($C_p$)** and temperature change, $\\\\Delta h \\\\approx C_p \\\\Delta T$. The constant pressure energy balance ($Q_{net, in} + W_{e, in} = m \\\\Delta h$) is used to determine the **final temperature ($T_2$)** of the gas.",
+      "examples": ["nitrogenHeatingWorkTransfer"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4c-3.0",
+      "title": "Internal energy, enthalpy, specific heats of solids and liquids",
+      "summary": "Prof. Schutzius defines specific heat, c_p, c_v, for liquids and solids (incompressible substances).",
+      "time_range": "37:26 - 42:55",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This segment introduces the simplified thermodynamic properties for **incompressible substances** (liquids and solids). For these substances, the **specific heat at constant volume ($c_v$) is equal to the specific heat at constant pressure ($c_p$)**, and both are generally represented as $c$. Furthermore, because the specific volume ($v$) is essentially constant, the **change in internal energy ($\\\\Delta u$) is approximately equal to the change in enthalpy ($\\Delta h$)**. The key relationship derived for property change is $\\\\Delta u \\\\approx \\\\Delta h \\\\approx c \\\\Delta T$.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4c-4.0",
+      "title": "Solve energy balance problems for closed (fixed-mass) systems that involve heat and work interactions",
+      "summary": "Here Prof. Schutzius summarizes the problems he has solved so far for energy balances of closed systems. One was for steam and another was for an ideal gas. ",
+      "time_range": "42:56 - 43:15",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This final section first provides a brief summary of the closed-system energy balance problems solved so far (steam and ideal gas). It then introduces a new example: the **cooling of a hot solid block (iron) dropped into a cold water bath**. The combined system (iron + water) is treated as an **adiabatic, closed system** with no work, meaning the **total change in internal energy is zero** ($\\\\Delta U_{sys} = 0$). The objective is to determine the **final equilibrium temperature ($T_2$)** by setting the sum of the internal energy changes for the iron and the water to zero, using the $\\\\Delta U = m c \\\\Delta T$ approximation for both incompressible components.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4c-5.0",
+      "title": "Cooling of a solid block",
+      "summary": "Prof. Schutzius analyzes the cooling of a solid block. Iron of m = 50 kg with an initial temperature of 80 deg C  is dropped into a water bath of volume 0.5 cubic meters and initially at a temperature of 25 deg C. Determine the temperature when equilibrium is reached.",
+      "time_range": "43:16 - 48:47",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This segment introduces and begins solving a new closed-system example: the **cooling of a hot solid block (iron) dropped into a cold water bath**. This process is treated as an **adiabatic, closed system** with no work, leading to the **total change in internal energy being zero** ($\\\\Delta U_{sys} = 0$). The objective is to determine the **final equilibrium temperature ($T_2$)** by summing the internal energy changes for the iron and the water to zero. Since both are **incompressible substances** (solid and liquid), the property change approximation $\\\\Delta U \\\\approx m c \\\\Delta T$ is used for each component.",
+      "examples": ["coolingSolidBlock"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+    "uuid": "DB2ABA78-A59E-4764-8563-435A4A06FA34",
+    "problem_title": "Resistance Heater Water",
+    "topic": "Introduction",
+    "difficulty_tags": [
+        "easy"
+    ],
+    "workflow_tags": [
+        "draft"
+    ],
+    "course_reference": {
+        "book_reference": {
+            "chapter_number": 1,
+            "title": "Introduction and Basic Concepts"
+        }
+    },
+    "problem_statement_raw": "A resistance heater with a power rating of $\\dot{W}=H$\\ kW operates for $t$\\ hours to heat water to the desired temperature. Determine the total electric energy consumed in kJ. Then, express the same energy in kWh.",
+    "schematic_description": "The problem involves a simple electrical resistance water heater connected to a power supply. The heater has a specified power rating $H$ (in kW) and operates for a certain time duration $t$ (in hours). No diagram is provided, but conceptually the schematic consists of an electrical power input into the heater and a single control volume (the water), with energy transfer by electricity only. There are no moving boundaries, no shafts, and no mass flow shown.",
+    "assumptions_and_approximations": [
+        "Steady operation during the heating period",
+        "No heat losses to the surroundings",
+        "Constant power input",
+        "Electrical energy is fully converted into internal energy of the water",
+        "Standard unit conversions: 1 kW = 1000 W, 1 kWh = 3600 kJ"
+    ],
+    "physical_laws_and_assumptions": "The total electrical energy supplied by a resistance heater is computed from the relation\n\\[ E = \\dot{W} \\times t \\]\nwhere $\\dot{W}$ is the power input in kW and $t$ is the time of operation in hours. To express the result in kJ, we convert power to W and time to seconds:\n\\[ E_{\\mathrm{kJ}} = (\\dot{W}_{\\mathrm{kW}} \\times 1000~\\mathrm{W/kW}) \\times (t_{\\mathrm{hr}} \\times 3600~\\mathrm{s/hr}) \\div 1000 \\]\nTo convert the result to kWh:\n\\[ E_{\\mathrm{kWh}} = \\dot{W}_{\\mathrm{kW}} \\times t_{\\mathrm{hr}} \\]\nNo mass or thermodynamic property calculations are required because the problem deals purely with electrical energy conversion.",
+    "properties_code": [
+        {
+            "step_name": "initial_setup_and_properties",
+            "code_block": "heater_kW = H  # power rating in kW\noperation_time_hr = t  # operation time in hours"
+        }
+    ],
+    "solution_code": [
+        {
+            "step_name": "final_calculation_logic",
+            "code_block": "energy_J = heater_kW * 1000 * operation_time_hr * 3600  # convert kW to W and hr to s\nenergy_kJ = energy_J / 1000\nenergy_kWh = heater_kW * operation_time_hr\nprint(f\"Energy consumed: {energy_kJ:.0f} kJ or {energy_kWh:.0f} kWh\")"
+        }
+    ],
+    "calculations_and_results": "Starting from \\( E = \\dot{W} t \\):\n1. Convert kW to W and hours to seconds.\n   \\[ E_{\\mathrm{J}} = H \\times 1000~\\mathrm{W/kW} \\times t \\times 3600~\\mathrm{s/hr} \\]\n2. Convert joules to kJ:\n   \\[ E_{\\mathrm{kJ}} = \\frac{E_{\\mathrm{J}}}{1000} \\]\n3. Convert to kWh:\n   \\[ E_{\\mathrm{kWh}} = H \\times t \\]\nFor example, if $H = 4~\\mathrm{kW}$ and $t = 3~\\mathrm{hr}$:\n\\[ E_{\\mathrm{J}} = 4 \\times 1000 \\times 3 \\times 3600 = 43\\,200\\,000~\\mathrm{J} \\]\n\\[ E_{\\mathrm{kJ}} = 43\\,200~\\mathrm{kJ} \\]\n\\[ E_{\\mathrm{kWh}} = 12~\\mathrm{kWh} \\]",
+    "pedagogical_summary": "This problem reinforces the basic relationship between power, time, and energy. The key idea is to apply unit conversions carefully: kW to W and hours to seconds. The conversion between kJ and kWh is also straightforward once one remembers that \\(1~\\mathrm{kWh} = 3600~\\mathrm{kJ}\\). Common mistakes include mixing up kW and kWh, or failing to convert hours to seconds when calculating in joules. Because this is a direct electrical energy calculation, no thermodynamic property evaluation is needed—making it an excellent introductory exercise."
+}

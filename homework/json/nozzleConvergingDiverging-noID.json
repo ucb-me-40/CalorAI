@@ -1,0 +1,69 @@
+{
+  "problem_id": "nozzleConvergingDiverging-noID",
+  "metadata": {
+    "title": "Nozzle (Steady-Flow Device)",
+    "topic": "Control Volumes",
+    "difficulty_tags": ["medium", "Fa25"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the exit area of a converging-diverging nozzle.",
+    "raw_problem": "Steam enters a converging-diverging nozzle operating at steady state with an inlet pressure $p_1$, an inlet temperature $T_1$, and an inlet velocity $w_1$. The steam flows through the nozzle with **negligible heat transfer** ($\dot{Q} \\approx 0$) and **no significant change in potential energy** ($\\Delta PE \\approx 0$). At the exit, the pressure is $p_2$ and the velocity is $w_2$. The mass flow rate is $\\dot{m}$.",
+    "given_variables": [
+      {"variable": "$p_1$", "placeholder": "{{params.p1}}", "units": "kPa"},
+      {"variable": "$T_1$", "placeholder": "{{params.T1}}", "units": "$^\\circ$C"},
+      {"variable": "$w_1$", "placeholder": "{{params.vel1}}", "units": "m/s"},
+      {"variable": "$p_2$", "placeholder": "{{params.p2}}", "units": "kPa"},
+      {"variable": "$w_2$", "placeholder": "{{params.vel2}}", "units": "m/s"},
+      {"variable": "$\\dot{m}$", "placeholder": "{{params.mdot}}", "units": "kg/s"}
+    ],
+    "goal": "Determine the exit area of the nozzle, $A_2$ (in m$^2$).",
+    "system_assumptions": [
+      "Steady-Flow System",
+      "Single-Inlet, Single-Outlet",
+      "No Work Transfer ($\\dot{W}=0$)",
+      "Adiabatic ($\\dot{Q} \\approx 0$)",
+      "Negligible Potential Energy Change ($\\Delta PE \\approx 0$)"
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "Conservation of Mass (Continuity Equation)",
+      "First Law of Thermodynamics (Energy Balance for a Steady-Flow Control Volume)"
+    ],
+    "energy_balance_equation": "The steady-flow energy balance simplifies to:\n$$h_1 + \\frac{w_1^2}{2} = h_2 + \\frac{w_2^2}{2}$$",
+    "mass_balance_equation": "The continuity equation relates mass flow rate, density (or specific volume), area, and velocity:\n$$\\dot{m} = \\rho A w = \\frac{1}{v} A w$$",
+    "solution_steps": [
+      "**Step 1: Calculate Exit Enthalpy ($h_2$)**\nRearrange the energy equation to solve for $h_2$:\n$$h_2 = h_1 + \\frac{w_1^2 - w_2^2}{2}$$\n*Note: Ensure kinetic energy terms ($w^2/2$) are in the same units as enthalpy (J/kg or kJ/kg). The velocity units are m/s, so $w^2/2$ is in J/kg, while $h$ from `pyCalor` is typically kJ/kg. Ensure consistent units.*",
+      "**Step 2: Determine Exit Specific Volume ($v_2$)**\nUse the calculated exit enthalpy ($h_2$) and the known exit pressure ($p_2$) to determine the specific volume ($v_2$) at the exit state, using the **`pyCalor`** property module for Steam (Water).",
+      "**Step 3: Calculate Exit Area ($A_2$)**\nRearrange the continuity equation to solve for the exit area:\n$$A_2 = \\frac{\\dot{m} v_2}{w_2}$$"
+    ]
+  },
+  "property_module": {
+    "name": "pyCalor",
+    "usage_note": "Students are required to use the custom **`pyCalor`** Python module to determine thermodynamic properties, not IAPWS or CoolProp.\n\nProperties are found using the `state` class: `st = th.state(substance, property1=value1, property2=value2, name=\"A\")`.\n\nFields available include $p$ (pressure in kPa), $T$ (temperature in K), $v$ (specific volume in m$^3$/kg), and $h$ (specific enthalpy in kJ/kg)."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L5c-1.0",
+      "title": "Steady-flow devices (nozzles and diffusers)",
+      "lecture_topic": "Control Volumes"
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 5,
+      "chapter_title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Steady-Flow Processes",
+        "Some Steady-Flow Engineering Devices"
+      ]
+    },
+    "related_examples": [
+      {
+        "example_title": "heatExchangerPyCalor",
+        "description": "Another Module 1 problem applying the First Law to a **Steady-flow** Control Volume.",
+        "lecture_subtopic_key": "Fa25-L5c-2.0"
+      }
+    ]
+  }
+}

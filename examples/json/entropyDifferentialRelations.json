@@ -1,0 +1,36 @@
+{
+    "problem_title": "entropyDifferentialRelations",
+    "author": "tschutzius",
+    "year": "Fa25",
+    "difficulty_tags": [
+        "medium"
+    ],
+    "topic": "Entropy",
+    "module": "module-two",
+    "lecture_reference": {
+        "lecture_id": "",
+        "subtopics": [
+            {
+                "key": "",
+                "topic": ""
+            },
+            {
+                "key": "",
+                "topic": ""
+            }
+        ]
+    },
+    "book_reference": {
+        "chapter_number": 7,
+        "title": "Entropy",
+        "sections": [
+            "The Tds Relations",
+            "Isentropic Relations for Ideal Gases"
+        ]
+    },
+    "notes": "",
+    "problem_statement_raw": "Consider an adiabatic and reversible process (isentropic) for an ideal gas. Goal: Determine the isentropic relations for an ideal gas from the $Tds$ relations and the ideal gas equation of state. N/A",
+    "physical_laws_and_assumptions": "Ideal Gas $\\Delta s \\approx c_v \\ln \\frac{T_2}{T_1} + R \\ln \\frac{v_2}{v_1} $ $\\Delta s \\approx c_p \\ln \\frac{T_2}{T_1} - R \\ln \\frac{p_2}{p_1} $ The two $Tds$ equations are: $$ T ds = du + p dv $$ $$ T ds = dh - v dp $$ Where $T$ is temperature, $s$ is specific entropy, $u$ is specific internal energy, $h$ is specific enthalpy, $p$ is pressure, and $v$ is specific volume. We can substitute the ideal gas relations $du = c_v dT$ and $dh = c_p dT$ into the $Tds$ equations: $$ T ds = c_v dT + p dv \\tag{1}$$ $$ T ds = c_p dT - v dp \\tag{2}$$ For an isentropic process, $ds = 0$. For an isentropic ideal gas process, equations (1) and (2) simplify to: $$ c_v dT = - p dv \\tag{3}$$ $$ c_p dT = v dp \\tag{4}$$ Isentropic Relation for $T$ and $v$ We can re-arrange equation (3) and substitute $p = R T / v$ from the ideal gas equation of state: $$ c_v \\frac{dT}{T} = - \\frac{R}{v} dv $$ We can integrate the above equation from state 1 to state 2, assuming constant specific heats: $$ c_v \\ln \\frac{T_2}{T_1} = - R \\ln \\frac{v_2}{v_1} $$ Since $R = c_p - c_v$: $$ c_v \\ln \\frac{T_2}{T_1} = - (c_p - c_v) \\ln \\frac{v_2}{v_1} $$ Dividing by $c_v$ and recalling the specific heat ratio $k = c_p / c_v$: $$ \\ln \\frac{T_2}{T_1} = - (k - 1) \\ln \\frac{v_2}{v_1} $$ $$ \\ln \\frac{T_2}{T_1} = \\ln \\left(\\frac{v_2}{v_1}\\right)^{-(k - 1)} $$ $$ \\frac{T_2}{T_1} = \\left(\\frac{v_1}{v_2}\\right)^{k - 1} \\tag{ideal gas, s = const} $$ Isentropic Relation for $T$ and $p$ We can re-arrange equation (4) and substitute $v = R T / p$ from the ideal gas equation of state: $$ c_p \\frac{dT}{T} = \\frac{R}{p} dp $$ We can integrate the above equation from state 1 to state 2, assuming constant specific heats: $$ c_p \\ln \\frac{T_2}{T_1} = R \\ln \\frac{p_2}{p_1} $$ Dividing by $c_p$ and recalling the specific heat ratio $k = c_p / c_v$ and $R = c_p - c_v$: $$ \\ln \\frac{T_2}{T_1} = \\frac{R}{c_p} \\ln \\frac{p_2}{p_1} $$ $$ \\ln \\frac{T_2}{T_1} = \\frac{c_p - c_v}{c_p} \\ln \\frac{p_2}{p_1} = \\left(1 - \\frac{c_v}{c_p}\\right) \\ln \\frac{p_2}{p_1} $$ $$ \\ln \\frac{T_2}{T_1} = \\left(1 - \\frac{1}{k}\\right) \\ln \\frac{p_2}{p_1} = \\left(\\frac{k - 1}{k}\\right) \\ln \\frac{p_2}{p_1} $$ $$ \\frac{T_2}{T_1} = \\left(\\frac{p_2}{p_1}\\right)^{(k-1)/k} \\tag{ideal gas, s = const} $$ Isentropic Relation for $p$ and $v$ We can set the two equations for the temperature ratio equal to each other: $$ \\frac{T_2}{T_1} = \\left(\\frac{p_2}{p_1}\\right)^{[k/k - (1/k)]} = \\left(\\frac{p_2}{p_1}\\right)^{(k-1)/k} \\tag{ideal gas, s = const}$$ $$ \\frac{T_2}{T_1} = \\left(\\frac{v_1}{v_2}\\right)^{k - 1} \\tag{ideal gas, s = const}$$ We can set these two equations equal to each other to get our third isentropic relation: $$\\left(\\frac{p_2}{p_1}\\right)^{(k-1)/k} = \\left(\\frac{v_1}{v_2}\\right)^{k - 1} $$ Which we can re-write as: $$\\left(\\frac{p_2}{p_1}\\right) = \\left(\\frac{v_1}{v_2}\\right)^{k} \\tag{ideal gas, s = const} $$ We can write these three ideal gas isentropic relations more generally as: $$T v^{k - 1} = \\text{const} $$ $$T p^{(1 - k)/k} = \\text{const} $$ $$p v ^k = \\text{const} $$ where $k = k(T)$.",
+    "solution_code": [],
+    "pedagogical_summary": ""
+}

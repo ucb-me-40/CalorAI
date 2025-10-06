@@ -1,0 +1,41 @@
+{
+  "problem_title": "propertiesIndependentDependent",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "medium"
+  ],
+  "topic": "Properties",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_r5zqwxag",
+      "subtopics": [
+        {
+          "key": "Fa25-L1b-5.0",
+          "title": "Independent and Dependent Properties"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 3,
+      "title": "Properties of Pure Substances",
+      "sections": [
+        "Property Diagrams for Phase-Change Processes"
+      ]
+    },
+    "notes": ""
+  },
+  "problem_statement_raw": "In a single-phase region of a pure substance, any two independent intensive properties are sufficient to fix the state. The properties can be related by a general function: $$x_3 = f(x_1, x_2)$$ Where $x_1$ and $x_2$ are the two independent properties, and $x_3$ is the dependent property. Goal: Plot the relationship between a dependent property ($x_3$) and two independent properties ($x_1$ and $x_2$). Plot a 2D curve of $x_3$ vs. $x_2$ by holding $x_1$ constant.",
+  "physical_laws_and_assumptions": "We will use a simple, linear function to represent the property relationship for demonstration purposes. We will assume the properties are pressure ($x_1=p$), specific volume ($x_2=v$), and specific internal energy ($x_3=u$), which are related by $u = f(p, v)$. The function used is: $$u = C_1 + C_2 \\cdot p \\cdot v$$where $C_1 = 5$ and $C_2 = 10$. State Postulate: For a simple compressible system, the state is completely specified by two independent, intensive properties. Generalized Property Function:$$x_3 = f(x_1, x_2)$$Demonstration Function:$$u = C_1 + C_2 \\cdot p \\cdot v$$",
+  "solution_code": [
+    {
+      "step_name": "Properties",
+      "code": "# 5. Properties (Code Cell)\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Define the constants for the demonstration function\nC1 = 5\nC2 = 10\n\n# Define the property relationship function: x3 = f(x1, x2) or u = f(p, v)\ndef property_function(x1, x2):\n    # x1 = p, x2 = v, x3 = u\n    return C1 + C2 * x1 * x2\n\n# Define ranges for the independent variables (p and v)\n# p (pressure) range\nx1_min, x1_max = 10, 50\n# v (specific volume) range\nx2_min, x2_max = 0, 10\n\nx1 = np.linspace(x1_min, x1_max, 50)\nx2 = np.linspace(x2_min, x2_max, 50)\n\n# Create a meshgrid for the surface plot\nX1, X2 = np.meshgrid(x1, x2)\n# Calculate the dependent property (u)\nX3 = property_function(X1, X2)"
+    },
+    {
+      "step_name": "Calculations",
+      "code": "# 6. Calculations (Code Cell)\n\n# 3D Plot of the surface x3 = f(x1, x2)\nfig = plt.figure(figsize=(10, 8))\nax = fig.add_subplot(111, projection='3d')\n\n# Plot the surface\nsurf = ax.plot_surface(X1, X2, X3, cmap='viridis', edgecolor='none')\n\n# Add a color bar\nfig.colorbar(surf, ax=ax, shrink=0.5, aspect=5, label='$x_3=u$ (Dependent Property)')\n\n# Set labels and title for the 3D plot\nax.set_xlabel('$x_1=p$ (Independent Variable 1)', fontsize=12)\nax.set_ylabel('$x_2=v$ (Independent Variable 2)', fontsize=12)\nax.set_zlabel('$x_3=u$ (Dependent Property)', fontsize=12)\nax.set_title(f'Property Surface: $u = {C1} + {C2}pv$', fontsize=16)\n\n# Show the plot\n# plt.show()\n\n# 2D Plot for a fixed x1 (p = constant)\nfixed_x1_value = 30 # Example constant pressure\n\n# Calculate x3 for the fixed x1 and the range of x2\nx3_fixed_x1 = property_function(fixed_x1_value, x2)\n\nplt.figure(figsize=(8, 6))\nplt.plot(x2, x3_fixed_x1, 'b-', label=f'Fixed $x_1=p={fixed_x1_value}$')\n\n# Add a point to highlight the fixed x1\n# We're showing a specific point on the curve, e.g., when x2 = 0\npoint_x2 = 0.0\npoint_x3 = property_function(fixed_x1_value, point_x2)\nplt.scatter(point_x2, point_x3, color='red', s=100, zorder=5, label=f'Point at $x_2$={point_x2}')\nplt.annotate(f'($x_2$={point_x2}, $x_3$={point_x3:.2f})', (point_x2, point_x3),\n             textcoords=\"offset points\", xytext=(0,10), ha='center', fontsize=10, color='red')\n\n# Set labels and title for the 2D plot\nplt.xlabel('$x_2=v$ (Independent Variable 2)', fontsize=12)\nplt.ylabel('$x_3=u$ (Dependent Property P)', fontsize=12)\nplt.title(f'2D Plot: $x_3 = {C1} + {C2}({fixed_x1_value})x_2$ for fixed $x_1 = p = {fixed_x1_value}$', fontsize=14)\nplt.grid(True)\nplt.legend()\nplt.tight_layout()\n# plt.show()"
+    }
+  ],
+  "pedagogical_summary": "This exercise demonstrates the concept of the State Postulate in thermodynamics. By fixing two independent intensive properties ($x_1$ and $x_2$), all other dependent intensive properties ($x_3$) are fixed. The surface plot shows that $x_3$ is a function of both $x_1$ and $x_2$. The 2D plot, where $x_1$ is constant, illustrates how a specific state (a point on the surface) is fixed when a value for $x_2$ is chosen."
+}

@@ -1,0 +1,69 @@
+{
+  "problem_id": "nozzleMassFlowRate-C9-5-12",
+  "metadata": {
+    "title": "Nozzle",
+    "topic": "Control Volumes",
+    "difficulty_tags": ["medium", "Fa25"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the exit area of a converging-diverging nozzle given the mass flow rate, and inlet and exit thermodynamic states and velocities.",
+    "raw_problem": "Steam enters a **converging-diverging nozzle** operating at **steady state** with $p_1$ (kPa), $T_1$ ($^\\circ$C), and a velocity of $\\mathcal{V}_1$ (m/s). The steam flows through the nozzle with **negligible heat transfer** ($\\dot{Q} \\approx 0$) and **no significant change in potential energy** ($\\Delta PE \\approx 0$). At the exit, $p_2$ (kPa) and the velocity is $\\mathcal{V}_2$ (m/s). The mass flow rate is $\\dot{m}$ (kg/s).",
+    "given_variables_mapping": [
+      {"variable": "$p_1$", "placeholder": "{{params.p1}}", "units": "kPa"},
+      {"variable": "$T_1$", "placeholder": "{{params.T1}}", "units": "$^\\circ$C"},
+      {"variable": "$\\mathcal{V}_1$", "placeholder": "{{params.vel1}}", "units": "m/s"},
+      {"variable": "$p_2$", "placeholder": "{{params.p2}}", "units": "kPa"},
+      {"variable": "$\\mathcal{V}_2$", "placeholder": "{{params.vel2}}", "units": "m/s"},
+      {"variable": "$\\dot{m}$", "placeholder": "{{params.mdot}}", "units": "kg/s"}
+    ],
+    "goal": "Determine the exit area of the nozzle, $A_2$ (in $\\text{m}^2$).",
+    "system_assumptions": [
+      "**Steady-Flow System**",
+      "One Inlet (1) and One Outlet (2)",
+      "Adiabatic ($\\dot{Q} \\approx 0$)",
+      "No Work Transfer ($\\dot{W} = 0$)",
+      "Negligible Potential Energy Change ($\\Delta PE \\approx 0$)"
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "First Law of Thermodynamics (Energy Balance for a Steady-Flow Control Volume)",
+      "Conservation of Mass (Continuity Equation)"
+    ],
+    "energy_balance_equation": "The First Law for this steady-flow, adiabatic, zero-work, $\\Delta PE \\approx 0$ device (nozzle) is:\\n$$\\dot{Q} - \\dot{W} = \\dot{m} \\left[ (h_2 - h_1) + \\frac{(\\mathcal{V}_2^2 - \\mathcal{V}_1^2)}{2} + g(z_2 - z_1) \\right]$$\\n\nSimplifying with assumptions and solving for the exit enthalpy $h_2$:\\n$$h_2 = h_1 - \\frac{\\mathcal{V}_2^2 - \\mathcal{V}_1^2}{2}$$\\n*(Note: The kinetic energy terms must be in the same units as enthalpy, typically $\\text{kJ/kg}$ or $\\text{J/kg}$. A factor of $1000$ is required for $\\text{m}^2/\\text{s}^2$ to $\\text{kJ/kg}$.)*",
+    "mass_continuity_equation": "The mass flow rate ($\\dot{m}$) is related to area ($A$), velocity ($\\mathcal{V}$), and specific volume ($v$) at any point:\\n$$\\dot{m} = \\frac{1}{v_2} A_2 \\mathcal{V}_2$$",
+    "solution_steps": [
+      "**Step 1: Determine Inlet Enthalpy ($\\mathbf{h}_1$)**\\nUse the given $p_1$ and $T_1$ conditions to find the specific enthalpy $h_1$ (in $\\text{kJ/kg}$) using **`pyCalor`**.",
+      "**Step 2: Calculate Exit Enthalpy ($\\mathbf{h}_2$)**\\nSolve the energy balance equation for $h_2$. Ensure all energy terms are in consistent units (e.g., $\\text{kJ/kg}$ or $\\text{J/kg}$).",
+      "**Step 3: Determine Exit Specific Volume ($\\mathbf{v}_2$)**\\nUse the exit pressure $p_2$ and the calculated exit enthalpy $h_2$ as independent properties to determine the specific volume $v_2$ (in $\\text{m}^3/\\text{kg}$) using **`pyCalor`**.",
+      "**Step 4: Calculate Exit Area ($\\mathbf{A}_2$)**\\nSolve the mass continuity equation for the exit area, $A_2$:\\n$$A_2 = \\frac{\\dot{m} v_2}{\\mathcal{V}_2}$$"
+    ]
+  },
+  "property_module": {
+    "name": "**pyCalor**",
+    "usage_note": "Thermodynamic properties **must** be determined using the **`pyCalor`** Python module. The required fields for calculation are specific enthalpy ($h$ in $\\text{kJ/kg}$) and specific volume ($v$ in $\\text{m}^3/\\text{kg}$).\\n\\nProperties are retrieved using the `state` class, e.g., `st1 = th.state('water', p=(p1_kPa,'kPa'), T=(T1_C,'C'), name='1')`."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L5b-2.0",
+      "title": "**Energy Analysis of a Steady-flow System**",
+      "lecture_topic": "Control Volumes",
+      "context": "Nozzles and diffusers are key steady-flow engineering devices. This subtopic provides the framework for applying the First Law, including kinetic energy terms, to these devices."
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 5,
+      "chapter_title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Steady-Flow Processes",
+        "Some Steady-Flow Engineering Devices"
+      ]
+    },
+    "related_course_example": {
+      "example_title": "heatExchangerPyCalor",
+      "lecture_subtopic_key": "Fa25-L5c-2.0",
+      "description": "This example demonstrates applying the **steady-flow energy and mass balance principles** and using the **`pyCalor`** property module, which are both essential to solving this nozzle problem."
+    }
+  }
+}

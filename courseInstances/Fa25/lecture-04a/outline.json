@@ -1,0 +1,83 @@
+{
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "lectureId": "1_fclugwz7",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "04a",
+  "title": "Energy Analysis of Closed Systems",
+  "videoTitle": "ME40 - 12 Sept 2025 - Lecture 4a (edited)",
+  "module": "module-one",
+  "topic": "Closed Systems",
+  "subtopics": [
+    {
+      "key": "Fa25-L4a-1.0",
+      "title": "Quiz 1",
+      "summary": "Prof. Schutzius describes the details of quiz 1, which requires students to register. Students will take the quiz at the computer-based testing facility. Prof. Schutzius also explains how to prepare for the quiz using Module 1 review on PrairieLearn.",
+      "time_range": "00:10 - 01:42",
+      "topics": [""],
+      "detailed_summary": "This segment introduces the day's topic, **energy analysis of closed systems**, but mainly focuses on details for **Quiz 1**. The lecturer explains that the quiz will be a **computer-based test**, directs students to the Quiz one page for all details, and encourages them to use the **Module one review** on PrairieLearn for practice quizzes.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4a-2.0",
+      "title": "Applications: Engines and Compressors",
+      "summary": "Prof. Schutzius describes the applications of boundary work to engines.",
+      "time_range": "01:43 - 03:24",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This section introduces the practical application of **boundary work** to devices like **engines and compressors**. The lecturer also sets the stage for the day's problem-solving session, mentioning they will cover four problems, including one that involves **adiabatic expansion**.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4a-3.0",
+      "title": "Moving boundary work",
+      "summary": "Prof. Schutzius explains that pistons are moving too quickly to be at equilibrium. We choose to analyze these processes as quasi-equilibrium processes though, which isn't a bad assumption.",
+      "time_range": "03:25 - 04:25",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This segment revisits the concept of the **work term** in thermodynamics, providing a **physical meaning** to the vital **quasi-equilibrium assumption**, which is necessary for simplifying the analysis of thermodynamic processes.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4a-4.0",
+      "title": "Moving boundary polytropic processes",
+      "summary": "",
+      "time_range": "04:26 - 14:01",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This long segment is dedicated to calculating **moving boundary work** for a **polytropic process**, which follows the relationship $P V^n = C$ (where C is a constant). The focus is on applying the work integral ($W = \\int P dV$) to a system with a moving boundary undergoing this type of change.",
+      "examples": ["workMovingBoundary"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4a-5.0",
+      "title": "Moving boundary work: Adiabatic process",
+      "summary": "",
+      "time_range": "14:02 - 31:12",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This extended segment focuses on calculating **moving boundary work** for an **adiabatic process**. An example problem illustrating **adiabatic expansion** is solved. This section shows how to apply the appropriate work equation and the first law of thermodynamics for a process with no heat transfer.",
+      "examples": ["adiabaticExpansion"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4a-6.0",
+      "title": "Group work: Analyze three different work processes",
+      "summary": "Which process transfer a higher magnitude of work? If the process is isothermal, which process is an ideal gas?",
+      "time_range": "31:13 - 31:52",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This brief section is dedicated to a **Group Work** activity where students are asked to **analyze three different work processes**. The two key questions posed are: Which process transfers a **higher magnitude of work**? and which process is an **ideal gas** if the process is isothermal?. The discussion would connect the answers to the geometric interpretation of work as the **area under the curve on a P-V diagram**.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L4a-7.0",
+      "title": "Net work",
+      "summary": "Prof. Schutzius explains what net work is for a cycle.",
+      "time_range": "31:53 - 34:39",
+      "topics": ["Closed Systems"],
+      "detailed_summary": "This segment analyzes the net work and energy transfer for a **thermodynamic cycle** shown on a P-V diagram. The key point established is that the **net work out ($W_{net, out}$)** of a closed-system cycle is graphically represented by the **area enclosed by the cycle’s path** on the P-V diagram. By applying the **First Law of Thermodynamics** ($\\\\Delta U = Q_{net, in} - W_{net, out}$) to a cycle, and recognizing that the **change in internal energy ($\\\\Delta U$) is zero** (since the system returns to its initial state), the lecturer concludes that the **net work output must equal the net heat input ($W_{net, out} = Q_{net, in}$)**. This relationship is a fundamental concept for analyzing engines and other cyclic devices.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

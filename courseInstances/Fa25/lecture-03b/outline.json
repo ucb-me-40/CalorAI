@@ -1,0 +1,83 @@
+{
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "lectureId": "1_blyiho9t",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "03b",
+  "title": "Property Tables; Ideal Gas",
+  "videoTitle": "ME40 - 10 Sept 2025 - Lecture 3b (edited)",
+  "module": "module-one",
+  "topic": "Properties",
+  "subtopics": [
+    {
+      "key": "Fa25-L3b-1.0",
+      "title": "Workspace in PrairieLearn",
+      "summary": "Prof. Schutzius explains that it is important for students to learn to use Workspace in PrairieLearn. Students will use that to launch a Jupyter notebook which has pyCalor. You will use pyCalor to determine thermodynamic properties.",
+      "time_range": "00:08 - 02:51",
+      "topics": ["Properties"],
+      "detailed_summary": "This segment introduces the **Workspace in PrairieLearn**. Students are instructed on the importance of learning to use this workspace to launch a **constrained Jupyter notebook**. This notebook comes with pre-installed packages, such as **pyCalor**, which is necessary to determine **thermodynamic properties**. The lecturer emphasizes that the template used in the practice problems is the **same exact one** that will be used in the quiz.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3b-2.0",
+      "title": "Thermodynamics: State",
+      "summary": "Prof. Schutzius explains what an equation of state is",
+      "time_range": "02:52 - 12:37",
+      "topics": ["Properties"],
+      "detailed_summary": "The core topic of this segment is the definition of a **Thermodynamic State** and the **Equation of State**. The lecture moves beyond using only equations by discussing the use of **property tables** for determining thermodynamic properties. The discussion stresses the need for **units** when using the computational tools, reminding students that engineering is not just math.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3b-3.0",
+      "title": "Ideal gas expansion in a tank",
+      "summary": "A rigid tank is divided into two parts by a partition. One side of the tank contains an ideal gas at a temperature 460 deg. C, volume V_1, and pressure p_1. The other side of the tank is evacuated and has a volume V_2 = 5 V_1. The partition is then removed and the gas expands to fill both sides of the tank. heat is then transferred to the gas until the pressure is equal to the initial pressure, p_2 = p_1. Determine the final temperature, T_2, in the tank.",
+      "time_range": "12:38 - 21:57",
+      "topics": ["Properties"],
+      "detailed_summary": "This segment introduces the **Ideal Gas Law** in two forms: $PV = n R_u T$ (molar basis) and $PV = M R T$ (mass basis). It is presented as the simplest equation of state and a good approximation for gas behavior. The conditions for its validity are defined: when **gas density is low** (low pressure and high temperature). The lecturer warns **not to use** the Ideal Gas Law for substances near their saturation point, such as **water** or **refrigerants**, because the model assumes **negligible molecule volume** and **negligible attractive forces**.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3b-4.0",
+      "title": "Group Work: Cooling of a superheated vapor",
+      "summary": "A system is initially at p_1 = 5 MPa and T_1 = 600 deg C. You cool it down with constant pressure until it's a saturated vapor, x_2 = 1. What is T_2 for the water vapor? What is T_2 for an ideal gas? ",
+      "time_range": "21:58 - 23:01",
+      "topics": ["Properties"],
+      "detailed_summary": "This segment presents an example problem involving a **cooling process of water**. The objective is to determine the final exit temperature ($T_2$) of the water vapor by comparing two methods: first, by determining properties accurately using **thermodynamic tables**; and second, by making the **ideal gas assumption** for the water vapor.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3b-5.0",
+      "title": "van der Waals equation of state",
+      "summary": "Prof. Schutzius shows a pressure-volume diagram for a van der Waals equation of state. He describes what the van der Waals equation of state is. It is essentially the ideal gas law that accounts for molecular interaction. ",
+      "time_range": "23:02 - 25:13",
+      "topics": ["Properties"],
+      "detailed_summary": "Prof. Schutzius introduces the **van der Waals equation of state**, which is a modification of the ideal gas law. This equation attempts to provide a more accurate model for real gases by **accounting for molecular interaction**. The segment includes a visual representation of this equation on a **Pressure-Volume (P-V) diagram**.",
+      "examples": ["vanDerWaalsEquationOfState"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3b-6.0",
+      "title": "van der Waals equation of state",
+      "summary": "Here Prof. Schutzius defines metastability, something that naturally is derived from the van der Waals equation of state. ",
+      "time_range": "25:14 - 30:56",
+      "topics": ["Properties"],
+      "detailed_summary": "This section focuses on the concept of **metastability**. Metastability is defined as a condition, such as **superheated liquid** or **subcooled vapor**, that is naturally derived from the shape of the van der Waals equation's isotherms. This condition represents a temporary, unstable state that is outside the equilibrium curve.",
+      "examples": ["vanDerWaalsPlot","redlichKwong"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L3b-7.0",
+      "title": "Derivation of specific heats",
+      "summary": "",
+      "time_range": "30:57 - 34:18",
+      "topics": ["Properties"],
+      "detailed_summary": "This segment introduces the concept of **specific heat ($c_v$)** and discusses the units of specific heat (energy per mass per degree Kelvin or Celsius). It explains that specific heat is the proportionality constant that relates **heat input** to the expected **temperature change** ($\\\\Delta T$). The discussion relates this to **Joule's experiment**. The segment foreshadows the conclusion that for an **ideal gas**, **internal energy ($U$) is only dependent on temperature**.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

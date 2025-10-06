@@ -1,0 +1,67 @@
+{
+  "lectureId": "1_4ak8fp37",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "07c",
+  "title": "Entropy",
+  "videoTitle": "ME40 - 1 Oct 2025 - Lecture 7c (edited)",
+  "module": "module-two",
+  "topic": "Entropy",
+  "subtopics": [
+    {
+      "key": "Fa25-L7c-1.0",
+      "title": "Learning Objectives",
+      "summary": "",
+      "time_range": "00:03 - 00:26",
+      "topics": ["Entropy"],
+      "detailed_summary": "The objectives are to examine aspects of **entropy change in ideal gases**, specifically the **isentropic process**, and to demonstrate its utility for analyzing **work in and work out of steady flow devices** using two examples. The lecture will also include the derivation of an equation.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+
+    },
+    {
+      "key": "Fa25-L7c-2.0",
+      "title": "Isentropic process",
+      "summary": "Prof. Schutzius explains what an isentropic is and points out the differences between adiabatic, reversible, and isentropic processes.",
+      "time_range": "00:27 - 2:52",
+      "topics": ["Entropy"],
+      "detailed_summary": "An **isentropic process** is defined by the conditions of being **adiabatic (no heat transfer)** and operating **reversibly (no friction)**. A process that is only reversible but includes heat transfer is termed **internally reversible**. Since **entropy is a property**, in an isentropic steady flow device, the **specific entropy remains constant** ($s_{in} = s_{out}$). This condition provides the **theoretical limit of performance** and simplifies power plant analysis.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+
+    },
+    {
+      "key": "Fa25-L7c-3.0",
+      "title": "Isentropic process: Adiabatic turbine",
+      "summary": "Given the inlet state to a turbine (temperature and pressure) and the outlet pressure, determine the work output per unit mass from the turbine. You are told that the turbine is adiabatic and reversible. ",
+      "time_range": "2:53 - 12:55",
+      "topics": ["Entropy"],
+      "detailed_summary": "The **isentropic turbine example** (reversible and adiabatic) calculates the **work output per unit mass** ($w_{out}$). By applying the **First Law for a steady-flow device** (neglecting kinetic/potential energy and heat), $w_{out}$ simplifies to the **difference in specific enthalpy** ($\\Delta h$). The isentropic condition ($s_1 = s_2$) allows the unknown outlet enthalpy ($h_2$) to be determined using the given outlet pressure ($P_2$) and the known inlet entropy ($s_1$). The final work output value is stated as **350 kJ/kg**, demonstrating how entropy simplifies the calculation of **maximum performance**.",
+      "examples": ["turbineSteamIsentropicAdiabatic"],
+      "tags":["tschutzius","beta"]
+
+    },
+    {
+      "key": "Fa25-L7c-4.0",
+      "title": "Differential entropy change relations",
+      "summary": "Prof. Schutzius derives the differential entropy change relations. This is useful when we want to analyze gas power cycles, compressors, jet engines.",
+      "time_range": "12:56 - 40:48",
+      "topics": ["Entropy"],
+      "detailed_summary": "The lecture derives **differential entropy change (TdS) relations** for an **ideal gas** to analyze isentropic devices (like compressors) without property tables. Two TdS relations are established: $TdS = dU + PdV$ and $TdS = dH - VdP$. Applying the **ideal gas law** and setting $dS=0$ for an isentropic process (assuming constant specific heats $c_p$ and $c_v$), the derivation results in the power-law relationships between state variables (T, P, V), which are simplified using the **adiabatic index $\\kappa = C_p/C_v$** to the common forms.",
+      "examples": ["entropyDifferentialRelations"],
+      "tags":["tschutzius","beta"]
+
+    },
+    {
+      "key": "Fa25-L7c-5.0",
+      "title": "Air property tables: Compressor example",
+      "summary": "Analyze the work output per unit mass from a compressor using air property tables (pyCalor) vs. the Tds relations. ",
+      "time_range": "40:49 - 49:33",
+      "topics": ["Entropy"],
+      "detailed_summary": "This segment presents a compressor example where the work output is analyzed using both air property tables (PyCalor) and the derived isentropic TdS relations. The comparison demonstrates that the simplified TdS relations provide a good approximation for work calculations, resulting in a value better than a 2% difference compared to more accurate methods.",
+      "examples": ["compressorAdiabaticNitrogenPyCalor"],
+      "tags":["tschutzius","beta"]
+    },
+  ]
+}

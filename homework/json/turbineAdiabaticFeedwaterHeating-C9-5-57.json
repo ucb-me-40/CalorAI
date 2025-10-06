@@ -1,0 +1,69 @@
+{
+  "problem_id": "turbineAdiabaticFeedwaterHeating-C9-5-57",
+  "metadata": {
+    "title": "Turbine with Feedwater Heating (Multi-Stream CV)",
+    "topic": "Control Volumes",
+    "difficulty_tags": ["medium", "Fa25"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the work output of an adiabatic steam turbine that bleeds a portion of its steam for feedwater heating.",
+    "raw_problem": "An **adiabatic steam turbine** ($\\dot{Q} \\approx 0$) operates with steam entering at state 1, splitting at state 2, and the remaining stream exiting at state 4. Assume **negligible kinetic and potential energy changes** ($\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$).\\n\\n**Given conditions:**\\n* Inlet (State 1): $p_1$ and $T_1$ with mass flow rate $\\dot{m}_{12}$.\\n* Bleed (State 2): $p_2$ and $T_2$ with mass flow rate $\\dot{m}_{\\text{bleed}}$.\\n* Exit (State 4): $p_4$ and $T_4$.",
+    "given_variables_mapping": [
+      {"variable": "$p_1$", "placeholder": "{{params.p1_MPa}}", "units": "MPa"},
+      {"variable": "$T_1$", "placeholder": "{{params.T1_C}}", "units": "$^\\circ$C"},
+      {"variable": "$\\dot{m}_{12}$", "placeholder": "{{params.mdot12_kgPerS}}", "units": "kg/s"},
+      {"variable": "$p_2$", "placeholder": "{{params.p2_MPa}}", "units": "MPa"},
+      {"variable": "$T_2$", "placeholder": "{{params.T2_C}}", "units": "$^\\circ$C"},
+      {"variable": "$\\dot{m}_{\\text{bleed}}$", "placeholder": "{{params.mdotbleed_kgPerS}}", "units": "kg/s"},
+      {"variable": "$p_4$", "placeholder": "{{params.p4_MPa}}", "units": "MPa"},
+      {"variable": "$T_4$", "placeholder": "{{params.T4_C}}", "units": "$^\\circ$C"}
+    ],
+    "goal": "Determine the work output of the turbine, $\\dot{W}_{\\text{out}}$ (in MW).",
+    "system_assumptions": [
+      "**Steady-Flow System**",
+      "One Inlet (1) and Two Outlets (2, 4)",
+      "Adiabatic ($\\dot{Q} \\approx 0$)",
+      "Negligible Kinetic and Potential Energy Changes ($\\Delta KE \\approx 0, \\Delta PE \\approx 0$)"
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "Conservation of Mass (Continuity Equation)",
+      "First Law of Thermodynamics (Energy Balance for a Steady-Flow Control Volume)"
+    ],
+    "mass_balance_equation": "The total mass flow rate in must equal the total mass flow rate out, where $\\dot{m}_{34}$ is the mass flow rate leaving at state 4:\\n$$\\dot{m}_{12} = \\dot{m}_{\\text{bleed}} + \\dot{m}_{34}$$",
+    "energy_balance_equation": "The First Law for this multi-stream, adiabatic, steady-flow device simplifies to:\\n$$\\sum_{\\text{in}} \\dot{m} h = \\dot{W}_{\\text{out}} + \\sum_{\\text{out}} \\dot{m} h$$ \\n$$\\dot{m}_{12} h_1 = \\dot{W}_{\\text{out}} + \\dot{m}_{\\text{bleed}} h_2 + \\dot{m}_{34} h_4$$",
+    "solution_steps": [
+      "**Step 1: Determine Enthalpies**\\nUse the given $p$ and $T$ conditions for states 1, 2, and 4 to find the specific enthalpies $h_1$, $h_2$, and $h_4$ (in kJ/kg) using **`pyCalor`**.",
+      "**Step 2: Calculate Mass Flow Rate $\\dot{m}_{34}$**\\nApply the mass balance: $\\dot{m}_{34} = \\dot{m}_{12} - \\dot{m}_{\\text{bleed}}$ (in kg/s).",
+      "**Step 3: Calculate Work Output $\\dot{W}_{\\text{out}}$**\\nSolve the energy balance equation for the work output (power):\\n$$\\dot{W}_{\\text{out}} = \\dot{m}_{12} h_1 - \\dot{m}_{\\text{bleed}} h_2 - \\dot{m}_{34} h_4$$\\n*The result must be converted from $\\text{kJ/s}$ (kW) to $\\text{MW}$ for the final answer.*"
+    ]
+  },
+  "property_module": {
+    "name": "**pyCalor**",
+    "usage_note": "Thermodynamic properties **must** be determined using the **`pyCalor`** Python module. The required fields for calculation are specific enthalpy ($h$ in kJ/kg), pressure ($p$), and temperature ($T$ in $^\\circ$C or K).\\n\\nProperties are retrieved using the `state` class, e.g., `st1 = th.state('water', p=(p1,'MPa'), T=(T1,'C'), name='1')`."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L5b-2.0",
+      "title": "**Energy Analysis of a Steady-flow System**",
+      "lecture_topic": "Control Volumes",
+      "context": "This subtopic provides the framework for applying the First Law to all steady-flow devices, including the turbine examined in this problem."
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 5,
+      "chapter_title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Steady-Flow Processes",
+        "Some Steady-Flow Engineering Devices"
+      ]
+    },
+    "related_course_example": {
+      "example_title": "heatExchangerPyCalor",
+      "lecture_subtopic_key": "Fa25-L5c-2.0",
+      "description": "This is a relevant example of analyzing a **multi-stream control volume** (Heat Exchanger) which utilizes the same mass and energy balance principles and the **`pyCalor`** property module."
+    }
+  }
+}

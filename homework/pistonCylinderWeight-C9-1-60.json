@@ -1,0 +1,43 @@
+{
+    "uuid": "595E943E-487E-4361-AABC-04A67714813A",
+    "problem_title": "Piston with Weight",
+    "topic": "Introduction",
+    "difficulty_tags": [
+        "easy"
+    ],
+    "workflow_tags": [
+        "draft"
+    ],
+    "course_reference": {
+        "book_reference": {
+            "chapter_number": 1,
+            "title": "Introduction and Basic Concepts"
+        }
+    },
+    "problem_statement_raw": "The piston of a vertical piston-cylinder device containing a gas has a mass $m_{\\text{p}}$ and a cross-sectional area $A$. The local atmospheric pressure is $P_{\\text{atm}}$ (in bar), and the gravitational acceleration is $g = 9.81\\,\\text{m/s}^2$. Determine the **absolute pressure** inside the cylinder in units of bar. Assume $1\\,\\text{bar} = 100{,}000\\,\\text{Pa}$. If some heat is transferred to the gas and its volume is doubled while the piston is free to move, do you expect the pressure inside the cylinder to change? Answer Yes/No and justify.",
+    "schematic_description": "The diagram shows a vertical cylinder containing a gas, closed at the bottom and fitted with a **movable piston** at the top. The piston is represented as a gray rectangle that fits tightly against the cylinder walls, allowing it to move vertically without friction. Above the piston is the **atmosphere**, exerting pressure $P_{\\text{atm}}$ downward. The piston has **mass $m_{\\text{p}}$** and **cross-sectional area $A$**, so its **weight $m_{\\text{p}} g$** acts downward. The **gas pressure $p$** acts uniformly upward on the piston base. Arrows indicate forces: upward $pA$ from the gas, downward $P_{\\text{atm}}A$ from the atmosphere, and downward $m_{\\text{p}}g$ from the piston weight. The piston is in static equilibrium.",
+    "assumptions_and_approximations": [
+        "The piston moves frictionlessly (no sidewall friction).",
+        "The piston is in static mechanical equilibrium.",
+        "Hydrostatic effects in the gas are negligible.",
+        "Atmospheric pressure above the piston is uniform and constant.",
+        "Gas pressure below the piston is uniform.",
+        "Gravitational acceleration is constant at $g = 9.81\\,\\text{m/s}^2$.",
+        "Units are SI; 1 bar = $10^5$ Pa."
+    ],
+    "physical_laws_and_assumptions": "We apply a **force balance** on the piston under static equilibrium. The upward force from the gas is $$F_{\\text{up}} = pA.$$ The downward forces are atmospheric pressure acting on the top face, $$F_{\\text{atm}} = P_{\\text{atm}} A,$$ and the piston's weight, $$F_{\\text{weight}} = m_{\\text{p}} g.$$ At equilibrium, $$pA = P_{\\text{atm}}A + m_{\\text{p}}g.$$ Dividing by the piston area $A$ gives $$p = P_{\\text{atm}} + \\frac{m_{\\text{p}} g}{A}.$$ To convert this to bar, divide by $10^5$ Pa/bar. For the heating scenario, since the piston is free to move and the external load $P_{\\text{atm}} + m_{\\text{p}} g/A$ remains constant, the pressure in the cylinder does **not change** during expansion; this is a constant-pressure process.",
+    "properties_code": [
+        {
+            "step_name": "initial_setup",
+            "code_block": "# Gravity (m/s^2)\ng = 9.8\n# Piston mass (kg)\nm = random.choice([60, 70, 80, 90])\n# Piston area (m^2)\narea = random.choice([0.04, 0.06])\n# Atmospheric pressure (kPa)\npressure = random.choice([95, 110])  # converted later to bar"
+        }
+    ],
+    "solution_code": [
+        {
+            "step_name": "pressure_calculation",
+            "code_block": "# Pressure in the cylinder (bar)\np = pressure + (m*g/area)/100000\n# This corresponds to p = P_atm + (m*g/A)/1e5"
+        }
+    ],
+    "calculations_and_results": "The **absolute pressure** is computed using $$p = P_{\\text{atm}} + \\frac{m_{\\text{p}} g}{A}.$$ Atmospheric pressure $P_{\\text{atm}}$ is given in bar, so it is converted to Pa for calculation. The piston weight contribution $(m_{\\text{p}} g)/A$ is added in Pascals and then converted back to bar by dividing by $10^5$. The result is rounded to two decimal places. For example, if $m_{\\text{p}} = 80\\,\\text{kg}$, $A = 0.04\\,\\text{m}^2$, and $P_{\\text{atm}} = 1.1\\,\\text{bar}$, the gauge pressure term is $(80 \\times 9.8)/0.04 = 19{,}600\\,\\text{Pa}$ or $0.196\\,\\text{bar}$, so $p = 1.296\\,\\text{bar}$.",
+    "pedagogical_summary": "This problem illustrates how to determine the pressure inside a piston–cylinder device using a simple static **force balance**. The key equation is $$p = P_{\\text{atm}} + \\frac{m_{\\text{p}} g}{A}.$$ The piston weight adds to atmospheric pressure, increasing the pressure of the gas inside the cylinder. During heating, if the piston is free to move and no external load changes, the system undergoes an **isobaric (constant-pressure)** process. This setup is a classic example of how constant-pressure conditions can be achieved using a weighted piston. Common pitfalls include mixing gauge and absolute pressure, forgetting unit conversions, and neglecting the piston weight contribution."
+}

@@ -1,0 +1,40 @@
+{
+  "problem_title": "waterPropertiesPyCalor",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "easy"
+  ],
+  "topic": "Properties",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_qk0vncag",
+      "subtopics": [
+        {
+          "key": "Fa25-L3a-7.0",
+          "title": "Determine the properties of water at 200 deg. C and 150 kPa"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": null,
+      "title": "",
+      "sections": []
+    }
+  },
+  "notes": "https://pypi.org/project/pyCalor/",
+  "problem_statement_raw": "Consider water at a temperature $T = 200^\\circ$C and pressure $p = 150$ kPa. Determine: Its state. Its specific volume. Its internal energy.",
+  "schematic_raw": "No schematic",
+  "physical_laws_and_assumptions": "Pure substance. Dependent properties only depend upon two independent properties. We can use the property tables in the book to determine the answers or we can use \"digital\" tables. Here we will use the digital tables. In order to calculate a thermodynamic property, we need to define several properties, such as temperature $T$ and pressure $p$, and for vapor-liquid mixtures, the quality $x$. We then have enough information to calculate all of the thermodynamic properties at this state. The first step in determining properties like $p$, specific entropy $s$, specific enthalpy $h$, etc., is to use the `pyCalor` module.",
+  "solution_code": [
+    {
+      "step_name": "5. Properties",
+      "code": "T1_C = 200\np1_kPa = 150\n\n# conversion \np1_MPa = p1_kPa/1000\nT1_K = T1_C + 273.15"
+    },
+    {
+      "step_name": "6. Calculations",
+      "code": "# !pip install pyCalor\nfrom pyCalor import thermo as th\n\n# water at 200 deg C and 150 kPa\nwater = th.state('water', T=(T1_C,'C'), p=(p1_kPa, 'kPa'), name=\"1\")\n\n# The state is\nstate = water.state_2phase\nprint(f\"The state is: {state}\")\n\n# properties\ns1 = water.s\nh1 = water.h\nv1 = water.v\nu1 = water.u\n\nprint('The specific entropy is: {0:1.4f} kJ/kg*K'.format(s1))\nprint('The specific enthalpy is: {0:1.4f} kJ/kg'.format(h1))\nprint('The specific volume is: {0:1.4f} m3/kg'.format(v1))\nprint('The specific internal energy is: {0:1.4f} kJ/kg'.format(u1))\n\n# We can also display this on a plot\nwater.plot(\"pv\") # supported plots are: \"pv\",\"Ts\",\"ph\""
+    }
+  ],
+  "pedagogical_summary": "Based on this plot, we can see that water is in a superheated vapor state. Since it is in a superheated vapor state, that is why pressure and temperature are independent variables. If it was in the saturated liquid-vapor region, that would not be the case."
+}

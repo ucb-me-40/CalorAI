@@ -1,0 +1,5566 @@
+1
+00:00:00,000 --> 00:00:03,240
+I've got you ten, so
+let's get started.
+
+2
+00:00:03,240 --> 00:00:05,560
+Welcome to ME 40.
+
+3
+00:00:05,560 --> 00:00:07,760
+If you're not in this
+class, you can leave.
+
+4
+00:00:07,760 --> 00:00:09,240
+If you're not in
+the class, you're
+
+5
+00:00:09,240 --> 00:00:11,520
+welcome to learn today
+about thermodynamics.
+
+6
+00:00:11,520 --> 00:00:13,120
+Of course theme. So what
+
+7
+00:00:13,120 --> 00:00:15,000
+do we talk about
+in thermo?
+
+8
+00:00:15,000 --> 00:00:18,439
+Energy, right? So
+timely ones today,
+
+9
+00:00:18,439 --> 00:00:19,919
+we talk about the
+conversion of it.
+
+10
+00:00:19,919 --> 00:00:22,999
+So you think about
+photovoltaics, right?
+
+11
+00:00:22,999 --> 00:00:26,159
+This is, like, the most
+fastly growing area
+
+12
+00:00:26,159 --> 00:00:27,879
+of energy systems.
+
+13
+00:00:27,879 --> 00:00:29,519
+Um, we think about
+systems that are
+
+14
+00:00:29,519 --> 00:00:31,080
+consuming lots of
+energy at the moment.
+
+15
+00:00:31,080 --> 00:00:32,360
+Think about data centers,
+
+16
+00:00:32,360 --> 00:00:34,559
+right, large language
+models, right?
+
+17
+00:00:34,559 --> 00:00:35,879
+The third part of it is
+
+18
+00:00:35,879 --> 00:00:37,279
+because this is
+intermittent,
+
+19
+00:00:37,279 --> 00:00:39,160
+we think a lot about
+how we store energy.
+
+20
+00:00:39,160 --> 00:00:41,639
+So because of the fact
+that we receive it,
+
+21
+00:00:41,639 --> 00:00:42,879
+we need to store
+this and figure
+
+22
+00:00:42,879 --> 00:00:44,479
+out how to use this.
+
+23
+00:00:44,479 --> 00:00:45,959
+So this is basically
+the theme of
+
+24
+00:00:45,959 --> 00:00:48,479
+our course, our team.
+
+25
+00:00:48,479 --> 00:00:51,770
+So, um, Cassie McCormick
+is the head GSI.
+
+26
+00:00:51,770 --> 00:00:53,090
+I'm joined also by GSI
+
+27
+00:00:53,090 --> 00:00:55,210
+Jessica Woo here
+and our reader,
+
+28
+00:00:55,210 --> 00:00:59,089
+Dear Baldwa, very
+capable team.
+
+29
+00:00:59,089 --> 00:01:00,889
+These two are a member
+of my research group,
+
+30
+00:01:00,889 --> 00:01:02,609
+and I've already
+worked with Dear as
+
+31
+00:01:02,609 --> 00:01:05,329
+a reader last semester
+for Emy winning 46,
+
+32
+00:01:05,329 --> 00:01:07,010
+so energy conversion
+principles.
+
+33
+00:01:07,010 --> 00:01:08,369
+The point is, I think
+you're in good hands.
+
+34
+00:01:08,369 --> 00:01:09,689
+You have a
+motivated group,
+
+35
+00:01:09,689 --> 00:01:10,769
+a little about myself.
+
+36
+00:01:10,769 --> 00:01:12,490
+So I've been
+teaching thermo
+
+37
+00:01:12,490 --> 00:01:14,729
+for the better
+part of 11 years.
+
+38
+00:01:14,729 --> 00:01:16,489
+So I was overseas
+for about ten years.
+
+39
+00:01:16,489 --> 00:01:17,729
+I taught at Ate Ha.
+
+40
+00:01:17,729 --> 00:01:19,409
+It's where Einstein
+was a student,
+
+41
+00:01:19,409 --> 00:01:20,969
+a famously very
+bad student.
+
+42
+00:01:20,969 --> 00:01:22,289
+So if you want to learn
+anything about him,
+
+43
+00:01:22,289 --> 00:01:23,449
+you don't go
+to Zurich, you
+
+44
+00:01:23,449 --> 00:01:24,929
+have to go to the
+Capitol Bern.
+
+45
+00:01:24,929 --> 00:01:26,009
+You read a
+little bit about
+
+46
+00:01:26,009 --> 00:01:27,249
+him and his stories,
+
+47
+00:01:27,249 --> 00:01:29,039
+there's two things
+that are great.
+
+48
+00:01:29,039 --> 00:01:30,869
+Um, was about his
+
+49
+00:01:30,869 --> 00:01:32,309
+friendships, series
+of friendships.
+
+50
+00:01:32,309 --> 00:01:34,309
+The first is he had
+a friend who kind of
+
+51
+00:01:34,309 --> 00:01:34,829
+helped him get through
+
+52
+00:01:34,829 --> 00:01:36,429
+his courses because he
+was bored to death.
+
+53
+00:01:36,429 --> 00:01:37,790
+They were teaching
+the old physics.
+
+54
+00:01:37,790 --> 00:01:39,989
+He wanted to learn
+about the newest kind
+
+55
+00:01:39,989 --> 00:01:40,749
+of friend gave him
+
+56
+00:01:40,749 --> 00:01:41,949
+notes and helped
+him around.
+
+57
+00:01:41,949 --> 00:01:44,109
+Maybe helpful for
+some of you here.
+
+58
+00:01:44,109 --> 00:01:45,829
+And the second thing
+is that friend also
+
+59
+00:01:45,829 --> 00:01:47,869
+got him his first job
+out of school, right?
+
+60
+00:01:47,869 --> 00:01:49,749
+So he got him a job
+at the patent office.
+
+61
+00:01:49,749 --> 00:01:50,829
+And for those
+who don't know,
+
+62
+00:01:50,829 --> 00:01:51,909
+that's where we
+went to write on
+
+63
+00:01:51,909 --> 00:01:54,349
+basically his most
+famous famous works
+
+64
+00:01:54,349 --> 00:01:56,629
+were there is his,
+
+65
+00:01:56,629 --> 00:01:58,089
+uh, apartments there,
+
+66
+00:01:58,089 --> 00:01:59,610
+but a coffee
+shop in Burns,
+
+67
+00:01:59,610 --> 00:02:00,849
+you ever find yourself
+there, it's very
+
+68
+00:02:00,849 --> 00:02:02,209
+beautiful walking
+you kind of see.
+
+69
+00:02:02,209 --> 00:02:03,049
+And then when
+you look from
+
+70
+00:02:03,049 --> 00:02:04,889
+that apartment
+and you walk,
+
+71
+00:02:04,889 --> 00:02:06,769
+you can see what's
+called a Glockenspiel,
+
+72
+00:02:06,769 --> 00:02:07,729
+basically a big clock.
+
+73
+00:02:07,729 --> 00:02:09,049
+And so you can get
+this idea of walking
+
+74
+00:02:09,049 --> 00:02:10,329
+towards and away
+from the clock
+
+75
+00:02:10,329 --> 00:02:11,730
+and maybe some
+insight into what
+
+76
+00:02:11,730 --> 00:02:13,409
+he was thinking
+about in a daily.
+
+77
+00:02:13,409 --> 00:02:15,169
+So not our tower,
+
+78
+00:02:15,169 --> 00:02:16,810
+but a big kind
+of like a tower,
+
+79
+00:02:16,810 --> 00:02:18,290
+but a much bigger
+clock on it.
+
+80
+00:02:18,290 --> 00:02:19,209
+See you Jess.
+
+81
+00:02:19,209 --> 00:02:20,929
+Learning objectives
+for the course, right?
+
+82
+00:02:20,929 --> 00:02:22,450
+So we're going to talk
+a lot about laws,
+
+83
+00:02:22,450 --> 00:02:24,370
+primarily the first
+and second law there.
+
+84
+00:02:24,370 --> 00:02:25,890
+You're going to be able
+to say this. So you
+
+85
+00:02:25,890 --> 00:02:27,089
+go to a party, talk
+to some friends.
+
+86
+00:02:27,089 --> 00:02:28,330
+You say, this is
+the first and
+
+87
+00:02:28,330 --> 00:02:30,090
+the second law. This is
+how I think about it.
+
+88
+00:02:30,090 --> 00:02:31,370
+You're going to do some
+
+89
+00:02:31,370 --> 00:02:33,130
+simple single
+answer problems.
+
+90
+00:02:33,130 --> 00:02:35,290
+I with first law,
+
+91
+00:02:35,290 --> 00:02:36,290
+first and second law,
+
+92
+00:02:36,290 --> 00:02:37,170
+and then we get into this.
+
+93
+00:02:37,170 --> 00:02:38,889
+So a lot of this is
+sort of foundational.
+
+94
+00:02:38,889 --> 00:02:39,449
+Hopefully,
+
+95
+00:02:39,449 --> 00:02:40,770
+you stay with me
+because after that,
+
+96
+00:02:40,770 --> 00:02:42,009
+you'll see the
+utility of it.
+
+97
+00:02:42,009 --> 00:02:43,449
+You need much
+bigger systems
+
+98
+00:02:43,449 --> 00:02:45,490
+and like the ones I
+was talking about,
+
+99
+00:02:45,490 --> 00:02:48,689
+you know, before,
+perpetual mobile.
+
+100
+00:02:48,689 --> 00:02:51,170
+So basically cycles
+that violate, you know,
+
+101
+00:02:51,170 --> 00:02:53,130
+first and second law, and
+
+102
+00:02:53,130 --> 00:02:55,170
+then really get into
+thermodynamic data.
+
+103
+00:02:55,170 --> 00:02:57,610
+So in this class, you
+
+104
+00:02:57,610 --> 00:02:59,520
+might have heard
+about like tables.
+
+105
+00:02:59,520 --> 00:03:01,670
+I think you should
+love fans there.
+
+106
+00:03:01,670 --> 00:03:03,269
+Okay, so that missed.
+
+107
+00:03:03,269 --> 00:03:04,869
+But the point is that
+
+108
+00:03:04,869 --> 00:03:06,670
+old school was that
+you had a book.
+
+109
+00:03:06,670 --> 00:03:08,310
+Mostly why people
+hate this kind
+
+110
+00:03:08,310 --> 00:03:09,830
+of class is that they
+had to sit there,
+
+111
+00:03:09,830 --> 00:03:10,590
+look at this end of
+
+112
+00:03:10,590 --> 00:03:12,430
+the book appendix and
+figure out things.
+
+113
+00:03:12,430 --> 00:03:14,110
+Here, we use Python,
+
+114
+00:03:14,110 --> 00:03:15,270
+right? We use module.
+
+115
+00:03:15,270 --> 00:03:16,750
+So I encourage
+you from today,
+
+116
+00:03:16,750 --> 00:03:18,949
+if you don't feel
+comfortable in Python,
+
+117
+00:03:18,949 --> 00:03:20,270
+which you should
+because it's
+
+118
+00:03:20,270 --> 00:03:21,870
+a prerect to
+this, learn this.
+
+119
+00:03:21,870 --> 00:03:23,750
+So we have homework
+problems and stuff.
+
+120
+00:03:23,750 --> 00:03:25,669
+It's not
+sophisticated Python.
+
+121
+00:03:25,669 --> 00:03:26,789
+I was raised on Fortran.
+
+122
+00:03:26,789 --> 00:03:28,514
+Does anyone know
+Fortran is?
+
+123
+00:03:28,514 --> 00:03:30,000
+One, two. Okay, so
+
+124
+00:03:30,000 --> 00:03:31,639
+my hardcore
+ones out there.
+
+125
+00:03:31,639 --> 00:03:33,880
+So everything
+runs on Portrait.
+
+126
+00:03:33,880 --> 00:03:36,360
+You just don't know
+it. But, you know,
+
+127
+00:03:36,360 --> 00:03:38,240
+I also taught myself
+Python, right?
+
+128
+00:03:38,240 --> 00:03:40,759
+So if I can do it with
+no class, surely,
+
+129
+00:03:40,759 --> 00:03:44,559
+you all are capable.
+Our homework.
+
+130
+00:03:44,559 --> 00:03:46,520
+So some house scheme,
+our homework's done
+
+131
+00:03:46,520 --> 00:03:48,840
+through a website
+called Prairie Learn.
+
+132
+00:03:48,840 --> 00:03:53,199
+This is a fantastic
+homework suite.
+
+133
+00:03:53,199 --> 00:03:54,320
+It's also how
+we'll run all
+
+134
+00:03:54,320 --> 00:03:55,559
+of our assessments.
+
+135
+00:03:55,559 --> 00:03:56,400
+So the way that
+you practice
+
+136
+00:03:56,400 --> 00:03:57,680
+on your homework
+is going to be
+
+137
+00:03:57,680 --> 00:04:00,159
+exactly how you did
+practice for assessments.
+
+138
+00:04:00,159 --> 00:04:01,639
+So if you haven't
+already go and
+
+139
+00:04:01,639 --> 00:04:04,840
+enroll at this website,
+look for ME 40.
+
+140
+00:04:04,840 --> 00:04:07,460
+I The way to see
+the course in terms
+
+141
+00:04:07,460 --> 00:04:08,780
+of organization is
+
+142
+00:04:08,780 --> 00:04:10,020
+that we have
+three modules.
+
+143
+00:04:10,020 --> 00:04:11,420
+First law, second law,
+
+144
+00:04:11,420 --> 00:04:13,060
+applications. That's it.
+
+145
+00:04:13,060 --> 00:04:16,379
+Okay? If this is like
+the Tour de France,
+
+146
+00:04:16,379 --> 00:04:17,900
+these are flat stages.
+
+147
+00:04:17,900 --> 00:04:19,060
+You think, okay, I
+
+148
+00:04:19,060 --> 00:04:20,419
+did good in this.
+I feel good.
+
+149
+00:04:20,419 --> 00:04:21,659
+This is the Pyrenees.
+
+150
+00:04:21,659 --> 00:04:23,939
+This is the Alps. This
+is like pain, right?
+
+151
+00:04:23,939 --> 00:04:25,379
+This is, I'm not
+going to lie to you.
+
+152
+00:04:25,379 --> 00:04:28,339
+This is like, you
+know, this hurts.
+
+153
+00:04:28,339 --> 00:04:29,939
+If you can survive
+that part of it,
+
+154
+00:04:29,939 --> 00:04:31,339
+from this point
+on, everything is
+
+155
+00:04:31,339 --> 00:04:32,939
+basically very
+straightforward, okay,
+
+156
+00:04:32,939 --> 00:04:33,899
+with the exception of
+
+157
+00:04:33,899 --> 00:04:35,380
+maybe chemical reactions
+
+158
+00:04:35,380 --> 00:04:37,420
+for mechanical
+engineers myself,
+
+159
+00:04:37,420 --> 00:04:39,699
+chemistry I'm deeply
+uncomfortable with.
+
+160
+00:04:39,699 --> 00:04:42,019
+But yeah, basically,
+up until that point,
+
+161
+00:04:42,019 --> 00:04:44,580
+it's pretty
+straight forward.
+
+162
+00:04:44,580 --> 00:04:46,699
+So it's kind of like
+flat, a big mountain,
+
+163
+00:04:46,699 --> 00:04:48,179
+and maybe not
+exactly downhill,
+
+164
+00:04:48,179 --> 00:04:50,649
+but maybe a bit
+flatter there.
+
+165
+00:04:50,649 --> 00:04:52,169
+In the B courses, right?
+
+166
+00:04:52,169 --> 00:04:54,089
+So within each module,
+we have pages.
+
+167
+00:04:54,089 --> 00:04:55,729
+On those pages, right,
+
+168
+00:04:55,729 --> 00:04:57,489
+we have to do
+before lecture,
+
+169
+00:04:57,489 --> 00:04:59,129
+to do by the end
+of the module,
+
+170
+00:04:59,129 --> 00:05:00,249
+and to read for that week.
+
+171
+00:05:00,249 --> 00:05:02,449
+And I can't emphasize
+enough staying with
+
+172
+00:05:02,449 --> 00:05:03,650
+that analogy of the Tour
+
+173
+00:05:03,650 --> 00:05:04,930
+de France and cycling.
+
+174
+00:05:04,930 --> 00:05:05,889
+This is a class that is
+
+175
+00:05:05,889 --> 00:05:07,089
+very easy to
+get behind on.
+
+176
+00:05:07,089 --> 00:05:08,729
+It's easy to
+stay on track.
+
+177
+00:05:08,729 --> 00:05:10,329
+You just be disciplined,
+
+178
+00:05:10,329 --> 00:05:11,649
+you read, you do what
+
+179
+00:05:11,649 --> 00:05:13,170
+I tell you, you'll
+be on track.
+
+180
+00:05:13,170 --> 00:05:15,369
+But if you don't, you
+will fall behind,
+
+181
+00:05:15,369 --> 00:05:16,889
+and it is very difficult
+
+182
+00:05:16,889 --> 00:05:18,209
+to catch back up, okay?
+
+183
+00:05:18,209 --> 00:05:19,969
+So the main thing is,
+like, for this week,
+
+184
+00:05:19,969 --> 00:05:22,589
+I want you to read
+Chapter one. Read it.
+
+185
+00:05:22,589 --> 00:05:24,309
+Today, you go and
+you read, and,
+
+186
+00:05:24,309 --> 00:05:25,349
+you know, you
+basically get
+
+187
+00:05:25,349 --> 00:05:26,669
+ahead and it's do it.
+
+188
+00:05:26,669 --> 00:05:27,829
+The homework in each of
+
+189
+00:05:27,829 --> 00:05:29,549
+the modules is
+released now.
+
+190
+00:05:29,549 --> 00:05:31,309
+So the first five
+homework are there.
+
+191
+00:05:31,309 --> 00:05:32,709
+I encourage you to, like,
+
+192
+00:05:32,709 --> 00:05:34,149
+get through
+that, especially
+
+193
+00:05:34,149 --> 00:05:35,469
+homeworks one,
+two, and three.
+
+194
+00:05:35,469 --> 00:05:37,030
+Learn the Python
+
+195
+00:05:37,030 --> 00:05:38,469
+module for determining
+properties.
+
+196
+00:05:38,469 --> 00:05:39,469
+Get comfortable with this.
+
+197
+00:05:39,469 --> 00:05:40,389
+It will serve you very
+
+198
+00:05:40,389 --> 00:05:41,310
+well when it comes time
+
+199
+00:05:41,310 --> 00:05:42,470
+to homeworks
+four and five,
+
+200
+00:05:42,470 --> 00:05:45,109
+and especially
+Quiz one, okay?
+
+201
+00:05:45,370 --> 00:05:46,769
+Okay.
+
+202
+00:05:46,769 --> 00:05:50,089
+Um, I record, so
+I like openness,
+
+203
+00:05:50,089 --> 00:05:50,849
+so I already have
+
+204
+00:05:50,849 --> 00:05:52,489
+all the videos from
+last year there.
+
+205
+00:05:52,489 --> 00:05:55,289
+I'll record all of
+these and post them.
+
+206
+00:05:55,289 --> 00:05:56,650
+If we ever do discussions,
+
+207
+00:05:56,650 --> 00:05:57,809
+I don't record
+discussions.
+
+208
+00:05:57,809 --> 00:05:59,129
+I think recording
+and a discussion
+
+209
+00:05:59,129 --> 00:06:00,569
+tends to kind of
+stifle it a bit.
+
+210
+00:06:00,569 --> 00:06:01,449
+So in my opinion,
+
+211
+00:06:01,449 --> 00:06:03,009
+don't I don't
+record that, okay?
+
+212
+00:06:03,009 --> 00:06:05,929
+So if you want discussion,
+be here, okay?
+
+213
+00:06:05,929 --> 00:06:07,369
+If you don't want to be
+
+214
+00:06:07,369 --> 00:06:08,649
+here, you're an adult.
+
+215
+00:06:08,649 --> 00:06:09,809
+You spent your money,
+
+216
+00:06:09,809 --> 00:06:11,049
+spent your parents money,
+
+217
+00:06:11,049 --> 00:06:12,569
+whatever, like, you want
+
+218
+00:06:12,569 --> 00:06:14,049
+to come or not, that's
+up to you, okay?
+
+219
+00:06:14,049 --> 00:06:16,049
+You're an adult
+and decide that.
+
+220
+00:06:16,049 --> 00:06:17,809
+What I will tell
+you is sometimes
+
+221
+00:06:17,809 --> 00:06:20,049
+the visual audio
+doesn't work, okay?
+
+222
+00:06:20,049 --> 00:06:21,330
+That camera, for example,
+
+223
+00:06:21,330 --> 00:06:22,769
+is turned like 40 degrees
+
+224
+00:06:22,769 --> 00:06:24,049
+too far to the left.
+
+225
+00:06:24,049 --> 00:06:25,369
+So today, I have
+
+226
+00:06:25,369 --> 00:06:26,529
+to keep the board
+exactly here.
+
+227
+00:06:26,529 --> 00:06:28,130
+Sometimes the
+batteries were not and
+
+228
+00:06:28,130 --> 00:06:30,089
+I'm replacing batteries.
+It's not personal.
+
+229
+00:06:30,089 --> 00:06:31,889
+I'm not trying to,
+like, you know,
+
+230
+00:06:31,889 --> 00:06:33,289
+create, you know,
+
+231
+00:06:33,289 --> 00:06:34,889
+some withholding
+system like that.
+
+232
+00:06:34,889 --> 00:06:36,370
+Sometimes things
+just don't work,
+
+233
+00:06:36,370 --> 00:06:38,610
+and I'm sorry for that.
+
+234
+00:06:38,610 --> 00:06:40,329
+And so I can't
+upload them.
+
+235
+00:06:40,329 --> 00:06:41,970
+Okay, are there
+any questions
+
+236
+00:06:41,970 --> 00:06:44,169
+about that before
+I dive in?
+
+237
+00:06:44,250 --> 00:06:49,599
+One Mississippi to
+Mississippi. Okay.
+
+238
+00:06:49,599 --> 00:06:53,000
+Cool. So, challenges
+in decarbonizing.
+
+239
+00:06:53,000 --> 00:06:54,279
+So this article posted.
+
+240
+00:06:54,279 --> 00:06:55,559
+This is from
+two years ago.
+
+241
+00:06:55,559 --> 00:06:56,879
+New York Times went
+
+242
+00:06:56,879 --> 00:06:58,319
+through and was
+looking into sort of
+
+243
+00:06:58,319 --> 00:06:59,759
+the solution at
+that time and
+
+244
+00:06:59,759 --> 00:07:01,440
+how we were dealing
+with emissions.
+
+245
+00:07:01,440 --> 00:07:02,439
+And the way that you could
+
+246
+00:07:02,439 --> 00:07:03,479
+describe that is roughly,
+
+247
+00:07:03,479 --> 00:07:04,839
+we're just going
+to plug it all in.
+
+248
+00:07:04,839 --> 00:07:06,559
+We're basically just
+going to plug in
+
+249
+00:07:06,559 --> 00:07:09,039
+almost, you know,
+everything.
+
+250
+00:07:09,039 --> 00:07:10,479
+So at that time,
+that's now
+
+251
+00:07:10,479 --> 00:07:12,099
+four years ago, You know,
+
+252
+00:07:12,099 --> 00:07:12,940
+you typically
+
+253
+00:07:12,940 --> 00:07:15,699
+would distribute
+things by sector.
+
+254
+00:07:15,699 --> 00:07:16,979
+So transportation is by
+
+255
+00:07:16,979 --> 00:07:18,380
+far the largest of it.
+
+256
+00:07:18,380 --> 00:07:20,380
+Industry, the
+second, residential,
+
+257
+00:07:20,380 --> 00:07:22,179
+and then commercial.
+
+258
+00:07:22,179 --> 00:07:22,859
+If you look into
+
+259
+00:07:22,859 --> 00:07:24,140
+the transportation
+part of it,
+
+260
+00:07:24,140 --> 00:07:25,459
+a lot of it's just
+passengers, right?
+
+261
+00:07:25,459 --> 00:07:26,419
+In the United States,
+
+262
+00:07:26,419 --> 00:07:27,819
+who drive
+everywhere, right?
+
+263
+00:07:27,819 --> 00:07:29,380
+I grew up in the Midwest.
+
+264
+00:07:29,380 --> 00:07:30,739
+It's not uncommon to do
+
+265
+00:07:30,739 --> 00:07:32,100
+5 hours just use why not?
+
+266
+00:07:32,100 --> 00:07:34,839
+You can just do that,
+uh um, you know, there,
+
+267
+00:07:34,839 --> 00:07:36,919
+but also into
+heavy duty trucks,
+
+268
+00:07:36,919 --> 00:07:38,439
+trains, right?
+
+269
+00:07:38,439 --> 00:07:39,800
+We have basically the best
+
+270
+00:07:39,800 --> 00:07:41,519
+freight rail in the world,
+
+271
+00:07:41,519 --> 00:07:43,839
+you know, here
+for that, right?
+
+272
+00:07:43,839 --> 00:07:45,239
+You have other ones
+that, if you look into
+
+273
+00:07:45,239 --> 00:07:46,919
+the industry,
+chemicals, right?
+
+274
+00:07:46,919 --> 00:07:48,120
+These are things
+that require high
+
+275
+00:07:48,120 --> 00:07:50,000
+process temperature,
+process heat.
+
+276
+00:07:50,000 --> 00:07:51,919
+So things that are in
+the news a lot now are
+
+277
+00:07:51,919 --> 00:07:54,359
+rare minerals, right?
+Metals, right?
+
+278
+00:07:54,359 --> 00:07:55,879
+Copper is at the
+highest price that
+
+279
+00:07:55,879 --> 00:07:58,199
+it's ever been in
+history, right?
+
+280
+00:07:58,199 --> 00:07:59,319
+All of these
+things require
+
+281
+00:07:59,319 --> 00:08:00,759
+refining and a
+lot of energy,
+
+282
+00:08:00,759 --> 00:08:04,389
+a lot of a lot of um,
+heat, steel, right?
+
+283
+00:08:04,389 --> 00:08:05,989
+These require a
+lot of energy into
+
+284
+00:08:05,989 --> 00:08:08,070
+it to do it.
+
+285
+00:08:08,070 --> 00:08:09,429
+On the residential side,
+
+286
+00:08:09,429 --> 00:08:10,710
+the dominating thing is
+
+287
+00:08:10,710 --> 00:08:12,789
+space heat space
+heating, right?
+
+288
+00:08:12,789 --> 00:08:15,189
+Berkeley in California
+in general,
+
+289
+00:08:15,189 --> 00:08:17,870
+we're kind of blessed
+with a lot of warmth,
+
+290
+00:08:17,870 --> 00:08:19,629
+but a good chunk
+of the US and
+
+291
+00:08:19,629 --> 00:08:22,109
+the world is
+not with that.
+
+292
+00:08:22,109 --> 00:08:22,949
+And so, you know,
+
+293
+00:08:22,949 --> 00:08:24,830
+big consumption
+in natural gas,
+
+294
+00:08:24,830 --> 00:08:27,039
+um, They're also
+into cooking.
+
+295
+00:08:27,039 --> 00:08:28,319
+And then the
+commercial side,
+
+296
+00:08:28,319 --> 00:08:30,599
+it's kind of a
+mix there largely
+
+297
+00:08:30,599 --> 00:08:31,839
+reflects what you
+would see probably
+
+298
+00:08:31,839 --> 00:08:33,839
+on the residential side.
+
+299
+00:08:33,839 --> 00:08:35,320
+Some nomenclature
+into this.
+
+300
+00:08:35,320 --> 00:08:35,880
+If you look at
+
+301
+00:08:35,880 --> 00:08:37,040
+the literature
+and you read and
+
+302
+00:08:37,040 --> 00:08:38,840
+especially about energy
+in a large scales,
+
+303
+00:08:38,840 --> 00:08:40,479
+you'll see things
+like quad.
+
+304
+00:08:40,479 --> 00:08:41,880
+So a quad is 1
+
+305
+00:08:41,880 --> 00:08:44,199
+quadrillion British
+thermal units.
+
+306
+00:08:44,199 --> 00:08:46,199
+I'm not going to tell
+you what a BTU is.
+
+307
+00:08:46,199 --> 00:08:47,680
+I'm against it, but
+
+308
+00:08:47,680 --> 00:08:49,000
+it exists. You
+can look it up.
+
+309
+00:08:49,000 --> 00:08:50,600
+The point is
+that one BTU is
+
+310
+00:08:50,600 --> 00:08:53,960
+1055 joules there, right?
+
+311
+00:08:53,960 --> 00:08:57,595
+The joules and
+Newton meter, okay?
+
+312
+00:08:57,595 --> 00:08:59,590
+So, how much of
+that currently of
+
+313
+00:08:59,590 --> 00:09:02,549
+that makeup came from
+electricity then,
+
+314
+00:09:02,549 --> 00:09:05,149
+right in transportation
+in 2021,
+
+315
+00:09:05,149 --> 00:09:07,229
+very little was
+electric in spite of
+
+316
+00:09:07,229 --> 00:09:09,310
+what you see and
+you read, right?
+
+317
+00:09:09,310 --> 00:09:11,630
+A lot of it was still
+a couple of years ago
+
+318
+00:09:11,630 --> 00:09:14,829
+just with gasoline.
+
+319
+00:09:14,829 --> 00:09:16,509
+On the chemical side, as
+
+320
+00:09:16,509 --> 00:09:17,670
+I mentioned, you
+know, in the US,
+
+321
+00:09:17,670 --> 00:09:18,270
+you look also to
+
+322
+00:09:18,270 --> 00:09:19,590
+countries like
+Germany and that,
+
+323
+00:09:19,590 --> 00:09:21,509
+where they have big
+process industries.
+
+324
+00:09:21,509 --> 00:09:23,510
+A lot of that
+is natural gas
+
+325
+00:09:23,510 --> 00:09:25,590
+and heating and
+coal with it.
+
+326
+00:09:25,590 --> 00:09:26,910
+In space heating, right,
+
+327
+00:09:26,910 --> 00:09:29,830
+it's a larger size
+of it is electric,
+
+328
+00:09:29,830 --> 00:09:31,270
+and that has to
+do with the fact,
+
+329
+00:09:31,270 --> 00:09:33,150
+and what we'll go
+over into this course
+
+330
+00:09:33,150 --> 00:09:34,950
+for what's called
+heat pumps, right?
+
+331
+00:09:34,950 --> 00:09:36,030
+So the heat pump,
+
+332
+00:09:36,030 --> 00:09:37,690
+the beautiful thing
+about a heat pump,
+
+333
+00:09:37,690 --> 00:09:39,869
+is that if I put in one
+unit of electricity,
+
+334
+00:09:39,869 --> 00:09:42,550
+I can move three units
+of heat with it, okay?
+
+335
+00:09:42,550 --> 00:09:45,910
+So that just makes
+economic sense, right?
+
+336
+00:09:45,910 --> 00:09:46,829
+Like, by definition,
+
+337
+00:09:46,829 --> 00:09:48,069
+that's a very
+efficient way to do
+
+338
+00:09:48,069 --> 00:09:49,430
+it versus a classical way
+
+339
+00:09:49,430 --> 00:09:50,350
+that I put one unit of,
+
+340
+00:09:50,350 --> 00:09:52,189
+let's say chemical
+energy and I burn it,
+
+341
+00:09:52,189 --> 00:09:53,590
+I get one unit of
+heat out of that.
+
+342
+00:09:53,590 --> 00:09:56,109
+You know, that's a
+losing game for it.
+
+343
+00:09:56,109 --> 00:09:57,309
+So that's why
+something like that
+
+344
+00:09:57,309 --> 00:09:58,629
+looks like it's
+already developed.
+
+345
+00:09:58,629 --> 00:10:00,790
+Also because, again,
+
+346
+00:10:00,790 --> 00:10:03,109
+if I go back
+to my Midwest,
+
+347
+00:10:03,109 --> 00:10:04,945
+a lot of buildings there
+
+348
+00:10:04,945 --> 00:10:06,780
+for historical reasons,
+
+349
+00:10:06,780 --> 00:10:08,379
+already have central
+air conditioning.
+
+350
+00:10:08,379 --> 00:10:09,179
+So they already have
+
+351
+00:10:09,179 --> 00:10:10,220
+air conditioning systems.
+
+352
+00:10:10,220 --> 00:10:11,140
+A heat pump is nothing
+
+353
+00:10:11,140 --> 00:10:12,180
+but an air
+conditioning system
+
+354
+00:10:12,180 --> 00:10:13,420
+run in reverse, okay?
+
+355
+00:10:13,420 --> 00:10:15,260
+So think about an air
+conditioner, right?
+
+356
+00:10:15,260 --> 00:10:16,100
+I take heat in
+
+357
+00:10:16,100 --> 00:10:17,540
+the building and I
+pump it out, right?
+
+358
+00:10:17,540 --> 00:10:19,019
+A heat pump is they
+take heat from
+
+359
+00:10:19,019 --> 00:10:20,700
+the outside and I
+pump it in there.
+
+360
+00:10:20,700 --> 00:10:22,540
+So infrastructure, and
+we already have a lot
+
+361
+00:10:22,540 --> 00:10:24,860
+of solutions for
+how to do that.
+
+362
+00:10:24,860 --> 00:10:27,380
+Okay? If you look at
+20:50, and again,
+
+363
+00:10:27,380 --> 00:10:28,660
+this was a couple
+of years ago in
+
+364
+00:10:28,660 --> 00:10:30,340
+the projections with it,
+
+365
+00:10:30,340 --> 00:10:31,580
+things were always getting
+
+366
+00:10:31,580 --> 00:10:33,260
+constantly more and
+more efficient.
+
+367
+00:10:33,260 --> 00:10:34,500
+So you would
+expect that the
+
+368
+00:10:34,500 --> 00:10:36,180
+overall consumption to
+
+369
+00:10:36,180 --> 00:10:38,079
+decrease And if you
+
+370
+00:10:38,079 --> 00:10:39,160
+look at the
+different sectors,
+
+371
+00:10:39,160 --> 00:10:41,360
+things like space
+heating, further adoption
+
+372
+00:10:41,360 --> 00:10:43,200
+into heat pumps,
+
+373
+00:10:43,200 --> 00:10:44,080
+better insulation in
+
+374
+00:10:44,080 --> 00:10:45,480
+buildings gets you there.
+
+375
+00:10:45,480 --> 00:10:47,119
+You think about
+transportation,
+
+376
+00:10:47,119 --> 00:10:49,159
+passenger vehicles,
+you know,
+
+377
+00:10:49,159 --> 00:10:51,320
+Teslas, right,
+General Motors
+
+378
+00:10:51,320 --> 00:10:52,120
+doing a lot of
+what they do
+
+379
+00:10:52,120 --> 00:10:54,279
+into their Chevy bolts.
+
+380
+00:10:54,279 --> 00:10:56,880
+The equinox, you'll
+see around here, like,
+
+381
+00:10:56,880 --> 00:10:58,399
+a lot of those
+vehicles are already
+
+382
+00:10:58,399 --> 00:11:00,679
+right electrified, so
+that's straightforward.
+
+383
+00:11:00,679 --> 00:11:02,320
+But then you'll see
+other things, right?
+
+384
+00:11:02,320 --> 00:11:05,319
+Notable one here
+is aviation.
+
+385
+00:11:05,319 --> 00:11:06,880
+Does anyone know why we
+
+386
+00:11:06,880 --> 00:11:08,159
+are not going
+to be able to
+
+387
+00:11:08,159 --> 00:11:12,360
+electrify like a
+Boeing or an airbus?
+
+388
+00:11:12,880 --> 00:11:15,679
+The battery is
+what? Heavy.
+
+389
+00:11:15,679 --> 00:11:17,239
+They're too heavy.
+
+390
+00:11:17,239 --> 00:11:20,239
+Fuel is also
+kind of heavy.
+
+391
+00:11:21,200 --> 00:11:24,000
+Name and answer.
+
+392
+00:11:24,000 --> 00:11:26,159
+Kai.
+
+393
+00:11:33,140 --> 00:11:37,300
+Yes. Darn.
+
+394
+00:11:37,860 --> 00:11:40,459
+That's a specific
+technical proposal,
+
+395
+00:11:40,459 --> 00:11:41,220
+maybe something you would
+
+396
+00:11:41,220 --> 00:11:42,220
+do right in deep space,
+
+397
+00:11:42,220 --> 00:11:44,900
+but wasn't working.
+Other ideas?
+
+398
+00:11:48,340 --> 00:11:50,540
+I need a name
+and then loud.
+
+399
+00:11:50,540 --> 00:11:52,900
+I need the
+intensity higher.
+
+400
+00:11:54,420 --> 00:11:57,220
+The density of
+energy dens of.
+
+401
+00:11:57,220 --> 00:11:59,700
+I think it's coming
+to it. One more.
+
+402
+00:12:03,850 --> 00:12:06,770
+Battery charges.
+
+403
+00:12:06,770 --> 00:12:09,010
+Yeah. Yeah.
+
+404
+00:12:09,010 --> 00:12:10,410
+So charge times.
+
+405
+00:12:10,410 --> 00:12:12,130
+So if you think
+
+406
+00:12:12,130 --> 00:12:13,729
+about a cell phone
+in charging,
+
+407
+00:12:13,729 --> 00:12:14,890
+how many years
+can you go on
+
+408
+00:12:14,890 --> 00:12:16,009
+a cell phone before you
+
+409
+00:12:16,009 --> 00:12:18,169
+have to replace
+your battery?
+
+410
+00:12:18,730 --> 00:12:21,930
+Five. That's
+amazing. Okay.
+
+411
+00:12:21,930 --> 00:12:26,130
+So I'm probably at like
+two into it, right?
+
+412
+00:12:26,130 --> 00:12:27,730
+So it's about 1,000
+cycles, right?
+
+413
+00:12:27,730 --> 00:12:28,330
+You can basically do
+
+414
+00:12:28,330 --> 00:12:29,729
+about 1,000 cycles lithium
+
+415
+00:12:29,729 --> 00:12:32,010
+ion roughly there
+before it's gone.
+
+416
+00:12:32,010 --> 00:12:34,210
+If you took planes and
+you wanted to do that,
+
+417
+00:12:34,210 --> 00:12:35,410
+first of all, they'd be
+
+418
+00:12:35,410 --> 00:12:36,610
+massive batteries, right?
+
+419
+00:12:36,610 --> 00:12:38,410
+You can install
+one and two,
+
+420
+00:12:38,410 --> 00:12:39,450
+you'd have to throw them
+
+421
+00:12:39,450 --> 00:12:41,410
+out every six months.
+
+422
+00:12:41,410 --> 00:12:44,490
+Like, gone, right?
+
+423
+00:12:44,490 --> 00:12:45,850
+So that's a very right?
+
+424
+00:12:45,850 --> 00:12:47,689
+So basically, that is
+
+425
+00:12:47,689 --> 00:12:49,129
+not there's other
+ones that'll work.
+
+426
+00:12:49,129 --> 00:12:50,610
+You go to Alaska,
+you want to go
+
+427
+00:12:50,610 --> 00:12:52,250
+into Cessna,
+electrify that there.
+
+428
+00:12:52,250 --> 00:12:53,810
+Like there's
+cases, but it's
+
+429
+00:12:53,810 --> 00:12:55,450
+not going to flying here,
+
+430
+00:12:55,450 --> 00:12:56,290
+Europe, here,
+
+431
+00:12:56,290 --> 00:12:58,050
+Australia, you know,
+Asia and stuff.
+
+432
+00:12:58,050 --> 00:13:00,850
+Like, that's just
+not current and
+
+433
+00:13:00,850 --> 00:13:02,329
+future looking at trends
+
+434
+00:13:02,329 --> 00:13:04,085
+with this, that's
+not going to cut it.
+
+435
+00:13:04,085 --> 00:13:05,440
+And so the thing
+is, like, how
+
+436
+00:13:05,440 --> 00:13:06,599
+does one do that?
+
+437
+00:13:06,599 --> 00:13:07,880
+Where I was before, people
+
+438
+00:13:07,880 --> 00:13:09,279
+who looked at
+this seriously
+
+439
+00:13:09,279 --> 00:13:12,239
+were constructing
+massive solar fields.
+
+440
+00:13:12,239 --> 00:13:13,560
+Like, in my old
+building, we had
+
+441
+00:13:13,560 --> 00:13:15,320
+a big I mean,
+
+442
+00:13:15,320 --> 00:13:16,839
+it looked like an
+old satellite dish.
+
+443
+00:13:16,839 --> 00:13:18,560
+The big ones, they
+are a big old dish,
+
+444
+00:13:18,560 --> 00:13:20,600
+concentrated all the
+sunlight into an area.
+
+445
+00:13:20,600 --> 00:13:21,919
+You fed it water, you fed
+
+446
+00:13:21,919 --> 00:13:23,439
+it CO two and
+into a catalyst,
+
+447
+00:13:23,439 --> 00:13:24,800
+and you produce
+methane out of it,
+
+448
+00:13:24,800 --> 00:13:26,160
+and basically they
+produce fuel.
+
+449
+00:13:26,160 --> 00:13:27,520
+So like Swiss, that's
+
+450
+00:13:27,520 --> 00:13:29,519
+a big airlines
+Switzerland,
+
+451
+00:13:29,519 --> 00:13:30,680
+and they're basically
+we're buying from
+
+452
+00:13:30,680 --> 00:13:31,840
+a company Sin Helion and
+
+453
+00:13:31,840 --> 00:13:32,679
+stuff that we're looking
+
+454
+00:13:32,679 --> 00:13:34,959
+into this as a technology.
+
+455
+00:13:34,959 --> 00:13:37,400
+But pretty much, it's
+like liquid fuel,
+
+456
+00:13:37,400 --> 00:13:39,320
+and you got to
+figure out, like,
+
+457
+00:13:39,320 --> 00:13:40,480
+how you're going
+to do that in
+
+458
+00:13:40,480 --> 00:13:43,599
+a sustainable way
+because electrons,
+
+459
+00:13:43,599 --> 00:13:44,800
+you know, for that
+reason and the
+
+460
+00:13:44,800 --> 00:13:45,959
+heavy reason and
+the fact that
+
+461
+00:13:45,959 --> 00:13:47,039
+the batteries don't last
+
+462
+00:13:47,039 --> 00:13:49,000
+is not going to cut it.
+
+463
+00:13:49,000 --> 00:13:50,439
+The long haul trucking,
+
+464
+00:13:50,439 --> 00:13:51,800
+heavy duty stuff,
+that's also
+
+465
+00:13:51,800 --> 00:13:53,320
+an area that's quite
+difficult, right?
+
+466
+00:13:53,320 --> 00:13:54,480
+So that's just
+an area where,
+
+467
+00:13:54,480 --> 00:13:55,320
+again, for the
+same reason,
+
+468
+00:13:55,320 --> 00:13:56,480
+with batteries, you know,
+
+469
+00:13:56,480 --> 00:13:57,680
+semi trucks here drive
+
+470
+00:13:57,680 --> 00:13:58,920
+1 million miles, right?
+
+471
+00:13:58,920 --> 00:14:00,879
+Like, that's just,
+like, not hard for
+
+472
+00:14:00,879 --> 00:14:02,880
+them to do several million
+miles and with it.
+
+473
+00:14:02,880 --> 00:14:04,080
+And so for the
+same reason there,
+
+474
+00:14:04,080 --> 00:14:05,040
+you have to think
+about, like,
+
+475
+00:14:05,040 --> 00:14:07,559
+what's going to be a
+potential replacement,
+
+476
+00:14:07,559 --> 00:14:09,679
+you know, there
+into petroleum.
+
+477
+00:14:09,679 --> 00:14:10,920
+And on the
+industrial side,
+
+478
+00:14:10,920 --> 00:14:12,080
+sort of the same
+thing, like, how do
+
+479
+00:14:12,080 --> 00:14:13,319
+you get to these
+high temperatures?
+
+480
+00:14:13,319 --> 00:14:14,959
+There's some
+fantastic startups
+
+481
+00:14:14,959 --> 00:14:16,080
+in the area that look,
+
+482
+00:14:16,080 --> 00:14:18,720
+for example, and
+Torres is one of them.
+
+483
+00:14:18,720 --> 00:14:21,550
+They take, um, Yeah.
+
+484
+00:14:21,550 --> 00:14:22,829
+I'm also not a
+rich person.
+
+485
+00:14:22,829 --> 00:14:23,710
+I have no boards or
+
+486
+00:14:23,710 --> 00:14:24,750
+connection to any
+of these companies.
+
+487
+00:14:24,750 --> 00:14:26,470
+So, like, basically, they
+
+488
+00:14:26,470 --> 00:14:28,310
+take photons, right?
+
+489
+00:14:28,310 --> 00:14:29,510
+So they take,
+like, sunlight,
+
+490
+00:14:29,510 --> 00:14:31,030
+they produce electricity,
+and what they
+
+491
+00:14:31,030 --> 00:14:32,669
+do is they just
+heat up graphite.
+
+492
+00:14:32,669 --> 00:14:34,550
+They just heat up, like,
+
+493
+00:14:34,550 --> 00:14:36,670
+blocks of, you know,
+
+494
+00:14:36,670 --> 00:14:39,240
+I mean, almost
+like coal, right?
+
+495
+00:14:39,240 --> 00:14:40,800
+They heat that
+up really hot,
+
+496
+00:14:40,800 --> 00:14:42,120
+and those things can store
+
+497
+00:14:42,120 --> 00:14:43,199
+a lot of themal energy,
+
+498
+00:14:43,199 --> 00:14:44,640
+and then they basically
+then circulate a
+
+499
+00:14:44,640 --> 00:14:46,559
+or fluid over that and
+then use that there.
+
+500
+00:14:46,559 --> 00:14:47,880
+So that's kind
+of like thermal
+
+501
+00:14:47,880 --> 00:14:49,400
+batteries and what's
+done with it.
+
+502
+00:14:49,400 --> 00:14:51,519
+So the chemicals,
+the aviation,
+
+503
+00:14:51,519 --> 00:14:52,479
+you know, in general,
+
+504
+00:14:52,479 --> 00:14:53,400
+like, shipping and stuff,
+
+505
+00:14:53,400 --> 00:14:54,999
+these are like three of
+the most difficult to
+
+506
+00:14:54,999 --> 00:14:57,839
+decarbonize areas.
+
+507
+00:14:57,839 --> 00:15:00,640
+Yeah. Okay. I could
+go on and on with it.
+
+508
+00:15:00,640 --> 00:15:01,919
+So that's one
+factor, right?
+
+509
+00:15:01,919 --> 00:15:02,720
+And that's like looking
+
+510
+00:15:02,720 --> 00:15:03,640
+for a couple of years.
+
+511
+00:15:03,640 --> 00:15:04,960
+One thing that was, like,
+
+512
+00:15:04,960 --> 00:15:06,840
+unanticipated, right,
+
+513
+00:15:06,840 --> 00:15:08,480
+from a couple of years ago
+
+514
+00:15:08,480 --> 00:15:09,880
+and looking into it had
+
+515
+00:15:09,880 --> 00:15:11,200
+everything to do with
+
+516
+00:15:11,200 --> 00:15:13,000
+demand for compute, right?
+
+517
+00:15:13,000 --> 00:15:15,000
+So what I'm showing
+you on this plot is
+
+518
+00:15:15,000 --> 00:15:19,670
+essentially a measure
+of calculations, right?
+
+519
+00:15:19,670 --> 00:15:21,830
+Let's say
+calculations that are
+
+520
+00:15:21,830 --> 00:15:25,910
+done by a computer
+against year, right?
+
+521
+00:15:25,910 --> 00:15:27,710
+And this dashed line is
+
+522
+00:15:27,710 --> 00:15:29,509
+like frontier
+compute models.
+
+523
+00:15:29,509 --> 00:15:32,270
+So, you know, chat,
+Gemini, right?
+
+524
+00:15:32,270 --> 00:15:32,750
+So it's
+
+525
+00:15:32,750 --> 00:15:34,350
+sort of the most common
+ones that are there.
+
+526
+00:15:34,350 --> 00:15:36,350
+The third thing
+that's done is
+
+527
+00:15:36,350 --> 00:15:38,960
+showing The number of
+
+528
+00:15:38,960 --> 00:15:41,119
+graphical processing
+units, GPUs,
+
+529
+00:15:41,119 --> 00:15:42,719
+these are basically
+special kind
+
+530
+00:15:42,719 --> 00:15:44,840
+of processors that
+are good for, like,
+
+531
+00:15:44,840 --> 00:15:48,000
+linear algebra and
+machine learning
+
+532
+00:15:48,000 --> 00:15:51,080
+and the amount of power
+that they draw, okay?
+
+533
+00:15:51,080 --> 00:15:54,480
+So like one GPU draws
+about 700 watts, okay?
+
+534
+00:15:54,480 --> 00:15:55,680
+So what's a hairdryer?
+
+535
+00:15:55,680 --> 00:15:57,920
+Anyone know what
+a hairdryer is?
+
+536
+00:15:57,920 --> 00:16:00,120
+I used to have really
+long hair. I know this.
+
+537
+00:16:00,120 --> 00:16:01,239
+So it's about 1,000 watts.
+
+538
+00:16:01,239 --> 00:16:02,640
+So you can draw
+the w about 1,200
+
+539
+00:16:02,640 --> 00:16:04,520
+watts from the wall there.
+
+540
+00:16:04,520 --> 00:16:06,440
+So, one GPU is basically
+
+541
+00:16:06,440 --> 00:16:08,720
+like a hairdryer
+that's there.
+
+542
+00:16:08,720 --> 00:16:10,520
+So these models a
+couple of years ago,
+
+543
+00:16:10,520 --> 00:16:12,000
+you had 10,000 of
+those, all right?
+
+544
+00:16:12,000 --> 00:16:14,040
+Present day, those ones
+
+545
+00:16:14,040 --> 00:16:15,839
+now have 300,000 to them.
+
+546
+00:16:15,839 --> 00:16:16,919
+You look at like Elon,
+
+547
+00:16:16,919 --> 00:16:18,119
+what they have
+in Tennessee,
+
+548
+00:16:18,119 --> 00:16:20,519
+Colossus, that's
+about 100,000 GPUs.
+
+549
+00:16:20,519 --> 00:16:21,679
+They're looking at
+a couple hundred
+
+550
+00:16:21,679 --> 00:16:22,839
+thousand and 1 million
+
+551
+00:16:22,839 --> 00:16:25,280
+in the near future.
+
+552
+00:16:25,280 --> 00:16:28,559
+So 25000-500 megawatts.
+
+553
+00:16:28,559 --> 00:16:29,919
+You look to like 2030.
+
+554
+00:16:29,919 --> 00:16:31,800
+So let's say we
+follow this frontier
+
+555
+00:16:31,800 --> 00:16:34,080
+compute growth
+trend there,
+
+556
+00:16:34,080 --> 00:16:34,959
+you're going to be
+
+557
+00:16:34,959 --> 00:16:37,570
+having a single
+data center
+
+558
+00:16:37,570 --> 00:16:41,330
+that's drawing 10
+gigawatts, okay?
+
+559
+00:16:41,330 --> 00:16:44,130
+So you don't have to
+know what a gigawatt is.
+
+560
+00:16:44,130 --> 00:16:47,210
+I can tell you it's
+as a very big number.
+
+561
+00:16:47,210 --> 00:16:48,690
+Okay. The second plot that
+
+562
+00:16:48,690 --> 00:16:50,390
+I'll show you is annual.
+
+563
+00:16:50,390 --> 00:16:52,690
+US Data Center energy use
+
+564
+00:16:52,690 --> 00:16:54,050
+in terawatt hours, okay?
+
+565
+00:16:54,050 --> 00:16:55,130
+So terawatt is
+
+566
+00:16:55,130 --> 00:16:59,090
+a big also a big a
+pretty big number.
+
+567
+00:16:59,090 --> 00:17:01,650
+Basically, we use
+about 14 globally,
+
+568
+00:17:01,650 --> 00:17:05,010
+something around like
+ten to 20 terawatts.
+
+569
+00:17:05,010 --> 00:17:06,969
+It's pretty much what the
+
+570
+00:17:06,969 --> 00:17:09,689
+global capacity
+for energy use.
+
+571
+00:17:09,689 --> 00:17:11,449
+And that's against
+years, all right?
+
+572
+00:17:11,449 --> 00:17:12,769
+And so for a
+number of years,
+
+573
+00:17:12,769 --> 00:17:13,929
+though, right,
+things were very,
+
+574
+00:17:13,929 --> 00:17:15,410
+very flat, an inflection
+
+575
+00:17:15,410 --> 00:17:17,930
+point at about 20:20.
+
+576
+00:17:17,930 --> 00:17:19,689
+And again, you
+know, various
+
+577
+00:17:19,689 --> 00:17:20,849
+sort of
+projections, right?
+
+578
+00:17:20,849 --> 00:17:22,010
+This purple region is
+
+579
+00:17:22,010 --> 00:17:23,569
+sort of that mid level
+of data centers.
+
+580
+00:17:23,569 --> 00:17:25,530
+Here is like the
+ten gigawatt,
+
+581
+00:17:25,530 --> 00:17:27,569
+you know, level, okay?
+
+582
+00:17:27,569 --> 00:17:29,529
+This dot here, just to
+
+583
+00:17:29,529 --> 00:17:30,410
+give you reference as
+
+584
+00:17:30,410 --> 00:17:31,410
+to what this would mean,
+
+585
+00:17:31,410 --> 00:17:32,770
+was in 2021,
+
+586
+00:17:32,770 --> 00:17:36,090
+California's total
+electricity generation.
+
+587
+00:17:36,090 --> 00:17:37,849
+So in a couple of years,
+
+588
+00:17:37,849 --> 00:17:41,209
+all of the
+electricity that we
+
+589
+00:17:41,209 --> 00:17:43,850
+consume for data
+centers will
+
+590
+00:17:43,850 --> 00:17:46,330
+exceed essentially
+California's generation.
+
+591
+00:17:46,330 --> 00:17:49,169
+And it's the biggest
+state, right?
+
+592
+00:17:49,169 --> 00:17:51,009
+Even like mid level
+
+593
+00:17:51,009 --> 00:17:52,409
+estimates, you know, okay?
+
+594
+00:17:52,409 --> 00:17:54,089
+Not the most conservative,
+but mid level
+
+595
+00:17:54,089 --> 00:17:58,169
+ones that are that
+are there, okay?
+
+596
+00:17:58,169 --> 00:18:00,099
+Um, Yeah.
+
+597
+00:18:00,099 --> 00:18:01,259
+And so just for reference,
+
+598
+00:18:01,259 --> 00:18:02,219
+then that's
+like, you know,
+
+599
+00:18:02,219 --> 00:18:03,859
+4,000 terawatt
+hours is what
+
+600
+00:18:03,859 --> 00:18:05,540
+the total US
+consumption was.
+
+601
+00:18:05,540 --> 00:18:07,139
+So that number is then
+about 10%, right?
+
+602
+00:18:07,139 --> 00:18:08,500
+So it is about 10%.
+
+603
+00:18:08,500 --> 00:18:09,900
+There are scenarios
+where people
+
+604
+00:18:09,900 --> 00:18:11,220
+look and they
+say about 10%,
+
+605
+00:18:11,220 --> 00:18:12,499
+right, which
+would be up here.
+
+606
+00:18:12,499 --> 00:18:13,779
+At the extreme end.
+
+607
+00:18:13,779 --> 00:18:16,699
+10% of all electricity
+consumption in
+
+608
+00:18:16,699 --> 00:18:18,060
+the United States
+by 2030 is
+
+609
+00:18:18,060 --> 00:18:19,979
+going to be a Data
+Center, right?
+
+610
+00:18:19,979 --> 00:18:24,680
+So, okay. And the
+reason is this, right?
+
+611
+00:18:24,680 --> 00:18:26,759
+So that only happens
+because there is
+
+612
+00:18:26,759 --> 00:18:29,959
+such a demand for compute
+from anyone, okay?
+
+613
+00:18:29,959 --> 00:18:31,639
+So those are sort
+of the two tails of
+
+614
+00:18:31,639 --> 00:18:33,919
+electricity that I see.
+
+615
+00:18:33,919 --> 00:18:35,239
+If you care about things
+
+616
+00:18:35,239 --> 00:18:36,519
+like this in the spring,
+
+617
+00:18:36,519 --> 00:18:38,359
+I'll be teaching
+with my colleague,
+
+618
+00:18:38,359 --> 00:18:41,320
+Professor Zodi a
+class essentially on
+
+619
+00:18:41,320 --> 00:18:43,439
+data center modeling and
+
+620
+00:18:43,439 --> 00:18:46,120
+energy management
+system modeling.
+
+621
+00:18:46,120 --> 00:18:47,479
+So we'll go a
+lot further into
+
+622
+00:18:47,479 --> 00:18:49,039
+sort of the specifics
+of this and
+
+623
+00:18:49,039 --> 00:18:51,119
+the language and
+what goes on.
+
+624
+00:18:51,119 --> 00:18:52,480
+In terms of,
+like, careers,
+
+625
+00:18:52,480 --> 00:18:53,560
+there's roughly
+about 3,000
+
+626
+00:18:53,560 --> 00:18:54,760
+jobs in this
+country that need
+
+627
+00:18:54,760 --> 00:18:55,919
+somebody who
+knows thermal and
+
+628
+00:18:55,919 --> 00:18:57,159
+really good
+modeling for it.
+
+629
+00:18:57,159 --> 00:18:58,599
+So I think mechanical
+
+630
+00:18:58,599 --> 00:18:59,920
+engineering is
+a very timely,
+
+631
+00:18:59,920 --> 00:19:01,949
+like, smart thing. Do.
+
+632
+00:19:01,949 --> 00:19:03,309
+A was also very good,
+
+633
+00:19:03,309 --> 00:19:05,070
+but I mean, there's
+nothing that's,
+
+634
+00:19:05,070 --> 00:19:06,670
+like, in the news
+more than that.
+
+635
+00:19:06,670 --> 00:19:08,630
+Okay? So there's that
+the energy conversion,
+
+636
+00:19:08,630 --> 00:19:13,029
+decarbonizing, and
+storage, okay?
+
+637
+00:19:13,029 --> 00:19:15,109
+So, but before
+we get to that,
+
+638
+00:19:15,109 --> 00:19:16,109
+we got to learn to walk,
+
+639
+00:19:16,109 --> 00:19:17,629
+maybe to crawl, alright?
+
+640
+00:19:17,629 --> 00:19:23,749
+Um, Okay, so we're,
+you know, really,
+
+641
+00:19:23,749 --> 00:19:28,509
+thermodynamics is
+essentially about
+
+642
+00:19:28,509 --> 00:19:31,310
+starting with
+drawing boundaries.
+
+643
+00:19:31,310 --> 00:19:32,589
+So we talked
+really just about,
+
+644
+00:19:32,589 --> 00:19:35,149
+like, you know,
+a box, okay?
+
+645
+00:19:35,149 --> 00:19:38,229
+Into this box, we
+put, like, heat.
+
+646
+00:19:38,229 --> 00:19:40,110
+The box usually
+has some mass.
+
+647
+00:19:40,110 --> 00:19:41,669
+We can put some
+work into it.
+
+648
+00:19:41,669 --> 00:19:43,989
+We can basically take
+some work out of it.
+
+649
+00:19:43,989 --> 00:19:46,309
+The boundary that we look
+
+650
+00:19:46,309 --> 00:19:49,130
+at here This can
+basically grow.
+
+651
+00:19:49,130 --> 00:19:50,889
+This can shrink. It should
+
+652
+00:19:50,889 --> 00:19:52,130
+just sort of
+contain whatever
+
+653
+00:19:52,130 --> 00:19:55,689
+else was had into it.
+
+654
+00:19:55,689 --> 00:19:57,409
+The other thing with
+all of this is,
+
+655
+00:19:57,409 --> 00:19:59,450
+right, this is heat
+in, this is workout.
+
+656
+00:19:59,450 --> 00:20:01,169
+Those are like processes.
+
+657
+00:20:01,169 --> 00:20:03,089
+A lot of times, if
+
+658
+00:20:03,089 --> 00:20:05,329
+we define sort of the
+mass of this thing,
+
+659
+00:20:05,329 --> 00:20:06,690
+we'll talk about
+properties
+
+660
+00:20:06,690 --> 00:20:08,330
+like temperature
+and pressure,
+
+661
+00:20:08,330 --> 00:20:09,489
+and with that,
+we'll be able
+
+662
+00:20:09,489 --> 00:20:10,649
+to say a lot of
+things about it.
+
+663
+00:20:10,649 --> 00:20:13,889
+So this pretty much
+talks about the state.
+
+664
+00:20:13,889 --> 00:20:16,169
+So let's begin with
+our first one,
+
+665
+00:20:16,169 --> 00:20:18,289
+and I just want to make
+sure that I can see.
+
+666
+00:20:18,289 --> 00:20:21,980
+Um, So as a beginning
+point here,
+
+667
+00:20:21,980 --> 00:20:23,379
+we can talk about work.
+
+668
+00:20:23,379 --> 00:20:25,500
+So some basic
+physics, right?
+
+669
+00:20:25,500 --> 00:20:27,579
+So our differential of
+work here, let's say,
+
+670
+00:20:27,579 --> 00:20:30,139
+in a scenario like
+that, it's going to,
+
+671
+00:20:30,139 --> 00:20:31,019
+let's say, if we have
+
+672
+00:20:31,019 --> 00:20:33,540
+a force that
+we're applying.
+
+673
+00:20:33,540 --> 00:20:36,299
+Here's my dry eraser.
+
+674
+00:20:37,340 --> 00:20:40,459
+Okay, so let's say,
+
+675
+00:20:41,710 --> 00:20:45,310
+You know, maybe this
+is like a piston.
+
+676
+00:20:45,310 --> 00:20:46,989
+So what's a piston?
+A piston is
+
+677
+00:20:46,989 --> 00:20:49,749
+essentially like a
+cylinder, right?
+
+678
+00:20:49,749 --> 00:20:50,590
+And at the other end,
+
+679
+00:20:50,590 --> 00:20:51,389
+anyone who's ever, like,
+
+680
+00:20:51,389 --> 00:20:52,629
+filled up a bike
+before, you
+
+681
+00:20:52,629 --> 00:20:53,709
+know, a bike tire, right?
+
+682
+00:20:53,709 --> 00:20:55,510
+You go up and down, and
+you compress the air.
+
+683
+00:20:55,510 --> 00:20:58,029
+So you have here,
+like, a piston.
+
+684
+00:20:58,029 --> 00:20:59,789
+And this piston
+could move,
+
+685
+00:20:59,789 --> 00:21:02,109
+you know, some
+distance, let's say,
+
+686
+00:21:02,109 --> 00:21:04,830
+you know, you know, DS,
+
+687
+00:21:04,830 --> 00:21:06,349
+and maybe there's a force,
+
+688
+00:21:06,349 --> 00:21:06,549
+right,
+
+689
+00:21:06,549 --> 00:21:08,229
+that's being applied
+that moves it up, right?
+
+690
+00:21:08,229 --> 00:21:09,749
+So this work
+transferred is
+
+691
+00:21:09,749 --> 00:21:11,829
+nothing but that
+force times
+
+692
+00:21:11,829 --> 00:21:16,949
+that distance, you
+know, move, okay?
+
+693
+00:21:16,949 --> 00:21:18,869
+So that's sort of the
+first thing that we
+
+694
+00:21:18,869 --> 00:21:21,709
+have as a definition
+is that. Um, right?
+
+695
+00:21:21,709 --> 00:21:22,749
+The second thing
+that I had
+
+696
+00:21:22,749 --> 00:21:24,110
+mentioned is that we're
+
+697
+00:21:24,110 --> 00:21:25,509
+largely concerned in order
+
+698
+00:21:25,509 --> 00:21:26,950
+to understand
+these processes,
+
+699
+00:21:26,950 --> 00:21:27,909
+we're largely concerned
+
+700
+00:21:27,909 --> 00:21:29,070
+with what's called states.
+
+701
+00:21:29,070 --> 00:21:30,990
+To know a state, we
+talk about properties.
+
+702
+00:21:30,990 --> 00:21:32,430
+So things like
+temperature,
+
+703
+00:21:32,430 --> 00:21:34,709
+pressure, and
+
+704
+00:21:34,709 --> 00:21:36,910
+specific volume are
+three of the most,
+
+705
+00:21:36,910 --> 00:21:38,589
+let's say,
+important three of
+
+706
+00:21:38,589 --> 00:21:40,589
+the most important ones
+
+707
+00:21:40,589 --> 00:21:43,929
+that are that are there.
+
+708
+00:21:43,929 --> 00:21:46,389
+Okay, to define
+a process here.
+
+709
+00:21:46,389 --> 00:21:47,390
+So let's say this is
+
+710
+00:21:47,390 --> 00:21:48,749
+at something
+like state one.
+
+711
+00:21:48,749 --> 00:21:50,629
+If I were to look
+at this, and I let
+
+712
+00:21:50,629 --> 00:21:52,309
+that piston head expand to
+
+713
+00:21:52,309 --> 00:21:54,270
+a higher, you know,
+
+714
+00:21:54,270 --> 00:21:55,709
+position inside here,
+
+715
+00:21:55,709 --> 00:21:57,389
+I can talk again
+about a temperature,
+
+716
+00:21:57,389 --> 00:21:59,350
+a pressure, a
+specific volume,
+
+717
+00:21:59,350 --> 00:22:00,709
+and that's a state two.
+
+718
+00:22:00,709 --> 00:22:02,950
+And pretty much the
+whole class is about,
+
+719
+00:22:02,950 --> 00:22:04,909
+you know, stringing
+together, like,
+
+720
+00:22:04,909 --> 00:22:07,589
+really defining
+figuring out
+
+721
+00:22:07,589 --> 00:22:08,469
+the properties that we
+
+722
+00:22:08,469 --> 00:22:09,309
+know about the problem,
+
+723
+00:22:09,309 --> 00:22:10,869
+defining them the state,
+
+724
+00:22:10,869 --> 00:22:12,510
+and then from that moving
+
+725
+00:22:12,510 --> 00:22:13,829
+to another state,
+all right?
+
+726
+00:22:13,829 --> 00:22:15,470
+And the outputs of
+that are things like
+
+727
+00:22:15,470 --> 00:22:19,069
+work or heat, okay?
+
+728
+00:22:19,069 --> 00:22:22,589
+Cool. Let's move.
+
+729
+00:22:22,589 --> 00:22:24,350
+This is also the cleanest
+
+730
+00:22:24,350 --> 00:22:25,869
+I've ever seen the white
+boards in this room.
+
+731
+00:22:25,869 --> 00:22:26,989
+They're not going
+to look this good
+
+732
+00:22:26,989 --> 00:22:28,590
+again for the rest
+of the semester.
+
+733
+00:22:28,590 --> 00:22:31,669
+All right. Okay.
+
+734
+00:22:33,970 --> 00:22:36,129
+Okay, so let's
+now consider
+
+735
+00:22:36,129 --> 00:22:37,490
+instead of our piston,
+
+736
+00:22:37,490 --> 00:22:37,689
+though,
+
+737
+00:22:37,689 --> 00:22:40,009
+let's consider another
+experiment, right?
+
+738
+00:22:40,009 --> 00:22:41,730
+So in this experiment,
+let's say we have,
+
+739
+00:22:41,730 --> 00:22:43,969
+you know, a ground
+here, okay?
+
+740
+00:22:43,969 --> 00:22:46,449
+We have a weight.
+Let's say that
+
+741
+00:22:46,449 --> 00:22:49,649
+the weight has
+a mass Omega.
+
+742
+00:22:49,649 --> 00:22:54,489
+Let's say that this
+weight is attached to Oh,
+
+743
+00:22:54,489 --> 00:22:56,610
+man, I'm so bad
+at drawing.
+
+744
+00:22:56,610 --> 00:22:59,329
+Right, attached to
+a pulley, okay?
+
+745
+00:22:59,329 --> 00:23:01,610
+Okay. Basically,
+it's attached
+
+746
+00:23:01,610 --> 00:23:03,010
+to, like, a pulley,
+
+747
+00:23:03,010 --> 00:23:04,169
+and maybe this
+pulley has some kind
+
+748
+00:23:04,169 --> 00:23:05,529
+of crank and
+we can use to,
+
+749
+00:23:05,529 --> 00:23:07,129
+um, All right,
+
+750
+00:23:07,129 --> 00:23:08,690
+textual pulley, should
+look like that.
+
+751
+00:23:08,690 --> 00:23:10,009
+The crank that we
+can use to, like,
+
+752
+00:23:10,009 --> 00:23:12,969
+rotate and lift that up.
+
+753
+00:23:12,969 --> 00:23:14,210
+And let's say we do that.
+
+754
+00:23:14,210 --> 00:23:15,570
+So we have some
+external actor
+
+755
+00:23:15,570 --> 00:23:17,050
+that's out here that
+starts cranking
+
+756
+00:23:17,050 --> 00:23:18,530
+this and lifts it, right?
+
+757
+00:23:18,530 --> 00:23:20,529
+This is then going
+to be brought up.
+
+758
+00:23:20,529 --> 00:23:24,129
+Let's see to some
+height here.
+
+759
+00:23:24,129 --> 00:23:25,409
+Let's say initially we
+
+760
+00:23:25,409 --> 00:23:26,889
+have some supporting
+surface here,
+
+761
+00:23:26,889 --> 00:23:28,369
+and then we move that in,
+
+762
+00:23:28,369 --> 00:23:30,409
+and we rest it
+there, right?
+
+763
+00:23:30,409 --> 00:23:31,889
+And then the height
+that we have for
+
+764
+00:23:31,889 --> 00:23:34,650
+this displacement
+is then age.
+
+765
+00:23:34,650 --> 00:23:36,130
+So we have a
+surface S here,
+
+766
+00:23:36,130 --> 00:23:38,169
+a weight here, a
+pulley, you know,
+
+767
+00:23:38,169 --> 00:23:39,490
+someone literally turning
+
+768
+00:23:39,490 --> 00:23:42,409
+a crank to raise that up.
+
+769
+00:23:42,409 --> 00:23:44,009
+This initial state here,
+
+770
+00:23:44,009 --> 00:23:46,014
+we'll call it state one.
+
+771
+00:23:46,014 --> 00:23:48,379
+This other one here
+we'll call as,
+
+772
+00:23:48,379 --> 00:23:51,879
+um, state two, okay?
+
+773
+00:23:51,879 --> 00:23:52,999
+And the reason
+why we're able
+
+774
+00:23:52,999 --> 00:23:54,279
+to move that is right
+there is someone
+
+775
+00:23:54,279 --> 00:23:56,199
+who's outside here
+who's transferring that
+
+776
+00:23:56,199 --> 00:23:58,359
+work in to move it up.
+
+777
+00:23:58,359 --> 00:24:00,519
+We could also consider
+a scenario here where
+
+778
+00:24:00,519 --> 00:24:02,719
+we let it go back
+down to one, right?
+
+779
+00:24:02,719 --> 00:24:04,639
+And in order to let
+that go back down,
+
+780
+00:24:04,639 --> 00:24:06,239
+we'll also, you
+know, have to be
+
+781
+00:24:06,239 --> 00:24:08,679
+applying sort of a
+force resisting,
+
+782
+00:24:08,679 --> 00:24:10,839
+you know, that
+movement back to
+
+783
+00:24:10,839 --> 00:24:16,320
+the surface so that it's
+done slowly, right?
+
+784
+00:24:16,320 --> 00:24:21,159
+And if we look at
+going 1-2 to one,
+
+785
+00:24:21,159 --> 00:24:22,159
+we can talk about
+
+786
+00:24:22,159 --> 00:24:25,440
+the change in
+the work, right?
+
+787
+00:24:25,440 --> 00:24:28,624
+And that complete
+integral there,
+
+788
+00:24:28,624 --> 00:24:32,129
+right is then equal
+to zero, right?
+
+789
+00:24:32,129 --> 00:24:33,449
+Because we took
+this thing.
+
+790
+00:24:33,449 --> 00:24:34,649
+We lifted it up to a
+
+791
+00:24:34,649 --> 00:24:35,849
+height very slowly, right?
+
+792
+00:24:35,849 --> 00:24:36,809
+We didn't do anything
+
+793
+00:24:36,809 --> 00:24:38,570
+where there was a
+lot of friction.
+
+794
+00:24:38,570 --> 00:24:40,290
+And then we basically
+released it,
+
+795
+00:24:40,290 --> 00:24:42,890
+brought it back down
+very slowly to that.
+
+796
+00:24:42,890 --> 00:24:44,809
+So we did work
+to transfer up,
+
+797
+00:24:44,809 --> 00:24:46,729
+and then we
+received work or
+
+798
+00:24:46,729 --> 00:24:49,609
+transferred work out
+then when it went there,
+
+799
+00:24:49,609 --> 00:24:50,929
+and the result of that of
+
+800
+00:24:50,929 --> 00:24:52,449
+one to two to
+one is we have
+
+801
+00:24:52,449 --> 00:24:57,729
+no change in work, okay?
+
+802
+00:25:02,080 --> 00:25:04,159
+Okay.
+
+803
+00:25:09,280 --> 00:25:12,999
+Times that.
+Cool. All right.
+
+804
+00:25:12,999 --> 00:25:14,520
+So we can do
+this experiment.
+
+805
+00:25:14,520 --> 00:25:15,879
+A similar experiment
+again of,
+
+806
+00:25:15,879 --> 00:25:18,400
+like, raising and
+lowering weights.
+
+807
+00:25:18,400 --> 00:25:20,679
+And the point this time,
+
+808
+00:25:20,679 --> 00:25:23,799
+let's say this is our
+weight, which is here.
+
+809
+00:25:23,799 --> 00:25:27,439
+Let's say this goes
+up again to a pulley.
+
+810
+00:25:27,439 --> 00:25:29,199
+So we have some
+pulley here, right,
+
+811
+00:25:29,199 --> 00:25:30,919
+where we're, you know,
+
+812
+00:25:30,919 --> 00:25:32,599
+wrapping our rope around.
+
+813
+00:25:32,599 --> 00:25:36,289
+This is then going into
+um, a container here.
+
+814
+00:25:36,289 --> 00:25:39,930
+Let's say this container
+is full with liquid.
+
+815
+00:25:39,930 --> 00:25:41,089
+Let's say we can measure
+
+816
+00:25:41,089 --> 00:25:42,289
+the temperature inside
+
+817
+00:25:42,289 --> 00:25:43,770
+here with a thermometer.
+
+818
+00:25:43,770 --> 00:25:46,089
+And instead of, right,
+
+819
+00:25:46,089 --> 00:25:48,809
+transferring this work,
+let's say, you know,
+
+820
+00:25:48,809 --> 00:25:49,969
+out of the system
+into what might
+
+821
+00:25:49,969 --> 00:25:51,210
+be like, potential energy,
+
+822
+00:25:51,210 --> 00:25:52,489
+maybe there's another
+weight out here that
+
+823
+00:25:52,489 --> 00:25:54,249
+you're lifting
+and lowering.
+
+824
+00:25:54,249 --> 00:25:57,449
+In this case, what
+we'd like to do is
+
+825
+00:25:57,449 --> 00:26:02,649
+to dissipate that
+with a break, right?
+
+826
+00:26:02,649 --> 00:26:08,769
+So this is basically
+a break here, okay?
+
+827
+00:26:08,769 --> 00:26:15,050
+And so if we do,
+let's say, um, um,
+
+828
+00:26:16,770 --> 00:26:19,090
+If we were to
+take this from,
+
+829
+00:26:19,090 --> 00:26:21,769
+let's say, like, a state
+one, which is here,
+
+830
+00:26:21,769 --> 00:26:24,290
+and then we lower
+that down, you know,
+
+831
+00:26:24,290 --> 00:26:27,099
+let's say, you know,
+some distance.
+
+832
+00:26:27,099 --> 00:26:28,499
+Let's say that distance is
+
+833
+00:26:28,499 --> 00:26:30,540
+then, you know,
+something like,
+
+834
+00:26:30,540 --> 00:26:32,739
+you know, something
+like the H that we had
+
+835
+00:26:32,739 --> 00:26:35,980
+there, we'd have
+that process.
+
+836
+00:26:35,980 --> 00:26:39,219
+Okay? So we can
+go one to two
+
+837
+00:26:39,219 --> 00:26:41,379
+with that. All right.
+
+838
+00:26:41,379 --> 00:26:42,699
+So you would take this,
+
+839
+00:26:42,699 --> 00:26:44,660
+you release some energy.
+
+840
+00:26:44,660 --> 00:26:46,659
+That'd be transferring
+to the b.
+
+841
+00:26:46,659 --> 00:26:49,060
+And the result of that
+is that you would heat
+
+842
+00:26:49,060 --> 00:26:51,540
+up the fluid here, right?
+
+843
+00:26:51,540 --> 00:26:54,019
+And so my question is,
+how do you return?
+
+844
+00:26:54,019 --> 00:26:56,460
+So if I, again, release
+the potential energy,
+
+845
+00:26:56,460 --> 00:26:57,979
+I heat up the water here,
+
+846
+00:26:57,979 --> 00:27:00,899
+how do you return
+back to state one?
+
+847
+00:27:02,900 --> 00:27:09,419
+No. Okay. That's
+it, right?
+
+848
+00:27:09,419 --> 00:27:11,619
+So to go back, you
+need to cool, right?
+
+849
+00:27:11,619 --> 00:27:17,739
+To get back to state
+one there, right?
+
+850
+00:27:17,739 --> 00:27:20,019
+And what should
+be clear from
+
+851
+00:27:20,019 --> 00:27:25,139
+this case is that if we
+go one to two to one,
+
+852
+00:27:26,260 --> 00:27:28,100
+this integral,
+
+853
+00:27:28,100 --> 00:27:29,379
+right, that we had
+written before,
+
+854
+00:27:29,379 --> 00:27:32,939
+it's not equal
+to zero, right?
+
+855
+00:27:32,939 --> 00:27:34,780
+This is what we would
+call essentially
+
+856
+00:27:34,780 --> 00:27:36,059
+an irreversible process,
+
+857
+00:27:36,059 --> 00:27:37,780
+or you've done
+something and you can't
+
+858
+00:27:37,780 --> 00:27:42,179
+get it back, okay?
+
+859
+00:27:42,179 --> 00:27:46,180
+And People like Joule,
+
+860
+00:27:46,180 --> 00:27:48,179
+so who the unit of
+energy is named after
+
+861
+00:27:48,179 --> 00:27:49,460
+did a lot of experiments
+
+862
+00:27:49,460 --> 00:27:50,620
+that were like
+this, right?
+
+863
+00:27:50,620 --> 00:27:51,819
+So a lot of
+experiments like
+
+864
+00:27:51,819 --> 00:27:53,380
+that where you raise
+and lower the heat,
+
+865
+00:27:53,380 --> 00:27:54,819
+or especially this type,
+
+866
+00:27:54,819 --> 00:27:57,339
+where you lower
+a weight, okay?
+
+867
+00:27:57,339 --> 00:27:59,339
+So, you know, you
+take, you know,
+
+868
+00:27:59,339 --> 00:28:00,339
+some change, let's say,
+
+869
+00:28:00,339 --> 00:28:02,179
+an energy, and
+you produce it.
+
+870
+00:28:02,179 --> 00:28:04,459
+You know, you
+transfer that then,
+
+871
+00:28:04,459 --> 00:28:06,100
+you know, and generate
+
+872
+00:28:06,100 --> 00:28:07,500
+heat in a system, right?
+
+873
+00:28:07,500 --> 00:28:08,779
+In the 19th century,
+
+874
+00:28:08,779 --> 00:28:09,659
+this was, like,
+a big problem.
+
+875
+00:28:09,659 --> 00:28:10,419
+People used to take,
+
+876
+00:28:10,419 --> 00:28:11,900
+like, cannon bores, right?
+
+877
+00:28:11,900 --> 00:28:12,779
+And they would, you know,
+
+878
+00:28:12,779 --> 00:28:14,260
+try to bore them out.
+
+879
+00:28:14,260 --> 00:28:15,500
+And at that time, people
+
+880
+00:28:15,500 --> 00:28:16,779
+didn't really
+understand what he was.
+
+881
+00:28:16,779 --> 00:28:18,819
+They thought it was
+called caloric theory.
+
+882
+00:28:18,819 --> 00:28:21,659
+They thought it flowed,
+you know, like water,
+
+883
+00:28:21,659 --> 00:28:25,339
+basically, um, um, you
+know, flows there.
+
+884
+00:28:25,339 --> 00:28:26,260
+And so these were,
+
+885
+00:28:26,260 --> 00:28:27,579
+like, deep questions
+that they were,
+
+886
+00:28:27,579 --> 00:28:28,779
+you know, concerned
+with was the
+
+887
+00:28:28,779 --> 00:28:30,139
+mechanisms and
+what went on.
+
+888
+00:28:30,139 --> 00:28:31,500
+And so what Jewel did
+
+889
+00:28:31,500 --> 00:28:32,900
+is through like
+a series of,
+
+890
+00:28:32,900 --> 00:28:34,099
+like, weights and
+
+891
+00:28:34,099 --> 00:28:35,539
+lowering them
+different heights,
+
+892
+00:28:35,539 --> 00:28:37,900
+and then measuring the
+change in temperature,
+
+893
+00:28:37,900 --> 00:28:40,539
+what he showed was that,
+
+894
+00:28:40,539 --> 00:28:46,310
+um, dq, which stands
+for heat, right, minus.
+
+895
+00:28:46,310 --> 00:28:48,309
+So this is heap in
+
+896
+00:28:48,309 --> 00:28:51,909
+minus the
+complete integral
+
+897
+00:28:51,909 --> 00:28:53,109
+of work transferred out
+
+898
+00:28:53,109 --> 00:28:55,189
+was then equal
+to zero, okay?
+
+899
+00:28:55,189 --> 00:28:57,270
+This is called sometimes
+the mechanical
+
+900
+00:28:57,270 --> 00:28:59,109
+equivalent of
+heat, all right?
+
+901
+00:28:59,109 --> 00:29:00,629
+So it may be
+obvious to us now,
+
+902
+00:29:00,629 --> 00:29:02,389
+but again, I can't
+emphasize enough that,
+
+903
+00:29:02,389 --> 00:29:03,870
+like, people used to
+think that it was
+
+904
+00:29:03,870 --> 00:29:06,069
+like he was a
+substance, all right?
+
+905
+00:29:06,069 --> 00:29:09,999
+Um, This is one statement
+
+906
+00:29:09,999 --> 00:29:13,239
+of the first law of
+thermodynamics, right?
+
+907
+00:29:13,239 --> 00:29:14,720
+So I you know,
+
+908
+00:29:14,720 --> 00:29:16,280
+one way to look at
+the first law is
+
+909
+00:29:16,280 --> 00:29:19,119
+that energy is conserved.
+
+910
+00:29:19,119 --> 00:29:20,920
+So if I take all of
+
+911
+00:29:20,920 --> 00:29:23,199
+the net heat right
+
+912
+00:29:23,199 --> 00:29:24,680
+into this system,
+you know,
+
+913
+00:29:24,680 --> 00:29:26,559
+doing that whole
+process and all of
+
+914
+00:29:26,559 --> 00:29:28,919
+the network that's
+transferred out of that,
+
+915
+00:29:28,919 --> 00:29:31,240
+the difference
+between that for
+
+916
+00:29:31,240 --> 00:29:32,639
+a closed system
+like that should be
+
+917
+00:29:32,639 --> 00:29:35,199
+equal to zero, okay?
+
+918
+00:29:35,360 --> 00:29:40,579
+So yeah, essentially,
+this is first law.
+
+919
+00:29:40,579 --> 00:29:50,159
+All right. Okay.
+This is good.
+
+920
+00:29:50,159 --> 00:29:54,359
+I want to bring
+back my one.
+
+921
+00:30:04,680 --> 00:30:07,399
+I promise a lot better
+board management
+
+922
+00:30:07,399 --> 00:30:09,639
+once my camera gets fixed.
+
+923
+00:30:09,639 --> 00:30:11,879
+Alright? Okay.
+
+924
+00:30:19,240 --> 00:30:24,040
+Okay, so now let's
+consider the following.
+
+925
+00:30:24,040 --> 00:30:28,159
+Let's say that we
+have a state zero,
+
+926
+00:30:28,159 --> 00:30:29,959
+which is here, and let's
+
+927
+00:30:29,959 --> 00:30:32,439
+say this is a
+state one, okay?
+
+928
+00:30:32,439 --> 00:30:35,679
+And let's say that we
+have a process of going
+
+929
+00:30:35,679 --> 00:30:38,039
+from state one to
+
+930
+00:30:38,039 --> 00:30:39,839
+state zero, which
+we'll call A.
+
+931
+00:30:39,839 --> 00:30:43,439
+And we'll consider
+two trips back, okay?
+
+932
+00:30:43,439 --> 00:30:45,599
+Let's say the direct way,
+
+933
+00:30:45,599 --> 00:30:49,984
+and let's call path C
+the scenic route, okay?
+
+934
+00:30:49,984 --> 00:30:52,770
+That was a dead joke.
+All right, fine.
+
+935
+00:30:52,770 --> 00:30:58,489
+Scenic drone. Okay.
+Um. All right.
+
+936
+00:30:58,489 --> 00:31:03,729
+So from a statement
+that we have there,
+
+937
+00:31:03,729 --> 00:31:05,089
+what we can
+write then is in
+
+938
+00:31:05,089 --> 00:31:08,049
+the integral from one A
+
+939
+00:31:08,049 --> 00:31:15,450
+to zero of dq minus dw,
+
+940
+00:31:15,450 --> 00:31:20,129
+plus the integral then
+of zero B to one.
+
+941
+00:31:20,129 --> 00:31:24,049
+So zero B to one of
+
+942
+00:31:24,049 --> 00:31:29,729
+dq minus dw is equal
+to zero. All right?
+
+943
+00:31:29,729 --> 00:31:31,889
+Now, we can consider
+the same thing,
+
+944
+00:31:31,889 --> 00:31:33,529
+but a return trip as,
+
+945
+00:31:33,529 --> 00:31:35,449
+again, the scenic
+route, right?
+
+946
+00:31:35,449 --> 00:31:42,330
+So we have one A to
+zero dq minus dw,
+
+947
+00:31:42,330 --> 00:31:47,529
+plus the integral
+of zero C to
+
+948
+00:31:47,529 --> 00:31:54,179
+one of dq minus dw, right?
+
+949
+00:31:54,179 --> 00:31:55,739
+And so if we combine these
+
+950
+00:31:55,739 --> 00:31:57,100
+two, these two terms,
+
+951
+00:31:57,100 --> 00:31:58,939
+this is going to subtract,
+
+952
+00:31:58,939 --> 00:32:00,539
+and so this term and
+this term are going
+
+953
+00:32:00,539 --> 00:32:02,859
+to be equivalent, right?
+
+954
+00:32:02,859 --> 00:32:08,259
+So our integral of
+zero to one B of our
+
+955
+00:32:08,259 --> 00:32:12,699
+dq minus dw is equal to
+
+956
+00:32:12,699 --> 00:32:19,420
+zero C to one
+of dq minus dw.
+
+957
+00:32:20,700 --> 00:32:29,539
+Yeah. Okay. So let's
+move that one there.
+
+958
+00:32:29,539 --> 00:32:31,659
+Let's bring it back.
+
+959
+00:32:39,620 --> 00:32:42,819
+Yeah. Okay. So.
+
+960
+00:32:46,260 --> 00:32:49,099
+So the integral of
+
+961
+00:32:49,099 --> 00:32:50,459
+basically the
+difference of
+
+962
+00:32:50,459 --> 00:32:53,020
+dQ and minus dw
+
+963
+00:32:53,020 --> 00:32:55,339
+is essentially fixed by
+
+964
+00:32:55,339 --> 00:32:56,579
+the endpoints, all right?
+
+965
+00:32:56,579 --> 00:32:58,580
+Yes, please. Go ahead.
+
+966
+00:33:00,500 --> 00:33:02,900
+Heat. It's like
+heat transfer.
+
+967
+00:33:02,900 --> 00:33:05,340
+So Q and thermodynamics
+is heat transfer.
+
+968
+00:33:05,340 --> 00:33:08,500
+Other questions?
+Clarifications? Yes, please.
+
+969
+00:33:08,500 --> 00:33:11,539
+Name Zach.
+
+970
+00:33:14,820 --> 00:33:17,339
+No, this should just
+be one. I'm sorry.
+
+971
+00:33:17,339 --> 00:33:18,219
+So one is the start.
+
+972
+00:33:18,219 --> 00:33:20,474
+I apologize. Thank you
+for catching that.
+
+973
+00:33:20,474 --> 00:33:24,049
+Okay. This should
+be zero B, yes.
+
+974
+00:33:24,049 --> 00:33:25,090
+You get up here
+
+975
+00:33:25,090 --> 00:33:25,970
+and I don't know
+what happens.
+
+976
+00:33:25,970 --> 00:33:27,209
+Suddenly, like letters
+
+977
+00:33:27,209 --> 00:33:28,290
+change. I'm not kidding.
+
+978
+00:33:28,290 --> 00:33:32,529
+Okay. Other questions?
+Okay. Thank you.
+
+979
+00:33:32,529 --> 00:33:35,769
+All right. All right.
+
+980
+00:33:35,769 --> 00:33:38,129
+So the point is that
+
+981
+00:33:38,130 --> 00:33:40,930
+and I'll get
+into it later,
+
+982
+00:33:40,930 --> 00:33:47,010
+but the point of
+this is that this dQ
+
+983
+00:33:47,010 --> 00:33:50,409
+minus this DW all I need
+to know to have this
+
+984
+00:33:50,409 --> 00:33:52,049
+is essentially the final
+
+985
+00:33:52,049 --> 00:33:54,089
+and the initial
+states, okay?
+
+986
+00:33:54,089 --> 00:33:56,649
+And the same then for
+
+987
+00:33:56,649 --> 00:33:58,849
+the other process, okay?
+
+988
+00:33:59,200 --> 00:34:02,999
+So what we can write
+then is that E one,
+
+989
+00:34:02,999 --> 00:34:06,039
+so let's call
+that energy in
+
+990
+00:34:06,039 --> 00:34:11,799
+the system minus E
+zero is then the
+
+991
+00:34:11,799 --> 00:34:21,930
+integral 0-1 of
+dq minus dw,
+
+992
+00:34:21,930 --> 00:34:26,169
+which is then equal
+to Q minus W, right?
+
+993
+00:34:26,169 --> 00:34:28,090
+So this is basically
+the energy
+
+994
+00:34:28,090 --> 00:34:30,609
+right in the system
+at state one.
+
+995
+00:34:30,609 --> 00:34:31,569
+This is the energy in
+
+996
+00:34:31,569 --> 00:34:33,249
+the system at state zero.
+
+997
+00:34:33,249 --> 00:34:36,049
+Q is the heat transferred
+into the system,
+
+998
+00:34:36,049 --> 00:34:38,649
+and W is the work
+transferred out, okay?
+
+999
+00:34:38,649 --> 00:34:40,449
+In mechanical
+engineering and
+
+1000
+00:34:40,449 --> 00:34:41,850
+thermal here, that's
+the convention.
+
+1001
+00:34:41,850 --> 00:34:44,089
+If you see Q, and it
+doesn't say in or out,
+
+1002
+00:34:44,089 --> 00:34:46,929
+it is positive when
+you transfer in,
+
+1003
+00:34:46,929 --> 00:34:49,969
+and W is positive when
+it's transferred out.
+
+1004
+00:34:49,969 --> 00:34:51,049
+And the reason
+for that is if
+
+1005
+00:34:51,049 --> 00:34:52,530
+you think about
+a power plant,
+
+1006
+00:34:52,530 --> 00:34:54,409
+you put heat into it
+
+1007
+00:34:54,409 --> 00:34:56,849
+and you get work
+out of it, right?
+
+1008
+00:34:56,849 --> 00:34:58,609
+That's the way to
+remember. If you go
+
+1009
+00:34:58,609 --> 00:35:00,610
+to physics, They're weird.
+
+1010
+00:35:00,610 --> 00:35:02,249
+Sorry. And they do things
+
+1011
+00:35:02,249 --> 00:35:05,289
+differently, all
+right? Okay.
+
+1012
+00:35:06,090 --> 00:35:08,049
+All right, so we can
+
+1013
+00:35:08,049 --> 00:35:09,169
+take the differential
+of this, right?
+
+1014
+00:35:09,169 --> 00:35:10,129
+So then we can talk about
+
+1015
+00:35:10,129 --> 00:35:11,690
+D, right being equal
+
+1016
+00:35:11,690 --> 00:35:15,690
+to dQ minus R dw.
+
+1017
+00:35:15,690 --> 00:35:17,289
+And this is what
+I would say is
+
+1018
+00:35:17,289 --> 00:35:18,649
+a very common
+way that you'll
+
+1019
+00:35:18,649 --> 00:35:20,169
+see the first law written.
+
+1020
+00:35:20,169 --> 00:35:21,929
+So the change in
+the energy of
+
+1021
+00:35:21,929 --> 00:35:24,569
+your system is equal
+to the change and
+
+1022
+00:35:24,569 --> 00:35:25,809
+the amount is equal to
+
+1023
+00:35:25,809 --> 00:35:27,450
+the amount of heat
+transferred in minus
+
+1024
+00:35:27,450 --> 00:35:28,609
+the amount of work
+
+1025
+00:35:28,609 --> 00:35:31,369
+transferred
+out, all right?
+
+1026
+00:35:31,590 --> 00:35:33,669
+Okay.
+
+1027
+00:35:34,070 --> 00:35:36,789
+Were to also go with this.
+
+1028
+00:35:36,789 --> 00:35:38,869
+We generally don't care
+
+1029
+00:35:38,869 --> 00:35:41,509
+about the absolute
+amount of energy, right?
+
+1030
+00:35:41,509 --> 00:35:43,029
+If we care about
+a process, like
+
+1031
+00:35:43,029 --> 00:35:43,669
+I mentioned before,
+
+1032
+00:35:43,669 --> 00:35:44,989
+you care about difference.
+
+1033
+00:35:44,989 --> 00:35:46,669
+If you went in
+and you wanted
+
+1034
+00:35:46,669 --> 00:35:48,589
+to tally up all the
+energy in something,
+
+1035
+00:35:48,589 --> 00:35:50,189
+right, you'd have to
+talk about, you know,
+
+1036
+00:35:50,189 --> 00:35:51,389
+your kinetic
+energies, your
+
+1037
+00:35:51,389 --> 00:35:53,109
+potential energies,
+any magnetism,
+
+1038
+00:35:53,109 --> 00:35:55,069
+capillarity, and whatever
+that goes into it,
+
+1039
+00:35:55,069 --> 00:35:56,749
+it gets exhausting, right?
+
+1040
+00:35:56,749 --> 00:35:58,890
+Um, Again, as an engineer,
+
+1041
+00:35:58,890 --> 00:35:59,529
+you don't really care
+
+1042
+00:35:59,529 --> 00:36:00,609
+about the absolute value,
+
+1043
+00:36:00,609 --> 00:36:01,889
+but you do care about
+the difference, right?
+
+1044
+00:36:01,889 --> 00:36:03,169
+So go from something hot
+
+1045
+00:36:03,169 --> 00:36:04,649
+to cold, that's there.
+
+1046
+00:36:04,649 --> 00:36:05,889
+That's something that's
+going to be done.
+
+1047
+00:36:05,889 --> 00:36:07,089
+And so what you'll do is
+
+1048
+00:36:07,089 --> 00:36:08,489
+you'll talk about
+a reference state.
+
+1049
+00:36:08,489 --> 00:36:09,249
+So when we get into
+
+1050
+00:36:09,249 --> 00:36:10,529
+properties,
+you'll say, okay,
+
+1051
+00:36:10,529 --> 00:36:11,129
+here is
+
+1052
+00:36:11,129 --> 00:36:13,529
+some arbitrarily chosen
+reference state.
+
+1053
+00:36:13,529 --> 00:36:15,009
+We all agree on it, like
+
+1054
+00:36:15,009 --> 00:36:16,449
+we all agree on
+the time for
+
+1055
+00:36:16,449 --> 00:36:17,969
+whatever reason in the UK
+
+1056
+00:36:17,969 --> 00:36:19,569
+that we have GMT zero.
+
+1057
+00:36:19,569 --> 00:36:21,529
+We accept that
+in the same way
+
+1058
+00:36:21,529 --> 00:36:23,290
+in our tables in
+our calculations,
+
+1059
+00:36:23,290 --> 00:36:24,849
+there's going to be
+some reference value,
+
+1060
+00:36:24,849 --> 00:36:28,209
+and we compute property
+changes in and
+
+1061
+00:36:28,209 --> 00:36:31,589
+around, um, that, okay?
+
+1062
+00:36:31,589 --> 00:36:33,509
+So again, there's
+no absolute value.
+
+1063
+00:36:33,509 --> 00:36:35,469
+Well, there could be
+an absolute value
+
+1064
+00:36:35,469 --> 00:36:37,470
+of what we call here
+is internal energy.
+
+1065
+00:36:37,470 --> 00:36:38,829
+But again, we don't care.
+
+1066
+00:36:38,829 --> 00:36:40,829
+That's not questions
+that we ask
+
+1067
+00:36:40,829 --> 00:36:43,789
+in this in this
+class, okay?
+
+1068
+00:36:43,789 --> 00:36:46,569
+Um, okay.
+
+1069
+00:36:46,569 --> 00:36:48,549
+This is a property, right?
+
+1070
+00:36:48,549 --> 00:36:49,829
+Internal energy
+is a property.
+
+1071
+00:36:49,829 --> 00:36:51,149
+If I know the
+temperature and
+
+1072
+00:36:51,149 --> 00:36:52,309
+the pressure or
+
+1073
+00:36:52,309 --> 00:36:53,949
+the specific volume
+of my system,
+
+1074
+00:36:53,949 --> 00:36:55,470
+I know the
+internal energy,
+
+1075
+00:36:55,470 --> 00:36:56,869
+okay? It's a property.
+
+1076
+00:36:56,869 --> 00:37:00,589
+Heat and work, I cannot
+stress this enough,
+
+1077
+00:37:00,589 --> 00:37:04,909
+are not properties,
+right? They're not.
+
+1078
+00:37:05,870 --> 00:37:08,589
+You know, you
+transfer heat in,
+
+1079
+00:37:08,589 --> 00:37:10,469
+you transfer
+work out, okay?
+
+1080
+00:37:10,469 --> 00:37:13,029
+When we think about
+the, you know,
+
+1081
+00:37:13,029 --> 00:37:14,989
+the and where
+you transfer it
+
+1082
+00:37:14,989 --> 00:37:17,149
+in and out are at
+boundaries, right?
+
+1083
+00:37:17,149 --> 00:37:19,749
+So you look at, you
+know, let's say, again,
+
+1084
+00:37:19,749 --> 00:37:23,979
+back to our piston
+example, Right?
+
+1085
+00:37:23,979 --> 00:37:26,259
+So, if this is,
+
+1086
+00:37:26,259 --> 00:37:28,459
+let's say, the, you know,
+
+1087
+00:37:28,459 --> 00:37:32,659
+what I define as the
+boundary of my system,
+
+1088
+00:37:32,659 --> 00:37:34,779
+you'd be transferring heat
+
+1089
+00:37:34,779 --> 00:37:37,020
+in at that boundary.
+
+1090
+00:37:37,020 --> 00:37:38,939
+You'd be transferring work
+
+1091
+00:37:38,939 --> 00:37:42,019
+also out of that, okay?
+
+1092
+00:37:42,019 --> 00:37:43,619
+What you'll see in
+
+1093
+00:37:43,619 --> 00:37:45,899
+the textbook to
+drive this home,
+
+1094
+00:37:45,899 --> 00:37:50,259
+the fact that this
+is not a property,
+
+1095
+00:37:50,259 --> 00:37:52,819
+is that this D, a lot of
+
+1096
+00:37:52,819 --> 00:37:55,784
+times will be written
+as like a Delta, okay?
+
+1097
+00:37:55,784 --> 00:37:58,269
+And this Delta,
+what it means
+
+1098
+00:37:58,269 --> 00:38:00,749
+is it's an inexact
+differential.
+
+1099
+00:38:00,749 --> 00:38:02,549
+What the hell does
+that mean for us?
+
+1100
+00:38:02,549 --> 00:38:05,029
+It means you need to
+know the process.
+
+1101
+00:38:05,029 --> 00:38:06,549
+Like, you need
+to know every
+
+1102
+00:38:06,549 --> 00:38:08,069
+single little
+change there.
+
+1103
+00:38:08,069 --> 00:38:09,669
+You have to have
+complete information
+
+1104
+00:38:09,669 --> 00:38:12,430
+about it in order
+to integrate.
+
+1105
+00:38:12,430 --> 00:38:14,109
+I'll make it clear
+later how we do that,
+
+1106
+00:38:14,109 --> 00:38:15,229
+but that's why
+they'll write
+
+1107
+00:38:15,229 --> 00:38:17,349
+delta in the textbook.
+
+1108
+00:38:17,349 --> 00:38:19,630
+Again, because
+internal energy,
+
+1109
+00:38:19,630 --> 00:38:21,069
+this is a property, and
+
+1110
+00:38:21,069 --> 00:38:22,269
+the properties
+only depend on
+
+1111
+00:38:22,269 --> 00:38:23,990
+the starting and
+the end states.
+
+1112
+00:38:23,990 --> 00:38:26,069
+You have an exact
+differential
+
+1113
+00:38:26,069 --> 00:38:28,149
+for that, a D, okay?
+
+1114
+00:38:28,149 --> 00:38:31,899
+Cool. To, to do.
+
+1115
+00:38:31,899 --> 00:38:33,980
+So what you should
+not write, let's
+
+1116
+00:38:33,980 --> 00:38:35,819
+see if we stick with
+our example there,
+
+1117
+00:38:35,819 --> 00:38:38,499
+you should not
+write W zero.
+
+1118
+00:38:38,499 --> 00:38:40,299
+You should not
+write W one.
+
+1119
+00:38:40,299 --> 00:38:41,219
+That doesn't make sense.
+
+1120
+00:38:41,219 --> 00:38:44,380
+But something
+like maybe w01,
+
+1121
+00:38:44,380 --> 00:38:45,459
+that might make
+sense, right?
+
+1122
+00:38:45,459 --> 00:38:47,619
+Because that's a process
+between two states.
+
+1123
+00:38:47,619 --> 00:38:49,219
+The same might be said
+of something like
+
+1124
+00:38:49,219 --> 00:38:52,899
+third quarter
+one there, okay?
+
+1125
+00:38:53,190 --> 00:38:59,829
+Great. Yeah.
+
+1126
+00:38:59,829 --> 00:39:02,950
+Okay, so again, this
+is just some basics.
+
+1127
+00:39:02,950 --> 00:39:04,470
+Again, I'll try to
+make this exciting,
+
+1128
+00:39:04,470 --> 00:39:06,229
+and we'll connect
+it back to I mean,
+
+1129
+00:39:06,229 --> 00:39:08,029
+I think this's super
+exciting, but, like,
+
+1130
+00:39:08,029 --> 00:39:10,109
+we'll connect it back
+to the rest later.
+
+1131
+00:39:10,109 --> 00:39:12,029
+But again, in every
+thermal problem,
+
+1132
+00:39:12,029 --> 00:39:13,549
+the most important thing,
+
+1133
+00:39:13,549 --> 00:39:15,069
+the very first
+thing you should
+
+1134
+00:39:15,069 --> 00:39:18,550
+do is to draw a boundary.
+
+1135
+00:39:18,550 --> 00:39:20,749
+You look at a system and
+
+1136
+00:39:20,749 --> 00:39:23,209
+your first reaction
+on a quiz or a test,
+
+1137
+00:39:23,209 --> 00:39:24,829
+is you draw
+
+1138
+00:39:24,829 --> 00:39:25,429
+a nice picture,
+
+1139
+00:39:25,429 --> 00:39:26,549
+better than what
+I've done here.
+
+1140
+00:39:26,549 --> 00:39:28,069
+I know you're
+capable, and then
+
+1141
+00:39:28,069 --> 00:39:29,789
+you draw the boundary
+to it, right?
+
+1142
+00:39:29,789 --> 00:39:31,709
+And what we
+call that here,
+
+1143
+00:39:31,709 --> 00:39:33,070
+so we draw that boundary,
+
+1144
+00:39:33,070 --> 00:39:35,149
+the area contained in it.
+
+1145
+00:39:35,149 --> 00:39:38,869
+The term is the
+control volume, right?
+
+1146
+00:39:38,869 --> 00:39:40,429
+And again, the
+whole purpose
+
+1147
+00:39:40,429 --> 00:39:42,149
+of this course
+is looking at
+
+1148
+00:39:42,149 --> 00:39:43,470
+the ways that
+we can exchange
+
+1149
+00:39:43,470 --> 00:39:45,470
+energy in and out of
+the control volume.
+
+1150
+00:39:45,470 --> 00:39:46,869
+For this, we're
+looking at heat
+
+1151
+00:39:46,869 --> 00:39:48,349
+in and out, work
+in and out.
+
+1152
+00:39:48,349 --> 00:39:50,950
+Later on, when we think
+about data centers,
+
+1153
+00:39:50,950 --> 00:39:52,070
+when we think
+about turbines,
+
+1154
+00:39:52,070 --> 00:39:52,789
+when we think about that,
+
+1155
+00:39:52,789 --> 00:39:53,669
+we're also going
+to be able to
+
+1156
+00:39:53,669 --> 00:39:54,629
+bring in a fluid, right?
+
+1157
+00:39:54,629 --> 00:39:55,509
+We're going to
+be able to bring
+
+1158
+00:39:55,509 --> 00:39:56,429
+in mass in and out,
+
+1159
+00:39:56,429 --> 00:39:57,669
+and that's the third
+way that you can
+
+1160
+00:39:57,669 --> 00:40:02,749
+exchange energy
+there, okay?
+
+1161
+00:40:03,390 --> 00:40:07,550
+Great. What else
+am I missing?
+
+1162
+00:40:07,550 --> 00:40:09,589
+We're doing super
+today. We're like,
+
+1163
+00:40:09,589 --> 00:40:11,189
+amazingly on time.
+
+1164
+00:40:11,189 --> 00:40:12,629
+You guys are a
+great group.
+
+1165
+00:40:12,629 --> 00:40:15,949
+Okay, so I've exhausted
+my notes on all that.
+
+1166
+00:40:15,949 --> 00:40:17,789
+So I just have some
+closing remarks then,
+
+1167
+00:40:17,789 --> 00:40:18,829
+and then I can
+release you all
+
+1168
+00:40:18,829 --> 00:40:20,109
+early to go to
+your homework one,
+
+1169
+00:40:20,109 --> 00:40:21,269
+two, and three before,
+
+1170
+00:40:21,269 --> 00:40:23,270
+you know, next lecture.
+
+1171
+00:40:23,270 --> 00:40:25,589
+So, this is a quote from
+
+1172
+00:40:25,589 --> 00:40:27,749
+a very famous
+German professor
+
+1173
+00:40:27,749 --> 00:40:29,150
+Arnold Sommerfeld.
+
+1174
+00:40:29,150 --> 00:40:30,469
+So first statement,
+you know,
+
+1175
+00:40:30,469 --> 00:40:31,790
+thermo is a funny subject.
+
+1176
+00:40:31,790 --> 00:40:32,629
+The first time you
+go through it,
+
+1177
+00:40:32,629 --> 00:40:33,789
+you don't understand
+it at all.
+
+1178
+00:40:33,789 --> 00:40:35,029
+The second time
+you go through it,
+
+1179
+00:40:35,029 --> 00:40:36,069
+you think you
+get it except
+
+1180
+00:40:36,069 --> 00:40:37,150
+for one or two parts.
+
+1181
+00:40:37,150 --> 00:40:38,469
+The third time you
+go through it,
+
+1182
+00:40:38,469 --> 00:40:39,629
+you know you don't
+understand it,
+
+1183
+00:40:39,629 --> 00:40:40,989
+but by that time,
+you're used to it
+
+1184
+00:40:40,989 --> 00:40:42,949
+and it doesn't bother
+you anymore, okay?
+
+1185
+00:40:42,949 --> 00:40:44,669
+So anyways, he was
+
+1186
+00:40:44,669 --> 00:40:46,710
+very famous. He
+was very famous.
+
+1187
+00:40:46,710 --> 00:40:49,310
+He himself didn't win
+any Nobel Prizes,
+
+1188
+00:40:49,310 --> 00:40:52,429
+but a bunch of his
+students, you know, did.
+
+1189
+00:40:52,429 --> 00:40:53,709
+Maybe they didn't
+need it three
+
+1190
+00:40:53,709 --> 00:40:55,549
+times to take it.
+
+1191
+00:40:55,549 --> 00:40:57,509
+So this is where you
+are sort of today,
+
+1192
+00:40:57,509 --> 00:40:58,669
+you're going through it.
+
+1193
+00:40:58,669 --> 00:41:00,990
+You know, by the end
+of this, hopefully,
+
+1194
+00:41:00,990 --> 00:41:02,789
+you know, you'll
+be ready for
+
+1195
+00:41:02,789 --> 00:41:04,309
+the next part there.
+
+1196
+00:41:04,309 --> 00:41:06,030
+Thank you all today.
+Great turnout.
+
+1197
+00:41:06,030 --> 00:41:06,669
+If you have any questions,
+
+1198
+00:41:06,669 --> 00:41:07,829
+I'm up here for the
+next few minutes.
+
+1199
+00:41:07,829 --> 00:41:10,190
+I'm looking forward
+to the semester.

@@ -1,0 +1,66 @@
+{
+  "lectureId": "1_lrp76ygs",
+  "courseCaptureId": "rtl_course_capture",
+  "lecture": "07-prework-entropyPrinciple",
+  "title": "Entropy",
+  "videoTitle": "ME40 - Video 7 - Principle of Maximum Entropy (edited)",
+  "module": "module-two",
+  "year": "Fa23",
+  "instructor": "tschutzius",
+  "topics": [
+    {
+      "name": "Entropy",
+      "description": "Entropy."
+    }
+  ],
+  "subtopics": [
+    {
+      "key": "L7e-3.1",
+      "topic": "Entropy Balance Equation for a Closed System",
+      "summary": "Starts by applying the **Entropy Balance** to a closed system: $$\\Delta S_{\\\\text{system}} = \\\\sum \\\\frac{Q_k}{T_k} + S_{\\\\text{gen}}$$. This equation equates the change in system entropy to the sum of entropy transfer (via heat) and entropy generation ($$S_{\\\\text{gen}}$$) due to irreversibilities.",
+      "time_range": "00:00 - 02:20"
+    },
+    {
+      "key": "L7e-3.2",
+      "topic": "Entropy Generation and Irreversibility",
+      "summary": "Discusses the physical meaning of $S_{\\\\text{gen}}$$. The **entropy generation** term is always $$\\ge 0$$. $S_{\\\\text{gen}} > 0$$ indicates an **irreversible process** (real-world), $S_{\\\\text{gen}} = 0$$ indicates a **reversible process** (idealized), and $S_{\\\\text{gen}} < 0$$ indicates an **impossible process**.",
+      "time_range": "02:20 - 04:30"
+    },
+    {
+      "key": "L7e-3.3",
+      "topic": "Entropy Balance for an Isolated System (The Universe)",
+      "summary": "Applies the entropy balance to the **Isolated System** (the system plus surroundings, or 'the universe'). Since $Q=0$$ for an isolated system, $$\\Delta S_{\\\\text{universe}} = S_{\\\\text{gen}}$$. This leads back to the **Increase of Entropy Principle**: $$\\Delta S_{\\\\text{universe}} \\\\ge 0$$.",
+      "time_range": "04:30 - 06:45"
+    },
+    {
+      "key": "L7e-3.4",
+      "topic": "T-s Diagram and Constant Properties",
+      "summary": "Revisits the T-s (Temperature-Entropy) Diagram, illustrating constant properties (volume, pressure) and the concept of an **isentropic process** ($$\\Delta s = 0$$), which appears as a vertical line on the T-s diagram.",
+      "time_range": "06:45 - 09:30"
+    },
+    {
+      "key": "L7e-3.5",
+      "topic": "Gibbs Equations (Tds Relations)",
+      "summary": "Introduces the **Gibbs Equations** (or Tds Relations), which are fundamental relationships between properties: 1) $$T \\\\text{d}s = \\\\text{d}u + P \\\\text{d}v$$ and 2) $$T \\\\text{d}s = \\\\text{d}h - v \\\\text{d}P$$. These are useful for calculating entropy changes for ideal gases.",
+      "time_range": "09:30 - 11:30"
+    },
+    {
+      "key": "L7e-3.6",
+      "topic": "Entropy Change for Ideal Gases (Constant Specific Heats)",
+      "summary": "Derives the entropy change equations for ideal gases assuming constant specific heats ($$c_v, c_p$$): $$\\Delta s = c_v \\\\ln \\\\left(\\\\frac{T_2}{T_1}\\\\right) + R \\\\ln \\\\left(\\\\frac{v_2}{v_1}\\\\right)$$ and $$\\Delta s = c_p \\\\ln \\\\left(\\\\frac{T_2}{T_1}\\\\right) - R \\\\ln \\\\left(\\\\frac{P_2}{P_1}\\\\right)$$.",
+      "time_range": "11:30 - 14:00"
+    },
+    {
+      "key": "L7e-3.7",
+      "topic": "Isentropic Relations for Ideal Gases",
+      "summary": "Presents the **Isentropic Relations** for ideal gases with constant specific heats (where $$\\Delta s = 0$$): $$\\frac{T_2}{T_1} = \\\\left(\\\\frac{v_1}{v_2}\\\\right)^{k-1} = \\\\left(\\\\frac{P_2}{P_1}\\\\right)^{(k-1)/k}$$. Where $k$$ is the specific heat ratio ($$c_p/c_v$$).",
+      "time_range": "14:00 - 16:30"
+    },
+    {
+      "key": "L7e-3.8",
+      "topic": "Connecting Thermodynamics to Basic Rules of the Universe",
+      "summary": "Final summary connecting the **Increase of Entropy Principle** with other fundamental conservation laws (energy, mass, momentum) as the basic rules that govern all processes in the universe, emphasizing its importance in engineering and science.",
+      "time_range": "16:30 - 18:00"
+    }
+  ]
+}

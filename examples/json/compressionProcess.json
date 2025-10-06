@@ -1,0 +1,39 @@
+{
+  "problem_title": "compressionProcess",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "easy"
+  ],
+  "topic": "Properties",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_0uijb1pt",
+      "subtopics": [
+        {
+          "key": "Fa25-L2a-9.0",
+          "title": "Energy transfer by work to a closed system"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 2,
+      "title": "Energy, Energy Transfer, and General Energy Analysis",
+      "sections": [
+        "Energy Transfer by Work",
+        "Mechanical Forms of Work"
+      ]
+    },
+    "notes": ""
+  },
+  "problem_statement_raw": "A piston compresses a gas inside of it. Consider three different processes: isothermal, isobaric, and adiabatic. Create a plot of pressure vs. volume for these three different compression processes.",
+  "schematic": "",
+  "physical_laws_and_assumptions": "Process: Compress Gas\n\nReversible process:\n\nConsider a piston whose piston head area is, $S$. The piston head is displaced, compressing the gas inside of it. That gas inside is at a pressure, $p$. \n\nThe force applied to the piston head is:\n\n$$F = p S $$\n\nIf we shift the piston a distance, $dh$, an amount of work $dW$ is done:\n\n$$dW = p S dh $$\n\n$$W = \\int_A^B p dV $$\n\nLet's analyze the isothermal compression of an ideal gas in a piston. \n\n$$dU = \\delta Q - \\delta W $$\n\n$$ W = \\int_A^B p dV $$\n\nWe know from the ideal gas law that:\n\n$$p V = m R T$$\n\nwhich we can re-write as:\n\n$$p = \\frac{m R T}{V} $$\n\nTherefore, we have:\n\n$$ W = \\int_A^B \\frac{m R T}{V} dV $$\n\nSince $T$ is constant and it is a closed system (no mass transfer), we have:\n\n$$ W = m R T \\int_A^B \\frac{1}{V} dV $$\n\n$$ W = m R T \\ln \\frac{V_A}{V_B} $$",
+  "pedagogical_summary": "If the state of the system can be represented on a $(p,V)$ diagram, the work performed during a transformation has a simple geometric representation. \n\nTransformations which are especially important are those for which the initial and final states are the same. these are called cyclical transformations or cycles. A cycle, therefore is a transformation which brings the system back to its initial state. If the state of the system can be represented on a volume pressure diagram then a cycle can be represented on this diagram by a closed curve, such as the curve, 1234.",
+  "solution_code": [
+    {
+      "step_name": "Calculate Properties and Plot",
+      "code": "## 5. Properties and 6. Calculations (Code Cell)\n\n# Import necessary libraries\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n# Assumptions: Air as ideal gas, constant specific heats (k)\nR = 287 # J/(kg*K) - Specific gas constant for air\nk = 1.4 # Specific heat ratio for air (kappa)\n\n# Initial State (A)\nT_initial_C = 20 # Initial temperature in Celsius\nT_initial_K = T_initial_C + 273.15 # Initial temperature in Kelvin\np_initial_Pa = 101325 # Initial pressure in Pa (approx 1 atm)\nV_initial = 0.05 # Initial Volume in m^3\n\n# Final State (B)\nV_final = 0.01 # Final Volume in m^3 (Compression)\n\n# Calculate mass for the ideal gas\nm_kg = (p_initial_Pa * V_initial) / (R * T_initial_K)\n\n# -----------------\n# Isothermal Process (T = const)\n# p V = const => p_A V_A = p_B V_B\np_final_isothermal = p_initial_Pa * (V_initial / V_final)\n\n# -----------------\n# Isobaric Process (p = const) - Compression is not typically isobaric, but plot it for comparison\n# p_A = p_B\np_final_isobaric = p_initial_Pa\n\n# -----------------\n# Adiabatic Process (p V^k = const)\n# p_A V_A^k = p_B V_B^k\np_final_adiabatic = p_initial_Pa * (V_initial / V_final)**k\n\n# -----------------\n# Create P-V curves for plotting\n\n# Volume range for the process\nV_range = np.linspace(V_final, V_initial, 100)\n\n# Isothermal curve: p = (p_initial * V_initial) / V\nP_isothermal = (p_initial_Pa * V_initial) / V_range\n\n# Isobaric curve: p = p_initial\nP_isobaric = np.full_like(V_range, p_initial_Pa)\n\n# Adiabatic curve: p = (p_initial * V_initial^k) / V^k\nP_adiabatic = p_initial_Pa * (V_initial / V_range)**k\n\n# -----------------\n# Plotting\n\nplt.figure(figsize=(10, 7))\n\n# Plot the three processes\nplt.plot(V_range, P_isothermal / 1000, label='Isothermal ($T$=const)', linestyle='--', color='blue')\nplt.plot(V_range, P_adiabatic / 1000, label='Adiabatic ($pV^k$=const)', color='red')\n# Note: Isobaric compression to a smaller volume is physically unrealistic unless heat is removed and the pressure is held constant via external means, but plot it for comparison.\nplt.plot(V_range, P_isobaric / 1000, label='Isobaric ($p$=const)', linestyle=':', color='green')\n\n\n# Plot initial and final points\nplt.plot(V_initial, p_initial_Pa / 1000, 'o', color='black', markersize=8, label='Initial State (A)')\nplt.plot(V_final, p_final_isothermal / 1000, 'x', color='blue', markersize=8)\nplt.plot(V_final, p_final_adiabatic / 1000, 'x', color='red', markersize=8)\nplt.plot(V_final, p_final_isobaric / 1000, 'x', color='green', markersize=8)\n\n# Annotate the states\nplt.annotate('A (Initial)', xy=(V_initial, p_initial_Pa / 1000), xytext=(5, 5), textcoords='offset points', fontsize=10)\nplt.annotate('B_iso', xy=(V_final, p_final_isothermal / 1000), xytext=(-20, -10), textcoords='offset points', fontsize=10)\nplt.annotate('B_adia', xy=(V_final, p_final_adiabatic / 1000), xytext=(-20, 10), textcoords='offset points', fontsize=10)\nplt.annotate('B_isoba', xy=(V_final, p_final_isobaric / 1000), xytext=(-20, -10), textcoords='offset points', fontsize=10)\n\n# Labels and Title\nplt.xlabel('$V$ (m^3)')\nplt.ylabel('$p$ (kPa)')\nplt.title('P-V Diagram for Different Compression Processes')\nplt.grid(True)\nplt.legend()\n\n# Set axis limits\nplt.xlim(0, V_initial * 1.1)\nmax_p = max(p_final_adiabatic, p_final_isothermal, p_final_isobaric)\nplt.ylim(0, max_p * 1.1 / 1000)\n\n# Show the plot\n# plt.savefig('p-V-compression.png')\nplt.show()"
+    }
+  ]
+}

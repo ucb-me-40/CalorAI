@@ -1,0 +1,38 @@
+{
+    "problem_title": "compressorPyCalor",
+    "author": "tschutzius",
+    "year": "Fa25",
+    "difficulty_tags": [
+        "easy"
+    ],
+    "topic": "Control Volumes",
+    "course_reference": {
+        "lecture_id": "1_hb7swztw",
+        "subtopics": [
+            {
+                "key": "Fa25-L5b-3.0",
+                "title": "Example: Energy Analysis of a Steady-flow System: Compressor"
+            }
+        ],
+        "book_reference": {
+            "chapter_number": 5,
+            "title": "Mass and Energy Analysis of Control Volumes",
+            "sections": [
+                "Some Steady-Flow Engineering Devices"
+            ]
+        }
+    },
+    "problem_statement_raw": "Air enters a compressor with a mass flow rate of 0.02 kg/s at 100 kPa and 290 K and exits the compressor at 600 kPa and 500 K. The compressor is cooled with 1 kJ/kg. \nGoal: \nDetermine the shaft power input.\nDraw a compressor with a control volume drawn around it. Indicate that power is transferred in from a shaft and heat is transferred out.",
+    "physical_laws_and_assumptions": "Neglect kinetic and potential energy\nSteady-flow system\nDetermine properties using `pyCalor`. \nChanges in enthalpy can be determined from $dh = c_p dT$ by assuming that air is an ideal gas.  \nConservation of energy for a compressor:\n$$\\dot{W}_\\text{in} = \\dot{m} \\left(h_2 - h_1 \\right) $$\nAssuming air behaves as an ideal gas, we can write:\n$$\\dot{W}_\\text{in} \\approx \\dot{m} c_p \\left(T_2 - T_1 \\right) $$",
+    "solution_code": [
+        {
+            "step_name": "Properties (Code Cell)",
+            "code": "## 5. Properties (Code Cell)\n!pip install pyCalor\nfrom pyCalor import thermo as th\n\n#For the properties, I am using the notation \"in\" and \"out\" as well as \"1\" and \"2\", where \"in\" is also \"1\" and \"out\" is also \"2\"\n\nfluid = 'Air'\n\nmdot_kgperS = 0.02 #kg/s\n\n# state 1\nP1_Pa = 100e3 #Pa\nT1_K = 290 #K\nst1 = th.state(fluid,T=(T1_K,'K'),p=(P1_Pa,'Pa'),name='1')\nh1_JperKg = st1.h*1e3\ncp_kJperKgPerK = st1.cp\n\n# state 2\nP2_Pa = 600e3 #Pa\nT2_K = 500 #K\nst2 = th.state(fluid,T=(T2_K,'K'),p=(P2_Pa,'Pa'),name='2')\nh2_JperKg = st2.h*1e3\n\nqout_JperKg = 1e3 #J/kg"
+        },
+        {
+            "step_name": "Calculations (Code Cell)",
+            "code": "## 6 Calculations (Code Cell)\nQdotOut_JperS = qout_JperKg*mdot_kgperS #J/s\n\nWdotIn_JperS = QdotOut_JperS + mdot_kgperS*(h2_JperKg-h1_JperKg); print(WdotIn_JperS) #J/s\n\npr = th.process([(st1,st2)])\n\npr.plot('pv')\n\n### Alternative solution\n\nWdotIn_JperS_alt = QdotOut_JperS + mdot_kgperS*(cp_kJperKgPerK*1e3)*(T2_K-T1_K); print(WdotIn_JperS_alt) #J/s\n\nerror = ((WdotIn_JperS - WdotIn_JperS_alt)/WdotIn_JperS)*100; print(error)"
+        }
+    ],
+    "pedagogical_summary": "We see that the ideal gas assumption is a good one since the error for determining the shaft power input from $\\dot{W}_\\text{in} \\approx \\dot{m} c_p \\left(T_2 - T_1 \\right) + \\dot{Q}_\\text{out}$ is small."
+}

@@ -1,0 +1,42 @@
+{
+  "problem_title": "throttlingPyCalor",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "easy"
+  ],
+  "topic": "Control Volumes",
+  "course_reference": {
+    "lecture_id": "1_97hqf37r",
+    "subtopics": [
+      {
+        "key": "Fa25-L5c-1.0",
+        "title": "Throttling and Expansion Valves"
+      }
+    ],
+    "book_reference": {
+      "chapter_number": 5,
+      "title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Some Steady-Flow Engineering Devices"
+      ]
+    }
+  },
+  "problem_statement_raw": "Refrigerant-134a enters a throttling valve at $p_3=$0.8 MPa and $T_3=$50$^\\circ$C and exits at $p_4=$0.15 MPa. Goal: * Determine the exit temperature of the throttling device, $T_4$.",
+  "physical_laws_and_assumptions": "Schematic: Draw a schematic of a throttling device. Indicate that there is no heat transfer or work transfer in or out. Assumptions and Approximations: * Adiabatic * No work transfer * Neglect kinetic and potential energy * Steady-flow system * Determine properties using `pyCalor`. Physical Laws and Governing Equations: Conservation of mass: $$\\frac{dm_\\text{CV}}{dt} = \\dot{m}_\\text{in} - \\dot{m}_\\text{out} $$ Steady flow: $$0 = \\dot{m}_\\text{in} - \\dot{m}_\\text{out} $$ $$\\dot{m}_\\text{in} = \\dot{m}_\\text{out} = \\dot{m}$$ Conservation of energy: Conservation of mass: $$\\frac{dE_\\text{CV}}{dt} = \\dot{E}_\\text{in} - \\dot{E}_\\text{out} $$ Steady flow: $$0 = \\dot{E}_\\text{in} - \\dot{E}_\\text{out} $$ $$\\dot{E}_\\text{in} = \\dot{E}_\\text{out}$$ $$\\dot{W}_\\text{in} + \\dot{Q}_\\text{in} + \\dot{m} \\left(h_3 + (w_3^2/2) + g z_3 \\right) = \\dot{W}_\\text{out} + \\dot{Q}_\\text{out} + \\dot{m} \\left(h_4 + (w_4^2/2) + g z_4 \\right)$$ Neglecting changes in kinetic and potential energy; no work transfer; no heat transfer: $$h_3 = h_4 $$ We see that this process is isenthalpic. By determining $h_4$, we can now determine state 4 since we know $p_4$.",
+  "pedagogical_summary": "Since it's an isenthalpic process, we are able to determine the downstream specific enthalpy. By knowing that and the pressure, which is given, we were able to determine the temperature. We also see that the temperature is lower after throttling, which is the purpose of the device.",
+  "solution_code": [
+    {
+      "step_name": "Install pyCalor",
+      "code": "!pip install pyCalor"
+    },
+    {
+      "step_name": "Determine Properties (State 3 and State 4)",
+      "code": "## 5. Properties (Code Cell)\nfrom pyCalor import thermo as th\n\nmdot_kgPerS = 0.05\nfluid = 'R134a'\n\n# state 3\np3_MPa = 0.8\nx3 = 0.0\nst3 = th.state(fluid,p=(p3_MPa,'Mpa'),x=x3,name='3')\n\n# state 4\np4_MPa = 0.15\n# isenthalpic process, 3 to 4, h4 = st3.h\nst4 = th.state(fluid,h=st3.h,p=(p4_MPa,'Mpa'),name='4')"
+    },
+    {
+      "step_name": "Calculate Exit Temperature T4",
+      "code": "## 6 Calculations (Code Cell)\nT4_K = st4.T; print(T4_K)"
+    }
+  ]
+}

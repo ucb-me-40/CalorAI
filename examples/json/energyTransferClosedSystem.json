@@ -1,0 +1,39 @@
+{
+    "problem_title": "energyTransferClosedSystem",
+    "author": "tschutzius",
+    "year": "Fa25",
+    "difficulty_tags": [
+        "easy"
+    ],
+    "topic": "Properties",
+    "lecture_reference": {
+        "lecture_id": "1_0uijb1pt",
+        "subtopics": [
+            {
+                "key": "Fa25-L2a-11.0",
+                "title": "Energy balance of a system"
+            }
+        ]
+    },
+    "book_reference": {
+        "chapter_number": 2,
+        "title": "Energy, Energy Transfer, and General Energy Analysis",
+        "sections": [
+            "Energy Transfer by Work"
+        ]
+    },
+    "notes": "",
+    "problem_statement_raw": "Consider a closed system containing a fluid. The initial internal energy, $U_1$ is given. Shaft work is transferred in and heat is transferred out. \nGoal Determine the final internal energy, $U_2$.\nDraw a control volume around the container. A paddle is inside of the control volume. The control volume is not insulated. Indicate that work is transferred in and heat is transferred out.",
+    "physical_laws_and_assumptions": "Closed System (no mass crosses the boundary).\nNeglect kinetic and potential energy ($\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$).\nConservation of energy:\n$$E_\\text{in} - E_\\text{out} = (Q_\\text{in} - Q_\\text{out}) + (W_\\text{in} - W_\\text{out})$$\nNeglecting changes in kinetic and potential energy, we can write:\n$$ E_\\text{in} - E_\\text{out} = \\Delta E_\\text{system} = U_2 - U_1 $$\nOnly work in and heat out:\n$$U_2  = U_1 - Q_\\text{out} + W_\\text{in}$$",
+    "solution_code": [
+        {
+            "step_name": "Properties (Code Cell)",
+            "code": "## 5. Properties (Code Cell)\nQout_kJ = 500\nWin_kJ = 100\n\nU1_kJ = 800"
+        },
+        {
+            "step_name": "Calculations (Code Cell)",
+            "code": "# 6 Calculations (Code Cell)\nU2_kJ = U1_kJ + (-Qout_kJ) - (-Win_kJ); print(U2_kJ)"
+        }
+    ],
+    "pedagogical_summary": "From the first law of thermodynamics, since we are transferring more energy out than in, we would expect that the internal energy at state 2 is less than state 1."
+}

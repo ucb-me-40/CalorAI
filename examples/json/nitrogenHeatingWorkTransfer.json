@@ -1,0 +1,42 @@
+{
+  "problem_title": "nitrogenHeatingWorkTransfer",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "easy"
+  ],
+  "topic": "Closed Systems",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_3375c5yj",
+      "subtopics": [
+        {
+          "key": "Fa25-L4c-2.0",
+          "title": "Electrical heating and cooling of a cylinder containing nitrogen at constant pressure"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 4,
+      "title": "Energy Analysis of Closed Systems",
+      "sections": [
+        "Moving Boundary Work",
+        "Energy Balance for Closed Systems"
+      ]
+    },
+    "notes": ""
+  },
+  "problem_statement_raw": "A piston cylinder contains nitrogen initially at 400 kPa, 27$^\\circ$C, and 0.5 m$^3$. The piston contains a resistor. The pressure in the piston is kept constant while 120 V is applied to the resistor resulting in 2 A flowing thorugh it for 5 min. The piston is also cooled, transferring 2800 J out. Goal: Determine the final temperature, $T_2$. Draw a schematic of a piston cylinder. Show that electrical work is transferred into the piston and heat is transferred out of it. The fluid in the piston cylinder is nitrogen.",
+  "physical_laws_and_assumptions": "Ideal gas, undergoes quasi-equilibrium expansion or compression Use `pyCalor` to determine nitrogens properties. In an alternative solution we can treat nitrogen as an ideal gas. Neglect kinetic and potential energy Boundary work is transferred through expansion ($p dV$). Closed system (no mass in or out) Constant values for specific heat Conservation of energy Ideal gas law Conservation of energy: $$\\Delta E_\\text{CV} = E_\\text{in} - E_\\text{out} $$ $$\\Delta U + \\Delta KE + \\Delta PE = (W_\\text{in} + Q_\\text{in}) - (W_\\text{out} + Q_\\text{out})  $$ Neglect changes in kinetic and potential energy: $$\\Delta U = (W_\\text{in}) - (W_\\text{out} + Q_\\text{out}) $$ $$ W_\\text{out} = p_1 (V_2 - V_1) $$ $$ W_\\text{out} = p_1 m (v_2 - v_1) $$ $$ W_\\text{in} = \\text{V} I \\Delta t $$ Combining yields: $$m (u_2 - u_1) = \\text{V} I \\Delta t  - p_1 m (v_2 - v_1)  - Q_\\text{out} $$ Rearranging: $$m \\left[ \\left(u_2 + p_1 v_2\\right) - \\left( u_1 + p_1 v_1 \\right) \\right] = \\text{V} I \\Delta t   - Q_\\text{out} $$ Since $p_2 = p_1$, we have: $$m \\left[ \\left(u_2 + p_2 v_2\\right) - \\left( u_1 + p_1 v_1 \\right) \\right] = \\text{V} I \\Delta t   - Q_\\text{out} $$ The definition of enthalpy is: $$ h = u + p v$$ Therefore, $$m \\left[ h_2 - h_1 \\right] = \\text{V} I \\Delta t   - Q_\\text{out} $$ $$h_2  = \\text{V} I \\Delta t /m   - Q_\\text{out} / m + h_1$$ Picking up where we left off with our equation for enthalpy: $$h_2 = h_1 + (\\text{V} I t - Q_\\text{out})/m  $$ Recall that we can define changes in enthalpy as: $$ dh = c_p dT $$ Therefore, for constant specific heats: $$ h_2 - h_1 = c_p (T_2 - T_1) $$ Substituting yields: $$T_2 = T_1 + (\\text{V} I t - Q_\\text{out})/(c_p m)  $$ From the textbook we can determine the specific heat, $c_p$, or we can use pyCalor. ",
+  "solution_code": [
+    {
+      "step_name": "Properties",
+      "code": "# 5. Properties (Code Cell)\n!pip install pyCalor\nfrom pyCalor import thermo as th\n\nR_JperKgPerK = 296.8\nV1_m3 = 0.5\np1_Pa = 400e3\nT1_K = 27+273.15\nsubstance = 'nitrogen'\n\n# determine state 1 using pyCalor\nst1 = th.state(substance,T=(T1_K,'K'),p=(400,'kpa'),name='1')\nh1_JperKg = st1.h*1e3\n\n# determine the mass in the piston using the ideal gas law\nm_kg = (p1_Pa*V1_m3)/(R_JperKgPerK*T1_K); print(m_kg)\n\nQout_J = 2800\nVolt_V = 120\nI_A = 2\nt_s = 5*60"
+    },
+    {
+      "step_name": "Calculations",
+      "code": "# 6 Calculations (Code Cell)\n\nWin_J = Volt_V*I_A*t_s; print(Win_J)\n\nh2_JperKg = h1_JperKg + ((Win_J - Qout_J)/m_kg)\nh2_kJperKg = h2_JperKg/1e3\n\n# by knowing h2, we can determine state 2 using pyCalor\nst2 = th.state(substance,p=(p1_Pa/1e3,'kpa'),h=h2_kJperKg,name='2')\n\n# final answer, T2\nT2_C = st2.T-273.15\nprint(T2_C)\n\n# alternative solution\ncp_N2_JperKgPerK = 1.039*1e3\n\nT2_K_ = T1_K + ((Win_J - Qout_J)/(cp_N2_JperKgPerK*m_kg))\nprint(T2_K_-273.15)\n\nerror = (T2_K_ - st2.T)/st2.T; \nprint(error*100)"
+    }
+  ],
+  "pedagogical_summary": "We see that the values for $T_2$ are the same for two different approaches. The assumption of constant specific heat values appears to be a good one."
+}

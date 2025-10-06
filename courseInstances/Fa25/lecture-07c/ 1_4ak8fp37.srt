@@ -1,0 +1,5602 @@
+1
+00:00:00,120 --> 00:00:04,360
+I got 210 entropy.
+
+2
+00:00:06,840 --> 00:00:08,960
+Yeah, so basically, we're
+
+3
+00:00:08,960 --> 00:00:10,080
+going to look
+at some aspects
+
+4
+00:00:10,080 --> 00:00:13,200
+of change in entropy
+ideal gases.
+
+5
+00:00:13,200 --> 00:00:14,480
+We're going to
+look at especially
+
+6
+00:00:14,480 --> 00:00:15,640
+in the isentropic process.
+
+7
+00:00:15,640 --> 00:00:17,239
+These have two
+examples today and
+
+8
+00:00:17,239 --> 00:00:19,159
+show you how that's
+useful for, like,
+
+9
+00:00:19,159 --> 00:00:20,839
+understanding work
+in or workout
+
+10
+00:00:20,839 --> 00:00:23,240
+of steady flow
+devices, all right?
+
+11
+00:00:23,240 --> 00:00:24,840
+Then we'll also
+derive some
+
+12
+00:00:24,840 --> 00:00:26,439
+deriving equation.
+
+13
+00:00:26,439 --> 00:00:29,759
+All right. So an
+isentropic process, right?
+
+14
+00:00:29,759 --> 00:00:32,789
+So before We had this,
+
+15
+00:00:32,789 --> 00:00:34,429
+we said changes in
+
+16
+00:00:34,429 --> 00:00:36,069
+entropy were equal to
+
+17
+00:00:36,069 --> 00:00:37,709
+an amount of heat
+transferred in,
+
+18
+00:00:37,709 --> 00:00:40,790
+divided by temperature,
+and amount of heat
+
+19
+00:00:40,790 --> 00:00:44,510
+transferred out divided
+by temperature.
+
+20
+00:00:44,510 --> 00:00:47,309
+So the first part of
+calling something like
+
+21
+00:00:47,309 --> 00:00:51,229
+isotropic is that there's
+no heat transfer.
+
+22
+00:00:51,229 --> 00:00:53,989
+That's step one.
+The second thing
+
+23
+00:00:53,989 --> 00:00:55,389
+is imagine that
+
+24
+00:00:55,389 --> 00:00:58,149
+the device operates
+reversibly,
+
+25
+00:00:58,149 --> 00:01:00,029
+no friction, right?
+
+26
+00:01:00,029 --> 00:01:01,510
+You don't have
+anything that's
+
+27
+00:01:01,510 --> 00:01:04,669
+very far from equilibrium.
+
+28
+00:01:04,669 --> 00:01:05,909
+So if you see
+something like, Hey,
+
+29
+00:01:05,909 --> 00:01:08,775
+this is adiabatic
+and it's reversible,
+
+30
+00:01:08,775 --> 00:01:10,439
+that should trigger
+something in
+
+31
+00:01:10,439 --> 00:01:12,479
+your head to say
+isotropic, right?
+
+32
+00:01:12,479 --> 00:01:13,640
+So those are keywords
+
+33
+00:01:13,640 --> 00:01:14,399
+that allow you
+to be there.
+
+34
+00:01:14,399 --> 00:01:16,359
+But an adiabatic
+process is not
+
+35
+00:01:16,359 --> 00:01:19,919
+necessarily an isotropic
+process, okay?
+
+36
+00:01:19,919 --> 00:01:23,320
+And the same for something
+like reversible.
+
+37
+00:01:23,320 --> 00:01:25,400
+A device could be
+operating reversibly,
+
+38
+00:01:25,400 --> 00:01:26,680
+but I could be
+transferring
+
+39
+00:01:26,680 --> 00:01:28,039
+heat into it, okay?
+
+40
+00:01:28,039 --> 00:01:30,399
+And that second one
+we'll classify and
+
+41
+00:01:30,399 --> 00:01:32,800
+call is actually we'll
+give a terminology,
+
+42
+00:01:32,800 --> 00:01:34,079
+and I'll call that
+one as, like,
+
+43
+00:01:34,079 --> 00:01:35,960
+what's called
+internally reversible.
+
+44
+00:01:35,960 --> 00:01:37,000
+This whole thing operates
+
+45
+00:01:37,000 --> 00:01:38,400
+perfectly and reversibly,
+
+46
+00:01:38,400 --> 00:01:39,999
+but maybe I'm
+adding heat or
+
+47
+00:01:39,999 --> 00:01:42,439
+taking heat out
+of it, okay?
+
+48
+00:01:42,439 --> 00:01:44,599
+Um, All right,
+
+49
+00:01:44,599 --> 00:01:46,999
+so that's the part about
+isentropic, right?
+
+50
+00:01:46,999 --> 00:01:49,039
+The second thing
+is that entropy
+
+51
+00:01:49,039 --> 00:01:50,879
+is a property, right?
+
+52
+00:01:50,879 --> 00:01:52,240
+So just like enthropy,
+
+53
+00:01:52,240 --> 00:01:53,719
+if I think about a
+fluid, so if you look
+
+54
+00:01:53,719 --> 00:01:55,200
+up here at this, if I
+think about the fluid,
+
+55
+00:01:55,200 --> 00:01:57,999
+the fluid can have
+a property of
+
+56
+00:01:57,999 --> 00:01:59,199
+an enthropy when it
+
+57
+00:01:59,199 --> 00:02:01,200
+enters an internal energy,
+
+58
+00:02:01,200 --> 00:02:03,160
+a pressure,
+specific volume,
+
+59
+00:02:03,160 --> 00:02:05,040
+and also an entropy.
+
+60
+00:02:05,040 --> 00:02:07,199
+So it can have an
+entropy, right?
+
+61
+00:02:07,199 --> 00:02:08,759
+And when something
+is, let's
+
+62
+00:02:08,759 --> 00:02:10,159
+say in this steady
+flow device,
+
+63
+00:02:10,159 --> 00:02:12,159
+if this is operating
+isentropically,
+
+64
+00:02:12,159 --> 00:02:14,600
+the entropy
+specific entropy
+
+65
+00:02:14,600 --> 00:02:15,840
+of the steam entering here
+
+66
+00:02:15,840 --> 00:02:17,320
+is going to be equal to
+
+67
+00:02:17,320 --> 00:02:20,185
+the specific entropy
+of the steam leaving.
+
+68
+00:02:20,185 --> 00:02:23,250
+And that is very,
+very useful, okay?
+
+69
+00:02:23,250 --> 00:02:25,050
+This is going to
+make it possible for
+
+70
+00:02:25,050 --> 00:02:27,010
+us in very, like,
+
+71
+00:02:27,010 --> 00:02:28,810
+easy ways to analyze
+
+72
+00:02:28,810 --> 00:02:32,210
+power plants and
+devices later, okay?
+
+73
+00:02:32,210 --> 00:02:33,929
+And again, just to
+remind you before,
+
+74
+00:02:33,929 --> 00:02:35,130
+when something is
+operating like this,
+
+75
+00:02:35,130 --> 00:02:37,010
+this is the
+theoretical limit
+
+76
+00:02:37,010 --> 00:02:38,810
+of performance, right?
+So we're doing this.
+
+77
+00:02:38,810 --> 00:02:40,570
+We're thinking about
+theoretical limits.
+
+78
+00:02:40,570 --> 00:02:41,810
+Later on, we'll talk
+
+79
+00:02:41,810 --> 00:02:43,690
+about some ways and
+
+80
+00:02:43,690 --> 00:02:44,970
+account for the
+fact that things,
+
+81
+00:02:44,970 --> 00:02:47,210
+you know, life is
+imperfect, okay?
+
+82
+00:02:47,210 --> 00:02:48,529
+So we'll account
+for that later.
+
+83
+00:02:48,529 --> 00:02:50,775
+But today, life's perfect.
+
+84
+00:02:50,775 --> 00:02:53,500
+Cool. So an example.
+
+85
+00:02:53,500 --> 00:02:54,740
+So here I'm showing
+
+86
+00:02:54,740 --> 00:02:55,899
+you a very
+important device.
+
+87
+00:02:55,899 --> 00:02:58,380
+This is a turbine, right?
+
+88
+00:02:58,380 --> 00:02:59,780
+So this is what you
+would see, again,
+
+89
+00:02:59,780 --> 00:03:00,420
+you know, here,
+
+90
+00:03:00,420 --> 00:03:01,820
+the work transferred
+out here.
+
+91
+00:03:01,820 --> 00:03:03,660
+What would be what is
+transferred to, like,
+
+92
+00:03:03,660 --> 00:03:05,740
+a generator and
+electricity production
+
+93
+00:03:05,740 --> 00:03:07,880
+in a thermoelectric
+power plant.
+
+94
+00:03:07,880 --> 00:03:09,699
+You're given inlets.
+
+95
+00:03:09,699 --> 00:03:11,059
+So this is
+superheated steam.
+
+96
+00:03:11,059 --> 00:03:12,300
+That's a high
+pressure, and
+
+97
+00:03:12,300 --> 00:03:13,459
+that's a very
+high temperature.
+
+98
+00:03:13,459 --> 00:03:14,939
+So you have superheated
+steam that's
+
+99
+00:03:14,939 --> 00:03:16,580
+entering here,
+
+100
+00:03:16,580 --> 00:03:19,659
+work transferred out,
+no heat transferred in,
+
+101
+00:03:19,659 --> 00:03:22,780
+and, you know, the
+outlet pressure.
+
+102
+00:03:22,780 --> 00:03:27,740
+And this is a reversible
+adiabatic turbine,
+
+103
+00:03:27,740 --> 00:03:27,940
+right?
+
+104
+00:03:27,940 --> 00:03:29,140
+So the entropy of
+
+105
+00:03:29,140 --> 00:03:30,700
+the fluid specific
+entropy of
+
+106
+00:03:30,700 --> 00:03:33,900
+the fluid exiting
+is equal here.
+
+107
+00:03:33,900 --> 00:03:36,410
+What does that look
+like on a TS diagram?
+
+108
+00:03:36,410 --> 00:03:38,920
+So here you have the
+saturated shinom
+
+109
+00:03:38,920 --> 00:03:41,440
+on a TS diagram, so
+temperature entropy.
+
+110
+00:03:41,440 --> 00:03:43,160
+Here you are at
+high pressure,
+
+111
+00:03:43,160 --> 00:03:45,000
+and then dropping
+to the low, again,
+
+112
+00:03:45,000 --> 00:03:47,599
+along this line of
+constant entropy.
+
+113
+00:03:47,599 --> 00:03:48,799
+When you leave
+here, you're still
+
+114
+00:03:48,799 --> 00:03:51,119
+a superheated vapor.
+
+115
+00:03:51,119 --> 00:03:53,319
+So let's get into
+it. All right.
+
+116
+00:03:53,319 --> 00:03:54,310
+Okay.
+
+117
+00:03:54,310 --> 00:03:56,299
+I'm not going to
+redraw the diagram.
+
+118
+00:03:56,299 --> 00:03:58,020
+You see here where
+the control volume,
+
+119
+00:03:58,020 --> 00:03:59,619
+where the control
+volume is
+
+120
+00:03:59,619 --> 00:04:01,100
+defined at state
+one entering
+
+121
+00:04:01,100 --> 00:04:04,299
+and state two exiting.
+
+122
+00:04:04,299 --> 00:04:05,579
+All right. And here,
+
+123
+00:04:05,579 --> 00:04:07,220
+the goal that we want
+to get out is the work
+
+124
+00:04:07,220 --> 00:04:09,820
+transferred out
+per unit mass.
+
+125
+00:04:09,820 --> 00:04:12,459
+So what we're calling
+
+126
+00:04:12,459 --> 00:04:14,860
+is W out here is equal to
+
+127
+00:04:14,860 --> 00:04:18,580
+W dot out divided by
+
+128
+00:04:18,580 --> 00:04:22,979
+the mass flow rate of
+this entering, right?
+
+129
+00:04:22,979 --> 00:04:24,180
+I have one inlet, I have
+
+130
+00:04:24,180 --> 00:04:28,379
+one exit, right there.
+
+131
+00:04:28,379 --> 00:04:31,340
+Okay? So what we assume,
+
+132
+00:04:31,340 --> 00:04:37,269
+is that we can neglect
+All right, KE and P,
+
+133
+00:04:37,269 --> 00:04:38,949
+similar elect
+kinetic energy
+
+134
+00:04:38,949 --> 00:04:40,829
+and potential
+energy changes,
+
+135
+00:04:40,829 --> 00:04:42,749
+so Delta KE and
+
+136
+00:04:42,749 --> 00:04:44,989
+Delta P. Let me
+
+137
+00:04:44,989 --> 00:04:47,790
+make sure that
+looks good. Um.
+
+138
+00:04:48,430 --> 00:04:50,469
+We cannot treat this as
+
+139
+00:04:50,469 --> 00:04:54,950
+an ideal gas properties
+determined from
+
+140
+00:04:54,950 --> 00:04:57,510
+Pi K. We're not
+going to apply
+
+141
+00:04:57,510 --> 00:05:00,829
+the ideal gas equation
+to a steam turbine.
+
+142
+00:05:00,829 --> 00:05:02,989
+We're going to assume
+it's reversible, right?
+
+143
+00:05:02,989 --> 00:05:06,030
+So it's a
+reversible process,
+
+144
+00:05:06,030 --> 00:05:09,949
+reversible plus
+adiabatic, okay?
+
+145
+00:05:09,949 --> 00:05:13,189
+Adiabatic, which
+
+146
+00:05:13,189 --> 00:05:16,190
+basically implies
+that it's isotropic.
+
+147
+00:05:17,070 --> 00:05:19,430
+All right, that
+steady flow.
+
+148
+00:05:19,430 --> 00:05:21,149
+It's a steady flow device,
+
+149
+00:05:21,149 --> 00:05:23,070
+steady flow,
+
+150
+00:05:23,070 --> 00:05:24,589
+right, which means
+that, you know,
+
+151
+00:05:24,589 --> 00:05:26,349
+changes in the mass
+
+152
+00:05:26,349 --> 00:05:27,989
+of the control
+volume is zero,
+
+153
+00:05:27,989 --> 00:05:29,909
+and changes in
+the energy of
+
+154
+00:05:29,909 --> 00:05:33,149
+the control volume is
+also equal to zero.
+
+155
+00:05:33,149 --> 00:05:36,910
+And we'll switch over.
+This marker is dead.
+
+156
+00:05:36,910 --> 00:05:39,789
+We'll move over
+into red now.
+
+157
+00:05:39,789 --> 00:05:45,569
+I All right.
+
+158
+00:05:45,569 --> 00:05:47,529
+We have a single inlet
+and outlet, right?
+
+159
+00:05:47,529 --> 00:05:53,169
+Single inlet plus
+outlet there.
+
+160
+00:05:53,169 --> 00:05:55,089
+All right? Cool.
+
+161
+00:05:55,089 --> 00:05:56,210
+So our physical laws,
+
+162
+00:05:56,210 --> 00:05:57,089
+the physical laws that
+
+163
+00:05:57,089 --> 00:05:57,930
+we'll write here, right?
+
+164
+00:05:57,930 --> 00:06:00,010
+So the first is the
+conservation of mass.
+
+165
+00:06:00,010 --> 00:06:04,884
+So dmCv dt right
+is equal to m.in.
+
+166
+00:06:04,884 --> 00:06:07,559
+Minus M dot out.
+
+167
+00:06:07,559 --> 00:06:08,960
+Let me see how that looks.
+
+168
+00:06:08,960 --> 00:06:10,279
+That looks pretty good.
+
+169
+00:06:10,279 --> 00:06:12,799
+M dot out, because
+
+170
+00:06:12,799 --> 00:06:13,880
+this is steady flow,
+
+171
+00:06:13,880 --> 00:06:15,439
+this is going
+to go to zero.
+
+172
+00:06:15,439 --> 00:06:17,359
+And what this implies is
+
+173
+00:06:17,359 --> 00:06:19,680
+that dot is equal to m.in,
+
+174
+00:06:19,680 --> 00:06:21,559
+which is equal to M dot
+
+175
+00:06:21,559 --> 00:06:23,320
+out to do the same thing
+
+176
+00:06:23,320 --> 00:06:24,759
+for the conservation
+of energy,
+
+177
+00:06:24,759 --> 00:06:31,559
+dcvdt is equal to
+e.in minus E dot out.
+
+178
+00:06:31,559 --> 00:06:33,639
+Steady flow this
+goes to zero.
+
+179
+00:06:33,639 --> 00:06:36,200
+So your e.in is equal to
+
+180
+00:06:36,200 --> 00:06:44,219
+your E dot out
+there. Yeah.
+
+181
+00:06:44,219 --> 00:06:46,619
+All right. Underneath
+this. All right.
+
+182
+00:06:46,619 --> 00:06:49,139
+So the ways we can
+transfer energy in again,
+
+183
+00:06:49,139 --> 00:06:53,020
+write w.in plus our
+q.in plus our M dot.
+
+184
+00:06:53,020 --> 00:06:54,300
+Remember this is m.in,
+
+185
+00:06:54,300 --> 00:06:57,299
+but that's equal to
+M dot, Enthal P one,
+
+186
+00:06:57,299 --> 00:07:00,140
+state one is entering
+plus velocity
+
+187
+00:07:00,140 --> 00:07:03,259
+one squared divided
+by two plus gz one,
+
+188
+00:07:03,259 --> 00:07:04,819
+the potential energy is
+
+189
+00:07:04,819 --> 00:07:06,419
+equal to your W dot out,
+
+190
+00:07:06,419 --> 00:07:08,434
+plus your Q dot out.
+
+191
+00:07:08,434 --> 00:07:10,089
+Plus M dot out,
+
+192
+00:07:10,089 --> 00:07:12,449
+which is just M
+dot, enthalpy two,
+
+193
+00:07:12,449 --> 00:07:14,690
+which is at the
+exit velocity two
+
+194
+00:07:14,690 --> 00:07:17,849
+squared divided
+by two, gz two.
+
+195
+00:07:17,849 --> 00:07:20,050
+Kinetic terms are gone,
+
+196
+00:07:20,050 --> 00:07:22,610
+adiabatic heat
+terms are gone,
+
+197
+00:07:22,610 --> 00:07:24,249
+and we don't have work in.
+
+198
+00:07:24,249 --> 00:07:28,290
+This is workout. O W dot
+out here is equal to
+
+199
+00:07:28,290 --> 00:07:33,569
+our M dot times H
+one minus H two.
+
+200
+00:07:33,569 --> 00:07:35,289
+You can check if
+this makes sense.
+
+201
+00:07:35,289 --> 00:07:36,649
+You would expect
+the enthalpy
+
+202
+00:07:36,649 --> 00:07:37,649
+of the steam entering
+
+203
+00:07:37,649 --> 00:07:40,250
+the turbine to be higher
+than that exiting.
+
+204
+00:07:40,250 --> 00:07:42,009
+There's basically
+more energy in
+
+205
+00:07:42,009 --> 00:07:43,209
+the steam when
+it's coming in
+
+206
+00:07:43,209 --> 00:07:44,370
+and you want to
+extract that.
+
+207
+00:07:44,370 --> 00:07:46,009
+H one should be
+greater than H two.
+
+208
+00:07:46,009 --> 00:07:49,049
+We have the M dot. What
+we're interested in,
+
+209
+00:07:49,049 --> 00:07:51,450
+though, is W dot out
+divided by M dot.
+
+210
+00:07:51,450 --> 00:07:53,650
+So if we then
+take that dot,
+
+211
+00:07:53,650 --> 00:07:55,609
+and we shift it to
+the other side,
+
+212
+00:07:55,609 --> 00:07:57,249
+right? That's what
+we have, right?
+
+213
+00:07:57,249 --> 00:08:01,369
+So the work
+transferred out on
+
+214
+00:08:01,369 --> 00:08:03,929
+a per mass basis
+from the turbine is
+
+215
+00:08:03,929 --> 00:08:05,769
+equal to the
+difference from
+
+216
+00:08:05,769 --> 00:08:07,409
+the enthalpy at the inlet.
+
+217
+00:08:07,409 --> 00:08:09,169
+Basically the
+enthropy at the inlet
+
+218
+00:08:09,169 --> 00:08:11,049
+minus the enthropy at
+the exit there, right?
+
+219
+00:08:11,049 --> 00:08:15,369
+So that's super,
+super simple, right?
+
+220
+00:08:15,369 --> 00:08:16,889
+But we know H one.
+
+221
+00:08:16,889 --> 00:08:19,089
+So let's talk about
+some properties here.
+
+222
+00:08:19,089 --> 00:08:27,249
+So H one state
+one State one,
+
+223
+00:08:27,249 --> 00:08:34,169
+we know P one is equal
+to our five MPA.
+
+224
+00:08:34,169 --> 00:08:37,090
+We know that T
+one is equal to
+
+225
+00:08:37,090 --> 00:08:40,930
+our 450 degrees
+C. And from this,
+
+226
+00:08:40,930 --> 00:08:42,610
+we can get enthropy one
+
+227
+00:08:42,610 --> 00:08:45,050
+and also entropy
+one, okay?
+
+228
+00:08:45,050 --> 00:08:46,729
+So the specific enthropy
+
+229
+00:08:46,729 --> 00:08:49,129
+and the specific entropy.
+
+230
+00:08:49,129 --> 00:08:53,340
+So for State two, All
+
+231
+00:08:53,340 --> 00:08:55,179
+we know is the pressure.
+
+232
+00:08:55,179 --> 00:09:00,379
+Right now, P two is
+equal to 1.4 MPA?
+
+233
+00:09:00,379 --> 00:09:03,860
+And S two specific
+enthalpy at state
+
+234
+00:09:03,860 --> 00:09:05,259
+two is equal to
+
+235
+00:09:05,259 --> 00:09:07,140
+the specific enthalpy
+at state one, okay?
+
+236
+00:09:07,140 --> 00:09:08,699
+Because this is isotropic.
+
+237
+00:09:08,699 --> 00:09:10,100
+And this is not
+complete information.
+
+238
+00:09:10,100 --> 00:09:13,340
+So pressure with
+specific entropy
+
+239
+00:09:13,340 --> 00:09:14,860
+means that I also then
+
+240
+00:09:14,860 --> 00:09:17,020
+know enthalpy two, right?
+
+241
+00:09:17,020 --> 00:09:19,620
+You can use PKolor,
+plug this in.
+
+242
+00:09:19,620 --> 00:09:20,940
+There was a question
+before about
+
+243
+00:09:20,940 --> 00:09:22,980
+what unit if you
+
+244
+00:09:22,980 --> 00:09:24,499
+want to put this in for
+
+245
+00:09:24,499 --> 00:09:26,460
+Picor, how could
+you declare this?
+
+246
+00:09:26,460 --> 00:09:28,899
+So if I said
+something like,
+
+247
+00:09:28,899 --> 00:09:31,979
+let's say, Um, right?
+
+248
+00:09:31,979 --> 00:09:35,420
+Maybe ST two is equal
+to h dot state,
+
+249
+00:09:35,420 --> 00:09:37,540
+all of my substance.
+
+250
+00:09:37,540 --> 00:09:40,060
+So here I'd have
+water. All right.
+
+251
+00:09:40,060 --> 00:09:42,700
+Right? I have my
+P. So the P here
+
+252
+00:09:42,700 --> 00:09:44,859
+is then equal to
+what is that?
+
+253
+00:09:44,859 --> 00:09:47,420
+That's 1.4 comma.
+
+254
+00:09:47,420 --> 00:09:51,900
+And you can put in
+quotes M PA and for S,
+
+255
+00:09:51,900 --> 00:09:54,620
+if you wanted to put
+that in here, right,
+
+256
+00:09:54,620 --> 00:09:57,740
+you could just
+put in the value
+
+257
+00:09:57,740 --> 00:09:59,260
+that you would
+have for S two.
+
+258
+00:09:59,260 --> 00:10:00,820
+So we get S two.
+
+259
+00:10:00,820 --> 00:10:03,459
+And then in here, it
+would be kilojoules.
+
+260
+00:10:03,459 --> 00:10:05,700
+It's basically a
+little K. So you'd
+
+261
+00:10:05,700 --> 00:10:08,300
+have, um, All right.
+
+262
+00:10:08,300 --> 00:10:10,300
+Kilojoules per
+
+263
+00:10:10,300 --> 00:10:14,139
+kilogram space
+Kelvin like that.
+
+264
+00:10:14,139 --> 00:10:15,380
+All right. I'll update
+
+265
+00:10:15,380 --> 00:10:16,780
+this later in
+the readme file,
+
+266
+00:10:16,780 --> 00:10:19,860
+but you can also declare
+units for this for
+
+267
+00:10:19,860 --> 00:10:23,220
+enthalpy, like that, okay?
+
+268
+00:10:23,220 --> 00:10:25,380
+So you'd have this,
+you'd have the H two.
+
+269
+00:10:25,380 --> 00:10:28,740
+And then when you
+substitute you
+
+270
+00:10:28,740 --> 00:10:32,060
+can go in and substitute
+some numbers.
+
+271
+00:10:32,060 --> 00:10:37,140
+So if we substitute it
+then write this W dot
+
+272
+00:10:37,140 --> 00:10:39,220
+out divided by M
+
+273
+00:10:39,220 --> 00:10:43,980
+dot being equal to
+H one minus H two.
+
+274
+00:10:43,980 --> 00:10:48,779
+What I have as
+a value is 350,
+
+275
+00:10:48,779 --> 00:10:54,820
+then kilojoules per
+kilogram as an answer.
+
+276
+00:10:54,820 --> 00:10:56,340
+The thing to reflect
+on is, again,
+
+277
+00:10:56,340 --> 00:10:58,379
+that this is adiabatic
+and reversible,
+
+278
+00:10:58,379 --> 00:10:59,540
+and that allows
+you then to
+
+279
+00:10:59,540 --> 00:11:01,060
+set the entropies
+equal and
+
+280
+00:11:01,060 --> 00:11:04,740
+determine state two,
+namely enthalpy two.
+
+281
+00:11:04,900 --> 00:11:08,235
+Cool. Questions
+about that?
+
+282
+00:11:08,235 --> 00:11:10,889
+And that's why you
+care about entropy
+
+283
+00:11:10,889 --> 00:11:12,370
+because it makes
+it easy, right?
+
+284
+00:11:12,370 --> 00:11:16,010
+This makes it easy to
+analyze and at least
+
+285
+00:11:16,010 --> 00:11:16,930
+understand what will be
+
+286
+00:11:16,930 --> 00:11:18,090
+maximum performance
+that can
+
+287
+00:11:18,090 --> 00:11:20,770
+be had out of your device.
+
+288
+00:11:20,770 --> 00:11:22,850
+Yes, please.
+
+289
+00:11:30,350 --> 00:11:34,550
+Define so let me just
+be clear, right?
+
+290
+00:11:34,550 --> 00:11:36,309
+So if I define right,
+
+291
+00:11:36,309 --> 00:11:37,990
+if I define state one,
+
+292
+00:11:37,990 --> 00:11:40,110
+what I'm defining in Pi or
+
+293
+00:11:40,110 --> 00:11:42,990
+is an object called
+ST one, right?
+
+294
+00:11:42,990 --> 00:11:45,350
+So if I define
+ST one, right,
+
+295
+00:11:45,350 --> 00:11:49,229
+S one is equal to
+St one dots, right?
+
+296
+00:11:49,229 --> 00:11:50,550
+And then if I
+know that, then
+
+297
+00:11:50,550 --> 00:11:52,190
+I just put it in.
+
+298
+00:11:52,190 --> 00:11:53,750
+So you could
+also just write,
+
+299
+00:11:53,750 --> 00:11:55,870
+you know, St
+one dots here.
+
+300
+00:11:55,870 --> 00:11:57,909
+And then what you need
+to understand is that
+
+301
+00:11:57,909 --> 00:11:59,030
+the default unit of this
+
+302
+00:11:59,030 --> 00:12:00,270
+is like what's
+in the textbook,
+
+303
+00:12:00,270 --> 00:12:02,710
+which is kilojoules
+per kilogram kelvin.
+
+304
+00:12:02,710 --> 00:12:03,989
+So the outputs are set,
+
+305
+00:12:03,989 --> 00:12:05,390
+but then you
+can convert to
+
+306
+00:12:05,390 --> 00:12:07,310
+whatever unit would
+you would want,
+
+307
+00:12:07,310 --> 00:12:08,070
+and then you would just
+
+308
+00:12:08,070 --> 00:12:09,030
+declare what that unit
+
+309
+00:12:09,030 --> 00:12:11,155
+is if you want it
+as an input, okay?
+
+310
+00:12:11,155 --> 00:12:12,720
+Or just default and say,
+
+311
+00:12:12,720 --> 00:12:14,199
+Hey, you know, I
+live dangerously.
+
+312
+00:12:14,199 --> 00:12:15,599
+I'm just going to
+put kilojoules
+
+313
+00:12:15,599 --> 00:12:16,919
+per kilogram per kelvin.
+
+314
+00:12:16,919 --> 00:12:17,920
+I know that,
+I'm just going
+
+315
+00:12:17,920 --> 00:12:19,000
+to write it
+without the unit.
+
+316
+00:12:19,000 --> 00:12:20,400
+But I advise
+always write in
+
+317
+00:12:20,400 --> 00:12:21,280
+the unit because you
+
+318
+00:12:21,280 --> 00:12:22,440
+get to reflect and think,
+
+319
+00:12:22,440 --> 00:12:23,880
+you know, am I
+
+320
+00:12:23,880 --> 00:12:25,040
+doing the right
+thing? All right.
+
+321
+00:12:25,040 --> 00:12:26,840
+Other questions?
+
+322
+00:12:28,600 --> 00:12:36,840
+Great. So now,
+a derivation.
+
+323
+00:12:58,410 --> 00:13:00,850
+So everything that
+I just showed
+
+324
+00:13:00,850 --> 00:13:02,650
+you right there
+is enough to
+
+325
+00:13:02,650 --> 00:13:05,410
+now start analyzing so
+
+326
+00:13:05,410 --> 00:13:07,689
+I just showed you
+the vapor cycle.
+
+327
+00:13:07,689 --> 00:13:09,329
+And with that approach
+
+328
+00:13:09,329 --> 00:13:10,210
+that I just showed you,
+
+329
+00:13:10,210 --> 00:13:11,450
+it's totally valid to
+
+330
+00:13:11,450 --> 00:13:13,490
+analyze air cycles
+the same way,
+
+331
+00:13:13,490 --> 00:13:14,929
+compressors and
+that, right?
+
+332
+00:13:14,929 --> 00:13:16,730
+So you can use Pi
+killer and do it.
+
+333
+00:13:16,730 --> 00:13:19,530
+What I'm going to
+do now is something
+
+334
+00:13:20,410 --> 00:13:24,370
+that for ideal gases
+
+335
+00:13:24,370 --> 00:13:25,169
+allows you not to
+
+336
+00:13:25,169 --> 00:13:26,490
+need property
+tables, right?
+
+337
+00:13:26,490 --> 00:13:28,570
+And this basically
+develops out of the fact
+
+338
+00:13:28,570 --> 00:13:30,130
+that before it was
+
+339
+00:13:30,130 --> 00:13:31,010
+a pain in the neck to,
+
+340
+00:13:31,010 --> 00:13:31,849
+like, look up properties.
+
+341
+00:13:31,849 --> 00:13:33,250
+So if you read
+the book chapter,
+
+342
+00:13:33,250 --> 00:13:34,570
+we're going to talk about
+these things called
+
+343
+00:13:34,570 --> 00:13:37,209
+TDS relation.
+
+344
+00:13:37,209 --> 00:13:40,890
+So I'm going to see if
+I can find a black.
+
+345
+00:13:40,890 --> 00:13:43,810
+Nope, they took everything.
+That's awesome.
+
+346
+00:13:43,810 --> 00:13:47,649
+Okay. That is, like,
+empty. That's amazing.
+
+347
+00:13:47,649 --> 00:13:50,090
+It's amazing. Here we go.
+
+348
+00:13:50,090 --> 00:13:54,890
+The goods. All right.
+
+349
+00:13:55,770 --> 00:13:58,330
+That's better. Okay.
+
+350
+00:13:58,330 --> 00:14:04,070
+Um Yeah, so the context
+of this is think this
+
+351
+00:14:04,070 --> 00:14:06,109
+is going to be a
+useful formula
+
+352
+00:14:06,109 --> 00:14:07,710
+that may make my life
+
+353
+00:14:07,710 --> 00:14:09,430
+even easier
+when I analyze,
+
+354
+00:14:09,430 --> 00:14:13,830
+like, compressors, jet
+engines, gas turbines.
+
+355
+00:14:13,830 --> 00:14:15,190
+That's the
+mindset they have
+
+356
+00:14:15,190 --> 00:14:17,429
+for the following
+derivation.
+
+357
+00:14:17,429 --> 00:14:28,319
+Okay, so entropy
+differential relations.
+
+358
+00:14:28,640 --> 00:14:34,960
+Okay, do. Okay.
+
+359
+00:14:34,960 --> 00:14:37,080
+So before I get into
+
+360
+00:14:37,080 --> 00:14:40,159
+the first step of this is,
+
+361
+00:14:40,159 --> 00:14:41,200
+we want to show is
+
+362
+00:14:41,200 --> 00:14:42,880
+basically for
+an ideal gas,
+
+363
+00:14:42,880 --> 00:14:44,919
+that for an
+isotropic process,
+
+364
+00:14:44,919 --> 00:14:46,679
+we can relate things
+like temperature,
+
+365
+00:14:46,679 --> 00:14:49,159
+pressure and
+specific volume.
+
+366
+00:14:49,159 --> 00:14:50,479
+So think like
+a compressor.
+
+367
+00:14:50,479 --> 00:14:51,680
+I know the temperature
+
+368
+00:14:51,680 --> 00:14:52,920
+and the pressure upstream.
+
+369
+00:14:52,920 --> 00:14:54,519
+I know the pressure
+downstream.
+
+370
+00:14:54,519 --> 00:14:55,159
+I would like to know
+
+371
+00:14:55,159 --> 00:14:57,040
+the temperature
+downstream, okay?
+
+372
+00:14:57,040 --> 00:14:58,760
+There's going to be
+a formula for that.
+
+373
+00:14:58,760 --> 00:15:00,159
+And why do I care
+about temperatures?
+
+374
+00:15:00,159 --> 00:15:01,480
+Because differences
+in enthalpy
+
+375
+00:15:01,480 --> 00:15:03,680
+for an ideal gas are what?
+
+376
+00:15:07,570 --> 00:15:09,689
+You're going to do amazing
+
+377
+00:15:09,689 --> 00:15:11,489
+on quiiz one. Yes, please.
+
+378
+00:15:11,489 --> 00:15:13,570
+That's it. Functions
+of temperature.
+
+379
+00:15:13,570 --> 00:15:15,010
+So if I get
+Delta Ts across
+
+380
+00:15:15,010 --> 00:15:16,970
+these devices with
+a constant CP,
+
+381
+00:15:16,970 --> 00:15:18,530
+I know changes
+in enthal peak.
+
+382
+00:15:18,530 --> 00:15:20,690
+Bang bang, okay? So
+that's the mindset.
+
+383
+00:15:20,690 --> 00:15:22,010
+It's going to be a
+tool that allows you
+
+384
+00:15:22,010 --> 00:15:23,409
+to rapidly get
+the temperatures
+
+385
+00:15:23,409 --> 00:15:26,970
+upstream or downstream
+of a device. Okay.
+
+386
+00:15:26,970 --> 00:15:30,690
+Step one. Now, I told
+you before, right,
+
+387
+00:15:30,690 --> 00:15:33,010
+that dq divided by
+
+388
+00:15:33,010 --> 00:15:40,849
+T was by definition,
+equal to ds.
+
+389
+00:15:40,849 --> 00:15:44,035
+And that is true
+for these devices.
+
+390
+00:15:44,035 --> 00:15:46,500
+If they don't
+
+391
+00:15:46,500 --> 00:15:48,700
+themselves generate
+entropy, okay?
+
+392
+00:15:48,700 --> 00:15:49,980
+So remember, if I take
+
+393
+00:15:49,980 --> 00:15:51,100
+a device and I have a lot
+
+394
+00:15:51,100 --> 00:15:52,220
+of friction there, right?
+
+395
+00:15:52,220 --> 00:15:52,860
+I'm going to be
+
+396
+00:15:52,860 --> 00:15:54,220
+generating entropy
+from that, right?
+
+397
+00:15:54,220 --> 00:15:55,299
+I'm going to
+heat from that
+
+398
+00:15:55,299 --> 00:15:56,659
+heat's going to be
+transferred in,
+
+399
+00:15:56,659 --> 00:15:58,660
+it's going to be a
+mess, all right?
+
+400
+00:15:58,660 --> 00:16:00,620
+So to calculate, then
+
+401
+00:16:00,620 --> 00:16:02,860
+the change in entropy
+for such a device,
+
+402
+00:16:02,860 --> 00:16:05,060
+when I add heat to
+it or take heat out,
+
+403
+00:16:05,060 --> 00:16:07,299
+I'm going to call
+this as internally
+
+404
+00:16:07,299 --> 00:16:09,340
+reversible, all right?
+
+405
+00:16:09,340 --> 00:16:11,940
+So the device can have
+changes in entropy,
+
+406
+00:16:11,940 --> 00:16:12,660
+but those changes in
+
+407
+00:16:12,660 --> 00:16:14,300
+entropy are only
+going to be due to me
+
+408
+00:16:14,300 --> 00:16:16,180
+bringing heat in
+or heat out and
+
+409
+00:16:16,180 --> 00:16:18,460
+not due to friction, okay?
+
+410
+00:16:18,460 --> 00:16:19,539
+Stay with me.
+
+411
+00:16:19,539 --> 00:16:20,619
+Maybe the weirdest part
+
+412
+00:16:20,619 --> 00:16:21,380
+of the course, all right?
+
+413
+00:16:21,380 --> 00:16:23,099
+I got two subscripts.
+
+414
+00:16:23,099 --> 00:16:25,220
+Um, So, yeah,
+
+415
+00:16:25,220 --> 00:16:26,699
+an internally
+reversible process
+
+416
+00:16:26,699 --> 00:16:28,259
+is one without
+irreversibility.
+
+417
+00:16:28,259 --> 00:16:31,420
+So no friction within
+the device, right?
+
+418
+00:16:31,420 --> 00:16:34,900
+So if this is like a
+compressor within here,
+
+419
+00:16:34,900 --> 00:16:36,780
+everything is
+isothermal, right?
+
+420
+00:16:36,780 --> 00:16:38,820
+So I have no friction
+inside of this.
+
+421
+00:16:38,820 --> 00:16:40,220
+It's reversible, right?
+
+422
+00:16:40,220 --> 00:16:43,619
+This is my happy place,
+okay? That's in here.
+
+423
+00:16:43,619 --> 00:16:45,420
+Any temperature differences
+in all of that,
+
+424
+00:16:45,420 --> 00:16:48,699
+all that stuff exists
+outside of my boundary.
+
+425
+00:16:48,699 --> 00:16:50,699
+That's the meaning
+of internally, um,
+
+426
+00:16:50,699 --> 00:16:54,660
+uh, uh, reversible, okay?
+
+427
+00:16:54,840 --> 00:16:57,960
+All right. So that's
+the first thing.
+
+428
+00:16:57,960 --> 00:16:58,760
+Now we'll start with
+
+429
+00:16:58,760 --> 00:17:01,600
+the first first law here.
+
+430
+00:17:01,600 --> 00:17:02,080
+All right.
+
+431
+00:17:02,080 --> 00:17:04,479
+So the first law for
+this then is going to be
+
+432
+00:17:04,479 --> 00:17:07,359
+the change in
+internal energy is
+
+433
+00:17:07,359 --> 00:17:11,559
+equal to the change in
+heat transferred for
+
+434
+00:17:11,559 --> 00:17:14,400
+an internally
+reversible process
+
+435
+00:17:14,400 --> 00:17:17,840
+minus the change in
+the work transferred,
+
+436
+00:17:17,840 --> 00:17:22,520
+also for an internally
+reversible process,
+
+437
+00:17:22,520 --> 00:17:23,159
+okay?
+
+438
+00:17:23,159 --> 00:17:24,799
+And for, like, a
+simple system,
+
+439
+00:17:24,799 --> 00:17:26,159
+so think of like
+a piston, right?
+
+440
+00:17:26,159 --> 00:17:27,440
+So if we think
+about a piston,
+
+441
+00:17:27,440 --> 00:17:29,199
+you know, no
+mass in or out,
+
+442
+00:17:29,199 --> 00:17:31,830
+um, And this piston,
+
+443
+00:17:31,830 --> 00:17:32,750
+let's say the substance
+
+444
+00:17:32,750 --> 00:17:33,669
+in there is compressible.
+
+445
+00:17:33,669 --> 00:17:34,790
+Let's say it's like air,
+
+446
+00:17:34,790 --> 00:17:36,230
+right? It's an ideal gas.
+
+447
+00:17:36,230 --> 00:17:38,429
+The only kind of work
+that this can do
+
+448
+00:17:38,429 --> 00:17:41,469
+is PDV work, okay?
+
+449
+00:17:41,469 --> 00:17:44,309
+So if it's
+reversible, right,
+
+450
+00:17:44,309 --> 00:17:47,805
+it would be PDV, right?
+
+451
+00:17:47,805 --> 00:17:49,820
+You can think about
+other types of work like
+
+452
+00:17:49,820 --> 00:17:50,940
+electrical work
+transferred
+
+453
+00:17:50,940 --> 00:17:52,100
+in, but that's
+not reversible.
+
+454
+00:17:52,100 --> 00:17:53,379
+I pass electrons
+through that.
+
+455
+00:17:53,379 --> 00:17:54,180
+I'm going to get heat.
+
+456
+00:17:54,180 --> 00:17:55,659
+That's not reversible.
+So the only kind
+
+457
+00:17:55,659 --> 00:17:57,259
+of work then there
+I can do for
+
+458
+00:17:57,259 --> 00:18:01,099
+a simple compressible
+system is P PdV.
+
+459
+00:18:01,099 --> 00:18:03,219
+This from the
+formula up here then
+
+460
+00:18:03,219 --> 00:18:07,099
+is nothing but TDS
+
+461
+00:18:07,099 --> 00:18:10,740
+we're going to write
+d is an equal to TdS
+
+462
+00:18:10,740 --> 00:18:13,819
+minus PdV
+
+463
+00:18:13,819 --> 00:18:17,059
+for an internally
+reversible process.
+
+464
+00:18:21,720 --> 00:18:24,919
+Do, do, do. We can
+rearrange this,
+
+465
+00:18:24,919 --> 00:18:32,080
+and we say ds is
+equal to d plus P dv.
+
+466
+00:18:32,080 --> 00:18:34,799
+We can divide both
+sides by mass,
+
+467
+00:18:34,799 --> 00:18:38,919
+and then I can write
+this as dS is equal to
+
+468
+00:18:38,919 --> 00:18:45,039
+d plus P d little
+V. All right.
+
+469
+00:18:45,039 --> 00:18:47,239
+There's two forms that
+we're going to use.
+
+470
+00:18:47,239 --> 00:18:48,760
+So this is one that's
+going to be useful.
+
+471
+00:18:48,760 --> 00:18:51,639
+We have another one
+that involves enthalpy.
+
+472
+00:18:51,639 --> 00:18:55,129
+So for that,
+let's say recall.
+
+473
+00:18:55,129 --> 00:19:01,100
+Recall that H is
+equal to U plus pv.
+
+474
+00:19:01,100 --> 00:19:03,059
+If I take the
+differential of this,
+
+475
+00:19:03,059 --> 00:19:04,899
+I can have d is equal
+
+476
+00:19:04,899 --> 00:19:07,659
+to dh is equal to d plus
+
+477
+00:19:07,659 --> 00:19:13,299
+P dv plus V dp, some
+chain rule there.
+
+478
+00:19:13,299 --> 00:19:16,459
+If I rearrange this
+as a function of d,
+
+479
+00:19:16,459 --> 00:19:17,940
+I can then do a
+substitution.
+
+480
+00:19:17,940 --> 00:19:20,019
+So d is equal to
+
+481
+00:19:20,019 --> 00:19:26,630
+dh minus pdv minus
+V dp. All right.
+
+482
+00:19:26,630 --> 00:19:28,349
+Substitute that
+into there,
+
+483
+00:19:28,349 --> 00:19:32,229
+and I can have then
+T ds is equal to
+
+484
+00:19:32,229 --> 00:19:40,510
+d minus pdv minus
+V dp plus pdv.
+
+485
+00:19:40,510 --> 00:19:45,509
+And so it's going
+to go away, right?
+
+486
+00:19:45,509 --> 00:19:47,229
+This is going to go,
+
+487
+00:19:47,229 --> 00:19:49,949
+and then this
+is going to go.
+
+488
+00:19:49,949 --> 00:19:51,869
+And so then our
+Tds relation,
+
+489
+00:19:51,869 --> 00:19:54,270
+another one will be ds
+
+490
+00:19:54,270 --> 00:19:58,830
+is equal to dh minus V dp.
+
+491
+00:20:04,190 --> 00:20:12,789
+The All right.
+
+492
+00:20:12,789 --> 00:20:14,549
+And so what's nice
+about this is right,
+
+493
+00:20:14,549 --> 00:20:16,510
+changes in entropy, right,
+
+494
+00:20:16,510 --> 00:20:18,549
+which we can't
+measure, right?
+
+495
+00:20:18,549 --> 00:20:21,309
+So ds is then going to
+be related to things
+
+496
+00:20:21,309 --> 00:20:22,630
+that might be knowable
+
+497
+00:20:22,630 --> 00:20:24,149
+or might be able to
+be looked up, right?
+
+498
+00:20:24,149 --> 00:20:28,310
+DH divided by T minus V dp
+
+499
+00:20:28,310 --> 00:20:33,069
+also divided by T. Okay?
+
+500
+00:20:33,069 --> 00:20:35,350
+So for the ideal
+gas, so remember,
+
+501
+00:20:35,350 --> 00:20:37,150
+the type of system we're
+
+502
+00:20:37,150 --> 00:20:39,589
+interested in here
+compressible system,
+
+503
+00:20:39,910 --> 00:20:42,309
+a simple
+compressible system.
+
+504
+00:20:42,309 --> 00:20:43,549
+And at this point,
+we're going
+
+505
+00:20:43,549 --> 00:20:44,790
+to declare ideal gas.
+
+506
+00:20:44,790 --> 00:20:49,430
+So for an ideal
+gas, um, right?
+
+507
+00:20:49,430 --> 00:20:50,869
+We know that changes in
+
+508
+00:20:50,869 --> 00:20:55,870
+enthalpy are
+equal to Cp dt.
+
+509
+00:20:55,870 --> 00:21:00,629
+And the substitution
+that I want to
+
+510
+00:21:00,629 --> 00:21:02,629
+make is going to be
+
+511
+00:21:02,629 --> 00:21:05,149
+for specific
+volume, right?
+
+512
+00:21:05,149 --> 00:21:07,589
+So then I know
+that pv equals RT,
+
+513
+00:21:07,589 --> 00:21:10,949
+so that means V is equal
+to RT divided by P,
+
+514
+00:21:10,949 --> 00:21:15,470
+where R is the specific
+gas constant, right?
+
+515
+00:21:15,470 --> 00:21:20,419
+So dh into here,
+and V into there.
+
+516
+00:21:20,419 --> 00:21:21,899
+And so what you'll
+have then is
+
+517
+00:21:21,899 --> 00:21:23,659
+ds is equal to
+
+518
+00:21:23,659 --> 00:21:26,539
+cp dt divided by
+
+519
+00:21:26,539 --> 00:21:28,339
+T. We can integrate
+that now,
+
+520
+00:21:28,339 --> 00:21:31,859
+and then minus, right,
+
+521
+00:21:31,859 --> 00:21:37,419
+Rt divided by P times V
+
+522
+00:21:37,419 --> 00:21:41,579
+divided by T
+dp, all right?
+
+523
+00:21:42,130 --> 00:21:46,049
+Temperatures go
+away. And again,
+
+524
+00:21:46,049 --> 00:21:52,089
+this is, what
+did I do wrong?
+
+525
+00:21:52,089 --> 00:21:53,610
+What did I do
+wrong? I should
+
+526
+00:21:53,610 --> 00:21:54,890
+not have a V because I
+
+527
+00:21:54,890 --> 00:21:57,730
+substituted in
+for V, right?
+
+528
+00:21:57,730 --> 00:22:00,249
+So I substitute
+to VRT by P.
+
+529
+00:22:00,249 --> 00:22:01,929
+The one over T
+stays there with
+
+530
+00:22:01,929 --> 00:22:03,689
+the dp and so what
+you in the end
+
+531
+00:22:03,689 --> 00:22:08,409
+then is R let me just
+write it out ds is
+
+532
+00:22:08,409 --> 00:22:14,489
+equal to Cp dt
+divided by T minus R,
+
+533
+00:22:14,489 --> 00:22:19,169
+dp divided by P, okay?
+
+534
+00:22:20,280 --> 00:22:22,599
+And then we can
+integrate, right?
+
+535
+00:22:22,599 --> 00:22:25,359
+So we can basically
+integrate this.
+
+536
+00:22:25,359 --> 00:22:26,680
+This is straightforward.
+
+537
+00:22:26,680 --> 00:22:28,559
+Let's say from state
+one to state two.
+
+538
+00:22:28,559 --> 00:22:29,920
+R is a constant,
+
+539
+00:22:29,920 --> 00:22:30,959
+so I can pull
+that out of the
+
+540
+00:22:30,959 --> 00:22:32,719
+integral from P
+one to P two.
+
+541
+00:22:32,719 --> 00:22:34,080
+And then here, we have to
+
+542
+00:22:34,080 --> 00:22:35,479
+make a decision, right?
+
+543
+00:22:35,479 --> 00:22:38,559
+So I could write the
+integral like this.
+
+544
+00:22:38,559 --> 00:22:40,959
+Specifically does
+depend on temperature,
+
+545
+00:22:40,959 --> 00:22:42,800
+not very strongly
+in the regions that
+
+546
+00:22:42,800 --> 00:22:44,919
+we care about in this
+class, but it does.
+
+547
+00:22:44,919 --> 00:22:48,119
+So I can integrate
+this 1-2.
+
+548
+00:22:48,119 --> 00:22:49,639
+And then what I
+would have to do is
+
+549
+00:22:49,639 --> 00:22:51,439
+I'd have to take an
+average value, right,
+
+550
+00:22:51,439 --> 00:22:53,159
+or I'd have to
+essentially have CP
+
+551
+00:22:53,159 --> 00:22:53,719
+as a function of
+
+552
+00:22:53,719 --> 00:22:55,619
+temperature and
+integrate, right?
+
+553
+00:22:55,619 --> 00:22:57,679
+We're practical
+people, okay?
+
+554
+00:22:57,679 --> 00:22:59,080
+And I'm an engineer,
+
+555
+00:22:59,080 --> 00:23:01,360
+and I like things
+to be easy,
+
+556
+00:23:01,360 --> 00:23:02,960
+at least in my
+first attempt.
+
+557
+00:23:02,960 --> 00:23:04,639
+So I'll say this.
+
+558
+00:23:04,639 --> 00:23:06,639
+And then what you'll
+do is you'll just say
+
+559
+00:23:06,639 --> 00:23:08,480
+that the CP is a constant.
+
+560
+00:23:08,480 --> 00:23:10,800
+I like to take the value
+
+561
+00:23:10,800 --> 00:23:12,840
+of the specific heats at
+
+562
+00:23:12,840 --> 00:23:14,239
+the temperature
+that I start from.
+
+563
+00:23:14,239 --> 00:23:15,799
+A lot of times
+in this class,
+
+564
+00:23:15,799 --> 00:23:18,119
+you're going to
+hear us take
+
+565
+00:23:18,119 --> 00:23:19,639
+essentially this value at
+
+566
+00:23:19,639 --> 00:23:21,040
+room temperature
+condition.
+
+567
+00:23:21,040 --> 00:23:22,479
+For engines, we call that
+
+568
+00:23:22,479 --> 00:23:24,360
+the cold air assumption,
+
+569
+00:23:24,360 --> 00:23:25,599
+cold air assumption there.
+
+570
+00:23:25,599 --> 00:23:27,079
+So you just do that
+because we want
+
+571
+00:23:27,079 --> 00:23:29,959
+life to be easy, right?
+
+572
+00:23:29,959 --> 00:23:31,759
+And so with that
+integration, right,
+
+573
+00:23:31,759 --> 00:23:33,319
+I'm going to have S one or
+
+574
+00:23:33,319 --> 00:23:35,819
+S two minus little S one.
+
+575
+00:23:35,819 --> 00:23:39,079
+Is equal to cp,
+the natural log
+
+576
+00:23:39,079 --> 00:23:41,439
+of T two divided by T one
+
+577
+00:23:41,439 --> 00:23:45,519
+minus the specific gas
+constant R times P
+
+578
+00:23:45,519 --> 00:23:48,559
+two divided by P
+one, all right?
+
+579
+00:23:48,559 --> 00:23:54,999
+And that's our first
+relation there, okay.
+
+580
+00:24:07,640 --> 00:24:09,839
+Okay, we can also
+
+581
+00:24:09,839 --> 00:24:11,440
+remember that for
+an ideal gas,
+
+582
+00:24:11,440 --> 00:24:15,400
+the d is equal to CV dt.
+
+583
+00:24:15,400 --> 00:24:17,080
+Let me see. Am I
+off the board?
+
+584
+00:24:17,080 --> 00:24:18,760
+I think I'm off the board.
+
+585
+00:24:18,760 --> 00:24:21,120
+CV dt.
+
+586
+00:24:21,120 --> 00:24:23,359
+Let me at the state,
+I'll turn that off.
+
+587
+00:24:23,359 --> 00:24:26,400
+Okay. So CV dt.
+
+588
+00:24:26,400 --> 00:24:28,319
+And instead of
+writing this as
+
+589
+00:24:28,319 --> 00:24:30,200
+a function of a
+specific volume,
+
+590
+00:24:30,200 --> 00:24:31,479
+I can do it for
+pressure, right?
+
+591
+00:24:31,479 --> 00:24:36,440
+P is equal to rt divided
+by specific volume.
+
+592
+00:24:36,920 --> 00:24:43,639
+Okay. Okay. So if I
+have the TDS, right?
+
+593
+00:24:43,639 --> 00:24:48,920
+So if we have
+the Tds relation
+
+594
+00:24:48,920 --> 00:24:51,119
+that is here, so
+that original one.
+
+595
+00:24:51,119 --> 00:24:53,999
+So what I can
+say is the Tds T
+
+596
+00:24:53,999 --> 00:24:57,240
+d little S is equal
+to d plus pdv.
+
+597
+00:24:57,240 --> 00:25:02,719
+So the d is then
+Cv dt plus P dv.
+
+598
+00:25:02,719 --> 00:25:04,160
+So the P here then is
+
+599
+00:25:04,160 --> 00:25:09,519
+R T divided by V dv, okay?
+
+600
+00:25:09,519 --> 00:25:12,360
+You can divide both
+sides by temperature.
+
+601
+00:25:12,360 --> 00:25:15,679
+So T, T and T.
+
+602
+00:25:15,679 --> 00:25:19,120
+And if we do that,
+this T is gone.
+
+603
+00:25:19,120 --> 00:25:23,079
+All right. And of course,
+
+604
+00:25:23,079 --> 00:25:26,239
+this T is also
+gone. All right.
+
+605
+00:25:26,239 --> 00:25:32,679
+And so we'll have ds
+is equal to Cv dt by
+
+606
+00:25:32,679 --> 00:25:36,799
+T plus R dv
+
+607
+00:25:36,799 --> 00:25:41,169
+by V. Can integrate
+from state one to two.
+
+608
+00:25:41,169 --> 00:25:43,449
+Here. Again, I could
+write the integral here,
+
+609
+00:25:43,449 --> 00:25:45,129
+but today I want
+life to be easy.
+
+610
+00:25:45,129 --> 00:25:46,649
+This is the happy place,
+
+611
+00:25:46,649 --> 00:25:48,529
+stay one to two here,
+
+612
+00:25:48,529 --> 00:25:51,369
+and then R is a constant.
+This is one to two.
+
+613
+00:25:51,369 --> 00:25:54,129
+And so then little S
+two minus little S
+
+614
+00:25:54,129 --> 00:25:57,089
+one is equal to
+CV natural log
+
+615
+00:25:57,089 --> 00:25:59,169
+of T two by T
+
+616
+00:25:59,169 --> 00:26:03,050
+one plus a specific
+gas constant,
+
+617
+00:26:03,050 --> 00:26:07,209
+natural log of V two
+divided by V one.
+
+618
+00:26:07,370 --> 00:26:10,490
+That's our
+second relation.
+
+619
+00:26:12,570 --> 00:26:18,909
+All right. All right.
+
+620
+00:26:18,909 --> 00:26:22,910
+And so what you do next,
+
+621
+00:26:22,910 --> 00:26:25,189
+again, because we're
+interested in, right,
+
+622
+00:26:25,189 --> 00:26:25,789
+as I said before,
+
+623
+00:26:25,789 --> 00:26:27,509
+we're going to
+assume isentropic.
+
+624
+00:26:27,509 --> 00:26:28,830
+And with isentropic,
+
+625
+00:26:28,830 --> 00:26:29,910
+I'm going to be
+able to rate
+
+626
+00:26:29,910 --> 00:26:32,069
+temperature to volume
+from state one
+
+627
+00:26:32,069 --> 00:26:34,590
+to state two,
+temperature to pressure.
+
+628
+00:26:34,590 --> 00:26:36,269
+And with those
+two equations,
+
+629
+00:26:36,269 --> 00:26:37,790
+pressure to volume.
+
+630
+00:26:37,790 --> 00:26:38,749
+So what we're going to do
+
+631
+00:26:38,749 --> 00:26:39,749
+is we're going
+to set S two
+
+632
+00:26:39,749 --> 00:26:42,699
+minus S one, two,
+Zero, right?
+
+633
+00:26:42,699 --> 00:26:44,260
+That's great.
+Took the words
+
+634
+00:26:44,260 --> 00:26:46,619
+out of my mouth. I
+like that, right?
+
+635
+00:26:47,180 --> 00:26:49,579
+So if we do that four,
+
+636
+00:26:49,579 --> 00:26:51,339
+so we can start with our
+
+637
+00:26:51,339 --> 00:26:52,739
+temperature and
+pressure one.
+
+638
+00:26:52,739 --> 00:26:53,499
+So if we do that,
+
+639
+00:26:53,499 --> 00:26:55,019
+right, we're
+going to have CP,
+
+640
+00:26:55,019 --> 00:26:59,299
+natural log of T two by T
+
+641
+00:26:59,299 --> 00:27:03,900
+one is equal to
+specific gas constant,
+
+642
+00:27:03,900 --> 00:27:10,459
+natural log of P two
+divided by P one, right?
+
+643
+00:27:12,020 --> 00:27:16,340
+You can divide
+both sides by CP?
+
+644
+00:27:16,340 --> 00:27:18,259
+I could write
+here, R divided by
+
+645
+00:27:18,259 --> 00:27:20,300
+CP gets rid of that.
+
+646
+00:27:20,300 --> 00:27:22,500
+And because this is a uh,
+
+647
+00:27:22,500 --> 00:27:24,459
+uh, write a
+coefficient here,
+
+648
+00:27:24,459 --> 00:27:25,939
+this is essentially
+the same as R
+
+649
+00:27:25,939 --> 00:27:29,764
+divided by CP, okay?
+
+650
+00:27:29,764 --> 00:27:31,829
+And because now it's a
+
+651
+00:27:31,829 --> 00:27:33,630
+natural log on both sides,
+
+652
+00:27:33,630 --> 00:27:35,789
+natural log can
+now go away, okay?
+
+653
+00:27:35,789 --> 00:27:38,029
+So what you're left
+with then is T two by T
+
+654
+00:27:38,029 --> 00:27:39,390
+one is equal to
+
+655
+00:27:39,390 --> 00:27:41,389
+pressure two divided
+by pressure one,
+
+656
+00:27:41,389 --> 00:27:44,989
+gas constant divided
+by specific heat.
+
+657
+00:27:44,989 --> 00:27:47,069
+And we can do
+the same thing
+
+658
+00:27:47,069 --> 00:27:49,069
+for our other
+formula, right?
+
+659
+00:27:49,069 --> 00:27:52,989
+So CV, natural log of T
+
+660
+00:27:52,989 --> 00:27:54,909
+two divided by T one
+
+661
+00:27:54,909 --> 00:27:57,869
+is equal then to
+the negative of R,
+
+662
+00:27:57,869 --> 00:28:02,629
+natural log of V two
+divided by V one.
+
+663
+00:28:07,970 --> 00:28:12,129
+Okay, we divide
+this by CV.
+
+664
+00:28:12,129 --> 00:28:13,769
+So both sides we
+can divide by
+
+665
+00:28:13,769 --> 00:28:16,130
+CV. So this goes away.
+
+666
+00:28:16,130 --> 00:28:17,890
+It's a natural log,
+
+667
+00:28:17,890 --> 00:28:20,329
+I can put this to
+the exponent, right?
+
+668
+00:28:20,329 --> 00:28:24,610
+So I can go negative
+R divided by CV.
+
+669
+00:28:26,130 --> 00:28:30,249
+All right. And now I
+have natural logs.
+
+670
+00:28:30,249 --> 00:28:33,770
+So now natural
+logs can go away.
+
+671
+00:28:33,770 --> 00:28:36,089
+So I have one
+relation, I have two.
+
+672
+00:28:36,089 --> 00:28:37,649
+And because T two by
+
+673
+00:28:37,649 --> 00:28:39,729
+T one is equal
+to here, right?
+
+674
+00:28:39,729 --> 00:28:42,489
+I can have them
+be equal, okay?
+
+675
+00:28:42,489 --> 00:28:44,650
+So the take
+home message is
+
+676
+00:28:44,650 --> 00:28:46,489
+for the isotropic
+processes, right?
+
+677
+00:28:46,489 --> 00:28:48,370
+It can relate upstream
+
+678
+00:28:48,370 --> 00:28:51,209
+and downstream, you know,
+
+679
+00:28:51,209 --> 00:28:52,090
+let's say, the ratio
+
+680
+00:28:52,090 --> 00:28:53,369
+the temperatures
+upstream and
+
+681
+00:28:53,369 --> 00:28:54,569
+downstream to ratios of
+
+682
+00:28:54,569 --> 00:28:56,169
+the pressures to some
+constants, right?
+
+683
+00:28:56,169 --> 00:28:57,610
+So properties
+that we assume,
+
+684
+00:28:57,610 --> 00:28:59,450
+let's say, at T one.
+
+685
+00:28:59,450 --> 00:29:00,929
+The same thing
+for temperatures
+
+686
+00:29:00,929 --> 00:29:02,210
+to specific volumes.
+
+687
+00:29:02,210 --> 00:29:03,289
+And because these two are
+
+688
+00:29:03,289 --> 00:29:04,370
+the same on the
+left hand side,
+
+689
+00:29:04,370 --> 00:29:05,489
+you can go pressures to
+
+690
+00:29:05,489 --> 00:29:07,050
+specific volumes
+as well, right?
+
+691
+00:29:07,050 --> 00:29:07,690
+And the name of
+
+692
+00:29:07,690 --> 00:29:08,969
+the game in this
+analysis, though,
+
+693
+00:29:08,969 --> 00:29:10,529
+is usually to get to
+temperatures because
+
+694
+00:29:10,529 --> 00:29:12,890
+differences in temperatures
+in compressors,
+
+695
+00:29:12,890 --> 00:29:14,529
+gas turbines tells us
+
+696
+00:29:14,529 --> 00:29:16,729
+differences in enthalpy,
+which tells us what?
+
+697
+00:29:16,729 --> 00:29:17,889
+Work in, work out.
+
+698
+00:29:17,889 --> 00:29:19,010
+That's what you
+care about.
+
+699
+00:29:19,010 --> 00:29:20,314
+All right?
+
+700
+00:29:20,314 --> 00:29:24,140
+Cool. You can do
+some simplification.
+
+701
+00:29:24,140 --> 00:29:25,339
+I'm going to spare
+you it here.
+
+702
+00:29:25,339 --> 00:29:26,820
+If you click on, you know,
+
+703
+00:29:26,820 --> 00:29:28,020
+if you click on the link
+
+704
+00:29:28,020 --> 00:29:29,379
+there, it can take
+you through it.
+
+705
+00:29:29,379 --> 00:29:33,439
+But, um, convenient
+ways that we can,
+
+706
+00:29:33,439 --> 00:29:36,599
+um, represent this
+are the following.
+
+707
+00:29:36,599 --> 00:29:38,559
+The first is
+that instead of
+
+708
+00:29:38,559 --> 00:29:41,600
+writing things
+like R and CV,
+
+709
+00:29:41,600 --> 00:29:45,119
+we can recognize
+that R is equal
+
+710
+00:29:45,119 --> 00:29:48,679
+to Cp minus CV, right?
+
+711
+00:29:48,679 --> 00:29:50,480
+That's the first thing.
+So the specific heat
+
+712
+00:29:50,480 --> 00:29:52,240
+at constant pressure minus
+
+713
+00:29:52,240 --> 00:29:53,320
+the specific heat for
+
+714
+00:29:53,320 --> 00:29:56,040
+constant volume is equal
+to the gas constant.
+
+715
+00:29:56,040 --> 00:29:57,879
+The second thing is
+that we're going to
+
+716
+00:29:57,879 --> 00:29:59,959
+talk about a constant K,
+
+717
+00:29:59,959 --> 00:30:02,639
+which is then Cp
+divided by CV?
+
+718
+00:30:02,639 --> 00:30:04,400
+This is the
+adiabatic index.
+
+719
+00:30:04,400 --> 00:30:05,559
+This came up before
+when we were
+
+720
+00:30:05,559 --> 00:30:07,119
+doing adiabatic
+expansion, right?
+
+721
+00:30:07,119 --> 00:30:09,840
+So this is, um,
+the same constant.
+
+722
+00:30:09,840 --> 00:30:11,439
+If you read other things
+
+723
+00:30:11,439 --> 00:30:12,799
+other than your textbook,
+
+724
+00:30:12,799 --> 00:30:14,160
+things on the Internet,
+
+725
+00:30:14,160 --> 00:30:16,159
+sometimes this
+adiabatic index is
+
+726
+00:30:16,159 --> 00:30:18,400
+also written with a
+variable Gamma there,
+
+727
+00:30:18,400 --> 00:30:19,919
+but the book uses K or
+
+728
+00:30:19,919 --> 00:30:22,839
+Kappa for that, all right?
+
+729
+00:30:22,839 --> 00:30:24,519
+So again, with
+
+730
+00:30:24,519 --> 00:30:26,120
+some math and
+some rearranging,
+
+731
+00:30:26,120 --> 00:30:29,280
+which you can have then
+are the following.
+
+732
+00:30:29,280 --> 00:30:33,439
+So T two divided by T one,
+
+733
+00:30:34,070 --> 00:30:40,429
+is equal to P two
+divided by P one
+
+734
+00:30:40,429 --> 00:30:43,910
+to the K minus
+
+735
+00:30:43,910 --> 00:30:48,150
+one divided by a minus
+one divided by Kappa,
+
+736
+00:30:48,150 --> 00:30:52,749
+there T two
+divided by T one
+
+737
+00:30:52,749 --> 00:30:58,109
+is equal to V one
+divided by V two,
+
+738
+00:30:58,109 --> 00:31:00,870
+and then this
+is to the Kapa
+
+739
+00:31:00,870 --> 00:31:02,704
+minus one minus one,
+
+740
+00:31:02,704 --> 00:31:04,739
+And then, again, if
+you set these things
+
+741
+00:31:04,739 --> 00:31:06,900
+equal and you rearrange,
+
+742
+00:31:06,900 --> 00:31:08,299
+what you can
+show is that P
+
+743
+00:31:08,299 --> 00:31:12,219
+two divided by
+P one is equal
+
+744
+00:31:12,219 --> 00:31:15,259
+to V one divided by V
+
+745
+00:31:15,259 --> 00:31:19,824
+two to the K or
+Kappa. All right.
+
+746
+00:31:19,824 --> 00:31:24,309
+More generally, again, you
+
+747
+00:31:24,309 --> 00:31:26,989
+could rearrange this to be
+
+748
+00:31:26,989 --> 00:31:28,349
+that all on one side would
+
+749
+00:31:28,349 --> 00:31:30,109
+be temperature
+one pressure one,
+
+750
+00:31:30,109 --> 00:31:31,029
+all on the other side is
+
+751
+00:31:31,029 --> 00:31:32,629
+temperature two
+pressure two,
+
+752
+00:31:32,629 --> 00:31:34,589
+or in the case of
+something like the PV,
+
+753
+00:31:34,589 --> 00:31:36,189
+like we did for the
+adiabatic problem,
+
+754
+00:31:36,189 --> 00:31:39,869
+I could put p1v1 to
+
+755
+00:31:39,869 --> 00:31:41,069
+the K on the
+left hand side,
+
+756
+00:31:41,069 --> 00:31:42,790
+and it's equal
+to a constant.
+
+757
+00:31:42,790 --> 00:31:45,950
+What this implies here
+is that pressure,
+
+758
+00:31:45,950 --> 00:31:49,150
+volume to the K is
+equal to a constant,
+
+759
+00:31:49,150 --> 00:31:50,629
+as we did before, but
+
+760
+00:31:50,629 --> 00:31:52,399
+you could also
+show from this.
+
+761
+00:31:52,399 --> 00:31:54,089
+What we did not show
+
+762
+00:31:54,089 --> 00:31:56,329
+before are the other two.
+
+763
+00:31:56,329 --> 00:31:59,609
+So temperature
+times pressure to
+
+764
+00:31:59,609 --> 00:32:01,929
+the one minus K
+
+765
+00:32:01,929 --> 00:32:07,290
+divided by K is also
+equal to a constant.
+
+766
+00:32:07,370 --> 00:32:11,569
+And temperature times
+specific volume to
+
+767
+00:32:11,569 --> 00:32:13,649
+the K minus one is also
+
+768
+00:32:13,649 --> 00:32:17,289
+equal to a constant,
+all right?
+
+769
+00:32:17,450 --> 00:32:19,769
+And again, these hold
+
+770
+00:32:19,769 --> 00:32:25,129
+four ideal gases
+and right,
+
+771
+00:32:25,129 --> 00:32:30,649
+ist isentropic
+processes, okay?
+
+772
+00:32:32,230 --> 00:32:34,670
+And these will be useful
+
+773
+00:32:34,670 --> 00:32:36,189
+when we do things
+like I said,
+
+774
+00:32:36,189 --> 00:32:38,149
+the gas turbine analysis,
+
+775
+00:32:38,149 --> 00:32:40,470
+which is called
+Brayton cycles
+
+776
+00:32:40,470 --> 00:32:42,989
+when we get into
+the jet propulsion,
+
+777
+00:32:42,989 --> 00:32:45,189
+especially the
+temperature and
+
+778
+00:32:45,189 --> 00:32:46,709
+the pressure ratio here.
+
+779
+00:32:46,709 --> 00:32:50,310
+That's that's a
+pretty handy formula.
+
+780
+00:32:50,310 --> 00:32:55,189
+Questions about
+that? Yes, please.
+
+781
+00:32:57,590 --> 00:33:00,149
+What do you think?
+
+782
+00:33:00,960 --> 00:33:03,559
+I mean, some molecules
+have more than that.
+
+783
+00:33:03,559 --> 00:33:05,199
+Some things are
+also solid, right?
+
+784
+00:33:05,199 --> 00:33:07,959
+Yeah. Yes, of
+course, it depends.
+
+785
+00:33:07,959 --> 00:33:10,279
+CP here, right?
+
+786
+00:33:10,279 --> 00:33:12,839
+So this CP is our units
+
+787
+00:33:12,839 --> 00:33:16,159
+of kilojoules
+per kilogram.
+
+788
+00:33:16,159 --> 00:33:18,399
+Kelvin the same
+for the CV.
+
+789
+00:33:18,399 --> 00:33:19,959
+Yeah, that definitely
+depends on
+
+790
+00:33:19,959 --> 00:33:21,319
+the substance, and
+you can call this.
+
+791
+00:33:21,319 --> 00:33:23,280
+So remember before
+we did Pi kilo.
+
+792
+00:33:23,280 --> 00:33:24,719
+So if you had, let's say,
+
+793
+00:33:24,719 --> 00:33:26,240
+a state one defined,
+
+794
+00:33:26,240 --> 00:33:30,960
+if you went dot CP or
+you did St dot CV,
+
+795
+00:33:30,960 --> 00:33:33,280
+it will spit out
+these constants.
+
+796
+00:33:33,280 --> 00:33:35,519
+So you can call this,
+
+797
+00:33:35,519 --> 00:33:37,200
+and then if you just
+take the ratio of them,
+
+798
+00:33:37,200 --> 00:33:40,359
+you have the Adiabatic
+index from it, okay?
+
+799
+00:33:40,359 --> 00:33:43,039
+The questions? Good. Yes,
+
+800
+00:33:43,039 --> 00:33:45,360
+please. Just to clarify.
+
+801
+00:33:45,520 --> 00:33:48,120
+Yeah, so the units of
+this are kilojoules
+
+802
+00:33:48,120 --> 00:33:49,599
+per kilogram
+Kelvin, right?
+
+803
+00:33:49,599 --> 00:33:51,440
+Which here would
+mean that it is.
+
+804
+00:33:51,440 --> 00:33:52,119
+If you wanted to
+
+805
+00:33:52,119 --> 00:33:53,360
+convert that to
+the universal,
+
+806
+00:33:53,360 --> 00:33:53,800
+you would know
+
+807
+00:33:53,800 --> 00:33:56,240
+the molecular weight
+of your substance,
+
+808
+00:33:56,240 --> 00:33:59,279
+and you could
+recover R, okay?
+
+809
+00:33:59,279 --> 00:34:00,759
+Maybe since we're on the
+
+810
+00:34:00,759 --> 00:34:02,079
+subject of talking
+about this,
+
+811
+00:34:02,079 --> 00:34:04,679
+you can also see the
+following, right?
+
+812
+00:34:04,679 --> 00:34:07,199
+You can see the universal
+gas constant being
+
+813
+00:34:07,199 --> 00:34:08,760
+written to the
+specific heat
+
+814
+00:34:08,760 --> 00:34:10,120
+on a molar basis,
+
+815
+00:34:10,120 --> 00:34:11,679
+minus specific heat at
+
+816
+00:34:11,679 --> 00:34:13,640
+constant volume
+on a molar basis.
+
+817
+00:34:13,640 --> 00:34:15,159
+And this holds then for
+
+818
+00:34:15,159 --> 00:34:18,034
+all ideal gases, okay?
+
+819
+00:34:18,034 --> 00:34:21,230
+So RUCp minus CV
+
+820
+00:34:21,230 --> 00:34:24,669
+there for the monotonic
+gases is like that.
+
+821
+00:34:24,669 --> 00:34:25,589
+I don't really, you know,
+
+822
+00:34:25,589 --> 00:34:26,869
+I'm only mentioning
+it since you
+
+823
+00:34:26,869 --> 00:34:29,229
+brought it up and
+triggered me with it,
+
+824
+00:34:29,229 --> 00:34:30,549
+but you can look into it.
+
+825
+00:34:30,549 --> 00:34:31,549
+But yeah, this is then
+
+826
+00:34:31,549 --> 00:34:34,150
+the specific gas constant.
+
+827
+00:34:34,150 --> 00:34:36,579
+Okay? Other questions?
+Yes, please.
+
+828
+00:34:36,579 --> 00:34:43,449
+In the play by play.
+
+829
+00:34:43,449 --> 00:34:45,609
+So the play by
+play here is that
+
+830
+00:34:45,609 --> 00:34:47,089
+what I'm saying
+with this first
+
+831
+00:34:47,089 --> 00:34:48,649
+statement is
+for a process,
+
+832
+00:34:48,649 --> 00:34:50,049
+the only types of changes
+
+833
+00:34:50,049 --> 00:34:51,249
+in entropy can be for me
+
+834
+00:34:51,249 --> 00:34:52,449
+transferring heat in or
+
+835
+00:34:52,449 --> 00:34:55,449
+out, internally
+reversible there.
+
+836
+00:34:55,449 --> 00:34:57,049
+You write the first law
+
+837
+00:34:57,049 --> 00:34:59,410
+with this first law
+written in this format,
+
+838
+00:34:59,410 --> 00:35:01,249
+assuming that I have this
+
+839
+00:35:01,249 --> 00:35:04,170
+compressible system
+internally reversible.
+
+840
+00:35:04,170 --> 00:35:05,570
+I don't have any friction.
+
+841
+00:35:05,570 --> 00:35:06,769
+The type of work I can do
+
+842
+00:35:06,769 --> 00:35:08,490
+is boundary work, PDV,
+
+843
+00:35:08,490 --> 00:35:09,929
+and the way that entropy
+
+844
+00:35:09,929 --> 00:35:11,210
+can change there is TDS,
+
+845
+00:35:11,210 --> 00:35:12,809
+keep being transferred
+in and out,
+
+846
+00:35:12,809 --> 00:35:14,009
+and that's equal to DU.
+
+847
+00:35:14,009 --> 00:35:15,369
+So first law
+written now and
+
+848
+00:35:15,369 --> 00:35:16,969
+a second law of
+way, all right?
+
+849
+00:35:16,969 --> 00:35:19,049
+Um, this, I'm just
+repeating it.
+
+850
+00:35:19,049 --> 00:35:20,770
+This I'm dividing by mass.
+
+851
+00:35:20,770 --> 00:35:21,929
+This, I'm telling you
+
+852
+00:35:21,929 --> 00:35:23,809
+a definition of enthalpy.
+
+853
+00:35:23,809 --> 00:35:26,009
+Here I'm doing chain rule.
+
+854
+00:35:26,009 --> 00:35:27,810
+Here I'm substituting
+
+855
+00:35:27,810 --> 00:35:29,409
+that chain rule
+back into this,
+
+856
+00:35:29,409 --> 00:35:30,850
+and I'm just writing
+
+857
+00:35:30,850 --> 00:35:32,489
+one version of what's
+
+858
+00:35:32,489 --> 00:35:34,290
+called the TDS equation.
+
+859
+00:35:34,290 --> 00:35:35,809
+Or if you like to
+write old guy names,
+
+860
+00:35:35,809 --> 00:35:37,250
+you can it the
+Gibbs equation.
+
+861
+00:35:37,250 --> 00:35:39,330
+But I like TDS. That's
+my old man's initials.
+
+862
+00:35:39,330 --> 00:35:41,289
+So TDS is there.
+
+863
+00:35:41,289 --> 00:35:46,089
+Um, So you've got that.
+
+864
+00:35:46,089 --> 00:35:48,570
+I rearrange now because
+what I'm interested
+
+865
+00:35:48,570 --> 00:35:49,809
+in is changes just
+
+866
+00:35:49,809 --> 00:35:51,369
+in the property
+of entropy.
+
+867
+00:35:51,369 --> 00:35:53,729
+Here, I want to relate
+changes in entropy to
+
+868
+00:35:53,729 --> 00:35:55,009
+changes in
+properties I can
+
+869
+00:35:55,009 --> 00:35:56,569
+measure, things
+that I care about.
+
+870
+00:35:56,569 --> 00:35:57,529
+So I do that here.
+
+871
+00:35:57,529 --> 00:35:59,369
+I divide by
+temperature, fine.
+
+872
+00:35:59,369 --> 00:36:00,729
+Now I got a bunch of
+
+873
+00:36:00,729 --> 00:36:02,369
+things that I
+can't integrate.
+
+874
+00:36:02,369 --> 00:36:04,929
+I need to substitute in,
+
+875
+00:36:04,929 --> 00:36:08,090
+for dH CP dT,
+
+876
+00:36:08,090 --> 00:36:09,929
+because that makes
+that integrable.
+
+877
+00:36:09,929 --> 00:36:12,089
+And then with V, I have
+an equation of state.
+
+878
+00:36:12,089 --> 00:36:14,049
+I have the ideal gas
+I substitute in.
+
+879
+00:36:14,049 --> 00:36:16,209
+And ultimately, what
+I get is changes in
+
+880
+00:36:16,209 --> 00:36:18,660
+entropy related to
+things I can measure.
+
+881
+00:36:18,660 --> 00:36:20,109
+And then I say, I
+want this to be
+
+882
+00:36:20,109 --> 00:36:21,669
+isotropic because I want
+
+883
+00:36:21,669 --> 00:36:23,069
+to talk about the
+maximum possible.
+
+884
+00:36:23,069 --> 00:36:24,790
+And now I can
+relate temperature
+
+885
+00:36:24,790 --> 00:36:27,259
+to pressure with
+constants that I know.
+
+886
+00:36:27,259 --> 00:36:28,969
+And that's
+convenient. It was
+
+887
+00:36:28,969 --> 00:36:30,890
+especially convenient
+when you had tables.
+
+888
+00:36:30,890 --> 00:36:32,609
+When you had to do
+tables and look it up,
+
+889
+00:36:32,609 --> 00:36:34,049
+this was like,
+Whoa. Oh, my God.
+
+890
+00:36:34,049 --> 00:36:35,289
+I only want to
+work with air,
+
+891
+00:36:35,289 --> 00:36:36,689
+you know, forget water.
+
+892
+00:36:36,689 --> 00:36:38,649
+All right? So that's
+one approach that you
+
+893
+00:36:38,649 --> 00:36:40,689
+can get one formula
+from that, right?
+
+894
+00:36:40,689 --> 00:36:44,529
+But we also know
+that changes in
+
+895
+00:36:44,529 --> 00:36:46,209
+internal energy can be
+
+896
+00:36:46,209 --> 00:36:48,930
+related to changes in
+temperature through CV,
+
+897
+00:36:48,930 --> 00:36:50,289
+another constant
+that we know, okay?
+
+898
+00:36:50,289 --> 00:36:51,689
+And it turns out
+that if we can write
+
+899
+00:36:51,689 --> 00:36:53,329
+a second equation
+where changes in
+
+900
+00:36:53,329 --> 00:36:54,929
+entropy are
+temperatures in
+
+901
+00:36:54,929 --> 00:36:56,929
+specific volumes,
+set that to zero.
+
+902
+00:36:56,929 --> 00:36:58,449
+Now I can relate
+temperature to
+
+903
+00:36:58,449 --> 00:37:00,489
+specific volume for a
+reversible process.
+
+904
+00:37:00,489 --> 00:37:01,529
+All I got to know is
+
+905
+00:37:01,529 --> 00:37:02,569
+some constants that I can
+
+906
+00:37:02,569 --> 00:37:04,840
+look up or, uh,
+even easier.
+
+907
+00:37:04,840 --> 00:37:06,039
+And then everything
+after that
+
+908
+00:37:06,039 --> 00:37:07,679
+is me just mathing
+it, right?
+
+909
+00:37:07,679 --> 00:37:09,440
+So everything after
+that is some math.
+
+910
+00:37:09,440 --> 00:37:10,960
+And then saying that, boy,
+
+911
+00:37:10,960 --> 00:37:13,920
+writing R and CP and CV
+is kind of annoying.
+
+912
+00:37:13,920 --> 00:37:15,319
+Remember before
+when we had
+
+913
+00:37:15,319 --> 00:37:17,879
+that PV polytropic
+process to the K,
+
+914
+00:37:17,879 --> 00:37:20,079
+I kind of like K
+or Kappa, okay?
+
+915
+00:37:20,079 --> 00:37:21,040
+That's a choice.
+
+916
+00:37:21,040 --> 00:37:22,400
+You don't have to
+make that choice,
+
+917
+00:37:22,400 --> 00:37:23,560
+but someone made
+that choice.
+
+918
+00:37:23,560 --> 00:37:26,299
+So we have Kappa
+that's there.
+
+919
+00:37:26,299 --> 00:37:28,319
+And essentially,
+we recover
+
+920
+00:37:28,319 --> 00:37:29,840
+that adiabatic equation,
+
+921
+00:37:29,840 --> 00:37:32,080
+PV to the K is equal
+to a constant,
+
+922
+00:37:32,080 --> 00:37:33,800
+and then two
+other formulas
+
+923
+00:37:33,800 --> 00:37:35,839
+or one other formula
+that we have and
+
+924
+00:37:35,839 --> 00:37:37,599
+another one that
+emerges because we set
+
+925
+00:37:37,599 --> 00:37:39,000
+those two original
+equations
+
+926
+00:37:39,000 --> 00:37:39,799
+equal to each other.
+
+927
+00:37:39,799 --> 00:37:42,440
+But the name of the game
+is that I can relate
+
+928
+00:37:42,440 --> 00:37:46,279
+measurable properties
+to each other,
+
+929
+00:37:46,279 --> 00:37:47,999
+assuming that it is
+
+930
+00:37:47,999 --> 00:37:50,519
+isotropic and
+an ideal gas,
+
+931
+00:37:50,519 --> 00:37:53,119
+which is relevant
+for engines.
+
+932
+00:37:53,119 --> 00:37:55,839
+So any engine
+that runs on air,
+
+933
+00:37:55,839 --> 00:37:58,759
+you know, propulsion,
+all of that,
+
+934
+00:37:58,759 --> 00:38:00,640
+these hold for
+the ideal cases.
+
+935
+00:38:00,640 --> 00:38:01,999
+And we can get into, okay,
+
+936
+00:38:01,999 --> 00:38:03,680
+what if it's
+not isentropic?
+
+937
+00:38:03,680 --> 00:38:04,919
+Yeah, we'll get
+to there next,
+
+938
+00:38:04,919 --> 00:38:07,119
+but this is the
+step. Is that clear?
+
+939
+00:38:07,119 --> 00:38:08,599
+Yes, please. David, right?
+
+940
+00:38:08,599 --> 00:38:10,319
+David. Yes. Thank you.
+
+941
+00:38:10,319 --> 00:38:13,000
+Are we going to them?
+
+942
+00:38:13,000 --> 00:38:15,919
+I don't care. Just be
+consistent, you know?
+
+943
+00:38:15,919 --> 00:38:17,559
+If you like it, do it.
+
+944
+00:38:17,559 --> 00:38:19,040
+But just be consistent.
+
+945
+00:38:19,040 --> 00:38:21,955
+I can translate.
+Other questions?
+
+946
+00:38:21,955 --> 00:38:24,390
+But just know that in
+the book, it's Kapp.
+
+947
+00:38:24,390 --> 00:38:25,749
+In the book, it's KappA.
+
+948
+00:38:25,749 --> 00:38:26,989
+And when you look
+it up in the book,
+
+949
+00:38:26,989 --> 00:38:28,349
+it's also KappA, right?
+
+950
+00:38:28,349 --> 00:38:30,149
+And you won't be able
+
+951
+00:38:30,149 --> 00:38:31,910
+to call that with P Kalre.
+
+952
+00:38:31,910 --> 00:38:33,310
+What you can call
+with Pi Kilo
+
+953
+00:38:33,310 --> 00:38:34,790
+is you can call CP and CV.
+
+954
+00:38:34,790 --> 00:38:36,870
+And so then K or
+Kappa or Gamma,
+
+955
+00:38:36,870 --> 00:38:38,349
+in your case would
+be defined then as
+
+956
+00:38:38,349 --> 00:38:40,789
+the ratio of
+the two, okay?
+
+957
+00:38:41,830 --> 00:38:44,469
+Look, you know, if
+you want physics,
+
+958
+00:38:44,469 --> 00:38:45,669
+it's a great
+place, but you
+
+959
+00:38:45,669 --> 00:38:47,229
+crossed that road, okay?
+
+960
+00:38:47,229 --> 00:38:49,829
+Fine. And this
+building, these people,
+
+961
+00:38:49,829 --> 00:38:52,149
+I feel maybe are
+closer to us as
+
+962
+00:38:52,149 --> 00:38:55,109
+engineers than they
+are to the physicists.
+
+963
+00:38:55,109 --> 00:38:56,270
+So this is more of a Kappa
+
+964
+00:38:56,270 --> 00:38:57,390
+crowd than maybe a Gamma.
+
+965
+00:38:57,390 --> 00:39:00,149
+Okay. Other
+questions? These are
+
+966
+00:39:00,149 --> 00:39:02,989
+nice questions. Okay.
+
+967
+00:39:02,989 --> 00:39:05,349
+And so, you know, what
+does this look like?
+
+968
+00:39:05,349 --> 00:39:06,709
+So remember
+before we wrote
+
+969
+00:39:06,709 --> 00:39:12,150
+this PV diagram for
+the Karno cycle.
+
+970
+00:39:12,150 --> 00:39:14,909
+So for the ideal gas
+Karno cycle there,
+
+971
+00:39:14,909 --> 00:39:17,229
+what I'm plotting now
+is that same thing,
+
+972
+00:39:17,229 --> 00:39:19,029
+and I'm computing
+temperature and
+
+973
+00:39:19,029 --> 00:39:22,550
+entropy based on
+those relations.
+
+974
+00:39:23,510 --> 00:39:25,709
+All right. And
+so what you'll
+
+975
+00:39:25,709 --> 00:39:26,909
+see in the end is
+that this is going to
+
+976
+00:39:26,909 --> 00:39:28,869
+draw a rectangle because
+
+977
+00:39:28,869 --> 00:39:31,549
+that's exactly what
+Karno is, isn't it?
+
+978
+00:39:31,549 --> 00:39:33,549
+A Karno is a transfer heat
+
+979
+00:39:33,549 --> 00:39:34,670
+in at constant
+temperature,
+
+980
+00:39:34,670 --> 00:39:36,550
+transfer heat out at
+constant temperature,
+
+981
+00:39:36,550 --> 00:39:38,069
+and work transfer
+processes
+
+982
+00:39:38,069 --> 00:39:41,949
+are adiabatic and
+reversible, okay?
+
+983
+00:39:41,949 --> 00:39:43,590
+So isotropic.
+
+984
+00:39:43,590 --> 00:39:44,789
+So that's why
+those, right?
+
+985
+00:39:44,789 --> 00:39:46,150
+So that would be
+your workout,
+
+986
+00:39:46,150 --> 00:39:48,629
+and that's your
+work in, okay?
+
+987
+00:40:00,480 --> 00:40:02,519
+I'll get played again,
+
+988
+00:40:02,519 --> 00:40:04,520
+I guess, while I erase.
+
+989
+00:40:04,520 --> 00:40:07,359
+Cool. Don't answer that,
+
+990
+00:40:07,359 --> 00:40:09,040
+just sketch.
+
+991
+00:40:40,710 --> 00:40:43,110
+Cool.
+
+992
+00:40:43,350 --> 00:40:45,549
+Yeah, and so now I
+
+993
+00:40:45,549 --> 00:40:46,789
+can show you the
+application of that.
+
+994
+00:40:46,789 --> 00:40:47,469
+And so with this,
+
+995
+00:40:47,469 --> 00:40:48,789
+I'll show you
+two approaches.
+
+996
+00:40:48,789 --> 00:40:51,669
+So I'll analyze one
+using Pi Killor, right?
+
+997
+00:40:51,669 --> 00:40:53,389
+So what I showed you
+for the turbine,
+
+998
+00:40:53,389 --> 00:40:54,709
+and I'm going to do
+another one with
+
+999
+00:40:54,709 --> 00:40:56,909
+the isotropic relations
+that we just did,
+
+1000
+00:40:56,909 --> 00:40:58,269
+and then you can
+compare the difference
+
+1001
+00:40:58,269 --> 00:40:59,629
+and the answers
+at the end,
+
+1002
+00:40:59,629 --> 00:41:01,189
+and then decide,
+you know, do I
+
+1003
+00:41:01,189 --> 00:41:03,829
+feel lucky or not, okay?
+
+1004
+00:41:03,829 --> 00:41:05,909
+When you decide
+to do that.
+
+1005
+00:41:05,909 --> 00:41:08,149
+Okay, so what are we
+talking about here?
+
+1006
+00:41:08,149 --> 00:41:10,309
+So we have a compressor,
+
+1007
+00:41:10,309 --> 00:41:12,349
+and it runs on nitrogen.
+
+1008
+00:41:12,349 --> 00:41:14,069
+So we have a compressor,
+
+1009
+00:41:14,069 --> 00:41:16,749
+compress a compressor.
+
+1010
+00:41:16,749 --> 00:41:18,269
+So what does a
+compressor look like?
+
+1011
+00:41:18,269 --> 00:41:21,349
+It takes something from
+high specific volume
+
+1012
+00:41:21,349 --> 00:41:22,709
+and makes it low.
+
+1013
+00:41:22,709 --> 00:41:23,989
+So this would
+be, let's say,
+
+1014
+00:41:23,989 --> 00:41:25,829
+like an inlet here.
+
+1015
+00:41:25,829 --> 00:41:27,389
+And then this would
+be, let's say,
+
+1016
+00:41:27,389 --> 00:41:28,869
+like an outlet here.
+
+1017
+00:41:28,869 --> 00:41:31,229
+Let's call this
+state one in state
+
+1018
+00:41:31,229 --> 00:41:34,550
+two and give it a
+control volume.
+
+1019
+00:41:34,550 --> 00:41:36,909
+So I'm going control
+volume all right here
+
+1020
+00:41:36,909 --> 00:41:40,669
+in green, like that.
+
+1021
+00:41:40,669 --> 00:41:42,709
+So that's my CV.
+
+1022
+00:41:44,349 --> 00:41:48,429
+And the gas here
+is nitrogen.
+
+1023
+00:41:48,429 --> 00:41:51,509
+So N two is what
+we're compressing.
+
+1024
+00:41:51,509 --> 00:41:52,789
+What we're told
+is that it's
+
+1025
+00:41:52,789 --> 00:41:53,909
+entering at a pressure
+
+1026
+00:41:53,909 --> 00:41:56,469
+of P one is 110 kPa,
+
+1027
+00:41:56,469 --> 00:41:58,469
+so atmospheric
+pressure and
+
+1028
+00:41:58,469 --> 00:42:02,269
+a temperature of 30
+degrees Celsius,
+
+1029
+00:42:02,269 --> 00:42:03,669
+so a bit of a warm day.
+
+1030
+00:42:03,669 --> 00:42:06,109
+And then it exits at
+a pressure of P two,
+
+1031
+00:42:06,109 --> 00:42:09,949
+which is 682 kPa.
+
+1032
+00:42:09,949 --> 00:42:11,669
+Okay? And you're told that
+
+1033
+00:42:11,669 --> 00:42:14,869
+this process is
+reversible, okay?
+
+1034
+00:42:14,869 --> 00:42:16,069
+So you're told this is,
+
+1035
+00:42:16,069 --> 00:42:19,869
+uh reversible and that
+
+1036
+00:42:19,869 --> 00:42:22,269
+this compressor
+operates adiabatically.
+
+1037
+00:42:22,269 --> 00:42:27,629
+So this is an adiabatic
+adiabatic compressor,
+
+1038
+00:42:27,629 --> 00:42:29,509
+which basically means
+for us that this
+
+1039
+00:42:29,509 --> 00:42:32,469
+is an isotropic, right.
+
+1040
+00:42:32,469 --> 00:42:35,469
+So it means basically
+from S one,
+
+1041
+00:42:36,179 --> 00:42:38,219
+Specific entropy
+
+1042
+00:42:38,219 --> 00:42:39,459
+at state one is
+going to be equal to
+
+1043
+00:42:39,459 --> 00:42:43,579
+specific entropy at
+state state two, okay?
+
+1044
+00:42:43,579 --> 00:42:45,899
+All right, we're going
+to neglect, right?
+
+1045
+00:42:45,899 --> 00:42:50,419
+So we neglect,
+changes in E,
+
+1046
+00:42:50,419 --> 00:42:53,139
+neglect changes in
+potential energy.
+
+1047
+00:42:53,139 --> 00:42:54,659
+Reversible adiabatic,
+
+1048
+00:42:54,659 --> 00:42:56,019
+it's a steady flow device.
+
+1049
+00:42:56,019 --> 00:42:57,579
+So the steady flow
+device, right,
+
+1050
+00:42:57,579 --> 00:42:58,899
+the change in the mass of
+
+1051
+00:42:58,899 --> 00:43:00,459
+the control
+volume is zero,
+
+1052
+00:43:00,459 --> 00:43:02,579
+and the change
+in the energy of
+
+1053
+00:43:02,579 --> 00:43:07,099
+our control volume is
+also equal to zero.
+
+1054
+00:43:07,099 --> 00:43:10,989
+All right. Um All right,
+
+1055
+00:43:10,989 --> 00:43:12,229
+so then your DE, right?
+
+1056
+00:43:12,229 --> 00:43:15,549
+So D MCV dt, right,
+
+1057
+00:43:15,549 --> 00:43:18,869
+m.in minus M dot out,
+
+1058
+00:43:18,869 --> 00:43:20,949
+right? This goes to zero.
+
+1059
+00:43:20,949 --> 00:43:22,509
+So what it
+implies is right
+
+1060
+00:43:22,509 --> 00:43:24,549
+M dot is equal to m.in,
+
+1061
+00:43:24,549 --> 00:43:26,469
+is equal to M dot out.
+
+1062
+00:43:26,469 --> 00:43:28,389
+For our energy equation,
+
+1063
+00:43:28,389 --> 00:43:32,589
+DECv dt is e.in
+
+1064
+00:43:32,589 --> 00:43:35,509
+minus E dot out
+
+1065
+00:43:35,509 --> 00:43:37,429
+because it's steady
+flow, right?
+
+1066
+00:43:37,429 --> 00:43:38,589
+That goes to zero. So your
+
+1067
+00:43:38,589 --> 00:43:43,309
+e.in is equal to your
+e dot out, right?
+
+1068
+00:43:43,630 --> 00:43:47,269
+Okay, for this
+to be, right?
+
+1069
+00:43:47,269 --> 00:43:48,429
+So this is a compressor.
+
+1070
+00:43:48,429 --> 00:43:49,829
+So what it means is
+that we're going
+
+1071
+00:43:49,829 --> 00:43:51,749
+to have work, right?
+
+1072
+00:43:51,749 --> 00:43:53,429
+That's transferred
+in, right?
+
+1073
+00:43:53,429 --> 00:43:57,549
+So I'm going to have
+some w.in that's there.
+
+1074
+00:43:57,549 --> 00:44:00,830
+There's my dot
+that's entering.
+
+1075
+00:44:00,830 --> 00:44:02,429
+It's adiabatic.
+
+1076
+00:44:02,429 --> 00:44:05,389
+So it means my
+q.in is equal to
+
+1077
+00:44:05,389 --> 00:44:08,309
+my Q dot out is
+equal to zero.
+
+1078
+00:44:08,309 --> 00:44:10,469
+Our velocities are
+
+1079
+00:44:10,469 --> 00:44:13,069
+essentially zero
+in the sense
+
+1080
+00:44:13,069 --> 00:44:14,949
+that they don't contribute
+
+1081
+00:44:14,949 --> 00:44:18,189
+very much to the rate
+of energy in and out.
+
+1082
+00:44:18,189 --> 00:44:20,349
+And so we don't have
+any workout, right?
+
+1083
+00:44:20,349 --> 00:44:25,110
+So we have w.in plus.h1,
+
+1084
+00:44:25,110 --> 00:44:30,639
+m.h1 is equal to m.h2.
+
+1085
+00:44:30,639 --> 00:44:31,969
+All right, so I
+
+1086
+00:44:31,969 --> 00:44:33,329
+neglect all the
+other stuff, right?
+
+1087
+00:44:33,329 --> 00:44:34,769
+And so then when
+I rearrange,
+
+1088
+00:44:34,769 --> 00:44:36,969
+I have w dot N is equal to
+
+1089
+00:44:36,969 --> 00:44:40,449
+M dot times H
+two minus H one.
+
+1090
+00:44:40,449 --> 00:44:42,129
+That makes sense
+because I'd
+
+1091
+00:44:42,129 --> 00:44:43,769
+expect S two to
+
+1092
+00:44:43,769 --> 00:44:45,009
+be at a higher
+temperature, right?
+
+1093
+00:44:45,009 --> 00:44:46,089
+I'm compressing that I'
+
+1094
+00:44:46,089 --> 00:44:47,089
+putting energy
+through work,
+
+1095
+00:44:47,089 --> 00:44:48,249
+so I'd expect
+that to be at
+
+1096
+00:44:48,249 --> 00:44:49,929
+a higher enthalpy
+than state one.
+
+1097
+00:44:49,929 --> 00:44:52,209
+And that formula H
+
+1098
+00:44:52,209 --> 00:44:56,289
+two minus H one
+reflects that there.
+
+1099
+00:44:56,289 --> 00:45:01,649
+Okay. Mm. So I
+can move that.
+
+1100
+00:45:02,550 --> 00:45:07,309
+Blah, blah, blah.
+
+1101
+00:45:07,309 --> 00:45:08,789
+Okay, so for state, so
+
+1102
+00:45:08,789 --> 00:45:10,309
+let's do P Killor style.
+
+1103
+00:45:10,309 --> 00:45:13,829
+So for state
+one, State one,
+
+1104
+00:45:13,829 --> 00:45:17,509
+we know P one,
+we know T one.
+
+1105
+00:45:17,509 --> 00:45:19,029
+And so what this
+means is that we
+
+1106
+00:45:19,029 --> 00:45:20,869
+know S one and
+we know H one.
+
+1107
+00:45:20,869 --> 00:45:22,029
+So I can substitute
+
+1108
+00:45:22,029 --> 00:45:23,589
+that H one that I
+had into there,
+
+1109
+00:45:23,589 --> 00:45:26,549
+and I can use
+information about S one.
+
+1110
+00:45:26,549 --> 00:45:30,189
+For state two, all
+we know is P two.
+
+1111
+00:45:30,189 --> 00:45:31,229
+And because from
+
+1112
+00:45:31,229 --> 00:45:32,950
+the assumption
+of isentropic,
+
+1113
+00:45:32,950 --> 00:45:35,029
+S two is equal to S one.
+
+1114
+00:45:35,029 --> 00:45:40,304
+And so from this, we
+can get to H two, okay?
+
+1115
+00:45:40,304 --> 00:45:42,499
+The other thing I'll
+note with this,
+
+1116
+00:45:42,499 --> 00:45:43,379
+because we're going to
+
+1117
+00:45:43,379 --> 00:45:44,499
+use it for the ideal gas,
+
+1118
+00:45:44,499 --> 00:45:45,899
+is that with this
+information, you
+
+1119
+00:45:45,899 --> 00:45:47,179
+could also get,
+like, a CP,
+
+1120
+00:45:47,179 --> 00:45:50,179
+right, a specific heat
+at constant pressure.
+
+1121
+00:45:50,179 --> 00:45:51,659
+You could also
+get a CV, right,
+
+1122
+00:45:51,659 --> 00:45:53,219
+a specific heat at
+
+1123
+00:45:53,219 --> 00:45:56,219
+constant at constant
+volume, right?
+
+1124
+00:45:56,219 --> 00:45:58,539
+And so with this, right,
+
+1125
+00:45:58,539 --> 00:46:01,739
+that's enough
+information to, right,
+
+1126
+00:46:01,739 --> 00:46:05,659
+determine the workout
+per unit mass.
+
+1127
+00:46:05,659 --> 00:46:09,179
+So if I go with W dot
+N divided by M dot,
+
+1128
+00:46:09,179 --> 00:46:11,739
+right, that's H
+two minus H one,
+
+1129
+00:46:11,739 --> 00:46:14,130
+which you would
+know from Pi color.
+
+1130
+00:46:14,130 --> 00:46:17,119
+And in this case, what
+I'm going to get is
+
+1131
+00:46:17,119 --> 00:46:21,199
+215 kilojoules
+per kilogram
+
+1132
+00:46:21,199 --> 00:46:22,799
+with using Pi kilo
+
+1133
+00:46:22,799 --> 00:46:25,200
+for determining
+properties.
+
+1134
+00:46:25,200 --> 00:46:30,159
+Okay, but I told
+
+1135
+00:46:30,159 --> 00:46:31,159
+you before we could treat,
+
+1136
+00:46:31,159 --> 00:46:32,319
+you know, if
+we assume now.
+
+1137
+00:46:32,319 --> 00:46:36,339
+So if we assume
+that nitrogen is
+
+1138
+00:46:36,339 --> 00:46:39,499
+an ideal gas and that this
+
+1139
+00:46:39,499 --> 00:46:43,739
+is an isotropic process.
+
+1140
+00:46:43,739 --> 00:46:47,459
+And I can relate
+T two is equal
+
+1141
+00:46:47,459 --> 00:46:51,939
+to T one for an isotropic
+process times P
+
+1142
+00:46:51,939 --> 00:46:56,019
+two divided by
+P one to the K
+
+1143
+00:46:56,019 --> 00:47:01,379
+minus one divided
+by K there.
+
+1144
+00:47:01,379 --> 00:47:03,619
+And again, just
+recall that this is
+
+1145
+00:47:03,619 --> 00:47:06,539
+equal to cp divided by CB.
+
+1146
+00:47:06,539 --> 00:47:08,179
+You need to get
+this from PCLor.
+
+1147
+00:47:08,179 --> 00:47:09,819
+This is also like at
+the very start of
+
+1148
+00:47:09,819 --> 00:47:13,074
+the tables in
+the textbook.
+
+1149
+00:47:13,074 --> 00:47:14,369
+All right.
+
+1150
+00:47:14,369 --> 00:47:16,089
+Also, for an ideal gas,
+
+1151
+00:47:16,089 --> 00:47:17,489
+you can remember
+that changes in
+
+1152
+00:47:17,489 --> 00:47:19,369
+enthalp for an ideal gas
+
+1153
+00:47:19,369 --> 00:47:21,810
+are equal to Cp times
+
+1154
+00:47:21,810 --> 00:47:23,249
+changes in
+temperature, right?
+
+1155
+00:47:23,249 --> 00:47:25,609
+So for us, H two
+minus H one is Cp
+
+1156
+00:47:25,609 --> 00:47:29,209
+two minus T one
+there, okay?
+
+1157
+00:47:29,209 --> 00:47:31,209
+And if you
+substitute numbers
+
+1158
+00:47:31,209 --> 00:47:33,369
+in for that, right?
+
+1159
+00:47:33,369 --> 00:47:36,009
+So then this H two
+
+1160
+00:47:36,009 --> 00:47:39,889
+minus the H one
+for the ideal gas,
+
+1161
+00:47:39,889 --> 00:47:41,489
+what I find is
+
+1162
+00:47:41,489 --> 00:47:49,409
+216.7 kilojoules
+per kilogram, okay?
+
+1163
+00:47:49,409 --> 00:47:51,609
+So what are we talking?
+Half a percent.
+
+1164
+00:47:51,609 --> 00:47:54,249
+So you have half a
+percent difference in
+
+1165
+00:47:54,249 --> 00:47:55,369
+the work per unit
+
+1166
+00:47:55,369 --> 00:47:56,929
+mass output of
+the compressor
+
+1167
+00:47:56,929 --> 00:47:58,449
+when you assume ideal gas
+
+1168
+00:47:58,449 --> 00:48:00,329
+with specific heats at
+
+1169
+00:48:00,329 --> 00:48:02,449
+the inlet
+temperature versus
+
+1170
+00:48:02,449 --> 00:48:03,009
+the case when you
+
+1171
+00:48:03,009 --> 00:48:04,249
+go in and you compute very
+
+1172
+00:48:04,249 --> 00:48:06,534
+accurately the
+process, okay?
+
+1173
+00:48:06,534 --> 00:48:08,659
+So the take home message
+
+1174
+00:48:08,659 --> 00:48:09,739
+out of that is that it's
+
+1175
+00:48:09,739 --> 00:48:11,940
+a pretty good
+approximation
+
+1176
+00:48:11,940 --> 00:48:14,539
+to do, right,
+these approaches.
+
+1177
+00:48:14,539 --> 00:48:15,619
+You know, if you do have
+
+1178
+00:48:15,619 --> 00:48:17,539
+the isentropic
+process using this,
+
+1179
+00:48:17,539 --> 00:48:19,459
+relating differences
+in enthalpy
+
+1180
+00:48:19,459 --> 00:48:20,419
+to a specific heat
+
+1181
+00:48:20,419 --> 00:48:21,499
+that you select,
+let's say,
+
+1182
+00:48:21,499 --> 00:48:23,379
+a T one, the inlet
+temperature times that
+
+1183
+00:48:23,379 --> 00:48:26,259
+Delta T gets you a
+pretty darn close value,
+
+1184
+00:48:26,259 --> 00:48:28,459
+okay. Better than 2%.
+
+1185
+00:48:28,459 --> 00:48:30,859
+All right? I'll
+move this over.
+
+1186
+00:48:39,579 --> 00:48:46,859
+Questions about that?
+Yes, please. 216.7.
+
+1187
+00:48:49,500 --> 00:48:51,379
+Yes, please.
+
+1188
+00:48:51,379 --> 00:48:53,540
+Equation for the turbine,
+
+1189
+00:48:53,540 --> 00:48:55,459
+it's on the
+equation sheet.
+
+1190
+00:48:55,459 --> 00:48:57,139
+So would you have
+to show the process
+
+1191
+00:48:57,139 --> 00:48:58,699
+of getting up to
+there on the exam?
+
+1192
+00:48:58,699 --> 00:49:00,259
+You just have to
+state assumptions.
+
+1193
+00:49:00,259 --> 00:49:02,459
+I write things in
+great detail so
+
+1194
+00:49:02,459 --> 00:49:03,659
+that you can get into the
+
+1195
+00:49:03,659 --> 00:49:05,219
+mental habit of
+going through.
+
+1196
+00:49:05,219 --> 00:49:07,019
+But as long as you
+say, like, hey,
+
+1197
+00:49:07,019 --> 00:49:09,299
+steady flow, e,
+dot, e, dot dot,
+
+1198
+00:49:09,299 --> 00:49:11,820
+neglect heat, right,
+neglect workout,
+
+1199
+00:49:11,820 --> 00:49:13,139
+and I come up
+with this, that's
+
+1200
+00:49:13,139 --> 00:49:14,459
+perfectly
+acceptable to me.
+
+1201
+00:49:14,459 --> 00:49:15,379
+The main thing is that if
+
+1202
+00:49:15,379 --> 00:49:16,539
+I have to partially
+grade you
+
+1203
+00:49:16,539 --> 00:49:17,339
+and you don't show me
+
+1204
+00:49:17,339 --> 00:49:18,699
+logic and work,
+it's so hard.
+
+1205
+00:49:18,699 --> 00:49:20,179
+And then I get in a
+bad mood and I get
+
+1206
+00:49:20,179 --> 00:49:21,859
+grumpy and my
+wife's mad at me.
+
+1207
+00:49:21,859 --> 00:49:24,339
+So just show some work.
+
+1208
+00:49:24,339 --> 00:49:28,939
+Other questions?
+Okay. So we
+
+1209
+00:49:28,939 --> 00:49:30,099
+are 30 seconds early.
+
+1210
+00:49:30,099 --> 00:49:31,379
+With that, I'm
+going to close it.
+
+1211
+00:49:31,379 --> 00:49:33,779
+If you have questions,
+I'm up here.

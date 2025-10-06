@@ -1,0 +1,83 @@
+{
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "lectureId": "1_h0h8llrr",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "02b",
+  "title": "Energy, Energy Transfer, and General Energy Analysis",
+  "videoTitle": "ME40 - 5 Sept 2025 - Lecture 2b (edited)",
+  "module": "module-one",
+  "topic": "Energy",
+  "subtopics": [
+    {
+      "key": "Fa25-L2b-1.0",
+      "title": "Learning Objectives",
+      "summary": "",
+      "time_range": "00:00 - 00:29",
+      "topics": ["Energy"],
+      "detailed_summary": "The lecture will cover **energy transfer**, focusing on the concepts of **work**, **electrical work**, and **mechanical work**. It will also delve into the **First Law of Thermodynamics**, including a detailed **problem-solving approach**. If time allows, **fluid flowing as energy transfer** will be discussed.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L2b-2.0",
+      "title": "Examples of mechanical work",
+      "summary": "Prof. Schutzius analyzes the work done on a spring. ",
+      "time_range": "00:30 - 11:30",
+      "topics": ["Energy"],
+      "detailed_summary": "The discussion covers mechanical work, including the **$W=FS$** formula and the concept of **shaft work**. A **spring example** is analyzed using **Hook's law** to derive the work done as **$\frac{1}{2}KX^2$**, assuming a **slow, reversible process**. The **First Law of Thermodynamics** ($\\Delta E_{system} = E_{in} - E_{out}$) is applied, where $\\Delta E$ includes **internal, kinetic, and potential energy**, and energy transfer is via **work (W) or heat (Q)**. For the slow spring compression, the energy balance simplifies to **$\\Delta PE = W_{in}$**. The effect of **rapid stretching** is discussed, noting it causes the system to **warm up** due to a sudden reduction of **entropy**.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L2b-3.0",
+      "title": "Group work",
+      "summary": "",
+      "time_range": "11:31 - 13:22",
+      "topics": ["Energy"],
+      "detailed_summary": "The lecture poses a **group work problem** analyzing a **thin soap film (bubble)** on a frame as another type of spring. The key concept is **surface tension**, which acts **parallel to the interface** and has units of **Newtons per meter**. Assuming a **reversible process**, students are asked to derive the **formula for the force** and the **work done ($dW$)** when the film is stretched a distance $dx$.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L2b-4.0",
+      "title": "Electrical work",
+      "summary": "",
+      "time_range": "13:33 - 15:20",
+      "topics": ["Energy"],
+      "detailed_summary": "The section on **electrical work** distinguishes between **work** and **heat transfer**, noting that **heat transfer requires a temperature gradient**. Energy transfer across a control volume boundary is classified as **work** if the **electrons cross the boundary** (e.g., drawing the boundary across the wires of a resistor), but as **heat** if the **boundary is drawn around the heating element** and the surrounding air (e.g., heat transfer from the hot resistor). The **choice of control volume** is emphasized as being crucial to the solution.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L2b-5.0",
+      "title": "The First Law of Thermodynamics",
+      "summary": "",
+      "time_range": "15:21 - 17:06",
+      "topics": ["Energy"],
+      "detailed_summary": "The **First Law of Thermodynamics** is presented as the principle of **conservation of energy** and is analogous to **accounting**. The core equation states that the **change in energy of the control volume** ($\\Delta E_{CV}$) equals **$E_{in} - E_{out}$**. Energy is transferred only through **work and heat**. The preferred notation for solving problems is the explicit use of $W_{in}$, $W_{out}$, $Q_{in}$, and $Q_{out}$.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L2b-6.0",
+      "title": "Mechanisms of energy transfer to or from a closed system",
+      "summary": "The only ways that energy can be transferred in or out of a closed system is through heat or work.",
+      "time_range": "16:40 - 17:07",
+      "topics": ["Energy"],
+      "detailed_summary": "This short section defines a **closed system** as one with **no mass transfer**, which is the context for the energy balance equations previously discussed.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L2b-7.0",
+      "title": "Isochoric cooling example",
+      "summary": "1 kg of air treated as an ideal gas is kept inside a rigid container. The initial pressure and temperature are 100 kPa and 100 deg. C, respectively. It is then cooled until it reaches 80 kPa. What is the final temperature? How much heat is transferred out?",
+      "time_range": "17:08 - 28:49",
+      "topics": ["Energy"],
+      "detailed_summary": "An example of **isochoric (constant volume) cooling** of **air** in a **rigid, impermeable container** is solved. The goal is to determine the final temperature ($T_2$) and the heat transferred out ($Q_{out}$). The First Law simplifies to $\\Delta U = -Q_{out}$ because for an **isochoric process, work is zero** ($W_{in} = W_{out} = 0$). For an ideal gas, the **change in internal energy ($\\Delta U$) depends only on temperature**. Using the **specific heat at constant volume ($c_v$)**, the relation is $m c_v (T_2 - T_1) = -Q_{out}$. The **ideal gas equation** ($p v = R T$) is then used to compute the state properties needed to find $T_2$ and $Q_{out}$.",
+      "examples": ["isochoricCoolingIdealGas"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

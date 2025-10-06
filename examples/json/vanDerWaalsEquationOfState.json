@@ -1,0 +1,39 @@
+{
+    "problem_title": "vanDerWaalsEquationOfState",
+    "author": "tschutzius",
+    "year": "Fa25",
+    "difficulty_tags": ["hard"],
+    "topic": "Properties",
+    "notes": "",
+    "course_reference": {
+        "lecture_reference": {
+            "lecture_id": "1_blyiho9t",
+            "subtopics": [
+                {
+                  "key": "Fa25-L3b-5.0",
+                  "title": "van der Waals equation of state"
+                }
+            ]
+        },
+        "book_reference": {
+            "chapter_number": 3,
+            "title": "Properties of Pure Substances",
+            "sections": [
+                "Other Equations of State"
+            ]
+        }
+    },
+    "problem_statement_raw": "The van der Waals equation is defined as: $$\\left(p + \\frac{a}{v^2} \\right) \\left(v - b \\right) = RT $$ where $p$ is pressure, $v$ is specific volume, $R$ is the specific gas constant, $T$ is temperature, and $a$ and $b$ are constants. Goal: Plot the critical point on a pressure-specific volume diagram. Determine $a$ and $b$ for water given its critical temperature, $T_\\text{cr}$ and critical pressure, $p_\\text{cr}$.",
+    "physical_laws_and_assumptions": "Pure substance. Dependent properties only depend upon two independent properties. van der Waals equation of state: $$\\left(p + \\frac{a}{v^2} \\right) \\left(v - b \\right) = RT $$ $$p v + \\frac{a}{v} - pb - \\frac{ab}{v^2} - RT = 0 $$ Multiplying both sides by $\\frac{v^2}{p}$ $$\\frac{v^2}{p}\\left( p v + \\frac{a}{v} - pb - \\frac{ab}{v^2} - RT \\right) = 0 $$ $$\\left( v^3 + \\frac{a v}{p} - v^2b - \\frac{ab}{p} - \\frac{RTv^2}{p} \\right) = 0 $$ We can re-arrange as powers of $v$. $$v^3 - \\left[b + \\frac{RT}{p} \\right]v^2 + \\left[ \\frac{a}{p} \\right]v - \\left[ \\frac{ab}{p} \\right] = 0 $$ This is a cubic equation with three solutions. At the critical point all of these solutions of $v$ are equal to $v_\\text{cr}$. Also note that is $T$ becomes large, we recover the ideal gas equation. Setting specific volume equal to the critical specific volume: $$v = v_\\text{cr} $$ $$v - v_\\text{cr} = 0 $$ $$\\left( v - v_\\text{cr} \\right)^3 = 0 $$ Expanding this formula we have: $$v^3 - \\left[ 3v_\\text{cr} \\right] v^2 + \\left[ 3v_\\text{cr}^2 \\right] v - \\left[ v_\\text{cr}^3 \\right] = 0 $$ This equation is the same form as the van der Waals equation. Therefore we can set the coefficients equal to each other: $$3 v_\\text{cr} = b + \\frac{RT_\\text{cr}}{p_\\text{cr}} \\tag{1}$$ $$3 v^2_\\text{cr} = \\frac{a}{p_\\text{cr}} \\tag{2}$$ $$v^3_\\text{cr} = \\frac{ab}{p_\\text{cr}} \\tag{3}$$ We can divide equation (3) by equation (2), resulting in: $$(1/3)v_\\text{cr} = b \\implies v_\\text{cr} = 3b \\tag{4}$$ Substituting equation (4) into equation (2), yields: $$3 (3b)^2 = \\frac{a}{p_\\text{cr}} \\implies p_\\text{cr} = \\frac{a}{27 b^2} \\tag{5}$$ Substituting equation (5) into equation (1) yields: $$9b = b + \\frac{RT_\\text{cr}}{\\frac{a}{27 b^2}}$$ $$8b = \\frac{27 b^2RT_\\text{cr}}{a}$$ $$T_\\text{cr} = \\frac{8a}{27 b R} \\tag{6}$$ From equation (4) we have: $$b = \\frac{v_\\text{cr}}{3} \\tag{7}$$ From equations (5) and (7) we have: $$p_\\text{cr} = \\frac{a}{27 \\left(\\frac{v_\\text{cr}}{3} \\right)^2}$$ $$\\implies a = 3 p_\\text{cr} v_\\text{cr}^2 \\tag{8}$$ Alternatively we can write: $$ T_\\text{cr} = \\frac{8ab}{27b^2R} $$ $$ T_\\text{cr} = \\frac{a}{27b^2}\\frac{8b}{R} $$ $$ T_\\text{cr} = p_\\text{cr}\\frac{8b}{R} $$ $$\\implies b = \\frac{R T_\\text{cr}}{8 p_\\text{cr}} $$ We can also write: $$b = \\frac{v_\\text{cr}}{3} = \\frac{R T_\\text{cr}}{8 p_\\text{cr}}$$ $$\\implies v_\\text{cr} = \\frac{3 R T_\\text{cr}}{8 p_\\text{cr}}$$ From equation (8) we can write: $$a = \\frac{27 R^2 T_\\text{cr}^2}{64 p_\\text{cr}} $$ We have now defined the coefficients $a$ and $b$ as a function of the critical temperature and pressure: $$a = \\frac{27 R^2 T_\\text{cr}^2}{64 p_\\text{cr}} $$ $$b = \\frac{v_\\text{cr}}{3} = \\frac{R T_\\text{cr}}{8 p_\\text{cr}}$$.",
+    "solution_code": [
+        {
+            "step_name": "Properties",
+            "code": "## 5. Properties (Code Cell)\n# critical temperature and pressure can be found as\nTcr_K = 647.3\npcr_kPa = 22.09e3"
+        },
+        {
+            "step_name": "Calculations",
+            "code": "# 6 Calculations (Code Cell)\n!pip install pyCalor\n\nfrom pyCalor import thermo as th\n# determine the critical state using pyCalor\nst1 = th.state('water', T=Tcr_K, p=pcr_kPa, name=\"1\")\n\n# plot the critical point on a pressure-specific volume diagram\nst1.plot(\"pv\")\n\n# calculate a and b\n# a = 27*R^2*Tcr^2/(64*pcr)\n# b = R*Tcr/(8*pcr)\n\n# we can determine R from pyCalor\nR_water_kJperKgPerK = th.substance('water').R\nR_water_kPaM3perKgPerK = R_water_kJperKgPerK * 1000 # R in (kPa m^3)/(kg K)\n\na = 27*R_water_kPaM3perKgPerK**2 * Tcr_K**2 / (64*pcr_kPa)\n\nb = R_water_kPaM3perKgPerK * Tcr_K / (8*pcr_kPa)\n\nprint(f\"a = {a:.2f} kPa (m^3/kg)^2\")\nprint(f\"b = {b:.5f} m^3/kg\")"
+        }
+    ],
+    "pedagogical_summary": "We were able to plot the critical point of water on the pressure-specific volume diagram. It should be at the point where the lines of saturated liquid and vapor meet, which it is. By knowing $a$ and $b$ we can also plot the isotherm from the van der Waals equation of state and compare it with the isotherm produced by pyCalor."
+}

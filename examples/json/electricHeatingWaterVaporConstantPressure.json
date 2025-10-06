@@ -1,0 +1,40 @@
+{
+    "problem_title": "electricHeatingWaterVaporConstantPressure",
+    "author": "tschutzius",
+    "year": "Fa25",
+    "difficulty_tags": [
+        "easy"
+    ],
+    "topic": "Closed Systems",
+    "lecture_reference": {
+        "lecture_id": "1_3375c5yj",
+        "subtopics": [
+            {
+                "key": "Fa25-L4c-1.0",
+                "title": "Electric heating of water vapor at constant pressure"
+            }
+        ]
+    },
+    "book_reference": {
+        "chapter_number": 4,
+        "title": "Energy Analysis of Closed Systems",
+        "sections": [
+            "Moving Boundary Work",
+            "Energy Balance for Closed Systems"
+        ]
+    },
+    "notes": "",
+    "problem_statement_raw": "A piston cylinder contains 25 g of saturated water vapor at 300 kPa. The piston is kept at constant pressure while heat is transferred out. The cylinder contains a resistor inside of it while a voltage of 120 V is applied and 0.2 A of current passes through it for 5 min. Goal: Determine the final temperature of the steam Determine $(u_2 + p_2 v_2) - (u_1 + p_1 v_1)$",
+    "physical_laws_and_assumptions": "Use `pyCalor` to determine water properties. Neglect changes in kinetic and potential energy. Closed system (no mass in or out) Conservation of energy: $$\\Delta E_\\text{CV} = E_\\text{in} - E_\\text{out} $$ $$\\Delta U + \\Delta KE + \\Delta PE = (W_\\text{in} + Q_\\text{in}) - (W_\\text{out} + Q_\\text{out}) $$ Neglect changes in kinetic and potential energy: $$\\Delta U = (W_\\text{in}) - (W_\\text{out} + Q_\\text{out}) $$ $$ W_\\text{out} = p_1 (V_2 - V_1) $$ $$ W_\\text{out} = p_1 m (v_2 - v_1) $$ $$ W_\\text{in} = \\text{V} I \\Delta t $$ Combining yields: $$m (u_2 - u_1) = \\text{V} I \\Delta t - p_1 m (v_2 - v_1) - Q_\\text{out} $$ Rearranging: $$m \\left[ \\left(u_2 + p_1 v_2\\right) - \\left( u_1 + p_1 v_1 \\right) \\right] = \\text{V} I \\Delta t - Q_\\text{out} $$ Since $p_2 = p_1$, we have: $$m \\left[ \\left(u_2 + p_2 v_2\\right) - \\left( u_1 + p_1 v_1 \\right) \\right] = \\text{V} I \\Delta t - Q_\\text{out} $$ The definition of enthalpy is: $$ h = u + p v$$ Therefore, $$m \\left[ h_2 - h_1 \\right] = \\text{V} I \\Delta t - Q_\\text{out} $$ $$h_2 = \\text{V} I \\Delta t /m - Q_\\text{out} / m + h_1$$ We need to determine the specific volumes at state 2 and state 1.",
+    "solution_code": [
+        {
+            "step_name": "Properties (Code Cell)",
+            "code": "## 5. Properties (Code Cell)\n\n!pip install pyCalor\nfrom pyCalor import thermo as th\n\n# state 1\nm_kg = 25/1000\np1_kPa = 300\nx1 = 1\n\nst1 = th.state('water', p = (p1_kPa,'kpa'), x = x1, name='1')\n\n# state 2\np2_kPa = p1_kPa\n\n# inputs\nQout_kJ = 3.7\nI_A = 0.2\nVolt_V = 120\ndt_min = 5"
+        },
+        {
+            "step_name": "Calculations (Code Cell)",
+            "code": "# 6 Calculations (Code Cell)\ndt_s = dt_min*60\n\n# Electrical work transferred in\nWdot_elec_W = Volt_V*I_A # W\nW_elec_kJ = Wdot_elec_W*dt_s/1000 # kJ\n\n# Enthalpy change, h2 - h1 (kJ/kg)\nh2_minus_h1 = (W_elec_kJ - Qout_kJ)/m_kg # kJ/kg\n\n# Enthalpy at state 2\nh1_kJperKg = st1.h # kJ/kg\nh2_kJperKg = h2_minus_h1 + h1_kJperKg # kJ/kg\nprint(h2_kJperKg)\n\n# Determine state 2 properties (T2)\nst2 = th.state('water', p = (p2_kPa,'kpa'), h = (h2_kJperKg,'kJ/kg'), name='2')\nT2_C = st2.T - 273.15\nprint('T2: {0:1.2f} deg C'.format(T2_C))\n\n# define the process using pyCalor\npr = th.process([(st1,st2)])\n\n# plot the process on a pressure-specific volume diagram\npr.plot('pv');\n\n# determine u2 + p2*v2 - (u1 + p1*v1)\nh2 = st2.u + st2.v*st2.p\nh1 = st1.u + st1.v*st1.p\n\nanswer = h2 - h1\nprint('u2 + p2*v2 - (u1 + p1*v1) = {0:1.2f} kJ/kg'.format(answer))\n\n# st2.h - st1.h #kJ/kg\nprint('h2 - h1 = {0:1.2f} kJ/kg'.format(st2.h - st1.h))"
+        }
+    ],
+    "pedagogical_summary": "We determined the temperature of the steam at state 2. We also determined the change in enthalpy, which is equivalent to the requested quantity $(u_2 + p_2 v_2) - (u_1 + p_1 v_1)$. The final answer $u_2 + p_2 v_2 - (u_1 + p_1 v_1) = 302.26 \\text{ kJ/kg}$ is very close to the change in enthalpy $h_2 - h_1 = 302.26 \\text{ kJ/kg}$."
+}

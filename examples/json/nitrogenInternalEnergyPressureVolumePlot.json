@@ -1,0 +1,42 @@
+{
+  "problem_title": "nitrogenInternalEnergyPressureVolumePlot",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "medium"
+  ],
+  "topic": "Properties",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_r5zqwxag",
+      "subtopics": [
+        {
+          "key": "Fa25-L1b-8.0",
+          "title": "Determining the properties of nitrogen"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 3,
+      "title": "Properties of Pure Substances",
+      "sections": [
+        "Property Diagrams for Phase-Change Processes",
+        "The p-v-T Surface"
+      ]
+    },
+    "notes": ""
+  },
+  "problem_statement_raw": "Nitrogen gas initially at $T_1 = 300 K$ and $p_1=10$ MPa undergoes an **isentropic expansion** (constant entropy, $s$) to a final pressure of $p_2=1$ MPa. Goal: Calculate the final temperature, $T_2$ and specific internal energy, $u_2$. Draw a $P-v$ diagram of the isentropic expansion process of an ideal gas.",
+  "physical_laws_and_assumptions": "Ideal gas, undergoes isentropic expansion ($s_2=s_1$) Use `pyCalor` to determine nitrogens properties. Neglect kinetic and potential energy Closed system (no mass in or out) Nitrogen is treated as an ideal gas, but we will use `pyCalor` for the state-point determination to get a more accurate answer. The specific heats are a function of temperature. We will use `CoolProp` via `pyCalor` to determine the specific internal energy ($u$). Conservation of Energy: $\\Delta E_{\\text{CV}} = 0 = E_{\\text{in}} - E_{\\text{out}} = Q_{\\text{in}} - W_{\\text{out}}$ (no heat or work transferred) Boundary work (expansion) is transferred. The total energy transfer is $0$. Therefore, $\\Delta U \\neq 0$. The First Law of Thermodynamics: $$ d u = T d s - p d v $$ Therefore, the partial derivative form can be written as: $p = -\\left(\\frac{\\partial u}{\\partial v} \\right)_s$ and $T = \\left(\\frac{\\partial u}{\\partial s} \\right)_v$. We can use $p = -\\left(\\frac{\\partial u}{\\partial v} \\right)_s$ as a guide to plot the process on a $u-v$ diagram.",
+  "solution_code": [
+    {
+      "step_name": "Properties",
+      "code": "# 6. Properties (Code Cell)\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n!pip install pyCalor\nfrom pyCalor import thermo as th\n\n# Given\np1_mpa = 10\nT1_K = 300\np2_mpa = 1\nsubstance = 'nitrogen'\n\n# State 1\nst1 = th.state(substance,p=(p1_mpa*1000,'kpa'),T=(T1_K,'K'),name='1')\n\n# Isentropic process, $s_2=s_1$\ns2_kJperKgPerK = st1.s\n\n# State 2\nst2 = th.state(substance,p=(p2_mpa*1000,'kpa'),s=(s2_kJperKgPerK),name='2')\n\n# Final answers\nT2_K = st2.T\nu2_kJperKg = st2.u\n\nprint(f\"T2: {T2_K:.2f} K\")\nprint(f\"u2: {u2_kJperKg:.2f} kJ/kg\")"
+    },
+    {
+      "step_name": "Calculations",
+      "code": "# 7. Calculations (Code Cell)\n\np_MPa = np.linspace(p1_mpa, p2_mpa, 100)\n\n# Determine properties along the isentropic path\nStates_list = []\n\nfor p_i in p_MPa:\n    try:\n        st_i = th.state(substance, p=(p_i*1000, 'kpa'), s=(s2_kJperKgPerK))\n        States_list.append(st_i)\n    except:\n        print(f\"Skipping {p_i} MPa\")\n\nv_m3PerKg = np.array([st.v for st in States_list])\np_Pa = np.array([st.p for st in States_list]) * 1000\n\n# Plot the P-v diagram\nplt.figure(figsize=(8, 6))\nplt.plot(v_m3PerKg, p_Pa/1e6, 'b-', lw=2)\n\nplt.plot(st1.v, st1.p/1e6, 'o', color='red', markersize=8)\nplt.annotate('State (1)', xy=(st1.v, st1.p/1e6),\n             textcoords=\"offset points\", xytext=(-30, 10), ha='center', fontsize=12)\n\nplt.plot(st2.v, st2.p/1e6, 'o', color='red', markersize=8)\nplt.annotate('State (2)', xy=(st2.v, st2.p/1e6),\n             textcoords=\"offset points\", xytext=(-30, 10), ha='center', fontsize=12)\n\nplt.xlabel('$v$ (m^3/kg)', fontsize=14)\nplt.ylabel('$p$ (MPa)', fontsize=14)\n\nplt.grid(True)\n\nplt.xlim(0, st2.v * 1.5)\nplt.ylim(0, st1.p/1e6 * 1.2)\n\n# plt.savefig('p-v-isentropic-expansion.png')\n\n# u-v diagram plot\nplt.figure(figsize=(8, 6))\n\nu_kJPerKg = np.array([st.u for st in States_list])\n\nv12 = np.array([st.v for st in States_list])\nU12_ = np.array([st.u for st in States_list])\nplt.plot(v12,U12_, 'k-', lw=2)\n\nplt.plot(st1.v,st1.u,marker='x',markersize=10,markerfacecolor='blue', markeredgecolor='blue', )\n\nb_ = st1.u + (st1.p)*st1.v\n\nV1_ = np.linspace(st1.v-25, st1.v+25)\nU_p = -st1.p*V1_ + b_\nplt.plot(V1_,U_p, 'r--', lw=1)\n\nplt.xlabel('v (m^3/kg)')\nplt.ylabel('u (kJ/kg)')\n# plt.savefig('u-v_const_s.png')"
+    }
+  ],
+  "pedagogical_summary": "Here we see that $p = -\\left(\\frac{\\partial u}{\\partial v} \\right)_s$ and $T = \\left(\\frac{\\partial u}{\\partial s} \\right)_v$ demonstrating that we know more than just specific internal energy and that we can describe the system with $u$, $v$, and $s$. Note that since the gas is behaving ideally, the internal energy change is only a function of temperature change ($\\Delta u = c_v \\Delta T$). Since we used the `CoolProp` library, we have a more accurate value for $T_2$ and $u_2$."
+}

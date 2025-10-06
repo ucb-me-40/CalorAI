@@ -1,0 +1,53 @@
+{
+  "lectureId": "1_lwshcrh5",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "06c",
+  "title": "Second Law of Thermodynamics",
+  "videoTitle": "ME40 - 26 Sept 2025 - Lecture 6c (edited)",
+  "module": "module-two",
+  "topic": "Second Law",
+  "subtopics": [
+    {
+      "key": "Fa25-L6c-1.0",
+      "title": "Carnot Cycle and Reversed Carnot Cycle",
+      "summary": "",
+      "time_range": "00:25 - 2:30",
+      "topics": ["Second Law"],
+      "detailed_summary": "The segment reviews the \\textbf{Carnot Cycle}, noting it operates between two temperatures ($T_H$ and $T_L$) and features four fully \\textbf{reversible} processes: two isothermal heat transfers and two adiabatic (isentropic) work transfers. Running the cycle in \\textbf{reverse} transforms it from a thermal engine (clockwise) into a \\textbf{heat pump} or refrigerator (counterclockwise), which pumps heat from the low-temperature reservoir ($T_L$) to the high-temperature reservoir ($T_H$). The \\textbf{First Law of Thermodynamics} for a cycle dictates that $\\Delta U = 0$, meaning the \\textbf{net work out} ($W_{\\text{net,out}}$) must equal the \\textbf{net heat in} ($Q_{\\text{net,in}}$).",
+      "examples": ["carnotAirCycle"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L6c-2.0",
+      "title": "Steam Power Plant: Worked Out Problem",
+      "summary": "In this problem Prof. Schutzius analyzes a steam power plant.",
+      "time_range": "02:31 - 13:38",
+      "topics": ["Second Law","Closed Systems"],
+      "detailed_summary": "The instructor analyzes a \\textbf{thermoelectric power plant} cycle consisting of a \\textbf{pump} ($W_{\\text{in}}$), a \\textbf{boiler} ($Q_{\\text{in}}$), a \\textbf{turbine} ($W_{\\text{out}}$), and a \\textbf{condenser} ($Q_{\\text{out}}$). For the steady-state cycle, the \\textbf{First Law} is applied, where $W_{\\text{net,out}} = Q_{\\text{net,in}}$. The \\textbf{net power output} ($W_{\\text{net,out}}$) is calculated using the given heat rates, accounting for losses ($Q_{\\text{loss}}$): $W_{\\text{net,out}} = Q_{\\text{in}} - (Q_{\\text{out}} + Q_{\\text{loss}})$. With $Q_{\\text{in}} = 280 \\text{ GJ/h}$, $Q_{\\text{out}} = 165 \\text{ GJ/h}$, and $Q_{\\text{loss}} = 8 \\text{ GJ/h}$, the net power output is $107 \\text{ GJ/h}$. The \\textbf{thermal efficiency} is calculated as $\\mathbf{\\eta_{\\text{th}} = \\frac{W_{\\text{net,out}}}{Q_{\\text{in}}}}$, yielding a result of $\\mathbf{38\\%}$.",
+      "examples": ["carnotAirCycle"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L6c-3.0",
+      "title": "Deriving the Efficiency of an Ideal Gas Carnot Cycle",
+      "summary": "In this problem Prof. Schutzius derives the efficiency of an Ideal Gas Carnot Cycle.",
+      "time_range": "13:39 - 33:21",
+      "topics": ["Second Law","Closed Systems"],
+      "detailed_summary": "This segment is dedicated to \\textbf{deriving the maximum theoretical efficiency ($\\eta_{\\text{Carnot}}$)} of a heat engine based on the reversible \\textbf{Carnot Cycle}, using the assumption of an \\textbf{ideal gas} as the working fluid. The work and heat transfer for the isothermal processes are derived using the boundary work definition ($\\delta W = P dV$) and the ideal gas law ($PV = RT$), resulting in the form $W = Q = R T \\ln(\\frac{V_{\\text{final}}}{V_{\\text{initial}}})$. The key step involves showing that the volume ratios for the isothermal processes are related by the adiabatic processes: $\\frac{V_2}{V_1} = \\frac{V_3}{V_4}$. This leads to the final expression for the \\textbf{Carnot efficiency}, which is independent of the working fluid's properties and depends only on the absolute temperatures of the reservoirs: $\\mathbf{\\eta_{\\text{Carnot}} = 1 - \\frac{T_C}{T_H}}$.",
+      "examples": ["carnotAirCycle","adiabaticExpansion","expansionIsothermal"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L6c-4.0",
+      "title": "Refrigeration Cycle",
+      "summary": "In this problem Prof. Schutzius analyzes a refrigeration cycle given the work transferred in, the coefficient of performance and is asked to determine the heat transferred in and out and the mass flow rate of the refrigerant. The states before and after the evaporator are defined.",
+      "time_range": "33:22 - 47:28",
+      "topics": ["Second Law","Control Volumes","Refrigeration"],
+      "detailed_summary": "This segment defines the performance measures for devices that run the Carnot cycle in reverse: \\textbf{refrigerators} and \\textbf{heat pumps}. The measure of performance is the \\textbf{Coefficient of Performance (COP)}. For a refrigerator, $\\mathbf{\\text{COP}_R = \\frac{Q_L}{W_{\\text{net,in}}}}$ (desired cooling over cost). For a heat pump, $\\mathbf{\\text{COP}_{HP} = \\frac{Q_H}{W_{\\text{net,in}}}}$ (desired heating over cost). Using the First Law ($Q_H = Q_L + W_{\\text{net,in}}$), the relationship $\\mathbf{\\text{COP}_{HP} = \\text{COP}_R + 1}$ is established. The \\textbf{Maximum (Carnot) COPs} are introduced, which depend only on the absolute temperatures $T_H$ and $T_L$: $\\mathbf{\\text{COP}_{R, \\text{Carnot}} = \\frac{T_L}{T_H - T_L}}$ and $\\mathbf{\\text{COP}_{HP, \\text{Carnot}} = \\frac{T_H}{T_H - T_L}}$.",
+      "examples": ["refrigerationCyclePyCalor"],
+      "tags":["tschutzius","beta"]
+    },
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "problem_title": "isochoricCoolingIdealGas",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "easy"
+  ],
+  "topic": "Properties",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_h0h8llrr",
+      "subtopics": [
+        {
+          "key": "Fa25-L2b-7.0",
+          "title": "Isochoric cooling example"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 2,
+      "title": "Energy, Energy Transfer, and General Energy Analysis",
+      "sections": [
+        "Energy Transfer by Heat"
+      ]
+    },
+    "notes": ""
+  },
+  "problem_statement_raw": "1 kg of air, treated as an ideal gas, is kept inside a rigid container. The initial pressure and temperature are 100 kPa and 100 deg. C. It is then cooled until it reaches 80 kPa. \n\nGoal\n- What is the final temperature?\n- How much heat is transferred out?",
+  "physical_laws_and_assumptions": "Assumptions and Approximations:\nClosed System (no mass crosses the boundary).\nNeglect kinetic and potential energy ($\\Delta KE \\approx 0$, $\\Delta PE \\approx 0$).\nideal gas. Because it's an ideal gas, changes in internal energy only depends upon changes in temperature. \nIsochoric $v_2 = v_1$ (rigid container, no mass in or out)\n\nPhysical Laws and Governing Equations:\nConservation of energy:\n$$\\Delta E_\\text{system} = E_\\text{in} - E_\\text{out} = (W_\\text{in} + Q_\\text{in}) - (W_\\text{out} + Q_\\text{out})$$\n\nBy definition we can write that the changes in the energyof the system only depend on changes in internal energy, kinetic energy, and potential energy. \n\n$$\\Delta E_\\text{system} = \\Delta U + \\Delta KE + \\Delta PE $$\n\nNeglect kinetic and potential energy changes:\n\n$$\\Delta E_\\text{system} = \\Delta U $$\n\n$$\\Delta U = U_2 - U_1 = (Q_\\text{in} - Q_\\text{out}) + (W_\\text{in} - W_\\text{out}) $$\n\nVessel is cooled at constant volume. Therefore, no work transfer:\n\n$$\\Delta U = (Q_\\text{in} - Q_\\text{out})$$\n\nHeat is only transferred out:\n\n$$\\Delta U = U_2 - U_1 =  - Q_\\text{out}$$\n\nWe will show this later, but for an ideal gas, the change in internal energy only depends upon temperature, and the specific heat at constant volume, $c_V$ therefore:\n\n$$dU = m c_V dT $$\n\nTherefore,\n\n$$U_2 - U_1 = m c_V (T_2 - T_1) $$ \n\nSubstituting into above yields:\n\n$$U_2 - U_1 =  - Q_\\text{out} = m c_V (T_2 - T_1)$$\n\nRearranging:\n\n$$ Q_\\text{out} = m c_V (T_1 - T_2)$$",
+  "solution_code": [
+    {
+      "step_name": "Properties",
+      "code": "!pip install pyCalor\nfrom pyCalor import thermo as th\nimport matplotlib.pyplot as plt\n\nm_kg = 1\nR_JperKgPerK = 287\n\np1_Pa = 100e3\nT1_C = 100\n\np2_Pa = 80e3\n# T2_C = 25\n\n# ideal gas law\nv1_m3PerKg = (R_JperKgPerK*(T1_C+273.15))/p1_Pa\n\n# isochoric\nv2_m3PerKg = v1_m3PerKg\n\n# ideal gas to determine T2\nT2_K = (p2_Pa*v2_m3PerKg)/R_JperKgPerK\nT2_C = T2_K - 273.15\nprint(T2_C)"
+    },
+    {
+      "step_name": "Calculations",
+      "code": "cv_kJperKgPerK = 0.718\nQout_kJ = m_kg*cv_kJperKgPerK*(T1_C - T2_C)\nprint(Qout_kJ)\n\nst1 = th.state('air', p=p1_Pa/1000, T=T1_C+273.15, name=\"1\")\nst2 = th.state('air', p=p2_Pa/1000, T=T2_C+273.15, name=\"2\")\npr = th.process([(st1,st2)])\n\n# pr.plot('pv')\nplt.plot([st1.v, st2.v], [st1.p, st2.p], color='blue', linewidth=2)\n\nplt.plot(st1.v, st1.p, 'o', color='red', markersize=8)\nplt.annotate('State (1)', xy=(st1.v, st1.p),\n             textcoords=\"offset points\", xytext=(-30, 10), ha='center', fontsize=12)\n\nplt.plot(st2.v, st2.p, 'o', color='red', markersize=8)\nplt.annotate('State (2)', xy=(st2.v, st2.p),\n             textcoords=\"offset points\", xytext=(-30, 10), ha='center', fontsize=12)\n\nplt.xlabel('$v$ (m^3/kg)', fontsize=14)\nplt.ylabel('$p$ (Pa)', fontsize=14)\n\nplt.grid(True)\n\nplt.xlim(0, st1.v * 1.5)\nplt.ylim(0, st1.p * 1.2)\n\n# plt.savefig('p-V-isochoric-cooling-air.png')"
+    }
+  ],
+  "pedagogical_summary": "The pressure-volume diagram makes sense. Pressure decreases while volume is kept the same. We expected the pressure to decrease since we are transferring energy out. As volume is kept constant, there is no work transfer."
+}

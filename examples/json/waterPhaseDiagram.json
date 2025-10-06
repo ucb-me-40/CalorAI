@@ -1,0 +1,46 @@
+{
+  "problem_title": "waterPhaseDiagram",
+  "author": "tschutzius",
+  "year": "Fa25",
+  "difficulty_tags": [
+    "easy"
+  ],
+  "topic": "Properties",
+  "course_reference": {
+    "lecture_reference": {
+      "lecture_id": "1_r5zqwxag",
+      "subtopics": [
+        {
+          "key": "Fa25-L1b-10.0",
+          "title": "Thermodynamics: State of a pure substance"
+        },
+        {
+          "key": "Fa25-L1b-12.0",
+          "title": "Thermodynamics: Transformation or Process"
+        }
+      ]
+    },
+    "book_reference": {
+      "chapter_number": 3,
+      "title": "Properties of Pure Substances",
+      "sections": [
+        "Property Diagrams for Phase-Change Processes"
+      ]
+    }
+  },
+  "notes": "",
+  "problem_statement_raw": "Use the thermodynamic python module, `pyCalor`, to create saturated liquid and vapor lines on a pressure-volume diagram. Also given a temperature, $T_1$, and vapor quality, $x_1$, define a state and plot that point on the pressure-volume diagram.",
+  "schematic_raw": "No schematic",
+  "physical_laws_and_assumptions": "We cannot use a simple equation of state like the ideal gas law to create such a diagram for water. We have to use thermophysical property databases such as `pyCalor`.",
+  "solution_code": [
+    {
+      "step_name": "Properties",
+      "code": "!pip install pyCalor\nfrom pyCalor import thermo as th\nT1_C = 50\nx1 = 1\nT2_C = 1000\nsubstance = 'water'\nst1 = th.state(substance, T=(T1_C,'C'), x=x1, name=\"1\")\nst2 = th.state(substance, T=(T2_C,'C'), p=st1.p, name=\"2\")"
+    },
+    {
+      "step_name": "Calculations",
+      "code": "st1.plot(\"pv\",isoProp=\"T\"); # supported plots are: \"pv\",\"Ts\",\"ph\"\npr = th.process([(st1,st2)])\npr.plot('pv');"
+    }
+  ],
+  "pedagogical_summary": "By using `pyCalor` we were able to create pressure-volume diagrams. We were able to define two states and we were able to connect those states through a process. This is very useful, especially when it comes to making cycles."
+}

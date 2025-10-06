@@ -1,0 +1,139 @@
+{
+  "course_id": "ME40",
+  "course_title": "Thermodynamics",
+  "term": "Fall 2025",
+  "units": 3,
+  "format": "In person",
+  [cite_start]"course_description": "This course introduces the scientific principles that deal with energy conversion among different forms, such as heat, work, internal, electrical, and chemical energy. The physical science of heat and temperature, and their relations to energy and work, are analyzed on the basis of the fundamental thermodynamic laws. These principles are applied to various practical systems, including heat engines, refrigeration cycles, and air conditioning systems. [cite: 159, 160, 161]",
+  "learning_objectives": {
+    "knowledge": [
+      [cite_start]"Write the first and second laws of thermodynamics. [cite: 164]",
+      [cite_start]"Briefly outline the history of the field of thermodynamics. [cite: 182]"
+    ],
+    "comprehension": [
+      [cite_start]"Describe the first and second laws in the student’s own language. [cite: 165]"
+    ],
+    "application": [
+      [cite_start]"Solve simple single-answer problems using the first law. [cite: 168]"
+    ],
+    "analysis": [
+      [cite_start]"Solve problems requiring both the first and second laws. [cite: 169]",
+      [cite_start]"Search appropriate databases and the literature to find required thermodynamic data, and if the data are not available the student can select appropriate procedures and predict the values of the data. [cite: 180]"
+    ],
+    "synthesis": [
+      [cite_start]"Develop schemes to improve the efficiency or performance of thermodynamic systems, e.g., compressors, turbines, heat pumps, power cycles, etc. [cite: 171]"
+    ],
+    "evaluation": [
+      [cite_start]"Determine and describe second law fallacies in proposed power cycles. [cite: 173]",
+      [cite_start]"Judge when classical thermodynamics is not the appropriate analysis tool. [cite: 175, 176]",
+      [cite_start]"Find and correct errors in the student’s own solutions and in those of others. [cite: 178]"
+    ]
+  },
+  "staff": {
+    "instructor": {
+      "name": "Prof. Thomas Schutzius",
+      "email": "tschutzius@berkeley.edu",
+      [cite_start]"office_hours": "Tuesday 12:00-1:00 pm, 6153 Etcheverry Hall (Vogt Room). [cite: 184] [cite_start]Additional hours may be added if there is demand. [cite: 185]"
+    },
+    "head_gsi": {
+      "name": "Cassidy McCormick",
+      "email": "cjmccormick@berkeley.edu",
+      [cite_start]"office_hours": "Tuesdays, 2:30pm–3:30pm, Hesse Hall, “fishbowl”. [cite: 194]"
+    },
+    "gsi": {
+      "name": "Jessica Wu",
+      "email": "jywu@berkeley.edu",
+      [cite_start]"office_hours": "Mondays, 4:00pm-5:00pm, On Zoom (Meeting ID: 955 7785 7415, Passcode: 560046). [cite: 195, 197]"
+    },
+    "reader": {
+      "name": "Dheer Baldua",
+      "email": "dheerb@berkeley.edu"
+    },
+    [cite_start]"communication_guideline": "Emails must begin the subject line with '[ME40]: …'. [cite: 200] [cite_start]Messages on Canvas are not regularly monitored; email is best for communication. [cite: 201]"
+  },
+  "schedule": {
+    "lecture": {
+      "times": "Monday, Wednesday, Friday at 2:00 pm-3:00 pm",
+      "location": "Hearst Mining 390",
+      [cite_start]"note": "Students are asked to read the assigned chapter before the lecture. [cite: 203, 204] [cite_start]Video playlists for lectures may be provided, and students should watch them before attending the live lecture or section. [cite: 207, 208]",
+      [cite_start]"exception": "The instructor will be traveling during the week of November 17th; alternative arrangements will be made for lecture. [cite: 209]"
+    },
+    "discussions": [
+      {
+        "section": "101",
+        "time": "Tuesday, 11:00 am – 12:00 pm",
+        "location": "Etcheverry 1165"
+      },
+      {
+        "section": "102",
+        "time": "Thursday 1:00 pm – 2:00 pm",
+        "location": "Etcheverry 1165"
+      },
+      {
+        "section": "103",
+        "time": "Friday 12:00 pm – 1:00 pm",
+        "location": "Etcheverry 1165"
+      }
+    ]
+  },
+  "materials": {
+    "textbook": {
+      [cite_start]"required": "Çengel and Boles, Thermodynamics: An Engineering Approach, 10th Edition. [cite: 202]",
+      [cite_start]"notes": "Other recent editions (e.g., 7th, 8th, or 9th) are acceptable, but students are responsible for determining the correct homework problems and readings if they do not match up. [cite: 202]"
+    },
+    "website": {
+      "url": "https://bcourses.berkeley.edu/courses/1544920",
+      "description": "All teaching material is available for download from this link."
+    }
+  },
+  "grading": {
+    "total_points": 200,
+    "components": [
+      {"name": "Quizzes", "points": 80, "details": "3 quizzes total, each worth 40 pts. [cite_start]The lowest score will be dropped. [cite: 217]"},
+      [cite_start]{"name": "Final Exam", "points": 75, "details": "Worth 75 points. [cite: 220]"},
+      [cite_start]{"name": "One Project", "points": 20, "details": "Worth 20 points. [cite: 221]"},
+      [cite_start]{"name": "Homework", "points": 20, "details": "Worth 20 points; there are 15 homework assignments. [cite: 222]"},
+      [cite_start]{"name": "Course Evaluation", "points": 5, "details": "Awarded upon submission of a screenshot showing completion. [cite: 225]"}
+    ],
+    [cite_start]"attendance": "Attendance at lectures and discussions is expected, not required. [cite: 232]"
+  },
+  "policies": {
+    "homework": {
+      [cite_start]"description": "Usually submitted and graded via PrairieLearn, allowing unlimited retakes. [cite: 233] [cite_start]Must submit a document that shows your work for full credit. [cite: 234]",
+      [cite_start]"alternative": "Handwritten homework may be requested for some content, which will only grade a subset of problems and retakes are not allowed. [cite: 235]",
+      [cite_start]"late_policy": "Homework may be turned in one week late for half credit. [cite: 259]",
+      [cite_start]"schedule_reference": "See 2025_Fall_ME40_Schedule.pdf for the dates. [cite: 236]"
+    },
+    "quizzes": {
+      [cite_start]"format": "1 hour, Closed book and notes, taken at the Computer-based Testing Facility (CBTF). [cite: 237]",
+      [cite_start]"adjustment": "Scores may be adjusted to account for differences in problem difficulty across variants. [cite: 241, 242]",
+      [cite_start]"schedule_reference": "See 2025_Fall_ME40_Schedule.pdf for the dates. [cite: 239]"
+    },
+    "final_exam": {
+      [cite_start]"format": "3 hours, Closed book and notes. [cite: 243]",
+      [cite_start]"materials_allowed": "Programmable calculator (non-transmittable) and 3 letter-sized summary sheets (8.5” x 11”, double-sided) permitted. [cite: 243]",
+      [cite_start]"structure": "Students are given 6 problems and must **select five** to solve. [cite: 244]",
+      [cite_start]"exemption": "Students who score 90% or better on the quiz for specific problems (e.g., Problems B and C) will receive full marks for the corresponding final exam problem. [cite: 245]",
+      [cite_start]"note": "The instructor may opt to conduct part of the Final exam through PrairieLearn. [cite: 246]"
+    },
+    "project": {
+      "description": "A larger assignment intended to combine ideas from the course in interesting ways. [cite_start]Projects are graded on correctness; creativity is encouraged. [cite: 248, 249]",
+      [cite_start]"requirements": "Students are expected to work alone. [cite: 249]",
+      [cite_start]"schedule_reference": "See 2025_Fall_ME40_Schedule.pdf for the dates. [cite: 250]"
+    },
+    [cite_start]"regrades": "Any serious concerns must be addressed to the **Instructor** (not GSIs/Reader) within seven days of receiving the graded assessment. [cite: 253] [cite_start]A brief written explanation of your concern must be included. [cite: 254] [cite_start]Re-graded scores may increase, decrease, or remain the same, and the instructor may regrade the other problems. [cite: 254, 255, 256]",
+    "makeups_absences": {
+      [cite_start]"lectures": "Ask a classmate for notes. [cite: 258]",
+      [cite_start]"exams": "Missing a quiz or exam results in a zero grade unless alternative arrangements are made with the instructor **prior** to the exam. [cite: 260] [cite_start]Exceptions may be made for severe medical or family emergencies. [cite: 261] [cite_start]Makeup exams may be oral or written. [cite: 261]"
+    },
+    "conduct": {
+      [cite_start]"general": "Treat your colleagues, Reader, GSIs, and Instructor with respect. [cite: 270] [cite_start]Silence cellphones. [cite: 269] [cite_start]No food or drinks, except for water. [cite: 270] [cite_start]Questions are encouraged. [cite: 268]",
+      [cite_start]"academic": "Please review the Berkeley Campus Code of Student Conduct. [cite: 271]"
+    },
+    "disability_accommodations": {
+      "process": "Contact UC Berkeley's Disabled Students' Program (DSP). Notify the instructor and GSI through course email of the accommodations you would like to use. [cite_start]You must have a Letter of Accommodation on file. [cite: 272, 273, 274]",
+      "exams": "If more than 'Reduced Distraction' and 'Extra time' is required, apply with the DSP Proctoring Office to take the exam at their facility. [cite_start]Do this as early as possible. [cite: 275, 276]",
+      [cite_start]"homework_extensions": "If 'Extensions to Assignment Deadlines' is required, email the instructor to inquire about the assignment deadline. [cite: 277]"
+    }
+  }
+}

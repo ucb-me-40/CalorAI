@@ -1,0 +1,43 @@
+{
+  "lectureId": "1_hb7swztw",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "05b",
+  "title": "Mass and Energy Analysis of Control Volumes",
+  "videoTitle": "ME40 - 19 Sept 2025 - Lecture 5b (edited)",
+  "module": "module-one",
+  "topic": "Control Volumes",
+  "subtopics": [
+    {
+      "key": "Fa25-L5b-1.0",
+      "title": "Flow Work",
+      "summary": "Prof. Schutzius summarizes the previous derivation of flow work. We separate flow work from the total work such that the remaining work term is useful work, i.e., shaft work.",
+      "time_range": "00:22 - 03:13",
+      "topics": ["Control Volumes"],
+      "detailed_summary": "This segment continues the discussion on **mass and energy analysis for control volumes** and **steady-flow devices**. The lecturer reviews the concept of **flow work**, which is the work required to push a fluid into or out of a control volume, illustrated by an imaginary piston at the inlet/outlet. This leads to the definition of **enthalpy ($H$)** as the combination of **internal energy ($U$)** and **flow work ($PV$)**. The use of **specific enthalpy ($h = u + Pv$)** is justified because it greatly simplifies the **Steady Flow Energy Equation (SFEE)** by combining the internal energy and flow work into a single property.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L5b-2.0",
+      "title": "Energy Analysis of a Steady-flow System",
+      "summary": "",
+      "time_range": "03:14 - 17:55",
+      "topics": ["Control Volumes"],
+      "detailed_summary": "This section begins by presenting the full **Steady Flow Energy Equation (SFEE)**, including terms for specific enthalpy, kinetic energy, and potential energy. The equation is then applied to various **steady-flow devices** such as turbines, compressors, nozzles, diffusers, throttling valves, and heat exchangers, with the necessary **simplifying assumptions** outlined for each. The core of the segment is an **example problem involving an air turbine**. The problem is solved to find the exit temperature ($T_2$) by applying the simplified SFEE, $\\dot{W}_{out} = \\dot{m} (h_1 - h_2)$, and using enthalpy values from tables. An alternative solution is demonstrated using the **ideal gas approximation** where the change in enthalpy is $\\Delta h = C_p \\Delta T$, and its precision relative to the table method is discussed.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L5b-3.0",
+      "title": "Example: Energy Analysis of a Steady-flow System: Compressor",
+      "summary": "Prof. Schutzius determines the power transferred into a compressor given the inlet state, outlet set, heat loss per unit mass, and mass flow rate. We neglect changes in kinetic and potential energy. We  can use pyCalor to determine the properties.",
+      "time_range": "17:56 - 31:23",
+      "topics": ["Control Volumes"],
+      "detailed_summary": "This final segment introduces **Example 2: An Air Compressor Problem**.",
+      "examples": ["compressorPyCalor"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

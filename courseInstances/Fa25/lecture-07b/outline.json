@@ -1,0 +1,50 @@
+{
+  "lectureId": "1_3wlbv7dv",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "07b",
+  "title": "Entropy",
+  "videoTitle": "ME40 - 29 Sept 2025 - Lecture 7b (edited)",
+  "module": "module-two",
+  "topic": "Entropy",
+  "subtopics": [
+    {
+      "key": "Fa25-L7b-1.0",
+      "title": "Introduction to Entropy ($S$).",
+      "summary": "",
+      "time_range": "00:00 - 04:06",
+      "detailed_summary": "The lecture begins by introducing the concept of \\textbf{entropy} ($S$) and its utility in \\textbf{isentropic processes}. The instructor notes that entropy is a \"weird thing\" that cannot be directly measured. The \\textbf{Temperature-Entropy (TS) diagram} is introduced as a more useful tool than the Pressure-Volume (PV) diagram for analyzing \\textbf{power cycles}. The four-step \\textbf{Carnot cycle} (two isothermal, two isentropic processes) is illustrated on the TS diagram, where the area enclosed represents the \\textbf{net heat in} (which equals the \\textbf{net work out}) for the cycle. Entropy is presented as a helpful \"compass\" to guide process analysis and determine power output.",
+      "tags":["tschutzius","beta"]
+
+    },
+    {
+      "key": "Fa25-L7b-2.0",
+      "title": "Change in Entropy in Thermal Conduction",
+      "summary": "In this example Prof. Schutzius determines the change in entropy when two bodies at different initial temperatures are brought into thermal contact. What is the change in entropy of the body? What is the change in entropy of the system? Is this process reversible?",
+      "time_range": "04:07 - 18:07",
+      "topics": ["Entropy"],
+      "detailed_summary": "This segment analyzes the \\textbf{change in entropy} during \\textbf{thermal conduction} between two \\textbf{thermal reservoirs} (one hot, $T_1$, one cold, $T_2$) that transfer a heat magnitude $Q$. The fundamental equation for change in entropy is introduced: $\\mathbf{dS = \\delta Q/T}$. The units for entropy ($S$) are $\\text{kJ}/\\text{K}$ and specific entropy ($s$) are $\\text{kJ}/(\\text{kg}\\cdot \\text{K})$. The change in entropy for each control volume (CV) is calculated: $\\Delta S_1 = -Q/T_1$ (entropy decreases for the hot reservoir) and $\\Delta S_2 = +Q/T_2$ (entropy increases for the cold reservoir). The \\textbf{total entropy change of the system} is derived as $\\mathbf{\\Delta S_{\\text{total}} = Q(1/T_2 - 1/T_1)}$. The condition for a \\textbf{reversible process} is defined as $\\Delta S_{\\text{total}} = 0$, which would only occur if $T_1 = T_2$. Since $T_1 > T_2$, the key takeaway is that the entropy of an isolated system must either remain constant (reversible) or \\textbf{increase} (irreversible/spontaneous heat flow), confirming the Second Law of Thermodynamics.",
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L7b-3.0",
+      "title": "Calculate the entropy changes that take place during processes for pure substances",
+      "summary": "Entropy is a property just like any of the others we determined.",
+      "time_range": "18:08 - 19:52",
+      "topics": ["Entropy"],
+      "detailed_summary": "This section serves as a conceptual transition, reminding the class that \\textbf{entropy ($S$) is a thermodynamic property} like internal energy ($U$) or enthalpy ($H$). For a pure substance, determining two independent properties provides complete information, including the value of specific entropy ($s$). The instructor reinforces the importance of \\textbf{TS (Temperature-Entropy) diagrams} for analyzing power and gas cycles and emphasizes that entropy is \\textbf{not a path function}. The discussion concludes with a reflection on the formula $\\mathbf{dS = \\delta Q / T}$, which implies that energy has a \"value\" or \"quality\" (the essence of the Second Law of Thermodynamics).",
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L7b-4.0",
+      "title": "Example: Calculate the entropy changes that take place during processes for pure substances",
+      "summary": "In this example Prof. Schutzius solves the problem entropyChangePureSubstance. Heat is transferred into a piston-cylinder that is kept at constant pressure. The piston contains pure water, initially as a subcooled liquid. What is the change in entropy during this process?",
+      "time_range": "19:53 - 35:06",
+      "topics": ["Entropy, Closed Systems"],
+      "detailed_summary": "The segment begins a detailed \\textbf{example problem} to calculate the entropy change for \\textbf{pure water} in an \\textbf{isobaric (constant pressure)} process within a piston-cylinder device. The process is depicted on a TS diagram, starting at State 1 as a \\textbf{compressed liquid} ($P_1 = 140 \\text{ kPa}$, $T_1 = 20^\\circ \\text{C}$) and moving toward a superheated vapor state. The instructor first determines the initial properties, including $s_1$ and $h_1$. A \\textbf{First Law energy balance} is applied to the closed system (piston-cylinder): $\\mathbf{\\Delta U = Q_{\\text{in}} - W_{\\text{out}}}$ (neglecting changes in kinetic and potential energy). The \\textbf{work out} is calculated for the constant pressure process as $W_{\\text{out}} = P(V_2 - V_1)$ or $m P(v_2 - v_1)$. By manipulating the energy balance, the relationship $\\mathbf{Q_{\\text{in}} = \\Delta H}$ (change in enthalpy) is established, which simplifies the analysis. The video captions end mid-solution.",
+      "examples": ["entropyChangePureSubstance","coolingSolidBlock"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

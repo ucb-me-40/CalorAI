@@ -1,0 +1,104 @@
+{
+  "problem_id": "pistonCylinderElectricalWork-C9-4-38",
+  "course_context": {
+    "course_id": "ME40",
+    "course_title": "Thermodynamics",
+    "term": "Fall 2025",
+    "module": "module-one",
+    "software_requirement": {
+      "tool": "pyCalor",
+      "instruction": "Students must use the **`pyCalor`** module to determine the specific enthalpy ($h$) and specific volume ($v$) of the water at State 1 ($p_1, x_1=0$) and State 2 ($p_2, x_2=0.5$). This is done via the `state` class: `st = th.state(substance, property1=value1, property2=value2)`.",
+      "pycalor_note": "pyCalor is the required property software for ME40, developed at UC Berkeley. It must be used instead of IAPWS (which the server uses) or CoolProp."
+    }
+  },
+  "problem_metadata": {
+    "title_original": "Find the Voltage Across Resistor in Piston-Cylinder",
+    "title_cleaned": "Closed System First Law: Determining Electrical Work (Constant Pressure)",
+    "topic": "Closed Systems",
+    "tags": [
+      "gprabhakar",
+      "Fa23",
+      "hard",
+      "release",
+      "First_Law",
+      "Closed_System",
+      "Work_Transfer"
+    ],
+    "type": "v3"
+  },
+  "question": {
+    "question_summary": "Determine the voltage ($V$) required to evaporate one-half of the water in an insulated, constant-pressure piston-cylinder device, given the electrical current, time, and paddle-wheel work input.",
+    "problem_statement_cleaned": "An insulated piston-cylinder device contains $V_1 = \\{\\{params.initialVolume\\}\\}$ L of saturated liquid water at a constant pressure of $p = \\{\\{params.initialPressure\\}\\}$ kPa. Water is stirred by a paddle wheel while a current of $I = \\{\\{params.current\\}\\}$ A flows for $\\Delta t = \\{\\{params.time\\}\\}$ min through a resistor placed in the water. If one-half of the liquid is evaporated during this constant-pressure process and the paddle-wheel work amounts to $W_{\\text{paddle}} = \\{\\{params.paddleWheelWork\\}\\}$ kJ, determine the voltage of the source, $V$.",
+    "given_variables": [
+      "Initial Volume: $V_1 = \\{\\{params.initialVolume\\}\\}$ L",
+      "Constant Pressure: $p_1 = p_2 = \\{\\{params.initialPressure\\}\\}$ kPa",
+      "Initial State: Saturated liquid ($x_1=0$)",
+      "Final State: $x_2 = 0.5$ (one-half liquid evaporated)",
+      "Current: $I = \\{\\{params.current\\}\\}$ A",
+      "Time: $\\Delta t = \\{\\{params.time\\}\\}$ min",
+      "Paddle-wheel Work: $W_{\\text{paddle}} = \\{\\{params.paddleWheelWork\\}\\}$ kJ"
+    ],
+    "goal": "Determine the voltage across the resistor, $V$ [V]."
+  },
+  "solution_analysis": {
+    "governing_law": "First Law of Thermodynamics for a Closed System (Energy Balance).",
+    "physical_model": "A **Closed System** undergoing a **constant-pressure** process ($p_1=p_2$). The system is considered adiabatic ($\dot{Q} \\approx 0$). The total energy input from work (electrical and paddle-wheel) equals the change in enthalpy of the water.",
+    "fundamental_equation": {
+      "first_law_closed_system": "For a constant-pressure, adiabatic closed system, the Energy Balance ($\\Delta E = Q_{\\text{net}} - W_{\\text{net}}$) simplifies by incorporating boundary work ($W_{\\text{boundary}} = p\\Delta V$) into the enthalpy change ($\\Delta H = \\Delta U + p\\Delta V$).\n$$\\Delta H = W_{\\text{elec}} + W_{\\text{paddle}}$$",
+      "electrical_work": "The electrical work is defined as:\n$$W_{\\text{elec}} = V I \\Delta t$$"
+    },
+    "calculation_logic": [
+      "**Step 1: Determine the Mass ($M$)**\nUse the initial volume ($V_1$) and the initial specific volume ($v_1$) to find the mass: $M = V_1 / v_1$. $v_1$ is found using **`pyCalor`** with ($p_1, x_1=0$).",
+      "**Step 2: Determine Enthalpy Change ($\\Delta h$)**\nUse **`pyCalor`** to find $h_1$ (at $p_1, x_1=0$) and $h_2$ (at $p_2, x_2=0.5$). The change in total enthalpy is $\\Delta H = M(h_2 - h_1)$.",
+      "**Step 3: Calculate the Required Electrical Work ($W_{\\text{elec}}$)**\nRearrange the First Law: $W_{\\text{elec}} = \\Delta H - W_{\\text{paddle}}$.",
+      "**Step 4: Determine the Voltage ($V$)**\nRearrange the electrical work equation, ensuring all units are consistent (convert $\\Delta t$ from minutes to seconds, and $W_{\\text{elec}}$ from kJ to J):\n$$V = \\frac{W_{\\text{elec}}}{I \\cdot \\Delta t}$$"
+    ]
+  },
+  "references": {
+    "book_reference": {
+      "title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "authors": "Yunus A. Çengel and Michael A. Boles",
+      "relevant_chapters": [
+        {
+          "chapter_number": 4,
+          "title": "Energy Analysis of Closed Systems",
+          "sections": [
+            "The First Law of Thermodynamics (Energy Balance)",
+            "Mechanical Forms of Work (Paddle-wheel and Electrical Work)",
+            "Energy Balance for Closed Systems"
+          ]
+        },
+        {
+          "chapter_number": 3,
+          "title": "Properties of Pure Substances",
+          "sections": [
+            "Property Tables (required for $h$ and $v$ determination)"
+          ]
+        }
+      ]
+    },
+    "lecture_reference": {
+      "module": "Module 1",
+      "topic": "Closed Systems / Properties",
+      "subtopics_inferred": [
+        {
+          "topic_area": "Closed System First Law",
+          "key": "Fa25-L1a-7.0",
+          "relevance": "Covers the fundamental application of the **First Law** ($\\Delta E = Q - W$) to **Closed Systems**. This is essential for formulating the energy balance $\\Delta H = W_{\\text{net, in}}$ for the constant pressure process."
+        },
+        {
+          "topic_area": "Property Tables (Mixture/Saturation)",
+          "key": "Fa25-L3a-7.0",
+          "relevance": "The problem requires finding $\\Delta H$ for a phase change (saturated liquid to $x=0.5$). This is the lecture segment that addresses using two independent properties (like $p$ and $x$) to look up specific properties like enthalpy ($h$) using **`pyCalor`**."
+        }
+      ]
+    },
+    "related_examples": [
+      {
+        "problem_title": "waterPropertiesPyCalor",
+        "topic": "Properties",
+        "relevance": "Demonstrates the required **`pyCalor`** property lookup functionality for water/steam, which is critical for accurately determining $\\Delta H$ across the two states."
+      }
+    ]
+  }
+}

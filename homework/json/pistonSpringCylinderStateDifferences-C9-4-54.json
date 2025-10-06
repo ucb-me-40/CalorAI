@@ -1,0 +1,97 @@
+{
+  "problem_id": "pistonSpringCylinderStateDifferences-C9-4-54",
+  "course_context": {
+    "course_id": "ME40",
+    "course_title": "Thermodynamics",
+    "term": "Fall 2025",
+    "module": "module-one",
+    "software_requirement": {
+      "tool": "pyCalor",
+      "instruction": "The working fluid is **Nitrogen** ($\\text{N}_2$), treated as an **ideal gas** with constant specific heats. The change in properties is calculated using **$\\Delta u = c_v \\Delta T$** and **$\\Delta h = c_p \\Delta T$**. While property lookups are not required here, students should note that all other property-dependent problems in the course require the `pyCalor` state class.",
+      "pycalor_note": "pyCalor is the required property software for ME40."
+    }
+  },
+  "problem_metadata": {
+    "title_original": "Find the Change in Internal Energy and Enthalpy for a Spring-Loaded Piston Cylinder",
+    "title_cleaned": "Closed System: Internal Energy and Enthalpy Change in a Spring-Loaded Piston-Cylinder Device (Ideal Gas)",
+    "topic": "Closed Systems",
+    "tags": [
+      "gprabhakar",
+      "Fa23",
+      "hard",
+      "beta",
+      "LO5d",
+      "Ideal_Gas",
+      "Closed_System",
+      "Spring_Work"
+    ],
+    "type": "v3"
+  },
+  "question": {
+    "question_summary": "Calculate the change in specific internal energy ($\\Delta u$) and specific enthalpy ($\\Delta h$) for nitrogen in a spring-loaded piston-cylinder device, given initial state and a final volume that is 10% greater than the original volume.",
+    "problem_statement_cleaned": "A mass of $m = \\{\\{params.n2Mass\\}\\}$ g of **nitrogen** ($\\text{N}_2$) is contained in a spring-loaded piston-cylinder device. The spring constant is $k = \\{\\{params.k\\}\\}$ kN/m, and the piston diameter is $D = \\{\\{params.pistonDiameter\\}\\}$ cm. Initially, the nitrogen is at $p_1 = \\{\\{params.initialPressure\\}\\}$ kPa and $T_{1,C} = \\{\\{params.initialTemperature\\}\\}$ ${}^\\circ\\text{C}$ when the spring is uncompressed. The device is now heated until its volume is $V_2 = 1.10 V_1$. What is the change in specific internal energy, $\\Delta u$ [kJ/kg], and the change in specific enthalpy, $\\Delta h$ [kJ/kg]?",
+    "given_variables": [
+      "Mass: $m = \\{\\{params.n2Mass\\}\\}$ g",
+      "Spring constant: $k = \\{\\{params.k\\}\\}$ kN/m",
+      "Piston diameter: $D = \\{\\{params.pistonDiameter\\}\\}$ cm",
+      "Initial Pressure: $p_1 = \\{\\{params.initialPressure\\}\\}$ kPa",
+      "Initial Temperature: $T_1$ (from $\\{\\{params.initialTemperature\\}\\}$ ${}^\\circ\\text{C}$)",
+      "Final Volume relation: $V_2 = 1.10 V_1$"
+    ],
+    "goal": [
+      "$\\Delta u$ [kJ/kg]",
+      "$\\Delta h$ [kJ/kg]"
+    ]
+  },
+  "solution_analysis": {
+    "governing_law": "Ideal Gas Law ($Pv = RT$) and State Relations for Ideal Gases.",
+    "physical_model": "Closed System with a **linear pressure-volume path** due to the spring ($P$ changes linearly with $V$). The change in specific internal energy and enthalpy is purely a function of temperature change ($\\Delta T$) for an ideal gas.",
+    "key_intermediate_steps": [
+      "**Find $T_1$ and $v_1$** using the Ideal Gas Law at State 1.",
+      "**Find $v_2 = 1.10 v_1$.**",
+      "**Find $p_2$** using the force balance on the piston: $p_2 = p_1 + \\frac{k \\cdot (V_2 - V_1)}{A^2 / m}$.",
+      "**Find $T_2$** using the Ideal Gas Law at State 2: $T_2 = p_2 v_2 / R$.",
+      "**Calculate $\\Delta u$ and $\\Delta h$** using the specific heat relations based on $\\Delta T = T_2 - T_1$."
+    ]
+  },
+  "references": {
+    "book_reference": {
+      "title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "authors": "Yunus A. Çengel and Michael A. Boles",
+      "relevant_chapters": [
+        {
+          "chapter_number": 3,
+          "title": "Properties of Pure Substances",
+          "sections": [
+            "The Ideal-Gas Equation of State",
+            "Specific Heats of Ideal Gases (Table A-2 for constant $c_p$, $c_v$)"
+          ]
+        },
+        {
+          "chapter_number": 4,
+          "title": "Energy Analysis of Closed Systems",
+          "sections": [
+            "Moving Boundary Work (for the P-V process path determination)",
+            "Energy Balance for Closed Systems"
+          ]
+        }
+      ]
+    },
+    "lecture_reference": {
+      "module": "Module 1",
+      "topic": "Closed Systems / Ideal Gas",
+      "subtopics_inferred": [
+        {
+          "topic_area": "Ideal Gas Property Relations ($\\Delta u, \\Delta h$)",
+          "key": "Fa25-L3a-7.0",
+          "relevance": "The problem's core calculation ($\\Delta u = c_v \\Delta T$) relies on the ideal gas assumption and property relations covered in this section. The lecture provides the foundation for linking temperature changes to internal energy and enthalpy changes."
+        },
+        {
+          "topic_area": "Closed System Analysis (P-V Work)",
+          "key": "Fa25-L1a-7.0 (Introduction to First Law)",
+          "relevance": "The spring-loaded piston defines a specific $\\int P dV$ path. This reference covers the application of the **First Law** to **Closed Systems**, which is necessary to understand the force balance that sets the linear pressure path."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "problem_id": "propertyTablesCalculation-noID",
+  "metadata": {
+    "title": "Property Tables: Calculating State Properties",
+    "topic": "Properties",
+    "difficulty_tags": [
+      "medium",
+      "Fa23",
+      "release"
+    ],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the thermodynamic properties (Temperature $T$, Pressure $p$, Enthalpy $h$, Specific Volume $v$, and Quality $x$) for four independent states of water (a pure substance), representing key points in a Rankine power cycle (boiler exit, turbine exit, condenser exit, pump exit).",
+    "raw_problem": "The problem requires calculating various properties of water—the working fluid—at specific states using two known independent properties. These states correspond to key points in an idealized power plant (Rankine cycle): \n\n1. **Saturated Liquid-Vapor Mixture (State A)**: Given pressure $p_A$ and quality $x_A$. Calculate $T$, $h$, and $v$.\n2. **Superheated Vapor (State B)**: Given pressure $p_B$ and specific enthalpy $h_B$. Calculate $T$ and $v$.\n3. **Saturated Liquid (State C)**: Given pressure $p_C$ and is implied to be saturated liquid ($x_C = 0$). Calculate $T$, $h$, and $v$.\n4. **Compressed Liquid (State D)**: Given temperature $T_D$ and pressure $p_D$. Calculate $h$ and $v$.\n\nThe student must use the `pyCalor` module to determine all properties.",
+    "given_variables": [
+      {
+        "variable": "$p_A$",
+        "placeholder": "{{params.p1MPa}}",
+        "state": "Saturated L-V",
+        "units": "\\text{MPa}"
+      },
+      {
+        "variable": "$x_A$",
+        "placeholder": "{{params.x}}",
+        "state": "Saturated L-V",
+        "units": "-"
+      },
+      {
+        "variable": "$p_B$",
+        "placeholder": "{{params.p2MPa}}",
+        "state": "Superheated Vapor",
+        "units": "\\text{MPa}"
+      },
+      {
+        "variable": "$h_B$",
+        "placeholder": "{{params.h2}}",
+        "state": "Superheated Vapor",
+        "units": "\\text{kJ/kg}"
+      },
+      {
+        "variable": "$p_C$",
+        "placeholder": "{{params.p3MPa}}",
+        "state": "Saturated Liquid",
+        "units": "\\text{MPa}"
+      },
+      {
+        "variable": "$p_D$",
+        "placeholder": "{{params.p4MPa}}",
+        "state": "Compressed Liquid",
+        "units": "\\text{MPa}"
+      },
+      {
+        "variable": "$T_D$",
+        "placeholder": "{{params.T4C}}",
+        "state": "Compressed Liquid",
+        "units": "^{\\circ}\\text{C}"
+      }
+    ]
+  },
+  "solution_steps": {
+    "summary": "The solution requires using the `pyCalor.thermo.state` class to look up unknown properties based on the two given independent properties for each of the four states. For water, the two independent properties are sufficient to fully define the state.",
+    "conceptual_steps": [
+      "**Step 1: Setup and Property Module Import**\\nImport the necessary module: `from pyCalor import thermo as th`.",
+      "**Step 2: State A (Saturated Liquid-Vapor)**\\nUse the given pressure ($p_A$) and quality ($x_A$). The quality $x$ specifies the state as a saturated mixture. Use the `th.state` class with the pressure in 'Mpa' and the quality as a fraction to find the remaining properties ($T, h, v$):\\n`st_A = th.state('water', p=(P_A,'Mpa'), x=x_A)`",
+      "**Step 3: State B (Superheated Vapor)**\\nUse the given pressure ($p_B$) and specific enthalpy ($h_B$). Use the `th.state` class with the pressure in 'Mpa' and enthalpy in 'kJ/kg' to find the remaining properties ($T, v$):\\n`st_B = th.state('water', p=(P_B,'Mpa'), h=(h_B,'kJ/kg'))`",
+      "**Step 4: State C (Saturated Liquid)**\\nUse the given pressure ($p_C$) and the fact that it is a saturated liquid, which means quality ($x_C$) is 0. Use the `th.state` class with the pressure in 'Mpa' and $x=0$ to find the remaining properties ($T, h, v$):\\n`st_C = th.state('water', p=(P_C,'Mpa'), x=0)`",
+      "**Step 5: State D (Compressed Liquid)**\\nUse the given temperature ($T_D$) and pressure ($p_D$). The problem requires using the pressure and temperature to define the compressed liquid state. Note: For a compressed liquid, properties like $v$ and $h$ are often approximated using the saturated liquid values at the given temperature ($T_D$), but `pyCalor` finds the exact value. Convert $T_D$ to Kelvin first.\\n`st_D = th.state('water', p=(P_D,'Mpa'), T=(T_D + 273.15,'K'))`"
+    ]
+  },
+  "property_module": {
+    "name": "pyCalor",
+    "usage_note": "Students are required to use the custom **`pyCalor`** Python module to determine thermodynamic properties, not IAPWS or CoolProp.\n\nThe software package contains classes `state` and `process`. Thermodynamic properties are found using the `state` class, which requires the substance and two independent properties:\n\n`from pyCalor import thermo as th`\n`st = th.state(substance, property1=value1, property2=value2, name=\"State Label\")`\n\nFields available include $p$ (pressure in \\text{kPa}), $T$ (temperature in \\text{K}), $v$ (specific volume in \\text{m}^3/\text{kg}), and $h$ (specific enthalpy in \\text{kJ/kg})."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L3a-7.0",
+      "title": "Determine the properties of water at 200 deg. C and 150 kPa",
+      "lecture_topic": "Properties",
+      "notes": "The course specifically emphasizes moving from old-school appendix tables to utilizing Python modules like `pyCalor` for handling and determining thermodynamic data."
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 3,
+      "chapter_title": "Properties of Pure Substances",
+      "sections": [
+        "Phase-Change Processes of Pure Substances",
+        "Property Diagrams for Phase-Change Processes",
+        "Property Tables"
+      ]
+    },
+    "related_examples": [
+      {
+        "problem_title": "waterPropertiesPyCalor",
+        "notes": "This example problem demonstrates the application of the `pyCalor` module to find properties (enthalpies of water)."
+      },
+      {
+        "problem_title": "heatExchangerPyCalor",
+        "topic": "Control Volumes / Steady-Flow Energy Analysis",
+        "relevance": "Applies the First Law of Thermodynamics to a different **Steady-flow** Control Volume (a heat exchanger) and requires property lookups with **pyCalor**."
+      },
+    ]
+  }
+}

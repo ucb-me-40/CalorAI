@@ -1,0 +1,69 @@
+{
+  "problem_id": "adiabaticSteamTurbineWorkKE-C9-5-48",
+  "metadata": {
+    "title": "Work, Kinetic Energy, and Inlet Area from Adiabatic Turbine",
+    "topic": "Control Volumes",
+    "difficulty_tags": ["medium", "Fa23", "release"],
+    "course_module": "Module 1 (First Law)"
+  },
+  "problem_statement": {
+    "question_summary": "Determine the power output and inlet area of an adiabatic steam turbine, accounting for changes in kinetic energy.",
+    "raw_problem": "Steam flows steadily through an adiabatic turbine. The inlet conditions of the steam are $p_1 = {{params.inletPressure}}$ MPa, $T_1 = {{params.inletTemperature}} \\ ^\\circ$C, and $w_{\\text{in}} = {{params.inletVelocity}}$ m/s, and the exit conditions are $p_2 = {{params.outletPressure}}$ kPa, $x_2 = {{params.outletQuality}} \\%$ quality, and $w_{\\text{out}} = {{params.outletVelocity}}$ m/s. The mass flow rate of the steam is $\\dot{m} = {{params.massFlowRate}}$ kg/s.",
+    "given_variables_mapping": [
+      {"variable": "$p_1$", "placeholder": "{{params.inletPressure}}", "units": "MPa"},
+      {"variable": "$T_1$", "placeholder": "{{params.inletTemperature}}", "units": "$^\\circ$C"},
+      {"variable": "$w_{\\text{in}}$", "placeholder": "{{params.inletVelocity}}", "units": "m/s"},
+      {"variable": "$p_2$", "placeholder": "{{params.outletPressure}}", "units": "kPa"},
+      {"variable": "$x_2$", "placeholder": "{{params.outletQuality}}", "units": "%"},
+      {"variable": "$w_{\\text{out}}$", "placeholder": "{{params.outletVelocity}}", "units": "m/s"},
+      {"variable": "$\\dot{m}$", "placeholder": "{{params.massFlowRate}}", "units": "kg/s"}
+    ],
+    "goal": "Determine the power output ($\\\\dot{W}_{\\\\text{out}}$ in MW) and the turbine inlet area ($A_{\\text{in}}$ in $\\text{m}^2$).",
+    "system_assumptions": [
+      "**Steady-Flow System** (Turbine)",
+      "Single-stream (One Inlet, One Outlet)",
+      "**Adiabatic** ($\\\\dot{Q} \\approx 0$)",
+      "Neglect potential energy changes ($\\Delta PE \\approx 0$)",
+      "**Kinetic energy change MUST be included** ($\\Delta KE \\neq 0$)"
+    ]
+  },
+  "solution_guide": {
+    "governing_laws": [
+      "First Law of Thermodynamics (Steady-Flow Energy Equation, SFEE)",
+      "Conservation of Mass (Continuity Equation)"
+    ],
+    "energy_balance_equation": "The SFEE for a single-stream, adiabatic control volume (turbine) with negligible potential energy is:\\n$$\\dot{W}_{\\text{out}} = - \\dot{m} \\left[ (h_2 - h_1) + \\frac{w_2^2 - w_1^2}{2} \\right]$$\\n\\nWhere the term $\\Delta h = h_2 - h_1$ and $\\Delta KE = \\frac{w_2^2 - w_1^2}{2}$ must be calculated in $\\text{kJ/kg}$ to be consistent with specific enthalpy. The final result $\\dot{W}_{\\text{out}}$ must be converted to $\\text{MW}$ (by dividing by $1000$ to get $\\text{kJ/s}$ which is $\\text{kW}$, and then dividing by $1000$ again for $\\text{MW}$ if using $\\text{m}^2/\\text{s}^2$ for $\\Delta KE$).",
+    "mass_conservation_equation": "The mass flow rate is constant and related to the inlet area ($A_{\\text{in}}$) by:\\n$$\\dot{m} = \\frac{A_{\\text{in}} w_{\\text{in}}}{v_1} \\quad \\implies \\quad A_{\\text{in}} = \\frac{\\dot{m} v_1}{w_{\\text{in}}}$$",
+    "solution_steps": [
+      "**Step 1: Determine Inlet Properties ($\\\\mathbf{h_1, v_1}$)**\\nUse the inlet pressure ($p_1$) and temperature ($T_1$) with the **`pyCalor`** module to find the specific enthalpy ($h_1$ in $\\text{kJ/kg}$) and specific volume ($v_1$ in $\\text{m}^3/\\text{kg}$) for the superheated steam."",
+      "**Step 2: Determine Outlet Enthalpy ($\\\\mathbf{h_2}$)**\\nUse the outlet pressure ($p_2$) and quality ($x_2$) with the **`pyCalor`** module to find the specific enthalpy ($h_2$ in $\\text{kJ/kg}$) for the saturated mixture."",
+      "**Step 3: Calculate Power Output ($\\mathbf{\\dot{W}_{\\text{out}}}$)**\\nApply the SFEE, ensuring the kinetic energy term is correctly converted to $\\text{kJ/kg}$ (by dividing by $1000$) before multiplying by $\\dot{m}$:\\n$$\\dot{W}_{\\text{out}} = - \\dot{m} \\left[ (h_2 - h_1) + \\frac{w_2^2 - w_1^2}{2000} \\right]$$",
+      "**Step 4: Calculate Inlet Area ($\\mathbf{A_{\\text{in}}}$)**\\nUse the continuity equation at the inlet, with the velocity ($w_{\\text{in}}$) and specific volume ($v_1$) determined in Step 1:\\n$$A_{\\text{in}} = \\frac{\\dot{m} v_1}{w_{\\text{in}}}$$"
+    ]
+  },
+  "property_module": {
+    "name": "**pyCalor**",
+    "usage_note": "The properties ($h_1, v_1, h_2$) for water/steam at states 1 and 2 **must** be determined using the **`pyCalor`** Python module. State 1 is superheated vapor, and state 2 is a saturated mixture, requiring distinct calls to the property function."
+  },
+  "references": {
+    "course_outline_module_1": {
+      "key": "Fa25-L5b-2.0",
+      "title": "**Energy Analysis of a Steady-flow System**",
+      "lecture_topic": "Control Volumes",
+      "context": "Turbines are classic steady-flow engineering devices. This subtopic provides the full application of the Steady-Flow Energy Equation (SFEE), including all terms like work, heat, $\\Delta h$, $\\Delta KE$, and $\\Delta PE$."
+    },
+    "textbook_reference": {
+      "book_title": "Thermodynamics: An Engineering Approach (Ninth Edition)",
+      "chapter_number": 5,
+      "chapter_title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Some Steady-Flow Engineering Devices"
+      ]
+    },
+    "related_course_example": {
+      "example_title": "**Example: Energy Analysis of a Steady-flow System: Compressor**",
+      "lecture_subtopic_key": "Fa25-L5b-3.0",
+      "description": "While a compressor, not a turbine, this example demonstrates the application of the **Steady-Flow Energy Equation** (SFEE) to a single-stream power-producing/consuming device and is the core computational task covered in the lecture series on control volumes."
+    }
+  }
+}
