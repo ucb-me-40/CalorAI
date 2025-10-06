@@ -30,6 +30,13 @@ me40-slm
 +-- homework
 |	+-- flowWorkCompressor-C9-5-20.json
 |	|-- ...
++-- contextualData
+|	+-- 20251016_1556
+|		`-- examples.json
+|		`-- outline-module-one.json
+|		`-- README.md
+|		`-- syllabus.json
+|		`-- tableOfContents.json
 
 ### tableOfContents.json
 The `tableOfContents.json` file should contain all of the book editions that you think students may use. Do not delete other editions.
