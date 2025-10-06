@@ -34,7 +34,7 @@ me40-slm
 |	+-- 20251016_1556
 |		`-- examples.json
 |		`-- outline-module-one.json
-|		`-- README.md
+|		`-- pyCalor-README.md
 |		`-- syllabus.json
 |		`-- tableOfContents.json
 ```
@@ -43,10 +43,16 @@ me40-slm
 The `tableOfContents.json` file should contain all of the book editions that you think students may use. Do not delete other editions.
 
 ### examples.json
-The `examples.json` file should contain all of worked out examples for the course.
+The `examples.json` file should contain all of worked out examples for the course. 
 
 ### outline-module-one.json
-The `outline-module-one.json` file should contain all of the subtopics covered during lecture during module 1.
+The `outline-module-one.json` file should contain all of the subtopics covered during lecture during module 1. This file is created by combining the caption data in the `outline.json` from `courseInstances`. 
+
+### pyCalor-README.md
+The `pyCalor-README.md` file should contain all the information needed to use the `pyCalor` python module. 
+
+### syllabus.json
+The `syllabus.json` file should contain the syllabus for the current semester formatted as a JSON file.
 
 ### courseInstances 
 This folder contains data from each semester that the course is taught. This includes the syllabus and the captions from the recorded lectures (`.srt`, `.json`, `.txt` files). I create an outline.json file and define subtopics within the lecture. Those subtopics have a time_range, which is easy to define if you watch the recordings. There is a feature on bCourses, which allows you to create bookmarks. I used that to generate the `time_range` field entries. You should also tag those bookmarks, e.g., `Fa25-L1a-1.0`. This will also help students to navigate to the correct part of the video as they only have to enter that tag into the search and they will find the correct part of the video. This part is a non-trivial amount of work, but I believe it is essential for student learning. I don't recommend just uploading the closed caption data and asking it to create  an `outline.json` file. If an example is solved during lecture, I recommend having the solution in a Jupyter notebook, formatted in a specific way, so that we can convert that to a `.json` file to be placed in the `examples` folder. 
