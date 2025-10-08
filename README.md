@@ -3,40 +3,47 @@ Language Model Being Developed for Teaching ME40, Thermodynamics, at UC Berkeley
 
 Instructors: Prof. Hail and Prof. Schutzius. 
 
-The data here is used for fine-tuning and retrieval augmented generation (RAG) of the small language or large language model. We are currently training a small language model Phi-3. 
+The data here is used for fine-tuning and retrieval augmented generation (RAG) of the small language or large language model. We are currently training a small language model Phi-3. Information on how to setup and do simple-fine tuning and RAG for Phi-3 can be found on [OskiBot](https://github.com/ucb-me-40/OskiBot).
 
 ## Housekeeping
 The primary purpose of this SLM is to aid students in studying thermodynamics. Based on student feedback, we believe that most of the prompts will be copying and pasting the homework question and then searching for course resources to help them study and enable them to solve the problems on their own. The resources created by the instructional staff are organized as follows:
 
 ```
 me40-slm
-+-- book
-|	`-- tableOfContents.json
-+-- courseInstances
-|	+-- Fa23
-|	|-- Fa24
-|	|-- Sp25
-|	|-- Fa25
-|		`-- syllabus.json
-|		`--lecture-01a
-|			`-- 1_mtmivyvl.srt
-|			`-- 555352862 - 1_mtmivyvl - PID 2640881.json
-|			`-- 555352862 - 1_mtmivyvl - PID 2640881.txt
-|			`-- outline.json
-|		`-- ...
-+-- examples
-|	+-- nitrogenHeatingWorkTransfer.json
-|	|-- ...	 
-+-- homework
-|	+-- flowWorkCompressor-C9-5-20.json
-|	|-- ...
-+-- contextualData
-|	+-- 20251016_1556
-|		`-- examples.json
-|		`-- outline-module-one.json
-|		`-- pyCalor-README.md
-|		`-- syllabus.json
++--data
+|	`-- fine_tune_conversations.jsonl
+|	`-- rag_corpus.txt
+|	+-- book
 |		`-- tableOfContents.json
+|	+-- courseInstances
+|		+-- Fa23
+|		|-- Fa24
+|		|-- Sp25
+|		|-- Fa25
+|			`-- syllabus.json
+|			`--lecture-01a
+|				`-- 1_mtmivyvl.srt
+|				`-- 555352862 - 1_mtmivyvl - PID 2640881.json
+|				`-- 555352862 - 1_mtmivyvl - PID 2640881.txt
+|				`-- outline.json
+|			`-- ...
+|	+-- examples
+|		+-- nitrogenHeatingWorkTransfer.json
+|		|-- ...	 
+|	+-- homework
+|		+-- flowWorkCompressor-C9-5-20.json
+|		|-- ...
+|	+-- contextualData
+|		+-- 20251016_1556
+|			`-- examples.json
+|			`-- outline-module-one.json
+|			`-- pyCalor-README.md
+|			`-- syllabus.json
+|			`-- tableOfContents.json
++--scripts
+|	`-- 1_create_rag_index.py
+|	`-- 2_fine_tune_phi3.py
+|	`-- 3_run_chatbot.py
 ```
 
 ### tableOfContents.json
