@@ -195,7 +195,7 @@ An example of the output block for Lecture 01a, Subtopic 3.0:
 ```
 
 ### examples
-This folder should contain all of the problems solved in lecture. The file should originally be written in a Jupyter notebook, and then converted to a `.json` file. From there we will convert it to a prompt/completion, which is formatted as `.jsonl`. This method (IPYNB to JSON to JSONL) is the better engineering approach for a large, high-stakes dataset.
+This folder should contain all of the problems solved in lecture. The file should originally be written in a Jupyter notebook, and then converted to a `.json` file. In the future it may be worthwhile to consider going directly from Jupyter notebooks to `rag_corpus.txt`. From there we will add it to `rag_corpus.txt`. 
 
 What is important here is the `"workflow_tags"`. If a problem has not been reviewed, you should write
 ```json
@@ -443,6 +443,15 @@ Example of the converted `.json` file:
 }
 
 ```
+We can then add this to `rag_corpus.txt`. Here is what should be included:
+
+| JSON Field    | Output Format in `rag_corpus.txt` | 
+| -------- 		| ------- 					|
+|`problem_title`, `topic`   |  `### WORKED EXAMPLE: heatExchangerPyCalor (Control Volumes)`|
+| `problem_statement_raw`  | `**Problem:** R-134a enters a heat exchanger as a vapor...` |
+|`physical_laws_and_assumptions`   | `**Physical Basis & Assumptions:** Water control volume... Conservation of energy: $\\left( \\dot{Q}_{\\text{in}} \\right)_{\\text{water}} = \\dot{m}_{\\text{water}} \\left( h_2 - h_1 \\right)$... We need enthalpies at inlets/outlets.` |
+|`solution_code`   | `code...` |
+
 This then needs to be converted into a "Prompt/Completion" pair. For that I gave Gemini the following prompt and uploaded the files I listed:
 
 ```
