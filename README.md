@@ -3,7 +3,7 @@ Language Model Being Developed for Teaching ME40, Thermodynamics, at UC Berkeley
 
 Instructors: Prof. Hail and Prof. Schutzius. 
 
-The data here is used for fine-tuning and retrieval augmented generation (RAG) of the small language or large language model. We are currently training a small language model Phi-3. Information on how to setup and do simple-fine tuning and RAG for Phi-3 can be found on [OskiBot](https://github.com/ucb-me-40/OskiBot).
+The data here is used for fine-tuning and retrieval augmented generation (RAG) of the small language or large language model. We are currently training a small language model Phi-3. Information on how to setup and do simple fine-tuning and RAG for Phi-3 can be found on [OskiBot](https://github.com/ucb-me-40/OskiBot).
 
 ## Housekeeping
 The primary purpose of this SLM is to aid students in studying thermodynamics. Based on student feedback, we believe that most of the prompts will be copying and pasting the homework question and then searching for course resources to help them study and enable them to solve the problems on their own. The resources created by the instructional staff are organized as follows:
