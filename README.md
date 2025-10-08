@@ -9,7 +9,7 @@ The data here is used for fine-tuning and retrieval augmented generation (RAG) o
 The primary purpose of this SLM is to aid students in studying thermodynamics. Based on student feedback, we believe that most of the prompts will be copying and pasting the homework question and then searching for course resources to help them study and enable them to solve the problems on their own. The resources created by the instructional staff are organized as follows:
 
 ```
-me40-slm
+CalorAI
 +--data
 |	`-- fine_tune_conversations.jsonl
 |	`-- rag_corpus.txt
