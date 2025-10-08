@@ -174,7 +174,6 @@ Here is an example of the output:
 
 The `"examples"` field are existing files located in the `examples` folder and are formatted as `.json` files. 
 
-We need to convert the structured JSON data into an unstructured text format for the RAG corpus. We can use `python` for this. This file contains detailed summaries of the lecture subtopics. We need to structure each subtopic as a separate, self-contained knowledge block. 
 
 | JSON Field    | Output Format in `rag_corpus.txt` | 
 | -------- 		| ------- 					|
@@ -376,7 +375,94 @@ $$\frac{\dot{W}_\text{in}}{\dot{m}} = c_p \left( T_2 - T_1 \right)$$
 For that we have to select specific heats at a certain temperature. We chose the inlet temperature. That turned out to be a good assumption. This approach is simpler and is a good way to first solve the problem. One can check if it is a good assumption by determining actual property values using `pyCalor`.
 ```
 
-Here is the prompt I then gave Gemini:
+We can then ask Gemini to convert this into a complete corpus chunk. For `nitrogenHeatingWorkTransfer`, this then looks like:
+
+```
+### WORKED EXAMPLE: nitrogenHeatingWorkTransfer (Closed Systems)
+**Reference:** Lecture: Electrical heating and cooling of a cylinder containing nitrogen at constant pressure (Fa25-L4c-2.0). Textbook: Chapter 4: Energy Analysis of Closed Systems.
+
+## Problem Statement
+Nitrogen ($N_2$) is contained in a piston-cylinder device. An electrical resistor heats the gas while a fan stirs it. During this process, $2.8 \text{ kJ}$ of heat is removed from the system ($Q_{\text{out}}$). Assume the gas is ideal with constant specific heat and is undergoing a constant-pressure process ($P_1 = P_2$).
+
+**Given Data:**
+* Substance: Nitrogen ($N_2$)
+* Mass: $m = 1 \text{ kg}$
+* Initial Pressure: $P_1 = 100 \text{ kPa}$
+* Initial Temperature: $T_1 = 20^\circ \text{C}$
+* Electrical Work Input: $W_{\text{elect}, \text{in}} = 2.4 \text{ kJ}$
+* Heat Outflow: $Q_{\text{out}} = 2.8 \text{ kJ}$
+
+**Goal:** Determine the final temperature of the nitrogen, $T_2$ in Celsius.
+
+## Physical Basis & Governing Laws
+This is a **closed system** (fixed mass) undergoing a **constant pressure process** ($P_1 = P_2$). The primary governing principle is the **First Law of Thermodynamics (Energy Balance)** for a closed system:
+
+$$\Delta E = Q_{\text{net}} - W_{\text{net}}$$
+
+Since the process is constant pressure, the **Boundary Work** ($W_b = P \Delta V$) can be absorbed into the internal energy term, simplifying the expression to a **change in Enthalpy ($\Delta H$)** in terms of **net heat and other forms of work:**
+
+$$m(h_2 - h_1) = Q_{\text{net}} - W_{\text{net, other}}$$
+
+Where:
+* $Q_{\text{net}} = Q_{\text{in}} - Q_{\text{out}} = -2.8 \text{ kJ}$
+* $W_{\text{net, other}} = W_{\text{elect}, \text{in}} = 2.4 \text{ kJ}$
+
+The final enthalpy $h_2$ is the solution to the energy balance, which can then be used with the final pressure $P_2$ to find the final temperature $T_2$ using fluid property tables (or `pyCalor`).
+
+## Solution Code and Calculations (pyCalor)
+The following Python code uses the `pycalor` library to solve the problem using the energy balance approach.
+
+```python
+import pycalor as th
+
+# --- 1. Inputs and State 1 Initialization ---
+substance = 'nitrogen'
+m_kg = 1.0
+p1_Pa = 100*1e3 # Pa
+T1_C = 20
+Qout_kJ = 2.8
+Win_kJ = 2.4
+T1_K = T1_C + 273.15
+
+# Determine State 1 properties (using p and T)
+st1 = th.state(substance, p=(p1_Pa/1e3,'kpa'), T=T1_K, name='1')
+h1_JperKg = st1.h*1e3 # Enthalpy at state 1 in J/kg
+print('h1: {0:1.2f} J/kg'.format(h1_JperKg))
+
+# --- 2. Energy Balance Calculation ---
+# Convert energy transfers to Joules
+Win_J = Win_kJ*1e3
+Qout_J = Qout_kJ*1e3
+
+# Apply Energy Balance (solving for h2): 
+# m*h2 = (W_other - Q_out) + m*h1
+h2_JperKg = ( (Win_J - Qout_J) + m_kg*h1_JperKg ) / m_kg
+h2_kJperKg = h2_JperKg / 1e3
+
+# --- 3. Determine Final State 2 ---
+# Find final temperature (T2) using p2 and h2
+st2 = th.state(substance, p=(p1_Pa/1e3,'kpa'), h=h2_kJperKg, name='2')
+
+# Final Answer: T2 in deg C
+T2_C = st2.T - 273.15
+print('Final Temperature T2: {0:1.2f} deg C'.format(T2_C))
+
+# --- 4. Alternative Solution (using constant specific heat) for error check ---
+cp_N2_JperKgPerK = 1.039*1e3 # Specific heat for Nitrogen
+
+# T2 = T1 + (Q_net - W_other) / (m * c_p)
+T2_K_cp_approx = T1_K + ((Win_J - Qout_J) / (cp_N2_JperKgPerK * m_kg))
+
+# print(T2_K_cp_approx - 273.15) # Should be very close to T2_C
+
+# --- 5. Summary and Conclusion---
+
+Result: The final temperature of the nitrogen, $T_2$, is determined by the net change in enthalpy caused by the electrical work input and the heat loss.
+Key Insight: The use of the enthalpy balance $m(h_2 - h_1 )=Q_{net} - W_{net,other}$ is the most efficient way to analyze a closed system at constant pressure, as it implicitly accounts for the boundary work term. The electrical work, $W_{elect,in}$, is treated as a positive work input to the system.
+
+```
+
+Instead of converting the Jupyter notebooks to corpus chunks, we could instead convert them to JSON files. Here is the prompt I then gave Gemini:
 ```
 I am attaching here a Jupyter notebook which I would like to use for retrieval-augmented generation (RAG) or fine-tuning the a small language model. The notebook has been broken down into chunks according to:
 
@@ -443,15 +529,6 @@ Example of the converted `.json` file:
 }
 
 ```
-We can then add this to `rag_corpus.txt`. Here is what should be included:
-
-| JSON Field    | Output Format in `rag_corpus.txt` | 
-| -------- 		| ------- 					|
-|`problem_title`, `topic`   |  `### WORKED EXAMPLE: heatExchangerPyCalor (Control Volumes)`|
-| `problem_statement_raw`  | `**Problem:** R-134a enters a heat exchanger as a vapor...` |
-|`physical_laws_and_assumptions`   | `**Physical Basis & Assumptions:** Water control volume... Conservation of energy: $\\left( \\dot{Q}_{\\text{in}} \\right)_{\\text{water}} = \\dot{m}_{\\text{water}} \\left( h_2 - h_1 \\right)$... We need enthalpies at inlets/outlets.` |
-|`solution_code`   | `code...` |
-
 This then needs to be converted into a "Prompt/Completion" pair. For that I gave Gemini the following prompt and uploaded the files I listed:
 
 ```
@@ -482,6 +559,7 @@ Here is the reply:
 {"prompt": "--- Level 3: Full Solved Example ---\n\nA piston cylinder contains nitrogen initially at 400 kPa, 27\u00b0C, and 0.5 m\u00b3. The piston contains a resistor. The pressure in the piston is kept constant while 120 V is applied to the resistor resulting in 2 A flowing through it for 5 min. The piston is also cooled, transferring 2800 J out. Goal: Determine the final temperature, T\u2082. \n\nShow me the full, step-by-step solution, including the calculations.", "completion": "This problem requires applying the First Law of Thermodynamics for a closed system, making use of the enthalpy formulation due to the constant pressure process.\n\n### \u2795 Step 1: State Variables and Mass Calculation\n\n**Given:**\n* $P_1 = 400 \\text{ kPa} = 400 \\times 10^3 \\text{ Pa}$\n* $T_1 = 27^\circ \\text{C} = 300.15 \\text{ K}$\n* $V_1 = 0.5 \\text{ m}^3$\n* $V_{resistor} = 120 \\text{ V}$\n* $I = 2 \\text{ A}$\n* $t = 5 \\text{ min} = 300 \\text{ s}$\n* $Q_{out} = 2800 \\text{ J}$\n* Gas Constant for Nitrogen: $R_{\\text{Nitrogen}} \u2248 296.8 \\text{ J/kg}\u00b7\\text{K}$ (from properties table or pyCalor)\n\n**Mass ($m$):** Using the Ideal Gas Law $m = \\frac{P_1 V_1}{R T_1}$:\n\n$$m = \\frac{(400 \\times 10^3 \\text{ Pa})(0.5 \\text{ m}^3)}{(296.8 \\text{ J/kg}\u00b7\\text{K})(300.15 \\text{ K})} \u2248 2.247 \\text{ kg}$$\n\n### \u2795 Step 2: Calculate Work and Heat Transfers\n\n**Electrical Work Input ($W_{\\text{in}}$):**\n\n$$W_{\\text{in}} = W_{\\text{electrical}} = V I t = (120 \\text{ V})(2 \\text{ A})(300 \\text{ s}) = 72000 \\text{ J}$$\n\n**Net Energy Transfer:**\n\n$$\\text{Net Energy} = W_{\\text{in}} - Q_{\\text{out}} = 72000 \\text{ J} - 2800 \\text{ J} = 69200 \\text{ J}$$\n\n### \u2795 Step 3: Apply Energy Balance to Solve for $T_2$\n\nThe energy balance for a constant pressure process ($\u0394P = 0$) in a closed system simplifies to the enthalpy change, $\u0394H = Q_{net} - W_{net, other}$. Treating Nitrogen as an Ideal Gas with constant specific heat $c_p \u2248 1040 \\text{ J/kg}\u00b7\\text{K}$:\n\n$$m c_p (T_2 - T_1) = W_{\\text{in}} - Q_{\\text{out}}$$\n\nSolving for $T_2$:\n\n$$T_2 = T_1 + \\frac{W_{\\text{in}} - Q_{\\text{out}}}{m c_p}$$\n\n$$T_2 = 300.15 \\text{ K} + \\frac{69200 \\text{ J}}{(2.247 \\text{ kg})(1040 \\text{ J/kg}\u00b7\\text{K})} \\approx 300.15 \\text{ K} + 29.62 \\text{ K}$$\n\n$$\\text{Final Temperature, } T_2 \u2248 329.77 \\text{ K} \\u2248 56.62^\circ \\text{C}$$"}
 ``` 
 
+For now we are only using the `examples` for corpus chunks to be added to `rag_corpus.txt`. 
 
 ### Homework
 Building on the workflow mentioned above, where we go from Jupyter notebook to JSON to JSONL, I will first generate a JSON file from the PrairieLearn problems. I created a single file that contains all of the examples done in class, `examples.json`. I also converted the syllabus to a JSON file, `syllabus.json` as well as the table of contents for the book, `tableOfContents.json`. I also have the `pyCalor` README file. Finally, I have the entire outline of my lecture audio recordings, organized by subtopics, in a single file `outline-module-one.json`. Upload those files and the PrairieLearn files (`question.html`, `server.py`, and `info.json`) to Gemini, and enter this prompt as well as the PrairieLearn files:
