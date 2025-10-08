@@ -14,25 +14,25 @@ CalorAI
 |	`-- fine_tune_conversations.jsonl
 |	`-- rag_corpus.txt
 |	+-- book
-|		`-- tableOfContents.json
+|	|	`-- tableOfContents.json
 |	+-- courseInstances
-|		+-- Fa23
-|		|-- Fa24
-|		|-- Sp25
-|		|-- Fa25
-|			`-- syllabus.json
-|			`--lecture-01a
-|				`-- 1_mtmivyvl.srt
-|				`-- 555352862 - 1_mtmivyvl - PID 2640881.json
-|				`-- 555352862 - 1_mtmivyvl - PID 2640881.txt
-|				`-- outline.json
-|			`-- ...
+|	|	+-- Fa23
+|	|	|-- Fa24
+|	|	|-- Sp25
+|	|	|-- Fa25
+|	|		`-- syllabus.json
+|	|		`--lecture-01a
+|	|			`-- 1_mtmivyvl.srt
+|	|			`-- 555352862 - 1_mtmivyvl - PID 2640881.json
+|	|			`-- 555352862 - 1_mtmivyvl - PID 2640881.txt
+|	|			`-- outline.json
+|	|		`-- ...
 |	+-- examples
-|		+-- nitrogenHeatingWorkTransfer.json
-|		|-- ...	 
+|	|	+-- nitrogenHeatingWorkTransfer.json
+|	|	|-- ...	 
 |	+-- homework
-|		+-- flowWorkCompressor-C9-5-20.json
-|		|-- ...
+|	|	+-- flowWorkCompressor-C9-5-20.json
+|	|	|-- ...
 |	+-- contextualData
 |		+-- 20251016_1556
 |			`-- examples.json
