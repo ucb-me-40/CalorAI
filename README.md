@@ -47,7 +47,7 @@ CalorAI
 ```
 
 ### tableOfContents.json
-The `tableOfContents.json` file should contain all of the book editions that you think students may use. Do not delete other editions.
+The `tableOfContents.json` file should contain all of the book editions that you think students may use. Do not delete other editions. 
 
 ### examples.json
 The `examples.json` file should contain all of worked out examples for the course. 
@@ -172,7 +172,27 @@ Here is an example of the output:
 }
 ```
 
-The `"examples"` field are existing files located in the `examples` folder and are formatted as `.json` files. These individual `outline.json` files will then be combined into a single `outline.jsonl` file. 
+The `"examples"` field are existing files located in the `examples` folder and are formatted as `.json` files. 
+
+We need to convert the structured JSON data into an unstructured text format for the RAG corpus. We can use `python` for this. This file contains detailed summaries of the lecture subtopics. We need to structure each subtopic as a separate, self-contained knowledge block. 
+
+| JSON Field    | Output Format in `rag_corpus.txt` | 
+| -------- 		| ------- 					|
+| `lecture` (e.g., "01a"), `title`  | `### LECTURE 01A: Class plan and rules; Challenges in Decarbonizing our Energy`   |
+| `subtopics[].title` | `**Concept:** Course learning objectives`     |
+| `subtopics[].summary`    | `**Summary:** The course objectives focus on understanding and applying the First and Second Laws of Thermodynamics, moving from foundational concepts and simple problems to analyzing bigger systems and thermodynamic data using Python.`    |
+| `subtopics[].detailed_summary` | `**Detailed Explanation:** The main learning objectives are centered on mastering the First and Second Laws of Thermodynamics to the point of being able to articulate them clearly...`     |
+| `subtopics[].time_range` | `**Time Range:** 02:19 - 03:43`     |
+
+An example of the output block for Lecture 01a, Subtopic 3.0:
+```
+### LECTURE 01A: Class plan and rules; Challenges in Decarbonizing our Energy
+**Concept:** Course learning objectives
+**Summary:** The course objectives focus on understanding and applying the First and Second Laws of Thermodynamics, moving from foundational concepts and simple problems to analyzing bigger systems and thermodynamic data using Python.
+**Detailed Explanation:** The main learning objectives are centered on mastering the **First and Second Laws of Thermodynamics** to the point of being able to articulate them clearly. Students will first solve simple, single-answer problems involving both laws. The course then transitions to applying these laws to much bigger systems, including the study of **perpetual motion cycles** (cycles that violate the First and Second Laws). A key modern component is the shift from using old-school appendix tables to utilizing **Python modules** for handling and determining thermodynamic data, which is presented as a crucial skill for the course.
+**Time Range:** 02:19 - 03:43
+---
+```
 
 ### examples
 This folder should contain all of the problems solved in lecture. The file should originally be written in a Jupyter notebook, and then converted to a `.json` file. From there we will convert it to a prompt/completion, which is formatted as `.jsonl`. This method (IPYNB to JSON to JSONL) is the better engineering approach for a large, high-stakes dataset.
