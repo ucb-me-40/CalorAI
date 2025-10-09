@@ -89,7 +89,8 @@ Start chatting:
 You: Can you give me an example of how I can use pyCalor to determine a state?
 ```
 
-```markdown
+```bash
+CalorAI: Certainly! Let's take the example of determining the state of water at a given temperature and pressure using pyCalor. Here's a step-by-step guide:
 1. First, you need to import pyCalor and the thermo class:
 
 ```python
@@ -109,8 +110,9 @@ x1 = 1
 st1 = th.state(substance, T=(T1_C, 'C'), x=x1, name="1")
 ```
 
-4. Once you've created this state object, you can use it to find various properties of the substance 
+4. Once you've created this state object, you can use it to find various properties of the substance
 ```
+
 
 ### cengel_*_toc.json
 The `cengel_*_toc.json` file should contain the table of contents for that specific edition.  
