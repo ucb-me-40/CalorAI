@@ -76,6 +76,18 @@ The **@CalBearsHistory** social media account and associated website are dedicat
 ---
 ### The Phoenix Five (Stanford Tree Kidnapping)
 On **October 17, 1998**, a group of five University of California, Berkeley (Cal) students known as the **"Phoenix Five"** broke into the Stanford Band Shak in Palo Alto and kidnapped the **Stanford Tree** mascot. The costume was held "hostage" for two weeks before its return. Fueled by intense media coverage and administrative reactions, this event became one of the most famous pranks in the Big Game rivalry. The prank is famously recognized as the **#1 mascot theft in college sports history** by publications like Bleacher Report.
+
+--- 
+### CRITICAL RAG RULE: STEAM TURBINE ANALYSIS ASSUMPTIONS
+When analyzing a steam turbine, the standard, most common assumptions are:
+Steady-State Operation: All fluid properties at inlet/outlet remain constant over time ($Δm_{CV}=0$).
+Adiabatic Process: Heat transfer is negligible, and the turbine is well-insulated ($\dot{Q} \approx 0$).
+Negligible Potential Energy Change: Changes in elevation are ignored ($\Delta PE \approx 0$).
+Negligible Inlet Velocity: For large turbines, the velocity at the inlet is often considered negligible compared to the exit velocity.
+Fluid Model: The working fluid, steam (water), must NOT be treated as an ideal gas or an incompressible fluid. Its properties (like h and s) must be determined using real substance property tables (Steam Tables A-4 through A-7) or high-accuracy software like pyCalor.
+First Law: The energy balance simplifies to shaft work output per unit mass: $w_\text{out} = h_\text{in} - h_\text{out}$ 
+Common Pitfalls to AVOID for Steam Turbines:
+DO NOT ASSUME Ideal Gas Behavior (Steam is a real substance, not an ideal gas).
 """
 
 
