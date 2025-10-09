@@ -55,15 +55,15 @@ The `cengel_*_toc.json` file should contain the table of contents for that speci
 The `syllabus.json` file should contain the syllabus for the current semester formatted as a JSON file. This will need to be converted into corpus chunks and added to `rag_corpus.txt`. 
 
 ### courseInstances 
-This folder contains data from each semester that the course is taught. This includes the syllabus and the captions from the recorded lectures (`.srt`, `.json`, `.txt` files). I create an outline.json file and define subtopics within the lecture. Those subtopics have a time_range, which is easy to define if you watch the recordings. There is a feature on bCourses, which allows you to create bookmarks. I used that to generate the `time_range` field entries. You should also tag those bookmarks, e.g., `Fa25-L1a-1.0`. This will also help students to navigate to the correct part of the video as they only have to enter that tag into the search and they will find the correct part of the video. This part is a non-trivial amount of work, but I believe it is essential for student learning. I don't recommend just uploading the closed caption data and asking it to create  an `outline.json` file. If an example is solved during lecture, I recommend having the solution in a Jupyter notebook, formatted in a specific way, so that we can convert that to a `.json` file to be placed in the `examples` folder. 
+This folder contains data from each semester that the course is taught. This includes the syllabus and the captions from the recorded lectures (`.srt`, `.json`, `.txt` files). We create an outline.json file and define subtopics within the lecture. Those subtopics have a time_range, which is easy to define if you watch the recordings. There is a feature on bCourses, which allows you to create bookmarks. We used that to generate the `time_range` field entries. You should also tag those bookmarks, e.g., `Fa25-L1a-1.0`. This will also help students to navigate to the correct part of the video as they only have to enter that tag into the search and they will find the correct part of the video. This part is a non-trivial amount of work, but we believe it is essential for student learning. We don't recommend just uploading the closed caption data and asking it to create  an `outline.json` file. If an example is solved during lecture, We recommend having the solution in a Jupyter notebook and placed in the `examples/jupyterNotebooks` folder. 
 
-The `"tags"` `"alpha"` means that the `"subtopics"` is ready for review by the GSI or Reader. The `"tags"` `"beta"` means that the `"subtopics"` is ready for review by the Instructor. LaTeX equations will be formatted differently in a `.json` file. Each `\` requires another `\`, i.e., `\\`. 
+The `"subtopics"` `"tags"` `"alpha"` means that the `"subtopics"` is ready for review by the GSI or Reader. The `"tags"` `"beta"` means that the `"subtopics"` is ready for review by the Instructor. LaTeX equations will be formatted differently in a `.json` file. Each `\` requires another `\`, i.e., `\\`. The script `_convert_outlines_to_rag.py` is able to convert from JSON to LaTeX formatted equations and add them to the `rag_corpus.txt`.
 
-Original LaTeX entry: `$\mathbf{h_{\text{in}} = h_{\text{out}}}$` 
+Original LaTeX entry in the Jupyter notebook: `$\mathbf{h_{\text{in}} = h_{\text{out}}}$` 
 
-Needs to be written as: `$\\mathbf{h_{\\text{in}} = h_{\\text{out}}}$`
+Needs to be written as in the `outline.json` file: `$\\mathbf{h_{\\text{in}} = h_{\\text{out}}}$`
 
-Here is an example of an input outline.json file:
+Here is an example of an input outline.json file, which doesn't include `"detailed_summary"`:
 
 ```json
 {
