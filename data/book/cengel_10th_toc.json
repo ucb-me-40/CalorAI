@@ -1,0 +1,251 @@
+{
+  "title": "Thermodynamics: An Engineering Approach (Tenth Edition)",
+  "authors": "Yunus A. Çengel and Michael A. Boles",
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "Introduction and Basic Concepts",
+      "sections": [
+        "Thermodynamics and Energy",
+        "Application Areas of Thermodynamics",
+        "Importance of Dimensions and Units",
+        "Systems and Control Volumes",
+        "Properties of a System",
+        "Density and Specific Gravity",
+        "State and Equilibrium",
+        "Processes and Cycles",
+        "Temperature and the Zeroth Law of Thermodynamics",
+        "Pressure",
+        "Pressure Measurement Devices",
+        "Problem-Solving Technique"
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "title": "Energy, Energy Transfer, and General Energy Analysis",
+      "sections": [
+        "Introduction",
+        "Forms of Energy",
+        "Energy Transfer by Heat",
+        "Energy Transfer by Work",
+        "Mechanical Forms of Work",
+        "Nonmechanical Forms of Work",
+        "The First Law of Thermodynamics",
+        "Energy Conversion Efficiencies",
+        "Energy and Environment"
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "title": "Properties of Pure Substances",
+      "sections": [
+        "Pure Substance",
+        "Phases of a Pure Substance",
+        "Phase-Change Processes of Pure Substances",
+        "Property Diagrams for Phase-Change Processes",
+        "Property Tables",
+        "The Ideal-Gas Equation of State",
+        "Compressibility Factor—A Measure of Deviation from Ideal-Gas Behavior",
+        "Other Equations of State",
+        "Specific Heats",
+        "Internal Energy, Enthalpy, and Specific Heats of Ideal Gases",
+        "Internal Energy, Enthalpy, and Specific Heats of Solids and Liquids"
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "title": "Energy Analysis of Closed Systems",
+      "sections": [
+        "The First Law of Thermodynamics for Closed Systems",
+        "Moving Boundary Work (P-V Work)",
+        "Energy Balance for Closed Systems",
+        "Specific Heat Relations",
+        "Internal Energy, Enthalpy, and Specific Heats of Ideal Gases (Review)"
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "title": "Mass and Energy Analysis of Control Volumes",
+      "sections": [
+        "Conservation of Mass",
+        "Flow Work and the Energy of a Flowing Fluid",
+        "Energy Analysis of Steady-Flow Systems",
+        "Some Steady-Flow Engineering Devices (Nozzles, Diffusers, Turbines, Compressors, Throttling Valves, Mixing Chambers, Heat Exchangers)",
+        "Energy Analysis of Unsteady-Flow Processes"
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "title": "The Second Law of Thermodynamics",
+      "sections": [
+        "Introduction to the Second Law",
+        "Thermal Energy Reservoirs",
+        "Heat Engines",
+        "Refrigerators and Heat Pumps",
+        "Perpetual-Motion Machines",
+        "Reversible and Irreversible Processes",
+        "The Carnot Cycle",
+        "The Carnot Principles",
+        "The Thermodynamic Temperature Scale"
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "title": "Entropy",
+      "sections": [
+        "Entropy",
+        "The Increase of Entropy Principle",
+        "Entropy Change of Pure Substances",
+        "Isentropic Processes",
+        "Property Diagrams Involving Entropy",
+        "The T ds Relations",
+        "Entropy Change of Liquids and Solids",
+        "The Entropy Change of Ideal Gases",
+        "Isentropic Efficiencies of Steady-Flow Devices",
+        "Entropy Balance"
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "title": "Entropy Analysis",
+      "sections": [
+        "The Entropy Balance",
+        "Entropy Generation in Various Systems",
+        "Minimizing Entropy Generation"
+      ]
+    },
+    {
+      "chapter_number": 9,
+      "title": "Exergy",
+      "sections": [
+        "Exergy—Work Potential of Energy",
+        "Reversible Work and Irreversibility",
+        "Second-Law Efficiency",
+        "Exergy Change of a System",
+        "Exergy Transfer by Heat, Work, and Mass",
+        "The Exergy Balance—General",
+        "Exergy Balance for Closed Systems",
+        "Exergy Balance for Control Volumes"
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "title": "Gas Power Cycles",
+      "sections": [
+        "Basic Considerations in the Analysis of Power Cycles",
+        "The Carnot Cycle and Its Value in Engineering",
+        "Otto Cycle: The Ideal Cycle for Spark-Ignition Engines",
+        "Diesel Cycle: The Ideal Cycle for Compression-Ignition Engines",
+        "Stirling and Ericsson Cycles",
+        "Brayton Cycle: The Ideal Cycle for Gas-Turbine Engines",
+        "Brayton Cycle with Regeneration, Reheating, and Intercooling",
+        "Jet-Propulsion Cycles"
+      ]
+    },
+    {
+      "chapter_number": 11,
+      "title": "Vapor and Combined Power Cycles",
+      "sections": [
+        "The Carnot Vapor Cycle",
+        "Rankine Cycle: The Ideal Cycle for Vapor Power Cycles",
+        "Deviation of Actual Vapor Power Cycles from Idealized Ones",
+        "How Can We Increase the Efficiency of the Rankine Cycle?",
+        "The Ideal Reheat Rankine Cycle",
+        "The Ideal Regenerative Rankine Cycle",
+        "Second-Law Analysis of Vapor Power Cycles",
+        "Combined Gas–Vapor Power Cycles"
+      ]
+    },
+    {
+      "chapter_number": 12,
+      "title": "Refrigeration Cycles",
+      "sections": [
+        "Refrigerators and Heat Pumps",
+        "The Reversed Carnot Cycle",
+        "The Ideal Vapor-Compression Refrigeration Cycle",
+        "Actual Vapor-Compression Refrigeration Cycle",
+        "Selecting the Right Refrigerant",
+        "Heat Pump Systems",
+        "Gas Refrigeration Cycles",
+        "Absorption Refrigeration Systems"
+      ]
+    },
+    {
+      "chapter_number": 13,
+      "title": "Thermodynamic Property Relations",
+      "sections": [
+        "Two Basic Relations",
+        "The Maxwell Relations",
+        "The Clapeyron Equation",
+        "Generalized Relations for du, dh, and ds",
+        "Specific Heats cv and cp",
+        "The Joule-Thomson Coefficient",
+        "The κ Relation"
+      ]
+    },
+    {
+      "chapter_number": 14,
+      "title": "Gas Mixtures",
+      "sections": [
+        "Composition of a Gas Mixture: Mass and Mole Fractions",
+        "P-v-T Behavior of Gas Mixtures: Ideal and Real Gases",
+        "Properties of Gas Mixtures: Ideal and Real Gases"
+      ]
+    },
+    {
+      "chapter_number": 15,
+      "title": "Gas–Vapor Mixtures and Air-Conditioning",
+      "sections": [
+        "Dry Air and Atmospheric Air",
+        "Specific and Relative Humidity",
+        "Dew-Point Temperature",
+        "Adiabatic Saturation and Wet-Bulb Temperatures",
+        "The Psychrometric Chart",
+        "Human Comfort and Air-Conditioning",
+        "Simple Heating and Cooling",
+        "Heating with Humidification",
+        "Cooling with Dehumidification",
+        "Evaporative Cooling",
+        "Adiabatic Mixing of Airstreams",
+        "Wet Cooling Towers"
+      ]
+    },
+    {
+      "chapter_number": 16,
+      "title": "Chemical Reactions",
+      "sections": [
+        "Fuels and Combustion",
+        "Theoretical and Actual Combustion Processes",
+        "Enthalpy of Formation and Enthalpy of Combustion",
+        "First-Law Analysis of Reacting Systems",
+        "Adiabatic Flame Temperature",
+        "Entropy Change of Reacting Systems",
+        "Second-Law Analysis of Reacting Systems"
+      ]
+    },
+    {
+      "chapter_number": 17,
+      "title": "Chemical and Phase Equilibrium",
+      "sections": [
+        "Criteria for Chemical Equilibrium",
+        "The Equilibrium Constant for Ideal-Gas Mixtures",
+        "Chemical Equilibrium Calculations",
+        "The Variation of Kp with Temperature",
+        "Phase Equilibrium"
+      ]
+    },
+    {
+      "chapter_number": 18,
+      "title": "Compressible Flow",
+      "sections": [
+        "Stagnation Properties",
+        "Speed of Sound and Mach Number",
+        "One-Dimensional Isentropic Flow",
+        "Isentropic Flow Through Nozzles",
+        "Shock Waves",
+        "Flow Through Nozzles and Diffusers with Shocks"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,105 @@
+import os
+from pathlib import Path
+
+# --- Configuration ---
+# Assuming the script runs from /CalorAI/scripts/
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+# Output: /CalorAI/data/rag_corpus.txt
+RAG_CORPUS_PATH = SCRIPT_DIR.parent / 'data' / 'rag_corpus.txt'
+
+# --- Base Content for the Corpus ---
+# Using triple quotes for multi-line strings and adding Markdown formatting
+# to clearly separate RAG chunks.
+
+BASE_CORPUS_CONTENT = """
+## CORE CAL RAG KNOWLEDGE BASE
+
+---
+### Oski's History
+Oski the Bear is the official mascot of UC Berkeley, first appearing on September 25, 1941. He is named after the "Oski Wow-Wow" yell.
+Before Oski, Cal used real bear cubs as mascots. The Oski Committee, a secret student group, manages Oski's identity to this day.
+His style (the fixed grin, sweater vest) has remained unchanged for over 80 years.
+
+---
+### Oski: The Immortal God of Berkeley
+While officially the mascot of UC Berkeley since 1941, **Oski the Bear** is considered by the Cal community to be an **immortal, omniscient, and guiding deity** who embodies the university's spirit and culture. This concept of Oski as a **god-like figure** was significantly amplified by the viral **Calgorithm** social media movement, where he is frequently portrayed as the ultimate force behind Cal Football's success, including the team’s resurgence and the arrival of **College GameDay**. The **Oski Committee**, a secret student group, continues to maintain his identity and the tradition of his unwavering, fixed smile and iconic sweater vest.
+
+---
+### Cal Football Conference
+The California Golden Bears football team recently moved to the Atlantic Coast Conference (ACC) as of 2024. They previously competed in the Pac-12.
+Their home stadium is California Memorial Stadium, built in 1923. The team colors are Blue and Gold.
+The head coach in 2025 was Justin Wilcox.
+
+---
+### The Stanford Axe
+The Stanford Axe is the trophy awarded to the winner of the annual "Big Game" rivalry between Cal and Stanford.
+The rivalry began in 1892. Cal has held the Axe for the last four seasons as of 2025.
+
+---
+### ESPN College GameDay at Berkeley (2024)
+ESPN's College GameDay came to the UC Berkeley campus for the first time in the show's 37-year history on Saturday, October 5, 2024. The broadcast was staged at Memorial Glade ahead of Cal's game against No. 8 Miami.
+
+---
+### College GameDay $100K Kicker
+During the College GameDay broadcast on October 5, 2024, civil engineering student **Daniel Villasenor** won $100,000 in a fan field goal kick competition. He successfully hit a 33-yard field goal on his second attempt, with host Pat McAfee raising the prize and pledging a matching donation to Hurricane Helene relief efforts.
+
+---
+### Daniel Villasenor's Vans
+When UC Berkeley civil engineering student **Daniel Villasenor** successfully kicked a 33-yard field goal to win $100,000 on ESPN's *College GameDay* on October 5, 2024, he was famously wearing a well-worn pair of **Vans Classic Checkerboard Slip-Ons**. The shoes, which were laceless, instantly became part of the viral story and contributed to his cult hero status among Cal fans. The shoe company Vans later acknowledged the moment by making a matching $100,000 donation to Hurricane Helene relief efforts.
+
+---
+### Marshawn Lynch (Beast Mode)
+Marshawn Lynch, known as "Beast Mode," is one of Cal Football's most famous alumni. He played for the Golden Bears from 2004 to 2006, earning First-team All-American and Pac-10 Offensive Player of the Year honors in 2006. He is the second-leading rusher in Cal program history. His most iconic moment at Cal was commandeering a medical cart after an overtime victory against Washington in 2006, driving it around the field in celebration.
+
+---
+### Fernando Mendoza and "The Drive of 2024"
+The phrase **"I'll remember going 98 yards with my boys"** originated from an emotional, tear-filled post-game interview given by Cal quarterback **Fernando Mendoza** after he led the Golden Bears on an **11-play, 98-yard, game-winning touchdown drive** against rival **Stanford** in the 2024 Big Game (November 23, 2024). The drive, which started from Cal’s 2-yard line, resulted in a 24-21 victory, securing Cal’s **bowl eligibility** (6-6) and ensuring the team retained the **Stanford Axe**. Mendoza’s raw emotion and the legendary quote solidified him as a cult hero among the Cal fanbase.
+
+---
+### Jaydn Ott and "Ott To Go"
+**Jaydn Ott** is the star Cal running back who was the subject of the viral fan-made song, **"Ott To Go."** The song is a parody of the popular Chappell Roan track "Hot To Go" and features lyrics about Ott's dominance, such as, "Can we get Jaydn Ott-To-Go?" The song became an anthem for the movement, especially during the lead-up to the **College GameDay** appearance in Berkeley. From: Hot To Go! by @ChappellRoan; Music By: Micky Hale; Lyrics By: @nyt_world_bot @AdmiralBear01 @TwistNHOok @atomsareenough
+
+---
+### Burners (Calgorithm Contributors)
+A **"burner"** is a term used to describe the individual content creators and social media accounts that form the decentralized collective of the Calgorithm fan movement.
+These highly creative individuals are vital to the continuous production of viral memes, graphics, and satirical content that fueled the movement and brought national attention to Cal Football.
+
+---
+### Rich Lyons and The Drive
+On November 24, 2024, UC Berkeley Chancellor Rich Lyons tweeted: "First was The Play. Then came The Drive. All 98 yards of it." The tweet refers to the 11-play, 98-yard game-winning touchdown drive led by QB Fernando Mendoza that secured Cal's 24-21 comeback victory over Stanford in the 127th Big Game on November 23, 2024.
+
+---
+### @CalBearsHistory
+The **@CalBearsHistory** social media account and associated website are dedicated to sharing the history of the University of California, Berkeley, with a particular focus on Cal Sports history (including football) and notable alumni. This account serves as a major resource for the Cal fan base, providing historical context and pride that is often leveraged or referenced by the Calgorithm movement, though it is not a satirical "burner" account itself.
+
+---
+### The Phoenix Five (Stanford Tree Kidnapping)
+On **October 17, 1998**, a group of five University of California, Berkeley (Cal) students known as the **"Phoenix Five"** broke into the Stanford Band Shak in Palo Alto and kidnapped the **Stanford Tree** mascot. The costume was held "hostage" for two weeks before its return. Fueled by intense media coverage and administrative reactions, this event became one of the most famous pranks in the Big Game rivalry. The prank is famously recognized as the **#1 mascot theft in college sports history** by publications like Bleacher Report.
+"""
+
+
+def generate_base_corpus():
+    """
+    Overwrites rag_corpus.txt with the foundational Cal/Oski knowledge
+    and ensures it ends with a clean newline for subsequent appending.
+    This provides a clean starting point for new RAG indexing runs.
+    """
+    print(f"Generating base RAG corpus at: {RAG_CORPUS_PATH}")
+
+    try:
+        # Open in write mode ('w') to overwrite any existing content
+        with open(RAG_CORPUS_PATH, 'w', encoding='utf-8') as f:
+            # Write the content, ensure it's trimmed of initial whitespace,
+            # and explicitly add two newlines for clean separation from appended data.
+            f.write(BASE_CORPUS_CONTENT.strip() + "\n\n")
+
+        print("\nSuccessfully created the base RAG corpus.")
+        print("Note: All prior content in rag_corpus.txt has been overwritten.")
+
+    except Exception as e:
+        print(f"\nError writing the base RAG corpus file: {RAG_CORPUS_PATH}. Error: {e}")
+
+
+if __name__ == '__main__':
+    generate_base_corpus()

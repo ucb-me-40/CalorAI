@@ -25,7 +25,7 @@
       "summary": "Import transformations are those for which the initial and final states are the same. They are called cyclical transformations or cycles.",
       "time_range": "00:16 - 02:37",
       "topics": ["Energy"],
-      "detailed_summary": "A **thermodynamic cycle** is defined as a series of **processes** that returns the system to its initial **state** ($\\\\Delta E=0$). Cycles are a primary focus for mechanical engineers, as they are crucial for technologies like **jet propulsion** and **electricity generation**, which convert **heat into work** and vice versa.",
+      "detailed_summary": "A **thermodynamic cycle** is defined as a series of **processes** that returns the system to its initial **state** ($\\Delta E=0$). Cycles are a primary focus for mechanical engineers, as they are crucial for technologies like **jet propulsion** and **electricity generation**, which convert **heat into work** and vice versa.",
       "examples": [""],
       "tags":["tschutzius","beta"]
     },
@@ -55,7 +55,7 @@
       "summary": "In this example Prof Schutzius shows a molecular dynamics simulation and how heat is transferred at the molecular scale. ",
       "time_range": "06:24 - 11:11",
       "topics": ["Energy"],
-      "ddetailed_summary": "Energy is exchanged between systems when **thermal energy moves from a region of high concentration to one of low concentration**. This process continues until **thermal equilibrium** is reached, where all parts of the system are at the same temperature and **no further heat transfer occurs**. A molecular dynamics simulation can demonstrate this: a partition of high-velocity (hot) molecules will cool down, while a partition of low-velocity (cold) molecules will increase in temperature until they reach the same, intermediate temperature. The **direction of heat transfer** is determined *only* by the **temperature difference ($\\\\Delta T$)** and is independent of the mass or total internal energy of the objects involved. When two systems are in contact but **mass transfer is not allowed**, the boundary is referred to as a **diathermal wall**.",
+      "ddetailed_summary": "Energy is exchanged between systems when **thermal energy moves from a region of high concentration to one of low concentration**. This process continues until **thermal equilibrium** is reached, where all parts of the system are at the same temperature and **no further heat transfer occurs**. A molecular dynamics simulation can demonstrate this: a partition of high-velocity (hot) molecules will cool down, while a partition of low-velocity (cold) molecules will increase in temperature until they reach the same, intermediate temperature. The **direction of heat transfer** is determined *only* by the **temperature difference ($\\Delta T$)** and is independent of the mass or total internal energy of the objects involved. When two systems are in contact but **mass transfer is not allowed**, the boundary is referred to as a **diathermal wall**.",
       "examples": [""],
       "tags":["tschutzius","beta"]
     },
@@ -65,7 +65,7 @@
       "summary": "",
       "time_range": "11:12 - 14:23",
       "topics": ["Energy"],
-      "detailed_summary": "For a **closed system** (a fixed mass that does not cross the boundary), the **First Law of Thermodynamics** states that the only two ways to exchange energy with the surroundings are through **heat or work**. This is the fundamental definition of a closed system. The **direction of heat transfer** is determined *only* by the **temperature difference ($\\\\Delta T$)**, moving from the higher temperature region to the lower temperature region. Conversely, **work** is any energy transfer mechanism *other than* heat.",
+      "detailed_summary": "For a **closed system** (a fixed mass that does not cross the boundary), the **First Law of Thermodynamics** states that the only two ways to exchange energy with the surroundings are through **heat or work**. This is the fundamental definition of a closed system. The **direction of heat transfer** is determined *only* by the **temperature difference ($\\Delta T$)**, moving from the higher temperature region to the lower temperature region. Conversely, **work** is any energy transfer mechanism *other than* heat.",
       "examples": [""],
       "tags":["tschutzius","beta"]
     },
@@ -85,7 +85,7 @@
       "summary": "",
       "time_range": "20:03 - 21:05",
       "topics": ["Energy"],
-      "detailed_summary": "An **adiabatic process** is one in which there is absolutely **no heat transfer** ($Q=0$). This occurs when the system boundary is perfectly insulated, which is called an **adiabatic wall**. The first law of thermodynamics for a closed system ($\\\\Delta U = Q - W$) simplifies to $\\\\Delta U = -W$ for an adiabatic process, meaning the change in internal energy is due entirely to **work**. The discussion clarifies the difference between an adiabatic process, which only means $Q=0$, and a **reversible** process, which means there are no entropy-generating irreversibilities like friction.",
+      "detailed_summary": "An **adiabatic process** is one in which there is absolutely **no heat transfer** ($Q=0$). This occurs when the system boundary is perfectly insulated, which is called an **adiabatic wall**. The first law of thermodynamics for a closed system ($\\Delta U = Q - W$) simplifies to $\\Delta U = -W$ for an adiabatic process, meaning the change in internal energy is due entirely to **work**. The discussion clarifies the difference between an adiabatic process, which only means $Q=0$, and a **reversible** process, which means there are no entropy-generating irreversibilities like friction.",
       "examples": [""],
       "tags":["tschutzius","beta"]
     },
@@ -95,7 +95,7 @@
       "summary": "",
       "time_range": "21:06 - 29:42",
       "topics": ["Energy"],
-      "detailed_summary": "For a **closed system** (a fixed mass with no mass crossing the boundary), the **only** two ways to exchange energy with the surroundings are through **heat or work**. Work transfer is commonly illustrated by the **expansion and contraction** of a gas in a piston-cylinder device. The definitive method to classify an energy transfer is to ask if it is heat: **heat transfer** requires a **temperature difference ($\\\\Delta T$)** across the boundary. If the energy transfer in a closed system occurs with **no temperature difference**, it must be classified as **work**. For example, **electrical energy input** (from a resistor) into a closed system is considered work, as its transfer does not inherently depend on a $\\\\Delta T$ across the boundary. Therefore, the **choice of the system boundary** is a critical first step in determining the nature of the energy exchange.",
+      "detailed_summary": "For a **closed system** (a fixed mass with no mass crossing the boundary), the **only** two ways to exchange energy with the surroundings are through **heat or work**. Work transfer is commonly illustrated by the **expansion and contraction** of a gas in a piston-cylinder device. The definitive method to classify an energy transfer is to ask if it is heat: **heat transfer** requires a **temperature difference ($\\Delta T$)** across the boundary. If the energy transfer in a closed system occurs with **no temperature difference**, it must be classified as **work**. For example, **electrical energy input** (from a resistor) into a closed system is considered work, as its transfer does not inherently depend on a $\\Delta T$ across the boundary. Therefore, the **choice of the system boundary** is a critical first step in determining the nature of the energy exchange.",
       "examples": [""],
       "tags":["tschutzius","beta"]
     },
@@ -105,7 +105,7 @@
       "summary": "",
       "time_range": "29:43 - 32:59",
       "topics": ["Energy"],
-      "detailed_summary": "The section summarizes the **First Law of Thermodynamics** for a **closed system** as $\\\\Delta U = Q_{in} - W_{out}$. This relationship shows that the change in **Internal Energy ($\\\\Delta U$)** is equal to the net energy transferred via heat and work. The terms are carefully distinguished: **Internal Energy ($U$)** is a **property** that only depends on the start and end states (point function), while **Heat ($Q$)** and **Work ($W$)** are **path functions** (requiring knowledge of the entire process). The two primary idealized cases discussed are: 1) The **adiabatic process** ($Q=0$), where $\\\\Delta U = -W$, meaning the change in internal energy is due entirely to work; and 2) The **constant volume process** (such as isochoric heating), where $W=0$, and $\\\\Delta U = Q$.",
+      "detailed_summary": "The section summarizes the **First Law of Thermodynamics** for a **closed system** as $\\Delta U = Q_{in} - W_{out}$. This relationship shows that the change in **Internal Energy ($\\Delta U$)** is equal to the net energy transferred via heat and work. The terms are carefully distinguished: **Internal Energy ($U$)** is a **property** that only depends on the start and end states (point function), while **Heat ($Q$)** and **Work ($W$)** are **path functions** (requiring knowledge of the entire process). The two primary idealized cases discussed are: 1) The **adiabatic process** ($Q=0$), where $\\Delta U = -W$, meaning the change in internal energy is due entirely to work; and 2) The **constant volume process** (such as isochoric heating), where $W=0$, and $\\Delta U = Q$.",
       "examples": [""],
       "tags":["tschutzius","beta"]
     },
@@ -115,7 +115,7 @@
       "summary": "Consider a closed system. Shaft work is transferred in and heat is transferred out. The initial internal energy is given. Determine the final internal energy. ",
       "time_range": "33:00 - 43:06",
       "topics": ["Energy"],
-      "detailed_summary": "This section solves an energy balance problem (a paddle work example) by applying the **First Law of Thermodynamics** to a **closed system**. The problem involves **shaft work input** ($W_{in}$) from a paddle wheel and **heat output** ($Q_{out}$) to the surroundings. The change in internal energy ($\\\\Delta U$) is calculated using the form $\\\\mathbf{U_2 - U_1 = W_{in} - Q_{out}}$.",
+      "detailed_summary": "This section solves an energy balance problem (a paddle work example) by applying the **First Law of Thermodynamics** to a **closed system**. The problem involves **shaft work input** ($W_{in}$) from a paddle wheel and **heat output** ($Q_{out}$) to the surroundings. The change in internal energy ($\\Delta U$) is calculated using the form $\\mathbf{U_2 - U_1 = W_{in} - Q_{out}}$.",
       "examples": ["energyTransferClosedSystem"],
       "tags":["tschutzius","beta"]
     },
@@ -125,7 +125,7 @@
       "summary": "For a closed system undergoing a cycle, the initial and final states are identical.",
       "time_range": "43:07 - 46:19",
       "topics": ["Energy"],
-      "detailed_summary": "This section serves as a final review, reiterating that energy transfer for a **closed system** (fixed mass) occurs exclusively through **heat ($Q$) or work ($W$)**. For a **thermodynamic cycle**, since the initial and final states are identical, the change in internal energy is zero ($\\\\mathbf{\\\\Delta U = 0}$). Therefore, the **First Law of Thermodynamics** for a cycle simplifies to state that the **net work must equal the net heat transfer** ($\\\\mathbf{W_{net} = Q_{net}}$). This emphasizes that work and heat are **path functions**, while internal energy is a **property** (state function).",
+      "detailed_summary": "This section serves as a final review, reiterating that energy transfer for a **closed system** (fixed mass) occurs exclusively through **heat ($Q$) or work ($W$)**. For a **thermodynamic cycle**, since the initial and final states are identical, the change in internal energy is zero ($\\\\mathbf{\\Delta U = 0}$). Therefore, the **First Law of Thermodynamics** for a cycle simplifies to state that the **net work must equal the net heat transfer** ($\\mathbf{W_{net} = Q_{net}}$). This emphasizes that work and heat are **path functions**, while internal energy is a **property** (state function).",
       "examples": [""],
       "tags":["tschutzius","beta"]
     }

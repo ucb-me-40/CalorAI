@@ -14,7 +14,7 @@
       "title": "Introduction to Entropy ($S$).",
       "summary": "",
       "time_range": "00:00 - 04:06",
-      "detailed_summary": "The lecture begins by introducing the concept of \\textbf{entropy} ($S$) and its utility in \\textbf{isentropic processes}. The instructor notes that entropy is a \"weird thing\" that cannot be directly measured. The \\textbf{Temperature-Entropy (TS) diagram} is introduced as a more useful tool than the Pressure-Volume (PV) diagram for analyzing \\textbf{power cycles}. The four-step \\textbf{Carnot cycle} (two isothermal, two isentropic processes) is illustrated on the TS diagram, where the area enclosed represents the \\textbf{net heat in} (which equals the \\textbf{net work out}) for the cycle. Entropy is presented as a helpful \"compass\" to guide process analysis and determine power output.",
+      "detailed_summary": "The lecture begins by introducing the concept of \\textbf{entropy} ($S$) and its utility in \\textbf{isentropic processes}. The instructor notes that entropy is a weird thing that cannot be directly measured. The \\textbf{Temperature-Entropy (TS) diagram} is introduced as a more useful tool than the Pressure-Volume (PV) diagram for analyzing \\textbf{power cycles}. The four-step \\textbf{Carnot cycle} (two isothermal, two isentropic processes) is illustrated on the TS diagram, where the area enclosed represents the \\textbf{net heat in} (which equals the \\textbf{net work out}) for the cycle. Entropy is presented as a helpful compass to guide process analysis and determine power output.",
       "tags":["tschutzius","beta"]
 
     },
@@ -33,7 +33,7 @@
       "summary": "Entropy is a property just like any of the others we determined.",
       "time_range": "18:08 - 19:52",
       "topics": ["Entropy"],
-      "detailed_summary": "This section serves as a conceptual transition, reminding the class that \\textbf{entropy ($S$) is a thermodynamic property} like internal energy ($U$) or enthalpy ($H$). For a pure substance, determining two independent properties provides complete information, including the value of specific entropy ($s$). The instructor reinforces the importance of \\textbf{TS (Temperature-Entropy) diagrams} for analyzing power and gas cycles and emphasizes that entropy is \\textbf{not a path function}. The discussion concludes with a reflection on the formula $\\mathbf{dS = \\delta Q / T}$, which implies that energy has a \"value\" or \"quality\" (the essence of the Second Law of Thermodynamics).",
+      "detailed_summary": "This section serves as a conceptual transition, reminding the class that \\textbf{entropy ($S$) is a thermodynamic property} like internal energy ($U$) or enthalpy ($H$). For a pure substance, determining two independent properties provides complete information, including the value of specific entropy ($s$). The instructor reinforces the importance of \\textbf{TS (Temperature-Entropy) diagrams} for analyzing power and gas cycles and emphasizes that entropy is \\textbf{not a path function}. The discussion concludes with a reflection on the formula $\\mathbf{dS = \\delta Q / T}$, which implies that energy has a value or quality (the essence of the Second Law of Thermodynamics).",
       "tags":["tschutzius","beta"]
     },
     {
