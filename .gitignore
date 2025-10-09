@@ -13,5 +13,5 @@ wandb/
 chroma_db/
 phi3_oski_adapter/
 results/
-
+phi3_calorai/adapter/
 
