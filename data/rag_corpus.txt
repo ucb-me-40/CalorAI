@@ -76,6 +76,156 @@ DO NOT ASSUME Ideal Gas Behavior (Steam is a real substance, not an ideal gas).
 
 
 
+---
+## pyCalor Documentation (State and Process Classes)
+**Source:** pyCalor README.md
+## Class **state**  
+
+A call
+
+`from pyCalor import thermo as th`
+
+`st = th.state(substance, property1=value1, property2=value2, name="A")`  
+
+creates an object of class `state`. Each such object contains the following fields:  
+
+
+| - | name | description |
+| :-----------: | :--------------: | :-------------------------: |
+| `st.p` | pressure | (in units of kPa)  |
+| `st.t` | temperature | (in units of K)  |
+| `st.v` | specific volume | (in units of m3/kg)  |
+| `st.u` | specific energy | (in units of kJ/kg)  |
+| `st.h` | specific enthalpy | (in units of kJ/kg)  |
+| `st.s` | specific entropy | (in units of kJ/kg K)  |
+| `st.x` | quality | (fraction)  |
+| `st.molW` | molecular weight | (in units of kg/kmol)  |
+| `st.R` | gas constant | (in units of kJ/kg K)  |
+| `st.substance` | 'water', 'air', 'nitrogen', ... | ()  |
+
+The property values are in the “base units”; they can be viewed by issuing a command:
+
+`th.state.units`
+
+Examples:
+
+`from pyCalor import thermo as th`
+
+`th.state.units`
+
+`st1 = th.state('water', p=(1,'bar'), v=0.1, name="1")`
+
+`st1.plot("pv") # supported plots are: "pv","Ts","ph"`
+
+`st2 = th.state('R134a', x=1, t=300, name="B")`  
+
+`st2.plot("Ts", isoProp="v")`
+
+`fig1 = st2.plot("Ts",isoProp="v")`
+
+`fig1.savefig("figure_1.jpg")`
+
+`st3 = th.state('air', p=(1,'Mpa'), t=(10,'c'))` 
+
+`st3.name = "2a"`
+
+This information can also be viewed in the programming environment: 
+
+`print(th.state.__doc__)`  
+  
+
+## Class process
+
+A call
+
+`from pyCalor import thermo as th`
+
+`pr = th.process([(state1,state2),(state2,state3),...])`
+
+creates an object of class process. An object of this class represent a simple process, from `st1` to `st2`,
+
+`pr = th.process([st1,st2])`
+
+a simple cyclic process,
+
+`pr = th.process([(st1,st2),(st2,st3),(st3,st4),(st4,st1)])`,
+
+which can also be created as 
+
+`pr = th.process(st1,st2,st3,st4,st1)`,
+
+or any complex process, but for a single working fluid.  
+
+You can access process object properties by the following calls
+
+|  |  description |
+| :----------- | :--------------: |
+| `pr.StateList` | returns a list of `state` objects| 
+| `pr.isoProp(st1,st2)` | returns a dictionary of `{isoProperty: value,...}` for process `st1` &rarr; `st2` |
+
+Once you created process object `pr`, you can display its states on a thermodynamic diagram via  
+
+`fig2 = pr.plot('ts')`   
+
+to display process `pr` on a *T-s* diagram; you may likewise to make such plot in other coordinates, like `'pv'`, `'ph'`, etc.  You can also save this figure via
+
+`fig2.savefig("figure_2.pdf")`
+
+This information can also be viewed in the programming environment:
+
+`print(th.process.__doc__)`
+
+Example:
+
+`st1 = th.state('water', p=( 1,'bar'), x=0, name="A")`
+
+`st2 = th.state('water', p=(20,'bar'), s=st1.s,name="B")`
+
+`st3 = th.state('water', p=(20,'bar'), x=1,name="C")`
+
+`st4 = th.state('water', p=( 1,'bar'), s=st3.s, name="D")`
+
+`pr = th.process([(st1,st2),(st2,st3),(st3,st4),(st4,st1)])`
+
+`fig4 = pr.plot("pv")`
+
+`fig4.savefig("figure_4.pdf")`
+
+## Function hf_rec
+
+A call
+
+`from pyCalor import thermo as th`
+
+`rec = th.hf_rec(substance)`
+
+returns a record for standard enthalpy of formation of substance @ T=25 C. 
+
+`substance` is either a name or formula; e.g., 'methanol vapor' or 'ch3oh(g)'. 
+
+`rec` is a dictionary with 'name', 'formula', 'Hf' in kJ/kmol,  and 'molw' in kg/kmol. 
+
+Then, to get Hf, one can use any of the following commands:
+
+`Hf = rec['Hf']`
+
+`Hf = rec.get('Hf')`
+
+`Hf = th.hf_rec('c2h2').get('Hf')`
+
+To see all substance names and formulas, use 
+
+`th.hf_keys()`
+
+Here's a complete working example:
+
+`from pyCalor import thermo as th`
+
+`rec = th.hf_rec('water')`
+
+`Hf = rec['Hf']`
+
+
 ### TEXTBOOK REFERENCE: Thermodynamics: An Engineering Approach (Ninth Edition)
 **Authors:** Yunus A. Çengel and Michael A. Boles
 
@@ -1023,48 +1173,15 @@ This final segment establishes the two **Carnot Principles**: 1) The efficiency 
 **Lecture References:** Lecture ID: 1_qk0vncag, Key: Fa25-L3a-7.0 (Determine the properties of water at 200 deg. C and 150 kPa)
 **Book Reference:** Book Ch. ?: N/A
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 Based on this plot, we can see that water is in a superheated vapor state. Since it is in a superheated vapor state, that is why pressure and temperature are independent variables. If it was in the saturated liquid-vapor region, that would not be the case.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-T1_C = 200
-p1_kPa = 150
 
-# conversion 
-p1_MPa = p1_kPa/1000
-T1_K = T1_C + 273.15
-```
-```python
-# 6 Calculations (Code Cell)
-!pip install pyCalor
-
-from pyCalor import thermo as th
-water = th.state('Water', p=(p1_kPa,'kPa'), T=(T1_K,'K'), name="1")
-# Here we have used the units 'kPa' and 'K' for pressure and temperature, respectively.
-# For pressure you could also use 'Mpa', 'Pa', etc.
-# For temperature you could also use 'K'.
-
-# From this state, we can now calculate $s_1$ (kJ/(kg K)), $h_1$ (kJ/kg), and specific volume $v_1$ (m$^3$/kg).
-s1 = water.s # kJ/kg*K
-h1 = water.h # kJ/kg
-v1 = water.v # m3/kg
-u1 = water.u # kJ/kg
-
-print('The specific entropy is: {0:1.4f} kJ/kg*K'.format(s1))
-print('The specific enthalpy is: {0:1.4f} kJ/kg'.format(h1))
-print('The specific volume is: {0:1.4f} m3/kg'.format(v1))
-print('The specific internal energy is: {0:1.4f} kJ/kg'.format(u1))
-
-# We can also display this on a plot
-water.plot("pv") # supported plots are: "pv","Ts","ph"
-```
 
 #### Final Summary / Reasoning:
-## 7. Summary and Reasoning
-Based on this plot, we can see that water is in a superheated vapor state. Since it is in a superheated vapor state, that is why pressure and temperature are independent variables. If it was in the saturated liquid-vapor region, that would not be the case.
+
 
 ---
 ### PROBLEM: nitrogenHeatingWorkTransfer
@@ -1073,10 +1190,89 @@ Based on this plot, we can see that water is in a superheated vapor state. Since
 **Lecture References:** Lecture ID: 1_3375c5yj, Key: Fa25-L4c-2.0 (Electrical heating and cooling of a cylinder containing nitrogen at constant pressure)
 **Book Reference:** Book Ch. 4: Energy Analysis of Closed Systems
 
-#### Discussion / Problem Statement:
-## 7. Summary and Reasoning
+#### Problem Statement and Analysis:
+## 1. Problem Statement
+A piston cylinder contains nitrogen initially at 400 kPa, 27$^\circ$C, and 0.5 m$^3$. The piston contains a resistor. The pressure in the piston is kept constant while 120 V is applied to the resistor resulting in 2 A flowing thorugh it for 5 min. The piston is also cooled, transferring 2800 J out. 
 
-We see that the values for $T_2$ are the same for two different approaches. The assumption of constant specific heat values appears to be a good one.
+**Goal**: 
+* Determine the final temperature, $T_2$.
+
+---
+
+## 2. Schematic
+Draw a schematic of a piston cylinder. Show that electrical work is transferred into the piston and heat is transferred out of it. The fluid in the piston cylinder is nitrogen.
+
+---
+
+## 3. Assumptions and Approximations
+* Ideal gas, undergoes quasi-equilibrium expansion or compression
+* Use `pyCalor` to determine nitrogens properties. In an alternative solution we can treat nitrogen as an ideal gas. 
+* Neglect kinetic and potential energy
+* Boundary work is transferred through expansion ($p dV$).
+* Closed system (no mass in or out)
+* Constant values for specific heat
+
+---
+
+## 4. Physical Laws and Governing Equations
+- Conservation of energy
+- Ideal gas law
+
+Conservation of energy: 
+$$\Delta E_\text{CV} = E_\text{in} - E_\text{out} $$
+
+$$\Delta U + \Delta KE + \Delta PE = (W_\text{in} + Q_\text{in}) - (W_\text{out} + Q_\text{out})  $$
+
+Neglect changes in kinetic and potential energy:
+$$\Delta U = (W_\text{in}) - (W_\text{out} + Q_\text{out}) $$
+
+$$ W_\text{out} = p_1 (V_2 - V_1) $$
+
+$$ W_\text{out} = p_1 m (v_2 - v_1) $$
+
+$$ W_\text{in} = \text{V} I \Delta t $$
+
+Combining yields:
+
+$$m (u_2 - u_1) = \text{V} I \Delta t  - p_1 m (v_2 - v_1)  - Q_\text{out} $$
+
+Rearranging:
+
+$$m \left[ \left(u_2 + p_1 v_2\right) - \left( u_1 + p_1 v_1 \right) \right] = \text{V} I \Delta t   - Q_\text{out} $$
+
+Since $p_2 = p_1$, we have:
+
+$$m \left[ \left(u_2 + p_2 v_2\right) - \left( u_1 + p_1 v_1 \right) \right] = \text{V} I \Delta t   - Q_\text{out} $$
+
+The definition of enthalpy is:
+
+$$ h = u + p v$$
+
+Therefore,
+
+$$m \left[ h_2 - h_1 \right] = \text{V} I \Delta t   - Q_\text{out} $$
+
+$$h_2  = \text{V} I \Delta t /m   - Q_\text{out} / m + h_1$$
+
+## Alternative solution
+
+Picking up where we left off with our equation for enthalpy:
+
+$$h_2 = h_1 + (\text{V} I t - Q_\text{out})/m  $$
+
+Recall that we can define changes in enthalpy as:
+
+$$ dh = c_p dT $$
+
+Therefore, for constant specific heats:
+
+$$ h_2 - h_1 = c_p (T_2 - T_1) $$
+
+Substituting yields:
+
+$$T_2 = T_1 + (\text{V} I t - Q_\text{out})/(c_p m)  $$
+
+From the textbook we can determine the specific heat, $c_p$, or we can use pyCalor.
 
 #### Solution Code:
 ```python
@@ -1129,7 +1325,6 @@ print(error*100)
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
-
 We see that the values for $T_2$ are the same for two different approaches. The assumption of constant specific heat values appears to be a good one.
 
 ---
@@ -1139,35 +1334,12 @@ We see that the values for $T_2$ are the same for two different approaches. The 
 **Lecture References:** Lecture ID: 1_97hqf37r, Key: Fa25-L5c-1.0 (Throttling and Expansion Valves)
 **Book Reference:** Book Ch. 5: Mass and Energy Analysis of Control Volumes
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 Since it's an isenthalpic process, we are able to determine the downstream specific enthalpy. By knowing that and the pressure, which is given, we were able to determine the temperature. We also see that the temperature is lower after throttling, which is the purpose of the device.
 
 #### Solution Code:
-```python
-!pip install pyCalor
-```
-```python
-## 5. Properties (Code Cell)
-from pyCalor import thermo as th
 
-mdot_kgPerS = 0.05
-fluid = 'R134a'
-
-# state 3
-p3_MPa = 0.8
-x3 = 0.0
-st3 = th.state(fluid,p=(p3_MPa,'Mpa'),x=x3,name='3')
-
-# state 4
-p4_MPa = 0.15
-# isenthalpic process, 3 to 4, h4 = st3.h
-st4 = th.state(fluid,h=st3.h,p=(p4_MPa,'Mpa'),name='4')
-```
-```python
-## 6 Calculations (Code Cell)
-T4_K = st4.T; print(T4_K)
-```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -1180,7 +1352,7 @@ Since it's an isenthalpic process, we are able to determine the downstream speci
 **Lecture References:** Lecture ID: 1_4ak8fp37, Key: Fa25-L7c-3.0 (Isentropic process: Adiabatic turbine)
 **Book Reference:** Book Ch. 7: Entropy
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 1. Problem Statement
 
 Steam enters an adiabatic turbine at $p_1 =$ 5 MPa and $T_1 =$ 450 $^\circ$ C and exits at $p_2 =$ 1.4 MPa. The process is reversible. 
@@ -1233,6 +1405,9 @@ We know $h_1$ because we have the properties at state 1. We need additional info
 $$s_1 = s_2$$
 
 We can use this information to determine the enthalpy at state 2.
+
+---
+
 ## 7. 💡 Summary and Reasoning
 
 By separating flow work from total work to form the property enthalpy, the work term we calculate is then useful shaft work. The work out per unit mass is a simple formula: 
@@ -1242,100 +1417,9 @@ $$\frac{\dot{W}_\text{out}}{\dot{m}} = h_1 - h_2$$
 * **Key Insight:** For a steady flow system undergoing an **adiabatic** and **reversible** process, this can be considered as an isentropic process. That is useful because it allows us to determine the exit state of the turbine since we also know the exit pressure.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-try:
-    __import__('pyCalor')
-    print(f"Package '{'pyCalor'}' is already installed.")
-except ImportError:
-    print(f"Package '{'pyCalor'}' not found. Installing...")
-    try:
-        subprocess.check_call([sys.executable, "-m", "!pip", "install", pyCalor])
-        print(f"Package '{'pyCalor'}' installed successfully.")
-    except subprocess.CalledProcessError as e:
-        print(f"Error installing '{'pyCalor'}': {e}")
-        sys.exit(1) # Exit if installation fails
 
-from pyCalor import thermo as th
-
-# Constants and Initial State
-p1_MPa = 5 # MPa
-T1_C = 450 # C
-
-p2_MPa = 1.4 # MPa
-
-substance = 'water'
-
-# Determine state 1
-st1 = th.state(substance,T=(T1_C,'C'),p=(p1_MPa,'Mpa'),name='1')
-s1_kJperKgPerK = st1.s
-h1_kJperKg = st1.h
-
-# Determine state 2
-s2_kJperKgPerK = s1_kJperKgPerK
-st2 = th.state(substance,s=(s2_kJperKgPerK,'kJ/kg K'),p=(p2_MPa,'Mpa'),name='2')
-h2_kJperKg = st2.h
-```
-```python
-# 6 Calculations (Code Cell)
-wOut_kJperKg = h1_kJperKg - h2_kJperKg
-
-print(f"Work output per unit mass: {wOut_kJperKg:.2f} kJ/kg")
-```
 
 #### Final Summary / Reasoning:
-## 1. Problem Statement
-
-Steam enters an adiabatic turbine at $p_1 =$ 5 MPa and $T_1 =$ 450 $^\circ$ C and exits at $p_2 =$ 1.4 MPa. The process is reversible. 
-
-**Goal:** Determine the work output per unit mass, $\frac{\dot{W}_\text{out}}{\dot{m}}$.
-
-## 2. Schematic 
-
-Draw a schematic that shows a turbine. Draw the control volume around the turbine. There is a single inlet and oulet for mass to flow in and out. Indicate that it is adiabatic and that work is being transferred out. 
-
-## 3. Assumptions and Approximations
-* **Control Volume** (mass crosses the boundary).
-* Cannot be treated as an ideal gas. We will use pyCalor to determine properties.
-* Neglect kinetic and potential energy ($\Delta KE \approx 0$, $\Delta PE \approx 0$).
-* **Reversible process**.
-* **Adiabatic process**.
-* **Steady-flow process** ($\Delta m_\text{CV}= 0$, $\Delta E_\text{CV}= 0$, $\Delta S_\text{CV}= 0$).
-* We have a single inlet and outlet ($\dot{m}_\text{in}$ and $\dot{m}_\text{out}$).
-
-## 4. Physical Laws
-1.  **First Law of Thermodynamics (Energy Balance for Control Volume):**
-    $$\frac{dE_\text{CV}}{dt} = \dot{E}_\text{in} - \dot{E}_\text{out}$$
-
-2.  **Conservation of Mass (Mass Balance for a Control Volume):**
-    $$\frac{dm_\text{CV}}{dt} = \dot{m}_\text{in} - \dot{m}_\text{out}$$
-
-Since this is a steady flow process, we can write:
-$$\dot{E}_\text{in} = \dot{E}_\text{out}$$
-
-$$\dot{m}_\text{in} = \dot{m}_\text{out} = \dot{m}$$
-
-We can write our conservation of energy equation as:
-$$\dot{W}_\text{in} + \dot{Q}_\text{in} + \dot{m} \left(h_1 + \frac{w_1^2}{2} + g z_1 \right) = \dot{W}_\text{out} + \dot{Q}_\text{out} + \dot{m} \left(h_2 + \frac{w_1^2}{2} + g z_2 \right)$$
-
-Neglecting kinetic and potential energy effects we can write:
-$$\dot{W}_\text{in} + \dot{Q}_\text{in} + \dot{m} \left(h_1 \right) = \dot{W}_\text{out} + \dot{Q}_\text{out} + \dot{m} \left(h_2 \right)$$
-
-Applying the adiabatic assumption:
-$$\dot{W}_\text{in} + \dot{m} \left(h_1 \right) = \dot{W}_\text{out} + \dot{m} \left(h_2 \right)$$
-
-Rearranging:
-$$ \frac{\dot{W}_\text{out} - \dot{W}_\text{in}}{\dot{m}} = h_1 - h_2$$
-
-We expect that work is only transferred out, so $\dot{W}_\text{in} = 0$. We can then write:
-
-$$\frac{\dot{W}_\text{out}}{\dot{m}} = h_1 - h_2$$
-
-We know $h_1$ because we have the properties at state 1. We need additional information in order to determine state 2. Since the turbine is reversible and adiabatic (no heat transfer in), then the process is isentropic. Therefore:
-
-$$s_1 = s_2$$
-
-We can use this information to determine the enthalpy at state 2.
 ## 7. 💡 Summary and Reasoning
 
 By separating flow work from total work to form the property enthalpy, the work term we calculate is then useful shaft work. The work out per unit mass is a simple formula: 
@@ -1351,9 +1435,64 @@ $$\frac{\dot{W}_\text{out}}{\dot{m}} = h_1 - h_2$$
 **Lecture References:** Key: Fa25-L7c-3.0 (Multisage Compressor With Cooling)
 **Book Reference:** Book Ch. 7: Entropy
 
-#### Discussion / Problem Statement:
-## 7. 💡 Summary and Reasoning
-We see that by cooling the air in between the first and second compressor, we do not need to do as much work.
+#### Problem Statement and Analysis:
+## 1. Problem Statement
+Problem 7-190 from Cengels Thermodynamics 9th Edition
+
+Air enters a two-stage compressor at 100 kPa and 27°C and is compressed to 625 kPa. The pressure ratio across each stage is the same, and the air is cooled to the initial temperature between the two stages. 
+
+**Goal**:
+- Assuming the compression process to be isentropic, determine the power input to the compressor for a mass flow rate of 0.15 kg/s.
+- What would your answer be if only one stage of compression were used?
+
+---
+
+## 2. Schematic
+Draw two compressors connected in series. State 1 and 2 are the inlet and outlet of the first air compressor, respectively. States 3 and 4 are at the inlet and exit of the second air compressor, respectively. Heat is transferred out in between states 2 and 3. Indicate that the compressors are connected together by a shaft and that work is being transferred in.
+
+---
+
+## 3. Assumptions and Approximations
+* **Control Volume** (mass crosses the boundary).
+* **Properties** We will use pyCalor to determine properties.
+* Neglect changes in kinetic and potential energy ($\Delta KE\approx0$, $\Delta PE\approx0$). (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)
+* **Reversible and Adiabatic processes**: Compression from states 1 to 2 and 3 to 4 are considered reversible and adiabatic.
+* **Steady-flow process** ($\Delta m_\text{CV}= 0$, $\Delta E_\text{CV}= 0$, $\Delta S_\text{CV}= 0$).
+* We have a single inlet and outlet ($\dot{m}_\text{in}$ and $\dot{m}_\text{out}$).
+* **Isobaric**: Heat exchangers are isobaric devices. (Justification: Negligible changes in pressure between the inlet and exit.)
+
+---
+
+## 4. Physical Laws and Governing Equations
+1.  **First Law of Thermodynamics (Energy Balance for Control Volume):**
+    $$\frac{dE_\text{CV}}{dt}=\dot{E}_\text{in}-\dot{E}_\text{out}$$
+
+2.  **Conservation of Mass (Mass Balance for a Control Volume):**
+    $$\frac{dm_\text{CV}}{dt}=\dot{m}_\text{in}-\dot{m}_\text{out}$$
+
+Since this is a steady flow process, we can write:
+$$\dot{E}_\text{in}=\dot{E}_\text{out}$$
+
+$$\dot{m}_\text{in}=\dot{m}_\text{out}=\dot{m}$$
+
+We can then write for a compressor:
+$$\dot{W}_\text{in}+\dot{Q}_\text{in}+\dot{m}\left(h_1+\frac{w_1^2}{2}+g~z_1\right)=\dot{W}_\text{out}+\dot{Q}_\text{out}+\dot{m}\left(h_2+\frac{w_1^2}{2}+g~z_2\right)$$
+
+Neglecting changes in kinetic and potential energy:
+$$\dot{W}_\text{in}+\dot{Q}_\text{in}+\dot{m}h_1=\dot{W}_\text{out}+\dot{Q}_\text{out}+\dot{m}h_2 $$
+
+Since the compressor operates isentropically, we can assume that it is adiabatic:
+$$\dot{W}_\text{in}+\dot{m}h_1=\dot{W}_\text{out}+\dot{m}h_2$$
+
+There is only work transferred into the compressor, not out. Therefore:
+$$\dot{W}_\text{in}=\dot{m}\left(h_2-h_1\right)$$
+
+We can apply this formula for the first and second compressor as:
+$$\dot{W}_\text{12,in}=\dot{m}(h_2-h_1)$$
+$$\dot{W}_\text{34,in}=\dot{m}(h_4-h_3)$$
+
+The total work in is then:
+$$\dot{W}_\text{in}=\dot{W}_\text{12,in}+\dot{W}_\text{34,in}$$
 
 #### Solution Code:
 ```python
@@ -1401,6 +1540,10 @@ st4 = th.state(substance,s=(s4_JperKgperK,'J/kg K'),p=(p4_Pa,'Pa'),name='4')
 h4_JperKg = st4.h*1e3
 T4_K = st4.T
 
+# process
+pr = th.process([(st1,st2),(st2,st3),(st3,st4)])
+```
+```python
 # 6 Calculations (Code Cell)
 # Work in
 Wdot_W = mdot_kgPerS*((h2_JperKg - h1_JperKg)+(h4_JperKg - h3_JperKg))
@@ -1416,10 +1559,14 @@ T2_K_ = st2_.T
 Wdot_W_ = mdot_kgPerS*((h2_JperKg_ - h1_JperKg))
 Wdot_kW_ = Wdot_W_/1000# ; print(Wdot_kW)
 print('(b) Wdot_kW = {0:1.1f} kW.'.format(Wdot_kW_))
+
+# Plotting
+fig1=pr.plot("Ts");
+# fig1.savefig("figure_1_Ts.pdf")
 ```
 
 #### Final Summary / Reasoning:
-## 7. 💡 Summary and Reasoning
+## 7. Summary and Reasoning
 We see that by cooling the air in between the first and second compressor, we do not need to do as much work.
 
 ---
@@ -1429,69 +1576,13 @@ We see that by cooling the air in between the first and second compressor, we do
 **Lecture References:** Lecture ID: 1_h0h8llrr, Key: Fa25-L2b-7.0 (Isochoric cooling example)
 **Book Reference:** Book Ch. 2: Energy, Energy Transfer, and General Energy Analysis
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 
 The pressure-volume diagram makes sense. Pressure decreases while volume is kept the same. We expected the pressure to decrease since we are transferring energy out. As volume is kept constant, there is no work transfer.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-!pip install pyCalor
-from pyCalor import thermo as th
-import matplotlib.pyplot as plt
 
-m_kg = 1
-R_JperKgPerK = 287
-
-p1_Pa = 100e3
-T1_C = 100
-
-p2_Pa = 80e3
-# T2_C = 25
-
-# ideal gas law
-v1_m3PerKg = (R_JperKgPerK*(T1_C+273.15))/p1_Pa
-
-# isochoric
-v2_m3PerKg = v1_m3PerKg
-
-# ideal gas to determine T2
-T2_K = (p2_Pa*v2_m3PerKg)/R_JperKgPerK
-T2_C = T2_K - 273.15
-print(T2_C)
-```
-```python
-# 6 Calculations (Code Cell)
-cv_kJperKgPerK = 0.718
-Qout_kJ = m_kg*cv_kJperKgPerK*(T1_C - T2_C)
-print(Qout_kJ)
-
-st1 = th.state('air', p=p1_Pa/1000, T=T1_C+273.15, name="1")
-st2 = th.state('air', p=p2_Pa/1000, T=T2_C+273.15, name="2")
-pr = th.process([(st1,st2)])
-
-# pr.plot('pv')
-plt.plot([st1.v, st2.v], [st1.p, st2.p], color='blue', linewidth=2)
-
-plt.plot(st1.v, st1.p, 'o', color='red', markersize=8)
-plt.annotate('State (1)', xy=(st1.v, st1.p),
-             textcoords="offset points", xytext=(-30, 10), ha='center', fontsize=12)
-
-plt.plot(st2.v, st2.p, 'o', color='red', markersize=8)
-plt.annotate('State (2)', xy=(st2.v, st2.p),
-             textcoords="offset points", xytext=(-30, 10), ha='center', fontsize=12)
-
-plt.xlabel('$v$ (m^3/kg)', fontsize=14)
-plt.ylabel('$p$ (Pa)', fontsize=14)
-
-plt.grid(True)
-
-plt.xlim(0, st1.v * 1.5)
-plt.ylim(0, st1.p * 1.2)
-
-# plt.savefig('p-V-isochoric-cooling-air.png')
-```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -1505,76 +1596,12 @@ The pressure-volume diagram makes sense. Pressure decreases while volume is kept
 **Lecture References:** Lecture ID: 1_blyiho9t, Key: Fa25-L3b-6.0 (van der Waals equation of state)
 **Book Reference:** Book Ch. 3: Properties of Pure Substances
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 We were able to plot critical temperature isotherms for water using `pyCalor`, the van der Waals equation of state, and the ideal gas equation. What we see is that for high values of specific volume, all three isotherms overlap, indicating that they are all valid. However, for lower specific volumes, below 0.1 m$^3$/kg the ideal gas equation significantly deviates from the other two isotherms, indicating that it is no longer valid.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-!pip install pyCalor
-from pyCalor import thermo as th
-import numpy as np
-import matplotlib.pyplot as plt
 
-# critical point of water
-Tc_K = 647.096 # K
-pc_Pa = 22.060e6 # Pa
-
-# triple point of water
-Ttp_K = 273.16 # K
-ptp_Pa = 611.6 # Pa
-
-# critical state of water
-stcritical = th.state('Water', p=pc_Pa/1e3, T=Tc_K, name="1")
-```
-```python
-# 6 Calculations (Code Cell)
-plt.figure()
-plt.clf()
-
-plt.xscale("log")
-# plot the saturated liquid and saturated vapor lines
-P = np.linspace(700/1e6, 22.063, 1000) # range of pressures
-vvap = [s.v for s in [th.state('Water', x=1, p=p*1e3) for p in P]]
-vliq = [s.v for s in [th.state('Water', x=0, p=p*1e3) for p in P]]
-plt.plot(vvap, P, 'k-')
-plt.plot(vliq, P, 'k-')
-
-# plot the isotherm for the critical temperature using pyCalor
-P_ = np.linspace(ptp_Pa/1e6, 30, 1000) # range of pressures, MPa
-st = [th.state('Water', p=(p*1e3,'kPa'), T=(Tc_K,'K')) for p in P_]
-v = [s.v for s in st]
-plt.xscale("log")
-plt.plot(v, P_, 'b--')
-
-# plot the isotherm for the critical temperature using van der Waals
-R_JperKgPerK = 461.5
-a = (27 * (R_JperKgPerK**2) * (Tc_K**2))/(64 * pc_Pa)
-b = (R_JperKgPerK* Tc_K)/(8 * pc_Pa)
-v_ = np.linspace(0.35e-2, 1, 5000)
-# van der Waals equation of state:
-# p*v - p*b + (a/v**2)*v - a*b/v**2 = R*T
-p_  = (R_JperKgPerK*Tc_K - (a/v_**2)*v_ + a*b/v_**2)/(v_ - b)
-plt.plot(v_, p_/1e6, 'r--')
-
-# plot the isotherm for the critical temperature using the ideal gas equation
-p_IG = (R_JperKgPerK*Tc_K)/v_
-plt.plot(v_, p_IG/1e6, 'k--')
-
-# axes
-ax = plt.gca()
-xmin = 0.8e-3
-xmax = 1
-ax.set_xlim([xmin, xmax])
-ymin = 0
-ymax = 25
-ax.set_ylim([ymin, ymax])
-ax.set_xlabel('$v$ (m$^3$/kg)')
-ax.set_ylabel('$p$ (MPa)')
-
-# plt.savefig('pycalor-vdW-p-v-diagram.pdf')
-```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -1587,52 +1614,12 @@ We were able to plot critical temperature isotherms for water using `pyCalor`, t
 **Lecture References:** 
 **Book Reference:** Book Ch. 7: Entropy
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. 💡 Summary and Reasoning
 We know from the definition of isentropic efficiency that the power input to the isentropic compressor is less than the actual compressor. What we would expect then from a **First Law of Thermodynamics** analysis is that the temperature at the exit of the actual compressor should be greater than the isentropic compressor, which we've shown is the case.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-!pip install pyCalor
-from pyCalor import thermo as th
 
-substance = 'air'
-isentropicEfficiency = 0.9
-
-# state 1
-p1_kPa = 100 # kPa
-T1_C = 20 # C
-st1 = th.state(substance,p=(p1_kPa,'kPa'),T=(T1_C,'C'),name='1')
-
-rp = 5
-
-# state 2s
-p2_kPa = rp*p1_kPa
-st2s = th.state(substance,p=(p2_kPa,'kPa'),s=(st1.s,'kJ/kg K'),name='2s')
-
-h2a_kJperKg = ((st2s.h - st1.h)/isentropicEfficiency) + st1.h
-
-# state 2a
-st2a = th.state(substance,p=(p2_kPa,'kPa'),h=(h2a_kJperKg,'kJ/kg'),name='2a')
-```
-```python
-## 6. Calculations (Code Cell)
-# Final answer:
-T2a_K = st2a.T; print(T2a_K)
-
-# Compare with the isentropic case, T2s_K
-T2s_K = st2s.T; print(T2s_K)
-
-# Defining processes for the isentropic and actual compression processes
-pr = th.process([(st1,st2a),(st1,st2s)])
-
-# Plotting the isentropic and actual compression processes on a temperature-specific entropy diagram
-fig1 = pr.plot("Ts");
-
-# save figure
-fig1.savefig("figure_1.pdf")
-```
 
 #### Final Summary / Reasoning:
 ## 7. 💡 Summary and Reasoning
@@ -1645,67 +1632,12 @@ We know from the definition of isentropic efficiency that the power input to the
 **Lecture References:** Lecture ID: 1_blyiho9t, Key: Fa25-L3b-6.0 (van der Waals equation of state)
 **Book Reference:** Book Ch. 3: Properties of Pure Substances
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 We were able to plot critical temperature isotherms for water using `pyCalor`, the Redlich-Kwong equation of state. The isotherms match very well for specific volume values greater than the critical specific volume. It would be interesting to see how this equation of state behaves for temperature values less than the critical temperature. Especially if it is possible to define the lines of saturation using this equation of state.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-!pip install pyCalor
 
-from pyCalor import thermo as th
-import numpy as np
-import matplotlib.pyplot as plt
-
-# critical point of water
-Tc_K = 647.096 
-pc_Pa = 22.060e6
-
-# triple point of water
-Ttp_K = 273.16
-ptp_Pa = 611.6
-```
-```python
-# 6 Calculations (Code Cell)
-plt.figure()
-plt.clf()
-
-plt.xscale("log")
-# plot the saturated liquid and saturated vapor lines
-P = np.linspace(ptp_Pa, pc_Pa, 1000) # range of pressures
-vvap = [s.v for s in [th.state('Water', x=1, p=(p,'Pa')) for p in P]]
-vliq = [s.v for s in [th.state('Water', x=0, p=(p,'Pa')) for p in P]]
-plt.plot(vvap, P/1e6, 'k-') # plot the pressure in MPa
-plt.plot(vliq, P/1e6, 'k-') # plot the pressure in MPa
-
-# plot the isotherm for the critical temperature using pyCalor
-P_ = np.linspace(ptp_Pa/1e6, 30, 1000) # range of pressures, MPa
-st = [th.state('Water', p=(p*1e3,'kPa'), T=(Tc_K,'K')) for p in P_]
-v = [s.v for s in st]
-plt.xscale("log")
-plt.plot(v, P_, 'b--')
-
-# plot the isotherm for the critical temperature using Redlich-Kwong
-R_JperKgPerK = 461.5
-a = 0.42748*((R_JperKgPerK**2)*(Tc_K**2.5))/pc_Pa
-b = 0.08664*(R_JperKgPerK*Tc_K)/pc_Pa
-v_ = np.linspace(3e-3, 1, 5000)
-# Redlich-Kwong equation of state:
-p_ = ((R_JperKgPerK*Tc_K)/(v_ - b)) - a/((Tc_K**0.5)*v_*(v_ + b))
-plt.plot(v_, p_/1e6, 'g--')
-
-ax = plt.gca()
-xmin = 0.8e-3
-xmax = 1
-ax.set_xlim([xmin, xmax])
-ymin = 0
-ymax = 25
-ax.set_ylim([ymin, ymax])
-
-ax.set_xlabel('$v$ (m$^3$/kg)')
-ax.set_ylabel('$p$ (MPa)')
-```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -1718,7 +1650,7 @@ We were able to plot critical temperature isotherms for water using `pyCalor`, t
 **Lecture References:** Lecture ID: 1_mtmivyvl, Key: Fa25-L1a-7.0 (Introduction to the first law of thermodynamics)
 **Book Reference:** Book Ch. 2: Energy, Energy Transfer, and General Energy Analysis
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## Introduction to the First Law
 
 Consider a system consisting of a fixed surface $S$ and a weight $\omega$ tied to a drum mounted above the surface in frictionless bearings. 
@@ -1768,6 +1700,9 @@ The first law of thermodynamics is simply a generalization of equation (1) to in
 If any system is carried through a cycle (the end state being precisely the same as the initial state) then the sumation of the work delivered to the surroundings is proportional to the summation of the heat taken from the surroundings. The summations are in both instances algebraic and include positive and negative heat and work. 
 
 These experiments cited above are no proof of the First Law. If it is true it is probable that its truth will never be demonstrated except by failure of all attempts to disprove it.
+
+---
+
 ## Corollaries of the First Law
 
 ### Definition of Internal Energy, a Property
@@ -1829,55 +1764,6 @@ The first law states that work and heat are equal in a cyclic process. Work and 
 
 
 #### Final Summary / Reasoning:
-## Introduction to the First Law
-
-Consider a system consisting of a fixed surface $S$ and a weight $\omega$ tied to a drum mounted above the surface in frictionless bearings. 
-
-<img src="fig-1.png" width="300"  alt="Fig. 1">
-
-
-Let's call the state of this system in which the weight rests upon the surface state 1. 
-
-A process occurs in which some outside agent turns the crank on the drum and causes the weight to move slowly upward until it is elevated a distance $h$ above the surface. This new state of the system is state 2. 
-
-The process just described was accompanied by the flow of work from a system comprising the agent to the system comprising the weight and drum. 
-
-_Work flows from a system (and to another) during a given operation if the sole effect external to the system could be the rise of a weight._
-
-Now the weight-drum system is allowed to return to state 1 by a slow downward movement of the weight. In order to insure slow motion it is necessary to apply a restraining force to the drum. 
-
-<img src="fig-2.png" width="200" alt="Fig. 2">
-
-It is clear that the restraining force might be the force applied by an opposing weight, of the same magnitude as weight $\omega$ but outside the system, which will rise the distance $h$ as the system returns to state 1. 
-
-Following the convention that work done by the system is positive and work done on the system is negative, we may write for the cycle of operations 1-2-1:
-
-$$ \oint dW = 0$$
-
-where the circle on the sign of integration indicates that the summation is made around a close cycle. 
-
-It appears that something which supplied to the system as work in process 1-2 was not destroyed. We cannot say that work was stored in the system at state 2, but we recall that in the science of mechanics that stored something is referred to as potential energy due to gravity. 
-
-Now let us repeat process 1-2 exactly, but, instead of opposing process 2-1 with an external weight, let us restrain the downward motion by means of a brake on the drum. When the weight is once more resting on the surface we inspect the system to see if state 1 has been restored. We find that it has been restored in every respect except one; namely, the temperatures of the drum and brake shoe are higher than in state 1. 
-
-Our experience with heat indicates that even in this respect we may return to state 1 by cooling the brake and rum. Now for this second cycle of operation we may write:
-
-$$ \oint dW \ne 0$$
-
-and our concept of a something which is conserved to appear as work or to be stored as potential energy fails. 
-
-Experiments have shown that the work done in raising the weight is proportional to the heat delivered by the system to the calorimeter. Therefore we may write:
-
-
-$$ \oint dQ - \oint dW = 0 \tag{1a}$$
-
-## The First Law of Thermodynamics
-
-The first law of thermodynamics is simply a generalization of equation (1) to include all cyclic proceesses in nature. 
-
-If any system is carried through a cycle (the end state being precisely the same as the initial state) then the sumation of the work delivered to the surroundings is proportional to the summation of the heat taken from the surroundings. The summations are in both instances algebraic and include positive and negative heat and work. 
-
-These experiments cited above are no proof of the First Law. If it is true it is probable that its truth will never be demonstrated except by failure of all attempts to disprove it.
 ## Corollaries of the First Law
 
 ### Definition of Internal Energy, a Property
@@ -1942,9 +1828,58 @@ The first law states that work and heat are equal in a cyclic process. Work and 
 **Lecture References:** Lecture ID: 1_hb7swztw, Key: Fa25-L5b-3.0 (Example: Energy Analysis of a Steady-flow System: Compressor)
 **Book Reference:** Book Ch. 5: Mass and Energy Analysis of Control Volumes
 
-#### Discussion / Problem Statement:
-## 7. Summary and Reasoning
-We see that the ideal gas assumption is a good one since the error for determining the power input is less than 1% compared to using thermodynamic properties (pyCalor).
+#### Problem Statement and Analysis:
+## 1. Problem Statement
+Air enters a compressor with a mass flow rate of 0.02 kg/s at 100 kPa and 290 K and exits the compressor at 600 kPa and 500 K. The compressor is cooled with 1 kJ/kg. 
+
+**Goal**: 
+* Determine the shaft power input.
+
+---
+
+## 2. Schematic
+Draw a compressor with a control volume drawn around it. Indicate that power is transferred in from a shaft and heat is transferred out.
+
+---
+
+## 3. Assumptions and Approximations
+* **Control Volume** (mass crosses the boundary).
+* **Ideal Gas Model** (Justification: Air at these conditions behaves as an ideal gas, $p v = R T$)
+* Neglect changes in kinetic and potential energy ($\Delta KE\approx0$, $\Delta PE\approx0$). (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)
+* **Steady-flow process** ($\Delta~m_\text{CV}=0$, $\Delta~E_\text{CV}= 0$, $\Delta~S_\text{CV}=0$).
+* Determine properties using `pyCalor`. 
+* **Enthalpy/Internal Energy Change**: Changes in enthalpy can be determined via $dh = c_p dT$. (This is a consequence of the ideal gas model.)
+* **Constant Specific Heats** ($c_p$, $c_v=\text{const}$). (Justification: The specific heat property changes are negligible over the process temperature range, simplifying the calculation of $\Delta~h$ to $c_p~\Delta~T$.
+* We have a single inlet and outlet ($\dot{m}_\text{in}$ and $\dot{m}_\text{out}$).
+
+---
+
+## 4. Physical Laws and Governing Equations
+1.  **First Law of Thermodynamics (Energy Balance for Control Volume):**
+    $$\frac{dE_\text{CV}}{dt} = \dot{E}_\text{in} - \dot{E}_\text{out}$$
+
+2.  **Conservation of Mass (Mass Balance for a Control Volume):**
+    $$\frac{dm_\text{CV}}{dt} = \dot{m}_\text{in} - \dot{m}_\text{out}$$
+
+Since this is a steady flow process, we can write:
+$$\dot{E}_\text{in} = \dot{E}_\text{out}$$
+
+$$\dot{m}_\text{in} = \dot{m}_\text{out} = \dot{m}$$
+
+We can then write for a compressor:
+$$\dot{W}_\text{in} + \dot{Q}_\text{in} + \dot{m} \left(h_1 + \frac{w_1^2}{2} + g z_1 \right) = \dot{W}_\text{out} + \dot{Q}_\text{out} + \dot{m} \left(h_2 + \frac{w_1^2}{2} + g z_2 \right)$$
+
+Neglecting changes in kinetic and potential energy:
+$$\dot{W}_\text{in} + \dot{Q}_\text{in} + \dot{m} h_1  = \dot{W}_\text{out} + \dot{Q}_\text{out} + \dot{m} h_2 $$
+
+Since the compressor operates isentropically, we can assume that it is adiabatic:
+$$\dot{W}_\text{in} + \dot{m} h_1  = \dot{W}_\text{out} + \dot{m} h_2 $$
+
+There is only work transferred into the compressor, not out. Therefore:
+$$\dot{W}_\text{in} = \dot{m} \left(h_2 - h_1 \right)$$
+
+Assuming air behaves as an ideal gas, we can write:
+$$\dot{W}_\text{in} \approx \dot{m} c_p \left(T_2 - T_1 \right) $$
 
 #### Solution Code:
 ```python
@@ -1975,19 +1910,14 @@ qout_JperKg = 1e3 #J/kg
 ```
 ```python
 ## 6 Calculations (Code Cell)
-QdotOut_JperS = qout_JperKg*mdot_kgperS #J/s
-
-WdotIn_JperS = QdotOut_JperS + mdot_kgperS*(h2_JperKg-h1_JperKg); print(WdotIn_JperS) #J/s
-
 pr = th.process([(st1,st2)])
-
 pr.plot('pv')
+QdotOut_JperS = qout_JperKg*mdot_kgperS #J/s
+WdotIn_JperS = QdotOut_JperS + mdot_kgperS*(h2_JperKg-h1_JperKg); print("WdotIn_JperS=",WdotIn_JperS) #J/s
 
 ### Alternative solution
-
-WdotIn_JperS_alt = QdotOut_JperS + mdot_kgperS*(cp_kJperKgPerK*1e3)*(T2_K-T1_K); print(WdotIn_JperS_alt) #J/s
-
-error = ((WdotIn_JperS - WdotIn_JperS_alt)/WdotIn_JperS)*100; print(error)
+WdotIn_JperS_alt = QdotOut_JperS + mdot_kgperS*(cp_kJperKgPerK*1e3)*(T2_K-T1_K); print("WdotIn_JperS_alt=",WdotIn_JperS_alt) #J/s
+error = ((WdotIn_JperS - WdotIn_JperS_alt)/WdotIn_JperS)*100; print("error=",error)
 ```
 
 #### Final Summary / Reasoning:
@@ -2001,61 +1931,12 @@ We see that the ideal gas assumption is a good one since the error for determini
 **Lecture References:** Lecture ID: 1_97hqf37r, Key: Fa25-L5c-2.0 (Heat Exchanger)
 **Book Reference:** Book Ch. 5: Mass and Energy Analysis of Control Volumes
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 Heat is transferred out of the refrigerant and into the water.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-# Water is used to cool a refrigerant (R-134a). 
-!pip install pyCalor
-from pyCalor import thermo as th
 
-# Here are the inlet (state 1) and outlet (state 2) conditions of the water:
-# state 1
-T1_K = 15+273.15
-p1_MPa = 300/1000
-water_1 = th.state('water',p=(p1_MPa,'Mpa'),T=(T1_K,'K'),name='1')
-h1_kJperKg = water_1.h # kJ/kg
-
-# state 2
-T2_K = 25+273.15
-p2_MPa = p1_MPa
-water_2 = th.state('water',p=(p2_MPa,'Mpa'),T=(T2_K,'K'),name='2')
-h2_kJperKg = water_2.h # kJ/kg
-
-# convert to SI units
-h1_JperKg = h1_kJperKg*1000; print(h1_JperKg) # J/kg
-h2_JperKg = h2_kJperKg*1000; print(h2_JperKg) # J/kg
-
-# Here are the inlet (state 3) and outlet (state 4) properties of the refrigerant as well as its mass flow rate, which is given:
-fluid = 'R134a'
-
-# state 3
-T3_K = 70+273.15
-p3_Pa = 1e6
-st3 = th.state(fluid,p=(p3_Pa,'Pa'),T=(T3_K,'K'),name='3')
-h3_JperKg = st3.h*1e3
-
-# state 4
-T4_K = 35+273.15
-p4_Pa = p3_Pa
-st4 = th.state(fluid,p=(p4_Pa,'Pa'),T=(T4_K,'K'),name='4')
-h4_JperKg = st4.h*1e3
-
-# mass flow rate of the refrigerant
-mdot_r134a_kgPerMin = 6
-mdot_r134a_kgPerS = mdot_r134a_kgPerMin/60
-```
-```python
-## 6 Calculations (Code Cell)
-mdot_water_kgPerS = mdot_r134a_kgPerS*(h3_JperKg-h4_JperKg)/(h2_JperKg-h1_JperKg)
-print('(a): water mass flow rate: {0:1.4f} kg/s'.format(mdot_water_kgPerS))
-
-Qout_r134a_JperS = mdot_r134a_kgPerS*(h3_JperKg - h4_JperKg)
-print('(b): Q_out_r134a: {0:1.4f} J/s'.format(Qout_r134a_JperS))
-```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -2068,45 +1949,12 @@ Heat is transferred out of the refrigerant and into the water.
 **Lecture References:** Lecture ID: 1_0r6wkz1o, Key: Fa25-L5a-4.0 (Applying conservation of mass and energy principles for a control volume to a turbine.)
 **Book Reference:** Book Ch. 5: Mass and Energy Analysis of Control Volumes
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 The total work is different from the shaft work because the total work contains flow work.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-!pip install pyCalor
-from pyCalor import thermo as th
 
-# A steam turbine operates with the conditions listed below. 
-mdot_kgPerHr = 4600
-# conversion
-mdot_kgPerS = mdot_kgPerHr/(60*60)
-
-# state 1
-p1_bar = 60
-T1_C = 400
-st1 = th.state('water',T=(T1_C,'C'),p=(p1_bar,'bar'),name='1')
-
-# state 2
-p2_bar = 0.2
-x2 = 0.9
-st2 = th.state('water',x=x2,p=(p2_bar,'bar'),name='2')
-```
-```python
-# 6 Calculations (Code Cell)
-# process
-pr = th.process([(st1,st2)])
-
-# T-v plot
-pr.plot('Tv')
-
-# Answer: part (a)
-W_shaft_out_kW = mdot_kgPerS*(1000*(st1.h-st2.h)); print(W_shaft_out_kW)
-
-# Answer: part (b)
-W_total_out_kW = mdot_kgPerS*(st1.u-st2.u); print(W_total_out_kW)
-```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -2119,9 +1967,67 @@ The total work is different from the shaft work because the total work contains 
 **Lecture References:** Lecture ID: 1_3375c5yj, Key: Fa25-L4c-1.0 (Electric heating of water vapor at constant pressure)
 **Book Reference:** Book Ch. 4: Energy Analysis of Closed Systems
 
-#### Discussion / Problem Statement:
-## 7. Summary and Reasoning
-We determined the temperature of the steam at state 2. We also compared $u_2 + p_2v_2 - (u_1 + p_1v_1)$ with $h_2 - h_1$ and found that they were the same.
+#### Problem Statement and Analysis:
+## 1. Problem Statement
+A piston cylinder contains 25 g of saturated water vapor at 300 kPa. The piston is kept at constant pressure while heat is transferred out. The cylinder contains a resistor inside of it while a voltage of 120 V is applied and 0.2 A of current passes through it for 5 min. 
+
+**Goal**: 
+* Determine the final temperature of the steam
+* Determine $(u_2 + p_2 v_2) - (u_1 + p_1 v_1)$
+
+---
+
+## 2. Schematic
+Draw a schematic of a piston-cylinder device. Draw a boundary around the inside of the piston cylinder. Show that electrical work is transferred into the piston and heat is transferred out of it.
+
+---
+
+## 3. Assumptions and Approximations
+* Use `pyCalor` to determine water properties. 
+* Neglect changes in kinetic and potential energy.
+* Closed system (no mass in or out)
+
+---
+
+## 4. Physical Laws and Governing Equations
+
+Conservation of energy: 
+$$\Delta E_\text{CV} = E_\text{in} - E_\text{out} $$
+
+$$\Delta U + \Delta KE + \Delta PE = (W_\text{in} + Q_\text{in}) - (W_\text{out} + Q_\text{out})  $$
+
+Neglect changes in kinetic and potential energy:
+$$\Delta U = (W_\text{in}) - (W_\text{out} + Q_\text{out}) $$
+
+$$ W_\text{out} = p_1 (V_2 - V_1) $$
+
+$$ W_\text{out} = p_1 m (v_2 - v_1) $$
+
+$$ W_\text{in} = \text{V} I \Delta t $$
+
+Combining yields:
+
+$$m (u_2 - u_1) = \text{V} I \Delta t  - p_1 m (v_2 - v_1)  - Q_\text{out} $$
+
+Rearranging:
+
+$$m \left[ \left(u_2 + p_1 v_2\right) - \left( u_1 + p_1 v_1 \right) \right] = \text{V} I \Delta t   - Q_\text{out} $$
+
+Since $p_2 = p_1$, we have:
+
+$$m \left[ \left(u_2 + p_2 v_2\right) - \left( u_1 + p_1 v_1 \right) \right] = \text{V} I \Delta t   - Q_\text{out} $$
+
+The definition of enthalpy is:
+
+$$ h = u + p v$$
+
+Therefore,
+
+$$m \left[ h_2 - h_1 \right] = \text{V} I \Delta t   - Q_\text{out} $$
+
+$$h_2  = \text{V} I \Delta t /m   - Q_\text{out} / m + h_1$$
+
+We need to determine the specific volumes at state 2 and state 1.
 
 #### Solution Code:
 ```python
@@ -2190,9 +2096,37 @@ We determined the temperature of the steam at state 2. We also compared $u_2 + p
 **Lecture References:** Lecture ID: 1_0uijb1pt, Key: Fa25-L2a-11.0 (Energy balance of a system)
 **Book Reference:** Book Ch. 2: Energy, Energy Transfer, and General Energy Analysis
 
-#### Discussion / Problem Statement:
-## 7. Summary and Reasoning
-From the first law of thermodynamics, since we are transferring more energy out than in, we would expect that the internal energy at state 2 is less than state 1.
+#### Problem Statement and Analysis:
+## 1. Problem Statement
+Consider a closed system containing a fluid. The initial internal energy, $U_1$ is given. Shaft work is transferred in and heat is transferred out. 
+
+**Goal** Determine the final internal energy, $U_2$.
+
+---
+
+## 2. Schematic
+Draw a rigid container that contains a paddle that can rotate. Draw a boundary around the inside of the container. The container should indicate that it is not insulated. Indicate that work is transferred in and heat is transferred out.
+
+---
+
+## 3. Assumptions and Approximations
+* **Closed System** (no mass crosses the boundary).
+* Neglect kinetic and potential energy ($\Delta KE \approx 0$, $\Delta PE \approx 0$).
+
+---
+
+## 4. Physical Laws and Governing Equations
+Conservation of energy:
+
+$$E_\text{in} - E_\text{out} = (Q_\text{in} - Q_\text{out}) + (W_\text{in} - W_\text{out})$$
+
+Neglecting changes in kinetic and potential energy, we can write:
+
+$$ E_\text{in} - E_\text{out} = \Delta E_\text{system} = U_2 - U_1 $$
+
+Only work in and heat out:
+
+$$U_2  = U_1 - Q_\text{out} + W_\text{in}$$
 
 #### Solution Code:
 ```python
@@ -2218,55 +2152,15 @@ From the first law of thermodynamics, since we are transferring more energy out 
 **Lecture References:** Key: Fa25-L7c-5.0 (Heat exchanger entropy balance)
 **Book Reference:** Book Ch. 7: Entropy
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. 💡 Summary and Reasoning
 Approximating changes in enthalpy with $c_p \Delta T$ was a good assumption for heating water. The rate of entropy generation was positive, even though the outside of the heat exchanger was well-insulated, since we were transferring heat from a hot fluid to a cold fluid.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-!pip install pyCalor
-from pyCalor import thermo as th
-cpCold_kJperKgperK = 4.18
-cpHot_kJperKgperK = 4.19
 
-T1_C = 10
-T2_C = 70
-mdot12_kgPerS = 0.95
-
-T3_C = 85
-mdot34_kgPerS = 1.6
-
-substance = 'water'
-```
-```python
-# 6 Calculations (Code Cell)
-QdotIn12_kW = mdot12_kgPerS * cpCold_kJperKgperK* (T2_C  - T1_C) 
-print('(a) The rate of heat transfer into the cold water (CVI) is QdotIn12_kW = {0:1.1f} kW.'.format(QdotIn12_kW))
-
-# Let's compare this value with what we get when we use the property tables. 
-
-p1_MPa = 0.1
-water_1 = th.state(substance,p=(p1_MPa,'Mpa'),T=(T1_C,'C'),name='1')
-water_2 = th.state(substance,p=(p1_MPa,'Mpa'),T=(T2_C,'C'),name='2')
-
-QdotIn12_kW_ = mdot12_kgPerS * (water_2.h  - water_1.h)
-print('(a) Alternate answer: QdotIn12_kW = {0:1.1f} kW.'.format(QdotIn12_kW_))
-
-# part (b)
-water_3 = th.state(substance,p=(p1_MPa,'Mpa'),T=(T3_C,'C'),name='3')
-
-h4_kJperKg = water_3.h  - QdotIn_kW_/mdot34_kgPerS; print(h4_kJperKg)
-
-water_4 = th.state(substance,p=(p1_MPa,'Mpa'),h=(h4_kJperKg,'kJ/kg'),name='4')
-
-Sgen_kWperK = mdot12_kgPerS*(water_2.s - water_1.s) + mdot34_kgPerS*(water_4.s - water_3.s)#; print(Sgen_kWperK)
-print('(b) Sgen_kWperK = {0:1.3f} kW/K.'.format(Sgen_kWperK))
-```
 
 #### Final Summary / Reasoning:
-## 7. 💡 Summary and Reasoning
-Approximating changes in enthalpy with $c_p \Delta T$ was a good assumption for heating water. The rate of entropy generation was positive, even though the outside of the heat exchanger was well-insulated, since we were transferring heat from a hot fluid to a cold fluid.
+
 
 ---
 ### PROBLEM: coolingSolidBlock
@@ -2275,9 +2169,81 @@ Approximating changes in enthalpy with $c_p \Delta T$ was a good assumption for 
 **Lecture References:** Lecture ID: 1_0r6wkz1o, Key: Fa25-L5a-1.0 (Cooling of a solid block)
 **Book Reference:** Book Ch. 4: Energy Analysis of Closed Systems
 
-#### Discussion / Problem Statement:
-## 7. Summary and Reasoning
-It makes sense that the final temperature, $T_2$, is between the initial iron and water temperature.
+#### Problem Statement and Analysis:
+## 1. Problem Statement
+A 50 kg iron block at a temperature of 80 deg C is immersed into a 0.5 m$^3$ water bath, which is initially at 25 deg C. 
+
+**Goal**: 
+* Determine the temperature when equilibrium is reached.
+
+---
+
+## 2. Schematic
+Draw three control volumes. One control volume for the iron block (CV1); one control volume for the water bath (CV2); and one combined control volume consisting of CV1 and CV2.
+
+---
+
+## 3. Assumptions and Approximations
+* **Closed system** (no mass in or out).
+* **No Work Transfer** There is no boundary work or other types of work being done.
+* **Neglect changes in kinetic and potential energy** ($\Delta KE\approx0$, $\Delta PE\approx0$). (Justification: The system is stationary, and there are no significant changes in elevation or velocity.)
+* **Adiabatic Combined System** The combined control volume of the iron block and the water bath is assumed to be perfectly insulated. (Justification: No heat is transferred to or from the external surroundings, making $Q_\text{net,surroundings}=0$.)
+* **Constant Specific Heats** ($c_p$, $c_v=\text{const}$). (Justification: The specific heat property changes are negligible over the process temperature range.
+* **Thermal Equilibrium** The iron block and the water reach the same final temperature, $T_2$.
+
+---
+
+## 4. Physical Laws and Governing Equations
+- Conservation of energy.
+
+$$\Delta E_\text{CV1+CV2} = E_\text{in,CV1+CV2} - E_\text{out,CV1+CV2} $$
+
+$$\left( \Delta U + \Delta KE + \Delta PE \right)_\text{CV1+CV2} = (W_\text{in} + Q_\text{in})_\text{CV1+CV2} - (W_\text{out} + Q_\text{out})_\text{CV1+CV2}  $$
+
+No work or heat transfer:
+$$\left( \Delta U \right)_\text{CV1+CV2} = 0 $$
+
+$$\Delta U_\text{CV1} + \Delta U_\text{CV2} = 0 \tag{1}$$
+
+No heat will be transferred out of or into the combined control volumes of CV1 and CV2 (adiabatic).
+
+### Change in internal energy of the iron block
+
+For incompressible solids:
+
+$$du = c_V(T)dT \text{ (solids)} $$
+
+$$\Delta u = \int_1^2c_V(T)dT \approx c_\text{V,avg}(T_2 - T_\text{1,Fe}) $$
+
+We will select the value of $c_\text{V,Fe}$ at $T=T_\text{1,Fe}$, $c_\text{V,Fe}=c_\text{V,Fe}(T_\text{1,Fe})$. Substituting into equation (1):
+
+$$\Delta U_\text{CV1} = m_\text{Fe} c_\text{V,Fe} (T_2 - T_\text{1,Fe}) \tag{2} $$
+
+### Conservation of energy of the water bath
+
+For incompressible liquids, $c_p = c_V = c$, therefore:
+
+$$du = c_V(T)dT $$
+
+$$\Delta u = \int_1^2c_V(T)dT \approx c_\text{V,avg}(T_2 - T_1) $$
+
+We will select the value of $c_\text{H2O}$ at $T=T_\text{1,H2O}$, $c_\text{V,H2O}=c_\text{V,H2O}(T_\text{1,H2O})$. (We will see in the property tables that the only value for specific heat that is available is for room temperature. This should be okay since the initial and final temperature difference is not that large.) Substituting into equation (1):
+
+$$\Delta U_\text{CV2} = m_\text{H2O} c_\text{V,H2O} (T_2 - T_\text{1,H2O})  \tag{3} $$
+
+Combining equations (1)-(3):
+
+$$ m_\text{Fe} c_\text{V,Fe} (T_2 - T_\text{1,Fe}) + m_\text{H2O} c_\text{V,H2O} (T_2 - T_\text{1,H2O}) = 0  $$
+
+Rearranging:
+
+$$ T_2  = \frac{m_\text{Fe} c_\text{V,Fe} T_\text{1,Fe} +  m_\text{H2O} c_\text{V,H2O} T_\text{1,H2O}}{m_\text{Fe} c_\text{V,Fe} + m_\text{H2O} c_\text{V,H2O}} $$
+
+When looking up property tables in the textbook, you will see that the only values that are available are $c_p$. Since the substances are incompressible, it is okay to substitute $c_p = c_V$ into the above equation.
+
+### Alternative solution
+
+You could analyze CV1 and CV2, and set the heat transferred out of the iron block to be equal to the heat transferred into the water bath. The combined control volumes would be treated as adiabatic with no work transfer.
 
 #### Solution Code:
 ```python
@@ -2312,7 +2278,7 @@ It makes sense that the final temperature, $T_2$, is between the initial iron an
 **Lecture References:** 
 **Book Reference:** Book Ch. 3: Properties of Pure Substances
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 Instead of using the "tables" in the back of your textbook to determine thermodynamic properties, here we will use a Python module called [`pyCalor`](https://pypi.org/project/pyCalor/).
 
 This Python module was developed in the Department of Mechanical Engineering at the University of California, Berkeley. It is used for teaching undergraduate thermodynamics (ME40).
@@ -2324,49 +2290,8 @@ The software package contains classes `state` and `process`. The following is th
 `print(th.state.__doc__)`   
 
 `print(th.process.__doc__)`
-## Class **state**  
-
-A call
-
-`from pyCalor import thermo as th`
-
-`st = th.state(substance, property1=value1, property2=value2, name="A")`  
-
-creates an object of class `state`. Each such object contains the following fields:  
-
-
-| - | name | description |
-| :-----------: | :--------------: | :-------------------------: |
-| `st.p` | pressure | (in units of kPa)  |
-| `st.t` | temperature | (in units of K)  |
-| `st.v` | specific volume | (in units of m3/kg)  |
-| `st.u` | specific energy | (in units of kJ/kg)  |
-| `st.h` | specific enthalpy | (in units of kJ/kg)  |
-| `st.s` | specific entropy | (in units of kJ/kg K)  |
-| `st.x` | quality | (fraction)  |
-| `st.molW` | molecular weight | (in units of kg/kmol)  |
-| `st.R` | gas constant | (in units of kJ/kg K)  |
-| `st.substance` | 'water', 'air', 'nitrogen', ... | ()  |
-
-The property values are in the “base units”; they can be viewed by issuing a command:
-
-`state.units`
-
-Examples:
-This information can also be viewed in the programming environment; 
-
-`th.state.__doc__`
 
 #### Solution Code:
-```python
-!pip install pyCalor
-```
-```python
-from pyCalor import thermo as th
-```
-```python
-print(th.state.__doc__)
-```
 ```python
 print(th.process.__doc__)
 ```
@@ -2406,56 +2331,9 @@ st4 = th.state('water', p=( 1,'bar'), s=st3.s, name="D")
 pr = th.process([(st1,st2),(st2,st3),(st3,st4),(st4,st1)])
 pr.plot("pv")
 ```
-```python
-plt.figure
-sub = 'air'
-st5 = th.state(sub, p=(1,'bar'), t=300, name="1")
-st6 = th.state(sub, p=(2,'Mpa'), s=st5.s, name="2")
-st7 = th.state(sub, p=(2,'Mpa'), t=1600, name="3")
-st8 = th.state(sub, p=(1,'bar'), s=st7.s)
-st8.name = "4"
-pr = th.process([st5, st6, st7, st8, st5])
-pr.plot("ts")
-```
 
 #### Final Summary / Reasoning:
-This information can also be viewed in the programming environment; 
 
-`th.state.__doc__`
-## Class process
-
-A call
-
-`from pyCalor import thermo as th`
-
-`pr = th.process([(state1,state2),(state2,state3),...])`
-
-creates an object of class process. An object of this class represent a simple process, from `st1` to `st2`,
-
-`pr = th.process(st1,st2)`
-
-a simple cyclic process,
-
-`pr = th.process([(st1,st2),(st2,st3),(st3,st4),(st4,st1)])`,
-
-which can also be created as 
-
-`pr = th.process(st1,st2,st3,st4,st1)`,
-
-or any complex process, but for a single working fluid.  
-
-You can access process object properties by the following calls
-
-|  |  description |
-| :----------- | :--------------: |
-| `pr.StateList` | returns a list of `state` objects| 
-| `pr.isoProp(st1,st2)` | returns a dictionary of `{isoProperty: value,...}` for process `st1` &rarr; `st2` |
-
-Once you created process object `pr`, you can display its states on a thermodynamic diagram via  
-
-`pr.plot('ts')`   
-
-to display process `pr` on a *T-s* diagram; you may likewise to make such plot in other coordinates, like `'pv'`, `'ph'`, etc.
 
 ---
 ### PROBLEM: vanDerWaalsEquationOfState
@@ -2464,28 +2342,12 @@ to display process `pr` on a *T-s* diagram; you may likewise to make such plot i
 **Lecture References:** Lecture ID: 1_blyiho9t, Key: Fa25-L3b-5.0 (van der Waals equation of state)
 **Book Reference:** Book Ch. 3: Properties of Pure Substances
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 We were able to plot the critical point of water on the pressure-specific volume diagram. It should be at the point where the lines of saturated liquid and vapor meet, which it is. By knowing $a$ and $b$ we can also plot the isotherm from the van der Waals equation of state and compare it with the isotherm produced by `pyCalor`.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-# critical temperature and pressure can be found as
-Tcr_K = 647.3
-pcr_kPa = 22.09e3
-```
-```python
-# 6 Calculations (Code Cell)
-!pip install pyCalor
 
-from pyCalor import thermo as th
-# determine the critical state using pyCalor
-st1 = th.state('water', T=Tcr_K, p=pcr_kPa, name="1")
-
-# plot the critical point on a pressure-specific volume diagram
-st1.plot("pv")
-```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -2498,9 +2360,99 @@ We were able to plot the critical point of water on the pressure-specific volume
 **Lecture References:** Lecture ID: 1_fclugwz7, Key: Fa25-L4a-5.0 (Moving boundary work: Adiabatic process)
 **Book Reference:** Book Ch. 4: Energy Analysis of Closed Systems
 
-#### Discussion / Problem Statement:
-## Reasoning
-We were able to prove that $p V^{\kappa} = \text{constant}$ for an adiabatic expansion process. We also see from this that we are able to relate pressure to volume for a process from A to B. That means we will be able to determine the boundary work done for such a process. This will be useful when we start to analyze cycles, such as the Carnot cycle, which has adiabatic expansion and compression processes.
+#### Problem Statement and Analysis:
+## 1. Problem Statement
+**Goal**: Show that for an ideal gas in a closed system undergoing adiabatic expansion, that $ p V^\kappa = \text{const} $.
+
+---
+
+## 2. Schematic
+Show a piston expanding some distance. The control volume should be drawn inside of the piston cylinder. No heat should be transferred in or out. Work should be shown to be transferred out.
+
+---
+
+## 3. Assumptions and Approximations
+* **Ideal Gas Model** (Justification: Air at these conditions behaves as an ideal gas, $p v = R T$)
+* No heat transfer ($Q_\text{in}=Q_\text{out}=0$). (Justification: Adiabatic means no heat transfer.)
+* Neglect changes in kinetic and potential energy ($\Delta KE\approx0$, $\Delta PE\approx0$). (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)
+* Work is transferred only through boundary work ($p dV$).
+* Constant values for specific heat ($c_p=\text{const}$, $c_v=\text{const}$). (Justification: While these values do change with temperature, they don't change appreciably over the temperature ranges we are interested in here.)
+
+---
+
+## 4. Physical Laws and Governing Equations
+* Conservation of energy
+* Definition of specific heat and its relation to changes in internal energy
+
+$$\Delta E_\text{CV} = E_\text{in} - E_\text{out} $$
+
+$$\Delta U + \Delta KE + \Delta PE = (W_\text{in} + Q_\text{in}) - (W_\text{out} + Q_\text{out})  $$
+
+$$\Delta U = - W_\text{out}$$
+
+$$\Delta U = - W_\text{out}$$
+
+We can write this in differential form:
+
+$$dU = - \delta W_\text{out} $$
+
+$$dU = - p dV \tag{1}$$
+
+Recall the definition of $c_V$:
+
+$$c_V = \left( \frac{\partial u}{\partial T} \right)_V$$
+
+That is, if we transfer heat to a control volume, and if the volume is kept constant, then changes in internal energy can be related to changes in temperature through a constant. 
+
+$$\implies du = c_V dT \tag{2}$$
+
+Combining equations (1) and (2), and including the mass of the gas in the piston, $m$, we have:
+
+$$m du = m c_V dT = - p dV \tag{3}$$
+
+We would like to replace temperature with $p$ and $V$. For this we can use the ideal gas law:
+
+$$p V = m R T \tag{4}$$
+
+Taking the differential:
+
+$$d \left(p V\right) = m R dT$$
+
+$$V dp + p dV = m R dT$$
+
+Rearranging:
+
+$$dT = \frac{V dp + p dV}{m R} \tag{5}$$
+
+Combining equations (5) and (3), we have:
+
+$$m c_V \left( \frac{V dp + p dV}{m R} \right) = - p dV$$
+
+Simplifying:
+
+$$c_V \left( V dp + p dV \right) = - R p dV$$
+
+$$ c_V V dp + c_V p dV + R p dV = 0 $$
+
+$$ (c_V + R) p dV +  c_V V dp = 0 $$
+
+$$ \frac{(c_V + R)}{c_V}\frac{dV}{V} +  \frac{dp}{p} = 0 $$
+
+$$ \frac{(c_V + R)}{c_V}\int \frac{dV}{V} +  \int \frac{dp}{p} = 0 $$
+
+$$ \frac{(c_V + R)}{c_V} \ln V +  \ln p = \text{const} $$
+
+Assuming constant specific heats, we can define a constant:
+
+$$ \kappa \equiv \frac{(c_V + R)}{c_V} \tag{7}$$
+
+$$ \kappa \ln V +  \ln p = \text{const} $$
+
+$$ \ln V^\kappa +  \ln p = \text{const} $$
+
+$$ \ln pV^\kappa  = \text{const} $$
+
+$$ pV^\kappa  = \text{const} \tag{8}$$
 
 #### Solution Code:
 ```python
@@ -2555,7 +2507,7 @@ plt.ylabel('$p$ (Pa)', fontsize=14)
 ```
 
 #### Final Summary / Reasoning:
-## Reasoning
+## 7. Summary and Reasoning
 We were able to prove that $p V^{\kappa} = \text{constant}$ for an adiabatic expansion process. We also see from this that we are able to relate pressure to volume for a process from A to B. That means we will be able to determine the boundary work done for such a process. This will be useful when we start to analyze cycles, such as the Carnot cycle, which has adiabatic expansion and compression processes.
 
 ---
@@ -2565,7 +2517,7 @@ We were able to prove that $p V^{\kappa} = \text{constant}$ for an adiabatic exp
 **Lecture References:** Key: Fa25-L7c-4.0 (Differential entropy change relations)
 **Book Reference:** Book Ch. 7: Entropy
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 1. Problem Statement
 
 Derive the differential entropy change relations.  
@@ -2843,52 +2795,14 @@ where $k = k(T)$.
 **Lecture References:** 
 **Book Reference:** Book Ch. 7: Entropy
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. Summary and Reasoning
 Because the gas expansion is a spontaneous process, we could infer that the entropy should increase. Since it is an isothermal process, and since the specific volume is increasing, we would expect from the ideal gas law that the pressure should decrease. 
 
 * **Key Insight:** From the $Tds$ relations, we know that for an isothermal process, decreasing pressure will cause an increase in entropy. Alternatively stated, for an isothermal process, increasing specific volume will increase entropy.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-# constants
-R_JperKgPerK = 0.2870e3
 
-# state 1
-p1_Pa = 1e5
-m_kg = 1
-T1_K = 300
-
-V1 = R_JperKgPerK*m_kg*T1_K/p1_Pa; print("V1 =",V1,"m3")
-
-V_II = 1
-V2 = V1+V_II; print("V2 =",V2,"m3")
-
-# state 2
-T2_K = T1_K
-p2_Pa = R_JperKgPerK*m_kg*T2_K/V2; print("p2 =",p2_Pa,"Pa")
-```
-```python
-# 6 Calculations (Code Cell)
-!pip install pyCalor
-from pyCalor import thermo as th
-# state 1
-st1 = th.state('air',T=T1_K,p=p1_Pa/1000)
-s1 = st1.s #kJ/kg/K
-print("s1 =",s1,"kJ/kg/K")
-
-st2 = th.state('air',T=T2_K,p=p2_Pa/1000)
-s2 = st2.s # kJ/kg/K
-print("s2 =",s2,"kJ/kg/K")
-
-DeltaS_kJperK = (s2 - s1)*m_kg; print("DeltaS_kJperK",DeltaS_kJperK,"kJ/K")
-
-# **Alternative Solution**
-import numpy as np
-DeltaS_kJperK_alt = - R_JperKgPerK*np.log(p2_Pa/p1_Pa)/1000
-print("DeltaS_kJperK_alt",DeltaS_kJperK_alt,"kJ/K")
-```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -2903,50 +2817,58 @@ Because the gas expansion is a spontaneous process, we could infer that the entr
 **Lecture References:** Lecture ID: 1_4ak8fp37, Key: Fa25-L7c-5.0 (Air property tables: Compressor example)
 **Book Reference:** Book Ch. 7: Entropy
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 1. Problem Statement
 Nitrogen enters an adiabatic compressor at $p_1 =$ 110 kPa and $T_1 =$ 30 $^\circ$ C and exits at $p_2 =$ 682 kPa. The process is reversible. 
 
 **Goal:** Determine the work input per unit mass, $\frac{\dot{W}_\text{in}}{\dot{m}}$.
 
+---
+
 ## 2. Schematic 
 
-Draw a schematic that shows a compressor. Draw the control volume around the compressor. There is a single inlet and oulet for mass to flow in and out. Indicate that it is adiabatic and that work is being transferred in. 
+Draw a schematic that shows a compressor. Draw the control volume around the compressor. There is a single inlet and oulet for mass to flow in and out. Indicate that it is adiabatic and that work is being transferred in.
+
+---
 
 ## 3. Assumptions and Approximations
 * **Control Volume** (mass crosses the boundary).
-* Nitrogen can be treated as an ideal gas. So we can use $T dS$ relations assuming constant specific heats. We can also use pyCalor to determine properties. We will do both and compare our answers.
-* Neglect kinetic and potential energy ($\Delta KE \approx 0$, $\Delta PE \approx 0$).
-* **Reversible process**.
-* **Adiabatic process**.
+* **Properties** We can use pyCalor to determine properties. 
+* **Ideal Gas Model** (Justification: Nitrogen at these conditions behaves as an ideal gas, $p v = R T$)
+* **Tds Relations** Because the substance is an ideal gas, we can use $Tds$ relations to compute changes in entropy if we assume constant specific heats.
+* Neglect changes in kinetic and potential energy ($\Delta KE\approx0$, $\Delta PE\approx0$). (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)
+* **Reversible process** (Justification: The problem states it.)
+* **Adiabatic process** (Justification: The problem states it.)
 * **Steady-flow process** ($\Delta m_\text{CV}= 0$, $\Delta E_\text{CV}= 0$, $\Delta S_\text{CV}= 0$).
 * We have a single inlet and outlet ($\dot{m}_\text{in}$ and $\dot{m}_\text{out}$).
 
-## 4. Physical Laws
+---
+
+## 4. Physical Laws and Governing Equations
 1.  **First Law of Thermodynamics (Energy Balance for Control Volume):**
-    $$\frac{dE_\text{CV}}{dt} = \dot{E}_\text{in} - \dot{E}_\text{out}$$
+    $$\frac{dE_\text{CV}}{dt}=\dot{E}_\text{in}-\dot{E}_\text{out}$$
 
 2.  **Conservation of Mass (Mass Balance for a Control Volume):**
-    $$\frac{dm_\text{CV}}{dt} = \dot{m}_\text{in} - \dot{m}_\text{out}$$
+    $$\frac{dm_\text{CV}}{dt}=\dot{m}_\text{in}-\dot{m}_\text{out}$$
 
 Since this is a steady flow process, we can write:
-$$\dot{E}_\text{in} = \dot{E}_\text{out}$$
+$$\dot{E}_\text{in}=\dot{E}_\text{out}$$
 
-$$\dot{m}_\text{in} = \dot{m}_\text{out} = \dot{m}$$
+$$\dot{m}_\text{in}=\dot{m}_\text{out}=\dot{m}$$
 
-We can write our conservation of energy equation as:
-$$\dot{W}_\text{in} + \dot{Q}_\text{in} + \dot{m} \left(h_1 + \frac{w_1^2}{2} + g z_1 \right) = \dot{W}_\text{out} + \dot{Q}_\text{out} + \dot{m} \left(h_2 + \frac{w_1^2}{2} + g z_2 \right)$$
+We can then write for a compressor:
+$$\dot{W}_\text{in}+\dot{Q}_\text{in}+\dot{m}\left(h_1+\frac{w_1^2}{2}+g~z_1\right)=\dot{W}_\text{out}+\dot{Q}_\text{out}+\dot{m}\left(h_2+\frac{w_1^2}{2}+g~z_2\right)$$
 
-Neglecting kinetic and potential energy effects we can write:
-$$\dot{W}_\text{in} + \dot{Q}_\text{in} + \dot{m} \left(h_1 \right) = \dot{W}_\text{out} + \dot{Q}_\text{out} + \dot{m} \left(h_2 \right)$$
+Neglecting changes in kinetic and potential energy:
+$$\dot{W}_\text{in}+\dot{Q}_\text{in}+\dot{m}h_1=\dot{W}_\text{out}+\dot{Q}_\text{out}+\dot{m}h_2 $$
 
-Applying the adiabatic assumption:
-$$\dot{W}_\text{in} + \dot{m} \left(h_1 \right) = \dot{W}_\text{out} + \dot{m} \left(h_2 \right)$$
+Since the compressor operates isentropically, we can assume that it is adiabatic:
+$$\dot{W}_\text{in}+\dot{m}h_1=\dot{W}_\text{out}+\dot{m}h_2$$
 
-Rearranging:
-$$ \frac{\dot{W}_\text{out} - \dot{W}_\text{in}}{\dot{m}} = h_1 - h_2$$
+There is only work transferred into the compressor, not out. Therefore:
+$$\dot{W}_\text{in}=\dot{m}\left(h_2-h_1\right)$$
 
-We expect that work is only transferred out, so $\dot{W}_\text{out} = 0$. We can then write:
+We can then write:
 
 $$\frac{\dot{W}_\text{in}}{\dot{m}} = h_2 - h_1$$
 
@@ -2960,28 +2882,15 @@ We can use this information to determine the enthalpy at state 2.
 
 We can determine the temperature at state 2 by using the $TdS$ relations. For an ideal gas undergoing an isentropic (reversible and adiabatic) process, we can write:
 
-$$\left( \frac{T_2}{T_1} \right)_{s = const} = \left(\frac{p_2}{p_1} \right)^{(k-1)/k} $$
+$$\left(\frac{T_2}{T_1}\right)_{s=const}=\left(\frac{p_2}{p_1}\right)^{(k-1)/k} $$
 
-Recall that $k = c_p/c_v$, so to do this calculation we have to select the $k$ at some temperature. We can choose the temperature at the inlet state. By knowing $T_1$, $p_1$, and $p_2$, we can determine $T_2$. 
+Recall that $k=c_p/c_v$, so to do this calculation we have to select the $k$ at some temperature. We can choose the temperature at the inlet state. By knowing $T_1$, $p_1$, and $p_2$, we can determine $T_2$. 
 
 For an ideal gas, changes in enthalpy can be expressed as:
 
-$$h_2 - h_1 = c_p \left(T_2 - T_1 \right) $$
+$$h_2-h_1=c_p\left(T_2-T_1\right) $$
 
 Again, we have to select a specific heat at some temperature. We can take the inlet temperature.
-## 7. 💡 Summary and Reasoning
-
-By separating flow work from total work to form the property enthalpy, the work term we calculate is then useful shaft work. The work out per unit mass is a simple formula: 
-
-$$\frac{\dot{W}_\text{in}}{\dot{m}} = h_2 - h_1$$
-
-* **Key Insight:** For a steady flow system undergoing an **adiabatic** and **reversible** process, this can be considered as an isentropic process. That is useful because it allows us to determine the exit state of the turbine since we also know the exit pressure. 
-
-* **Alternative Solution** If we assume ideal gas behavior, and if the process is isentropic (reversible and adiabatic) then we can write:
-
-$$\frac{\dot{W}_\text{in}}{\dot{m}} = c_p \left( T_2 - T_1 \right)$$
-
-For that we have to select specific heats at a certain temperature. We chose the inlet temperature. That turned out to be a good assumption. This approach is simpler and is a good way to first solve the problem. One can check if it is a good assumption by determining actual property values using `pyCalor`.
 
 #### Solution Code:
 ```python
@@ -3026,82 +2935,17 @@ print(f"Work input per unit mass assuming ideal gas and using TdS relations: {wI
 ```
 
 #### Final Summary / Reasoning:
-## 1. Problem Statement
-Nitrogen enters an adiabatic compressor at $p_1 =$ 110 kPa and $T_1 =$ 30 $^\circ$ C and exits at $p_2 =$ 682 kPa. The process is reversible. 
-
-**Goal:** Determine the work input per unit mass, $\frac{\dot{W}_\text{in}}{\dot{m}}$.
-
-## 2. Schematic 
-
-Draw a schematic that shows a compressor. Draw the control volume around the compressor. There is a single inlet and oulet for mass to flow in and out. Indicate that it is adiabatic and that work is being transferred in. 
-
-## 3. Assumptions and Approximations
-* **Control Volume** (mass crosses the boundary).
-* Nitrogen can be treated as an ideal gas. So we can use $T dS$ relations assuming constant specific heats. We can also use pyCalor to determine properties. We will do both and compare our answers.
-* Neglect kinetic and potential energy ($\Delta KE \approx 0$, $\Delta PE \approx 0$).
-* **Reversible process**.
-* **Adiabatic process**.
-* **Steady-flow process** ($\Delta m_\text{CV}= 0$, $\Delta E_\text{CV}= 0$, $\Delta S_\text{CV}= 0$).
-* We have a single inlet and outlet ($\dot{m}_\text{in}$ and $\dot{m}_\text{out}$).
-
-## 4. Physical Laws
-1.  **First Law of Thermodynamics (Energy Balance for Control Volume):**
-    $$\frac{dE_\text{CV}}{dt} = \dot{E}_\text{in} - \dot{E}_\text{out}$$
-
-2.  **Conservation of Mass (Mass Balance for a Control Volume):**
-    $$\frac{dm_\text{CV}}{dt} = \dot{m}_\text{in} - \dot{m}_\text{out}$$
-
-Since this is a steady flow process, we can write:
-$$\dot{E}_\text{in} = \dot{E}_\text{out}$$
-
-$$\dot{m}_\text{in} = \dot{m}_\text{out} = \dot{m}$$
-
-We can write our conservation of energy equation as:
-$$\dot{W}_\text{in} + \dot{Q}_\text{in} + \dot{m} \left(h_1 + \frac{w_1^2}{2} + g z_1 \right) = \dot{W}_\text{out} + \dot{Q}_\text{out} + \dot{m} \left(h_2 + \frac{w_1^2}{2} + g z_2 \right)$$
-
-Neglecting kinetic and potential energy effects we can write:
-$$\dot{W}_\text{in} + \dot{Q}_\text{in} + \dot{m} \left(h_1 \right) = \dot{W}_\text{out} + \dot{Q}_\text{out} + \dot{m} \left(h_2 \right)$$
-
-Applying the adiabatic assumption:
-$$\dot{W}_\text{in} + \dot{m} \left(h_1 \right) = \dot{W}_\text{out} + \dot{m} \left(h_2 \right)$$
-
-Rearranging:
-$$ \frac{\dot{W}_\text{out} - \dot{W}_\text{in}}{\dot{m}} = h_1 - h_2$$
-
-We expect that work is only transferred out, so $\dot{W}_\text{out} = 0$. We can then write:
-
-$$\frac{\dot{W}_\text{in}}{\dot{m}} = h_2 - h_1$$
-
-We know $h_1$ because we have the properties at state 1. We need additional information in order to determine state 2. Since the compressor is reversible and adiabatic (no heat transfer in), then the process is isentropic. Therefore:
-
-$$s_2 = s_1$$
-
-We can use this information to determine the enthalpy at state 2. 
-
-### Alternative solution
-
-We can determine the temperature at state 2 by using the $TdS$ relations. For an ideal gas undergoing an isentropic (reversible and adiabatic) process, we can write:
-
-$$\left( \frac{T_2}{T_1} \right)_{s = const} = \left(\frac{p_2}{p_1} \right)^{(k-1)/k} $$
-
-Recall that $k = c_p/c_v$, so to do this calculation we have to select the $k$ at some temperature. We can choose the temperature at the inlet state. By knowing $T_1$, $p_1$, and $p_2$, we can determine $T_2$. 
-
-For an ideal gas, changes in enthalpy can be expressed as:
-
-$$h_2 - h_1 = c_p \left(T_2 - T_1 \right) $$
-
-Again, we have to select a specific heat at some temperature. We can take the inlet temperature.
-## 7. 💡 Summary and Reasoning
+## 7. Summary and Reasoning
 
 By separating flow work from total work to form the property enthalpy, the work term we calculate is then useful shaft work. The work out per unit mass is a simple formula: 
 
-$$\frac{\dot{W}_\text{in}}{\dot{m}} = h_2 - h_1$$
+$$\frac{\dot{W}_\text{in}}{\dot{m}}=h_2-h_1$$
 
 * **Key Insight:** For a steady flow system undergoing an **adiabatic** and **reversible** process, this can be considered as an isentropic process. That is useful because it allows us to determine the exit state of the turbine since we also know the exit pressure. 
 
 * **Alternative Solution** If we assume ideal gas behavior, and if the process is isentropic (reversible and adiabatic) then we can write:
 
-$$\frac{\dot{W}_\text{in}}{\dot{m}} = c_p \left( T_2 - T_1 \right)$$
+$$\frac{\dot{W}_\text{in}}{\dot{m}}=c_p\left(T_2-T_1\right)$$
 
 For that we have to select specific heats at a certain temperature. We chose the inlet temperature. That turned out to be a good assumption. This approach is simpler and is a good way to first solve the problem. One can check if it is a good assumption by determining actual property values using `pyCalor`.
 
@@ -3112,74 +2956,12 @@ For that we have to select specific heats at a certain temperature. We chose the
 **Lecture References:** Lecture ID: 1_r5zqwxag, Key: Fa25-L1b-8.0 (Determining the properties of nitrogen)
 **Book Reference:** Book Ch. 3: Properties of Pure Substances
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. 💡 Summary and Reasoning
 Here we see that $p = -\left(\frac{\partial u}{\partial v} \right)_s$ and $T = \left(\frac{\partial u}{\partial s} \right)_v$ demonstrating that we know more than just specific internal energy, $u$, by knowing specific volume, $v$, and specific entropy, $s$.
 
 #### Solution Code:
-```python
-## 4. 💻 Code Block: Initial Setup and Properties (Code Cell)
-!pip install pyCalor
-from pyCalor import thermo as th
 
-import numpy as np
-import matplotlib.pyplot as plt
-
-substance = "Nitrogen"
-
-T1_K = 200
-T2_K = 1000
-
-p1_Pa = 1000
-
-## 5. Properties (Code Cell)
-
-st1 = th.state(substance, T=T1_K, p=p1_Pa/1000, name="1")
-st2 = th.state(substance, T=T2_K, p=p1_Pa/1000, name="2")
-
-S12 = np.linspace(st1.s-.8, st2.s)
-
-# 6 Calculations (Code Cell)
-
-U12 = [st.u for st in [th.state(substance, v=st1.v, s=s) for s in S12]]
-plt.plot(S12,U12, 'k-', lw=2)
-
-
-b = st1.u - st1.T*st1.s
-
-S1_ = np.linspace(st1.s-1, st1.s+1)
-U_T = st1.T*S1_ + b
-plt.plot(S1_,U_T, 'r--', lw=1)
-
-plt.plot(st1.s,st1.u,marker='x',markersize=10,markerfacecolor='blue', markeredgecolor='blue', )
-
-# y = m*x + b
-# m = 1680
-# b = y - m*x
-
-plt.xlabel('s (kJ/(kg K))')
-plt.ylabel('u (kJ/kg)')
-# plt.savefig('u-s_const_v.png')
-```
-```python
-# 6 Calculations continued (Code Cell)
-
-v12 = np.linspace(st2.v, st1.v-20)
-U12_ = [st.u for st in [th.state(substance, v=v, s=st1.s) for v in v12]]
-plt.plot(v12,U12_, 'k-', lw=2)
-
-plt.plot(st1.v,st1.u,marker='x',markersize=10,markerfacecolor='blue', markeredgecolor='blue', )
-
-b_ = st1.u + (st1.p)*st1.v
-
-V1_ = np.linspace(st1.v-25, st1.v+25)
-U_p = -st1.p*V1_ + b_
-plt.plot(V1_,U_p, 'r--', lw=1)
-
-plt.xlabel('v (m^3/kg)')
-plt.ylabel('u (kJ/kg)')
-# plt.savefig('u-v_const_s.png')
-```
 
 #### Final Summary / Reasoning:
 ## 7. 💡 Summary and Reasoning
@@ -3192,35 +2974,12 @@ Here we see that $p = -\left(\frac{\partial u}{\partial v} \right)_s$ and $T = \
 **Lecture References:** Key: Fa25-L7d-X.X (.)
 **Book Reference:** Book Ch. 7: Entropy
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. 💡 Summary and Reasoning
 We expected the sign of $q$ to be positive since entropy was increasing from states 1 to 2. We did not expect any heat addition from states 2 to 3 because there was no change in entropy.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-T1_C = 120 # C
-T2_C = 30 # C
-T3_C = 100 # C
 
-s1_kJperKgPerK = 0.02 # kJ/(kg K)
-s2_kJperKgPerK = 1.0 # kJ/(kg K)
-s3_kJperKgPerK = s2_kJperKgPerK # kJ/(kg K)
-
-T1_K = T1_C + 273.15
-T2_K = T2_C + 273.15
-T3_K = T3_C + 273.15
-
-# 6 Calculations (Code Cell)
-# q = T ds # kJ/kg
-# Integrating the areas under the T-s curve
-q12_kJperKg = T2_K*(s2_kJperKgPerK-s1_kJperKgPerK) + (T1_K - T2_K)*(s2_kJperKgPerK-s1_kJperKgPerK)/2
-# process 2 to 3 is isentropic
-q23_kJperKg = 0
-# sum of the heat transferred from states 1 to 2 and 2 to 3
-q13_kJperKg = q12_kJperKg + q23_kJperKg
-print(q13_kJperKg)
-```
 
 #### Final Summary / Reasoning:
 ## 7. 💡 Summary and Reasoning
@@ -3233,7 +2992,7 @@ We expected the sign of $q$ to be positive since entropy was increasing from sta
 **Lecture References:** Lecture ID: 1_r5zqwxag, Key: Fa25-L1b-5.0 (Independent and Dependent Properties)
 **Book Reference:** Book Ch. 3: Properties of Pure Substances
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 Any change in the property $P$ may be expressed in terms of its partial derivatives and the changes in the independent properties; thus:
 
 $$dP = \frac{\partial P}{\partial x_1}dx_1 + \frac{\partial P}{\partial x_2}dx_2 + ... \frac{\partial P}{\partial x_n}dx_n$$
@@ -3255,6 +3014,9 @@ Then
 $$\frac{\partial M}{\partial x_2} = \frac{\partial N}{\partial x_1}  $$
 
 provided that $P$ is a property of the system. This is another way that a property may be identified.
+
+---
+
 ## The Pure Substance
 
 A system which is homogeneous in composition and homogeneous and invariable in chemical aggregation is called a pure substance. For example, a system consisting of pure oxygen existing as a vapor, a liquid, a solid, or any combination of these is a pure substance. 
@@ -3262,6 +3024,9 @@ A system which is homogeneous in composition and homogeneous and invariable in c
 The same can be said as regard ordinary water. Air may be consideered a pure substance as long as it is all vapor or all liquid. However, if part is a liquid and part vapor, then it is no longer a pure substance, for the liquid will be richer in nitrogen than the vapor. Again, a mixture of one mole of hydrogen gas and one-half mole of oxygen gas is a pure substance as long as no liquid or solid phase appears. On the other hand, if one part of the system the constituents are combined chemically in the form H2O, the system is not a pure substance because though homogeneous in composition it is not homogeneous in chemical aggregation. If the entire system changes in the course of a process to form H2O, it would not be considered a pure substance during that process because it is not invariable in chemical aggregation. 
 
 _It is known from experience that a pure substance in the absence of motion, gravity, capillarity, electricity, and magnetism has only two independent properties._ Among the familiar properties of a pure substance which can be quantitatively evaluated are pressure, temperature, specific volume, internal energy, viscosity, and electrical resistivity. Among these we may select two, and if these two prove to be independent of each other, then when their values are fixed the values of all the others are fixed. Most of the time, any two properties will be indepedent of each other. Exceptions are specific volume and density. A less obvious exception is the combination of pressure and temperature — these properties are independent of each other for pure substances in the vapor phase or in the liquid phase, but not for a mixture of phases.
+
+---
+
 ## The symbols $e$, $u$, $E$, and $U$
 
 A system consisting of a pure substance in a homogeneous and stable state has two independent properties in the absence of motion, gravity, electricity, magnetism, and capillarity. Therefore, we may state that the internal energy of a 1-kg mass of such a system is a fucntion, for example, of temperature and volume of the unit mass. To this function we shall give the symbol $u$, whereas the symbol $e$ may be used to denote the internal energy of a unit system in general. Thsu, for the conditions specified, we may write:
@@ -3277,194 +3042,10 @@ Values of the function $u$ may be arranged in a table according to values of two
 $$U = \int u dm \text{ and } E = \int e dm$$
 
 #### Solution Code:
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
-# Define the function for the property P (which is x3)
-# Here, we're using a simple parabolic surface: x3 = x1^2 + x2^2
-# This represents how a property (x3) changes with two independent variables (x1, x2)
-def property_function(x1, x2):
-    return x1**2 + x2**2
-
-# --- 3D Surface Plot ---
-print("Generating 3D surface plot...")
-
-# Create a meshgrid for x1 and x2 values
-# This generates a 2D array of x1 and x2 values to cover the surface
-x1_range = np.linspace(-5, 5, 100)
-x2_range = np.linspace(-5, 5, 100)
-X1, X2 = np.meshgrid(x1_range, x2_range)
-
-# Calculate the corresponding x3 values for each (X1, X2) pair
-X3 = property_function(X1, X2)
-
-# Create the 3D plot
-fig = plt.figure(figsize=(10, 8))
-ax = fig.add_subplot(111, projection='3d')
-
-# Plot the surface
-ax.plot_surface(X1, X2, X3, cmap='viridis', edgecolor='none')
-
-# Set labels for the axes
-ax.set_xlabel('$x_1$ (Independent Variable 1)', fontsize=12)
-ax.set_ylabel('$x_2$ (Independent Variable 2)', fontsize=12)
-ax.set_zlabel('$x_3$ (Dependent Property P)', fontsize=12)
-ax.set_title('3D Surface Plot: $x_3 = f(x_1, x_2)$', fontsize=14)
-ax.view_init(elev=20, azim=-120) # Adjust view angle for better visualization
-plt.tight_layout()
-plt.savefig('3D-surface-plot-x3-f-x1-x2.png')
-plt.show()
-print("3D surface plot displayed.")
-
-# --- 2D Plot for a Fixed x1 Value ---
-print("\nGenerating 2D plot for a fixed x1 value...")
-
-# Choose a fixed value for x1
-fixed_x1_value = 2.0
-print(f"Fixed value for x1: {fixed_x1_value}")
-
-# Generate x2 values for the 2D plot
-x2_for_2d_plot = np.linspace(-5, 5, 100)
-
-# Calculate x3 values for the fixed x1 and varying x2
-x3_for_2d_plot = property_function(fixed_x1_value, x2_for_2d_plot)
-
-# Create the 2D plot
-plt.figure(figsize=(8, 6))
-plt.plot(x2_for_2d_plot, x3_for_2d_plot, color='blue', linewidth=2)
-
-# Add a point to highlight the fixed x1
-# We're showing a specific point on the curve, e.g., when x2 = 0
-point_x2 = 0.0
-point_x3 = property_function(fixed_x1_value, point_x2)
-plt.scatter(point_x2, point_x3, color='red', s=100, zorder=5, label=f'Point at $x_2$={point_x2}')
-plt.annotate(f'($x_2$={point_x2}, $x_3$={point_x3:.2f})', (point_x2, point_x3),
-             textcoords="offset points", xytext=(0,10), ha='center', fontsize=10, color='red')
-
-
-# Set labels and title for the 2D plot
-plt.xlabel('$x_2$ (Independent Variable 2)', fontsize=12)
-plt.ylabel('$x_3$ (Dependent Property P)', fontsize=12)
-plt.title(f'2D Plot: $x_3 = f({fixed_x1_value}, x_2)$ for fixed $x_1 = {fixed_x1_value}$', fontsize=14)
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-plt.savefig('2D-surface-plot-x3-f-x1-x2.png')
-plt.show()
-print("2D plot displayed.")
-```
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-
-# Define the constants C1 and C2
-C1 = 10.0
-C2 = 2.0
-
-# Define the function for the property P (which is x3)
-# New function: x3 = C1 + C2 * x1 * x2
-def property_function(x1, x2, c1=C1, c2=C2):
-    return c1 + c2 * x1 * x2
-
-# Create a meshgrid for x1 and x2 values
-x1_range = np.linspace(-5, 5, 100)
-x2_range = np.linspace(-5, 5, 100)
-X1, X2 = np.meshgrid(x1_range, x2_range)
-
-# Calculate the corresponding x3 values for each (X1, X2) pair
-X3 = property_function(X1, X2)
-
-# Create the 3D plot
-fig = plt.figure(figsize=(10, 8))
-ax = fig.add_subplot(111, projection='3d')
-
-# Plot the surface
-ax.plot_surface(X1, X2, X3, cmap='viridis', edgecolor='none')
-
-# Set labels for the axes
-ax.set_xlabel('$x_1=p$ (Independent Variable 1)', fontsize=12)
-ax.set_ylabel('$x_2=v$ (Independent Variable 2)', fontsize=12)
-ax.set_zlabel('$x_3=u$ (Dependent Property P)', fontsize=12)
-ax.set_title(f'3D Surface Plot: $x_3 = {C1} + {C2}x_1x_2$', fontsize=14)
-ax.view_init(elev=20, azim=-120) # Adjust view angle for better visualization
-plt.tight_layout()
-plt.show()
-
-# --- 2D Plot for a Fixed x1 Value ---
-# Choose a fixed value for x1
-fixed_x1_value = 2.0
-print(f"Fixed value for x1: {fixed_x1_value}")
-
-# Generate x2 values for the 2D plot
-x2_for_2d_plot = np.linspace(-5, 5, 100)
-
-# Calculate x3 values for the fixed x1 and varying x2
-x3_for_2d_plot = property_function(fixed_x1_value, x2_for_2d_plot)
-
-# Create the 2D plot
-plt.figure(figsize=(8, 6))
-plt.plot(x2_for_2d_plot, x3_for_2d_plot, color='blue', linewidth=2)
-
-# Add a point to highlight the fixed x1
-# We're showing a specific point on the curve, e.g., when x2 = 0
-point_x2 = 0.0
-point_x3 = property_function(fixed_x1_value, point_x2)
-plt.scatter(point_x2, point_x3, color='red', s=100, zorder=5, label=f'Point at $x_2$={point_x2}')
-plt.annotate(f'($x_2$={point_x2}, $x_3$={point_x3:.2f})', (point_x2, point_x3),
-             textcoords="offset points", xytext=(0,10), ha='center', fontsize=10, color='red')
-
-# Set labels and title for the 2D plot
-plt.xlabel('$x_2=v$ (Independent Variable 2)', fontsize=12)
-plt.ylabel('$x_3=u$ (Dependent Property P)', fontsize=12)
-plt.title(f'2D Plot: $x_3 = {C1} + {C2}({fixed_x1_value})x_2$ for fixed $x_1 = p = {fixed_x1_value}$', fontsize=14)
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-plt.show()
-```
 
 #### Final Summary / Reasoning:
-### Work Done on a Piston
 
-If a fluid is confined within a cylinder by a piston, work will be done by the fluid if the piston is allowed to move outward. For any small expansion, the work is given by:
-
-$$p A ds = p dV $$
-
-where $A$ denotes the area of the piston and $ds$ the distance through which the piston moves. So the total work of a piston is:
-
-$$W = \int p dV $$
-
-However, work and the integral of $p dV$ are not always equal or equivalent and great care must be exercised in making the substitution. The experiment with multiple partitions (constant energy and constant temperature) both have finite values of the integral of $pdV$ and zero values of work. In the paddle-wheel experiment at constant volume the integral of $p dV$ is zero and the work done by the system is less than zero. 
-
-_The substitution of $p dV$ for $dW$ can be made only if all the work involved in the process is done by the fluid on a moving boundary on which it exerts at all times the same pressure that it exerts on its stationary boundaries._
-### Adiabatic Process
-
-A process which involves no exchange of heat is called an adiabatic process. The process at constant internal energy in which the partition is withdrawn is an adiabatic process. One simple adiabatic process consists of a slow expansion or compression of a fluid behind a piston. The piston and cylinder walls are perfect thermal insulators. For this process we can write from the First Law:
-
-$$ 0 = m du + dW$$
-
-Here we can substitute $pdV$ for $dW$ and obtain:
-
-$$ du = -p dv $$
-
-The path of this type of exapnsion can be traced on a digram of properties of the fulid provided that the relation between $p$, $v$, and $u$ is known for the fluid in the cylinder. 
-
-We can write the above as: 
-
-$$\frac{du}{dv} = -p $$
-
-So if the initial state is represented by a point $P$ in the $u-v$ diagram of Fig. 9, the initial slope on the diagram is equal to the negative of pressure. The curve may be approximated by following this slope for a short distance to $Q$ where the corresponding pressure may be determined from $U$, $v$, and the known relation, and a new slope may be determined. A second step to $R$ and so on and so forth. 
-
-<img src="fig-9.png" width="200"  alt="Fig. 9">
-
-If the relation between $u$, $p$, and $v$ is algebaric, then it is possible that a complete algebraic statement exists for the relation between any two properties, e.g., $p$ and $v$, for this type of adiabatic expansion. The $u - p - v$ relation for some gases can be represented by an equation of the form:
-
-$$ u = A + B p v$$
-
-where $A$ and $B$ are constants.
 
 ---
 ### PROBLEM: Water Phase Diagram
@@ -3473,45 +3054,12 @@ where $A$ and $B$ are constants.
 **Lecture References:** Lecture ID: 1_r5zqwxag, Key: Fa25-L1b-10.0 (Thermodynamics: State of a pure substance), Key: Fa25-L1b-12.0 (Thermodynamics: Transformation or Process)
 **Book Reference:** Book Ch. 3: Properties of Pure Substances
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## 7. 💡 Summary and Reasoning
 By using `pyCalor` we were able to create pressure-volume diagrams. We were able to define two states and we were able to connect those states through a process. This is very useful, especially when it comes to making cycles.
 
 #### Solution Code:
-```python
-## 4. 💻 Code Block: Initial Setup and Properties (Code Cell)
 
-# install pyCalor
-!pip install pyCalor
-
-# import pyCalor and the thermo class
-from pyCalor import thermo as th
-
-# define the properties and substance
-T1_C = 50
-x1 = 1
-T2_C = 1000
-substance = 'water'
-```
-```python
-## 5. Properties
-# use pyCalor to determine state 1
-st1 = th.state(substance, T=(T1_C,'C'), x=x1, name="1")
-
-# use pyCalor to determine state 2
-st2 = th.state(substance, T=(T2_C,'C'), p=st1.p, name="2")
-```
-```python
-## 6. Calculations 
-# use the plot to show state 1 on a "pv" diagram
-st1.plot("pv",isoProp="T"); # supported plots are: "pv","Ts","ph"
-
-# we can define a process by defining two states, st1 and st2
-pr = th.process([(st1,st2)])
-
-# we can plot such a process in this way
-pr.plot('pv');
-```
 
 #### Final Summary / Reasoning:
 ## 7. 💡 Summary and Reasoning
@@ -3524,8 +3072,28 @@ By using `pyCalor` we were able to create pressure-volume diagrams. We were able
 **Lecture References:** Lecture ID: 1_0uijb1pt, Key: Fa25-L2a-9.0 (Energy transfer by work to a closed system)
 **Book Reference:** Book Ch. 2: Energy, Energy Transfer, and General Energy Analysis
 
-#### Discussion / Problem Statement:
-## 3. ⚖️ Physical Laws and Governing Equations
+#### Problem Statement and Analysis:
+## 1. Problem Statement
+A piston compresses a gas inside of a piston-cylinder device. Consider three different processes: isothermal, isobaric, and adiabatic. Create a plot of pressure vs. volume for these three different compression processes.
+
+---
+
+## 2. Schematic
+Draw a piston-cylinder device with a boundary inside of it. Indicate that work is being transferred into the system. For the isothermal and isobaric processes indicate that heat is being transferred out. For the adiabatic case indicate that there is no heat transfer in or out.
+
+---
+
+## 3. Assumptions and Approximations
+* **Ideal Gas Model** (Justification: Air at these conditions behaves as an ideal gas, $p v = R T$)
+* **Quasi-equilibrium process** This is a necessary assumption if we are going to relate changes in properties to path functions like work, $W$.
+* Neglect changes in kinetic and potential energy ($\Delta KE\approx0$, $\Delta PE\approx0$). (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)
+* **Boundary work** is transferred through expansion ($p dV$).
+* **Closed system** (no mass in or out).
+* **Constant Specific Heats** ($c_p$, $c_v=\text{const}$). (Justification: The specific heat property changes are negligible over the process temperature range, simplifying the calculation of $\Delta~h$ to $c_p~\Delta~T$.
+
+---
+
+## 3. Physical Laws and Governing Equations
 
 ### Process: Compress Gas
 
@@ -3535,41 +3103,37 @@ Consider a piston whose piston head area is, $S$. The piston head is displaced, 
 
 The force applied to the piston head is:
 
-$$F = p S $$
+$$F=pS$$
 
 If we shift the piston a distance, $dh$, an amount of work $dW$ is done:
 
-$$dW = p S dh $$
+$$dW=pSdh$$
 
-$$W = \int_A^B p dV $$
+$$W=\int_A^B~pdV$$
 
 Let's analyze the isothermal compression of an ideal gas in a piston. 
 
-$$dU = \delta Q - \delta W $$
+$$dU=\delta~Q-\delta~W$$
 
-$$ W = \int_A^B p dV $$
+$$W=\int_A^B~pdV$$
 
 We know from the ideal gas law that:
 
-$$p V = m R T$$
+$$pV=mRT$$
 
 which we can re-write as:
 
-$$p = \frac{m R T}{V} $$
+$$p=\frac{mRT}{V}$$
 
 Therefore, we have:
 
-$$ W = \int_A^B \frac{m R T}{V} dV $$
+$$W=\int_A^B~\frac{mRT}{V}dV$$
 
 Since $T$ is constant and it is a closed system (no mass transfer), we have:
 
-$$ W = m R T \int_A^B \frac{1}{V} dV $$
+$$W=mRT~\int_A^B~\frac{1}{V}dV $$
 
-$$ W = m R T \ln \frac{V_A}{V_B} $$
-## 7. 💡 Summary and Reasoning
-If the state of the system can be represented on a $(p,V)$ diagram, the work performed during a transformation has a simple geometric representation. 
-
-Transformations which are especially important are those for which the initial and final states are the same. these are called cyclical transformations or cycles. A cycle, therefore is a transformation which brings the system back to its initial state. If the state of the system can be represented on a volume pressure diagram then a cycle can be represented on this diagram by a closed curve, such as the curve, 1234.
+$$W=mRT~\ln~\frac{V_A}{V_B}$$
 
 #### Solution Code:
 ```python
@@ -3582,7 +3146,7 @@ import numpy as np
 n = 1.0
 R = 8.314
 T_initial = 300  # Initial temperature in Kelvin
-gamma = 1.4      # Adiabatic index for a diatomic ideal gas
+k = 1.4      # Adiabatic index for a diatomic ideal gas
 
 # Define the initial and final volumes for the processes
 V_initial = 5.0  # Initial volume in m^3
@@ -3606,15 +3170,15 @@ p_isothermal = constant_isothermal / V
 P_final_isothermal = constant_isothermal / V_final
 
 # 3. Adiabatic Process (No Heat Transfer)
-constant_adiabatic = P_initial * (V_initial**gamma)
-p_adiabatic = constant_adiabatic / (V**gamma)
-P_final_adiabatic = constant_adiabatic / (V_final**gamma)
+constant_adiabatic = P_initial * (V_initial**k)
+p_adiabatic = constant_adiabatic / (V**k)
+P_final_adiabatic = constant_adiabatic / (V_final**k)
 
 # Plotting
 plt.figure(figsize=(10, 8))
 plt.plot(V, p_isobaric, label='Isobaric ($p=$ constant)', color='blue', linewidth=2)
 plt.plot(V, p_isothermal, label='Isothermal ($pV=$ constant)', color='red', linewidth=2)
-plt.plot(V, p_adiabatic, label='Adiabatic ($pV^{\gamma}=$ constant)', color='green', linewidth=2)
+plt.plot(V, p_adiabatic, label='Adiabatic ($pV^{\k}=$ constant)', color='green', linewidth=2)
 
 # Add a marker for the initial state "A"
 plt.plot(V_initial, P_initial, 'o', color='black', markersize=8)
@@ -3650,48 +3214,7 @@ plt.show()
 ```
 
 #### Final Summary / Reasoning:
-## 3. ⚖️ Physical Laws and Governing Equations
-
-### Process: Compress Gas
-
-Reversible process:
-
-Consider a piston whose piston head area is, $S$. The piston head is displaced, compressing the gas inside of it. That gas inside is at a pressure, $p$. 
-
-The force applied to the piston head is:
-
-$$F = p S $$
-
-If we shift the piston a distance, $dh$, an amount of work $dW$ is done:
-
-$$dW = p S dh $$
-
-$$W = \int_A^B p dV $$
-
-Let's analyze the isothermal compression of an ideal gas in a piston. 
-
-$$dU = \delta Q - \delta W $$
-
-$$ W = \int_A^B p dV $$
-
-We know from the ideal gas law that:
-
-$$p V = m R T$$
-
-which we can re-write as:
-
-$$p = \frac{m R T}{V} $$
-
-Therefore, we have:
-
-$$ W = \int_A^B \frac{m R T}{V} dV $$
-
-Since $T$ is constant and it is a closed system (no mass transfer), we have:
-
-$$ W = m R T \int_A^B \frac{1}{V} dV $$
-
-$$ W = m R T \ln \frac{V_A}{V_B} $$
-## 7. 💡 Summary and Reasoning
+## 7. Summary and Reasoning
 If the state of the system can be represented on a $(p,V)$ diagram, the work performed during a transformation has a simple geometric representation. 
 
 Transformations which are especially important are those for which the initial and final states are the same. these are called cyclical transformations or cycles. A cycle, therefore is a transformation which brings the system back to its initial state. If the state of the system can be represented on a volume pressure diagram then a cycle can be represented on this diagram by a closed curve, such as the curve, 1234.
@@ -3703,7 +3226,7 @@ Transformations which are especially important are those for which the initial a
 **Lecture References:** Lecture ID: 1_fclugwz7, Key: Fa25-L4a-4.0 (Moving boundary polytropic processes)
 **Book Reference:** Book Ch. 4: Energy Analysis of Closed Systems
 
-#### Discussion / Problem Statement:
+#### Problem Statement and Analysis:
 ## Reasoning
 ### For the isothermal expansion
 We see that as the volume increases, the pressure decreases as $1/V$, which is what we would expect from the ideal gas law. We also see from this that we are able to relate pressure to volume for this process. That means we will be able to determine the boundary work done for such a process. This will be useful when we start to analyze cycles, such as the Carnot cycle, which has isothermal expansion and compression processes. We also see that the boundary work done in expansion is positive, which is what we expected. 
@@ -3712,57 +3235,7 @@ We see that as the volume increases, the pressure decreases as $1/V$, which is w
 We see that the work transferred out for the isobaric expansion process is larger than the isothermal, which is what we would expect since the area under the pressure-volume curve is higher for the isobaric vs. the isothermal.
 
 #### Solution Code:
-```python
-## 5. Properties (Code Cell)
-import matplotlib.pyplot as plt
-import numpy as np
 
-initial_pressure = 100e3 # Pa
-initial_volume = 1     # m^3
-polytropic_index_isothermal = 1 # n = 1 for an isothermal process
-polytropic_index_isobaric = 0 # n = 0 for an isobaric process
-final_volume = 5       # m^3
-```
-```python
-# 6 Calculations (Code Cell)
-# Define a function for a polytropic process
-# We will use this here to analyze an isothermal expansion process
-def plot_polytropic_process(P1, V1, n, V_final, num_points=100):
-    """
-    Generates and plots a polytropic process.
-
-    Args:
-        P1 (float): Initial pressure.
-        V1 (float): Initial volume.
-        n (float): Polytropic index.
-        V_final (float): Final volume for the process.
-        num_points (int): Number of points to generate for the plot.
-    """
-
-    # Calculate the constant C
-    C = P1 * (V1**n)
-
-    # Generate a range of volumes
-    volumes = np.linspace(min(V1, V_final), max(V1, V_final), num_points)
-
-    # Calculate corresponding pressures using the polytropic relation
-    pressures = C / (volumes**n)
-
-    # Plotting
-    plt.figure(figsize=(8, 6))
-    plt.plot(volumes, pressures, 'b-', linewidth=2)
-    plt.xlabel('Volume (m^3)')
-    plt.ylabel('Pressure (Pa)')
-    plt.show()
-
-# Analyze an isothermal process
-plot_polytropic_process(initial_pressure, initial_volume, polytropic_index_isothermal, final_volume)
-plot_polytropic_process(initial_pressure, initial_volume, polytropic_index_isobaric, final_volume)
-
-# Determine work transferred
-W_OutIsothermal_J = initial_pressure*initial_volume*np.log(final_volume/initial_volume); print(W_OutIsothermal_J)
-W_OutIsobaric_J = initial_pressure*(final_volume-initial_volume); print(W_OutIsobaric_J)
-```
 
 #### Final Summary / Reasoning:
 ## Reasoning
@@ -3773,118 +3246,3 @@ We see that as the volume increases, the pressure decreases as $1/V$, which is w
 We see that the work transferred out for the isobaric expansion process is larger than the isothermal, which is what we would expect since the area under the pressure-volume curve is higher for the isobaric vs. the isothermal.
 
 ---
-
----
-## pyCalor Documentation (State and Process Classes)
-**Source:** pyCalor README.md
-## Class **state**  
-
-A call
-
-`from pyCalor import thermo as th`
-
-`st = th.state(substance, property1=value1, property2=value2, name="A")`  
-
-creates an object of class `state`. Each such object contains the following fields:  
-
-
-| - | name | description |
-| :-----------: | :--------------: | :-------------------------: |
-| `st.p` | pressure | (in units of kPa)  |
-| `st.t` | temperature | (in units of K)  |
-| `st.v` | specific volume | (in units of m3/kg)  |
-| `st.u` | specific energy | (in units of kJ/kg)  |
-| `st.h` | specific enthalpy | (in units of kJ/kg)  |
-| `st.s` | specific entropy | (in units of kJ/kg K)  |
-| `st.x` | quality | (fraction)  |
-| `st.molW` | molecular weight | (in units of kg/kmol)  |
-| `st.R` | gas constant | (in units of kJ/kg K)  |
-| `st.substance` | 'water', 'air', 'nitrogen', ... | ()  |
-
-The property values are in the “base units”; they can be viewed by issuing a command:
-
-`th.state.units`
-
-Examples:
-
-`from pyCalor import thermo as th`
-
-`th.state.units`
-
-`st1 = th.state('water', p=(1,'bar'), v=0.1, name="1")`
-
-`st1.plot("pv") # supported plots are: "pv","Ts","ph"`
-
-`st2 = th.state('R134a', x=1, t=300, name="B")`  
-
-`st2.plot("Ts", isoProp="v")`
-
-`fig1 = st2.plot("Ts",isoProp="v")`
-
-`fig1.savefig("figure_1.jpg")`
-
-`st3 = th.state('air', p=(1,'Mpa'), t=(10,'c'))` 
-
-`st3.name = "2a"`
-
-This information can also be viewed in the programming environment: 
-
-`print(th.state.__doc__)`  
-  
-
-## Class process
-
-A call
-
-`from pyCalor import thermo as th`
-
-`pr = th.process([(state1,state2),(state2,state3),...])`
-
-creates an object of class process. An object of this class represent a simple process, from `st1` to `st2`,
-
-`pr = th.process([st1,st2])`
-
-a simple cyclic process,
-
-`pr = th.process([(st1,st2),(st2,st3),(st3,st4),(st4,st1)])`,
-
-which can also be created as 
-
-`pr = th.process(st1,st2,st3,st4,st1)`,
-
-or any complex process, but for a single working fluid.  
-
-You can access process object properties by the following calls
-
-|  |  description |
-| :----------- | :--------------: |
-| `pr.StateList` | returns a list of `state` objects| 
-| `pr.isoProp(st1,st2)` | returns a dictionary of `{isoProperty: value,...}` for process `st1` &rarr; `st2` |
-
-Once you created process object `pr`, you can display its states on a thermodynamic diagram via  
-
-`fig2 = pr.plot('ts')`   
-
-to display process `pr` on a *T-s* diagram; you may likewise to make such plot in other coordinates, like `'pv'`, `'ph'`, etc.  You can also save this figure via
-
-`fig2.savefig("figure_2.pdf")`
-
-This information can also be viewed in the programming environment:
-
-`print(th.process.__doc__)`
-
-Example:
-
-`st1 = th.state('water', p=( 1,'bar'), x=0, name="A")`
-
-`st2 = th.state('water', p=(20,'bar'), s=st1.s,name="B")`
-
-`st3 = th.state('water', p=(20,'bar'), x=1,name="C")`
-
-`st4 = th.state('water', p=( 1,'bar'), s=st3.s, name="D")`
-
-`pr = th.process([(st1,st2),(st2,st3),(st3,st4),(st4,st1)])`
-
-`fig4 = pr.plot("pv")`
-
-`fig4.savefig("figure_4.pdf")`
