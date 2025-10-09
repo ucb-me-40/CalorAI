@@ -16,7 +16,7 @@ logging.set_verbosity_warning()
 # --- 1. Configuration ---
 # Model Parameters
 MODEL_ID = "microsoft/Phi-3-mini-4k-instruct"
-LORA_ADAPTER_DIR = "./phi3_oski_adapter"
+LORA_ADAPTER_DIR = "./phi3_calorai_adapter"
 TRAINING_DATA_FILE = "data/fine_tune_conversations.jsonl" 
 
 # QLoRA/Training Parameters
