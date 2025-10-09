@@ -83,34 +83,29 @@ Run the chatbot:
 python 3_run_chatbot.py
 ```
 
-Chat:
-``` bash 
-You: Can you give me an example of how I can use pyCalor to determine a state?
-```
+Start chatting:
 
+```bash
+You: Can you give me an example of how I can use pyCalor to determine a state?
+
+---
+
+### CalorAI Reply (Guaranteed Single Snippet)
+
+```markdown
 ```bash
 CalorAI: Certainly! Let's take the example of determining the state of water at a given temperature and pressure using pyCalor. Here's a step-by-step guide:
 1. First, you need to import pyCalor and the thermo class:
-```
+
 ```python
 from pyCalor import thermo as th
-```
-```
-2. Define the substance and the conditions for which you want to determine the state. Let's say we want to find the state of water at 100 degrees Celsius and 1 atmosphere of pressure:
-```
-```python
+
+
 T1_C = 100
 x1 = 1
-```
-```
-3. Create an instance of the `thermo` class, passing the substance and the conditions as arguments to the constructor. Here, you're using the `state` method to create a state object:
-```
-```python
+
 st1 = th.state(substance, T=(T1_C, 'C'), x=x1, name="1")
-```
-```
-4. Once you've created this state object, you can use it to find various properties of the substance
-```
+
 
 ### cengel_*_toc.json
 The `cengel_*_toc.json` file should contain the table of contents for that specific edition.  
