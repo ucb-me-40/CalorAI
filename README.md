@@ -84,7 +84,10 @@ python 3_run_chatbot.py
 ```
 
 Chat:
-You: ``` bash You: Can you give me an example of how I can use pyCalor to determine a state? ```
+``` bash 
+You: Can you give me an example of how I can use pyCalor to determine a state?
+```
+
 ```bash
 CalorAI: Certainly! Let's take the example of determining the state of water at a given temperature and pressure using pyCalor. Here's a step-by-step guide:
 1. First, you need to import pyCalor and the thermo class:
