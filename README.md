@@ -87,6 +87,7 @@ Start chatting:
 
 ```bash
 You: Can you give me an example of how I can use pyCalor to determine a state?
+```
 
 ```markdown
 1. First, you need to import pyCalor and the thermo class:
