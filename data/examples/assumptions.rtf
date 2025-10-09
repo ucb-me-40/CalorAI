@@ -1,0 +1,89 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ## 3. Assumptions and Approximations\
+Closed System\
+* **Closed system** (no mass in or out).\
+* **Neglect changes in kinetic and potential energy**: $\\Delta KE\\approx0$, $\\Delta PE\\approx0$. (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)\
+* **Work** is transferred in through shaft work.\
+* **Heat** is transferred out.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+* **Internally reversible process** $\\left( \\frac\{\\delta Q\}\{T\} \\right)_\\text\{int,rev\}=dS$. An internally reversible process is one where all irreversibilities, e.g., friction, temperature differences, etc., occur outside the system's boundaries. Inside the system, the process occurs without any dissipation, maintaining equilibrium and a uniform temperature.\
+* **Work** The only kind of work a simple compressible system may undergo in an internally reversible process is boundary work.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 * **Constant Specific Heats** ($c_p$, $c_v=\\text\{const\}$). (Justification: The specific heat property changes are negligible over the process temperature range, simplifying the calculation of $\\Delta~h$ to $c_p~\\Delta~T$.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+## 3. Assumptions and Approximations\
+Piston-cylinder, ideal gas\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 * **Closed system** (no mass in or out).\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 * **Ideal Gas Model** (Justification: Air at these conditions behaves as an ideal gas, $p v = R T$)\
+* **Quasi-equilibrium process** This is a necessary assumption if we are going to relate changes in properties to path functions like work, $W$.\
+* **Neglect changes in kinetic and potential energy**: $\\Delta KE\\approx0$, $\\Delta PE\\approx0$. (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)\
+* **Boundary work** is transferred through expansion ($p dV$).\
+* **Constant Specific Heats** ($c_p$, $c_v=\\text\{const\}$). (Justification: The specific heat property changes are negligible over the process temperature range, simplifying the calculation of $\\Delta~h$ to $c_p~\\Delta~T$.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Piston-cylinder, water\
+* **Closed system** (no mass in or out).\
+* **Properties** We can use `pyCalor` to determine properties. \
+* **Quasi-equilibrium process** This is a necessary assumption if we are going to relate changes in properties to path functions like work, $W$.\
+* **Neglect changes in kinetic and potential energy**: $\\Delta KE\\approx0$, $\\Delta PE\\approx0$. (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)\
+* **Boundary work** is transferred through expansion ($p dV$).\
+* **Other work** is transferred through electricity Voltage*Current*Time\
+* **Heat transfer** Heat is transferred out\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+Compressor, ideal gas\
+## 3. Assumptions and Approximations\
+* **Control Volume** (mass crosses the boundary).\
+* **Properties** We can use pyCalor to determine properties. \
+* **Ideal Gas Model** (Justification: Nitrogen at these conditions behaves as an ideal gas, $p v = R T$)\
+* **Tds Relations** Because the substance is an ideal gas, we can use $Tds$ relations to compute changes in entropy if we assume constant specific heats.\
+* Neglect changes in kinetic and potential energy ($\\Delta KE\\approx0$, $\\Delta PE\\approx0$). (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)\
+* **Reversible process** (Justification: The problem states it.)\
+* **Adiabatic process** (Justification: The problem states it.)\
+* **Steady-flow process** ($\\Delta m_\\text\{CV\}= 0$, $\\Delta E_\\text\{CV\}= 0$, $\\Delta S_\\text\{CV\}= 0$).\
+* We have a single inlet and outlet ($\\dot\{m\}_\\text\{in\}$ and $\\dot\{m\}_\\text\{out\}$).\
+\
+\
+## 3. Assumptions and Approximations\
+* **Control Volume** (mass crosses the boundary).\
+* **Ideal Gas Model** (Justification: Air at these conditions behaves as an ideal gas, $p v = R T$)\
+* **Neglect changes in kinetic and potential energy** ($\\Delta KE\\approx0$, $\\Delta PE\\approx0$). (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)\
+* **Steady-flow process** ($\\Delta~m_\\text\{CV\}=0$, $\\Delta~E_\\text\{CV\}= 0$, $\\Delta~S_\\text\{CV\}=0$).\
+* **Properties**: Determine properties using `pyCalor`. \
+* **Enthalpy/Internal Energy Change**: Changes in enthalpy can be determined via $dh = c_p dT$. (This is a consequence of the ideal gas model.)\
+* **Constant Specific Heats** ($c_p$, $c_v=\\text\{const\}$). (Justification: The specific heat property changes are negligible over the process temperature range, simplifying the calculation of $\\Delta h$ to $c_p~\\Delta T$.\
+* We have a single inlet and outlet ($\\dot\{m\}_\\text\{in\}$ and $\\dot\{m\}_\\text\{out\}$).\
+\
+\
+Compressor, two stage\
+## 3. Assumptions and Approximations\
+* **Control Volume** (mass crosses the boundary).\
+* **Properties** We will use pyCalor to determine properties.\
+* Neglect changes in kinetic and potential energy ($\\Delta KE\\approx0$, $\\Delta PE\\approx0$). (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)\
+* **Reversible and Adiabatic processes**: Compression from states 1 to 2 and 3 to 4 are considered reversible and adiabatic.\
+* **Steady-flow process** ($\\Delta m_\\text\{CV\}= 0$, $\\Delta E_\\text\{CV\}= 0$, $\\Delta S_\\text\{CV\}= 0$).\
+* We have a single inlet and outlet ($\\dot\{m\}_\\text\{in\}$ and $\\dot\{m\}_\\text\{out\}$).\
+* **Isobaric**: Heat exchangers are isobaric devices. (Justification: Negligible changes in pressure between the inlet and exit.)\
+\
+\
+Cooling a rock\
+## 3. Assumptions and Approximations\
+* **Closed system** (no mass in or out).\
+* **No Work Transfer** There is no boundary work or other types of work being done.\
+* **Neglect changes in kinetic and potential energy** ($\\Delta KE\\approx0$, $\\Delta PE\\approx0$). (Justification: The system is stationary, and there are no significant changes in elevation or velocity.)\
+* **Adiabatic Combined System** The combined control volume of the iron block and the water bath is assumed to be perfectly insulated. (Justification: No heat is transferred to or from the external surroundings, making $Q_\\text\{net,surroundings\}=0$.)\
+* **Constant Specific Heats** ($c_p$, $c_v=\\text\{const\}$). (Justification: The specific heat property changes are negligible over the process temperature range.\
+* **Thermal Equilibrium** The iron block and the water reach the same final temperature, $T_2$.}
