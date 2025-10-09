@@ -14,52 +14,45 @@ CalorAI
 |	`-- fine_tune_conversations.jsonl
 |	`-- rag_corpus.txt
 |	+-- book
-|	|	`-- tableOfContents.json
+|	|	`-- cengel_9th_toc.json
+|	|	`-- cengel_10th_toc.json
 |	+-- courseInstances
 |	|	+-- Fa23
 |	|	|-- Fa24
 |	|	|-- Sp25
 |	|	|-- Fa25
-|	|		`-- syllabus.json
-|	|		`--lecture-01a
-|	|			`-- 1_mtmivyvl.srt
-|	|			`-- 555352862 - 1_mtmivyvl - PID 2640881.json
-|	|			`-- 555352862 - 1_mtmivyvl - PID 2640881.txt
-|	|			`-- outline.json
-|	|		`-- ...
+|	|	|	`-- syllabus.json
+|	|	|	+--lecture-01a
+|	|	|	|	`-- 1_mtmivyvl.srt
+|	|	|	|	`-- 555352862 - 1_mtmivyvl - PID 2640881.json
+|	|	|	|	`-- 555352862 - 1_mtmivyvl - PID 2640881.txt
+|	|	|	|	`-- outline.json
+|	|	|	+-- ...
 |	+-- examples
-|	|	+-- nitrogenHeatingWorkTransfer.json
-|	|	|-- ...	 
+|	|	+-- _archive
+|	|	+-- jupyterNotebooks
+|	|	|	`-- nitrogenHeatingWorkTransfer.ipynb
+|	|	|	`-- ...
 |	+-- homework
-|	|	+-- flowWorkCompressor-C9-5-20.json
-|	|	|-- ...
-|	+-- contextualData
-|		+-- 20251016_1556
-|			`-- examples.json
-|			`-- outline-module-one.json
-|			`-- pyCalor-README.md
-|			`-- syllabus.json
-|			`-- tableOfContents.json
+|	|	+-- _archive
+|	|	+-- jupyterNotebooks
+|	|	|	`-- notebook.ipynb
+|	|	|	`-- ...
 +--scripts
+|	`-- _convert_notebooks_to_rag.py
+|	`-- _convert_outlines_to_rag.py
+|	`-- _convert_toc_to_rag.py
+|	`-- _generate_base_corpus.py
 |	`-- 1_create_rag_index.py
 |	`-- 2_fine_tune_phi3.py
 |	`-- 3_run_chatbot.py
 ```
 
-### tableOfContents.json
-The `tableOfContents.json` file should contain all of the book editions that you think students may use. Do not delete other editions. 
-
-### examples.json
-The `examples.json` file should contain all of worked out examples for the course. 
-
-### outline-module-one.json
-The `outline-module-one.json` file should contain all of the subtopics covered during lecture during module 1. This file is created by combining the caption data in the `outline.json` from `courseInstances`. 
-
-### pyCalor-README.md
-The `pyCalor-README.md` file should contain all the information needed to use the `pyCalor` python module. 
+### cengel_*_toc.json
+The `cengel_*_toc.json` file should contain the table of contents for that specific edition.  
 
 ### syllabus.json
-The `syllabus.json` file should contain the syllabus for the current semester formatted as a JSON file.
+The `syllabus.json` file should contain the syllabus for the current semester formatted as a JSON file. This will need to be converted into corpus chunks and added to `rag_corpus.txt`. 
 
 ### courseInstances 
 This folder contains data from each semester that the course is taught. This includes the syllabus and the captions from the recorded lectures (`.srt`, `.json`, `.txt` files). I create an outline.json file and define subtopics within the lecture. Those subtopics have a time_range, which is easy to define if you watch the recordings. There is a feature on bCourses, which allows you to create bookmarks. I used that to generate the `time_range` field entries. You should also tag those bookmarks, e.g., `Fa25-L1a-1.0`. This will also help students to navigate to the correct part of the video as they only have to enter that tag into the search and they will find the correct part of the video. This part is a non-trivial amount of work, but I believe it is essential for student learning. I don't recommend just uploading the closed caption data and asking it to create  an `outline.json` file. If an example is solved during lecture, I recommend having the solution in a Jupyter notebook, formatted in a specific way, so that we can convert that to a `.json` file to be placed in the `examples` folder. 
@@ -375,7 +368,80 @@ $$\frac{\dot{W}_\text{in}}{\dot{m}} = c_p \left( T_2 - T_1 \right)$$
 For that we have to select specific heats at a certain temperature. We chose the inlet temperature. That turned out to be a good assumption. This approach is simpler and is a good way to first solve the problem. One can check if it is a good assumption by determining actual property values using `pyCalor`.
 ```
 
-We can then ask Gemini to convert this into a complete corpus chunk. For `nitrogenHeatingWorkTransfer`, this then looks like:
+We can then run `_convert_notebooks_to_rag.py` to conver the Jupyter notebook into corpus chunks that are appended to the `rag_corpus.txt` file. 
+
+```
+---
+### PROBLEM: nitrogenHeatingWorkTransfer
+**Source:** Jupyter Notebook (nitrogenHeatingWorkTransfer.ipynb)
+**Topic:** Closed Systems
+**Lecture References:** Lecture ID: 1_3375c5yj, Key: Fa25-L4c-2.0 (Electrical heating and cooling of a cylinder containing nitrogen at constant pressure)
+**Book Reference:** Book Ch. 4: Energy Analysis of Closed Systems
+
+#### Discussion / Problem Statement:
+## 7. Summary and Reasoning
+
+We see that the values for $T_2$ are the same for two different approaches. The assumption of constant specific heat values appears to be a good one.
+
+#### Solution Code:
+```
+```python
+# 5. Properties (Code Cell)
+!pip install pyCalor
+from pyCalor import thermo as th
+
+R_JperKgPerK = 296.8
+V1_m3 = 0.5
+p1_Pa = 400e3
+T1_K = 27+273.15
+substance = 'nitrogen'
+
+# determine state 1 using pyCalor
+st1 = th.state(substance,T=(T1_K,'K'),p=(400,'kpa'),name='1')
+h1_JperKg = st1.h*1e3
+
+# determine the mass in the piston using the ideal gas law
+m_kg = (p1_Pa*V1_m3)/(R_JperKgPerK*T1_K); print(m_kg)
+
+Qout_J = 2800
+Volt_V = 120
+I_A = 2
+t_s = 5*60
+```
+
+```python
+# 6 Calculations (Code Cell)
+
+Win_J = Volt_V*I_A*t_s; print(Win_J)
+
+h2_JperKg = h1_JperKg + ((Win_J - Qout_J)/m_kg)
+h2_kJperKg = h2_JperKg/1e3
+
+# by knowing h2, we can determine state 2 using pyCalor
+st2 = th.state(substance,p=(p1_Pa/1e3,'kpa'),h=h2_kJperKg,name='2')
+
+# final answer, T2
+T2_C = st2.T-273.15
+print(T2_C)
+
+# alternative solution
+cp_N2_JperKgPerK = 1.039*1e3
+
+T2_K_ = T1_K + ((Win_J - Qout_J)/(cp_N2_JperKgPerK*m_kg))
+print(T2_K_-273.15)
+
+error = (T2_K_ - st2.T)/st2.T; 
+print(error*100)
+```
+
+#### Final Summary / Reasoning:
+## 7. Summary and Reasoning
+
+We see that the values for $T_2$ are the same for two different approaches. The assumption of constant specific heat values appears to be a good one.
+
+```
+
+Alternatively, you can ask Gemini to convert this into a complete corpus chunk. For `nitrogenHeatingWorkTransfer`, this then looks like:
 
 ```
 ### WORKED EXAMPLE: nitrogenHeatingWorkTransfer (Closed Systems)
@@ -411,6 +477,7 @@ The final enthalpy $h_2$ is the solution to the energy balance, which can then b
 
 ## Solution Code and Calculations (pyCalor)
 The following Python code uses the `pycalor` library to solve the problem using the energy balance approach.
+```
 
 ```python
 import pycalor as th
