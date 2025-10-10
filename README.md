@@ -1083,7 +1083,7 @@ The purpose of this script is to convert the Jupyter notebooks into corpus chunk
 ## 5. Properties (Code Cell)
 ```
 ``` python
-# 6 Calculations (Code Cell)
+## 6 Calculations (Code Cell)
 ```
 ```
 ## 7. Summary and Reasoning
