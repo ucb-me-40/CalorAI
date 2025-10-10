@@ -1651,12 +1651,30 @@ We were able to plot critical temperature isotherms for water using `pyCalor`, t
 **Book Reference:** Book Ch. 2: Energy, Energy Transfer, and General Energy Analysis
 
 #### Problem Statement and Analysis:
-## Introduction to the First Law
+## 1. Problem Statement
+## Work 
 
+We can define work as:
+$$dW_F = F ds $$
+
+where $s$ is position, $F$ is force.
+
+A state of a system is its condition or position and is identified through the properties of a system. 
+
+A property of a system is any observable characteristic of the system. 
+
+Two states of a system are called identifical states if every property of the system is the same in both instances. 
+
+When the state of a system alters, the change of state is described in terms of the end states. 
+
+The path of a change of state is the series of states through which the system passes. 
+
+The process involved in a change of state is described in terms of the path and the method by which the path is described.
+
+---
+
+## 2. Schematic 
 Consider a system consisting of a fixed surface $S$ and a weight $\omega$ tied to a drum mounted above the surface in frictionless bearings. 
-
-<img src="fig-1.png" width="300"  alt="Fig. 1">
-
 
 Let's call the state of this system in which the weight rests upon the surface state 1. 
 
@@ -1667,8 +1685,6 @@ The process just described was accompanied by the flow of work from a system com
 _Work flows from a system (and to another) during a given operation if the sole effect external to the system could be the rise of a weight._
 
 Now the weight-drum system is allowed to return to state 1 by a slow downward movement of the weight. In order to insure slow motion it is necessary to apply a restraining force to the drum. 
-
-<img src="fig-2.png" width="200" alt="Fig. 2">
 
 It is clear that the restraining force might be the force applied by an opposing weight, of the same magnitude as weight $\omega$ but outside the system, which will rise the distance $h$ as the system returns to state 1. 
 
@@ -1690,8 +1706,11 @@ and our concept of a something which is conserved to appear as work or to be sto
 
 Experiments have shown that the work done in raising the weight is proportional to the heat delivered by the system to the calorimeter. Therefore we may write:
 
-
 $$ \oint dQ - \oint dW = 0 \tag{1a}$$
+
+---
+
+## 3. Assumptions and Approximations
 
 ## The First Law of Thermodynamics
 
@@ -1703,11 +1722,8 @@ These experiments cited above are no proof of the First Law. If it is true it is
 
 ---
 
-## Corollaries of the First Law
-
+## 4. Physical Laws
 ### Definition of Internal Energy, a Property
-
-<img src="fig-3.png" width="200" alt="Fig. 3">
 
 Consider a system which can change by some process A from state 1 to state 0 and by some process B from state 0 to state 1. Then:
 
@@ -1736,86 +1752,26 @@ It is profitable to reflect on the difference between the property $E$ and the n
 
 The differential $dE$ is an exact differential in terms of the variables that determine the state. The value of its integral is fixed when the values of the independent variables are fixed. Nos imilar statement can be made for $dQ$ and $dW$, because the values of their integrals depend on the processes by which the state is approached and not upon the magnitudes of the properties corresponding to the state. 
 
-So we can write $E_1$ to denote the internal energy corresponding to a state 1 but not $W_1$ or $Q_1$, because there is no quantity of work or heat which corresponds to state 1. 
-
-### The law of conservation of energy
-
-The internal energy of a system remains unchanged if the system is isolated from its environment as regards work and heat, regardless of the nature of the changes within the system. 
-
-Internal energy remains unchanged for any cyclic change in the state of the system. This is equivalent to the First Law. 
-
-### The definition of energy
-
-The term energy may be employed as a general term which embraces heat, work, and internal energy. 
-
-In Mechanics changes in internal energy of a system is called kinetic energy. 
-
-A system comprising a weight in a gravitational field, work may be introduced to raise the weight. The corresponding icnrease in the internal energy of the system is called in mechanics the increase in potential energy due to gravity. 
-
-Internal energy may include potential energy in an electrostatic field or in a magnetic field. These are all forms of stored energy which may be increased or decreased through the transfer of work alone. Internal energy includes besides these all kinds of stored energy which are affected by transfer of heat. 
-
-## The First Law and the Boundaries of a System
-
-The first law states that work and heat are equal in a cyclic process. Work and heat are evaluated at the boundaries of a system. No application of the first law can be made until the system and its boundaries are defined. The boundaries need not be stationary, and in general they will not be. 
-
-*The first step in the solution of a problem in thermodynamics is the description of a system and its boundaries.*
+So we can write $E_1$ to denote the internal energy corresponding to a state 1 but not $W_1$ or $Q_1$, because there is no quantity of work or heat which corresponds to state 1.
 
 #### Solution Code:
+```python
+## 5. Properties (Code Cell)
+# The internal energy of a system remains unchanged if the system is isolated from its environment as regards work and heat, regardless of the nature of the changes within the system. 
 
+# Internal energy remains unchanged for any cyclic change in the state of the system. This is equivalent to the First Law.
+```
+```python
+## 6 Calculations (Code Cell)
+### The definition of energy
+# The term energy may be employed as a general term which embraces heat, work, and internal energy. 
+# In Mechanics changes in internal energy of a system is called kinetic energy. 
+# A system comprising a weight in a gravitational field, work may be introduced to raise the weight. The corresponding icnrease in the internal energy of the system is called in mechanics the increase in potential energy due to gravity. 
+# Internal energy may include potential energy in an electrostatic field or in a magnetic field. These are all forms of stored energy which may be increased or decreased through the transfer of work alone. Internal energy includes besides these all kinds of stored energy which are affected by transfer of heat.
+```
 
 #### Final Summary / Reasoning:
-## Corollaries of the First Law
-
-### Definition of Internal Energy, a Property
-
-<img src="fig-3.png" width="200" alt="Fig. 3">
-
-Consider a system which can change by some process A from state 1 to state 0 and by some process B from state 0 to state 1. Then:
-
-$$\int^0_{1A} (dQ - dW) + \int_{0B}^1(dQ - dW) = 0 $$
-
-Let process $C$ be any other process by which the system may change in state from 0 to 1. Then for the cycle $1A0C1$ we may write:
-
-$$\int^0_{1A} (dQ - dW) + \int_{0C}^1(dQ - dW) = 0 $$
-
-Combining these two equations and simplifying:
-
-$$ \int^1_{0B} (dQ - dW) = \int_{0C}^1 (dQ - dW)$$
-
-Therefore, when a system changes from one prescribed state to another, the value of the integral of $(dQ - dW)$ is fixed by the end states and is independent of the process. It follows that this integral is a property because it satisfies the criterion of a property. We shall call it the internal energy of the system and give it the symbol $E$. Therefore:
-
-$$ E_1 - E_0 = \int_0^1 (dQ - dW) = Q - W \tag{2a}$$
-
-where $Q$ and $W$ denote respectively the net heat received by the system and the net work done by the system during the change of state from 0 to 1. Differentiation gives:
-
-$$dE = dQ - dW $$
-
-Thermodynamics tells us nothing about the values of $E_1$ or $E_0$ in the previous equation though it does tell us the means of computing the difference between them. Since there is no absolute value of the internal energy, it is permissible to assume that its value to be zero at any specified state. 
-
-
-It is profitable to reflect on the difference between the property $E$ and the non-properties $Q$ and $W$. A cyclic integral of $dQ$ or $dW$ may be other than zero, which is proof that the integrals of these quantities are not properties. On the other hand, the cyclic integral of $dE$ cannot be other than zero.
-
-The differential $dE$ is an exact differential in terms of the variables that determine the state. The value of its integral is fixed when the values of the independent variables are fixed. Nos imilar statement can be made for $dQ$ and $dW$, because the values of their integrals depend on the processes by which the state is approached and not upon the magnitudes of the properties corresponding to the state. 
-
-So we can write $E_1$ to denote the internal energy corresponding to a state 1 but not $W_1$ or $Q_1$, because there is no quantity of work or heat which corresponds to state 1. 
-
-### The law of conservation of energy
-
-The internal energy of a system remains unchanged if the system is isolated from its environment as regards work and heat, regardless of the nature of the changes within the system. 
-
-Internal energy remains unchanged for any cyclic change in the state of the system. This is equivalent to the First Law. 
-
-### The definition of energy
-
-The term energy may be employed as a general term which embraces heat, work, and internal energy. 
-
-In Mechanics changes in internal energy of a system is called kinetic energy. 
-
-A system comprising a weight in a gravitational field, work may be introduced to raise the weight. The corresponding icnrease in the internal energy of the system is called in mechanics the increase in potential energy due to gravity. 
-
-Internal energy may include potential energy in an electrostatic field or in a magnetic field. These are all forms of stored energy which may be increased or decreased through the transfer of work alone. Internal energy includes besides these all kinds of stored energy which are affected by transfer of heat. 
-
-## The First Law and the Boundaries of a System
+## 7. Summary and Reasoning
 
 The first law states that work and heat are equal in a cyclic process. Work and heat are evaluated at the boundaries of a system. No application of the first law can be made until the system and its boundaries are defined. The boundaries need not be stationary, and in general they will not be. 
 
@@ -2686,13 +2642,108 @@ With the $Tds$ relations we can relate changes in entropy to changes in measurab
 **Book Reference:** Book Ch. 7: Entropy
 
 #### Problem Statement and Analysis:
-## 7. Summary and Reasoning
-Because the gas expansion is a spontaneous process, we could infer that the entropy should increase. Since it is an isothermal process, and since the specific volume is increasing, we would expect from the ideal gas law that the pressure should decrease. 
+## 1. Problem Statement
+A rigid container contains 1 kg of air initially at 1 bar, which is connected to another evacuated rigid container ov volume 1 m$^3$ with a valve. The entire system is kept in contact with a thermal reservoir at 300 K. Now the valve is opened.
 
-* **Key Insight:** From the $Tds$ relations, we know that for an isothermal process, decreasing pressure will cause an increase in entropy. Alternatively stated, for an isothermal process, increasing specific volume will increase entropy.
+**Goal:** Determine the change in entropy of the air.
+
+---
+
+## 2. Schematic 
+Draw a schematic that shows one container connected to another. Indicate that the temperature is kept constant. Draw a boundary around the left container and indicate state 1. Draw an expanded boundary that includes both containers and call that state 2. No mass in or out.
+
+---
+
+## 3. Assumptions and Approximations
+* **Closed system** (no mass in or out).
+* **Ideal Gas Model** (Justification: Air at these conditions behaves as an ideal gas, $p v = R T$)
+* **Tds Relations** Because the substance is an ideal gas, we can use $Tds$ relations to compute changes in entropy if we assume constant specific heats.
+* **Neglect changes in kinetic and potential energy**: $\Delta KE\approx0$, $\Delta PE\approx0$. (Justification: The velocities are typically low, or the change in height is negligible compared to the enthalpy change.)
+* **Pure Substance** We can use pyCalor to determine properties such as specific entropy
+
+---
+
+## 4. Physical Laws
+Since we are determining the change in entropy of the gas from state 1 to state 2, we can simply determine the specific entropy at state 2 and state 2. The change in entropy is then:
+
+$$ \Delta S = S_2 - S_1 = m (s_2 - s_1)$$
+
+We know state 1, but we need to determine state 2. We know that $p_1 =$101,325 Pa. For state 2, we need the pressure, $p_2$, which we can determine it from the ideal gas equation:
+
+$$p_2 = m R T_2 / V_2 $$
+
+We know that $V_2$ is equal to the volume of both containers, $V_2 = V_I + V_{II}$. We can determine the volume of container 1 as:
+
+$$V_1 = m R T_1/p_1 $$
+
+where $V_I = V_1$
+
+The volume at state 2 is then:
+$$V_2 = (m R T_1/p_1) + V_{II} $$
+
+The pressure is then:
+
+$$p_2 = m R T_2 / V_2 $$
+
+With the pressure and the temperature at state 2, we have complete information since it's a pure substance, so we can use `pyCalor` to determine its specific entropy.
+
+** Alternative solution **
+Alternatively, we can relate changes in properties to changes in entropy through the $Tds$ relation:
+
+$$T ds = du + p dv $$
+
+Assuming an ideal gas:
+
+$$T ds = c_v dT + p dv $$
+
+Assuming constant specific heats, we can write:
+
+$$s_2 - s_1 = c_p \ln \frac{T_2}{T_2} - R \ln \frac{p_2}{p_1}$$
+
+Since it's an isothermal process:
+
+$$s_2 - s_1 = - R \ln \frac{p_2}{p_1}$$
 
 #### Solution Code:
+```python
+## 5. Properties (Code Cell)
+# constants
+R_JperKgPerK = 0.2870e3
 
+# state 1
+p1_Pa = 1e5
+m_kg = 1
+T1_K = 300
+
+V1 = R_JperKgPerK*m_kg*T1_K/p1_Pa; print("V1 =",V1,"m3")
+
+V_II = 1
+V2 = V1+V_II; print("V2 =",V2,"m3")
+
+# state 2
+T2_K = T1_K
+p2_Pa = R_JperKgPerK*m_kg*T2_K/V2; print("p2 =",p2_Pa,"Pa")
+```
+```python
+# 6 Calculations (Code Cell)
+!pip install pyCalor
+from pyCalor import thermo as th
+# state 1
+st1 = th.state('air',T=T1_K,p=p1_Pa/1000)
+s1 = st1.s #kJ/kg/K
+print("s1 =",s1,"kJ/kg/K")
+
+st2 = th.state('air',T=T2_K,p=p2_Pa/1000)
+s2 = st2.s # kJ/kg/K
+print("s2 =",s2,"kJ/kg/K")
+
+DeltaS_kJperK = (s2 - s1)*m_kg; print("DeltaS_kJperK",DeltaS_kJperK,"kJ/K")
+
+# **Alternative Solution**
+import numpy as np
+DeltaS_kJperK_alt = - R_JperKgPerK*np.log(p2_Pa/p1_Pa)/1000
+print("DeltaS_kJperK_alt",DeltaS_kJperK_alt,"kJ/K")
+```
 
 #### Final Summary / Reasoning:
 ## 7. Summary and Reasoning
@@ -2861,7 +2912,7 @@ Here we see that $p = -\left(\frac{\partial u}{\partial v} \right)_s$ and $T = \
 ### PROBLEM: entropyHeatTransferSteadyFlow
 **Source:** Jupyter Notebook (entropyHeatTransferSteadyFlow.ipynb)
 **Topic:** Properties
-**Lecture References:** Key: Fa25-L7d-X.X (.)
+**Lecture References:** Lecture ID: 1_0j02pupk, Key: Fa25-L7c-1.0 (Learning Objectives)
 **Book Reference:** Book Ch. 7: Entropy
 
 #### Problem Statement and Analysis:
