@@ -1066,27 +1066,29 @@ The purpose of this script is to convert the Jupyter notebooks into corpus chunk
 
 ```
 ## Problem Metadata
----
+```
+```
 ## 1. Problem Statement
----
+```
+```
 ## 2. Schematic
----
+```
+```
 ## 3. Assumptions and Approximations
----
+```
+```
 ## 4. Physical Laws and Governing Equations
----
 ```
 ``` python
 ## 5. Properties (Code Cell)
----
 ```
 ``` python
 # 6 Calculations (Code Cell)
----
 ```
 ```
 ## 7. Summary and Reasoning
----
+```
+```
 THIS SHOULD BE THE FINAL CELL, DO NOT ADD OTHERS AFTER THIS, EVEN IF THEY'RE EMPTY
 --- End of the Jupyter Notebook ---
 ```
