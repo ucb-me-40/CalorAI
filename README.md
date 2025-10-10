@@ -61,7 +61,8 @@ python scripts/_generate_base_corpus.py && \
 python scripts/_add_pycalor_to_rag.py  && \
 python scripts/_convert_toc_to_rag.py && \
 python scripts/_convert_outlines_to_rag.py && \
-python scripts/_convert_notebooks_to_rag.py
+python scripts/_convert_notebooks_to_rag.py && \
+python scripts/_cleaner.py
 ```
 
 ```bash
