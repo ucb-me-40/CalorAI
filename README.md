@@ -1061,6 +1061,25 @@ python scripts/_convert_outlines_to_rag.py && \
 python scripts/_convert_notebooks_to_rag.py
 python scripts/_cleaner.py
 ```
+
+#### `_generate_base_corpus.py`
+This script generates a base `rag_corpus.txt` file. 
+
+#### `_convert_toc_to_rag.py`
+This script generates corpus chunks based on the table of contents of the textbook and appends it to the `rag_corpus.txt` file. One needs to specify which outline to use, e.g., 
+```
+TOC_FILE_PATH = SCRIPT_DIR.parent / 'data' / 'book' / 'cengel_9th_toc.json'
+```
+
+#### `_convert_outlines_to_rag.py`
+This script searches a specified directory, e.g., 
+
+``` bash
+OUTLINES_BASE_DIR = SCRIPT_DIR.parent / 'data' / 'courseInstances' / 'Fa25'
+```
+
+and generates corpus chunks that are appended to `rag_corpus.txt`. It also ensures that any LaTeX formatting is corrected from that required in JSON to that for normal LaTeX. 
+
 #### `_convert_notebooks_to_rag.py`
 The purpose of this script is to convert the Jupyter notebooks into corpus chunks that can be added to the `rag_corpus.txt` file. For this to work, the Jupyter notebooks need to follow a strict format (each code snippet is a separate cell):
 
