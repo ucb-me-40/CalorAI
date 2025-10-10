@@ -1059,4 +1059,39 @@ python scripts/_generate_base_corpus.py && \
 python scripts/_convert_toc_to_rag.py && \
 python scripts/_convert_outlines_to_rag.py && \
 python scripts/_convert_notebooks_to_rag.py
+python scripts/_cleaner.py
 ```
+#### `_convert_notebooks_to_rag.py`
+The purpose of this script is to convert the Jupyter notebooks into corpus chunks that can be added to the `rag_corpus.txt` file. For this to work, the Jupyter notebooks need to follow a strict format:
+
+```
+## Problem Metadata
+---
+## 1. Problem Statement
+---
+## 2. Schematic
+---
+## 3. Assumptions and Approximations
+---
+## 4. Physical Laws and Governing Equations
+---
+```
+``` python
+## 5. Properties (Code Cell)
+---
+```
+``` python
+# 6 Calculations (Code Cell)
+---
+```
+```
+## 7. Summary and Reasoning
+---
+THIS SHOULD BE THE FINAL CELL, DO NOT ADD OTHERS AFTER THIS, EVEN IF THEY'RE EMPTY
+--- End of the Jupyter Notebook ---
+```
+
+
+
+#### `_cleaner.py`
+The purpose of this script is to remove extra spaces in LaTeX formulas. This will make your formulas much easier to process later for a RAG system (Retrieval-Augmented Generation) or any text-based analysis, as it treats the formula more like a single token or string without extraneous whitespace.
