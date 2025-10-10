@@ -118,6 +118,10 @@ st1 = th.state(substance, T=(T1_C, 'C'), x=x1, name="1")
 4. Once you've created this state object, you can use it to find various properties of the substance
 ```
 
+```bash
+You: Can you help me analyze the following problem?
+"A portion of the steam passing through a steam turbine is sometimes removed for the purposes of feedwater heating as shown in the figure below. Consider an adiabatic steam turbine with $p_1$ and $T_1 $ steam entering at a rate of $\dot{m}_{12}$. Steam is bled from this turbine at $p_2$ and $T_2$ with a mass flow rate of $\dot{m}_\text{bleed}$. The remaining steam leaves the turbine at $p_4$ and $T_4$. Assume that the water properties at state 2 (exiting the first stage of the turbine) and 3 (entering the second stage of the turbine) are the same. Determine the total power produced by this turbine."
+```
 
 ### cengel_*_toc.json
 The `cengel_*_toc.json` file should contain the table of contents for that specific edition.  
