@@ -69,6 +69,10 @@ python scripts/_cleaner.py
 tmux new -s training_session
 ```
 
+```bash
+source llm_env/bin/activate
+```
+
 Create RAG index:
 ``` bash
 python 1_create_rag_index.py
