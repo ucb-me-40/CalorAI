@@ -19,7 +19,7 @@ def clean_latex_formulas(text):
         return f'$${cleaned_content}$$'
 
     # Use re.sub to apply the cleaner function to every match across the entire text
-    # re.DOTALL makes '.' match newlines
+    # re.DOTALL makes '.' match newlines, which is crucial for multiline formulas
     cleaned_text = re.sub(pattern, cleaner, text, flags=re.DOTALL)
     
     return cleaned_text
@@ -27,24 +27,24 @@ def clean_latex_formulas(text):
 # --- File Processing ---
 
 # Define paths relative to the project root /CalorAI
-# The script assumes it is executed from /CalorAI
 data_dir = Path('data')
-input_file_path = data_dir / 'rag_corpus.txt'
-output_file_path = data_dir / 'rag_corpus_cleaned.txt' # Output goes into /CalorAI/data
+# *** MODIFICATION: Only one path is needed for both input and output ***
+file_path = data_dir / 'rag_corpus.txt' 
 
 try:
     # 1. Read the entire corpus file
-    with open(input_file_path, 'r', encoding='utf-8') as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         raw_corpus_text = f.read()
 
     # 2. Clean the formulas
     cleaned_corpus_text = clean_latex_formulas(raw_corpus_text)
 
-    # 3. Write the cleaned content to the new file
-    with open(output_file_path, 'w', encoding='utf-8') as f:
+    # 3. Write the cleaned content to the original file path
+    # 'w' (write) mode overwrites the entire file content.
+    with open(file_path, 'w', encoding='utf-8') as f:
         f.write(cleaned_corpus_text)
 
-    print(f"Successfully cleaned formulas and saved to: {output_file_path}")
+    print(f"✅ Successfully cleaned formulas and **overwrote** the original file: {file_path}")
 
 except FileNotFoundError:
-    print(f"Error: The file '{input_file_path}' was not found. Check if it exists in the 'data/' directory.")
+    print(f"❌ Error: The file '{file_path}' was not found. Check if it exists in the 'data/' directory.")
