@@ -1062,7 +1062,7 @@ python scripts/_convert_notebooks_to_rag.py
 python scripts/_cleaner.py
 ```
 #### `_convert_notebooks_to_rag.py`
-The purpose of this script is to convert the Jupyter notebooks into corpus chunks that can be added to the `rag_corpus.txt` file. For this to work, the Jupyter notebooks need to follow a strict format:
+The purpose of this script is to convert the Jupyter notebooks into corpus chunks that can be added to the `rag_corpus.txt` file. For this to work, the Jupyter notebooks need to follow a strict format (each code snippet is a separate cell):
 
 ```
 ## Problem Metadata
