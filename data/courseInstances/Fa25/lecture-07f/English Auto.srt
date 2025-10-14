@@ -1,0 +1,433 @@
+1
+00:00:05,240 --> 00:00:09,040
+Okay. I'm going
+to get started.
+
+2
+00:00:09,040 --> 00:00:10,720
+So today, we're
+going to continue
+
+3
+00:00:10,720 --> 00:00:15,480
+with our entropy analysis.
+
+4
+00:00:17,000 --> 00:00:20,120
+Why is this like?
+
+5
+00:00:22,270 --> 00:00:25,030
+Better? Better.
+Okay. So we'll
+
+6
+00:00:25,030 --> 00:00:27,310
+continue with that.
+Learning objectives.
+
+7
+00:00:27,310 --> 00:00:28,790
+So after today, you'll
+be able to apply
+
+8
+00:00:28,790 --> 00:00:30,510
+the general entropy
+balance now
+
+9
+00:00:30,510 --> 00:00:34,190
+to heat exchanger
+and also a nozzle.
+
+10
+00:00:34,190 --> 00:00:36,390
+Okay? But first, let's
+
+11
+00:00:36,390 --> 00:00:37,230
+see where you're at and
+
+12
+00:00:37,230 --> 00:00:38,830
+your understanding
+of this.
+
+13
+00:00:38,830 --> 00:00:42,270
+So you're given the
+following experiment.
+
+14
+00:00:42,270 --> 00:00:44,230
+We have a container here,
+
+15
+00:00:44,230 --> 00:00:46,910
+which is kept
+at 300 Kelvin
+
+16
+00:00:46,910 --> 00:00:48,630
+in contact with
+the reservoir.
+
+17
+00:00:48,630 --> 00:00:49,910
+The initial pressure is
+
+18
+00:00:49,910 --> 00:00:51,790
+1 bar, substance is air.
+
+19
+00:00:51,790 --> 00:00:53,830
+You have 1 kilogram.
+So you know the mass,
+
+20
+00:00:53,830 --> 00:00:54,390
+and you also know
+
+21
+00:00:54,390 --> 00:00:55,470
+the specific
+gas constant in
+
+22
+00:00:55,470 --> 00:00:57,840
+kilojoules per
+kilogram Kelvin.
+
+23
+00:00:57,840 --> 00:01:00,610
+This is connected to
+another container,
+
+24
+00:01:00,610 --> 00:01:02,770
+which was initially
+evacuated, right?
+
+25
+00:01:02,770 --> 00:01:04,570
+So it is zero
+bar of pressure,
+
+26
+00:01:04,570 --> 00:01:07,770
+and you have this as
+a volume, all right?
+
+27
+00:01:07,770 --> 00:01:11,210
+This is also kept
+at 300 Kelvin,
+
+28
+00:01:11,210 --> 00:01:13,130
+and then you open this
+valve, all right?
+
+29
+00:01:13,130 --> 00:01:16,250
+And the question is,
+what is the change in
+
+30
+00:01:16,250 --> 00:01:18,010
+entropy after you open
+
+31
+00:01:18,010 --> 00:01:20,290
+the valve and this
+system goes equilibrium,
+
+32
+00:01:20,290 --> 00:01:20,650
+okay?
+
+33
+00:01:20,650 --> 00:01:22,010
+So take 5 minutes,
+
+34
+00:01:22,010 --> 00:01:23,130
+look it through, and let's
+
+35
+00:01:23,130 --> 00:01:24,330
+see if we understand
+this very well.
+
+36
+00:01:24,330 --> 00:01:25,810
+If we don't, we'll
+go through it again,
+
+37
+00:01:25,810 --> 00:01:28,050
+and we'll do another
+repetition after that.
+
+38
+00:01:28,050 --> 00:01:30,015
+Any questions before
+we get started?
+
+39
+00:01:30,015 --> 00:01:32,820
+Okay, let's go.
+Problem. This is
+
+40
+00:01:32,820 --> 00:01:34,460
+not the first time
+you've seen this, okay?
+
+41
+00:01:34,460 --> 00:01:35,820
+Literally not
+the first time
+
+42
+00:01:35,820 --> 00:01:39,140
+you've seen this.
+
+43
+00:01:39,140 --> 00:01:40,540
+So what you have here
+
+44
+00:01:40,540 --> 00:01:42,660
+is steam that's
+entering into
+
+45
+00:01:42,660 --> 00:01:46,620
+a heat exchanger at this
+temperature, right?
+
+46
+00:01:46,620 --> 00:01:48,860
+And it's exiting at
+this temperature here,
+
+47
+00:01:48,860 --> 00:01:50,940
+and you have this
+mass flow rate
+
+48
+00:01:50,940 --> 00:01:52,860
+in kilograms per
+hour of it, right?
+
+49
+00:01:52,860 --> 00:01:54,420
+That steam is heating air.
+
+50
+00:01:54,420 --> 00:01:57,740
+Air is coming in at
+20 degrees Celsius.
+
+51
+00:01:57,740 --> 00:02:00,735
+It's exiting at 30
+degrees Celsius.
+
+52
+00:02:00,735 --> 00:02:03,250
+And you're given
+also the properties,
+
+53
+00:02:03,250 --> 00:02:05,050
+so you don't have to
+do PICOor for this.
+
+54
+00:02:05,050 --> 00:02:07,570
+You know the
+specific enthropy
+
+55
+00:02:07,570 --> 00:02:08,810
+and specific entropy of
+
+56
+00:02:08,810 --> 00:02:10,370
+the steam entering
+and exiting.
+
+57
+00:02:10,370 --> 00:02:12,210
+You're also given
+the specific heat
+
+58
+00:02:12,210 --> 00:02:13,770
+of air. You have
+three questions.
+
+59
+00:02:13,770 --> 00:02:15,890
+The first is what's
+the heat transfer rate
+
+60
+00:02:15,890 --> 00:02:17,570
+from the steam to the air?
+
+61
+00:02:17,570 --> 00:02:18,890
+So it's a Q dot out.
+
+62
+00:02:18,890 --> 00:02:20,210
+What's the Q dot out
+
+63
+00:02:20,210 --> 00:02:22,185
+from the steam to the air?
+
+64
+00:02:22,185 --> 00:02:24,960
+What is the mass flow
+rate of the air, okay?
+
+65
+00:02:24,960 --> 00:02:26,080
+And what is the rate of
+
+66
+00:02:26,080 --> 00:02:27,880
+entropy generation,
+all right?
+
+67
+00:02:27,880 --> 00:02:29,560
+Now, to make this work,
+
+68
+00:02:29,560 --> 00:02:31,000
+the one assumption that
+
+69
+00:02:31,000 --> 00:02:31,920
+you have to make is that
+
+70
+00:02:31,920 --> 00:02:33,000
+the outside of this heat
+
+71
+00:02:33,000 --> 00:02:34,720
+exchanger is adiabatic.
+
+72
+00:02:34,720 --> 00:02:36,320
+So I do not have
+heat exchange
+
+73
+00:02:36,320 --> 00:02:37,400
+happening from
+the environment
+
+74
+00:02:37,400 --> 00:02:38,480
+to the heat exchanger.
+
+75
+00:02:38,480 --> 00:02:40,160
+I only have heat
+exchange happening
+
+76
+00:02:40,160 --> 00:02:42,980
+between the steam
+and the air, okay?
+
+77
+00:02:42,980 --> 00:02:45,280
+This one should be
+straightforward,
+
+78
+00:02:45,280 --> 00:02:46,240
+you know, for you.
+
+79
+00:02:46,240 --> 00:02:47,480
+I would say it's already
+
+80
+00:02:47,480 --> 00:02:48,640
+launched. Go through it.
+
+81
+00:02:48,640 --> 00:02:50,240
+I said 10 minutes,
+but, you know,
+
+82
+00:02:50,240 --> 00:02:51,680
+maybe a little bit less.
+
+83
+00:02:51,680 --> 00:02:53,080
+We'll talk
+through that one.
+
+84
+00:02:53,080 --> 00:02:54,320
+And then at this
+stage, after
+
+85
+00:02:54,320 --> 00:02:56,000
+you've done this one,
+you've seen, like,
+
+86
+00:02:56,000 --> 00:02:56,960
+the two types of N
+
+87
+00:02:56,960 --> 00:02:58,240
+should be problems
+I can ask,
+
+88
+00:02:58,240 --> 00:02:59,400
+one in the closed system,
+
+89
+00:02:59,400 --> 00:03:00,640
+one in the open system.
+
+90
+00:03:00,640 --> 00:03:01,840
+And from that
+understanding,
+
+91
+00:03:01,840 --> 00:03:02,440
+you should be able
+
+92
+00:03:02,440 --> 00:03:04,320
+to generalize that to
+either of the cases,
+
+93
+00:03:04,320 --> 00:03:06,880
+okay? Questions?
+All right.
+
+94
+00:03:06,880 --> 00:03:09,000
+Round two, let's go.
