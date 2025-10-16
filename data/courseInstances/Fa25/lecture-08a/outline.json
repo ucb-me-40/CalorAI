@@ -10,7 +10,7 @@
   "topic": "Exergy",
   "subtopics": [
     {
-      "key": "Fa25-L7e-1.0",
+      "key": "Fa25-L8a-1.0",
       "title": "Learning objectives",
       "summary": "Prof. Schutzius describes the learning objectives for today's lecture.",
       "time_range": "00:08 - 00:29",
@@ -20,7 +20,7 @@
       "tags":["tschutzius","beta"]
     },
     {
-      "key": "Fa25-L7e-2.0",
+      "key": "Fa25-L8a-2.0",
       "title": "Exergy definition",
       "summary": "Prof. Schutzius gives a definition of exergy.",
       "time_range": "00:30 - 02:17",
@@ -30,7 +30,7 @@
       "tags":["tschutzius","beta"]
     },
     {
-      "key": "Fa25-L7e-3.0",
+      "key": "Fa25-L8a-3.0",
       "title": "Exergy analysis of a nozzle",
       "summary": "Prof. Schutzius analyzes the exergy destruction in a nozzle.",
       "time_range": "02:18 - 21:50",
@@ -40,7 +40,7 @@
       "tags":["tschutzius","beta"]
     },
     {
-      "key": "Fa25-L7e-4.0",
+      "key": "Fa25-L8a-4.0",
       "title": "Entropy generation and exergy destruction in a piston",
       "summary": "Prof. Schutzius analyzes entropy generation and exergy destruction in a piston-cylinder device.",
       "time_range": "21:51 - 39:45",
@@ -50,7 +50,7 @@
       "tags":["tschutzius","beta"]
     },
     {
-      "key": "Fa25-L7e-5.0",
+      "key": "Fa25-L8a-5.0",
       "title": "Exergy: Definition",
       "summary": "Prof. Schutzius defines exergy",
       "time_range": "39:46 - 49:41",

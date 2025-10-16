@@ -1,0 +1,43 @@
+{
+  "lectureId": "1_2txycdkl",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "08b",
+  "title": "Exergy",
+  "videoTitle": "ME40 - 10 Oct 2025 - Lecture 8b (edited)",
+  "module": "module-two",
+  "topic": "Exergy",
+  "subtopics": [
+    {
+      "key": "Fa25-L8b-1.0",
+      "title": "Learning objectives",
+      "summary": "Prof. Schutzius describes the learning objectives for today's lecture.",
+      "time_range": "00:00 - 00:45",
+      "topics": ["Exergy"],
+      "detailed_summary": "The lecturer outlines the learning objectives, focusing on the continued study of exergy and its applications. The primary goal is to develop and apply an **exergy control volume analysis** to practical systems, specifically using the examples of **liquid cooling of computer chips (CPUs and GPUs)** and a **turbine**. A planned example on a heat exchanger in a power plant is deferred to later chapters when power cycles are covered. The instructor concludes with a quiz update.",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L8b-2.0",
+      "title": "Data centers and exergy",
+      "summary": "Prof. Schutzius does an exergy analysis on hot water cooling of a supercomputer (Aquasar).",
+      "time_range": "00:46 - 40:16",
+      "topics": ["Exergy"],
+      "detailed_summary": "This subtopic presents a comprehensive exergy control volume analysis on a liquid-cooled computer chip (referencing the ETH **Aquasar** supercomputer) to evaluate the efficiency of energy utilization, contrasting it with a simple First Law approach. Since the electrical power input ($\\dot{W}_{\text{in}}$) is pure exergy, the First Law analysis is straightforward: $\\dot{W}_{\text{in}} = \\dot{Q}_{\text{out}}$. The core of the analysis is using the Second Law to calculate the exergy destruction ($\\dot{X}_{\text{destroyed}} = T_0 \\dot{S}_{\\text{gen}}$), which results from the irreversible heat transfer between the hot chip and the cooling water. The **Second Law Efficiency ($\\eta_{\\text{II}}$)** is calculated as the ratio of the recovered exergy (the exergy gained by the water, $\\dot{m}(\\psi_2 - \\psi_1)$) to the exergy input ($\\dot{W}_{\text{in}}$). The final expression shows that $\\eta_{\text{II}}$ is maximized by increasing the water's inlet temperature ($T_1$), which minimizes the irreversible temperature gradient, thus validating the real-world strategy of running chips hot to produce high-grade warm water for building heating.",
+      "examples": ["exergyBalanceElectronicsCooling"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L8b-3.0",
+      "title": "Second law efficiency of a turbine",
+      "summary": "Prof. Schutzius does a second-law of thermodynamics analysis of a turbine.",
+      "time_range": "40:17 - 49:54",
+      "topics": ["Exergy"],
+      "detailed_summary": "The subtopic walks through a full exergy analysis of a steady-flow turbine, which is a work-producing device. The problem provides the inlet state, outlet pressure, isentropic efficiency ($\\eta_T$), and dead state ($T_0, P_0$). The analysis determines: 1) The **Actual Work ($\\dot{W}_{\text{act}}$)** using the First Law and the given isentropic efficiency. 2) The **Exergy Destruction ($\\dot{X}_{\text{destroyed}}$)** by first calculating the rate of entropy generation ($\\dot{S}_{\text{gen}} = \\dot{m}(s_2 - s_1)$) and multiplying by the dead state temperature ($T_0$). 3) The **Second Law Efficiency ($\\eta_{\text{II}}$)** is calculated as $\\eta_{\text{II}} = \frac{\\dot{W}_{\text{act}}}{\dot{W}_{\text{max}}}$, where $\\dot{W}_{\text{max}}$ is the maximum possible (reversible) work, which is equal to the change in flow exergy ($\\dot{W}_{\text{max}} = \\dot{m}(\\psi_1 - \\psi_2)$). The calculation confirms the fundamental exergy destruction principle: $\\dot{W}_{\text{act}} = \\dot{W}_{\text{max}} - \\dot{X}_{\text{destroyed}}$. The section concludes by contrasting $\\eta_{\text{II}}$ (based on the maximum possible work relative to the dead state) with $\\eta_\\text{t}$ (based on the theoretical isentropic work).",
+      "examples": ["turbineSecondLawAnalysis"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}
