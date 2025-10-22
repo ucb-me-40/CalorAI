@@ -1,8 +1,10 @@
 import os
 from pathlib import Path
 from langchain_community.document_loaders import TextLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
+# from langchain.text_splitter import RecursiveCharacterTextSplitter #Removed due to import issue on 22 Oct 2025, tschutzius
+from langchain_text_splitters import RecursiveCharacterTextSplitter #Added on 22 Oct 2025, tschutzius
+#from langchain_community.embeddings import HuggingFaceEmbeddings #Removed due to import issue on 22 Oct 2025, tschutzius
+from langchain_huggingface import HuggingFaceEmbeddings #Added on 22 Oct 2025, tschutzius
 from langchain_community.vectorstores import Chroma
 
 # --- Configuration ---
@@ -35,12 +37,13 @@ def split_documents(documents):
     chunks = text_splitter.split_documents(documents)
     print(f"Created {len(chunks)} chunks.")
     return chunks
-
+    
 # --- 3. Create Embeddings and Store in ChromaDB ---
 def create_vector_store(chunks, persist_directory):
     """Converts chunks to vectors and stores them in ChromaDB."""
     print(f"Initializing embedding model: {EMBEDDING_MODEL_NAME}")
     
+    # NOTE: Assuming you completed the import change in Step 1
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
     
     print(f"Creating and persisting vector store to: {persist_directory}")
@@ -50,7 +53,10 @@ def create_vector_store(chunks, persist_directory):
         embedding=embeddings,
         persist_directory=str(persist_directory)
     )
-    vectorstore.persist()
+    
+    # --- DELETE THIS DEPRECATED LINE ---
+    # vectorstore.persist() 
+    
     print("✅ RAG Indexing Complete!")
 
 # --- Main Execution ---
