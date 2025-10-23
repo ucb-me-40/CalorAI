@@ -1,0 +1,1840 @@
+1
+00:00:00,867 --> 00:00:02,450
+PROFESSOR: I'm also
+quite curious what
+
+2
+00:00:02,450 --> 00:00:04,992
+this is going to look like on
+the recorded video in the night
+
+3
+00:00:04,992 --> 00:00:05,640
+here.
+
+4
+00:00:05,640 --> 00:00:06,660
+So now-- so all right.
+
+5
+00:00:06,660 --> 00:00:09,960
+So that was-- we talked
+about reservoirs.
+
+6
+00:00:09,960 --> 00:00:17,390
+We talked about this single
+expansion of a piston doing work
+
+7
+00:00:17,390 --> 00:00:20,540
+with an ideal gas there.
+
+8
+00:00:20,540 --> 00:00:23,162
+That was not inconsistent
+with Kelvin's statements
+
+9
+00:00:23,162 --> 00:00:24,870
+since we didn't just
+have heat into work.
+
+10
+00:00:24,870 --> 00:00:29,265
+We also had a change in the
+volume from state 1 to state 2.
+
+11
+00:00:29,265 --> 00:00:30,890
+But now we're going
+to start to connect
+
+12
+00:00:30,890 --> 00:00:32,720
+some of these more
+thought experiments
+
+13
+00:00:32,720 --> 00:00:35,283
+with real concrete systems.
+
+14
+00:00:35,283 --> 00:00:36,950
+And the first type
+that's very important
+
+15
+00:00:36,950 --> 00:00:39,710
+are what are called
+heat engines.
+
+16
+00:00:39,710 --> 00:00:41,870
+So what is a heat engine?
+
+17
+00:00:41,870 --> 00:00:46,440
+So it's an engine which is here.
+
+18
+00:00:46,440 --> 00:00:48,810
+We draw it as a ball.
+
+19
+00:00:48,810 --> 00:00:51,325
+I'll show a real example
+in the next slide here.
+
+20
+00:00:54,340 --> 00:00:55,660
+But you have an engine here.
+
+21
+00:00:55,660 --> 00:01:00,520
+On one side of it, you have
+a high temperature source.
+
+22
+00:01:00,520 --> 00:01:05,470
+So that's a high temperature
+source at some, let's say, TH.
+
+23
+00:01:05,470 --> 00:01:09,610
+And you have a low
+temperature sink
+
+24
+00:01:09,610 --> 00:01:11,450
+which is at some temperature--
+
+25
+00:01:14,360 --> 00:01:15,700
+usually, it's denoted TL.
+
+26
+00:01:15,700 --> 00:01:18,880
+So you have some heat that
+you're transferring in,
+
+27
+00:01:18,880 --> 00:01:20,300
+some work--
+
+28
+00:01:20,300 --> 00:01:22,430
+the net work that's
+transferred out.
+
+29
+00:01:22,430 --> 00:01:25,990
+And in order to make this work,
+to make this thing actually
+
+30
+00:01:25,990 --> 00:01:31,218
+work, you need to actually
+transfer heat out of the system.
+
+31
+00:01:31,218 --> 00:01:33,760
+So just like I said before, we
+thought about this experiment.
+
+32
+00:01:33,760 --> 00:01:35,000
+We transfer heat in.
+
+33
+00:01:35,000 --> 00:01:35,768
+You get some work.
+
+34
+00:01:35,768 --> 00:01:38,060
+But if you want to keep doing
+that over and over again,
+
+35
+00:01:38,060 --> 00:01:39,852
+you're going to have
+to have a cooling step
+
+36
+00:01:39,852 --> 00:01:43,040
+to bring it back to its
+initial state to start over.
+
+37
+00:01:43,040 --> 00:01:44,240
+It's not intuitive.
+
+38
+00:01:44,240 --> 00:01:45,290
+I understand that.
+
+39
+00:01:45,290 --> 00:01:46,770
+I've had my PhD
+students also ask
+
+40
+00:01:46,770 --> 00:01:48,020
+me, Tom, why don't we do this?
+
+41
+00:01:48,020 --> 00:01:48,800
+We can just put heat in.
+
+42
+00:01:48,800 --> 00:01:49,840
+Yeah, of course, fine.
+
+43
+00:01:49,840 --> 00:01:51,680
+But also, you have
+to take heat out.
+
+44
+00:01:55,130 --> 00:01:56,030
+So you have that.
+
+45
+00:01:56,030 --> 00:02:00,830
+So you have the heat in, the
+heat out, and the work out.
+
+46
+00:02:00,830 --> 00:02:04,580
+So it receives this heat from
+a high temperature source.
+
+47
+00:02:04,580 --> 00:02:07,040
+It's converting it usually
+into something like shaft work.
+
+48
+00:02:07,040 --> 00:02:09,653
+So this is like a model
+for a power plant.
+
+49
+00:02:09,653 --> 00:02:11,570
+So that thing that you're
+spinning is a shaft.
+
+50
+00:02:11,570 --> 00:02:14,425
+That shaft is connected
+to a generator.
+
+51
+00:02:14,425 --> 00:02:15,800
+That generator
+makes electricity.
+
+52
+00:02:15,800 --> 00:02:18,370
+And that's why we have
+lights on in this room--
+
+53
+00:02:18,370 --> 00:02:20,300
+well, some lights
+on in this room.
+
+54
+00:02:20,300 --> 00:02:22,770
+[CHUCKLES]
+
+55
+00:02:22,770 --> 00:02:25,570
+And then you got to reject
+the remaining amount of heat.
+
+56
+00:02:25,570 --> 00:02:26,860
+Where do we reject that to?
+
+57
+00:02:26,860 --> 00:02:28,930
+We reject it to the environment.
+
+58
+00:02:28,930 --> 00:02:30,940
+So that-- I don't know--
+
+59
+00:02:30,940 --> 00:02:31,840
+I don't know--
+
+60
+00:02:31,840 --> 00:02:34,038
+I don't recall in
+California seeing it a lot.
+
+61
+00:02:34,038 --> 00:02:35,080
+I grew up in the Midwest.
+
+62
+00:02:35,080 --> 00:02:35,990
+I grew up in Illinois.
+
+63
+00:02:35,990 --> 00:02:38,280
+Illinois was known for, among
+other things, the Manhattan
+
+64
+00:02:38,280 --> 00:02:38,820
+Project.
+
+65
+00:02:38,820 --> 00:02:39,520
+We did nuclear.
+
+66
+00:02:39,520 --> 00:02:41,800
+Of course, they did a
+lot of that stuff here.
+
+67
+00:02:41,800 --> 00:02:44,020
+But there's a lot of
+nuclear power plants.
+
+68
+00:02:44,020 --> 00:02:45,880
+So we had a lot of
+these cooling towers,
+
+69
+00:02:45,880 --> 00:02:48,380
+so these big gray things
+where sometimes it
+
+70
+00:02:48,380 --> 00:02:50,380
+looks like a bunch of
+smoke is coming out of it.
+
+71
+00:02:50,380 --> 00:02:51,400
+That's not smoke.
+
+72
+00:02:51,400 --> 00:02:54,930
+That's water vapor that's
+condensed into droplets,
+
+73
+00:02:54,930 --> 00:02:55,720
+and it's clouds.
+
+74
+00:02:55,720 --> 00:02:57,345
+And that's where
+you're rejecting heat.
+
+75
+00:02:57,345 --> 00:02:59,350
+You can also reject
+heat into rivers.
+
+76
+00:02:59,350 --> 00:03:01,200
+It can be done into oceans.
+
+77
+00:03:01,200 --> 00:03:04,740
+And all of that is used to
+cool steam that's coming out
+
+78
+00:03:04,740 --> 00:03:06,670
+of the back end of a turbine.
+
+79
+00:03:06,670 --> 00:03:08,830
+And again, these things
+all operate on a cycle.
+
+80
+00:03:08,830 --> 00:03:09,990
+That's the key insight.
+
+81
+00:03:09,990 --> 00:03:11,620
+So what does it look like?
+
+82
+00:03:11,620 --> 00:03:17,400
+So again, the-- for now--
+
+83
+00:03:17,400 --> 00:03:19,830
+we're in a transition
+to more sustainability
+
+84
+00:03:19,830 --> 00:03:22,460
+and weaning ourselves off of it.
+
+85
+00:03:22,460 --> 00:03:25,340
+But the reality, even in
+where I was in Europe,
+
+86
+00:03:25,340 --> 00:03:30,160
+50% of all electricity there
+was still generated in 2017
+
+87
+00:03:30,160 --> 00:03:34,150
+with a coal-fired power plant,
+which looks exactly like this.
+
+88
+00:03:34,150 --> 00:03:37,640
+You take water.
+
+89
+00:03:37,640 --> 00:03:39,520
+You compress it with
+a pump that goes
+
+90
+00:03:39,520 --> 00:03:40,910
+into what's called a boiler.
+
+91
+00:03:40,910 --> 00:03:41,750
+You take something.
+
+92
+00:03:41,750 --> 00:03:44,590
+It can be sunlight, it can
+be coal, it can be whatever.
+
+93
+00:03:44,590 --> 00:03:47,960
+You burn it, or you
+concentrate that heat.
+
+94
+00:03:47,960 --> 00:03:50,260
+You boil the water,
+so that water
+
+95
+00:03:50,260 --> 00:03:52,910
+gets to a really high
+temperature and a high pressure.
+
+96
+00:03:52,910 --> 00:03:54,940
+So you vaporize it, get
+it to high temperature
+
+97
+00:03:54,940 --> 00:03:55,910
+and high pressure.
+
+98
+00:03:55,910 --> 00:04:00,410
+You send that into a turbine.
+
+99
+00:04:00,410 --> 00:04:03,350
+So first, it goes into
+this really narrow part.
+
+100
+00:04:03,350 --> 00:04:06,920
+And then, as it passes through,
+it causes these fans to spin.
+
+101
+00:04:06,920 --> 00:04:09,920
+It expands, transfers
+work out to the generator.
+
+102
+00:04:09,920 --> 00:04:18,430
+Now you have, out of the back
+end of there, still steam,
+
+103
+00:04:18,430 --> 00:04:22,250
+usually at a lower pressure
+and maybe a lower temperature.
+
+104
+00:04:22,250 --> 00:04:23,565
+And then you condense that.
+
+105
+00:04:23,565 --> 00:04:25,940
+You condense that into what's
+called a surface condenser.
+
+106
+00:04:25,940 --> 00:04:28,100
+So imagine this is
+like a bunch of pipes.
+
+107
+00:04:28,100 --> 00:04:33,400
+So you have like 1,000 pipes
+all next to each other.
+
+108
+00:04:33,400 --> 00:04:36,710
+On the inside of them, you
+take water out of a river.
+
+109
+00:04:36,710 --> 00:04:38,360
+You send it through the pipe.
+
+110
+00:04:38,360 --> 00:04:40,860
+Then you put it back into
+the river or into it.
+
+111
+00:04:40,860 --> 00:04:42,730
+On the outside of
+those pipes, you
+
+112
+00:04:42,730 --> 00:04:45,700
+condense the steam
+which is coming out
+
+113
+00:04:45,700 --> 00:04:47,990
+of the back end of that turbine.
+
+114
+00:04:47,990 --> 00:04:52,720
+So then your liquid here is
+a liquid, saturated liquid,
+
+115
+00:04:52,720 --> 00:04:58,090
+and then you send it
+back into the pump there.
+
+116
+00:04:58,090 --> 00:05:01,480
+Maybe it's interesting to know
+that process of actually cooling
+
+117
+00:05:01,480 --> 00:05:02,506
+that condenser.
+
+118
+00:05:05,530 --> 00:05:08,890
+Does anyone want to hazard a
+guess how much water we take out
+
+119
+00:05:08,890 --> 00:05:11,450
+of the ground every
+year, as a percentage
+
+120
+00:05:11,450 --> 00:05:13,450
+of all the water that we
+take out of the ground,
+
+121
+00:05:13,450 --> 00:05:16,680
+to actually cool surface
+condensers in the US?
+
+122
+00:05:20,446 --> 00:05:21,910
+STUDENT: 60%.
+
+123
+00:05:21,910 --> 00:05:25,870
+PROFESSOR: Say it
+[INDISCERNIBLE] one more time.
+
+124
+00:05:25,870 --> 00:05:26,530
+STUDENT: 60.
+
+125
+00:05:26,530 --> 00:05:27,256
+PROFESSOR: 60.
+
+126
+00:05:27,256 --> 00:05:28,420
+STUDENT: Someone said 20.
+
+127
+00:05:28,420 --> 00:05:29,660
+PROFESSOR: Someone said 20.
+
+128
+00:05:29,660 --> 00:05:32,660
+So if we took the average
+of it, it's not far off.
+
+129
+00:05:32,660 --> 00:05:36,280
+50% of all the
+flipping groundwater
+
+130
+00:05:36,280 --> 00:05:39,490
+we take out in a year
+goes through something
+
+131
+00:05:39,490 --> 00:05:42,310
+that looks like this and
+basically back into the ground.
+
+132
+00:05:42,310 --> 00:05:44,322
+At the end of It,
+that's not consumption.
+
+133
+00:05:44,322 --> 00:05:46,780
+It's out of the ground, and
+then it's back into the ground.
+
+134
+00:05:46,780 --> 00:05:48,100
+That's fine.
+
+135
+00:05:48,100 --> 00:05:51,010
+70% of all the water
+that we consume in a year
+
+136
+00:05:51,010 --> 00:05:52,450
+actually goes into agriculture.
+
+137
+00:05:52,450 --> 00:05:56,380
+California feeds the world,
+so a lot of [INDISCERNIBLE].
+
+138
+00:05:56,380 --> 00:05:58,630
+But it's interesting to know
+because these things come
+
+139
+00:05:58,630 --> 00:05:59,450
+into conflict.
+
+140
+00:05:59,450 --> 00:06:01,820
+This is called the
+water-energy nexus.
+
+141
+00:06:01,820 --> 00:06:02,780
+So we have energy.
+
+142
+00:06:02,780 --> 00:06:05,050
+Who needs water at some point?
+
+143
+00:06:05,050 --> 00:06:06,920
+We have water which
+we need for drinking.
+
+144
+00:06:06,920 --> 00:06:08,930
+Sometimes it's called
+water-energy-food nexus.
+
+145
+00:06:08,930 --> 00:06:10,480
+But all these things
+come together.
+
+146
+00:06:10,480 --> 00:06:12,980
+And really, it's that device.
+
+147
+00:06:12,980 --> 00:06:14,360
+It's the surface condenser.
+
+148
+00:06:14,360 --> 00:06:17,168
+And yeah, that's literally
+my entire line of research,
+
+149
+00:06:17,168 --> 00:06:19,460
+is looking at doing this
+stuff, understanding it better
+
+150
+00:06:19,460 --> 00:06:22,340
+and how we do it
+more efficiently.
+
+151
+00:06:22,340 --> 00:06:24,800
+Anyway, so we have
+these four components.
+
+152
+00:06:24,800 --> 00:06:27,740
+Within this control volume-- so
+if I'm not talking about river
+
+153
+00:06:27,740 --> 00:06:30,240
+water coming in and
+cooling the condenser,
+
+154
+00:06:30,240 --> 00:06:33,210
+if I'm not talking about how
+the fuel comes into heat--
+
+155
+00:06:33,210 --> 00:06:34,050
+I just have heat in.
+
+156
+00:06:34,050 --> 00:06:34,800
+I have heat out.
+
+157
+00:06:34,800 --> 00:06:37,170
+I have work in
+for my compressor.
+
+158
+00:06:37,170 --> 00:06:39,870
+I have work out for my turbine.
+
+159
+00:06:39,870 --> 00:06:42,200
+We can treat that
+as a closed system.
+
+160
+00:06:42,200 --> 00:06:46,040
+Because at this scale,
+that water is not leaving,
+
+161
+00:06:46,040 --> 00:06:48,920
+assuming no leaks, whatever.
+
+162
+00:06:48,920 --> 00:06:51,913
+And closed systems
+undergoing a cycle--
+
+163
+00:06:51,913 --> 00:06:54,080
+remember, we started in one
+state, another, another,
+
+164
+00:06:54,080 --> 00:06:54,720
+another.
+
+165
+00:06:54,720 --> 00:06:56,570
+Just like being on
+a track, you need
+
+166
+00:06:56,570 --> 00:06:59,670
+to get back where you
+started at the beginning.
+
+167
+00:06:59,670 --> 00:07:03,870
+So with the first
+law, then we have--
+
+168
+00:07:03,870 --> 00:07:11,090
+we'll have no change,
+then, in that cycle.
+
+169
+00:07:11,090 --> 00:07:13,520
+So what you have to say
+is that the work out
+
+170
+00:07:13,520 --> 00:07:18,960
+is equal to the heat in
+minus, then, the heat out.
+
+171
+00:07:18,960 --> 00:07:22,950
+And so-- again, the point
+is that this heat out-- we
+
+172
+00:07:22,950 --> 00:07:23,650
+need to do it.
+
+173
+00:07:23,650 --> 00:07:24,940
+You need to transfer it out.
+
+174
+00:07:24,940 --> 00:07:28,330
+And it represents a wasted heat,
+but we would love to use it.
+
+175
+00:07:28,330 --> 00:07:30,940
+But it's just not at that high
+temperature like we had before.
+
+176
+00:07:30,940 --> 00:07:33,610
+So you're getting an insight
+that energy also has a quality.
+
+177
+00:07:33,610 --> 00:07:37,380
+It's not just conserved,
+but it also has a quality.
+
+178
+00:07:37,380 --> 00:07:40,060
+And it's also never zero.
+
+179
+00:07:40,060 --> 00:07:44,610
+So the point is that the net
+work that we can transfer out
+
+180
+00:07:44,610 --> 00:07:50,330
+is always less than the
+heat that we transfer in.
+
+181
+00:07:50,330 --> 00:07:52,710
+And with these
+terms now defined,
+
+182
+00:07:52,710 --> 00:07:54,450
+we can talk about
+actual efficiency.
+
+183
+00:07:54,450 --> 00:07:56,370
+We can talk about an
+actual, honest to God,
+
+184
+00:07:56,370 --> 00:07:59,520
+proper efficiency,
+which is here--
+
+185
+00:07:59,520 --> 00:08:01,470
+and we write with
+the Greek letter eta,
+
+186
+00:08:01,470 --> 00:08:05,520
+eta, which is the ratio
+of the network output,
+
+187
+00:08:05,520 --> 00:08:09,510
+so the shaft work here, divided
+by the total heat input.
+
+188
+00:08:09,510 --> 00:08:12,100
+So that's W net out
+divided by Q in.
+
+189
+00:08:17,190 --> 00:08:19,800
+So we can rewrite that
+diagram that I showed before.
+
+190
+00:08:19,800 --> 00:08:22,080
+So again, now we have that
+high temperature reservoir
+
+191
+00:08:22,080 --> 00:08:23,490
+at a temperature TH.
+
+192
+00:08:23,490 --> 00:08:25,590
+So that-- the point
+of the reservoir
+
+193
+00:08:25,590 --> 00:08:29,940
+is that TH won't change even
+if I transfer heat out of it.
+
+194
+00:08:29,940 --> 00:08:33,360
+We have-- and we call
+the heat transfer QH.
+
+195
+00:08:33,360 --> 00:08:35,130
+We then have the heat
+rejected, so that's
+
+196
+00:08:35,130 --> 00:08:39,419
+QL, rejected to the low
+temperature reservoir at TL.
+
+197
+00:08:39,419 --> 00:08:42,750
+And then we have
+the W net out here.
+
+198
+00:08:42,750 --> 00:08:45,570
+Because I'm drawing
+arrows, so because I'm
+
+199
+00:08:45,570 --> 00:08:49,260
+indicating arrows and directions
+of where things are going,
+
+200
+00:08:49,260 --> 00:08:52,960
+we are treating these
+things as magnitudes.
+
+201
+00:08:52,960 --> 00:08:56,500
+A vector is something that
+has magnitude and direction.
+
+202
+00:08:56,500 --> 00:08:58,120
+I've given you the direction.
+
+203
+00:08:58,120 --> 00:09:00,250
+So these are just--
+
+204
+00:09:00,250 --> 00:09:01,600
+again, these are not vectors.
+
+205
+00:09:01,600 --> 00:09:03,140
+But in an analogy
+with a vector, you
+
+206
+00:09:03,140 --> 00:09:04,030
+have a magnitude and direction.
+
+207
+00:09:04,030 --> 00:09:06,697
+I'm giving you the direction of
+heat transfer and work transfer,
+
+208
+00:09:06,697 --> 00:09:11,900
+so these quantities are
+treated as positive.
+
+209
+00:09:11,900 --> 00:09:13,820
+So rewriting it,
+W net out is then
+
+210
+00:09:13,820 --> 00:09:16,610
+the Q from the high
+temperature minus the Q
+
+211
+00:09:16,610 --> 00:09:19,190
+from the low
+temperature reservoir.
+
+212
+00:09:19,190 --> 00:09:28,010
+And if we divide
+both sides by QH--
+
+213
+00:09:28,010 --> 00:09:30,720
+the definition of eta was the
+work out divided by the heat in,
+
+214
+00:09:30,720 --> 00:09:31,460
+so that's there.
+
+215
+00:09:31,460 --> 00:09:34,850
+And that's equal to 1 minus the
+heat transferred to the lower
+
+216
+00:09:34,850 --> 00:09:36,980
+reservoir divided by
+the heat transferred
+
+217
+00:09:36,980 --> 00:09:39,660
+from the high
+temperature reservoir.
+
+218
+00:09:42,290 --> 00:09:43,920
+And some actual values--
+
+219
+00:09:43,920 --> 00:09:50,120
+so after like 120 years of
+research into the diesel
+
+220
+00:09:50,120 --> 00:09:52,670
+engine-- that was one of the
+first rationally designed
+
+221
+00:09:52,670 --> 00:09:53,580
+engines--
+
+222
+00:09:53,580 --> 00:09:56,940
+those things are close
+to 40% efficiency,
+
+223
+00:09:56,940 --> 00:10:00,020
+so that's like
+chemical-- basically,
+
+224
+00:10:00,020 --> 00:10:03,680
+your chemical energy,
+in that sense,
+
+225
+00:10:03,680 --> 00:10:07,910
+is kind of like
+your energy input,
+
+226
+00:10:07,910 --> 00:10:10,985
+and you have the work output.
+
+227
+00:10:10,985 --> 00:10:15,980
+The normal automobile
+engine, close to 25%.
+
+228
+00:10:15,980 --> 00:10:20,570
+And these large, really
+large steam power plants,
+
+229
+00:10:20,570 --> 00:10:25,490
+because they are really
+highly optimized,
+
+230
+00:10:25,490 --> 00:10:28,340
+they can get up to 60% But the
+take-home message from that
+
+231
+00:10:28,340 --> 00:10:31,130
+is like, 100 and
+whatever years and lots
+
+232
+00:10:31,130 --> 00:10:34,080
+of money and investment,
+and that's your number.
+
+233
+00:10:34,080 --> 00:10:39,120
+So you still lose
+like 40% of this,
+
+234
+00:10:39,120 --> 00:10:41,155
+and that's necessary in
+order to do the cycle.
+
+235
+00:10:41,155 --> 00:10:43,030
+To be able to do the
+cycle and to keep going.
+
+236
+00:10:43,030 --> 00:10:47,940
+It's a necessary evil there.
+
+237
+00:10:47,940 --> 00:10:50,080
+And it may be interesting
+to think about, there,
+
+238
+00:10:50,080 --> 00:10:52,330
+what was actually the first
+steam engines looked like.
+
+239
+00:10:52,330 --> 00:10:54,090
+So if you want to think about
+what engineering progress looked
+
+240
+00:10:54,090 --> 00:10:55,840
+like, you can look up
+what that value was,
+
+241
+00:10:55,840 --> 00:10:59,370
+and maybe that helps you to
+appreciate what 60 actually
+
+242
+00:10:59,370 --> 00:11:01,500
+looks like.
+
+243
+00:11:01,500 --> 00:11:03,490
+So making that more
+concrete-- so again,
+
+244
+00:11:03,490 --> 00:11:06,910
+here, you can't run these
+cycles without heat rejection,
+
+245
+00:11:06,910 --> 00:11:10,030
+so you've got a reservoir at
+100 degrees C. Transfer it in.
+
+246
+00:11:10,030 --> 00:11:12,990
+You do some PV work out.
+
+247
+00:11:12,990 --> 00:11:15,700
+You have to bring that back
+down to the initial stage.
+
+248
+00:11:15,700 --> 00:11:19,080
+In order to do that, you
+have to transfer some heat
+
+249
+00:11:19,080 --> 00:11:20,880
+to the reservoir.
+
+250
+00:11:20,880 --> 00:11:22,570
+And again, that's boundary work.
+
+251
+00:11:22,570 --> 00:11:27,090
+But it's straightforward to
+imagine if that was a shaft work
+
+252
+00:11:27,090 --> 00:11:29,000
+example too.
+
+253
+00:11:33,310 --> 00:11:36,670
+Coming back to sort of
+an environmental context
+
+254
+00:11:36,670 --> 00:11:39,010
+of where we reject all
+this heat to-- so this
+
+255
+00:11:39,010 --> 00:11:43,520
+is what's called
+a sankey diagram.
+
+256
+00:11:43,520 --> 00:11:45,590
+So this is a diagram where--
+
+257
+00:11:45,590 --> 00:11:48,230
+they're really weird to read,
+but they're left to right.
+
+258
+00:11:48,230 --> 00:11:54,520
+So you go left to right,
+and the width of that stream
+
+259
+00:11:54,520 --> 00:11:56,780
+there indicates
+more of something.
+
+260
+00:11:56,780 --> 00:12:00,730
+So here, you have, left
+to right, fresh water
+
+261
+00:12:00,730 --> 00:12:02,720
+at the source, so that
+could be groundwater,
+
+262
+00:12:02,720 --> 00:12:04,220
+river water, whatever.
+
+263
+00:12:04,220 --> 00:12:05,810
+And you have salt
+water at the source,
+
+264
+00:12:05,810 --> 00:12:09,340
+so that can be like
+the ocean, the sea.
+
+265
+00:12:09,340 --> 00:12:11,090
+And then you can
+look where it goes.
+
+266
+00:12:11,090 --> 00:12:11,900
+So this comes out.
+
+267
+00:12:11,900 --> 00:12:17,410
+Most of it goes to some user.
+
+268
+00:12:17,410 --> 00:12:23,390
+Quite a lot of it is heading
+towards the agricultural sector,
+
+269
+00:12:23,390 --> 00:12:24,292
+the public.
+
+270
+00:12:24,292 --> 00:12:25,750
+But you see here,
+the number that's
+
+271
+00:12:25,750 --> 00:12:29,620
+even bigger than the than
+the agricultural consumption
+
+272
+00:12:29,620 --> 00:12:33,490
+is that the majority
+of the water
+
+273
+00:12:33,490 --> 00:12:36,290
+is passing through a
+thermoelectric power plant,
+
+274
+00:12:36,290 --> 00:12:38,780
+so that means like
+steam power plant,
+
+275
+00:12:38,780 --> 00:12:40,490
+like the things that you see.
+
+276
+00:12:40,490 --> 00:12:43,790
+And of course, we're not
+consuming that, in a sense.
+
+277
+00:12:43,790 --> 00:12:46,510
+You take it, it passes
+through the surface condenser,
+
+278
+00:12:46,510 --> 00:12:49,090
+and then it goes
+back into the ground
+
+279
+00:12:49,090 --> 00:12:51,670
+or into the river, where
+then perhaps it might
+
+280
+00:12:51,670 --> 00:12:55,370
+be used in agriculture.
+
+281
+00:12:55,370 --> 00:12:57,160
+So that's the
+discharge part of it.
+
+282
+00:12:57,160 --> 00:12:58,660
+And then here in
+agriculture, that's
+
+283
+00:12:58,660 --> 00:13:01,270
+actually consumed
+because plants undergo
+
+284
+00:13:01,270 --> 00:13:02,800
+what's called transpiration.
+
+285
+00:13:02,800 --> 00:13:04,140
+They lose water vapor.
+
+286
+00:13:04,140 --> 00:13:11,620
+They evaporate it or use
+it in growth as well.
+
+287
+00:13:11,620 --> 00:13:13,940
+But that part about
+the discharge--
+
+288
+00:13:13,940 --> 00:13:16,300
+that water is no longer
+at the same temperature
+
+289
+00:13:16,300 --> 00:13:17,240
+that it came in with.
+
+290
+00:13:17,240 --> 00:13:19,105
+So that water is warmer.
+
+291
+00:13:19,105 --> 00:13:20,980
+You're putting that back
+into an environment,
+
+292
+00:13:20,980 --> 00:13:22,580
+and that also has consequences.
+
+293
+00:13:22,580 --> 00:13:25,730
+So if you start to
+heat up river water--
+
+294
+00:13:25,730 --> 00:13:27,700
+just being-- for
+us at home, it's
+
+295
+00:13:27,700 --> 00:13:31,640
+not as pleasant to probably
+stay in an environment that's
+
+296
+00:13:31,640 --> 00:13:39,180
+too warm, and these things can
+have damage and impact from it.
+
+297
+00:13:39,180 --> 00:13:41,000
+And it's not at some tiny scale.
+
+298
+00:13:41,000 --> 00:13:45,200
+It's at a scale of all of our
+water that we use, or most of it
+
+299
+00:13:45,200 --> 00:13:49,760
+is at some point doing
+something like that.
+
+300
+00:13:49,760 --> 00:13:52,010
+I hope you're sufficiently
+motivated about steam power
+
+301
+00:13:52,010 --> 00:13:54,650
+plants in the dark here.
+
+302
+00:13:54,650 --> 00:14:00,650
+So then other-- so other systems
+where we look at this analysis
+
+303
+00:14:00,650 --> 00:14:03,380
+with the reservoir there for
+what's called refrigerators
+
+304
+00:14:03,380 --> 00:14:06,860
+and heat pumps, the
+latter of which is how--
+
+305
+00:14:06,860 --> 00:14:10,310
+the current US plan
+for decarbonizing
+
+306
+00:14:10,310 --> 00:14:14,520
+our heating-- residential and
+commercial heating sectors
+
+307
+00:14:14,520 --> 00:14:15,020
+is this.
+
+308
+00:14:15,020 --> 00:14:18,930
+You take-- in a nutshell,
+you take electricity.
+
+309
+00:14:18,930 --> 00:14:23,870
+You run a compressor or a pump.
+
+310
+00:14:23,870 --> 00:14:24,990
+You take some fluid.
+
+311
+00:14:24,990 --> 00:14:26,520
+It's called a refrigerant.
+
+312
+00:14:26,520 --> 00:14:30,170
+You bring it to a high pressure
+and a high temperature.
+
+313
+00:14:30,170 --> 00:14:32,060
+You reject that heat.
+
+314
+00:14:32,060 --> 00:14:34,630
+So you reject that-- or
+you transfer heat there
+
+315
+00:14:34,630 --> 00:14:37,370
+at that high temperature
+into some surroundings.
+
+316
+00:14:37,370 --> 00:14:39,210
+If it's in your--
+
+317
+00:14:39,210 --> 00:14:41,290
+you have what are called--
+
+318
+00:14:41,290 --> 00:14:42,430
+what are they called?
+
+319
+00:14:42,430 --> 00:14:45,700
+Air heat pumps,
+[INDISCERNIBLE] air heat pumps,
+
+320
+00:14:45,700 --> 00:14:49,240
+where you're more
+or less rejecting,
+
+321
+00:14:49,240 --> 00:14:54,413
+let's say, heat into
+the environment.
+
+322
+00:14:54,413 --> 00:14:56,080
+Then we go through
+that expansion valve.
+
+323
+00:14:56,080 --> 00:14:58,038
+Remember that throttling
+valve I talked before,
+
+324
+00:14:58,038 --> 00:15:00,370
+where we have a sudden
+expansion, and then,
+
+325
+00:15:00,370 --> 00:15:05,750
+therefore, trading off PV
+for an internal energy.
+
+326
+00:15:05,750 --> 00:15:08,570
+So this gets really cold, and
+then you can cool some process.
+
+327
+00:15:08,570 --> 00:15:11,410
+That's how it looks like in
+an air conditioning system.
+
+328
+00:15:11,410 --> 00:15:13,715
+That's more or less how
+your refrigerator is.
+
+329
+00:15:13,715 --> 00:15:14,840
+So that would be your home.
+
+330
+00:15:14,840 --> 00:15:16,010
+That would be the outside.
+
+331
+00:15:16,010 --> 00:15:18,260
+What's interesting about
+these systems for, let's say,
+
+332
+00:15:18,260 --> 00:15:20,390
+using them is when we
+use them in reverse.
+
+333
+00:15:20,390 --> 00:15:25,510
+So if you run them in reverse,
+you can actually take--
+
+334
+00:15:25,510 --> 00:15:28,182
+you can transfer heat, let's
+say from a cold outside--
+
+335
+00:15:28,182 --> 00:15:29,390
+this is going to sound weird.
+
+336
+00:15:29,390 --> 00:15:32,380
+But you can transfer
+heat from the outside
+
+337
+00:15:32,380 --> 00:15:36,390
+when it's cold into the
+inside of your home.
+
+338
+00:15:36,390 --> 00:15:38,390
+And what's really
+cool about this
+
+339
+00:15:38,390 --> 00:15:40,800
+is that when you're
+transferring heat like that,
+
+340
+00:15:40,800 --> 00:15:44,330
+1 unit of electricity
+consumed here in work
+
+341
+00:15:44,330 --> 00:15:48,860
+might equal 3 units of heat
+transferred from the environment
+
+342
+00:15:48,860 --> 00:15:52,310
+into your home, and vice versa.
+
+343
+00:15:52,310 --> 00:15:53,520
+And that's really key.
+
+344
+00:15:53,520 --> 00:15:56,510
+That tells you exactly why you
+would not do Joule heating,
+
+345
+00:15:56,510 --> 00:15:57,420
+like a resistor.
+
+346
+00:15:57,420 --> 00:15:59,880
+So if I had electricity
+and I had a Joule resistor,
+
+347
+00:15:59,880 --> 00:16:02,360
+I could heat the air in
+my home or the water.
+
+348
+00:16:02,360 --> 00:16:03,360
+That makes sense, right?
+
+349
+00:16:03,360 --> 00:16:04,860
+That makes sense,
+and I would do it.
+
+350
+00:16:04,860 --> 00:16:10,010
+But this is a way where
+you can take energy that--
+
+351
+00:16:10,010 --> 00:16:12,830
+you can take and
+transfer thermal energy
+
+352
+00:16:12,830 --> 00:16:16,800
+from the environment outside
+and get more bang for your buck.
+
+353
+00:16:16,800 --> 00:16:19,820
+And the bang is like a
+factor 3, so this isn't
+
+354
+00:16:19,820 --> 00:16:23,640
+like some 60% thing, 45% thing.
+
+355
+00:16:23,640 --> 00:16:29,173
+This is like-- we're talking
+factors of difference there.
+
+356
+00:16:29,173 --> 00:16:30,590
+And we'll go more
+into that there.
+
+357
+00:16:30,590 --> 00:16:32,330
+But again, you sort of set up
+the problem in the same way.
+
+358
+00:16:32,330 --> 00:16:33,850
+You have some
+thermal reservoirs.
+
+359
+00:16:33,850 --> 00:16:37,500
+You treat this, then, a
+as a closed system there,
+
+360
+00:16:37,500 --> 00:16:39,500
+and we do some analysis.
+
+361
+00:16:39,500 --> 00:16:41,700
+And there, we won't
+talk about efficiency,
+
+362
+00:16:41,700 --> 00:16:44,430
+because efficiency of 300%
+doesn't make any sense.
+
+363
+00:16:44,430 --> 00:16:48,420
+We call that coefficient
+of performance.
+
+364
+00:16:48,420 --> 00:16:52,450
+Bringing it home, here, I'm just
+going to give you some examples.
+
+365
+00:16:52,450 --> 00:16:54,450
+So the other thing about
+the second law-- again,
+
+366
+00:16:54,450 --> 00:16:56,700
+about this temperature
+differences that we were saying
+
+367
+00:16:56,700 --> 00:16:59,060
+about the tendency
+of things to flow--
+
+368
+00:16:59,060 --> 00:17:01,848
+so again, this is this
+video with the balloons.
+
+369
+00:17:01,848 --> 00:17:03,890
+So you have something at
+high pressure and there,
+
+370
+00:17:03,890 --> 00:17:06,319
+and you release it, and it--
+
+371
+00:17:06,319 --> 00:17:06,902
+they move.
+
+372
+00:17:06,902 --> 00:17:08,819
+Believe it or not, this
+video was made at MIT.
+
+373
+00:17:08,819 --> 00:17:11,480
+I find it hilarious
+that an MIT professor
+
+374
+00:17:11,480 --> 00:17:14,280
+is making videos like that.
+
+375
+00:17:14,280 --> 00:17:15,980
+So great.
+
+376
+00:17:15,980 --> 00:17:17,010
+And they're nice videos.
+
+377
+00:17:17,010 --> 00:17:19,817
+You can learn a lot from
+this-- from these links there.
+
+378
+00:17:19,817 --> 00:17:22,400
+This is that food dye example,
+for those of you who have never
+
+379
+00:17:22,400 --> 00:17:24,140
+played with food coloring.
+
+380
+00:17:24,140 --> 00:17:26,150
+I do this on the regular.
+
+381
+00:17:26,150 --> 00:17:31,420
+So you put it in there, and then
+you can watch it diffuse there.
+
+382
+00:17:31,420 --> 00:17:34,260
+And then there's the thermal
+example where here, they
+
+383
+00:17:34,260 --> 00:17:36,150
+take a pan, they
+put a really cool--
+
+384
+00:17:36,150 --> 00:17:38,080
+it's called thermochromic
+liquid crystals.
+
+385
+00:17:38,080 --> 00:17:42,130
+These are things that change
+color depending on the heat.
+
+386
+00:17:42,130 --> 00:17:44,460
+So you see here it's really hot.
+
+387
+00:17:44,460 --> 00:17:46,620
+And then you put it out
+and you let it cool,
+
+388
+00:17:46,620 --> 00:17:50,700
+and you see it change
+color, and you transfer.
+
+389
+00:17:50,700 --> 00:17:55,588
+So again, talking about things
+that happen spontaneously--
+
+390
+00:17:55,588 --> 00:17:57,130
+so if it's something
+that can happen,
+
+391
+00:17:57,130 --> 00:17:59,730
+it's something that's going
+to be following the first
+
+392
+00:17:59,730 --> 00:18:03,550
+and the second laws
+of thermodynamics.

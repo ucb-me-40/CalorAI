@@ -7,7 +7,7 @@
   "module": "module-two",
   "year": "Fa23",
   "instructor": "tschutzius",
-  "topics": "Second Law",
+  "topic": "Second Law",
   "subtopics": [
     {
       "key": "Fa23-L6q-1.0",

@@ -201,7 +201,7 @@ Here is an example of an input outline.json file, which doesn't include `"detail
 I then use Gemini or a large language model (LLM) to create a detailed summary for those subtopics (update the prompt to include the correct number of subtopics):
 
 ```
-I am teaching undergraduate thermodynamics to mechanical engineers. I am recording my lectures, which also includes closed captions. I've attached the closed caption files, formatted in .srt, .txt, and .json. I have also included an outline file, outline.json, which includes 3 subtopics from the lecture. Each subtopic has a key, title, summary, time_range, topics, detailed_summary, examples, and tags. I would like you to write a detailed summary for each subtopic during the "time_range" and place it in the corresponding "detailed_summary" field. If the "summary" field is blank, please also write a short summary. Please do not change any of the other fields in the outline.json file. Thank you.
+I am teaching undergraduate thermodynamics to mechanical engineers. I am recording my lectures, which also includes closed captions. I've attached the closed caption files, formatted in .srt, .txt, and .json. I have also included an outline file, outline.json, which includes 3 subtopics from the lecture. Each subtopic has a key, title, summary, time_range, topics, detailed_summary, examples, and tags. I would like you to write a detailed summary for each subtopic during the "time_range" and place it in the corresponding "detailed_summary" field. If the "summary" field is blank, please also write a short summary. Please do not change any of the other fields in the outline.json file. Please do not use acronyms. Thank you.
 ```
 
 Here is an example of the output:
