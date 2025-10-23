@@ -130,7 +130,7 @@ The `cengel_*_toc.json` file should contain the table of contents for that speci
 The `syllabus.json` file should contain the syllabus for the current semester formatted as a JSON file. This will need to be converted into corpus chunks and added to `rag_corpus.txt`. 
 
 ### courseInstances 
-This folder contains data from each semester that the course is taught. This includes the syllabus and the captions from the recorded lectures (`.srt`, `.json`, `.txt` files). We create an outline.json file and define subtopics within the lecture. Those subtopics have a time_range, which is easy to define if you watch the recordings. There is a feature on bCourses, called `Timeline`, which allows you to create bookmarks. You can enter a `Chapter Title`, `Chapter Description`, and `Search Tags`. These should match the fields in the `outline.json` file:
+This folder contains data from each semester that the course is taught. This includes the syllabus and the captions from the recorded lectures (`.srt`, `.json`, `.txt` files). We create an `outline.json` file and define subtopics within the lecture. You can define `subtopics[].time_range` easily by watching the recordings. There is a feature on bCourses, called `Timeline`, which allows you to create bookmarks, defining the start of the field `subtopics[].time_range`; the end of a specific subtopic is at the time of the next bookmark. You can enter a `Chapter Title`, `Chapter Description`, and `Search Tags`. These should match the fields in the `outline.json` file:
 
 | JSON Field    | bCourses Timeline Field | 
 | -------- 		| ------- 					|

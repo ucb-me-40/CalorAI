@@ -1,0 +1,5570 @@
+1
+00:00:00,520 --> 00:00:05,640
+Today vapor power cycles.
+
+2
+00:00:05,640 --> 00:00:08,080
+So after today, we're
+able to analyze
+
+3
+00:00:08,080 --> 00:00:10,600
+a vapor power cycle
+
+4
+00:00:10,600 --> 00:00:12,520
+in which the fluid is
+
+5
+00:00:12,520 --> 00:00:15,280
+boiled and
+condensed, right?
+
+6
+00:00:15,280 --> 00:00:16,919
+In the previous part,
+
+7
+00:00:16,919 --> 00:00:17,879
+we were looking at
+
+8
+00:00:17,879 --> 00:00:19,079
+the case where
+the working floor
+
+9
+00:00:19,079 --> 00:00:21,759
+remaining gas
+the whole time.
+
+10
+00:00:21,759 --> 00:00:23,399
+All right. So the
+
+11
+00:00:23,399 --> 00:00:26,399
+most So why do we
+care about this?
+
+12
+00:00:26,399 --> 00:00:29,559
+We care about this because
+most of our energy
+
+13
+00:00:29,559 --> 00:00:30,920
+and electricity
+is produced by
+
+14
+00:00:30,920 --> 00:00:31,839
+this device here, right?
+
+15
+00:00:31,839 --> 00:00:32,759
+So what does it look like?
+
+16
+00:00:32,759 --> 00:00:34,480
+It doesn't look too
+
+17
+00:00:34,480 --> 00:00:35,999
+dissimilar to
+
+18
+00:00:35,999 --> 00:00:38,239
+the Brayton cycle
+that we saw before,
+
+19
+00:00:38,239 --> 00:00:40,360
+which operated with gas
+as a working fluid,
+
+20
+00:00:40,360 --> 00:00:42,239
+which didn't change phase.
+
+21
+00:00:42,239 --> 00:00:44,519
+The only real
+difference is that
+
+22
+00:00:44,519 --> 00:00:47,160
+instead of a compressor,
+we have a pump.
+
+23
+00:00:47,160 --> 00:00:49,079
+The heat exchanger
+where we
+
+24
+00:00:49,079 --> 00:00:50,724
+put heat in, we
+call a boiler,
+
+25
+00:00:50,724 --> 00:00:52,449
+turbine is the same,
+
+26
+00:00:52,449 --> 00:00:55,449
+and the device that
+
+27
+00:00:55,449 --> 00:00:57,850
+takes heat out is
+called the condenser.
+
+28
+00:00:57,850 --> 00:00:59,850
+Of course, in Brayton,
+
+29
+00:00:59,850 --> 00:01:01,009
+we idealize it as
+
+30
+00:01:01,009 --> 00:01:03,609
+a closed loop cycle,
+even though it wasn't.
+
+31
+00:01:03,609 --> 00:01:06,009
+In the case of Rankin,
+it is closed loop.
+
+32
+00:01:06,009 --> 00:01:08,049
+It is closed
+loop, all right?
+
+33
+00:01:08,049 --> 00:01:11,789
+Um, The most commonly
+used working fluid
+
+34
+00:01:11,789 --> 00:01:13,149
+that's in here is water,
+
+35
+00:01:13,149 --> 00:01:16,590
+and people go to great
+pains to characterize
+
+36
+00:01:16,590 --> 00:01:17,749
+and know the state of this
+
+37
+00:01:17,749 --> 00:01:20,069
+water through the
+cycle, right?
+
+38
+00:01:20,069 --> 00:01:22,989
+So it's very pure stuff.
+
+39
+00:01:22,989 --> 00:01:25,549
+Okay, so again, work
+in through your pump,
+
+40
+00:01:25,549 --> 00:01:26,709
+heat in through
+the boiler,
+
+41
+00:01:26,709 --> 00:01:28,070
+work out from the turbine,
+
+42
+00:01:28,070 --> 00:01:29,950
+heat out from
+the condenser.
+
+43
+00:01:29,950 --> 00:01:32,029
+This is how it's
+represented in the book on
+
+44
+00:01:32,029 --> 00:01:34,229
+the TS diagram, right?
+
+45
+00:01:34,229 --> 00:01:35,629
+So the work
+transfer process
+
+46
+00:01:35,629 --> 00:01:37,975
+in the ideal rankin cycle,
+
+47
+00:01:37,975 --> 00:01:41,080
+is isotropic, so
+it's vertical.
+
+48
+00:01:41,080 --> 00:01:43,759
+The heat addition
+here is two to three.
+
+49
+00:01:43,759 --> 00:01:46,039
+This is not right,
+
+50
+00:01:46,039 --> 00:01:47,919
+like when we did Carne
+and we looked at it,
+
+51
+00:01:47,919 --> 00:01:48,799
+we expected this to
+
+52
+00:01:48,799 --> 00:01:50,759
+be and also
+Sterling, right?
+
+53
+00:01:50,759 --> 00:01:52,400
+This is like a flat
+line. We introduced
+
+54
+00:01:52,400 --> 00:01:53,800
+heat at a constant
+temperature.
+
+55
+00:01:53,800 --> 00:01:55,119
+That does happen during
+
+56
+00:01:55,119 --> 00:01:57,360
+the heat addition
+during boiling,
+
+57
+00:01:57,360 --> 00:01:59,479
+but when it's a sub
+cooled liquid and then
+
+58
+00:01:59,479 --> 00:02:00,599
+a superheated vapor,
+
+59
+00:02:00,599 --> 00:02:02,199
+this does not
+happen, okay?
+
+60
+00:02:02,199 --> 00:02:04,640
+Isotropic workout,
+
+61
+00:02:04,640 --> 00:02:08,280
+and then the
+heat out, right?
+
+62
+00:02:08,280 --> 00:02:09,800
+One way to visualize
+
+63
+00:02:09,800 --> 00:02:12,040
+rankin or to think
+about rankin again,
+
+64
+00:02:12,040 --> 00:02:14,440
+thinking about the TS
+diagram is to again,
+
+65
+00:02:14,440 --> 00:02:16,660
+go back to Karno
+They look and say,
+
+66
+00:02:16,660 --> 00:02:17,940
+Okay, so what
+did Carn look
+
+67
+00:02:17,940 --> 00:02:19,179
+like on a TS diagram?
+
+68
+00:02:19,179 --> 00:02:21,715
+Here's my temperature,
+here's my entropy.
+
+69
+00:02:21,715 --> 00:02:24,849
+Heat addition,
+isothermal, right?
+
+70
+00:02:24,849 --> 00:02:29,649
+So here, work
+out, isentropic,
+
+71
+00:02:29,649 --> 00:02:32,490
+heat out, isothermal,
+
+72
+00:02:32,490 --> 00:02:35,610
+and then work in
+isentropic, right?
+
+73
+00:02:35,610 --> 00:02:39,050
+So this is your TH,
+and this is your TL.
+
+74
+00:02:39,050 --> 00:02:40,690
+The way to visualize,
+
+75
+00:02:40,690 --> 00:02:42,810
+really rank in is
+it's like trying to
+
+76
+00:02:42,810 --> 00:02:45,689
+take this box, right,
+
+77
+00:02:45,689 --> 00:02:48,529
+or rectangle and map
+
+78
+00:02:48,529 --> 00:02:49,770
+it onto something that
+
+79
+00:02:49,770 --> 00:02:51,330
+has a vapor dome, okay?
+
+80
+00:02:51,330 --> 00:02:55,130
+So trying to take this
+and make it work,
+
+81
+00:02:55,440 --> 00:02:58,440
+on something like water
+that has saturated
+
+82
+00:02:58,440 --> 00:03:01,159
+liquid and saturated
+vapor, all right?
+
+83
+00:03:01,159 --> 00:03:02,920
+So how do you
+make it work?
+
+84
+00:03:02,920 --> 00:03:05,120
+What's very important in
+
+85
+00:03:05,120 --> 00:03:06,720
+a turbine is that
+
+86
+00:03:06,720 --> 00:03:08,640
+you do not have
+phase change, okay?
+
+87
+00:03:08,640 --> 00:03:10,199
+You want what's passing
+
+88
+00:03:10,199 --> 00:03:11,760
+through the
+turbine to be at
+
+89
+00:03:11,760 --> 00:03:14,719
+a very high
+specific volume
+
+90
+00:03:14,719 --> 00:03:16,120
+because it's VDP, right?
+
+91
+00:03:16,120 --> 00:03:17,880
+Your work is
+specific volume
+
+92
+00:03:17,880 --> 00:03:19,680
+times the difference
+in the pressure.
+
+93
+00:03:19,680 --> 00:03:21,560
+So the higher the
+specific volume, right,
+
+94
+00:03:21,560 --> 00:03:24,400
+the more specific work
+I'm going to get out.
+
+95
+00:03:24,400 --> 00:03:27,420
+So you want to be
+somewhere out here,
+
+96
+00:03:27,420 --> 00:03:29,299
+and you do not
+want to fall
+
+97
+00:03:29,299 --> 00:03:31,260
+under the dome, okay?
+
+98
+00:03:31,260 --> 00:03:32,980
+Actually, maybe
+ideally you want
+
+99
+00:03:32,980 --> 00:03:34,700
+to come up right to
+the line and be here.
+
+100
+00:03:34,700 --> 00:03:37,100
+The second reason
+why you do not want
+
+101
+00:03:37,100 --> 00:03:39,099
+this work transfer
+process to fall
+
+102
+00:03:39,099 --> 00:03:41,300
+into the dome is
+when that happens,
+
+103
+00:03:41,300 --> 00:03:42,700
+you're going to make
+it condensed phase.
+
+104
+00:03:42,700 --> 00:03:44,460
+You're going to make
+droplets, right?
+
+105
+00:03:44,460 --> 00:03:45,940
+And these blades
+that are in there,
+
+106
+00:03:45,940 --> 00:03:48,060
+they spin very,
+very fast, right?
+
+107
+00:03:48,060 --> 00:03:49,580
+And what you
+should imagine
+
+108
+00:03:49,580 --> 00:03:51,459
+is if you make a
+lot of fine mist,
+
+109
+00:03:51,459 --> 00:03:53,660
+those droplets have a
+high density to them,
+
+110
+00:03:53,660 --> 00:03:55,139
+and you're just
+going to be hitting
+
+111
+00:03:55,139 --> 00:03:56,980
+it constantly
+over and over,
+
+112
+00:03:56,980 --> 00:03:58,820
+and it's going to
+erode, all right?
+
+113
+00:03:58,820 --> 00:03:59,700
+So you're
+basically going to
+
+114
+00:03:59,700 --> 00:04:01,340
+erode your blades if
+
+115
+00:04:01,340 --> 00:04:04,740
+you have you
+have that, okay?
+
+116
+00:04:04,740 --> 00:04:06,390
+So that's like
+one part of it.
+
+117
+00:04:06,390 --> 00:04:07,879
+When we look at the
+heat rejection,
+
+118
+00:04:07,879 --> 00:04:09,720
+so out of the back end
+of the turbine, right,
+
+119
+00:04:09,720 --> 00:04:12,160
+where we're taking
+the heat out.
+
+120
+00:04:12,160 --> 00:04:13,600
+And this is the
+one part where
+
+121
+00:04:13,600 --> 00:04:15,200
+you probably could
+keep things.
+
+122
+00:04:15,200 --> 00:04:17,240
+And indeed, in this almost
+
+123
+00:04:17,240 --> 00:04:18,560
+in this idealized case,
+
+124
+00:04:18,560 --> 00:04:22,359
+this process, you know,
+
+125
+00:04:22,359 --> 00:04:23,919
+happens to
+pretty much look
+
+126
+00:04:23,919 --> 00:04:26,960
+isothermal basically
+look isothermal there.
+
+127
+00:04:26,960 --> 00:04:28,399
+So this is, you know,
+you're doing okay.
+
+128
+00:04:28,399 --> 00:04:30,159
+You condense back
+to a liquid.
+
+129
+00:04:30,159 --> 00:04:31,519
+Part of the reason
+why you want
+
+130
+00:04:31,519 --> 00:04:33,039
+to condense back
+into a liquid is,
+
+131
+00:04:33,039 --> 00:04:34,199
+again, when you're
+a liquid, you
+
+132
+00:04:34,199 --> 00:04:35,439
+have a very low
+specific volume.
+
+133
+00:04:35,439 --> 00:04:36,079
+So if you think about
+
+134
+00:04:36,079 --> 00:04:37,880
+the work transferred
+in, VDP.
+
+135
+00:04:37,880 --> 00:04:39,359
+I have a very low
+specific volume,
+
+136
+00:04:39,359 --> 00:04:40,279
+but I'm a liquid.
+
+137
+00:04:40,279 --> 00:04:41,759
+So the amount of
+work that I put
+
+138
+00:04:41,759 --> 00:04:43,559
+in is going to
+
+139
+00:04:43,559 --> 00:04:44,679
+be much less compared
+
+140
+00:04:44,679 --> 00:04:45,989
+to what I get out, right?
+
+141
+00:04:45,989 --> 00:04:48,379
+All right. Yeah, so
+
+142
+00:04:48,379 --> 00:04:50,020
+we have that heat
+transfer out process,
+
+143
+00:04:50,020 --> 00:04:52,220
+which was isothermal,
+
+144
+00:04:52,220 --> 00:04:53,459
+and obviously since a
+
+145
+00:04:53,459 --> 00:04:55,139
+heat exchanger,
+it's isobaric.
+
+146
+00:04:55,139 --> 00:04:56,339
+You have work
+that you put in.
+
+147
+00:04:56,339 --> 00:04:57,539
+So you bring this up to
+
+148
+00:04:57,539 --> 00:04:59,859
+some pressure that's here,
+
+149
+00:04:59,859 --> 00:05:01,459
+and the heat
+addition process,
+
+150
+00:05:01,459 --> 00:05:02,779
+right in the boiler like
+
+151
+00:05:02,779 --> 00:05:05,380
+any heat exchanger
+is isobaric.
+
+152
+00:05:05,380 --> 00:05:08,300
+So the isotherm
+is going to
+
+153
+00:05:08,300 --> 00:05:12,299
+look something
+like this, right?
+
+154
+00:05:12,299 --> 00:05:13,579
+So essentially, when
+
+155
+00:05:13,579 --> 00:05:14,699
+you start to add
+heat, right,
+
+156
+00:05:14,699 --> 00:05:18,979
+it's going to follow
+this isotherm, okay?
+
+157
+00:05:18,979 --> 00:05:21,340
+So Rankin is like
+
+158
+00:05:21,340 --> 00:05:23,979
+trying to put arno like
+a square peg into,
+
+159
+00:05:23,979 --> 00:05:25,860
+I don't know,
+this parabola,
+
+160
+00:05:25,860 --> 00:05:27,429
+okay, to make that work.
+
+161
+00:05:27,429 --> 00:05:30,199
+Does that make
+sense? All right.
+
+162
+00:05:30,199 --> 00:05:31,759
+Again, key
+concepts are that,
+
+163
+00:05:31,759 --> 00:05:36,079
+like work transfer
+is V, VP here.
+
+164
+00:05:36,079 --> 00:05:37,479
+At this case, this is
+
+165
+00:05:37,479 --> 00:05:38,799
+a very low specific
+
+166
+00:05:38,799 --> 00:05:40,359
+volume because
+it's a liquid,
+
+167
+00:05:40,359 --> 00:05:42,199
+and in here, it
+is very high.
+
+168
+00:05:42,199 --> 00:05:44,840
+You do not want during
+this workout process,
+
+169
+00:05:44,840 --> 00:05:46,400
+you never want to
+be pumping or using
+
+170
+00:05:46,400 --> 00:05:47,959
+a turbine with a
+multi phase, right?
+
+171
+00:05:47,959 --> 00:05:49,119
+You want to be
+single phase.
+
+172
+00:05:49,119 --> 00:05:50,319
+So here because
+of this, right,
+
+173
+00:05:50,319 --> 00:05:51,439
+I'll be single phase where
+
+174
+00:05:51,439 --> 00:05:52,879
+I'm a superheated vapor,
+
+175
+00:05:52,879 --> 00:05:54,919
+single phase while
+I'm a liquid.
+
+176
+00:05:54,919 --> 00:05:55,359
+I do get
+
+177
+00:05:55,359 --> 00:05:57,079
+a constant temperature
+heat rejection
+
+178
+00:05:57,079 --> 00:05:59,439
+effectively if I stay
+within the dome.
+
+179
+00:05:59,439 --> 00:06:01,399
+And then, given all
+those other constraints,
+
+180
+00:06:01,399 --> 00:06:02,719
+you're not going to
+have a constant,
+
+181
+00:06:02,719 --> 00:06:05,139
+um, TH, okay?
+
+182
+00:06:05,139 --> 00:06:06,580
+So, what that means
+is when you do
+
+183
+00:06:06,580 --> 00:06:08,259
+compare yourself
+to Knel with this,
+
+184
+00:06:08,259 --> 00:06:10,939
+you will choose this
+as your TH, right?
+
+185
+00:06:10,939 --> 00:06:13,059
+But most of the
+process there of
+
+186
+00:06:13,059 --> 00:06:15,139
+the heat addition is
+not at TH, right?
+
+187
+00:06:15,139 --> 00:06:17,260
+You're at a lower at
+a lower temperature,
+
+188
+00:06:17,260 --> 00:06:18,859
+which means that
+you're at essentially,
+
+189
+00:06:18,859 --> 00:06:19,739
+right, a lower grade of
+
+190
+00:06:19,739 --> 00:06:20,779
+heat that you're
+putting in.
+
+191
+00:06:20,779 --> 00:06:22,659
+So you'll see significant
+deviations of this
+
+192
+00:06:22,659 --> 00:06:25,899
+compared to Carnal for
+that reason, okay.
+
+193
+00:06:26,140 --> 00:06:27,499
+Okay.
+
+194
+00:06:27,499 --> 00:06:31,280
+Um What else can
+I say about this?
+
+195
+00:06:31,280 --> 00:06:33,279
+Yeah, so is commonly
+what's used.
+
+196
+00:06:33,279 --> 00:06:34,599
+You can use other
+fluids. So there
+
+197
+00:06:34,599 --> 00:06:35,879
+are other fluids that
+can be used for this,
+
+198
+00:06:35,879 --> 00:06:37,760
+but water is the
+dominant one.
+
+199
+00:06:37,760 --> 00:06:40,039
+The power plants
+that operate on
+
+200
+00:06:40,039 --> 00:06:41,959
+this are fossil
+fuel based,
+
+201
+00:06:41,959 --> 00:06:43,719
+so I think coal and
+
+202
+00:06:43,719 --> 00:06:44,999
+that, but also
+nuclear, right?
+
+203
+00:06:44,999 --> 00:06:49,199
+So nuclear systems run
+on rankin systems.
+
+204
+00:06:49,199 --> 00:06:51,220
+You have different
+different types
+
+205
+00:06:51,220 --> 00:06:52,500
+like pressurized water and
+
+206
+00:06:52,500 --> 00:06:53,340
+so on and so forth.
+
+207
+00:06:53,340 --> 00:06:55,180
+But at the end of the
+day, essentially,
+
+208
+00:06:55,180 --> 00:06:56,619
+all that you have
+from nuclear is
+
+209
+00:06:56,619 --> 00:06:58,220
+that it's still a
+heat exchanger.
+
+210
+00:06:58,220 --> 00:07:00,459
+So the Q and is all
+the same, all right?
+
+211
+00:07:00,459 --> 00:07:02,619
+They just have
+limitations in
+
+212
+00:07:02,619 --> 00:07:04,499
+terms of the upper
+operating temperature.
+
+213
+00:07:04,499 --> 00:07:06,220
+So if you use something
+that's like fsiluel,
+
+214
+00:07:06,220 --> 00:07:06,899
+you're allowed to go
+
+215
+00:07:06,899 --> 00:07:07,899
+to higher temperature than
+
+216
+00:07:07,899 --> 00:07:09,860
+nuclear for maybe
+obvious reasons.
+
+217
+00:07:09,860 --> 00:07:12,140
+Yes, please. Would you
+want us to memorize
+
+218
+00:07:12,140 --> 00:07:13,220
+all the different types of
+
+219
+00:07:13,220 --> 00:07:16,159
+cycles? What
+does that mean?
+
+220
+00:07:16,159 --> 00:07:18,080
+I want you to
+make new cycles.
+
+221
+00:07:18,080 --> 00:07:19,199
+I want you to go
+out and create
+
+222
+00:07:19,199 --> 00:07:21,079
+new things that are
+more efficient and
+
+223
+00:07:21,079 --> 00:07:23,000
+get rich and then remember
+me when you become
+
+224
+00:07:23,000 --> 00:07:24,160
+a donor to this wonderful
+
+225
+00:07:24,160 --> 00:07:25,559
+university, all
+right, David?
+
+226
+00:07:25,559 --> 00:07:26,199
+Okay.
+
+227
+00:07:26,199 --> 00:07:28,120
+So, I mean, memorize
+all of them.
+
+228
+00:07:28,120 --> 00:07:29,519
+I want you to able
+to classify, right?
+
+229
+00:07:29,519 --> 00:07:30,959
+So what I keep
+repeating here in
+
+230
+00:07:30,959 --> 00:07:32,280
+the classification is that
+
+231
+00:07:32,280 --> 00:07:33,639
+I have a power cycle,
+
+232
+00:07:33,639 --> 00:07:35,320
+and within power cycles,
+
+233
+00:07:35,320 --> 00:07:36,839
+I think of gas, right?
+
+234
+00:07:36,839 --> 00:07:39,359
+So gas power cycle or a,
+
+235
+00:07:39,359 --> 00:07:42,199
+what did I say at the
+beginning, vapor, okay?
+
+236
+00:07:42,199 --> 00:07:44,319
+So what should go off
+in your mind when I say
+
+237
+00:07:44,319 --> 00:07:45,879
+gas is that the
+working fluid
+
+238
+00:07:45,879 --> 00:07:46,999
+should not change a state,
+
+239
+00:07:46,999 --> 00:07:48,800
+should remain
+a gas, right?
+
+240
+00:07:48,800 --> 00:07:50,359
+And there because
+it's a gas,
+
+241
+00:07:50,359 --> 00:07:54,469
+it's probably a wet.
+Idel gas, right?
+
+242
+00:07:54,469 --> 00:07:55,669
+Which means
+it's, you know,
+
+243
+00:07:55,669 --> 00:07:57,109
+life can get a lot
+easier when you get
+
+244
+00:07:57,109 --> 00:07:59,149
+into the analysis, right?
+
+245
+00:07:59,149 --> 00:08:00,229
+So the other part of
+
+246
+00:08:00,229 --> 00:08:01,269
+the classification
+is that we have
+
+247
+00:08:01,269 --> 00:08:02,349
+a vapor power cycle.
+
+248
+00:08:02,349 --> 00:08:03,389
+There are things
+change phase.
+
+249
+00:08:03,389 --> 00:08:04,470
+You don't have ideal gas.
+
+250
+00:08:04,470 --> 00:08:06,430
+We have to use Pyclor.
+
+251
+00:08:06,430 --> 00:08:09,310
+Yeah, so that's kind of
+the differentiation.
+
+252
+00:08:09,310 --> 00:08:11,189
+When it gets to the
+device level, right?
+
+253
+00:08:11,189 --> 00:08:12,109
+I still need you to go
+
+254
+00:08:12,109 --> 00:08:13,309
+device by device, right?
+
+255
+00:08:13,309 --> 00:08:15,469
+So maybe I'll give
+you a problem,
+
+256
+00:08:15,469 --> 00:08:16,869
+like, Hey, look
+at this thing.
+
+257
+00:08:16,869 --> 00:08:18,109
+Here's some conditions.
+
+258
+00:08:18,109 --> 00:08:19,549
+Tell me, is it
+good or not.
+
+259
+00:08:19,549 --> 00:08:21,229
+Tell me, is this
+a violation of
+
+260
+00:08:21,229 --> 00:08:23,109
+a first or a
+second law here?
+
+261
+00:08:23,109 --> 00:08:24,590
+Is this like a
+plausible system?
+
+262
+00:08:24,590 --> 00:08:25,989
+So then I need to
+be able to break
+
+263
+00:08:25,989 --> 00:08:28,029
+down individual
+components, right?
+
+264
+00:08:28,029 --> 00:08:31,460
+Apply steady flow
+analysis for, um,
+
+265
+00:08:31,460 --> 00:08:33,849
+conservation of mass,
+conservation of energy,
+
+266
+00:08:33,849 --> 00:08:35,849
+and entropy control
+volume analysis.
+
+267
+00:08:35,849 --> 00:08:37,650
+Bang, bang, bang,
+bang, okay?
+
+268
+00:08:37,650 --> 00:08:38,570
+And when I get into this,
+
+269
+00:08:38,570 --> 00:08:39,570
+you'll show that, like,
+
+270
+00:08:39,570 --> 00:08:40,929
+because you have
+good fundamentals
+
+271
+00:08:40,929 --> 00:08:41,849
+for each of those devices,
+
+272
+00:08:41,849 --> 00:08:42,690
+you're going to
+be able to go
+
+273
+00:08:42,690 --> 00:08:43,730
+through these
+things quickly
+
+274
+00:08:43,730 --> 00:08:45,210
+because it's going
+to get complicated.
+
+275
+00:08:45,210 --> 00:08:45,770
+Here I have four.
+
+276
+00:08:45,770 --> 00:08:46,650
+I think at the
+end of this,
+
+277
+00:08:46,650 --> 00:08:47,930
+maybe I had eight
+devices, and,
+
+278
+00:08:47,930 --> 00:08:49,050
+like, I can do more, but
+
+279
+00:08:49,050 --> 00:08:50,250
+it's not hard, right?
+
+280
+00:08:50,250 --> 00:08:51,330
+It's just like, you know,
+
+281
+00:08:51,330 --> 00:08:52,569
+like anything like
+any language.
+
+282
+00:08:52,569 --> 00:08:54,049
+You got to learn sort of,
+
+283
+00:08:54,049 --> 00:08:55,649
+you know, what's going
+
+284
+00:08:55,649 --> 00:08:57,129
+on with it, and then
+it gets easier.
+
+285
+00:08:57,129 --> 00:08:58,410
+So, in a sense, you
+
+286
+00:08:58,410 --> 00:08:59,970
+should remember
+the fundamentals.
+
+287
+00:08:59,970 --> 00:09:01,650
+I would say ranking is
+
+288
+00:09:01,650 --> 00:09:05,209
+a pretty fundamentally
+important cycle
+
+289
+00:09:05,209 --> 00:09:07,850
+that's there, but, Yeah.
+
+290
+00:09:07,850 --> 00:09:08,090
+Okay.
+
+291
+00:09:08,090 --> 00:09:09,210
+Does that answer
+your question?
+
+292
+00:09:09,210 --> 00:09:10,050
+Yeah. That was
+
+293
+00:09:10,050 --> 00:09:12,610
+long winded.
+Other questions?
+
+294
+00:09:12,770 --> 00:09:15,530
+All right. So let's
+get into this.
+
+295
+00:09:15,530 --> 00:09:19,090
+Let's analyze our
+Rankin cycle.
+
+296
+00:09:20,770 --> 00:09:23,970
+This is Rankin here.
+
+297
+00:09:23,970 --> 00:09:27,330
+All right. I
+will erase this.
+
+298
+00:09:38,050 --> 00:09:41,410
+Do we look good.
+
+299
+00:09:41,410 --> 00:09:43,890
+We'll go with this
+here. All right.
+
+300
+00:09:43,890 --> 00:09:49,300
+Okay. To do. All right,
+
+301
+00:09:49,300 --> 00:09:50,139
+so we drew right,
+
+302
+00:09:50,139 --> 00:09:51,460
+I'll draw the
+schematics here.
+
+303
+00:09:51,460 --> 00:09:52,660
+I'll have it there,
+and then I'll
+
+304
+00:09:52,660 --> 00:09:54,899
+turn off the monitor.
+
+305
+00:09:54,899 --> 00:09:56,339
+But basically,
+right, we have
+
+306
+00:09:56,339 --> 00:09:58,780
+a pump, which is here.
+
+307
+00:09:58,780 --> 00:10:00,500
+I have some w.in,
+
+308
+00:10:00,500 --> 00:10:02,020
+which I'm putting
+into that.
+
+309
+00:10:02,020 --> 00:10:05,940
+That's then going
+into my boiler, okay,
+
+310
+00:10:05,940 --> 00:10:08,419
+which is essentially
+a glorified
+
+311
+00:10:08,419 --> 00:10:11,580
+heat exchanger,
+q.in, right?
+
+312
+00:10:11,580 --> 00:10:13,780
+All right? This
+is then going
+
+313
+00:10:13,780 --> 00:10:17,500
+into a turbine, right?
+
+314
+00:10:17,500 --> 00:10:20,059
+So I have here,
+semi turbine,
+
+315
+00:10:20,059 --> 00:10:21,860
+like that. All right?
+
+316
+00:10:21,860 --> 00:10:26,860
+I have a W dot out
+from this. All right.
+
+317
+00:10:26,860 --> 00:10:28,220
+And then this is
+then going into
+
+318
+00:10:28,220 --> 00:10:30,500
+my condenser.
+
+319
+00:10:30,500 --> 00:10:32,660
+All right? Cool.
+So this has
+
+320
+00:10:32,660 --> 00:10:35,260
+then a Q dot out.
+
+321
+00:10:35,260 --> 00:10:36,300
+The way that you cool
+
+322
+00:10:36,300 --> 00:10:38,260
+these condensers,
+all right,
+
+323
+00:10:38,260 --> 00:10:40,180
+is actually that we
+
+324
+00:10:40,180 --> 00:10:42,340
+have usually
+water can be air,
+
+325
+00:10:42,340 --> 00:10:43,910
+but a lot of
+times it's water.
+
+326
+00:10:43,910 --> 00:10:46,440
+That will pass
+through this and
+
+327
+00:10:46,440 --> 00:10:49,000
+then we'll put back
+into the ground, okay?
+
+328
+00:10:49,000 --> 00:10:50,359
+And about half
+the groundwater
+
+329
+00:10:50,359 --> 00:10:51,800
+in this country that
+we take out every year
+
+330
+00:10:51,800 --> 00:10:53,480
+passes through that
+device through
+
+331
+00:10:53,480 --> 00:10:55,680
+a surface surface
+condenser.
+
+332
+00:10:55,680 --> 00:10:57,320
+The surface area. So like,
+
+333
+00:10:57,320 --> 00:10:58,800
+again, this is
+like many tubes.
+
+334
+00:10:58,800 --> 00:11:00,520
+You have like many
+tubes, right?
+
+335
+00:11:00,520 --> 00:11:02,000
+The effective
+surface areas
+
+336
+00:11:02,000 --> 00:11:02,999
+that you have on
+the outside of
+
+337
+00:11:02,999 --> 00:11:04,440
+these tubes are
+measured in the size of
+
+338
+00:11:04,440 --> 00:11:06,320
+Cal Memorial
+Stadiums, right?
+
+339
+00:11:06,320 --> 00:11:08,039
+Like, they're
+football pitches
+
+340
+00:11:08,039 --> 00:11:09,479
+of area, a lot
+of material.
+
+341
+00:11:09,479 --> 00:11:11,559
+So it's a huge
+they're huge.
+
+342
+00:11:11,559 --> 00:11:12,360
+You'll see this on some
+
+343
+00:11:12,360 --> 00:11:13,360
+of your homework problems.
+
+344
+00:11:13,360 --> 00:11:15,320
+I think in this specific
+case, we use cooling
+
+345
+00:11:15,320 --> 00:11:16,360
+water to reject heat
+
+346
+00:11:16,360 --> 00:11:17,720
+out of a
+refrigeration system,
+
+347
+00:11:17,720 --> 00:11:19,240
+but this is what
+you do, okay?
+
+348
+00:11:19,240 --> 00:11:20,920
+We're in a data
+center, right,
+
+349
+00:11:20,920 --> 00:11:22,580
+in Wisconsin,
+
+350
+00:11:22,580 --> 00:11:24,120
+Microsoft's building
+
+351
+00:11:24,120 --> 00:11:25,364
+one close to
+Lake Michigan.
+
+352
+00:11:25,364 --> 00:11:29,369
+Guess why. Okay.
+Because the lake.
+
+353
+00:11:29,369 --> 00:11:30,610
+There's a lot of
+water there, right?
+
+354
+00:11:30,610 --> 00:11:31,890
+So they have that
+on the do cooling.
+
+355
+00:11:31,890 --> 00:11:33,730
+So anyways, that's
+typically how it's done.
+
+356
+00:11:33,730 --> 00:11:35,410
+It can also be that
+you loop water here,
+
+357
+00:11:35,410 --> 00:11:37,370
+and then this goes into
+like a cooling tower.
+
+358
+00:11:37,370 --> 00:11:38,649
+So if you ever
+
+359
+00:11:38,649 --> 00:11:40,090
+drive by and see
+a cooling tower,
+
+360
+00:11:40,090 --> 00:11:41,370
+for example,
+maybe nuclear,
+
+361
+00:11:41,370 --> 00:11:43,290
+all you have here is
+this cooling loop,
+
+362
+00:11:43,290 --> 00:11:45,569
+and then you're
+effectively spraying,
+
+363
+00:11:45,569 --> 00:11:47,169
+where you're atomizing
+a bunch of water,
+
+364
+00:11:47,169 --> 00:11:48,330
+you're letting
+it cool down,
+
+365
+00:11:48,330 --> 00:11:50,490
+it settles, and you
+loop it again, okay?
+
+366
+00:11:50,490 --> 00:11:52,089
+But the key element
+for us is that
+
+367
+00:11:52,089 --> 00:11:53,650
+we have aq.in
+from combustion
+
+368
+00:11:53,650 --> 00:11:57,649
+and a Q dot out
+from some cooling,
+
+369
+00:11:57,649 --> 00:11:58,810
+right, which we
+don't have to
+
+370
+00:11:58,810 --> 00:12:00,730
+specify for this
+exact problem.
+
+371
+00:12:00,730 --> 00:12:02,210
+In terms of states,
+
+372
+00:12:02,210 --> 00:12:04,690
+just like we had with,
+um, With Brighton,
+
+373
+00:12:04,690 --> 00:12:06,290
+State one will be
+what's entering into
+
+374
+00:12:06,290 --> 00:12:08,650
+the pressurizing device,
+let's say the pump.
+
+375
+00:12:08,650 --> 00:12:10,050
+State two is
+at the exit of
+
+376
+00:12:10,050 --> 00:12:11,970
+the pump entering into
+the heat exchanger,
+
+377
+00:12:11,970 --> 00:12:13,569
+State three at the exit
+
+378
+00:12:13,569 --> 00:12:15,529
+of the heat exchaner
+entering the turbine,
+
+379
+00:12:15,529 --> 00:12:17,850
+and state four like that.
+
+380
+00:12:17,850 --> 00:12:19,410
+What we can do
+is we can do
+
+381
+00:12:19,410 --> 00:12:21,010
+steady flow analysis to
+
+382
+00:12:21,010 --> 00:12:22,530
+each of these
+devices, right?
+
+383
+00:12:22,530 --> 00:12:25,330
+So I can go here
+and do this.
+
+384
+00:12:25,330 --> 00:12:28,010
+Drop my control
+volume here for this.
+
+385
+00:12:28,010 --> 00:12:33,290
+Do another one here.
+Do another one.
+
+386
+00:12:33,770 --> 00:12:36,290
+Another one that's here.
+
+387
+00:12:36,290 --> 00:12:39,249
+Just at the risk
+of confusing,
+
+388
+00:12:39,249 --> 00:12:43,780
+I will get rid of that.
+
+389
+00:12:43,780 --> 00:12:47,219
+Okay, so there's
+my heat exchanger,
+
+390
+00:12:47,219 --> 00:12:51,220
+and there's my Q
+dot out. All right.
+
+391
+00:12:52,900 --> 00:12:55,260
+Um, All right,
+
+392
+00:12:55,260 --> 00:12:56,900
+so in the steady flow
+analysis, right?
+
+393
+00:12:56,900 --> 00:12:58,140
+So we're going
+to assume for
+
+394
+00:12:58,140 --> 00:12:59,420
+each of these devices
+that we don't
+
+395
+00:12:59,420 --> 00:13:00,579
+have a change in the mass
+
+396
+00:13:00,579 --> 00:13:02,140
+of their control volumes,
+
+397
+00:13:02,140 --> 00:13:03,499
+no change in the energy of
+
+398
+00:13:03,499 --> 00:13:05,100
+the control volumes
+and no change in
+
+399
+00:13:05,100 --> 00:13:09,380
+the entropy of their
+control volumes, right?
+
+400
+00:13:09,380 --> 00:13:11,260
+So, what that
+means is that
+
+401
+00:13:11,260 --> 00:13:14,660
+your E dot N is equal
+to E dot out, right?
+
+402
+00:13:14,660 --> 00:13:17,259
+For this, which
+is then your w.in
+
+403
+00:13:17,259 --> 00:13:21,340
+plus q.in plus
+your.in times
+
+404
+00:13:21,340 --> 00:13:24,780
+H in plus velocity
+in squared
+
+405
+00:13:24,780 --> 00:13:29,004
+divided by two plus
+gz N is equal to,
+
+406
+00:13:29,004 --> 00:13:32,670
+your W dot out, plus
+your Q dot out,
+
+407
+00:13:32,670 --> 00:13:34,950
+plus your dot out,
+
+408
+00:13:34,950 --> 00:13:37,670
+H out plus W,
+
+409
+00:13:37,670 --> 00:13:40,029
+so velocity out
+squared divided by
+
+410
+00:13:40,029 --> 00:13:44,235
+two plus G Z out, right?
+
+411
+00:13:44,235 --> 00:13:46,360
+First assumption for
+these since we're
+
+412
+00:13:46,360 --> 00:13:48,079
+not dealing with
+nozzles or diffusers,
+
+413
+00:13:48,079 --> 00:13:49,360
+is you neglect
+your changes in
+
+414
+00:13:49,360 --> 00:13:51,320
+kinetic and
+potential energies,
+
+415
+00:13:51,320 --> 00:13:53,360
+which are there.
+
+416
+00:13:53,360 --> 00:13:55,120
+That's one part of it.
+
+417
+00:13:55,120 --> 00:13:56,760
+For our entropy analysis,
+
+418
+00:13:56,760 --> 00:13:58,239
+we can do our mass now.
+
+419
+00:13:58,239 --> 00:14:00,000
+Essentially,
+because of that,
+
+420
+00:14:00,000 --> 00:14:01,839
+with the
+conservation of mass
+
+421
+00:14:01,839 --> 00:14:02,760
+and no change in
+
+422
+00:14:02,760 --> 00:14:04,080
+the mass and the
+control volume,
+
+423
+00:14:04,080 --> 00:14:06,840
+MDT in is equal to MDT
+out is equal to M dot,
+
+424
+00:14:06,840 --> 00:14:12,720
+and for our entropy
+analysis, ds CV dt,
+
+425
+00:14:12,720 --> 00:14:14,280
+the change in
+entropy of any of
+
+426
+00:14:14,280 --> 00:14:16,080
+those control volumes
+is going to be
+
+427
+00:14:16,080 --> 00:14:17,760
+equal to the rate
+of entropy coming
+
+428
+00:14:17,760 --> 00:14:19,960
+in minus the rate
+that it leaves
+
+429
+00:14:19,960 --> 00:14:22,680
+plus the rate that
+it's generated
+
+430
+00:14:22,680 --> 00:14:28,130
+dot gen. All right.
+Steady flow.
+
+431
+00:14:28,130 --> 00:14:31,770
+So this is out. And for
+these cycles today,
+
+432
+00:14:31,770 --> 00:14:33,210
+we're going to
+assume, right,
+
+433
+00:14:33,210 --> 00:14:34,370
+and this is how
+we'll handle
+
+434
+00:14:34,370 --> 00:14:36,770
+at least the first
+stage always in
+
+435
+00:14:36,770 --> 00:14:37,970
+this analysis as we
+
+436
+00:14:37,970 --> 00:14:41,730
+compute the ideal process.
+
+437
+00:14:41,730 --> 00:14:43,610
+So the ideal here
+really means that
+
+438
+00:14:43,610 --> 00:14:46,809
+the pump and the
+turbine are adiabatic,
+
+439
+00:14:46,809 --> 00:14:48,689
+and they are reversible.
+
+440
+00:14:48,689 --> 00:14:50,010
+So what that means is
+
+441
+00:14:50,010 --> 00:14:52,289
+that there is no
+entropy generated.
+
+442
+00:14:52,289 --> 00:14:54,410
+So out of this,
+it means that
+
+443
+00:14:54,410 --> 00:14:59,490
+capitals.in is equal
+to capitals dot out.
+
+444
+00:14:59,490 --> 00:15:01,889
+What that means is that.in
+
+445
+00:15:01,889 --> 00:15:04,980
+times little So times
+
+446
+00:15:04,980 --> 00:15:08,020
+little SN is
+equal to m dot
+
+447
+00:15:08,020 --> 00:15:12,420
+out times little S out.
+
+448
+00:15:12,420 --> 00:15:15,060
+Mass is gone.
+
+449
+00:15:15,060 --> 00:15:17,420
+What it means is that
+the specific entropy at
+
+450
+00:15:17,420 --> 00:15:18,459
+the inlet is equal to
+
+451
+00:15:18,459 --> 00:15:20,219
+the specific entropy
+at the outlet.
+
+452
+00:15:20,219 --> 00:15:22,780
+Good. I'm not saying
+anything radical here.
+
+453
+00:15:22,780 --> 00:15:24,740
+I just reminding him.
+
+454
+00:15:24,740 --> 00:15:25,860
+Okay.
+
+455
+00:15:25,860 --> 00:15:27,459
+In case the Amazon web
+
+456
+00:15:27,459 --> 00:15:29,220
+services shutdown
+affected you.
+
+457
+00:15:29,220 --> 00:15:31,220
+Some of you tried to
+use paper tables.
+
+458
+00:15:31,220 --> 00:15:33,459
+I hope that was a
+good experience.
+
+459
+00:15:35,380 --> 00:15:37,140
+This is where we are.
+
+460
+00:15:37,140 --> 00:15:38,660
+We can go now one by one.
+
+461
+00:15:38,660 --> 00:15:42,339
+If we go with our pump,
+
+462
+00:15:42,339 --> 00:15:45,339
+for the work
+process, w.in,
+
+463
+00:15:45,339 --> 00:15:47,300
+what this is
+going to end up
+
+464
+00:15:47,300 --> 00:15:48,500
+being is that this
+is going to be
+
+465
+00:15:48,500 --> 00:15:51,700
+M dot times the
+enthalpy at state two,
+
+466
+00:15:51,700 --> 00:15:54,860
+H two minus the
+enthalpy at state one.
+
+467
+00:15:54,860 --> 00:15:59,060
+Good. Q.in is going to be
+
+468
+00:15:59,060 --> 00:16:05,260
+M dot times H
+three minus H two.
+
+469
+00:16:05,260 --> 00:16:07,179
+To stay consistent
+
+470
+00:16:07,179 --> 00:16:08,340
+with the notation
+that we were
+
+471
+00:16:08,340 --> 00:16:09,780
+using before to
+indicate that
+
+472
+00:16:09,780 --> 00:16:11,139
+something was isentropic,
+
+473
+00:16:11,139 --> 00:16:14,940
+I will call this
+h2s and H twos.
+
+474
+00:16:14,940 --> 00:16:16,980
+H one is an inlet state,
+
+475
+00:16:16,980 --> 00:16:18,540
+and H three is going to be
+
+476
+00:16:18,540 --> 00:16:20,259
+an inlet state
+for the turbine.
+
+477
+00:16:20,259 --> 00:16:25,299
+Our W dot out then is
+equal to our dot times
+
+478
+00:16:25,299 --> 00:16:28,140
+H three minus H
+
+479
+00:16:28,140 --> 00:16:31,699
+four because that's
+at the exit,
+
+480
+00:16:31,699 --> 00:16:34,500
+and then your Q
+dot out here,
+
+481
+00:16:34,500 --> 00:16:36,059
+which comes from
+the condenser
+
+482
+00:16:36,059 --> 00:16:37,620
+is going to be your dot,
+
+483
+00:16:37,620 --> 00:16:39,700
+and that's going
+to be multiplied
+
+484
+00:16:39,700 --> 00:16:42,980
+by four minus one.
+
+485
+00:16:42,980 --> 00:16:48,370
+Questions? Hearing voices.
+
+486
+00:16:48,370 --> 00:16:50,210
+Cool. It happens.
+
+487
+00:16:50,210 --> 00:16:56,050
+All right. Good.
+So this all
+
+488
+00:16:56,050 --> 00:16:57,290
+looks good. So
+we've got this.
+
+489
+00:16:57,290 --> 00:16:58,729
+We can write.
+Maybe I'll stay
+
+490
+00:16:58,729 --> 00:17:00,890
+with this slide
+just for a second.
+
+491
+00:17:00,890 --> 00:17:02,850
+From this, right?
+
+492
+00:17:02,850 --> 00:17:05,449
+So, you know, go ahead.
+
+493
+00:17:05,449 --> 00:17:09,169
+Yes, please. Why can
+
+494
+00:17:09,169 --> 00:17:10,089
+we assume that it's
+
+495
+00:17:10,089 --> 00:17:11,810
+isotropic when
+there's a difference?
+
+496
+00:17:11,810 --> 00:17:14,169
+Because I'm calling
+it an ideal cycle.
+
+497
+00:17:14,169 --> 00:17:15,769
+One. So no, no, no.
+
+498
+00:17:15,769 --> 00:17:17,249
+So why is it isotropic?
+
+499
+00:17:17,249 --> 00:17:24,230
+So here, So my
+question to you is,
+
+500
+00:17:24,230 --> 00:17:26,910
+what are you
+considering isotropic?
+
+501
+00:17:26,910 --> 00:17:29,589
+No, no, no. I mean,
+which device here?
+
+502
+00:17:29,589 --> 00:17:30,830
+Which process am
+I considering
+
+503
+00:17:30,830 --> 00:17:32,949
+an isentropic process?
+
+504
+00:17:39,590 --> 00:17:41,869
+Yes. So which parts don't
+
+505
+00:17:41,869 --> 00:17:43,709
+have a Q? There's
+no Delta Q.
+
+506
+00:17:43,709 --> 00:17:45,269
+There is Q.
+
+507
+00:17:46,190 --> 00:17:48,309
+That's it. So these
+
+508
+00:17:48,309 --> 00:17:49,950
+are adiabatic
+and reversible,
+
+509
+00:17:49,950 --> 00:17:51,629
+which means they are
+isotropic, right?
+
+510
+00:17:51,629 --> 00:17:52,470
+You agree.
+
+511
+00:17:52,470 --> 00:17:53,910
+So when I'm talking
+
+512
+00:17:53,910 --> 00:17:55,269
+about a heat addition here
+
+513
+00:17:55,269 --> 00:17:56,950
+from something
+at the exit of
+
+514
+00:17:56,950 --> 00:17:59,190
+which underwent an
+isentropic process,
+
+515
+00:17:59,190 --> 00:18:01,269
+this would then be
+so if state three is
+
+516
+00:18:01,269 --> 00:18:03,549
+my inlet and I have an
+isentropic turbine,
+
+517
+00:18:03,549 --> 00:18:06,389
+then I have state
+four S here, right?
+
+518
+00:18:06,389 --> 00:18:08,350
+So I would call this h4s.
+
+519
+00:18:08,350 --> 00:18:11,629
+Now, my heat
+rejection is going to
+
+520
+00:18:11,629 --> 00:18:15,189
+be.h4 minus H one.
+
+521
+00:18:15,189 --> 00:18:18,150
+So just because I'm
+denoting this as h4s,
+
+522
+00:18:18,150 --> 00:18:19,789
+meaning that to
+get to that state,
+
+523
+00:18:19,789 --> 00:18:20,470
+I underwent
+
+524
+00:18:20,470 --> 00:18:22,469
+an isentropic work
+transfer process
+
+525
+00:18:22,469 --> 00:18:25,150
+doesn't say anything
+about four to one.
+
+526
+00:18:25,150 --> 00:18:29,659
+Okay? Okay. The side
+
+527
+00:18:29,659 --> 00:18:31,380
+of the room is on it.
+Okay. Other questions?
+
+528
+00:18:31,380 --> 00:18:40,219
+Clarifications? All
+right. Where was I?
+
+529
+00:18:40,219 --> 00:18:42,100
+Okay, now what
+we can do is
+
+530
+00:18:42,100 --> 00:18:44,019
+we can define an
+efficiency, right?
+
+531
+00:18:44,019 --> 00:18:45,299
+So what is the thermal
+
+532
+00:18:45,299 --> 00:18:48,379
+efficiency of an engine?
+
+533
+00:18:54,480 --> 00:18:57,839
+Now, N. N?
+
+534
+00:18:57,839 --> 00:19:05,999
+Miles. Closer.
+
+535
+00:19:06,480 --> 00:19:09,040
+Yes, please.
+
+536
+00:19:09,520 --> 00:19:14,080
+That's one minus TH over
+TC is almost Carne,
+
+537
+00:19:14,080 --> 00:19:17,319
+but not LA Lakers
+in the back there?
+
+538
+00:19:17,319 --> 00:19:19,999
+Okay. It's okay.
+You can contribute.
+
+539
+00:19:19,999 --> 00:19:21,559
+This could be like
+a Kobe thing,
+
+540
+00:19:21,559 --> 00:19:25,140
+you know, so Yes, please.
+
+541
+00:19:25,140 --> 00:19:29,620
+Name? Sid Network.
+Thank you.
+
+542
+00:19:29,620 --> 00:19:34,259
+Network out w.net over.in.
+
+543
+00:19:34,259 --> 00:19:34,899
+I'm going to ask
+
+544
+00:19:34,899 --> 00:19:35,780
+you one question
+on the quiz,
+
+545
+00:19:35,780 --> 00:19:36,539
+and it's going to be that.
+
+546
+00:19:36,539 --> 00:19:38,179
+Sid's going to nail
+it, all right?
+
+547
+00:19:38,179 --> 00:19:39,380
+Okay, that's going to be
+
+548
+00:19:39,380 --> 00:19:40,899
+your only question and
+spelling your name.
+
+549
+00:19:40,899 --> 00:19:41,619
+So there you go.
+
+550
+00:19:41,619 --> 00:19:43,820
+You have a thermal
+efficiency of your engine,
+
+551
+00:19:43,820 --> 00:19:46,419
+the network out over
+the net heat in,
+
+552
+00:19:46,419 --> 00:19:48,259
+okay? So we can
+write this.
+
+553
+00:19:48,259 --> 00:19:51,099
+What's another way
+we could write this?
+
+554
+00:19:58,670 --> 00:20:01,269
+It's a cycle. So from
+
+555
+00:20:01,269 --> 00:20:02,549
+a first law perspective of
+
+556
+00:20:02,549 --> 00:20:04,590
+a cycle, what
+does that mean?
+
+557
+00:20:04,590 --> 00:20:07,869
+Yes, the We can plug
+in the numbers.
+
+558
+00:20:07,869 --> 00:20:09,229
+I'm asking more like how
+
+559
+00:20:09,229 --> 00:20:11,510
+else can I write
+this efficiency?
+
+560
+00:20:11,510 --> 00:20:14,069
+So if I drew the
+control volume around
+
+561
+00:20:14,069 --> 00:20:16,789
+the entire device here.
+
+562
+00:20:16,789 --> 00:20:20,989
+So if I drew a control
+volume around now,
+
+563
+00:20:20,989 --> 00:20:27,999
+this entire device, Okay.
+
+564
+00:20:27,999 --> 00:20:32,719
+And I told you
+that this also was
+
+565
+00:20:32,719 --> 00:20:40,439
+a operating under a
+steady condition.
+
+566
+00:20:40,439 --> 00:20:43,440
+What does it mean for
+this control volume?
+
+567
+00:20:43,440 --> 00:20:49,680
+Yes, please. AV, Say
+it one more time.
+
+568
+00:20:49,680 --> 00:20:52,079
+That's it. There's
+no change, okay?
+
+569
+00:20:52,079 --> 00:20:53,319
+So on a good week,
+
+570
+00:20:53,319 --> 00:20:54,559
+you know, in a
+bank account,
+
+571
+00:20:54,559 --> 00:20:56,079
+what goes in is
+what goes out,
+
+572
+00:20:56,079 --> 00:20:57,639
+right? That's
+where you're at.
+
+573
+00:20:57,639 --> 00:20:59,879
+So I'm saying here that
+
+574
+00:20:59,879 --> 00:21:01,240
+the thermal efficiency is
+
+575
+00:21:01,240 --> 00:21:04,039
+my w.net over my.in.
+
+576
+00:21:04,039 --> 00:21:07,680
+My w.net here is
+the w dot workout
+
+577
+00:21:07,680 --> 00:21:12,519
+minus the w dot
+work in, right?
+
+578
+00:21:12,519 --> 00:21:17,919
+Okay. Good. What must
+that be equal to?
+
+579
+00:21:19,440 --> 00:21:22,760
+Net Q net.
+
+580
+00:21:22,760 --> 00:21:24,125
+What type of Q
+net, though?
+
+581
+00:21:24,125 --> 00:21:30,449
+Excuse me. Yes,
+q.net in, right?
+
+582
+00:21:30,449 --> 00:21:31,889
+This is q.net out,
+
+583
+00:21:31,889 --> 00:21:33,210
+this is q.net in,
+
+584
+00:21:33,210 --> 00:21:34,569
+and that's q.in, okay?
+
+585
+00:21:34,569 --> 00:21:35,729
+For many cycles, like,
+
+586
+00:21:35,729 --> 00:21:37,249
+especially when
+it was Sterling,
+
+587
+00:21:37,249 --> 00:21:39,930
+it is much easier
+to do this, right?
+
+588
+00:21:39,930 --> 00:21:41,450
+You could do it this
+way. That's fine.
+
+589
+00:21:41,450 --> 00:21:42,650
+But if it was something
+like Sterling,
+
+590
+00:21:42,650 --> 00:21:43,169
+you got to get
+
+591
+00:21:43,169 --> 00:21:45,209
+an adiabatic work
+transfer processes,
+
+592
+00:21:45,209 --> 00:21:46,890
+but it's much easier
+to calculate this.
+
+593
+00:21:46,890 --> 00:21:48,809
+So these are two things
+that I would say to
+
+594
+00:21:48,809 --> 00:21:50,130
+David are things to
+
+595
+00:21:50,130 --> 00:21:51,449
+remember for a
+cycle, okay?
+
+596
+00:21:51,449 --> 00:21:54,329
+This is base stuff to
+remember, all right?
+
+597
+00:21:54,329 --> 00:21:57,279
+Okay. We're having fun.
+
+598
+00:21:57,279 --> 00:21:58,880
+All right, so
+we have this.
+
+599
+00:21:58,880 --> 00:22:00,519
+If we did our
+substitution, right?
+
+600
+00:22:00,519 --> 00:22:02,999
+So what we have
+for the net out,
+
+601
+00:22:02,999 --> 00:22:09,160
+this is W dot out minus
+w.in divided by q.in.
+
+602
+00:22:09,160 --> 00:22:14,959
+This is equal to
+then.h3 minus H
+
+603
+00:22:14,959 --> 00:22:22,919
+four minus M dot times
+h2s minus H one,
+
+604
+00:22:22,919 --> 00:22:25,519
+and that's all
+divided by m dot
+
+605
+00:22:25,519 --> 00:22:32,079
+times H three minus h2s.
+
+606
+00:22:33,300 --> 00:22:35,819
+Right? Okay, so
+
+607
+00:22:35,819 --> 00:22:37,499
+that's one way
+to do it, right?
+
+608
+00:22:37,499 --> 00:22:39,140
+Your masses would
+basically cancel
+
+609
+00:22:39,140 --> 00:22:40,420
+and you could do
+some rearrangement.
+
+610
+00:22:40,420 --> 00:22:41,619
+Another way you
+could do it is
+
+611
+00:22:41,619 --> 00:22:43,859
+the q.net in, right?
+
+612
+00:22:43,859 --> 00:22:49,299
+Which we can write as
+q.in minus Q dot out,
+
+613
+00:22:49,299 --> 00:22:52,179
+divided by q.in,
+which is nothing but
+
+614
+00:22:52,179 --> 00:22:57,645
+one minus Q dot out
+divided by q.in, right?
+
+615
+00:22:57,645 --> 00:22:59,589
+All right. So here,
+
+616
+00:22:59,589 --> 00:23:01,790
+if we do it that way,
+so we have one minus,
+
+617
+00:23:01,790 --> 00:23:03,709
+the Q dot out
+is going to be
+
+618
+00:23:03,709 --> 00:23:07,389
+dot times h4s minus H one,
+
+619
+00:23:07,389 --> 00:23:14,869
+and the q.in is dot
+three minus h2s, okay?
+
+620
+00:23:14,869 --> 00:23:16,590
+And these would go away,
+
+621
+00:23:16,590 --> 00:23:19,269
+all right? All right.
+
+622
+00:23:19,269 --> 00:23:23,899
+And so at this point,
+What do you do?
+
+623
+00:23:23,899 --> 00:23:25,699
+Yes, please, David?
+
+624
+00:23:25,699 --> 00:23:27,620
+I have a question
+about the cycle.
+
+625
+00:23:27,620 --> 00:23:30,740
+The Cary efficiency of
+
+626
+00:23:30,740 --> 00:23:32,499
+one minus rolled
+over to you? Yes.
+
+627
+00:23:32,499 --> 00:23:35,179
+Do other cycles also have?
+
+628
+00:23:35,260 --> 00:23:40,380
+I've derived you auto,
+diesel, Brayton.
+
+629
+00:23:40,380 --> 00:23:41,300
+I've told you about
+
+630
+00:23:41,300 --> 00:23:43,060
+a jet propulsion
+efficiency.
+
+631
+00:23:43,060 --> 00:23:45,900
+I told you that
+Sterling becomes Carne.
+
+632
+00:23:45,900 --> 00:23:47,340
+So yes, I've given you
+
+633
+00:23:47,340 --> 00:23:49,219
+at least five. I'll
+give you a high five.
+
+634
+00:23:49,219 --> 00:23:50,259
+And by the end of this,
+
+635
+00:23:50,259 --> 00:23:51,100
+I'll have a couple more,
+
+636
+00:23:51,100 --> 00:23:53,539
+and then I can give you
+two. Alright, good?
+
+637
+00:23:53,539 --> 00:23:55,220
+They do. They have ones,
+
+638
+00:23:55,220 --> 00:23:56,259
+but, I mean, at
+the end of it,
+
+639
+00:23:56,259 --> 00:23:56,979
+it's all the same.
+
+640
+00:23:56,979 --> 00:23:59,980
+This is nothing
+but these things.
+
+641
+00:23:59,980 --> 00:24:01,259
+So that type of thing,
+
+642
+00:24:01,259 --> 00:24:02,699
+I would not expect you.
+
+643
+00:24:02,699 --> 00:24:04,139
+Actually, I would like,
+
+644
+00:24:04,139 --> 00:24:05,939
+be emphatic that
+you do not just
+
+645
+00:24:05,939 --> 00:24:08,059
+go directly to
+inefficiency there.
+
+646
+00:24:08,059 --> 00:24:09,259
+These types of
+things, right?
+
+647
+00:24:09,259 --> 00:24:10,179
+I would expect you to be
+
+648
+00:24:10,179 --> 00:24:12,339
+able to write out and
+show me what they are.
+
+649
+00:24:12,339 --> 00:24:14,379
+Okay? And you'll see
+that if you look
+
+650
+00:24:14,379 --> 00:24:15,580
+at the practice problems
+
+651
+00:24:15,580 --> 00:24:16,779
+on Module two review,
+
+652
+00:24:16,779 --> 00:24:18,980
+I give you a fun one
+called Humphrey,
+
+653
+00:24:18,980 --> 00:24:20,699
+which is a variation
+on Brayton
+
+654
+00:24:20,699 --> 00:24:22,779
+that I gave last year.
+They all loved it.
+
+655
+00:24:22,779 --> 00:24:24,779
+Okay. All right.
+
+656
+00:24:24,779 --> 00:24:27,299
+Good. So at this point,
+
+657
+00:24:27,299 --> 00:24:29,459
+what do we do,
+though, David?
+
+658
+00:24:29,459 --> 00:24:31,859
+So now I have the
+formulas, right?
+
+659
+00:24:31,859 --> 00:24:33,939
+So I'm asked to what
+I wanted to get
+
+660
+00:24:33,939 --> 00:24:37,139
+here was the thermal
+efficiency of the cycle.
+
+661
+00:24:37,139 --> 00:24:39,939
+I have a formula for
+this. Now, what do I do?
+
+662
+00:24:41,540 --> 00:24:45,019
+Derive Yeah, you
+need to get them.
+
+663
+00:24:45,019 --> 00:24:46,219
+And the sense of
+this is water,
+
+664
+00:24:46,219 --> 00:24:47,729
+what do I use?
+
+665
+00:24:47,729 --> 00:24:51,439
+Not ideal guess.
+Hopefully not.
+
+666
+00:24:51,439 --> 00:24:54,279
+Okay. All right.
+Yeah, so that's it.
+
+667
+00:24:54,279 --> 00:24:55,479
+So we can start
+to try to figure
+
+668
+00:24:55,479 --> 00:24:56,960
+out if we know any
+of these properties.
+
+669
+00:24:56,960 --> 00:24:58,399
+So what's given in
+our problem, now
+
+670
+00:24:58,399 --> 00:24:59,600
+that I've done
+the derivation,
+
+671
+00:24:59,600 --> 00:25:00,840
+I can tell you
+what's typically
+
+672
+00:25:00,840 --> 00:25:03,039
+given in a rankin problem.
+
+673
+00:25:03,039 --> 00:25:04,359
+What's typically given in
+
+674
+00:25:04,359 --> 00:25:05,879
+a rakin problem is
+
+675
+00:25:05,879 --> 00:25:08,479
+state three. Why
+state three?
+
+676
+00:25:08,479 --> 00:25:10,040
+Two things. The first
+
+677
+00:25:10,040 --> 00:25:11,759
+is that it's the
+hottest point.
+
+678
+00:25:11,759 --> 00:25:13,400
+This is where you're
+transferring heat in.
+
+679
+00:25:13,400 --> 00:25:14,360
+It's also the point of
+
+680
+00:25:14,360 --> 00:25:15,759
+hottest pressure,
+all right?
+
+681
+00:25:15,759 --> 00:25:17,319
+So what literally
+sets the limits
+
+682
+00:25:17,319 --> 00:25:19,079
+of the efficiency
+of this cycle is,
+
+683
+00:25:19,079 --> 00:25:20,439
+can I make a boiler that
+
+684
+00:25:20,439 --> 00:25:22,119
+does not explode, right?
+
+685
+00:25:22,119 --> 00:25:24,119
+Can I make a boiler
+that does not basically
+
+686
+00:25:24,119 --> 00:25:26,199
+melt and it's made of
+materials, all right?
+
+687
+00:25:26,199 --> 00:25:30,599
+So here, All right,
+we're given state three,
+
+688
+00:25:30,599 --> 00:25:32,279
+and because it's a
+superheated vapor
+
+689
+00:25:32,279 --> 00:25:33,879
+is super critical
+sometimes,
+
+690
+00:25:33,879 --> 00:25:35,919
+you're going to be
+given a T three here,
+
+691
+00:25:35,919 --> 00:25:37,999
+in this case of
+
+692
+00:25:38,880 --> 00:25:43,199
+350 degrees Celsius and
+
+693
+00:25:43,199 --> 00:25:45,399
+a P three here that's
+
+694
+00:25:45,399 --> 00:25:47,439
+equal to three megapascal,
+
+695
+00:25:47,439 --> 00:25:50,720
+so 30 times
+atmospheric pressure.
+
+696
+00:25:50,720 --> 00:25:52,639
+These are not
+particularly high values.
+
+697
+00:25:52,639 --> 00:25:53,799
+Yes, please, Mao.
+
+698
+00:25:53,799 --> 00:25:57,559
+Why would you connect
+the water from
+
+699
+00:25:57,559 --> 00:26:05,384
+the condenser One
+more time for me.
+
+700
+00:26:05,384 --> 00:26:09,489
+I like the water that
+goes through condenser
+
+701
+00:26:09,489 --> 00:26:10,969
+and for
+
+702
+00:26:10,969 --> 00:26:16,529
+the boil water that's
+where it goes through.
+
+703
+00:26:17,090 --> 00:26:19,169
+So the thing is that
+
+704
+00:26:19,169 --> 00:26:19,969
+the water that you would
+
+705
+00:26:19,969 --> 00:26:21,049
+put into this condenser
+
+706
+00:26:21,049 --> 00:26:22,370
+that I'm not showing
+here that I'm
+
+707
+00:26:22,370 --> 00:26:24,249
+representing as
+Q out is water
+
+708
+00:26:24,249 --> 00:26:25,969
+that's great
+for humans and
+
+709
+00:26:25,969 --> 00:26:29,059
+like the worst diet you
+could give a machine.
+
+710
+00:26:29,059 --> 00:26:30,709
+So they contain
+things that
+
+711
+00:26:30,709 --> 00:26:32,469
+will corrode
+these components.
+
+712
+00:26:32,469 --> 00:26:34,189
+They'll calcify,
+they'll like
+
+713
+00:26:34,189 --> 00:26:36,789
+put limescale and
+stuff into it.
+
+714
+00:26:36,789 --> 00:26:38,349
+The water that's, like,
+
+715
+00:26:38,349 --> 00:26:39,910
+inside here that
+you boil is,
+
+716
+00:26:39,910 --> 00:26:41,750
+like, the purest water.
+
+717
+00:26:41,750 --> 00:26:43,389
+It doesn't contain
+anything that can, like,
+
+718
+00:26:43,389 --> 00:26:46,270
+precipitate and
+destroy a boiler.
+
+719
+00:26:46,270 --> 00:26:48,230
+My buddy used to work
+for Mel like Toledo,
+
+720
+00:26:48,230 --> 00:26:50,029
+and he solds instruments
+that would monitor,
+
+721
+00:26:50,029 --> 00:26:51,990
+like, water quality
+in the plant.
+
+722
+00:26:51,990 --> 00:26:53,309
+So you could do
+something like that,
+
+723
+00:26:53,309 --> 00:26:54,550
+but there will be a cost,
+
+724
+00:26:54,550 --> 00:26:56,149
+and the cost will be that,
+
+725
+00:26:56,149 --> 00:26:59,109
+you know, this will look
+like it's on a very
+
+726
+00:26:59,109 --> 00:27:01,870
+unhealthy an enjoyable
+but unhealthy diet.
+
+727
+00:27:01,870 --> 00:27:02,975
+Yes, please.
+
+728
+00:27:02,975 --> 00:27:06,159
+It's like a non
+ethical question.
+
+729
+00:27:06,159 --> 00:27:08,959
+Is there ever a reason to
+
+730
+00:27:08,959 --> 00:27:11,399
+not amin generator in
+any of these cycles but
+
+731
+00:27:11,399 --> 00:27:13,559
+it seems like such an easy
+
+732
+00:27:13,770 --> 00:27:15,970
+I mean, it all depends.
+
+733
+00:27:15,970 --> 00:27:17,090
+So you're going to be able
+
+734
+00:27:17,090 --> 00:27:17,529
+to answer that question
+
+735
+00:27:17,529 --> 00:27:18,250
+by the end of the course
+
+736
+00:27:18,250 --> 00:27:19,329
+because you're
+going to be able to
+
+737
+00:27:19,329 --> 00:27:20,610
+turn this into
+efficiencies.
+
+738
+00:27:20,610 --> 00:27:22,529
+And if you know money
+and how things cost,
+
+739
+00:27:22,529 --> 00:27:24,009
+you can turn that
+into, like, you know,
+
+740
+00:27:24,009 --> 00:27:25,329
+several year ROI, and
+
+741
+00:27:25,329 --> 00:27:26,489
+then you go to
+your boss and say,
+
+742
+00:27:26,489 --> 00:27:28,410
+Hey, here's the payback
+period on this.
+
+743
+00:27:28,410 --> 00:27:30,130
+This is the time frame,
+and they all have
+
+744
+00:27:30,130 --> 00:27:31,090
+a policy if it's
+
+745
+00:27:31,090 --> 00:27:32,489
+maybe like when I
+worked two years,
+
+746
+00:27:32,489 --> 00:27:34,929
+if I could make a project
+that showed that I
+
+747
+00:27:34,929 --> 00:27:35,729
+could make the money back
+
+748
+00:27:35,729 --> 00:27:36,810
+in less than two years,
+
+749
+00:27:36,810 --> 00:27:37,849
+we got to do that.
+
+750
+00:27:37,849 --> 00:27:39,809
+All right. Other
+questions?
+
+751
+00:27:39,809 --> 00:27:41,609
+Okay, so we're doing
+properties now.
+
+752
+00:27:41,609 --> 00:27:43,009
+So we have this? Water is
+
+753
+00:27:43,009 --> 00:27:43,970
+a pure substance.
+
+754
+00:27:43,970 --> 00:27:45,209
+So we have complete
+information.
+
+755
+00:27:45,209 --> 00:27:47,649
+I know H three and
+I know S three
+
+756
+00:27:47,649 --> 00:27:50,849
+specific enthropy and
+specific entropy here.
+
+757
+00:27:50,849 --> 00:27:55,769
+Great. I To state
+four to state four,
+
+758
+00:27:55,769 --> 00:27:58,809
+again, we did the entropy
+
+759
+00:27:58,809 --> 00:28:00,329
+control volume
+analysis there.
+
+760
+00:28:00,329 --> 00:28:02,729
+We showed that for
+
+761
+00:28:02,729 --> 00:28:06,850
+adiabatic reversible
+processes isentropic.
+
+762
+00:28:06,850 --> 00:28:08,770
+Steady flow means
+we don't have
+
+763
+00:28:08,770 --> 00:28:10,889
+change in entropy in
+the control volume.
+
+764
+00:28:10,889 --> 00:28:12,889
+The isentropic part
+means we don't have
+
+765
+00:28:12,889 --> 00:28:14,649
+entropy generation
+because it's
+
+766
+00:28:14,649 --> 00:28:17,239
+single inlet, single
+outlet, right?
+
+767
+00:28:17,239 --> 00:28:20,109
+S in is S out.
+
+768
+00:28:20,109 --> 00:28:23,469
+What is the S in?
+
+769
+00:28:23,469 --> 00:28:24,989
+There was S three,
+
+770
+00:28:24,989 --> 00:28:29,229
+the out is that S four
+is equal to S three.
+
+771
+00:28:29,229 --> 00:28:31,150
+The other piece of
+information which
+
+772
+00:28:31,150 --> 00:28:32,789
+is typically going
+to be given in
+
+773
+00:28:32,789 --> 00:28:37,350
+a ranking process
+is the pressure.
+
+774
+00:28:37,350 --> 00:28:38,949
+P four, in this case,
+
+775
+00:28:38,949 --> 00:28:41,989
+it's 75 pa. What
+
+776
+00:28:41,989 --> 00:28:43,999
+determines this
+pressure is
+
+777
+00:28:43,999 --> 00:28:45,519
+the temperature of
+the cooling water.
+
+778
+00:28:45,519 --> 00:28:46,919
+So basically, you would
+
+779
+00:28:46,919 --> 00:28:48,519
+love this pressure
+to be zero.
+
+780
+00:28:48,519 --> 00:28:50,479
+What sets this temperature
+
+781
+00:28:50,479 --> 00:28:52,320
+is you bring in
+cooling water or air,
+
+782
+00:28:52,320 --> 00:28:53,719
+and you blow that over the
+
+783
+00:28:53,719 --> 00:28:54,999
+outside of these tubes,
+
+784
+00:28:54,999 --> 00:28:56,919
+and it brings it to
+some temperature.
+
+785
+00:28:56,919 --> 00:28:58,319
+You have that temperature,
+
+786
+00:28:58,319 --> 00:29:00,879
+and you know that
+this is going to be,
+
+787
+00:29:00,879 --> 00:29:02,879
+you want to bring
+this down to
+
+788
+00:29:02,879 --> 00:29:05,320
+being a saturated vapor.
+
+789
+00:29:05,320 --> 00:29:06,599
+So with that
+temperature and
+
+790
+00:29:06,599 --> 00:29:08,199
+knowing that it's
+a saturated vapor,
+
+791
+00:29:08,199 --> 00:29:10,319
+it's going to set
+the pressure, okay?
+
+792
+00:29:10,319 --> 00:29:13,279
+75 kPa, it's okay.
+
+793
+00:29:13,279 --> 00:29:14,999
+All right? That's on
+
+794
+00:29:14,999 --> 00:29:17,440
+the higher side
+of a value.
+
+795
+00:29:17,440 --> 00:29:18,879
+So this temperature
+here, if you look
+
+796
+00:29:18,879 --> 00:29:20,520
+at the saturation
+temperature here,
+
+797
+00:29:20,520 --> 00:29:22,999
+my guess is that it's
+over 30 Celsius there.
+
+798
+00:29:22,999 --> 00:29:23,634
+All right?
+
+799
+00:29:23,634 --> 00:29:26,549
+Okay. But the
+point is that with
+
+800
+00:29:26,549 --> 00:29:29,829
+this, I have, right?
+
+801
+00:29:29,829 --> 00:29:30,429
+I could have
+
+802
+00:29:30,429 --> 00:29:33,509
+complete information
+from this process.
+
+803
+00:29:33,509 --> 00:29:37,229
+It means that I
+know my my H four.
+
+804
+00:29:37,229 --> 00:29:38,589
+I could also know T
+
+805
+00:29:38,589 --> 00:29:40,829
+four if I cared
+about it, all right?
+
+806
+00:29:40,829 --> 00:29:41,790
+And to be consistent
+
+807
+00:29:41,790 --> 00:29:42,509
+with what I wrote before,
+
+808
+00:29:42,509 --> 00:29:44,750
+because it's isentropic,
+I'll write h4s,
+
+809
+00:29:44,750 --> 00:29:46,949
+and let's say t4s.
+
+810
+00:29:48,270 --> 00:29:51,829
+Going along this to
+
+811
+00:29:51,829 --> 00:29:55,349
+state one to state
+one. All right.
+
+812
+00:29:55,349 --> 00:29:56,910
+So this is a condenser,
+
+813
+00:29:56,910 --> 00:29:58,429
+this is a heat exchanger.
+
+814
+00:29:58,429 --> 00:30:00,069
+So it means that P one
+
+815
+00:30:00,069 --> 00:30:02,269
+is going to be equal
+to P four, right?
+
+816
+00:30:02,269 --> 00:30:03,669
+We're not going to
+have a pressure
+
+817
+00:30:03,669 --> 00:30:04,829
+drop across that device.
+
+818
+00:30:04,829 --> 00:30:05,670
+The one piece of
+
+819
+00:30:05,670 --> 00:30:07,029
+information that
+is implicit,
+
+820
+00:30:07,029 --> 00:30:07,390
+I believe,
+
+821
+00:30:07,390 --> 00:30:09,469
+in most rankin
+problems, and again,
+
+822
+00:30:09,469 --> 00:30:10,710
+this is what
+differentiates
+
+823
+00:30:10,710 --> 00:30:12,190
+from a Braden analysis,
+
+824
+00:30:12,190 --> 00:30:14,549
+is that it's a condenser.
+
+825
+00:30:14,549 --> 00:30:15,950
+What comes out
+of a condenser?
+
+826
+00:30:15,950 --> 00:30:18,024
+What is the purpose
+of a condenser?
+
+827
+00:30:18,024 --> 00:30:20,980
+Minus Vf over Vg
+minus Vf is one.
+
+828
+00:30:20,980 --> 00:30:22,139
+We call it vapor
+quality when
+
+829
+00:30:22,139 --> 00:30:23,380
+it's one, you're a vapor.
+
+830
+00:30:23,380 --> 00:30:24,980
+So if it's not
+one, what should
+
+831
+00:30:24,980 --> 00:30:26,900
+you be when you're here
+when you're a liquid?
+
+832
+00:30:26,900 --> 00:30:30,419
+If you're not one, you're
+zero binary, okay?
+
+833
+00:30:30,419 --> 00:30:33,419
+So the quality at
+state one is equal
+
+834
+00:30:33,419 --> 00:30:37,069
+to I'm going to
+
+835
+00:30:37,069 --> 00:30:38,429
+give everyone on
+this side a zero.
+
+836
+00:30:38,429 --> 00:30:39,869
+That's what you're
+going to get, okay?
+
+837
+00:30:39,869 --> 00:30:42,069
+So this is the condensed
+phase here, right?
+
+838
+00:30:42,069 --> 00:30:43,029
+So you're a liquid.
+
+839
+00:30:43,029 --> 00:30:44,629
+Your vapor
+quality is what?
+
+840
+00:30:44,629 --> 00:30:46,349
+Nah, zero. Okay.
+
+841
+00:30:46,349 --> 00:30:47,670
+It's good. This is what's
+
+842
+00:30:47,670 --> 00:30:49,070
+impl in the ranking.
+
+843
+00:30:49,070 --> 00:30:49,749
+It will not be mentioned
+
+844
+00:30:49,749 --> 00:30:50,629
+to you since you were in
+
+845
+00:30:50,629 --> 00:30:52,309
+this lecture and I
+spent 5 minutes on it.
+
+846
+00:30:52,309 --> 00:30:53,709
+I expect you all
+to know that.
+
+847
+00:30:53,709 --> 00:30:55,230
+I know you. I
+know your names.
+
+848
+00:30:55,230 --> 00:30:56,229
+If I grade this and you
+
+849
+00:30:56,229 --> 00:30:57,390
+don't have it,
+you're all done.
+
+850
+00:30:57,390 --> 00:30:58,750
+I'll learn his name later.
+
+851
+00:30:58,750 --> 00:31:01,829
+Allright? So you have
+this P one and P four.
+
+852
+00:31:01,829 --> 00:31:04,029
+And from this,
+you'll have H one,
+
+853
+00:31:04,029 --> 00:31:06,710
+and you will
+have you'll have
+
+854
+00:31:06,710 --> 00:31:10,509
+H one and you will
+have S one, okay?
+
+855
+00:31:11,030 --> 00:31:13,789
+If I hear more talking,
+I'm going to call
+
+856
+00:31:13,789 --> 00:31:14,830
+on you and spend 5 minutes
+
+857
+00:31:14,830 --> 00:31:15,949
+on you, all
+right? It's good.
+
+858
+00:31:15,949 --> 00:31:17,749
+So H one and S
+one, you know,
+
+859
+00:31:17,749 --> 00:31:19,150
+and now we come
+into the pump.
+
+860
+00:31:19,150 --> 00:31:20,389
+Now we have state two.
+
+861
+00:31:20,389 --> 00:31:22,149
+So in state two, again,
+
+862
+00:31:22,149 --> 00:31:24,749
+this is the ideal
+case, right?
+
+863
+00:31:24,749 --> 00:31:28,709
+So, and the first thing
+
+864
+00:31:28,709 --> 00:31:30,029
+is you need to look
+forward, right?
+
+865
+00:31:30,029 --> 00:31:31,549
+So with state
+two connected to
+
+866
+00:31:31,549 --> 00:31:33,149
+state three of a
+heat exchanger.
+
+867
+00:31:33,149 --> 00:31:35,549
+So since I know the
+pressure at state three,
+
+868
+00:31:35,549 --> 00:31:37,269
+it means I know the
+pressure at state two.
+
+869
+00:31:37,269 --> 00:31:41,899
+P two is equal to P
+three, one, okay?
+
+870
+00:31:41,899 --> 00:31:44,169
+That's on one side
+of the state.
+
+871
+00:31:44,169 --> 00:31:45,849
+On the other side
+of the state, you
+
+872
+00:31:45,849 --> 00:31:47,210
+have a pump
+
+873
+00:31:47,210 --> 00:31:51,410
+that's operating
+adiabatically and versibly.
+
+874
+00:31:51,410 --> 00:31:53,010
+When I do the
+control volume
+
+875
+00:31:53,010 --> 00:31:54,490
+analysis with the entropy,
+
+876
+00:31:54,490 --> 00:31:56,850
+they're steady flow,
+
+877
+00:31:56,850 --> 00:31:57,690
+so there's no change in
+
+878
+00:31:57,690 --> 00:31:59,089
+entropy of the
+control volume.
+
+879
+00:31:59,089 --> 00:32:01,410
+It's isotropic is
+adiabatic and reversible,
+
+880
+00:32:01,410 --> 00:32:03,010
+means there's no
+entropy generation.
+
+881
+00:32:03,010 --> 00:32:04,569
+S.in is S dot out.
+
+882
+00:32:04,569 --> 00:32:05,730
+Because it's steady flow,
+
+883
+00:32:05,730 --> 00:32:07,169
+dot in is M dot out,
+
+884
+00:32:07,169 --> 00:32:08,889
+which means that S two is
+
+885
+00:32:08,889 --> 00:32:11,504
+equal to S three, okay?
+
+886
+00:32:11,504 --> 00:32:13,439
+Or, I'm sorry, S two is
+
+887
+00:32:13,439 --> 00:32:15,359
+equal to S one, right?
+
+888
+00:32:15,359 --> 00:32:17,520
+Here, right? Because
+it's two to one.
+
+889
+00:32:17,520 --> 00:32:22,879
+So S two is equal to
+h is equal to S one,
+
+890
+00:32:22,879 --> 00:32:24,239
+which we had there.
+
+891
+00:32:24,239 --> 00:32:25,640
+And it means then we're
+
+892
+00:32:25,640 --> 00:32:27,919
+basically able
+to get H two,
+
+893
+00:32:27,919 --> 00:32:30,399
+right, h2s out of that.
+
+894
+00:32:30,399 --> 00:32:32,359
+Okay? So all of that,
+
+895
+00:32:32,359 --> 00:32:33,920
+you would just
+put these into Pi
+
+896
+00:32:33,920 --> 00:32:35,199
+color and you would
+
+897
+00:32:35,199 --> 00:32:37,000
+then get out
+the enthalpies
+
+898
+00:32:37,000 --> 00:32:38,839
+that you need, right?
+
+899
+00:32:38,839 --> 00:32:39,800
+Right?
+
+900
+00:32:39,800 --> 00:32:41,279
+These are the enthalpies
+that you would
+
+901
+00:32:41,279 --> 00:32:43,240
+need to determine
+the efficiency,
+
+902
+00:32:43,240 --> 00:32:44,559
+which was the goal, right?
+
+903
+00:32:44,559 --> 00:32:46,239
+So let's just look.
+Are we correct?
+
+904
+00:32:46,239 --> 00:32:50,479
+H4h 4h4s here, right?
+
+905
+00:32:50,479 --> 00:32:53,439
+H one, you have
+H one here,
+
+906
+00:32:53,439 --> 00:32:59,679
+H three and h2s
+are here and here.
+
+907
+00:32:59,679 --> 00:33:02,640
+Questions? Yes, please.
+
+908
+00:33:02,640 --> 00:33:06,400
+Finding H's.
+
+909
+00:33:06,400 --> 00:33:08,399
+So if I tell you
+it's just ideal,
+
+910
+00:33:08,399 --> 00:33:10,159
+that's ideal, it's that.
+
+911
+00:33:10,159 --> 00:33:11,959
+What do you think
+I would give you?
+
+912
+00:33:11,959 --> 00:33:13,519
+What additional
+information would
+
+913
+00:33:13,519 --> 00:33:14,239
+I have to give you
+
+914
+00:33:14,239 --> 00:33:15,679
+if it was not isotropic?
+
+915
+00:33:15,679 --> 00:33:17,519
+What do you think
+I would provide?
+
+916
+00:33:24,150 --> 00:33:28,549
+Next. E of what?
+
+917
+00:33:29,260 --> 00:33:31,299
+That's it. So basically,
+
+918
+00:33:31,299 --> 00:33:32,219
+we define what we call
+
+919
+00:33:32,219 --> 00:33:35,060
+isotropic efficiencies
+of a turbine,
+
+920
+00:33:35,060 --> 00:33:36,860
+of a compressor,
+of a pump.
+
+921
+00:33:36,860 --> 00:33:38,660
+So if it wasn't ideal,
+
+922
+00:33:38,660 --> 00:33:40,779
+I would say something
+to the effect of,
+
+923
+00:33:40,779 --> 00:33:42,819
+you know, here's a turbine
+that operates with
+
+924
+00:33:42,819 --> 00:33:45,659
+an isentropic efficiency
+of 0.8, right?
+
+925
+00:33:45,659 --> 00:33:46,980
+And so if I told you that,
+
+926
+00:33:46,980 --> 00:33:49,059
+so let's say I have
+my turbine and I have
+
+927
+00:33:49,059 --> 00:33:52,579
+this isentropic
+efficiency of 0.8, right?
+
+928
+00:33:52,579 --> 00:33:56,379
+The isentropic
+efficiency is
+
+929
+00:33:56,379 --> 00:33:58,700
+W dot actual divided
+
+930
+00:33:58,700 --> 00:34:01,139
+by W dot isotropic, right?
+
+931
+00:34:01,139 --> 00:34:03,499
+So for a steady flow
+device, in our case,
+
+932
+00:34:03,499 --> 00:34:04,699
+that would look
+something like
+
+933
+00:34:04,699 --> 00:34:07,499
+H three minus H
+
+934
+00:34:07,499 --> 00:34:12,380
+for a divided by H
+three minus h4s.
+
+935
+00:34:12,380 --> 00:34:13,860
+I just went through
+the exercise
+
+936
+00:34:13,860 --> 00:34:15,339
+of determining h4s.
+
+937
+00:34:15,339 --> 00:34:16,939
+This is 0.8.
+
+938
+00:34:16,939 --> 00:34:18,939
+H three is always
+going to be given,
+
+939
+00:34:18,939 --> 00:34:20,379
+then you solve
+for H four A,
+
+940
+00:34:20,379 --> 00:34:22,019
+and that's the
+actual. Yes, please.
+
+941
+00:34:22,019 --> 00:34:26,819
+I thought that No.
+
+942
+00:34:26,819 --> 00:34:30,419
+W is not TDS.
+No, that's a no.
+
+943
+00:34:30,419 --> 00:34:32,779
+The whole point of work
+when we start off as
+
+944
+00:34:32,779 --> 00:34:34,219
+a basic analysis
+is we treat
+
+945
+00:34:34,219 --> 00:34:35,940
+these as isotropic
+devices.
+
+946
+00:34:35,940 --> 00:34:37,499
+What differentiates
+work from
+
+947
+00:34:37,499 --> 00:34:40,219
+heat is entropy, okay?
+
+948
+00:34:41,820 --> 00:34:43,939
+I assume there
+was just lots of
+
+949
+00:34:43,939 --> 00:34:45,860
+midterms this week
+and we're all cooked.
+
+950
+00:34:45,860 --> 00:34:48,179
+Thank you. I'll be a
+little nicer next time.
+
+951
+00:34:48,179 --> 00:34:50,579
+Sorry. Okay. All right.
+
+952
+00:34:50,579 --> 00:34:51,499
+Other questions?
+
+953
+00:34:51,499 --> 00:34:52,699
+Although they're
+good questions.
+
+954
+00:34:52,699 --> 00:34:54,499
+Yes, please, in
+the back. Name?
+
+955
+00:34:54,499 --> 00:34:56,619
+Elias.
+
+956
+00:35:04,870 --> 00:35:07,229
+I mean, I would say for
+
+957
+00:35:07,229 --> 00:35:09,349
+a rank in cycle,
+you will learn.
+
+958
+00:35:09,349 --> 00:35:11,109
+You will know this
+and it will become
+
+959
+00:35:11,109 --> 00:35:13,989
+second nature to
+think about it.
+
+960
+00:35:13,989 --> 00:35:15,789
+I can't say right now if
+
+961
+00:35:15,789 --> 00:35:17,509
+I'm going to draw
+it pictorially.
+
+962
+00:35:17,509 --> 00:35:18,709
+At the moment, I feel in
+
+963
+00:35:18,709 --> 00:35:20,270
+the world of large
+language models,
+
+964
+00:35:20,270 --> 00:35:21,669
+everything can be
+represented as text.
+
+965
+00:35:21,669 --> 00:35:23,069
+So maybe I'll
+just say like,
+
+966
+00:35:23,069 --> 00:35:23,429
+Hey,
+
+967
+00:35:23,429 --> 00:35:25,109
+these are the components
+like I have here.
+
+968
+00:35:25,109 --> 00:35:26,470
+I have a rank in cycle
+
+969
+00:35:26,470 --> 00:35:28,350
+consisting of a
+pump, a boiler,
+
+970
+00:35:28,350 --> 00:35:29,990
+a turbine, and
+a condenser,
+
+971
+00:35:29,990 --> 00:35:31,269
+and here's some
+properties now
+
+972
+00:35:31,269 --> 00:35:32,469
+analyze the efficiency.
+
+973
+00:35:32,469 --> 00:35:33,269
+That's probably how I
+
+974
+00:35:33,269 --> 00:35:34,869
+would give you a problem.
+
+975
+00:35:35,280 --> 00:35:39,119
+My question is always
+
+976
+00:35:39,119 --> 00:35:42,039
+know, let's step
+back a second.
+
+977
+00:35:42,039 --> 00:35:44,440
+A condenser is a subset
+of a heat exchanger.
+
+978
+00:35:44,440 --> 00:35:45,799
+What do I say
+literally every time
+
+979
+00:35:45,799 --> 00:35:48,559
+I say the word heat
+exchanger in this class?
+
+980
+00:35:49,520 --> 00:35:51,999
+It's an isoberic device.
+
+981
+00:35:51,999 --> 00:35:54,199
+A heat exchanger is by
+definition isoberic.
+
+982
+00:35:54,199 --> 00:35:55,119
+That should be
+in your head.
+
+983
+00:35:55,119 --> 00:35:56,199
+I'm not going to
+tell you that.
+
+984
+00:35:56,199 --> 00:35:58,239
+At the end of a condenser,
+he, for example,
+
+985
+00:35:58,239 --> 00:35:59,519
+is never going
+to forget that
+
+986
+00:35:59,519 --> 00:36:00,840
+the quality at the exit
+
+987
+00:36:00,840 --> 00:36:02,039
+of a condenser is zero,
+
+988
+00:36:02,039 --> 00:36:02,999
+that it's going to come
+
+989
+00:36:02,999 --> 00:36:04,039
+out as a condensed state.
+
+990
+00:36:04,039 --> 00:36:06,319
+I'm also never
+going to forget it.
+
+991
+00:36:06,639 --> 00:36:09,079
+I think those are things,
+
+992
+00:36:09,079 --> 00:36:10,399
+but this comes
+with practice and
+
+993
+00:36:10,399 --> 00:36:12,359
+looking and having that?
+
+994
+00:36:12,359 --> 00:36:15,439
+Other questions?
+Yes, please.
+
+995
+00:36:15,439 --> 00:36:17,840
+Area of this graph.
+
+996
+00:36:19,760 --> 00:36:24,479
+So if I took the
+temperature and I
+
+997
+00:36:24,479 --> 00:36:26,919
+multiplied it
+by kilojoules
+
+998
+00:36:26,919 --> 00:36:29,920
+per kilogram there,
+what are my units?
+
+999
+00:36:30,580 --> 00:36:33,099
+So what would that
+
+1000
+00:36:33,099 --> 00:36:35,419
+be a total thing or
+a specific thing?
+
+1001
+00:36:35,419 --> 00:36:37,940
+Yeah. Other questions?
+
+1002
+00:36:37,940 --> 00:36:43,539
+David? This is
+combined with cycle.
+
+1003
+00:36:43,539 --> 00:36:45,739
+Where was from
+
+1004
+00:36:45,739 --> 00:36:48,739
+the, that's an
+excellent question.
+
+1005
+00:36:48,739 --> 00:36:49,939
+I feel like you read ahead
+
+1006
+00:36:49,939 --> 00:36:51,059
+and are setting me up.
+
+1007
+00:36:51,059 --> 00:36:51,820
+This is wonderful.
+
+1008
+00:36:51,820 --> 00:36:52,819
+I'll answer it
+in a second.
+
+1009
+00:36:52,819 --> 00:36:53,539
+Other questions?
+
+1010
+00:36:53,539 --> 00:36:55,499
+You're going in the
+right direction though.
+
+1011
+00:36:55,499 --> 00:36:58,819
+If not, okay. So this
+is how it looked like.
+
+1012
+00:36:58,819 --> 00:37:00,339
+So again, I've
+represented all of what
+
+1013
+00:37:00,339 --> 00:37:02,059
+I wrote here on this.
+
+1014
+00:37:02,059 --> 00:37:03,099
+So there's the X one.
+
+1015
+00:37:03,099 --> 00:37:04,419
+Here's a good reason
+to read ahead.
+
+1016
+00:37:04,419 --> 00:37:06,139
+Sometimes you'll
+see the answers.
+
+1017
+00:37:06,139 --> 00:37:09,019
+Okay. Right, so this
+
+1018
+00:37:09,019 --> 00:37:10,139
+is how this looks
+like on the
+
+1019
+00:37:10,139 --> 00:37:11,659
+TS diagram with
+those states.
+
+1020
+00:37:11,659 --> 00:37:12,699
+Here's how it
+would look like
+
+1021
+00:37:12,699 --> 00:37:13,820
+on the PV diagram.
+
+1022
+00:37:13,820 --> 00:37:15,099
+What you'll note
+through all of
+
+1023
+00:37:15,099 --> 00:37:16,419
+this is that we
+stay below the
+
+1024
+00:37:16,419 --> 00:37:17,579
+super critical or
+
+1025
+00:37:17,579 --> 00:37:19,739
+the critical point
+of water, okay?
+
+1026
+00:37:19,739 --> 00:37:22,940
+Most modern power plants,
+
+1027
+00:37:22,940 --> 00:37:25,619
+nuclear fossil
+fuel based ones,
+
+1028
+00:37:25,619 --> 00:37:28,539
+do not operate with this.
+
+1029
+00:37:28,539 --> 00:37:31,899
+They go Boilers are now
+made nowadays to be
+
+1030
+00:37:31,899 --> 00:37:33,299
+able to withstand
+much higher
+
+1031
+00:37:33,299 --> 00:37:35,619
+pressures there.
+
+1032
+00:37:35,619 --> 00:37:37,059
+And so this allows them,
+
+1033
+00:37:37,059 --> 00:37:38,619
+when they do the heat
+addition process,
+
+1034
+00:37:38,619 --> 00:37:40,579
+to go into a super
+critical regime.
+
+1035
+00:37:40,579 --> 00:37:42,420
+Now, to remind you
+about super critical,
+
+1036
+00:37:42,420 --> 00:37:44,909
+super critical is I cannot
+
+1037
+00:37:44,909 --> 00:37:46,429
+differentiate
+between a liquid
+
+1038
+00:37:46,429 --> 00:37:47,989
+and a vapor, okay?
+They are one.
+
+1039
+00:37:47,989 --> 00:37:49,589
+They're
+indistinguishable, right?
+
+1040
+00:37:49,589 --> 00:37:50,229
+Why is that?
+
+1041
+00:37:50,229 --> 00:37:51,869
+Here, I'm a
+saturated liquid.
+
+1042
+00:37:51,869 --> 00:37:53,510
+Here I'm a
+saturated vapor.
+
+1043
+00:37:53,510 --> 00:37:54,309
+At this point, they
+
+1044
+00:37:54,309 --> 00:37:55,389
+merge and they're
+critical.
+
+1045
+00:37:55,389 --> 00:37:56,829
+So the closer you get
+to the critical point,
+
+1046
+00:37:56,829 --> 00:37:58,309
+it becomes harder
+and harder to tell
+
+1047
+00:37:58,309 --> 00:38:00,829
+the difference until
+you cannot, okay?
+
+1048
+00:38:00,829 --> 00:38:03,949
+The very commonly used
+supercritical fluid
+
+1049
+00:38:03,949 --> 00:38:06,614
+is CO two to make
+decaffeinated coffee.
+
+1050
+00:38:06,614 --> 00:38:07,799
+Alright, maybe that's what
+
+1051
+00:38:07,799 --> 00:38:09,440
+you guys are drinking
+today, alright?
+
+1052
+00:38:09,440 --> 00:38:12,079
+So this is what
+you'd have.
+
+1053
+00:38:12,079 --> 00:38:13,559
+So this is then the case.
+
+1054
+00:38:13,559 --> 00:38:14,519
+What you'll note here
+
+1055
+00:38:14,519 --> 00:38:15,799
+is when I have
+three to four S,
+
+1056
+00:38:15,799 --> 00:38:17,319
+I am falling
+below the dome,
+
+1057
+00:38:17,319 --> 00:38:19,559
+so that could be a
+little bit problematic.
+
+1058
+00:38:19,559 --> 00:38:20,880
+I'm above the temperature,
+
+1059
+00:38:20,880 --> 00:38:22,279
+but I don't know
+the pressure here.
+
+1060
+00:38:22,279 --> 00:38:24,079
+So I'll show you
+the PV diagram,
+
+1061
+00:38:24,079 --> 00:38:26,359
+and you see this
+process is above that.
+
+1062
+00:38:26,359 --> 00:38:33,619
+Questions? Questions?
+
+1063
+00:38:41,540 --> 00:38:43,780
+Why are they relevant?
+
+1064
+00:38:43,780 --> 00:38:45,699
+Because you asked me,
+
+1065
+00:38:45,699 --> 00:38:47,899
+why am I doing isentropic?
+
+1066
+00:38:47,899 --> 00:38:49,979
+I'm doing isentropic
+because it's ideal.
+
+1067
+00:38:49,979 --> 00:38:51,740
+The way that we make
+something actual
+
+1068
+00:38:51,740 --> 00:38:52,979
+and not ideal for
+
+1069
+00:38:52,979 --> 00:38:54,659
+work transfer
+devices is we
+
+1070
+00:38:54,659 --> 00:38:56,619
+talk about isotropic
+efficiencies,
+
+1071
+00:38:56,619 --> 00:38:59,779
+which is the reality
+divided by the ideal for
+
+1072
+00:38:59,779 --> 00:39:01,099
+a turbine and the exact
+
+1073
+00:39:01,099 --> 00:39:03,139
+opposite vice versa
+for a compressor.
+
+1074
+00:39:03,139 --> 00:39:05,219
+It's an easy
+way in ME 40 in
+
+1075
+00:39:05,219 --> 00:39:06,739
+a sophomore level class to
+
+1076
+00:39:06,739 --> 00:39:09,379
+take something that's
+ideal and make it real.
+
+1077
+00:39:11,300 --> 00:39:13,659
+Yes. That's what I said.
+
+1078
+00:39:13,659 --> 00:39:16,859
+Okay, good. Other
+questions? Okay.
+
+1079
+00:39:16,859 --> 00:39:20,059
+Yes, we want to look
+at efficiencies,
+
+1080
+00:39:20,059 --> 00:39:23,099
+a modern fossil
+steam power plant,
+
+1081
+00:39:23,099 --> 00:39:24,419
+the thermal efficiency is
+
+1082
+00:39:24,419 --> 00:39:26,139
+about 40%, which is
+a pretty big value.
+
+1083
+00:39:26,139 --> 00:39:28,459
+A nuclear plant is 34%,
+
+1084
+00:39:28,459 --> 00:39:29,219
+and the reason why
+
+1085
+00:39:29,219 --> 00:39:30,419
+it's lower is
+that there are
+
+1086
+00:39:30,419 --> 00:39:31,859
+safety reasons for
+how high you can
+
+1087
+00:39:31,859 --> 00:39:33,740
+let T three go
+in the nuclear?
+
+1088
+00:39:33,740 --> 00:39:35,775
+It's conservative
+industry.
+
+1089
+00:39:35,775 --> 00:39:38,249
+Okay, that's good.
+
+1090
+00:39:38,249 --> 00:39:41,449
+To David's point about
+combining cycles,
+
+1091
+00:39:41,449 --> 00:39:42,809
+which I won't even
+do in the next one.
+
+1092
+00:39:42,809 --> 00:39:44,689
+Maybe it's a
+lecture after that,
+
+1093
+00:39:44,689 --> 00:39:46,929
+is that the exit of
+
+1094
+00:39:46,929 --> 00:39:49,769
+the Brayton cycle has
+very hot gases, right?
+
+1095
+00:39:49,769 --> 00:39:50,889
+So we were talking
+about using
+
+1096
+00:39:50,889 --> 00:39:52,289
+regenerators to
+recover some
+
+1097
+00:39:52,289 --> 00:39:53,169
+of that and use it.
+
+1098
+00:39:53,169 --> 00:39:55,409
+You could also just hook
+it up and use it as
+
+1099
+00:39:55,409 --> 00:39:57,849
+the Q in to what's
+called the bottom cycle.
+
+1100
+00:39:57,849 --> 00:39:59,169
+So you could go in with
+
+1101
+00:39:59,169 --> 00:40:02,410
+that heat out of the
+exhaust of a Brayton,
+
+1102
+00:40:02,410 --> 00:40:03,969
+put that into a
+heat exchanger
+
+1103
+00:40:03,969 --> 00:40:04,889
+that would be, let's say,
+
+1104
+00:40:04,889 --> 00:40:07,089
+the boiler of a rakin
+
+1105
+00:40:07,089 --> 00:40:09,129
+and take that
+lower grade heat
+
+1106
+00:40:09,129 --> 00:40:10,689
+and still get
+power, all right?
+
+1107
+00:40:10,689 --> 00:40:14,899
+This is, um, something
+that is done, okay?
+
+1108
+00:40:14,899 --> 00:40:16,619
+What fluids would you use?
+
+1109
+00:40:16,619 --> 00:40:18,019
+You could try
+to use water,
+
+1110
+00:40:18,019 --> 00:40:19,099
+but with water, right,
+
+1111
+00:40:19,099 --> 00:40:19,819
+to make that work,
+
+1112
+00:40:19,819 --> 00:40:22,059
+you need high temperatures
+and all of that.
+
+1113
+00:40:22,059 --> 00:40:23,699
+The heat that comes
+out of the brain
+
+1114
+00:40:23,699 --> 00:40:25,339
+and the exhaust may
+not be warm enough.
+
+1115
+00:40:25,339 --> 00:40:26,860
+So what you might
+do is to select
+
+1116
+00:40:26,860 --> 00:40:28,899
+a fluid that boils
+easier, okay?
+
+1117
+00:40:28,899 --> 00:40:31,379
+So fluids that
+boil easier are,
+
+1118
+00:40:31,379 --> 00:40:34,659
+um, refrigerants.
+
+1119
+00:40:34,659 --> 00:40:37,899
+So refrigerants are there.
+
+1120
+00:40:37,899 --> 00:40:42,179
+So R 134 A's
+are an example.
+
+1121
+00:40:42,179 --> 00:40:44,019
+Carbon dioxide
+is another one.
+
+1122
+00:40:44,019 --> 00:40:45,459
+Carbon dioxide is
+
+1123
+00:40:45,459 --> 00:40:48,099
+a very commonly
+used refrigerant.
+
+1124
+00:40:48,099 --> 00:40:49,059
+A lots known about it.
+
+1125
+00:40:49,059 --> 00:40:50,339
+There's a lot of
+benefits to it,
+
+1126
+00:40:50,339 --> 00:40:51,579
+but you could
+use that to be
+
+1127
+00:40:51,579 --> 00:40:53,499
+basically running
+the bottom cycle.
+
+1128
+00:40:53,499 --> 00:40:56,699
+Those are commonly
+called organic ankin.
+
+1129
+00:40:56,699 --> 00:40:58,899
+So organic ankin is
+like, Okay, not water.
+
+1130
+00:40:58,899 --> 00:41:00,220
+I'm going to use
+a different fluid
+
+1131
+00:41:00,220 --> 00:41:01,579
+that's more like
+a refrigerant,
+
+1132
+00:41:01,579 --> 00:41:03,419
+and I'll take care of the
+
+1133
+00:41:03,419 --> 00:41:05,419
+lower grade heat with it.
+
+1134
+00:41:05,419 --> 00:41:06,980
+The one thing I'll mention
+
+1135
+00:41:06,980 --> 00:41:09,179
+here is that you can
+also run CO two,
+
+1136
+00:41:09,179 --> 00:41:10,459
+since I mentioned super
+
+1137
+00:41:10,459 --> 00:41:12,144
+critical here for
+Rankin and water,
+
+1138
+00:41:12,144 --> 00:41:13,629
+You can take CO two and
+
+1139
+00:41:13,629 --> 00:41:15,229
+also run it as a rankin.
+
+1140
+00:41:15,229 --> 00:41:16,829
+And what's
+interesting here
+
+1141
+00:41:16,829 --> 00:41:18,269
+is for these cases,
+
+1142
+00:41:18,269 --> 00:41:20,269
+while you would guess
+that this would be
+
+1143
+00:41:20,269 --> 00:41:21,669
+a vapor cycle because you
+
+1144
+00:41:21,669 --> 00:41:23,549
+would expect some
+condensation to occur,
+
+1145
+00:41:23,549 --> 00:41:25,189
+the examples that I looked
+
+1146
+00:41:25,189 --> 00:41:26,669
+up before I came
+today actually
+
+1147
+00:41:26,669 --> 00:41:28,109
+showed this running all in
+
+1148
+00:41:28,109 --> 00:41:29,510
+the supercritical regime,
+
+1149
+00:41:29,510 --> 00:41:31,069
+which resembles wet?
+
+1150
+00:41:31,069 --> 00:41:33,549
+What cycle looks
+like that?
+
+1151
+00:41:33,630 --> 00:41:36,229
+So I have a fluid that I
+
+1152
+00:41:36,229 --> 00:41:38,829
+cannot differentiate
+from a gas there,
+
+1153
+00:41:38,829 --> 00:41:40,549
+and I have no condensation
+
+1154
+00:41:40,549 --> 00:41:41,909
+and no phase
+change happening.
+
+1155
+00:41:41,909 --> 00:41:44,109
+What does that
+look like? David?
+
+1156
+00:41:44,109 --> 00:41:46,469
+Is it a car? Not a carnal.
+
+1157
+00:41:46,469 --> 00:41:48,910
+The temperatures
+are not constant.
+
+1158
+00:41:49,050 --> 00:41:51,649
+So what power cycle did we
+
+1159
+00:41:51,649 --> 00:41:54,489
+just analyze before that
+had no phase change?
+
+1160
+00:41:58,090 --> 00:42:02,129
+Sorry, so the B
+Brayton, right?
+
+1161
+00:42:02,129 --> 00:42:03,609
+That might look like
+Brayton, right?
+
+1162
+00:42:03,609 --> 00:42:05,490
+Brayton, you had basically
+the heat addition
+
+1163
+00:42:05,490 --> 00:42:07,169
+and out with it there.
+
+1164
+00:42:07,169 --> 00:42:08,839
+Okay? Yeah, and you
+
+1165
+00:42:08,839 --> 00:42:10,199
+can read about it. It's
+pretty interesting.
+
+1166
+00:42:10,199 --> 00:42:11,360
+So where people
+talk about gaining
+
+1167
+00:42:11,360 --> 00:42:12,519
+efficiencies and
+what they do,
+
+1168
+00:42:12,519 --> 00:42:13,720
+this is one
+area of the DOE
+
+1169
+00:42:13,720 --> 00:42:15,119
+Department of Energy
+that was looking.
+
+1170
+00:42:15,119 --> 00:42:15,879
+You can read about
+
+1171
+00:42:15,879 --> 00:42:17,959
+a ten megawatt power
+plant that went with it,
+
+1172
+00:42:17,959 --> 00:42:19,719
+okay? Where is this going?
+
+1173
+00:42:19,719 --> 00:42:20,839
+Where is this going?
+
+1174
+00:42:20,839 --> 00:42:22,359
+So that's one
+example of, again,
+
+1175
+00:42:22,359 --> 00:42:25,000
+where I took two cycles,
+
+1176
+00:42:25,000 --> 00:42:26,960
+and I kind of put
+them in series.
+
+1177
+00:42:26,960 --> 00:42:27,879
+We talked about
+
+1178
+00:42:27,879 --> 00:42:29,320
+regenerators before
+with Braden.
+
+1179
+00:42:29,320 --> 00:42:30,079
+We'll talk about that in
+
+1180
+00:42:30,079 --> 00:42:31,119
+the context of Rankin.
+
+1181
+00:42:31,119 --> 00:42:32,359
+Another way that
+you could do
+
+1182
+00:42:32,359 --> 00:42:34,079
+this is the following.
+
+1183
+00:42:34,079 --> 00:42:35,999
+So another way to
+boost efficiency in
+
+1184
+00:42:35,999 --> 00:42:38,399
+a cycle is with
+what's called reheat.
+
+1185
+00:42:38,399 --> 00:42:40,039
+So what is it? It's
+original rankin.
+
+1186
+00:42:40,039 --> 00:42:41,199
+I got a boiler, a pump
+
+1187
+00:42:41,199 --> 00:42:42,559
+a condenser,
+and a turbine.
+
+1188
+00:42:42,559 --> 00:42:44,680
+All I do is I
+take the exit,
+
+1189
+00:42:44,680 --> 00:42:48,470
+um, you know, fluid here
+out of the turbine.
+
+1190
+00:42:48,470 --> 00:42:49,789
+I run it again through
+
+1191
+00:42:49,789 --> 00:42:51,469
+my boiler and then send it
+
+1192
+00:42:51,469 --> 00:42:53,150
+back into a lower
+pressure turbine
+
+1193
+00:42:53,150 --> 00:42:54,669
+that's connected
+in series, okay?
+
+1194
+00:42:54,669 --> 00:42:56,229
+So next lecture and
+
+1195
+00:42:56,229 --> 00:42:57,509
+the one after that
+are going to be like
+
+1196
+00:42:57,509 --> 00:42:58,869
+additional tricks
+that we can use to
+
+1197
+00:42:58,869 --> 00:43:00,749
+squeeze every bit of
+
+1198
+00:43:00,749 --> 00:43:02,429
+energy out of
+that Q and we
+
+1199
+00:43:02,429 --> 00:43:04,349
+have to get into
+work, okay?
+
+1200
+00:43:04,349 --> 00:43:05,669
+With that, I'm
+going to close it.
+
+1201
+00:43:05,669 --> 00:43:07,070
+Thank you so much for
+your participation,
+
+1202
+00:43:07,070 --> 00:43:08,949
+especially yours, for
+letting me have that.
+
+1203
+00:43:08,949 --> 00:43:10,389
+I feel like that was
+very good, okay?
+
+1204
+00:43:10,389 --> 00:43:12,629
+Alright, have a good one.

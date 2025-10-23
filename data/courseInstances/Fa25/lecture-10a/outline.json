@@ -1,0 +1,63 @@
+{
+  "lectureId": "1_6nyr06f2",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "10a",
+  "title": "Vapor and Combined Power Cycles",
+  "videoTitle": "ME40 - 22 Oct 2025 - Lecture 10a (edited)",
+  "module": "module-two",
+  "topic": "Power Cycles",
+  "subtopics": [
+    {
+      "key": "Fa25-L10a-1.0",
+      "title": "Learning Objectives",
+      "summary": "Prof. Schutzius explains the learning objectives for today's lecture.",
+      "time_range": "00:00 - 00:15",
+      "topics": ["Power Cycles"],
+      "detailed_summary": "",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L10a-2.0",
+      "title": "Rankine cycle",
+      "summary": "Prof. Schutzius derives the thermal efficiency of an Ideal Rankine cycle.",
+      "time_range": "00:16 - 37:20",
+      "topics": ["Power Cycles"],
+      "detailed_summary": "",
+      "examples": ["rankineCyclePyCalor"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L10a-3.0",
+      "title": "Supercritical Rankine cycle: Water",
+      "summary": "Prof. Schutzius analyzes a Supercritical Rankine Cycle.",
+      "time_range": "37:21 - 39:37",
+      "topics": ["Power Cycles"],
+      "detailed_summary": "",
+      "examples": ["rankineCycleSupercriticalPyCalor"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L10a-4.0",
+      "title": "Supercritical carbon dioxide (sCO2) power cycles",
+      "summary": "Prof. Schutzius analyzes a Supercritical Carbon Dioxide (sCO2) power cycle.",
+      "time_range": "39:38 - 42:18",
+      "topics": ["Power Cycles"],
+      "detailed_summary": "",
+      "examples": ["rankineCycleSupercriticalCO2PyCalor"],
+      "tags":["tschutzius","beta"]
+    },
+    {
+      "key": "Fa25-L10a-5.0",
+      "title": "The ideal reheat Rankine cycle",
+      "summary": "Prof. Schutzius introduces a way to improve the efficiency of the ideal Rankine cycle by using a reheat process and a lower pressure turbine.",
+      "time_range": "42:19 - 43:11",
+      "topics": ["Power Cycles"],
+      "detailed_summary": "",
+      "examples": ["rankineReheatCycle"],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}
