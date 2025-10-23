@@ -1,0 +1,23 @@
+{
+  "lectureId": "1_0pvwf5pi",
+  "instructor": "tschutzius",
+  "year": "Fa25",
+  "courseCaptureId": "rtl_course_capture_2258_29147",
+  "lecture": "07f",
+  "title": "Entropy",
+  "videoTitle": "ME40 - 8 Oct 2025 - Lecture 7f (edited)",
+  "module": "module-two",
+  "topic": "Entropy",
+  "subtopics": [
+    {
+      "key": "Fa25-L7f-1.0",
+      "title": "Lecture 7f",
+      "summary": "This lecture was mostly in-class group work on Entropy analysis.",
+      "time_range": "00:00 - 03:08",
+      "topics": ["Entropy"],
+      "detailed_summary": "",
+      "examples": [""],
+      "tags":["tschutzius","beta"]
+    }
+  ]
+}

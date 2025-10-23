@@ -1,0 +1,4419 @@
+1
+00:00:00,000 --> 00:00:02,240
+So I'm going to get
+started. So today we're
+
+2
+00:00:02,240 --> 00:00:04,560
+talking about
+pure substances.
+
+3
+00:00:04,560 --> 00:00:05,760
+Before I get into that, at
+
+4
+00:00:05,760 --> 00:00:07,520
+some point in
+the near future,
+
+5
+00:00:07,520 --> 00:00:10,800
+please go on to
+prairiet.prairietest.com,
+
+6
+00:00:10,800 --> 00:00:12,440
+and please log in.
+
+7
+00:00:12,440 --> 00:00:14,360
+They told me to
+tell you that.
+
+8
+00:00:14,360 --> 00:00:15,800
+So yeah, that way,
+
+9
+00:00:15,800 --> 00:00:17,960
+basically, you're
+registered and exist.
+
+10
+00:00:17,960 --> 00:00:19,479
+You exist, but then
+
+11
+00:00:19,479 --> 00:00:21,399
+you will exist,
+alright? Thank you.
+
+12
+00:00:21,399 --> 00:00:23,590
+Um, So Goa, today,
+
+13
+00:00:23,590 --> 00:00:24,229
+we're going to talk about
+
+14
+00:00:24,229 --> 00:00:25,589
+the concept of
+pure substance.
+
+15
+00:00:25,589 --> 00:00:26,870
+We already kind
+of gave you
+
+16
+00:00:26,870 --> 00:00:28,310
+a brief explanation
+before.
+
+17
+00:00:28,310 --> 00:00:30,349
+We're going to do
+some illustrations on
+
+18
+00:00:30,349 --> 00:00:31,669
+some diagrams that we're
+
+19
+00:00:31,669 --> 00:00:33,429
+going to use a lot
+during the semester.
+
+20
+00:00:33,429 --> 00:00:34,629
+And then we're
+going to come
+
+21
+00:00:34,629 --> 00:00:35,629
+up with some
+procedures for
+
+22
+00:00:35,629 --> 00:00:37,869
+how we determine
+thermite properties.
+
+23
+00:00:37,869 --> 00:00:39,469
+I'm going to teach
+the hand tool, right?
+
+24
+00:00:39,469 --> 00:00:40,469
+And then I'm going to show
+
+25
+00:00:40,469 --> 00:00:41,669
+you the power tool, okay?
+
+26
+00:00:41,669 --> 00:00:43,509
+And hopefully at
+the end of this,
+
+27
+00:00:43,509 --> 00:00:45,830
+while you will appreciate
+the hand tool,
+
+28
+00:00:45,830 --> 00:00:47,390
+you will only use
+the power tool,
+
+29
+00:00:47,390 --> 00:00:49,109
+hopefully in this class.
+
+30
+00:00:49,109 --> 00:00:51,109
+Okay, pure
+substances, again,
+
+31
+00:00:51,109 --> 00:00:52,114
+sort of a review.
+
+32
+00:00:52,114 --> 00:00:53,879
+So it's a pure substance.
+
+33
+00:00:53,879 --> 00:00:55,359
+I'd like to talk
+about it in terms of
+
+34
+00:00:55,359 --> 00:00:57,679
+these examples.
+It's useful for me.
+
+35
+00:00:57,679 --> 00:00:58,799
+So a pure substance
+
+36
+00:00:58,799 --> 00:01:00,319
+here would be something
+like nitrogen, right?
+
+37
+00:01:00,319 --> 00:01:02,959
+Pure nitrogen, air, right?
+
+38
+00:01:02,959 --> 00:01:05,639
+So, all right, air,
+
+39
+00:01:05,639 --> 00:01:07,080
+right, is mostly nitrogen,
+
+40
+00:01:07,080 --> 00:01:08,719
+but you also have some
+oxygen in it, right?
+
+41
+00:01:08,719 --> 00:01:09,800
+But there's
+nothing condensed.
+
+42
+00:01:09,800 --> 00:01:11,640
+There's no
+condensed phases.
+
+43
+00:01:11,640 --> 00:01:13,965
+There everything is
+basically gaseous.
+
+44
+00:01:13,965 --> 00:01:15,489
+Another example of a pure
+
+45
+00:01:15,489 --> 00:01:16,889
+substance would
+be like water,
+
+46
+00:01:16,889 --> 00:01:18,249
+and this could
+be water that's
+
+47
+00:01:18,249 --> 00:01:19,970
+coexisting between
+its different phases.
+
+48
+00:01:19,970 --> 00:01:21,049
+So we get a vapor and
+
+49
+00:01:21,049 --> 00:01:23,849
+liquid liquid and solid,
+
+50
+00:01:23,849 --> 00:01:25,450
+you know, solid and vapor,
+
+51
+00:01:25,450 --> 00:01:27,530
+but no other components.
+
+52
+00:01:27,530 --> 00:01:29,249
+As soon as we
+start to create
+
+53
+00:01:29,249 --> 00:01:32,089
+multi species,
+multiphase things.
+
+54
+00:01:32,089 --> 00:01:34,529
+So if I took,
+for example, you
+
+55
+00:01:34,529 --> 00:01:36,130
+know, a balloon.
+
+56
+00:01:36,130 --> 00:01:37,529
+If you took a
+balloon filled
+
+57
+00:01:37,529 --> 00:01:38,769
+with air that I
+blew it up with,
+
+58
+00:01:38,769 --> 00:01:40,329
+and I started to put that,
+
+59
+00:01:40,329 --> 00:01:41,890
+you know, into
+liquid nitrogen.
+
+60
+00:01:41,890 --> 00:01:43,489
+Oxygen will condense
+out of that.
+
+61
+00:01:43,489 --> 00:01:44,850
+So I'll end up
+having a condensed,
+
+62
+00:01:44,850 --> 00:01:47,249
+let's say oxygen
+phase there.
+
+63
+00:01:47,249 --> 00:01:52,210
+You know, and then
+next to a nitrogen,
+
+64
+00:01:52,210 --> 00:01:53,289
+you know, next to
+
+65
+00:01:53,289 --> 00:01:54,689
+a nitrogen, you
+know, vapor,
+
+66
+00:01:54,689 --> 00:01:57,090
+and in that case, it's
+not a pure substance.
+
+67
+00:01:57,090 --> 00:01:57,969
+As I say it out loud,
+
+68
+00:01:57,969 --> 00:01:59,130
+it sounds kind
+of complicated.
+
+69
+00:01:59,130 --> 00:02:00,825
+If it sounds pretty
+complicated,
+
+70
+00:02:00,825 --> 00:02:03,679
+you know, probably
+is not pure, okay?
+
+71
+00:02:03,679 --> 00:02:07,320
+But again, these
+are some examples.
+
+72
+00:02:07,320 --> 00:02:08,600
+The most important
+one that we're
+
+73
+00:02:08,600 --> 00:02:09,800
+going to deal
+with right for
+
+74
+00:02:09,800 --> 00:02:11,119
+the majority of
+this class is
+
+75
+00:02:11,119 --> 00:02:12,880
+pretty much
+this situation,
+
+76
+00:02:12,880 --> 00:02:14,360
+either this
+situation of, like,
+
+77
+00:02:14,360 --> 00:02:19,395
+air or this situation
+of water, okay?
+
+78
+00:02:19,395 --> 00:02:21,110
+All right. So phases.
+
+79
+00:02:21,110 --> 00:02:22,310
+So we talk about phases
+
+80
+00:02:22,310 --> 00:02:24,470
+of of a pure
+substance, right?
+
+81
+00:02:24,470 --> 00:02:27,510
+This can be a solid,
+a liquid and a gas.
+
+82
+00:02:27,510 --> 00:02:29,510
+So the gas, we've
+talked a lot
+
+83
+00:02:29,510 --> 00:02:31,150
+about, especially
+ideal gases,
+
+84
+00:02:31,150 --> 00:02:32,310
+which are, you know,
+
+85
+00:02:32,310 --> 00:02:35,149
+they're like billliard
+balls here, right,
+
+86
+00:02:35,149 --> 00:02:37,549
+liquid you know, if we
+start with the gas,
+
+87
+00:02:37,549 --> 00:02:39,230
+the most, you
+know, let's say,
+
+88
+00:02:39,230 --> 00:02:41,349
+um, you know,
+
+89
+00:02:41,349 --> 00:02:42,510
+random and moving one
+
+90
+00:02:42,510 --> 00:02:44,029
+here towards a
+liquid, right?
+
+91
+00:02:44,029 --> 00:02:45,909
+The difference is
+that you start to
+
+92
+00:02:45,909 --> 00:02:49,070
+have molecules that
+attract each other, okay?
+
+93
+00:02:49,070 --> 00:02:50,950
+That's what
+separates the liquid
+
+94
+00:02:50,950 --> 00:02:52,390
+from the gas, right?
+
+95
+00:02:52,390 --> 00:02:53,989
+So this is actually
+the most complicated,
+
+96
+00:02:53,989 --> 00:02:55,029
+let's say, of the three.
+
+97
+00:02:55,029 --> 00:02:55,630
+And then if you
+
+98
+00:02:55,630 --> 00:02:56,909
+decrease the
+temperature further,
+
+99
+00:02:56,909 --> 00:02:58,665
+you'll end up with
+a solid, right?
+
+100
+00:02:58,665 --> 00:03:00,780
+And classical example of
+
+101
+00:03:00,780 --> 00:03:02,020
+how to visualize a solid,
+
+102
+00:03:02,020 --> 00:03:03,140
+what makes a solid
+different from a
+
+103
+00:03:03,140 --> 00:03:04,260
+liquid in a gas, right?
+
+104
+00:03:04,260 --> 00:03:05,820
+The atoms are in
+a lattice and
+
+105
+00:03:05,820 --> 00:03:07,620
+within that lattice,
+they do not move, right?
+
+106
+00:03:07,620 --> 00:03:08,660
+They're fixed,
+
+107
+00:03:08,660 --> 00:03:09,979
+a little bit of
+time out, right?
+
+108
+00:03:09,979 --> 00:03:11,940
+So, you know, here's
+where you are and you
+
+109
+00:03:11,940 --> 00:03:16,564
+don't you don't move.
+You know, position.
+
+110
+00:03:16,564 --> 00:03:19,910
+Okay. But they are allowed
+to vibrate, right?
+
+111
+00:03:19,910 --> 00:03:21,510
+So the way that, you know,
+
+112
+00:03:21,510 --> 00:03:23,269
+Einstein
+visualized this is
+
+113
+00:03:23,269 --> 00:03:24,909
+he saw it as like
+springs, right?
+
+114
+00:03:24,909 --> 00:03:26,870
+So if I take, like, a
+bunch of these atoms in
+
+115
+00:03:26,870 --> 00:03:29,910
+position and I connected
+them via springs,
+
+116
+00:03:29,910 --> 00:03:32,710
+that ability to
+oscillate then,
+
+117
+00:03:32,710 --> 00:03:33,749
+you know, would
+allow it to
+
+118
+00:03:33,749 --> 00:03:35,070
+then store energy, okay?
+
+119
+00:03:35,070 --> 00:03:38,069
+So it stores it
+through vibration.
+
+120
+00:03:38,069 --> 00:03:41,300
+Um, This type
+of solid here
+
+121
+00:03:41,300 --> 00:03:42,700
+that I'm drawing
+is called actually
+
+122
+00:03:42,700 --> 00:03:44,340
+it's called the
+Einstein solid, right?
+
+123
+00:03:44,340 --> 00:03:45,820
+And the development
+of this, this kind of
+
+124
+00:03:45,820 --> 00:03:47,860
+fun little cartoon here
+
+125
+00:03:47,860 --> 00:03:49,580
+was a very
+important step in
+
+126
+00:03:49,580 --> 00:03:51,660
+the history of quantum
+mechanics, right?
+
+127
+00:03:51,660 --> 00:03:53,060
+So one important result
+
+128
+00:03:53,060 --> 00:03:54,500
+at the time, you
+know, this is like,
+
+129
+00:03:54,500 --> 00:03:57,060
+early 1900s is in,
+
+130
+00:03:57,060 --> 00:03:59,780
+you know, classical
+mechanics and stuff.
+
+131
+00:03:59,780 --> 00:04:01,700
+You know, in their models,
+
+132
+00:04:01,700 --> 00:04:05,339
+they said the specific
+heat was a constant.
+
+133
+00:04:05,339 --> 00:04:08,139
+It didn't depend
+on temperature.
+
+134
+00:04:08,139 --> 00:04:11,020
+Awesome. Thank you. I need
+
+135
+00:04:11,020 --> 00:04:13,180
+more there's people
+after me, I assume.
+
+136
+00:04:13,180 --> 00:04:15,260
+So thank you.
+
+137
+00:04:15,940 --> 00:04:18,460
+We're like the
+buddy now, right?
+
+138
+00:04:18,460 --> 00:04:19,739
+Actually, they're
+not Yeah,
+
+139
+00:04:19,739 --> 00:04:21,219
+they're not
+energizers, though.
+
+140
+00:04:21,219 --> 00:04:23,980
+Okay. Anyways,
+right, so, you know,
+
+141
+00:04:23,980 --> 00:04:26,379
+but the point is
+that in reality,
+
+142
+00:04:26,379 --> 00:04:28,099
+the specific heat did
+
+143
+00:04:28,099 --> 00:04:29,380
+depend upon
+temperature, right?
+
+144
+00:04:29,380 --> 00:04:30,180
+And so to explain that,
+
+145
+00:04:30,180 --> 00:04:31,339
+he came up with
+this model.
+
+146
+00:04:31,339 --> 00:04:32,819
+And what's neat about it
+
+147
+00:04:32,819 --> 00:04:34,580
+is that in order
+to get that,
+
+148
+00:04:34,580 --> 00:04:36,539
+essentially, you're
+quantizing, right?
+
+149
+00:04:36,539 --> 00:04:38,399
+So basically, um, Also
+
+150
+00:04:38,399 --> 00:04:40,719
+around that
+time, Max Plank,
+
+151
+00:04:40,719 --> 00:04:42,279
+you know, it had already
+
+152
+00:04:42,279 --> 00:04:43,599
+sort of stumbled on and
+
+153
+00:04:43,599 --> 00:04:46,720
+it quantized to avoid
+the UV catastrophe.
+
+154
+00:04:46,720 --> 00:04:47,799
+Einstein took a bit
+
+155
+00:04:47,799 --> 00:04:49,199
+of that and then was
+able with this kind of
+
+156
+00:04:49,199 --> 00:04:50,439
+nice model to predict
+
+157
+00:04:50,439 --> 00:04:53,400
+how specific heat
+depends on temperature.
+
+158
+00:04:53,400 --> 00:04:54,079
+And then after that,
+
+159
+00:04:54,079 --> 00:04:55,519
+he did his
+photoelectric effect.
+
+160
+00:04:55,519 --> 00:04:56,999
+And then, you know,
+after that, those are
+
+161
+00:04:56,999 --> 00:04:58,679
+basically two pillars
+of quantum mechanics.
+
+162
+00:04:58,679 --> 00:04:58,879
+Okay?
+
+163
+00:04:58,879 --> 00:05:01,439
+So thermodynamics, you
+know, was, let's say,
+
+164
+00:05:01,439 --> 00:05:03,279
+one third one third of
+
+165
+00:05:03,279 --> 00:05:05,559
+one half of that
+sort of development,
+
+166
+00:05:05,559 --> 00:05:08,079
+okay, which then
+went much later.
+
+167
+00:05:08,079 --> 00:05:11,320
+Okay. Okay, so,
+right, gases,
+
+168
+00:05:11,320 --> 00:05:13,400
+liquids, solids,
+
+169
+00:05:13,400 --> 00:05:14,560
+when we look at
+phase changing,
+
+170
+00:05:14,560 --> 00:05:15,679
+this is very
+important for us.
+
+171
+00:05:15,679 --> 00:05:18,240
+So think about, you
+know, boiling of water.
+
+172
+00:05:18,240 --> 00:05:19,479
+We think about, you
+know, right now,
+
+173
+00:05:19,479 --> 00:05:20,799
+I'm sweating a little bit.
+
+174
+00:05:20,799 --> 00:05:22,599
+It feels like a
+human. I don't know.
+
+175
+00:05:22,599 --> 00:05:22,840
+Anyway,
+
+176
+00:05:22,840 --> 00:05:24,599
+so I'm not evapating
+enough apparently.
+
+177
+00:05:24,599 --> 00:05:25,799
+But the point is that
+right a lot of these,
+
+178
+00:05:25,799 --> 00:05:27,520
+you know, prostates
+are very important.
+
+179
+00:05:27,520 --> 00:05:28,679
+The way to view
+this, okay,
+
+180
+00:05:28,679 --> 00:05:29,880
+let's say we have
+a state one.
+
+181
+00:05:29,880 --> 00:05:30,999
+So, you know, we
+have a pressure.
+
+182
+00:05:30,999 --> 00:05:32,680
+It's like, 1
+atmosphere in 20,
+
+183
+00:05:32,680 --> 00:05:34,369
+um, you know, see.
+
+184
+00:05:34,369 --> 00:05:35,689
+So let's say this
+is, you know,
+
+185
+00:05:35,689 --> 00:05:36,129
+water there,
+
+186
+00:05:36,129 --> 00:05:37,729
+then it's going to
+be as a liquid.
+
+187
+00:05:37,729 --> 00:05:39,730
+We start to heat
+it up towards 100.
+
+188
+00:05:39,730 --> 00:05:41,209
+At some point around
+there, you know,
+
+189
+00:05:41,209 --> 00:05:43,490
+we're going to
+start to vaporize,
+
+190
+00:05:43,570 --> 00:05:45,489
+we start to heat it up.
+
+191
+00:05:45,489 --> 00:05:46,569
+So this is going to
+go from here and
+
+192
+00:05:46,569 --> 00:05:47,689
+it's going to
+become hot, okay?
+
+193
+00:05:47,689 --> 00:05:49,009
+It's going to
+become a liquid.
+
+194
+00:05:49,009 --> 00:05:50,849
+And then at some point, as
+
+195
+00:05:50,849 --> 00:05:53,089
+we start to introduce
+more heat there,
+
+196
+00:05:53,089 --> 00:05:55,009
+we start to
+evaporate, okay,
+
+197
+00:05:55,009 --> 00:05:58,009
+maybe even boil some
+of that liquid.
+
+198
+00:05:58,009 --> 00:05:59,889
+And, right, because
+the gas there
+
+199
+00:05:59,889 --> 00:06:01,130
+is about 100 times
+
+200
+00:06:01,130 --> 00:06:02,450
+less dense than
+the liquid,
+
+201
+00:06:02,450 --> 00:06:04,489
+you expect
+expansion, right?
+
+202
+00:06:04,489 --> 00:06:06,329
+You know, and
+then beyond that,
+
+203
+00:06:06,329 --> 00:06:07,290
+continue to add heat
+
+204
+00:06:07,290 --> 00:06:08,370
+in which you need
+a lot of it,
+
+205
+00:06:08,370 --> 00:06:09,769
+right to boil off
+all this liquid.
+
+206
+00:06:09,769 --> 00:06:11,249
+Eventually, you
+end up with,
+
+207
+00:06:11,249 --> 00:06:14,049
+you know, a vapor,
+saturated vapor.
+
+208
+00:06:14,049 --> 00:06:15,850
+And then after
+that, you know,
+
+209
+00:06:15,850 --> 00:06:18,209
+we get into a
+very hot vapor,
+
+210
+00:06:18,209 --> 00:06:20,489
+which we call
+wet for water.
+
+211
+00:06:21,760 --> 00:06:25,240
+Louder. Steam. Yeah, it's
+
+212
+00:06:25,240 --> 00:06:27,119
+basically end up
+with steam, okay?
+
+213
+00:06:27,119 --> 00:06:28,199
+But the volume, the point
+
+214
+00:06:28,199 --> 00:06:29,519
+is that the volume, right,
+
+215
+00:06:29,519 --> 00:06:31,600
+is increasing from left to
+
+216
+00:06:31,600 --> 00:06:34,599
+right in this
+process. Okay, one.
+
+217
+00:06:34,599 --> 00:06:37,360
+Two, um,
+
+218
+00:06:38,240 --> 00:06:41,199
+If I take for a pure
+substance, right?
+
+219
+00:06:41,199 --> 00:06:42,839
+So one post load
+is if I take for
+
+220
+00:06:42,839 --> 00:06:47,320
+a pure substance two
+independent properties,
+
+221
+00:06:47,320 --> 00:06:49,599
+I will be able to
+then determine
+
+222
+00:06:49,599 --> 00:06:52,080
+a third dependent
+property, right?
+
+223
+00:06:52,080 --> 00:06:53,480
+We showed this a lot
+with the ideal gas.
+
+224
+00:06:53,480 --> 00:06:54,800
+Are you thinking
+about ideal gas?
+
+225
+00:06:54,800 --> 00:06:56,480
+PV is MRT.
+
+226
+00:06:56,480 --> 00:06:59,200
+If I know P and V,
+RPV is RT there.
+
+227
+00:06:59,200 --> 00:07:00,399
+Red if I know P and V,
+
+228
+00:07:00,399 --> 00:07:03,040
+then basically I
+know, temperature.
+
+229
+00:07:03,040 --> 00:07:05,640
+Sort of a a simple case.
+
+230
+00:07:05,640 --> 00:07:07,679
+But it also works out for,
+
+231
+00:07:07,679 --> 00:07:09,670
+um, for water, too, right?
+
+232
+00:07:09,670 --> 00:07:10,869
+And so here
+this is a three
+
+233
+00:07:10,869 --> 00:07:13,469
+dimensional representation
+of that, okay?
+
+234
+00:07:13,469 --> 00:07:15,149
+So what does it
+mean to have
+
+235
+00:07:15,149 --> 00:07:18,190
+with two independent
+properties,
+
+236
+00:07:18,190 --> 00:07:19,429
+the ability to compute
+
+237
+00:07:19,429 --> 00:07:21,429
+a third dependent
+property,
+
+238
+00:07:21,429 --> 00:07:23,389
+that means there's
+a surface, right?
+
+239
+00:07:23,389 --> 00:07:25,310
+Basically, I
+have a surface,
+
+240
+00:07:25,310 --> 00:07:26,949
+right, where I'd be able
+
+241
+00:07:26,949 --> 00:07:28,270
+to then, you know,
+with these two,
+
+242
+00:07:28,270 --> 00:07:29,989
+let's say, independent on
+
+243
+00:07:29,989 --> 00:07:31,469
+that surface that exists,
+
+244
+00:07:31,469 --> 00:07:33,430
+the dependent
+property, right?
+
+245
+00:07:33,430 --> 00:07:35,530
+Um, This is what Gibbs.
+
+246
+00:07:35,530 --> 00:07:37,009
+So Gibbs was
+obsessed with.
+
+247
+00:07:37,009 --> 00:07:38,329
+If you're taking
+calc three, right,
+
+248
+00:07:38,329 --> 00:07:39,849
+multidimensional calculus,
+
+249
+00:07:39,849 --> 00:07:42,129
+that was developed
+for this, okay?
+
+250
+00:07:42,129 --> 00:07:43,649
+It was developed
+basically for
+
+251
+00:07:43,649 --> 00:07:45,409
+this because not
+only do you know,
+
+252
+00:07:45,409 --> 00:07:46,650
+let's say, the
+pressure, I know
+
+253
+00:07:46,650 --> 00:07:47,970
+a specific volume
+and temperature,
+
+254
+00:07:47,970 --> 00:07:49,089
+therefore, no pressure.
+
+255
+00:07:49,089 --> 00:07:50,689
+But if I start to
+take derivatives,
+
+256
+00:07:50,689 --> 00:07:52,289
+at that point, I
+get other things.
+
+257
+00:07:52,289 --> 00:07:54,130
+I will determine my
+other properties there.
+
+258
+00:07:54,130 --> 00:07:55,685
+So it's very, um,
+
+259
+00:07:55,685 --> 00:07:59,159
+it's a very important,
+um, you know, thing.
+
+260
+00:07:59,159 --> 00:08:00,480
+So again, the
+point is that in
+
+261
+00:08:00,480 --> 00:08:01,720
+this case, you
+know, the map,
+
+262
+00:08:01,720 --> 00:08:03,280
+so here, here, and let's
+
+263
+00:08:03,280 --> 00:08:05,679
+say I end up at
+this case, right?
+
+264
+00:08:05,679 --> 00:08:07,480
+This type of
+representation.
+
+265
+00:08:07,480 --> 00:08:10,039
+So apparently,
+Maxwell, so,
+
+266
+00:08:10,039 --> 00:08:11,999
+you know, of
+Maxwell's equations,
+
+267
+00:08:11,999 --> 00:08:14,560
+apparently like this a
+lot and I guess tried
+
+268
+00:08:14,560 --> 00:08:15,839
+to make up a version
+
+269
+00:08:15,839 --> 00:08:17,160
+of this to, like,
+give to Gibbs.
+
+270
+00:08:17,160 --> 00:08:18,879
+So a gift. So
+Thermot and Amesis
+
+271
+00:08:18,879 --> 00:08:20,400
+apparently also
+give gifts.
+
+272
+00:08:20,400 --> 00:08:22,159
+And, so Maxwell had made
+
+273
+00:08:22,159 --> 00:08:23,960
+up kind of a
+three D mockup of
+
+274
+00:08:23,960 --> 00:08:28,909
+this kind of a surface
+here to the right?
+
+275
+00:08:28,909 --> 00:08:30,789
+But yeah, like I said,
+as soon as you can
+
+276
+00:08:30,789 --> 00:08:31,669
+have two of these things
+
+277
+00:08:31,669 --> 00:08:32,950
+for a pure substance,
+
+278
+00:08:32,950 --> 00:08:35,870
+and you find yourself
+on that surface,
+
+279
+00:08:35,870 --> 00:08:36,910
+you know everything,
+
+280
+00:08:36,910 --> 00:08:40,325
+everything about
+the state.
+
+281
+00:08:40,325 --> 00:08:42,499
+Okay, what are key
+points on this?
+
+282
+00:08:42,499 --> 00:08:43,860
+So if we want to
+orient ourselves
+
+283
+00:08:43,860 --> 00:08:45,420
+because this is kind
+of complicated.
+
+284
+00:08:45,420 --> 00:08:47,060
+The one that you
+should all know
+
+285
+00:08:47,060 --> 00:08:48,499
+from chemistry is
+the triple line.
+
+286
+00:08:48,499 --> 00:08:50,820
+So what's the triple
+line or triple point,
+
+287
+00:08:50,820 --> 00:08:52,700
+right? It where ice.
+
+288
+00:08:52,700 --> 00:08:54,260
+So the solid,
+the liquid in
+
+289
+00:08:54,260 --> 00:08:57,099
+the vapor can coexist.
+
+290
+00:08:57,099 --> 00:08:58,900
+So that's here.
+
+291
+00:08:58,900 --> 00:09:00,700
+The second important point
+
+292
+00:09:00,700 --> 00:09:02,060
+is what's called
+the critical point.
+
+293
+00:09:02,060 --> 00:09:03,299
+We'll go into
+this a little bit
+
+294
+00:09:03,299 --> 00:09:06,740
+more today, the
+meaning of it.
+
+295
+00:09:06,740 --> 00:09:08,899
+And then for
+this class, sort
+
+296
+00:09:08,899 --> 00:09:10,060
+of the three phases
+
+297
+00:09:10,060 --> 00:09:11,659
+or the three regions
+that we're most
+
+298
+00:09:11,659 --> 00:09:13,579
+concerned with
+are this liquid,
+
+299
+00:09:13,579 --> 00:09:17,845
+the liquid vapor and
+the vapor, all right?
+
+300
+00:09:17,845 --> 00:09:20,030
+So I can kind of
+crop that out.
+
+301
+00:09:20,030 --> 00:09:23,190
+So if I crop out
+that, let's say,
+
+302
+00:09:23,190 --> 00:09:26,150
+the icy region there
+or the solid region,
+
+303
+00:09:26,150 --> 00:09:27,870
+we can start to
+make some of
+
+304
+00:09:27,870 --> 00:09:31,669
+the PV and PT or VT
+diagrams, right?
+
+305
+00:09:31,669 --> 00:09:32,910
+So how do I look
+at this plot?
+
+306
+00:09:32,910 --> 00:09:33,950
+So this is for water.
+
+307
+00:09:33,950 --> 00:09:36,910
+So P and V, right?
+
+308
+00:09:36,910 --> 00:09:39,430
+So this is basically a
+cut in this plane in
+
+309
+00:09:39,430 --> 00:09:42,670
+the PV plane along here.
+
+310
+00:09:42,670 --> 00:09:45,980
+Um, What's in
+the dark line
+
+311
+00:09:45,980 --> 00:09:47,900
+here is the liquid
+
+312
+00:09:47,900 --> 00:09:50,060
+vapor region, the
+saturation line.
+
+313
+00:09:50,060 --> 00:09:52,420
+That's this kind of
+parabolic upside down,
+
+314
+00:09:52,420 --> 00:09:54,140
+you know, parabolic line.
+
+315
+00:09:54,140 --> 00:09:55,620
+Here again, you're slicing
+
+316
+00:09:55,620 --> 00:09:57,259
+you're basically
+slicing through that.
+
+317
+00:09:57,259 --> 00:09:58,740
+So that's the line
+that you see.
+
+318
+00:09:58,740 --> 00:10:03,620
+Alright. One, two, we
+have isolines, right?
+
+319
+00:10:03,620 --> 00:10:07,069
+So if I were to
+make, um You know,
+
+320
+00:10:07,069 --> 00:10:08,630
+if I were to
+basically look
+
+321
+00:10:08,630 --> 00:10:10,270
+as a projection of,
+
+322
+00:10:10,270 --> 00:10:11,750
+in this case,
+instead of a slice,
+
+323
+00:10:11,750 --> 00:10:13,550
+if I did a projection
+of PV and I just
+
+324
+00:10:13,550 --> 00:10:16,030
+look from this direction
+towards it, right,
+
+325
+00:10:16,030 --> 00:10:17,270
+we'd see these kinds of
+
+326
+00:10:17,270 --> 00:10:20,829
+different isolines,
+which are here, right?
+
+327
+00:10:20,829 --> 00:10:22,030
+The one that's denoted in
+
+328
+00:10:22,030 --> 00:10:23,390
+this case is the
+triple line.
+
+329
+00:10:23,390 --> 00:10:24,949
+So this kind of
+dash line that you
+
+330
+00:10:24,949 --> 00:10:26,790
+see here and shoots
+up is the triple.
+
+331
+00:10:26,790 --> 00:10:28,389
+I also have it
+over 200 Celsius,
+
+332
+00:10:28,389 --> 00:10:30,230
+300 Celsius all the way
+
+333
+00:10:30,230 --> 00:10:32,435
+on up until the
+critical point.
+
+334
+00:10:32,435 --> 00:10:33,480
+What you'll see in
+
+335
+00:10:33,480 --> 00:10:34,479
+terms of the
+regions, right?
+
+336
+00:10:34,479 --> 00:10:35,760
+This is vapor to vapor,
+
+337
+00:10:35,760 --> 00:10:37,799
+vapor liquid to
+vapor liquid,
+
+338
+00:10:37,799 --> 00:10:40,199
+and then liquid, which
+is, which is there.
+
+339
+00:10:40,199 --> 00:10:41,800
+And again, the
+critical point,
+
+340
+00:10:41,800 --> 00:10:44,000
+which I'll discuss
+in a second, right?
+
+341
+00:10:44,000 --> 00:10:45,160
+And as usual, if you want,
+
+342
+00:10:45,160 --> 00:10:46,839
+you can generate
+all these plots
+
+343
+00:10:46,839 --> 00:10:48,640
+from that script, right?
+
+344
+00:10:48,640 --> 00:10:51,610
+Um, This is the
+TV diagram.
+
+345
+00:10:51,610 --> 00:10:53,289
+So if we look then
+from this perspective,
+
+346
+00:10:53,289 --> 00:10:55,770
+so the top view,
+basically.
+
+347
+00:10:55,770 --> 00:10:57,249
+So if we took,
+like, a top view
+
+348
+00:10:57,249 --> 00:10:58,890
+perspective of
+this plot, again,
+
+349
+00:10:58,890 --> 00:11:01,330
+we'd still get
+the same dome,
+
+350
+00:11:01,330 --> 00:11:03,929
+and then our isolines
+are then our isobars,
+
+351
+00:11:03,929 --> 00:11:05,970
+right, lines of
+constant pressure.
+
+352
+00:11:05,970 --> 00:11:07,330
+So here's the triple line
+
+353
+00:11:07,330 --> 00:11:09,250
+at a very low, you know,
+
+354
+00:11:09,250 --> 00:11:13,010
+some hundreds of pascals
+there all the way on
+
+355
+00:11:13,010 --> 00:11:17,370
+up until the critical
+point for water, right?
+
+356
+00:11:17,370 --> 00:11:21,009
+And again, vapor liquid,
+and then liquid.
+
+357
+00:11:21,009 --> 00:11:21,969
+And then the final one is
+
+358
+00:11:21,969 --> 00:11:23,329
+then the PT diagram.
+
+359
+00:11:23,329 --> 00:11:25,130
+All right. And this
+is important, okay?
+
+360
+00:11:25,130 --> 00:11:28,790
+So if I look from
+this perspective.
+
+361
+00:11:28,790 --> 00:11:30,550
+So if I'm looking
+from temperature on
+
+362
+00:11:30,550 --> 00:11:33,550
+the horizontal axis
+pressure on the vertical,
+
+363
+00:11:33,550 --> 00:11:36,949
+this kind of vapor
+liquid region that
+
+364
+00:11:36,949 --> 00:11:40,390
+we see here looks
+like a line, okay?
+
+365
+00:11:40,390 --> 00:11:42,950
+It looks like
+a line, right?
+
+366
+00:11:42,950 --> 00:11:48,229
+And so if I start
+to draw the ochres,
+
+367
+00:11:48,229 --> 00:11:50,309
+so the lines of
+constant volume, right,
+
+368
+00:11:50,309 --> 00:11:52,070
+when I'm in the vapor
+region, you know,
+
+369
+00:11:52,070 --> 00:11:55,110
+out, you know, here, it
+kind of makes sense.
+
+370
+00:11:55,110 --> 00:11:56,789
+I see them different.
+But as soon
+
+371
+00:11:56,789 --> 00:11:58,430
+as I get to the
+liquid vapor region,
+
+372
+00:11:58,430 --> 00:12:00,749
+right, they
+collapse, right?
+
+373
+00:12:01,290 --> 00:12:04,529
+And why is that?
+Okay? Why is that?
+
+374
+00:12:04,529 --> 00:12:06,569
+It's because when I
+go from a liquid,
+
+375
+00:12:06,569 --> 00:12:08,010
+which is here, I have
+
+376
+00:12:08,010 --> 00:12:10,330
+very low specific volume,
+right? I'm dense.
+
+377
+00:12:10,330 --> 00:12:12,049
+I have very low
+specific volume.
+
+378
+00:12:12,049 --> 00:12:13,770
+When I go to my vapor,
+
+379
+00:12:13,770 --> 00:12:15,289
+I have very high
+specific volume.
+
+380
+00:12:15,289 --> 00:12:16,770
+I have I have
+
+381
+00:12:16,770 --> 00:12:18,810
+low density, you
+know, with that.
+
+382
+00:12:18,810 --> 00:12:21,210
+And when I look from
+this perspective,
+
+383
+00:12:21,210 --> 00:12:22,010
+I just see a line.
+
+384
+00:12:22,010 --> 00:12:24,970
+So I have a huge jump in
+
+385
+00:12:24,970 --> 00:12:26,970
+specific volume
+when I go from
+
+386
+00:12:26,970 --> 00:12:29,170
+my liquid to my
+vapor, all right?
+
+387
+00:12:29,170 --> 00:12:31,140
+Um, Why does that matter?
+
+388
+00:12:31,140 --> 00:12:31,900
+So, who cares?
+
+389
+00:12:31,900 --> 00:12:33,540
+Why am I telling
+you about that?
+
+390
+00:12:33,540 --> 00:12:37,140
+Because if I know
+
+391
+00:12:37,140 --> 00:12:39,380
+my temperature and my
+pressure, all right?
+
+392
+00:12:39,380 --> 00:12:41,460
+I told you before,
+pure substances with
+
+393
+00:12:41,460 --> 00:12:42,659
+two independent
+properties,
+
+394
+00:12:42,659 --> 00:12:43,940
+I know everything, right?
+
+395
+00:12:43,940 --> 00:12:46,180
+The only caveat I'm
+going to give it to
+
+396
+00:12:46,180 --> 00:12:47,220
+you is that when you're in
+
+397
+00:12:47,220 --> 00:12:48,540
+the liquid vapor region,
+
+398
+00:12:48,540 --> 00:12:49,820
+temperature and pressure
+
+399
+00:12:49,820 --> 00:12:52,380
+are not enough, okay?
+
+400
+00:12:52,620 --> 00:12:55,860
+In the liquid vapor
+region, you know,
+
+401
+00:12:55,860 --> 00:12:58,619
+you need to know
+specific volume
+
+402
+00:12:58,619 --> 00:13:00,739
+and pressure or
+specific volume
+
+403
+00:13:00,739 --> 00:13:02,260
+and temperature, right?
+
+404
+00:13:02,260 --> 00:13:03,620
+And it has to do
+with the fact
+
+405
+00:13:03,620 --> 00:13:05,145
+that when I
+boil something,
+
+406
+00:13:05,145 --> 00:13:06,350
+it's going to boil
+
+407
+00:13:06,350 --> 00:13:07,630
+with constant
+pressure, right?
+
+408
+00:13:07,630 --> 00:13:10,350
+You make brilla, you
+know, at home, you know,
+
+409
+00:13:10,350 --> 00:13:11,710
+pasta at home, and it
+
+410
+00:13:11,710 --> 00:13:13,230
+gives you directions,
+you boil, okay?
+
+411
+00:13:13,230 --> 00:13:14,949
+And you do it for that
+it's super repeatable.
+
+412
+00:13:14,949 --> 00:13:16,430
+That's why it's an
+instruction on there,
+
+413
+00:13:16,430 --> 00:13:16,670
+right?
+
+414
+00:13:16,670 --> 00:13:18,229
+The temperature is also
+
+415
+00:13:18,229 --> 00:13:22,029
+constant during
+that process.
+
+416
+00:13:22,029 --> 00:13:23,470
+So that whole process
+
+417
+00:13:23,470 --> 00:13:25,710
+of basically going from,
+
+418
+00:13:25,710 --> 00:13:26,590
+let's say,
+
+419
+00:13:26,590 --> 00:13:28,150
+the full liquid at
+the boiling point.
+
+420
+00:13:28,150 --> 00:13:30,110
+So a saturated liquid,
+
+421
+00:13:30,110 --> 00:13:31,750
+I'll come into what
+that means in a second,
+
+422
+00:13:31,750 --> 00:13:33,829
+all the way to being
+completely evaporated.
+
+423
+00:13:33,829 --> 00:13:35,829
+So a saturated vapor,
+
+424
+00:13:35,829 --> 00:13:36,790
+the temperature and
+
+425
+00:13:36,790 --> 00:13:37,950
+the pressure are constant.
+
+426
+00:13:37,950 --> 00:13:40,030
+But obviously,
+something is changing.
+
+427
+00:13:40,030 --> 00:13:41,310
+The specific volume of
+
+428
+00:13:41,310 --> 00:13:43,675
+that mixture is
+changing, okay?
+
+429
+00:13:43,675 --> 00:13:46,880
+So you can use
+the, you know,
+
+430
+00:13:46,880 --> 00:13:48,160
+so when you're liquid,
+
+431
+00:13:48,160 --> 00:13:49,920
+when you're vapor, when
+
+432
+00:13:49,920 --> 00:13:51,760
+you're above the
+critical point, right?
+
+433
+00:13:51,760 --> 00:13:53,279
+Any two of these pairs is
+
+434
+00:13:53,279 --> 00:13:55,240
+enough for you to map out.
+
+435
+00:13:55,240 --> 00:13:56,199
+But I want you to
+
+436
+00:13:56,199 --> 00:13:57,320
+think about this
+when you say, okay,
+
+437
+00:13:57,320 --> 00:14:00,640
+when I have a saturated
+liquid vapor mixture,
+
+438
+00:14:00,640 --> 00:14:02,639
+you think back to this
+beautiful, you know,
+
+439
+00:14:02,639 --> 00:14:06,999
+Maxwell, you know, looking
+carved solid here,
+
+440
+00:14:06,999 --> 00:14:08,560
+and you would
+say, okay, look
+
+441
+00:14:08,560 --> 00:14:10,080
+at the side view
+here, right?
+
+442
+00:14:10,080 --> 00:14:12,360
+I know that PNT is not
+enough because there's
+
+443
+00:14:12,360 --> 00:14:15,840
+a whole bunch of states
+into the page there,
+
+444
+00:14:15,840 --> 00:14:18,200
+you know, where,
+you know, so
+
+445
+00:14:18,200 --> 00:14:20,800
+it's not enough
+information to it, okay?
+
+446
+00:14:21,270 --> 00:14:23,909
+I feel like I
+confused you all,
+
+447
+00:14:23,909 --> 00:14:26,189
+but it will make sense
+with time. Go ahead.
+
+448
+00:14:26,189 --> 00:14:28,269
+Are there any
+other regions
+
+449
+00:14:28,269 --> 00:14:30,550
+where two aren't enough?
+
+450
+00:14:30,550 --> 00:14:31,670
+So, you look at this.
+
+451
+00:14:31,670 --> 00:14:33,070
+Basically, if you look at,
+
+452
+00:14:33,070 --> 00:14:36,270
+um, you know, the
+diagram here.
+
+453
+00:14:36,270 --> 00:14:37,550
+I would say that
+this is the
+
+454
+00:14:37,550 --> 00:14:38,870
+only one that I
+know of where
+
+455
+00:14:38,870 --> 00:14:41,670
+you have that,
+you know, well,
+
+456
+00:14:41,670 --> 00:14:42,990
+it's not the only one,
+right, because you
+
+457
+00:14:42,990 --> 00:14:44,749
+can also have
+a solid vapor,
+
+458
+00:14:44,749 --> 00:14:45,709
+you know,
+
+459
+00:14:45,709 --> 00:14:47,230
+coexistence with the
+same sort of thing,
+
+460
+00:14:47,230 --> 00:14:47,430
+right?
+
+461
+00:14:47,430 --> 00:14:48,189
+You basically go from
+
+462
+00:14:48,189 --> 00:14:49,190
+the low density of that,
+
+463
+00:14:49,190 --> 00:14:50,310
+but aside from
+that, you know,
+
+464
+00:14:50,310 --> 00:14:53,550
+if you look at then
+
+465
+00:14:53,550 --> 00:14:54,909
+solid liquids depending on
+
+466
+00:14:54,909 --> 00:14:56,549
+the density of the
+phase transition.
+
+467
+00:14:56,549 --> 00:14:58,350
+But for the purposes
+of this class,
+
+468
+00:14:58,350 --> 00:15:01,790
+it's the coexistence
+of the liquid in
+
+469
+00:15:01,790 --> 00:15:03,790
+the vapor region where
+
+470
+00:15:03,790 --> 00:15:05,830
+you have this
+challenge, okay?
+
+471
+00:15:05,830 --> 00:15:08,320
+But specific volume,
+you cannot go wrong.
+
+472
+00:15:08,320 --> 00:15:10,090
+Specific volume, you know,
+
+473
+00:15:10,090 --> 00:15:12,850
+you're not going
+to go wrong, you
+
+474
+00:15:12,850 --> 00:15:14,930
+know, with that, okay?
+
+475
+00:15:14,930 --> 00:15:16,730
+Yes, please.
+Name, by the way.
+
+476
+00:15:16,730 --> 00:15:19,289
+Sorry, I'm. David.
+
+477
+00:15:22,490 --> 00:15:27,570
+I do not have plasma
+on this plot.
+
+478
+00:15:27,570 --> 00:15:29,370
+The fourth phase. Yeah.
+
+479
+00:15:29,370 --> 00:15:31,290
+Okay. Cross over
+to, you know,
+
+480
+00:15:31,290 --> 00:15:32,650
+your physics
+building for that.
+
+481
+00:15:32,650 --> 00:15:34,330
+Other questions?
+
+482
+00:15:34,860 --> 00:15:39,140
+Okay. Yes. So how
+
+483
+00:15:39,140 --> 00:15:40,219
+does the book denote this?
+
+484
+00:15:40,219 --> 00:15:41,060
+So what did I tell you?
+
+485
+00:15:41,060 --> 00:15:43,859
+I told you about
+vapor, liquid vapor,
+
+486
+00:15:43,859 --> 00:15:47,340
+liquid, and I mentioned
+a critical point.
+
+487
+00:15:47,340 --> 00:15:49,020
+And so that's
+the terminology
+
+488
+00:15:49,020 --> 00:15:50,540
+that I like, okay?
+
+489
+00:15:50,540 --> 00:15:54,980
+The book has other names.
+
+490
+00:15:54,980 --> 00:15:56,260
+So this region, so I
+
+491
+00:15:56,260 --> 00:15:57,780
+show you the TV
+diagram, right?
+
+492
+00:15:57,780 --> 00:15:59,900
+So very high density or
+
+493
+00:15:59,900 --> 00:16:01,420
+low specific volume
+high density.
+
+494
+00:16:01,420 --> 00:16:02,419
+So you have a liquid.
+
+495
+00:16:02,419 --> 00:16:04,420
+The book a lot of times
+calls this, like,
+
+496
+00:16:04,420 --> 00:16:07,840
+a compressed liquid
+region, okay?
+
+497
+00:16:07,840 --> 00:16:10,060
+All right? I don't know.
+
+498
+00:16:10,060 --> 00:16:11,740
+Anyways, it's a
+liquid, right?
+
+499
+00:16:11,740 --> 00:16:12,619
+It's very hard to
+
+500
+00:16:12,619 --> 00:16:14,020
+compress actually
+a liquid, right?
+
+501
+00:16:14,020 --> 00:16:15,780
+It's like
+compressing a solid.
+
+502
+00:16:15,780 --> 00:16:18,020
+You can't really
+make the atoms much,
+
+503
+00:16:18,260 --> 00:16:20,380
+you know, a lot
+of times it's
+
+504
+00:16:20,380 --> 00:16:22,020
+incompressible, as
+we call it, right?
+
+505
+00:16:22,020 --> 00:16:24,130
+So you have compressed
+liquid, All right.
+
+506
+00:16:24,130 --> 00:16:26,170
+So the next one is
+that, again, this dome.
+
+507
+00:16:26,170 --> 00:16:28,129
+So we call this a dome.
+
+508
+00:16:28,129 --> 00:16:30,290
+To the left of the
+critical point,
+
+509
+00:16:30,290 --> 00:16:32,490
+we call this as a
+saturated liquid line.
+
+510
+00:16:32,490 --> 00:16:33,170
+What does it mean?
+
+511
+00:16:33,170 --> 00:16:34,610
+If you're anywhere
+on this line,
+
+512
+00:16:34,610 --> 00:16:37,450
+it means that you are
+a pure liquid, okay?
+
+513
+00:16:37,450 --> 00:16:41,250
+At the critical point
+to the right here,
+
+514
+00:16:41,250 --> 00:16:41,930
+we have what's called
+
+515
+00:16:41,930 --> 00:16:43,290
+the saturated vapor line.
+
+516
+00:16:43,290 --> 00:16:44,809
+The way to
+visualize this is
+
+517
+00:16:44,809 --> 00:16:46,450
+you've just boiled off
+
+518
+00:16:46,450 --> 00:16:47,970
+that absolute last amount
+
+519
+00:16:47,970 --> 00:16:49,810
+of liquid into
+a vapor, okay?
+
+520
+00:16:49,810 --> 00:16:51,650
+Saturated vapor, alright?
+
+521
+00:16:51,650 --> 00:16:54,320
+Um, region in between
+
+522
+00:16:54,320 --> 00:16:57,000
+it and it is a saturated
+liquid vapor region.
+
+523
+00:16:57,000 --> 00:16:59,000
+The way to visualize
+this is almost like
+
+524
+00:16:59,000 --> 00:17:02,239
+percent evaporated
+of the substance.
+
+525
+00:17:02,239 --> 00:17:04,480
+So zero as I have
+0% evaporated,
+
+526
+00:17:04,480 --> 00:17:05,919
+so I'm a saturated liquid.
+
+527
+00:17:05,919 --> 00:17:07,839
+To here, I have
+100% evaporated,
+
+528
+00:17:07,839 --> 00:17:10,240
+so I'm the the pure vapor.
+
+529
+00:17:10,240 --> 00:17:11,559
+And then to the
+right of this is
+
+530
+00:17:11,559 --> 00:17:13,400
+what's called the
+superheated vapor region,
+
+531
+00:17:13,400 --> 00:17:20,310
+which for water is Steam.
+
+532
+00:17:20,310 --> 00:17:24,509
+Steam. It's basically
+steam steam here, okay?
+
+533
+00:17:24,509 --> 00:17:26,269
+And a lot of times on the
+
+534
+00:17:26,269 --> 00:17:27,670
+plots, too, so
+additionally,
+
+535
+00:17:27,670 --> 00:17:29,149
+you see lines, and
+these lines are
+
+536
+00:17:29,149 --> 00:17:31,469
+normally denoted
+some constant value.
+
+537
+00:17:31,469 --> 00:17:32,630
+So if I'm plotting
+
+538
+00:17:32,630 --> 00:17:34,070
+temperature in
+specific volume,
+
+539
+00:17:34,070 --> 00:17:35,389
+this is going to
+be an isobar.
+
+540
+00:17:35,389 --> 00:17:37,030
+So lines of
+constant pressure.
+
+541
+00:17:37,030 --> 00:17:38,510
+You see in the phase
+change region,
+
+542
+00:17:38,510 --> 00:17:40,590
+so the saturated
+liquid vapor region,
+
+543
+00:17:40,590 --> 00:17:41,990
+that the temperature
+is constant.
+
+544
+00:17:41,990 --> 00:17:43,389
+So the pressure
+is constant and
+
+545
+00:17:43,389 --> 00:17:44,949
+the temperature is
+constant, okay?
+
+546
+00:17:44,949 --> 00:17:46,389
+Just like we had
+said before.
+
+547
+00:17:46,389 --> 00:17:48,470
+And then the same thing
+with the PV diagram.
+
+548
+00:17:48,470 --> 00:17:49,790
+So we have the isobars
+
+549
+00:17:49,790 --> 00:17:52,789
+are which are
+temperature, okay?
+
+550
+00:17:52,789 --> 00:17:55,269
+Okay, so what is
+this critical point,
+
+551
+00:17:55,269 --> 00:17:57,509
+alright? Is there
+a question?
+
+552
+00:18:02,230 --> 00:18:04,270
+This is like the globe.
+
+553
+00:18:04,270 --> 00:18:05,550
+I don't care what
+you call it,
+
+554
+00:18:05,550 --> 00:18:07,589
+as long as you can get
+yourself there, okay?
+
+555
+00:18:07,589 --> 00:18:08,749
+We get different names for
+
+556
+00:18:08,749 --> 00:18:09,589
+different countries and
+
+557
+00:18:09,589 --> 00:18:10,630
+whatever and languages.
+
+558
+00:18:10,630 --> 00:18:12,189
+So as long as you
+like, you know,
+
+559
+00:18:12,189 --> 00:18:16,229
+are at this GPS coordinates
+in flatland here,
+
+560
+00:18:16,229 --> 00:18:17,549
+then well, curve
+
+561
+00:18:17,549 --> 00:18:23,149
+flatland's enough
+for me, okay?
+
+562
+00:18:23,149 --> 00:18:24,909
+All right. Other
+questions?
+
+563
+00:18:24,909 --> 00:18:26,570
+That's a fair question.
+
+564
+00:18:26,570 --> 00:18:28,310
+Okay, so what's
+the meaning
+
+565
+00:18:28,310 --> 00:18:30,270
+of this critical
+point, alright?
+
+566
+00:18:30,270 --> 00:18:31,990
+So we can talk about this.
+
+567
+00:18:31,990 --> 00:18:34,070
+So imagine so
+let's say I'm at
+
+568
+00:18:34,070 --> 00:18:36,550
+this temperature,
+you know,
+
+569
+00:18:36,550 --> 00:18:40,150
+down here, and let's
+say that I'm uh um,
+
+570
+00:18:40,150 --> 00:18:42,549
+you know, and we
+analyze this line.
+
+571
+00:18:42,549 --> 00:18:44,490
+So here, right?
+
+572
+00:18:44,490 --> 00:18:47,009
+The specific volume
+is pretty low,
+
+573
+00:18:47,009 --> 00:18:49,169
+okay, when I'm a liquid.
+
+574
+00:18:49,169 --> 00:18:50,530
+And then when I'm a vapor,
+
+575
+00:18:50,530 --> 00:18:51,970
+the specific volume
+is pretty high.
+
+576
+00:18:51,970 --> 00:18:53,089
+The difference
+between them is
+
+577
+00:18:53,089 --> 00:18:55,129
+relatively large,
+all right?
+
+578
+00:18:55,129 --> 00:18:58,169
+Now I start to move
+up in temperature.
+
+579
+00:18:58,169 --> 00:19:00,730
+The liquid specific
+volume it's higher,
+
+580
+00:19:00,730 --> 00:19:03,170
+and the vapor specific
+volume is lower.
+
+581
+00:19:03,170 --> 00:19:04,769
+And this continues on
+
+582
+00:19:04,769 --> 00:19:06,569
+and on until
+you reach up to
+
+583
+00:19:06,569 --> 00:19:08,129
+this point where
+the difference
+
+584
+00:19:08,129 --> 00:19:10,010
+in the specific volume,
+
+585
+00:19:10,010 --> 00:19:10,569
+the difference in
+
+586
+00:19:10,569 --> 00:19:12,330
+the density
+between the liquid
+
+587
+00:19:12,330 --> 00:19:13,490
+and the vapor cannot
+
+588
+00:19:13,490 --> 00:19:15,049
+be detected anymore, okay?
+
+589
+00:19:15,049 --> 00:19:16,810
+You cannot differentiate
+
+590
+00:19:16,810 --> 00:19:18,129
+between them, all right?
+
+591
+00:19:18,129 --> 00:19:20,969
+Does anyone know what
+we call that fluid?
+
+592
+00:19:21,660 --> 00:19:26,059
+Say it again?
+I can't hear.
+
+593
+00:19:26,059 --> 00:19:27,699
+Sorry. Liquid vapor?
+
+594
+00:19:27,699 --> 00:19:28,859
+No, not liquid vapor.
+
+595
+00:19:28,859 --> 00:19:31,820
+What do we call
+that substance?
+
+596
+00:19:34,540 --> 00:19:35,739
+Okay,
+
+597
+00:19:35,739 --> 00:19:37,859
+it's called a supercritical
+fluid, all right?
+
+598
+00:19:37,859 --> 00:19:39,220
+And you can ask
+yourself, who cares
+
+599
+00:19:39,220 --> 00:19:40,700
+about a
+supercritical fluid?
+
+600
+00:19:40,700 --> 00:19:43,409
+Um You're too young
+to care about this,
+
+601
+00:19:43,409 --> 00:19:44,770
+but maybe when
+you're older,
+
+602
+00:19:44,770 --> 00:19:46,610
+you want to drink
+decaffeinated coffee
+
+603
+00:19:46,610 --> 00:19:48,209
+because I don't
+know, you're wild.
+
+604
+00:19:48,209 --> 00:19:48,849
+The way that you
+
+605
+00:19:48,849 --> 00:19:50,329
+decaffeinate
+coffee is you use
+
+606
+00:19:50,329 --> 00:19:52,010
+carbon dioxide and you put
+
+607
+00:19:52,010 --> 00:19:53,810
+it to a high temperature
+and a high pressure.
+
+608
+00:19:53,810 --> 00:19:55,010
+You make it super
+critical, right?
+
+609
+00:19:55,010 --> 00:19:55,770
+It turns out it's
+
+610
+00:19:55,770 --> 00:19:58,450
+great solvent for
+things like that.
+
+611
+00:19:58,450 --> 00:19:59,849
+For power plants, when
+
+612
+00:19:59,849 --> 00:20:00,969
+you want to get to,
+like, to be very,
+
+613
+00:20:00,969 --> 00:20:02,210
+very efficient,
+which means
+
+614
+00:20:02,210 --> 00:20:04,290
+to run at very
+high temperatures.
+
+615
+00:20:04,290 --> 00:20:06,530
+You know, they're for
+water. You can heat
+
+616
+00:20:06,530 --> 00:20:08,489
+water also above this
+critical point, right?
+
+617
+00:20:08,489 --> 00:20:10,169
+To get to basically at
+higher temperature and
+
+618
+00:20:10,169 --> 00:20:13,330
+pressures to more
+efficiently,
+
+619
+00:20:13,330 --> 00:20:15,169
+you know, generate
+it, okay?
+
+620
+00:20:15,169 --> 00:20:17,130
+This is not you know,
+
+621
+00:20:17,130 --> 00:20:18,490
+like a fourth
+phase of matter.
+
+622
+00:20:18,490 --> 00:20:19,649
+It's still a fluid, but
+
+623
+00:20:19,649 --> 00:20:21,249
+it's a fluid
+where you cannot
+
+624
+00:20:21,249 --> 00:20:23,690
+differentiate
+between a liquid
+
+625
+00:20:23,690 --> 00:20:25,249
+and a vapor, right?
+
+626
+00:20:25,249 --> 00:20:28,330
+They can't be
+distinguished.
+
+627
+00:20:28,330 --> 00:20:31,560
+Um, The type of
+phase transition.
+
+628
+00:20:31,560 --> 00:20:32,879
+So if I start off,
+
+629
+00:20:32,879 --> 00:20:34,320
+we'll start off
+with the first one.
+
+630
+00:20:34,320 --> 00:20:35,559
+So if I started
+with this type of
+
+631
+00:20:35,559 --> 00:20:36,959
+transition where
+I go from, like,
+
+632
+00:20:36,959 --> 00:20:38,279
+a liquid to a vapor,
+
+633
+00:20:38,279 --> 00:20:38,839
+we call that as
+
+634
+00:20:38,839 --> 00:20:40,199
+a first order
+transition, right?
+
+635
+00:20:40,199 --> 00:20:42,040
+It's a big change
+in the density
+
+636
+00:20:42,040 --> 00:20:43,440
+from being one to
+the other, right?
+
+637
+00:20:43,440 --> 00:20:45,039
+It's called first
+order. 1 second.
+
+638
+00:20:45,039 --> 00:20:46,719
+When we talk about
+this one going from
+
+639
+00:20:46,719 --> 00:20:48,560
+a critical point,
+and then I'm down.
+
+640
+00:20:48,560 --> 00:20:50,240
+So if I started at
+a high temperature,
+
+641
+00:20:50,240 --> 00:20:52,440
+let's say constant
+specific volume,
+
+642
+00:20:52,440 --> 00:20:55,119
+and I start to
+decrease there,
+
+643
+00:20:55,119 --> 00:20:56,919
+that's a second order
+transition, okay?
+
+644
+00:20:56,919 --> 00:20:58,199
+And if you want to
+read more about that,
+
+645
+00:20:58,199 --> 00:21:01,119
+there's beautiful
+theories of Lev Landau.
+
+646
+00:21:01,119 --> 00:21:04,520
+He was a phenomenal
+Soviet physicist
+
+647
+00:21:04,520 --> 00:21:05,719
+who did a number
+of things,
+
+648
+00:21:05,719 --> 00:21:06,760
+but also looked
+at these sort
+
+649
+00:21:06,760 --> 00:21:08,039
+of what are called
+second order,
+
+650
+00:21:08,039 --> 00:21:09,840
+um, you know, transitions.
+
+651
+00:21:09,840 --> 00:21:11,439
+And the way you visualize
+it is that, again,
+
+652
+00:21:11,439 --> 00:21:13,000
+you start out with
+very small differences
+
+653
+00:21:13,000 --> 00:21:14,880
+in the density or
+specific volume,
+
+654
+00:21:14,880 --> 00:21:16,599
+and then basically
+they linearly
+
+655
+00:21:16,599 --> 00:21:18,600
+get larger. Yes, please.
+
+656
+00:21:18,600 --> 00:21:22,120
+So is that site
+more of a smart?
+
+657
+00:21:22,120 --> 00:21:23,559
+Does it have more of
+the properties of
+
+658
+00:21:23,559 --> 00:21:25,000
+a fluid or more of a gas?
+
+659
+00:21:25,000 --> 00:21:26,199
+It's a fluid, okay?
+
+660
+00:21:26,199 --> 00:21:29,119
+And a gas and a
+liquid are a fluid.
+
+661
+00:21:29,119 --> 00:21:31,759
+Okay? So I said liquid,
+and I said gas.
+
+662
+00:21:31,759 --> 00:21:35,199
+A liquid and a gas
+are both fluids.
+
+663
+00:21:35,920 --> 00:21:39,199
+Okay. Other questions.
+
+664
+00:21:39,199 --> 00:21:41,280
+Read about Lando.
+Very interesting.
+
+665
+00:21:41,280 --> 00:21:43,719
+Actually died very
+young. It was tragic.
+
+666
+00:21:43,719 --> 00:21:46,159
+He won a Nobel
+Prize, though.
+
+667
+00:21:46,159 --> 00:21:50,269
+Okay. Um, Okay, yeah,
+
+668
+00:21:50,269 --> 00:21:51,110
+so we talked about
+
+669
+00:21:51,110 --> 00:21:52,509
+basically this critical
+point where, again,
+
+670
+00:21:52,509 --> 00:21:53,670
+you can't
+differentiate between
+
+671
+00:21:53,670 --> 00:21:56,270
+the liquid and the vapor.
+
+672
+00:21:56,270 --> 00:21:57,750
+So the PV diagram.
+
+673
+00:21:57,750 --> 00:21:59,470
+We'll use this one
+a lot, especially
+
+674
+00:21:59,470 --> 00:22:00,909
+later on with some cycles.
+
+675
+00:22:00,909 --> 00:22:04,349
+PT diagram, not really
+used very much.
+
+676
+00:22:04,349 --> 00:22:05,669
+The only reason I show it
+
+677
+00:22:05,669 --> 00:22:08,309
+here is because, right?
+
+678
+00:22:08,309 --> 00:22:10,469
+Most substances would
+look like this,
+
+679
+00:22:10,469 --> 00:22:14,069
+but water is a
+tremendously weird, very,
+
+680
+00:22:14,069 --> 00:22:17,670
+very weird substance,
+where the ice is less,
+
+681
+00:22:17,670 --> 00:22:19,229
+you know, its solid
+phase is less
+
+682
+00:22:19,229 --> 00:22:21,069
+dense than it's
+it's liquid, okay?
+
+683
+00:22:21,069 --> 00:22:22,229
+So basically, that's
+the one where
+
+684
+00:22:22,229 --> 00:22:23,470
+it bends backwards,
+
+685
+00:22:23,470 --> 00:22:24,989
+and we'll use this a
+little bit later in,
+
+686
+00:22:24,989 --> 00:22:27,570
+like, we, um, 13.
+
+687
+00:22:27,570 --> 00:22:28,929
+We want to
+estimate, you know,
+
+688
+00:22:28,929 --> 00:22:32,089
+how much energy it takes
+to evaporate. Okay.
+
+689
+00:22:32,090 --> 00:22:34,249
+Alright, that's all done.
+
+690
+00:22:34,249 --> 00:22:35,409
+We'll come for
+a second now.
+
+691
+00:22:35,409 --> 00:22:36,850
+So again, so again, pure
+
+692
+00:22:36,850 --> 00:22:39,290
+substances, two
+independent properties.
+
+693
+00:22:39,290 --> 00:22:40,370
+You know, we can compute
+
+694
+00:22:40,370 --> 00:22:42,649
+the dependence and
+everything after that.
+
+695
+00:22:42,649 --> 00:22:45,290
+Um, The hand tool.
+
+696
+00:22:45,290 --> 00:22:46,650
+So the old
+fashioned way to do
+
+697
+00:22:46,650 --> 00:22:48,170
+this is the
+property table.
+
+698
+00:22:48,170 --> 00:22:49,449
+So here you have 34 of
+
+699
+00:22:49,449 --> 00:22:51,210
+them at the back
+of your book.
+
+700
+00:22:51,210 --> 00:22:52,969
+If you were to
+pick one of these,
+
+701
+00:22:52,969 --> 00:22:54,249
+let's say table A four,
+
+702
+00:22:54,249 --> 00:22:57,570
+so saturated water and
+temperature table.
+
+703
+00:22:57,570 --> 00:22:59,089
+What you'll see here is
+
+704
+00:22:59,089 --> 00:23:01,289
+right temperature with it,
+
+705
+00:23:01,289 --> 00:23:04,049
+the pressure
+associated with that,
+
+706
+00:23:04,049 --> 00:23:05,609
+and then things like
+
+707
+00:23:05,609 --> 00:23:07,729
+saturated liquid,
+saturated vapor,
+
+708
+00:23:07,729 --> 00:23:09,650
+because remember, the
+density will vary
+
+709
+00:23:09,650 --> 00:23:10,809
+continuously from being
+
+710
+00:23:10,809 --> 00:23:12,490
+the liquid to the vapor,
+
+711
+00:23:12,490 --> 00:23:15,090
+saturated liquid
+internal energy,
+
+712
+00:23:15,090 --> 00:23:18,449
+and so on and so forth
+with that, okay?
+
+713
+00:23:18,449 --> 00:23:19,370
+So again, you have
+
+714
+00:23:19,370 --> 00:23:20,769
+your temperature
+as one of them.
+
+715
+00:23:20,769 --> 00:23:22,170
+The corresponding
+saturation
+
+716
+00:23:22,170 --> 00:23:23,715
+temperature or pressure
+
+717
+00:23:23,715 --> 00:23:25,419
+your specific volume of
+
+718
+00:23:25,419 --> 00:23:26,539
+your liquid and your
+
+719
+00:23:26,539 --> 00:23:28,220
+specific volume
+of your vapor,
+
+720
+00:23:28,220 --> 00:23:30,459
+okay? Why is it F?
+
+721
+00:23:30,459 --> 00:23:32,740
+It's not F because
+it's fluid.
+
+722
+00:23:32,740 --> 00:23:35,139
+It's F because
+it's fluykit,
+
+723
+00:23:35,139 --> 00:23:38,100
+okay, which is German
+for liquid, all right?
+
+724
+00:23:38,100 --> 00:23:40,059
+The Germans did all
+this, all right?
+
+725
+00:23:40,059 --> 00:23:42,019
+So not my fault, okay?
+
+726
+00:23:42,019 --> 00:23:43,779
+So the F there, again,
+
+727
+00:23:43,779 --> 00:23:46,099
+if you want to go and
+do an old school,
+
+728
+00:23:46,099 --> 00:23:47,059
+you know, and use
+
+729
+00:23:47,059 --> 00:23:49,340
+a saw by hand,
+I respect that.
+
+730
+00:23:49,340 --> 00:23:51,259
+It's going to
+take a long time,
+
+731
+00:23:51,259 --> 00:23:53,189
+but that's the F, okay?
+
+732
+00:23:53,189 --> 00:23:56,639
+The saturated
+vapor is G, okay?
+
+733
+00:23:56,639 --> 00:23:58,119
+And the G is then
+
+734
+00:23:58,119 --> 00:24:00,000
+all the properties
+of saturated vapor,
+
+735
+00:24:00,000 --> 00:24:02,439
+and gas east gas.
+
+736
+00:24:02,439 --> 00:24:05,880
+Gas is gas, okay, in
+both of them, right?
+
+737
+00:24:05,880 --> 00:24:08,320
+So you'll see
+things like VG,
+
+738
+00:24:08,320 --> 00:24:09,199
+right, which is then
+
+739
+00:24:09,199 --> 00:24:11,375
+the specific volume
+of the vapor.
+
+740
+00:24:11,375 --> 00:24:15,069
+F, specific volumes
+of the liquid,
+
+741
+00:24:15,069 --> 00:24:15,669
+and sometimes
+
+742
+00:24:15,669 --> 00:24:17,189
+you'll see the
+difference reported.
+
+743
+00:24:17,189 --> 00:24:18,749
+Sometimes you'll see FG,
+
+744
+00:24:18,749 --> 00:24:20,069
+and that's nothing but
+
+745
+00:24:20,069 --> 00:24:21,630
+specific volume of the gas
+
+746
+00:24:21,630 --> 00:24:23,190
+minus the specific volume
+
+747
+00:24:23,190 --> 00:24:25,309
+of the liquid, alright.
+
+748
+00:24:25,309 --> 00:24:27,230
+You'll also see
+there then sort
+
+749
+00:24:27,230 --> 00:24:29,430
+of this HFG. We'll
+get to what H means.
+
+750
+00:24:29,430 --> 00:24:32,029
+It means enthalpy.
+But this HFG,
+
+751
+00:24:32,029 --> 00:24:33,509
+the way to think
+about this is
+
+752
+00:24:33,509 --> 00:24:35,825
+kind of the difference
+at constant pressure.
+
+753
+00:24:35,825 --> 00:24:38,979
+The difference in or
+
+754
+00:24:38,979 --> 00:24:42,379
+the amount of energy
+you need to put in,
+
+755
+00:24:42,379 --> 00:24:44,099
+the amount of heat you
+need to transfer in
+
+756
+00:24:44,099 --> 00:24:46,099
+or the energy to
+transfer in to
+
+757
+00:24:46,099 --> 00:24:50,579
+boil a kilogram of
+liquid water, okay?
+
+758
+00:24:50,579 --> 00:24:53,180
+So for these conditions,
+
+759
+00:24:53,180 --> 00:24:58,259
+it's like 2,200 joules
+per gram for water,
+
+760
+00:24:58,259 --> 00:24:59,899
+which I can tell you
+is a lot of energy.
+
+761
+00:24:59,899 --> 00:25:01,059
+It takes a lot
+of energy to
+
+762
+00:25:01,059 --> 00:25:03,949
+boil boil water, okay?
+
+763
+00:25:03,949 --> 00:25:06,240
+Yeah. And so, again,
+if you go in,
+
+764
+00:25:06,240 --> 00:25:06,439
+like,
+
+765
+00:25:06,439 --> 00:25:07,480
+a typical problem that
+
+766
+00:25:07,480 --> 00:25:08,279
+we're going to work on,
+
+767
+00:25:08,279 --> 00:25:09,520
+you'll be given
+things like,
+
+768
+00:25:09,520 --> 00:25:12,800
+let's say, temperature
+and quality.
+
+769
+00:25:12,800 --> 00:25:14,039
+Alright? So you're
+going to tell me,
+
+770
+00:25:14,039 --> 00:25:15,679
+Professor Schutz,
+you told me,
+
+771
+00:25:15,679 --> 00:25:17,080
+like, temperature
+and pressure.
+
+772
+00:25:17,080 --> 00:25:17,919
+You know, these are pretty
+
+773
+00:25:17,919 --> 00:25:20,599
+much my independent
+properties.
+
+774
+00:25:20,599 --> 00:25:22,719
+Sure. But there's
+other ones that
+
+775
+00:25:22,719 --> 00:25:23,640
+also exist there that
+
+776
+00:25:23,640 --> 00:25:24,359
+we're going to get into.
+
+777
+00:25:24,359 --> 00:25:26,000
+One of them is
+called quality,
+
+778
+00:25:26,000 --> 00:25:27,360
+alright? And
+there's quality.
+
+779
+00:25:27,360 --> 00:25:28,879
+Alright? So when I
+say the term like
+
+780
+00:25:28,879 --> 00:25:31,159
+saturated vapor and
+saturated liquid,
+
+781
+00:25:31,159 --> 00:25:33,094
+the quality is
+like how much
+
+782
+00:25:33,094 --> 00:25:34,669
+Have I gone from being a
+
+783
+00:25:34,669 --> 00:25:35,949
+liquid to a vapor, right?
+
+784
+00:25:35,949 --> 00:25:37,549
+So if I have a
+quality of zero,
+
+785
+00:25:37,549 --> 00:25:39,429
+I am a saturated liquid.
+
+786
+00:25:39,429 --> 00:25:40,709
+If I have a
+quality of one,
+
+787
+00:25:40,709 --> 00:25:42,709
+it means that I have
+a saturated vapor.
+
+788
+00:25:42,709 --> 00:25:46,149
+I have no liquid left,
+mathematically, right?
+
+789
+00:25:46,149 --> 00:25:48,550
+It's inside of, let's
+say, a container.
+
+790
+00:25:48,550 --> 00:25:50,390
+The mass that's the vapor
+
+791
+00:25:50,390 --> 00:25:52,589
+divided by the
+total mass, okay?
+
+792
+00:25:52,589 --> 00:25:53,990
+And it's only relevant,
+
+793
+00:25:53,990 --> 00:25:55,549
+right when you're
+in the saturated
+
+794
+00:25:55,549 --> 00:25:59,554
+liquid vapor region, okay?
+
+795
+00:25:59,554 --> 00:26:03,560
+Cool. So again, we love
+graphs here in plots.
+
+796
+00:26:03,560 --> 00:26:05,559
+So here's again,
+TV, all right?
+
+797
+00:26:05,559 --> 00:26:09,479
+I want to know this
+property at B, all right?
+
+798
+00:26:09,479 --> 00:26:10,839
+And for this type of
+
+799
+00:26:10,839 --> 00:26:12,160
+problem that I've
+given you here,
+
+800
+00:26:12,160 --> 00:26:13,920
+essentially what I've
+said is that this is
+
+801
+00:26:13,920 --> 00:26:16,680
+a temperature of 85
+degrees Celsius.
+
+802
+00:26:16,680 --> 00:26:18,120
+And let's say
+at the moment
+
+803
+00:26:18,120 --> 00:26:19,400
+that this is an equality
+
+804
+00:26:19,400 --> 00:26:22,880
+roughly sort of
+equality of some value.
+
+805
+00:26:22,880 --> 00:26:25,480
+This looks to me
+like less than 0.5,
+
+806
+00:26:25,480 --> 00:26:27,359
+but let's say
+that's the value.
+
+807
+00:26:27,359 --> 00:26:29,120
+So you can understand
+then by giving you
+
+808
+00:26:29,120 --> 00:26:31,799
+this temperature and
+giving you this value,
+
+809
+00:26:31,799 --> 00:26:34,119
+you could say where
+point B is, right?
+
+810
+00:26:34,119 --> 00:26:39,599
+It's halfway between
+A and C there, okay?
+
+811
+00:26:39,599 --> 00:26:41,879
+Again, like, look
+through this and,
+
+812
+00:26:41,879 --> 00:26:43,399
+you know, and
+understand it.
+
+813
+00:26:43,399 --> 00:26:45,559
+Again, C would be
+like X is one,
+
+814
+00:26:45,559 --> 00:26:47,559
+A would be X is zero
+
+815
+00:26:47,559 --> 00:26:50,080
+at this
+temperature, right?
+
+816
+00:26:50,080 --> 00:26:52,039
+So yeah, you can go
+through and compute it.
+
+817
+00:26:52,039 --> 00:26:54,919
+So if you looked
+up then, you know,
+
+818
+00:26:54,919 --> 00:26:55,559
+you could look up in
+
+819
+00:26:55,559 --> 00:26:57,119
+the tables then
+at point C,
+
+820
+00:26:57,119 --> 00:26:59,279
+what would be
+the saturated,
+
+821
+00:26:59,279 --> 00:27:03,530
+um, specific volume of
+the saturated vapor.
+
+822
+00:27:03,530 --> 00:27:05,449
+At 85 C, you could
+look up what
+
+823
+00:27:05,449 --> 00:27:07,649
+is the saturated liquid?
+
+824
+00:27:07,649 --> 00:27:10,849
+Specific volume at 85
+C, you would have them.
+
+825
+00:27:10,849 --> 00:27:12,410
+And this specific volume
+
+826
+00:27:12,410 --> 00:27:14,129
+in the middle
+is nothing but
+
+827
+00:27:14,129 --> 00:27:18,649
+Vg X plus Vf one minus X.
+
+828
+00:27:18,649 --> 00:27:20,009
+To see if that
+works out, if
+
+829
+00:27:20,009 --> 00:27:21,930
+X was one, right,
+this is gone.
+
+830
+00:27:21,930 --> 00:27:24,090
+You have the specific
+volume of the gas.
+
+831
+00:27:24,090 --> 00:27:27,090
+If X is zero,
+this is gone,
+
+832
+00:27:27,090 --> 00:27:28,730
+and you have the
+specific volume
+
+833
+00:27:28,730 --> 00:27:31,369
+of your liquid there.
+
+834
+00:27:33,920 --> 00:27:38,800
+Okay. Yeah, cool. You
+can go in and do it.
+
+835
+00:27:38,800 --> 00:27:40,199
+Again, this is, you know,
+
+836
+00:27:40,199 --> 00:27:42,040
+my best attempt at
+
+837
+00:27:42,040 --> 00:27:43,199
+showing you essentially
+what it is.
+
+838
+00:27:43,199 --> 00:27:44,919
+So you find that table.
+You click on that.
+
+839
+00:27:44,919 --> 00:27:46,920
+You'd go and find edge 85
+
+840
+00:27:46,920 --> 00:27:48,479
+C. You then pick out
+
+841
+00:27:48,479 --> 00:27:50,679
+what your VG
+and your VF is,
+
+842
+00:27:50,679 --> 00:27:53,699
+and you'd have
+them there, okay?
+
+843
+00:27:53,699 --> 00:27:55,639
+Cool. When I
+was a student,
+
+844
+00:27:55,639 --> 00:27:57,159
+we, like, programmed
+all this in, like,
+
+845
+00:27:57,159 --> 00:27:58,679
+a TI 83 calculator
+to, like,
+
+846
+00:27:58,679 --> 00:27:59,879
+make it fast on
+
+847
+00:27:59,879 --> 00:28:01,719
+a midterm. It was
+brutal, okay?
+
+848
+00:28:01,719 --> 00:28:02,039
+Yeah,
+
+849
+00:28:02,039 --> 00:28:03,519
+so that's what it would
+look like, you know,
+
+850
+00:28:03,519 --> 00:28:05,920
+VFVG you could go in,
+
+851
+00:28:05,920 --> 00:28:07,279
+substitute that value, and
+
+852
+00:28:07,279 --> 00:28:08,840
+then you would
+end up with 1.4,
+
+853
+00:28:08,840 --> 00:28:11,519
+you know, kilograms per
+meter cubed, right?
+
+854
+00:28:11,519 --> 00:28:12,959
+And to check
+yourself, to make
+
+855
+00:28:12,959 --> 00:28:14,639
+sure that you did
+this right, right?
+
+856
+00:28:14,639 --> 00:28:16,160
+That specific volume
+
+857
+00:28:16,160 --> 00:28:17,279
+that you determined there
+
+858
+00:28:17,279 --> 00:28:18,639
+should be
+intermediate between
+
+859
+00:28:18,639 --> 00:28:20,279
+a vapor and a
+liquid, right?
+
+860
+00:28:20,279 --> 00:28:21,719
+If it was less than
+
+861
+00:28:21,719 --> 00:28:23,600
+the liquid or greater
+than the vapor,
+
+862
+00:28:23,600 --> 00:28:24,999
+you did something
+wrong, right?
+
+863
+00:28:24,999 --> 00:28:26,679
+You know, with it.
+That's the kind of
+
+864
+00:28:26,679 --> 00:28:28,879
+critical thinking that one
+
+865
+00:28:28,879 --> 00:28:30,800
+can do for such
+a calculation,
+
+866
+00:28:30,800 --> 00:28:36,049
+all right? Quality, right?
+
+867
+00:28:36,049 --> 00:28:38,890
+All right, good. There's
+other ones, too.
+
+868
+00:28:38,890 --> 00:28:40,569
+So you can go in and
+do compressed liquid.
+
+869
+00:28:40,569 --> 00:28:40,929
+You can do
+
+870
+00:28:40,929 --> 00:28:44,169
+superheated vapor
+for these things.
+
+871
+00:28:44,169 --> 00:28:46,850
+So this is what a
+temperature you know,
+
+872
+00:28:46,850 --> 00:28:47,850
+enthalpy diagram,
+
+873
+00:28:47,850 --> 00:28:49,250
+temperature,
+internal energy.
+
+874
+00:28:49,250 --> 00:28:50,170
+These are two
+other sort of
+
+875
+00:28:50,170 --> 00:28:51,570
+independent properties
+
+876
+00:28:51,570 --> 00:28:53,649
+that we can use.
+
+877
+00:28:53,649 --> 00:28:54,849
+If you wanted to use
+
+878
+00:28:54,849 --> 00:28:56,370
+the superheated
+water vapor,
+
+879
+00:28:56,370 --> 00:28:57,759
+you'd go to table A six.
+
+880
+00:28:57,759 --> 00:28:59,389
+You'd have to know
+what your pressure is.
+
+881
+00:28:59,389 --> 00:29:00,870
+You put in your pressure.
+
+882
+00:29:00,870 --> 00:29:02,549
+You check that your
+temperature is
+
+883
+00:29:02,549 --> 00:29:04,349
+greater than the
+saturation temperature,
+
+884
+00:29:04,349 --> 00:29:05,550
+and then you could start
+
+885
+00:29:05,550 --> 00:29:07,109
+to do what's called
+interpolation.
+
+886
+00:29:07,109 --> 00:29:09,790
+You start to interpolate
+between values.
+
+887
+00:29:09,790 --> 00:29:11,309
+There's compressed
+liquid, again,
+
+888
+00:29:11,309 --> 00:29:13,470
+the same drill,
+no pressure.
+
+889
+00:29:13,470 --> 00:29:15,590
+And, you know, find
+your temperature,
+
+890
+00:29:15,590 --> 00:29:16,949
+the closest one and either
+
+891
+00:29:16,949 --> 00:29:19,189
+select it or
+interpolate with it.
+
+892
+00:29:19,189 --> 00:29:20,389
+Your GSIs will take
+
+893
+00:29:20,389 --> 00:29:21,269
+you through
+some of that if
+
+894
+00:29:21,269 --> 00:29:24,389
+you have questions, okay?
+
+895
+00:29:24,389 --> 00:29:28,079
+But The same thing
+essentially holds.
+
+896
+00:29:28,079 --> 00:29:29,160
+As long as you
+know these sort
+
+897
+00:29:29,160 --> 00:29:30,400
+of two independent
+properties,
+
+898
+00:29:30,400 --> 00:29:31,799
+you'll be able to
+compute everything.
+
+899
+00:29:31,799 --> 00:29:33,719
+So if you said, I have
+a problem here with
+
+900
+00:29:33,719 --> 00:29:36,320
+like 200 C and 150,
+
+901
+00:29:36,320 --> 00:29:38,359
+you know, kpA, you
+
+902
+00:29:38,359 --> 00:29:40,399
+could hazard a guess
+that, like, okay, this,
+
+903
+00:29:40,399 --> 00:29:41,480
+you know, the pressure in
+
+904
+00:29:41,480 --> 00:29:42,560
+this room is
+probably close to
+
+905
+00:29:42,560 --> 00:29:45,919
+what 110, you know,
+
+906
+00:29:45,919 --> 00:29:47,759
+order 100 pA. You
+
+907
+00:29:47,759 --> 00:29:49,279
+can hazard a
+guess that, okay,
+
+908
+00:29:49,279 --> 00:29:50,890
+maybe the pressure
+is, you know,
+
+909
+00:29:50,890 --> 00:29:52,219
+50% higher, but
+
+910
+00:29:52,219 --> 00:29:53,660
+my temperature
+is much higher.
+
+911
+00:29:53,660 --> 00:29:56,019
+200 C. You can hazard
+a guess and say,
+
+912
+00:29:56,019 --> 00:29:58,259
+that's probably maybe
+a superheated vapor.
+
+913
+00:29:58,259 --> 00:30:00,140
+And so these two
+property values
+
+914
+00:30:00,140 --> 00:30:01,699
+together are going
+to be able to tell
+
+915
+00:30:01,699 --> 00:30:05,419
+me everything about
+the system, right?
+
+916
+00:30:05,419 --> 00:30:06,859
+So then what you
+can do right in
+
+917
+00:30:06,859 --> 00:30:09,140
+Python is just put
+your substance,
+
+918
+00:30:09,140 --> 00:30:10,419
+water, put T is
+
+919
+00:30:10,419 --> 00:30:12,579
+that temperature,
+P is that value.
+
+920
+00:30:12,579 --> 00:30:14,179
+And then with
+dot notation,
+
+921
+00:30:14,179 --> 00:30:15,419
+you define this
+object, and
+
+922
+00:30:15,419 --> 00:30:17,579
+then you'd know
+everything t dot U,
+
+923
+00:30:17,579 --> 00:30:19,659
+internal energy, t dot V,
+
+924
+00:30:19,659 --> 00:30:21,539
+specific volume
+and so on and so
+
+925
+00:30:21,539 --> 00:30:23,619
+forth with that, okay?
+
+926
+00:30:23,619 --> 00:30:25,739
+But they're the same
+thing. Actually, doing
+
+927
+00:30:25,739 --> 00:30:27,700
+it this way is going
+to be more accurate.
+
+928
+00:30:27,700 --> 00:30:29,179
+What you'll see
+when you try to do
+
+929
+00:30:29,179 --> 00:30:31,059
+these linear
+interpretations or
+
+930
+00:30:31,059 --> 00:30:33,259
+when you do interpolation
+between values,
+
+931
+00:30:33,259 --> 00:30:34,860
+you're going to see
+that it's assuming
+
+932
+00:30:34,860 --> 00:30:35,580
+like linearity,
+
+933
+00:30:35,580 --> 00:30:36,659
+which may not be
+the case, right?
+
+934
+00:30:36,659 --> 00:30:40,819
+The curves bend
+and all of that.
+
+935
+00:30:40,819 --> 00:30:44,939
+So this would be exact
+if you do it this way.
+
+936
+00:30:44,939 --> 00:30:47,859
+Cool. So to check that,
+
+937
+00:30:47,859 --> 00:30:49,019
+let's see if you
+
+938
+00:30:49,019 --> 00:30:49,939
+know what you're
+talking about here.
+
+939
+00:30:49,939 --> 00:30:50,259
+All right.
+
+940
+00:30:50,259 --> 00:30:52,299
+So in this problem,
+what I want you to do,
+
+941
+00:30:52,299 --> 00:30:54,500
+I'll launch it,
+but essentially
+
+942
+00:30:54,500 --> 00:30:55,899
+look at this plot
+here, right?
+
+943
+00:30:55,899 --> 00:30:58,220
+So I have this diagram
+of a TV diagram.
+
+944
+00:30:58,220 --> 00:30:59,899
+I say I have 50
+kilograms of
+
+945
+00:30:59,899 --> 00:31:02,140
+saturated liquid
+water at ADC.
+
+946
+00:31:02,140 --> 00:31:05,099
+And what are the three
+answers to this?
+
+947
+00:31:05,099 --> 00:31:08,020
+Take like 5 minutes for
+that and then we'll

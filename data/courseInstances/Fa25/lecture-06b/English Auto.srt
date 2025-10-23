@@ -1,0 +1,3348 @@
+1
+00:00:00,000 --> 00:00:02,920
+Okay, so we're talking
+
+2
+00:00:02,920 --> 00:00:07,800
+about the second
+law. Yes, please.
+
+3
+00:00:09,140 --> 00:00:12,340
+Module one is over.
+
+4
+00:00:12,340 --> 00:00:15,780
+No. This is the
+second module, okay?
+
+5
+00:00:15,780 --> 00:00:18,540
+This is the second act
+of our play, okay?
+
+6
+00:00:18,540 --> 00:00:21,260
+Or in our Tour de
+France analysis, right?
+
+7
+00:00:21,260 --> 00:00:22,980
+Now we're entering
+the Pyrenees.
+
+8
+00:00:22,980 --> 00:00:25,020
+We climb a bit, all right?
+
+9
+00:00:25,020 --> 00:00:26,740
+Yeah, so after today,
+
+10
+00:00:26,740 --> 00:00:30,020
+you're going to be
+able to complete these
+
+11
+00:00:30,020 --> 00:00:35,300
+you should be able to
+do the following, okay?
+
+12
+00:00:35,300 --> 00:00:37,860
+Okay, so the first thing
+we're going to start
+
+13
+00:00:37,860 --> 00:00:40,780
+with is the following
+question, okay?
+
+14
+00:00:40,780 --> 00:00:42,340
+Hopefully, following
+
+15
+00:00:42,340 --> 00:00:43,620
+your pre work
+and previewing,
+
+16
+00:00:43,620 --> 00:00:45,300
+I know that you've read
+it all and are on it,
+
+17
+00:00:45,300 --> 00:00:47,380
+so you're going
+to ace it, okay?
+
+18
+00:00:47,380 --> 00:00:48,980
+So a statement, right?
+
+19
+00:00:48,980 --> 00:00:52,020
+Lord Calvin said
+a transformation
+
+20
+00:00:52,020 --> 00:00:54,580
+whose only final
+result is to
+
+21
+00:00:54,580 --> 00:00:56,060
+transform into work heat
+
+22
+00:00:56,060 --> 00:00:57,500
+extracted from a source,
+
+23
+00:00:57,500 --> 00:00:58,820
+which is at the
+same temperature
+
+24
+00:00:58,820 --> 00:01:00,260
+throughout is
+impossible, okay?
+
+25
+00:01:00,260 --> 00:01:01,660
+I'm drawing a diagram of
+
+26
+00:01:01,660 --> 00:01:03,180
+this because I like
+pictures, okay?
+
+27
+00:01:03,180 --> 00:01:05,140
+So here I have a
+heat reservoir
+
+28
+00:01:05,140 --> 00:01:07,105
+at temperature T,
+
+29
+00:01:07,105 --> 00:01:09,270
+Um, heat is being
+transferred from
+
+30
+00:01:09,270 --> 00:01:11,310
+this reservoir into
+a piston. Hold on.
+
+31
+00:01:11,310 --> 00:01:13,230
+It's not active yet
+because I'm slow.
+
+32
+00:01:13,230 --> 00:01:15,550
+I have technical
+problems today.
+
+33
+00:01:15,550 --> 00:01:19,510
+In this isothermal,
+expanding ideal gas,
+
+34
+00:01:19,510 --> 00:01:22,190
+and some work is being
+transferred out, okay?
+
+35
+00:01:22,190 --> 00:01:24,070
+So, give me a second.
+Let me activate
+
+36
+00:01:24,070 --> 00:01:25,190
+the pole because my phone
+
+37
+00:01:25,190 --> 00:01:26,510
+is also misbehaving.
+
+38
+00:01:26,510 --> 00:01:28,470
+It doesn't make me
+want to go onto Module
+
+39
+00:01:28,470 --> 00:01:30,670
+two, either. Let's see.
+
+40
+00:01:30,670 --> 00:01:32,430
+Go to activities, blah,
+
+41
+00:01:32,430 --> 00:01:35,190
+blah, blah. Fall 2025.
+
+42
+00:01:35,190 --> 00:01:36,910
+There's our polls,
+
+43
+00:01:36,910 --> 00:01:41,830
+six B and Calvin's
+statement.
+
+44
+00:01:41,830 --> 00:01:43,190
+Okay, so that's
+active there.
+
+45
+00:01:43,190 --> 00:01:44,970
+Um, And so look at
+
+46
+00:01:44,970 --> 00:01:47,610
+the poll and see
+basically the questions.
+
+47
+00:01:47,610 --> 00:01:50,330
+And then what we're
+going to do is then
+
+48
+00:01:50,330 --> 00:01:51,930
+kind of talk through
+we're going to talk
+
+49
+00:01:51,930 --> 00:01:53,930
+through some
+of that, okay?
+
+50
+00:01:53,930 --> 00:01:55,250
+Are there any
+questions before we
+
+51
+00:01:55,250 --> 00:01:56,850
+get started in
+this activity?
+
+52
+00:01:56,850 --> 00:01:58,650
+Wonderful. Let's go.
+
+53
+00:01:58,650 --> 00:02:01,410
+F. Do,
+
+54
+00:02:01,410 --> 00:02:10,190
+do. Which one do I want?
+
+55
+00:02:10,190 --> 00:02:12,950
+Maybe we want this one.
+
+56
+00:02:12,950 --> 00:02:14,630
+Okay, so there
+was a bunch.
+
+57
+00:02:14,630 --> 00:02:15,990
+So there's several
+versions of this.
+
+58
+00:02:15,990 --> 00:02:18,790
+If you read the
+book, you know,
+
+59
+00:02:18,790 --> 00:02:21,030
+they kind of say
+the same thing,
+
+60
+00:02:21,030 --> 00:02:23,030
+but in different thought
+experiments, okay?
+
+61
+00:02:23,030 --> 00:02:24,590
+So different thought
+experiments there.
+
+62
+00:02:24,590 --> 00:02:27,390
+So, the first thing
+is that, yeah,
+
+63
+00:02:27,390 --> 00:02:28,870
+what we just said, so, you
+
+64
+00:02:28,870 --> 00:02:31,390
+know, is impossible.
+
+65
+00:02:31,390 --> 00:02:33,790
+Alternatively, right,
+it's impossible
+
+66
+00:02:33,790 --> 00:02:35,430
+for any device that
+operates on a cycle
+
+67
+00:02:35,430 --> 00:02:37,790
+to receive heat from
+a single reservoir
+
+68
+00:02:37,790 --> 00:02:39,510
+and produce a net
+amount of work, right?
+
+69
+00:02:39,510 --> 00:02:40,350
+So this whole part that
+
+70
+00:02:40,350 --> 00:02:41,390
+I have to basically
+contract,
+
+71
+00:02:41,390 --> 00:02:42,590
+and in order to contract,
+
+72
+00:02:42,590 --> 00:02:43,870
+it will have to cool.
+
+73
+00:02:43,870 --> 00:02:45,390
+Right? I'll
+basically have to
+
+74
+00:02:45,390 --> 00:02:47,030
+take some heat out
+of that system,
+
+75
+00:02:47,030 --> 00:02:49,670
+cool it in order to
+come back, all right?
+
+76
+00:02:49,670 --> 00:02:50,910
+I'll probably also have
+
+77
+00:02:50,910 --> 00:02:51,550
+to put a little bit of
+
+78
+00:02:51,550 --> 00:02:52,550
+work in to compress.
+
+79
+00:02:52,550 --> 00:02:53,470
+You probably would
+agree with that.
+
+80
+00:02:53,470 --> 00:02:54,230
+I'll have to do that,
+
+81
+00:02:54,230 --> 00:02:55,390
+so I'll have to
+put some work in,
+
+82
+00:02:55,390 --> 00:02:58,070
+and I'll have to take
+some heat out, okay?
+
+83
+00:02:58,390 --> 00:03:05,000
+Now, the first law
+doesn't Put any,
+
+84
+00:03:05,000 --> 00:03:08,160
+let's say, constraints
+on this, right?
+
+85
+00:03:08,160 --> 00:03:09,840
+And here's basically
+a thought experiment,
+
+86
+00:03:09,840 --> 00:03:10,040
+okay?
+
+87
+00:03:10,040 --> 00:03:11,720
+So let's say I
+have some system
+
+88
+00:03:11,720 --> 00:03:13,520
+here, some control volume.
+
+89
+00:03:13,520 --> 00:03:16,120
+I have my single I
+have my reservoir.
+
+90
+00:03:16,120 --> 00:03:18,320
+Remember, reservoir is
+essentially a thing
+
+91
+00:03:18,320 --> 00:03:20,000
+a thermal reservoir
+is a thing
+
+92
+00:03:20,000 --> 00:03:22,040
+where you can transfer
+heat in and out of it,
+
+93
+00:03:22,040 --> 00:03:23,720
+and its temperature
+doesn't change, right?
+
+94
+00:03:23,720 --> 00:03:25,440
+Earth is basically,
+you know,
+
+95
+00:03:25,440 --> 00:03:27,520
+probably, for us, like
+a reservoir, right?
+
+96
+00:03:27,520 --> 00:03:28,640
+You think about geothermal
+
+97
+00:03:28,640 --> 00:03:29,640
+and taking heat
+out, right.
+
+98
+00:03:29,640 --> 00:03:31,920
+So you have a reservoir,
+and you can transfer
+
+99
+00:03:31,920 --> 00:03:34,770
+some heat in, uh, to that.
+
+100
+00:03:34,770 --> 00:03:36,650
+You can transfer
+some work out of it
+
+101
+00:03:36,650 --> 00:03:37,610
+and you can transfer
+
+102
+00:03:37,610 --> 00:03:38,890
+some work into
+it, all right?
+
+103
+00:03:38,890 --> 00:03:40,530
+If I write the first law,
+
+104
+00:03:40,530 --> 00:03:42,570
+right, I could talk
+about a workout,
+
+105
+00:03:42,570 --> 00:03:44,570
+a W in, and a Q in,
+
+106
+00:03:44,570 --> 00:03:46,930
+and I could make those
+things balance, right?
+
+107
+00:03:46,930 --> 00:03:48,970
+So the first law is
+not going to put any,
+
+108
+00:03:48,970 --> 00:03:51,130
+um, you know,
+
+109
+00:03:51,130 --> 00:03:54,530
+it may or may not put
+any some, you know,
+
+110
+00:03:54,530 --> 00:03:58,380
+constraints, um,
+constraints into it, okay?
+
+111
+00:03:58,380 --> 00:04:00,060
+But from the
+second law, right,
+
+112
+00:04:00,060 --> 00:04:00,900
+as we just showed
+
+113
+00:04:00,900 --> 00:04:01,900
+basically in
+that experiment,
+
+114
+00:04:01,900 --> 00:04:03,740
+in order to actually
+do that as a cycle,
+
+115
+00:04:03,740 --> 00:04:05,180
+you would have to
+take some heat
+
+116
+00:04:05,180 --> 00:04:06,260
+out of this in order to
+
+117
+00:04:06,260 --> 00:04:08,860
+make that in order to
+make that work, okay?
+
+118
+00:04:08,860 --> 00:04:10,180
+And that's what this green
+
+119
+00:04:10,180 --> 00:04:13,740
+this Kelvin Pluck
+statement says, okay?
+
+120
+00:04:13,740 --> 00:04:16,840
+It will become clearer
+with time, okay?
+
+121
+00:04:16,840 --> 00:04:20,220
+All right. Yeah, then we
+
+122
+00:04:20,220 --> 00:04:23,060
+have a Clausius
+postulate, okay?
+
+123
+00:04:23,060 --> 00:04:25,540
+So in Clausius, so
+
+124
+00:04:25,540 --> 00:04:27,140
+a transformation whose
+
+125
+00:04:27,140 --> 00:04:28,180
+only final result is to
+
+126
+00:04:28,180 --> 00:04:29,740
+transfer heat
+from a body at
+
+127
+00:04:29,740 --> 00:04:31,380
+a given temperature
+to a body at
+
+128
+00:04:31,380 --> 00:04:33,260
+a higher temperature
+is impossible.
+
+129
+00:04:33,260 --> 00:04:34,020
+The way to think about
+
+130
+00:04:34,020 --> 00:04:35,500
+this experiment
+is the following.
+
+131
+00:04:35,500 --> 00:04:37,180
+I have a control
+volume here.
+
+132
+00:04:37,180 --> 00:04:39,940
+I have it in
+diathermal, right?
+
+133
+00:04:39,940 --> 00:04:41,860
+So it's thermally
+in contact with
+
+134
+00:04:41,860 --> 00:04:43,900
+a reservoir at a
+high temperature
+
+135
+00:04:43,900 --> 00:04:45,820
+and also one at a
+low temperature.
+
+136
+00:04:45,820 --> 00:04:46,700
+And my question is,
+
+137
+00:04:46,700 --> 00:04:49,180
+what direction does
+heat flow here?
+
+138
+00:04:49,900 --> 00:04:56,260
+Loud. High to low,
+yeah. Okay. Okay?
+
+139
+00:04:56,260 --> 00:04:59,580
+Things at high
+concentration
+
+140
+00:04:59,580 --> 00:05:02,340
+tend to move to regions
+of low concentration.
+
+141
+00:05:02,340 --> 00:05:03,460
+That's the second law.
+
+142
+00:05:03,460 --> 00:05:05,060
+That's how I understand
+the second law.
+
+143
+00:05:05,060 --> 00:05:06,420
+You take a balloon, right?
+
+144
+00:05:06,420 --> 00:05:08,580
+It's compressed,
+you pop it,
+
+145
+00:05:08,580 --> 00:05:10,180
+the air expands,
+and it moves out,
+
+146
+00:05:10,180 --> 00:05:12,700
+you spray perfume
+here, and it diffuses,
+
+147
+00:05:12,700 --> 00:05:14,100
+you make something
+hot here
+
+148
+00:05:14,100 --> 00:05:16,180
+and it spreads, okay?
+
+149
+00:05:16,180 --> 00:05:18,580
+So that's essentially
+what, you know,
+
+150
+00:05:18,580 --> 00:05:21,060
+the clauses
+statement is that.
+
+151
+00:05:21,060 --> 00:05:23,260
+So if I have something
+at a high temperature,
+
+152
+00:05:23,260 --> 00:05:24,580
+heat is going
+to flow or be
+
+153
+00:05:24,580 --> 00:05:25,980
+transferred to
+the regions where
+
+154
+00:05:25,980 --> 00:05:27,460
+it's then colder and
+
+155
+00:05:27,460 --> 00:05:29,900
+not the other way
+around, okay?
+
+156
+00:05:30,540 --> 00:05:32,540
+Okay. Cool.
+
+157
+00:05:32,540 --> 00:05:33,700
+You can ask you
+solve things like
+
+158
+00:05:33,700 --> 00:05:35,380
+why is time only
+one direction.
+
+159
+00:05:35,380 --> 00:05:37,260
+Yeah, and you could think
+
+160
+00:05:37,260 --> 00:05:38,660
+about Clausius, okay?
+
+161
+00:05:38,660 --> 00:05:40,100
+Here's the first
+chair of physics
+
+162
+00:05:40,100 --> 00:05:41,740
+at ETH where I used to be.
+
+163
+00:05:41,740 --> 00:05:44,980
+Um Yeah, exactly.
+
+164
+00:05:44,980 --> 00:05:47,300
+And so that's kind
+of a simpler way
+
+165
+00:05:47,300 --> 00:05:50,820
+of of writing it, okay?
+
+166
+00:05:50,820 --> 00:05:53,220
+Cool. He flows by
+
+167
+00:05:53,220 --> 00:05:55,980
+conduction, blah,
+blah, blah.
+
+168
+00:05:56,380 --> 00:05:59,340
+Do I have one
+more? Hold on.
+
+169
+00:05:59,340 --> 00:06:01,700
+Do I have one more
+drawing for you?
+
+170
+00:06:01,700 --> 00:06:04,140
+So rewriting.
+
+171
+00:06:04,140 --> 00:06:11,180
+Mm hm mm. Mm hm mm.
+
+172
+00:06:13,100 --> 00:06:15,940
+Yes, I think for this one,
+
+173
+00:06:15,940 --> 00:06:17,500
+we have a drawing, okay?
+
+174
+00:06:17,500 --> 00:06:20,540
+So this this statement
+
+175
+00:06:20,540 --> 00:06:22,660
+is a little bit
+more tricky.
+
+176
+00:06:22,660 --> 00:06:24,220
+It was more tricky
+for me when I was
+
+177
+00:06:24,220 --> 00:06:27,500
+trying to visualize it.
+
+178
+00:06:27,500 --> 00:06:31,560
+Um, I think that
+
+179
+00:06:31,560 --> 00:06:38,120
+the the way that
+
+180
+00:06:38,120 --> 00:06:39,960
+this statement
+looks like is if we
+
+181
+00:06:39,960 --> 00:06:42,160
+drew a control
+volume here,
+
+182
+00:06:42,160 --> 00:06:45,440
+and I said that, am
+
+183
+00:06:45,440 --> 00:06:48,360
+I saying that I
+have a reservoir?
+
+184
+00:06:48,360 --> 00:06:49,440
+Yes, I'm saying that I
+
+185
+00:06:49,440 --> 00:06:51,480
+have a reservoir
+that's maybe
+
+186
+00:06:51,480 --> 00:06:55,680
+cold and I have a
+reservoir that's hot.
+
+187
+00:06:55,680 --> 00:06:58,600
+If I want to
+spontaneously transfer
+
+188
+00:06:58,600 --> 00:07:02,760
+heat from the cold
+into this like this,
+
+189
+00:07:02,760 --> 00:07:04,720
+this is not
+possible, okay?
+
+190
+00:07:04,720 --> 00:07:08,280
+And this would be analogous
+to the one that I
+
+191
+00:07:08,280 --> 00:07:10,720
+have to the one
+that I have
+
+192
+00:07:10,720 --> 00:07:12,080
+written and
+
+193
+00:07:12,080 --> 00:07:13,640
+to the one that I
+have written here.
+
+194
+00:07:13,640 --> 00:07:15,200
+So this version of, okay,
+
+195
+00:07:15,200 --> 00:07:17,720
+I have some system
+here, whatever that is.
+
+196
+00:07:17,720 --> 00:07:20,160
+I don't have any work
+transferred into it.
+
+197
+00:07:20,160 --> 00:07:23,680
+I cannot pump heat from
+the low temperature.
+
+198
+00:07:23,680 --> 00:07:27,360
+So if TC is less than TH,
+
+199
+00:07:27,360 --> 00:07:29,040
+this is not allowed, okay?
+
+200
+00:07:29,040 --> 00:07:31,200
+For the same reason,
+right, you know,
+
+201
+00:07:31,200 --> 00:07:32,000
+this is not
+allowed because
+
+202
+00:07:32,000 --> 00:07:33,080
+heat would
+basically flow in
+
+203
+00:07:33,080 --> 00:07:37,160
+the opposite direction
+unless what?
+
+204
+00:07:37,160 --> 00:07:39,480
+You have to add
+work, right?
+
+205
+00:07:39,480 --> 00:07:40,920
+And what's that device
+
+206
+00:07:40,920 --> 00:07:43,650
+usually called?
+Compressor, right?
+
+207
+00:07:43,650 --> 00:07:45,130
+So in a heat
+pump, basically,
+
+208
+00:07:45,130 --> 00:07:47,010
+this is your
+compressor here,
+
+209
+00:07:47,010 --> 00:07:51,170
+and you'd have
+some W, some W in.
+
+210
+00:07:51,170 --> 00:07:53,170
+And then, in this
+case, actually,
+
+211
+00:07:53,170 --> 00:07:55,050
+this still wouldn't
+be allowed.
+
+212
+00:07:55,050 --> 00:07:56,370
+What you'd end
+up with is that
+
+213
+00:07:56,370 --> 00:07:57,930
+this is the QH,
+
+214
+00:07:57,930 --> 00:07:59,330
+because if you're
+going to write this as
+
+215
+00:07:59,330 --> 00:08:01,770
+the first law
+for, let's say,
+
+216
+00:08:01,770 --> 00:08:06,330
+a steady operating
+condition here,
+
+217
+00:08:06,330 --> 00:08:07,650
+what enters it has to
+
+218
+00:08:07,650 --> 00:08:09,010
+be equal to what
+goes out, right?
+
+219
+00:08:09,010 --> 00:08:10,970
+So QH then must
+be equal to
+
+220
+00:08:10,970 --> 00:08:13,690
+W in plus QL, right?
+
+221
+00:08:13,690 --> 00:08:14,810
+So if I drew
+this as, like,
+
+222
+00:08:14,810 --> 00:08:15,890
+a control volume,
+
+223
+00:08:15,890 --> 00:08:17,330
+it's under steady
+conditions,
+
+224
+00:08:17,330 --> 00:08:19,250
+what leaves must
+be equal to what's
+
+225
+00:08:19,250 --> 00:08:22,650
+entering, okay? All right.
+
+226
+00:08:23,130 --> 00:08:25,330
+Yeah. So and again,
+
+227
+00:08:25,330 --> 00:08:27,010
+in order to basically
+extract heat from
+
+228
+00:08:27,010 --> 00:08:28,450
+the colder body and
+
+229
+00:08:28,450 --> 00:08:30,170
+move it to the
+warmer body,
+
+230
+00:08:30,170 --> 00:08:32,050
+you have to put
+some work, right?
+
+231
+00:08:32,050 --> 00:08:32,890
+You basically have to put
+
+232
+00:08:32,890 --> 00:08:33,890
+some work in, right?
+
+233
+00:08:33,890 --> 00:08:35,530
+And that's what's
+shown here, right?
+
+234
+00:08:35,530 --> 00:08:38,650
+So this last statement
+that we had here,
+
+235
+00:08:38,650 --> 00:08:39,570
+right, is I can't have
+
+236
+00:08:39,570 --> 00:08:40,730
+a system that
+looks like this.
+
+237
+00:08:40,730 --> 00:08:43,010
+Again, heat,
+essentially pumping
+
+238
+00:08:43,010 --> 00:08:45,530
+having heat move in
+
+239
+00:08:45,530 --> 00:08:46,810
+the exact opposite
+direction
+
+240
+00:08:46,810 --> 00:08:47,850
+as we would
+normally expect
+
+241
+00:08:47,850 --> 00:08:51,090
+without doing some
+work in, all right?
+
+242
+00:08:51,090 --> 00:08:55,410
+And that's the Clausius
+statement, okay?
+
+243
+00:08:55,410 --> 00:08:58,490
+Questions about
+second law?
+
+244
+00:09:01,350 --> 00:09:04,310
+Sure. David, right?
+
+245
+00:09:04,310 --> 00:09:05,870
+Yes. Okay. It's
+a violation
+
+246
+00:09:05,870 --> 00:09:08,630
+of Kevin Clark because.
+
+247
+00:09:10,310 --> 00:09:14,110
+So you can never
+have a heat engine
+
+248
+00:09:14,110 --> 00:09:16,590
+operating on a cycle that
+
+249
+00:09:16,590 --> 00:09:18,870
+has 100% thermal
+efficiency.
+
+250
+00:09:18,870 --> 00:09:20,070
+So I can never have an
+
+251
+00:09:20,070 --> 00:09:21,390
+engine that
+looks like this.
+
+252
+00:09:21,390 --> 00:09:24,590
+So I can't take heat
+from one reservoir,
+
+253
+00:09:24,590 --> 00:09:26,110
+put it into an engine,
+
+254
+00:09:26,110 --> 00:09:29,190
+and only get work network
+out of it, right?
+
+255
+00:09:29,190 --> 00:09:31,110
+I will have to right?
+
+256
+00:09:31,110 --> 00:09:32,150
+I will basically have
+
+257
+00:09:32,150 --> 00:09:34,310
+to take some heat, right?
+
+258
+00:09:34,310 --> 00:09:35,910
+I'll basically have
+to take some heat
+
+259
+00:09:35,910 --> 00:09:38,190
+out of that there, okay?
+
+260
+00:09:38,190 --> 00:09:40,790
+All right. Other
+questions?
+
+261
+00:09:40,790 --> 00:09:43,110
+And this one, I mean,
+at the end of it,
+
+262
+00:09:43,110 --> 00:09:45,030
+it's a more complicated
+way of writing it,
+
+263
+00:09:45,030 --> 00:09:46,750
+but this one makes,
+like, perfect sense,
+
+264
+00:09:46,750 --> 00:09:48,070
+right? This is
+more intuitive.
+
+265
+00:09:48,070 --> 00:09:48,830
+This would basically be
+
+266
+00:09:48,830 --> 00:09:49,870
+a more intuitive thing
+
+267
+00:09:49,870 --> 00:09:51,910
+because heat doesn't
+spontaneously
+
+268
+00:09:51,910 --> 00:09:53,670
+flow from regions
+that are cold to
+
+269
+00:09:53,670 --> 00:09:56,790
+regions that
+are hot, okay?
+
+270
+00:09:57,350 --> 00:09:59,550
+As you might
+want sometimes
+
+271
+00:09:59,550 --> 00:10:01,710
+in a room, okay? Cool.
+
+272
+00:10:01,710 --> 00:10:04,430
+Yeah, so then this
+so the reason
+
+273
+00:10:04,430 --> 00:10:05,390
+why this is important
+
+274
+00:10:05,390 --> 00:10:06,870
+is because for
+a long time,
+
+275
+00:10:06,870 --> 00:10:09,750
+there was a bunch of
+snake oil salesmen
+
+276
+00:10:09,750 --> 00:10:10,990
+out there who
+were trying to,
+
+277
+00:10:10,990 --> 00:10:12,230
+like, come up with devices
+
+278
+00:10:12,230 --> 00:10:13,550
+that could beat
+thermo, right?
+
+279
+00:10:13,550 --> 00:10:15,790
+The only reason why
+we have really the
+
+280
+00:10:15,790 --> 00:10:17,190
+first and the
+second law is
+
+281
+00:10:17,190 --> 00:10:18,710
+because no one's produced,
+
+282
+00:10:18,710 --> 00:10:20,390
+right, a machine that
+
+283
+00:10:20,390 --> 00:10:22,310
+says that it
+doesn't work, okay?
+
+284
+00:10:22,310 --> 00:10:26,390
+You know, these
+are postulates.
+
+285
+00:10:26,390 --> 00:10:27,510
+And believe me,
+there have been some
+
+286
+00:10:27,510 --> 00:10:28,670
+very smart
+people who have,
+
+287
+00:10:28,670 --> 00:10:30,630
+like, looked at that
+and said, you know,
+
+288
+00:10:30,630 --> 00:10:31,550
+I'm going to be able to
+
+289
+00:10:31,550 --> 00:10:32,750
+beat it for
+obvious reasons,
+
+290
+00:10:32,750 --> 00:10:34,630
+if you can beat these
+laws, you could get,
+
+291
+00:10:34,630 --> 00:10:36,950
+right, fantastically
+wealthy, all right?
+
+292
+00:10:36,950 --> 00:10:40,590
+Um, Ava machine.
+
+293
+00:10:40,590 --> 00:10:41,310
+So these kinds of
+
+294
+00:10:41,310 --> 00:10:42,550
+machines that
+violate these laws,
+
+295
+00:10:42,550 --> 00:10:44,150
+they call them
+perpetual mobile
+
+296
+00:10:44,150 --> 00:10:45,510
+or perpetual
+motion machines.
+
+297
+00:10:45,510 --> 00:10:46,910
+And they can be
+stated as, like,
+
+298
+00:10:46,910 --> 00:10:49,030
+either a perpetual
+motion machine
+
+299
+00:10:49,030 --> 00:10:50,630
+of the first kind or
+of the second kind.
+
+300
+00:10:50,630 --> 00:10:52,190
+A perpetual
+motion machine of
+
+301
+00:10:52,190 --> 00:10:53,070
+the first kind means it
+
+302
+00:10:53,070 --> 00:10:54,430
+violates the
+first law, okay?
+
+303
+00:10:54,430 --> 00:10:56,630
+It means that I
+have more energy
+
+304
+00:10:56,630 --> 00:10:58,270
+leaving my control volume,
+
+305
+00:10:58,270 --> 00:10:59,790
+right, my system, that I
+
+306
+00:10:59,790 --> 00:11:01,310
+have energy
+entering, right?
+
+307
+00:11:01,310 --> 00:11:03,070
+And you can't create
+energy, right?
+
+308
+00:11:03,070 --> 00:11:04,750
+It can only be
+transformed, right?
+
+309
+00:11:04,750 --> 00:11:06,670
+So those ones are
+
+310
+00:11:06,670 --> 00:11:08,230
+pretty straightforward
+to analyze.
+
+311
+00:11:08,230 --> 00:11:10,270
+For the second kind, it's
+
+312
+00:11:10,270 --> 00:11:11,990
+a violation of the
+second law, okay?
+
+313
+00:11:11,990 --> 00:11:14,670
+And then usually
+in those cases,
+
+314
+00:11:14,670 --> 00:11:16,070
+it would be right?
+
+315
+00:11:16,070 --> 00:11:17,550
+Maybe a system like that.
+
+316
+00:11:17,550 --> 00:11:19,710
+So I have 100%
+conversion of
+
+317
+00:11:19,710 --> 00:11:22,270
+work from heat on a cycle,
+
+318
+00:11:22,270 --> 00:11:23,150
+but you got to look at it.
+
+319
+00:11:23,150 --> 00:11:24,230
+You got to think
+more about it.
+
+320
+00:11:24,230 --> 00:11:26,750
+It's not maybe as
+straightforward,
+
+321
+00:11:26,750 --> 00:11:28,790
+okay? If you want
+to see an example.
+
+322
+00:11:28,790 --> 00:11:31,230
+So the one with my
+students, you know,
+
+323
+00:11:31,230 --> 00:11:32,430
+my doctoral students,
+
+324
+00:11:32,430 --> 00:11:33,830
+when I would talk
+to them in this,
+
+325
+00:11:33,830 --> 00:11:35,830
+those would be like one
+example, all right?
+
+326
+00:11:35,830 --> 00:11:37,350
+So you have your
+pump, right?
+
+327
+00:11:37,350 --> 00:11:39,550
+You move a fluid. Let's
+say it's like water.
+
+328
+00:11:39,550 --> 00:11:41,710
+I transfer heat into that.
+
+329
+00:11:41,710 --> 00:11:43,110
+So through like a boiler.
+
+330
+00:11:43,110 --> 00:11:44,470
+I run that through
+a turbine.
+
+331
+00:11:44,470 --> 00:11:45,870
+I get network out, and
+
+332
+00:11:45,870 --> 00:11:48,265
+then I run it
+all again, okay?
+
+333
+00:11:48,265 --> 00:11:52,820
+And this doesn't work,
+
+334
+00:11:52,820 --> 00:11:54,700
+okay? It doesn't
+work, right?
+
+335
+00:11:54,700 --> 00:11:56,100
+For the same reason that
+we mentioned before,
+
+336
+00:11:56,100 --> 00:11:57,380
+think about the piston,
+
+337
+00:11:57,380 --> 00:11:58,540
+you could have
+the heat in,
+
+338
+00:11:58,540 --> 00:11:59,820
+you could get
+the work out,
+
+339
+00:11:59,820 --> 00:12:01,140
+but you need to
+return back to
+
+340
+00:12:01,140 --> 00:12:02,580
+the initial state, okay?
+
+341
+00:12:02,580 --> 00:12:03,860
+And you cannot
+return back to
+
+342
+00:12:03,860 --> 00:12:06,340
+the initial state
+without cooling, right?
+
+343
+00:12:06,340 --> 00:12:07,540
+You basically need to cool
+
+344
+00:12:07,540 --> 00:12:08,820
+off the steam here.
+
+345
+00:12:08,820 --> 00:12:10,060
+You got to condense
+it down to
+
+346
+00:12:10,060 --> 00:12:11,380
+a liquid because
+out of this,
+
+347
+00:12:11,380 --> 00:12:12,540
+it's still a vapor, right?
+
+348
+00:12:12,540 --> 00:12:14,140
+So, out of here,
+you'd have a vapor,
+
+349
+00:12:14,140 --> 00:12:15,700
+and that vapor would
+go into a pump.
+
+350
+00:12:15,700 --> 00:12:17,180
+You don't put vapor
+through pumps.
+
+351
+00:12:17,180 --> 00:12:19,220
+No, no, no, all right?
+
+352
+00:12:19,220 --> 00:12:21,580
+And then, right,
+it would basically
+
+353
+00:12:21,580 --> 00:12:23,620
+go back in and be that.
+
+354
+00:12:23,620 --> 00:12:26,780
+This is not something
+that could operate.
+
+355
+00:12:26,780 --> 00:12:28,755
+And in Chapter ten,
+
+356
+00:12:28,755 --> 00:12:30,490
+Or in week ten, we'll get
+
+357
+00:12:30,490 --> 00:12:32,170
+into what are called
+rank in cycles.
+
+358
+00:12:32,170 --> 00:12:33,290
+We'll get into the systems
+
+359
+00:12:33,290 --> 00:12:34,130
+and what they actually
+
+360
+00:12:34,130 --> 00:12:36,890
+should look like to
+operate correctly, okay?
+
+361
+00:12:36,890 --> 00:12:42,250
+Um, Yes, okay?
+That's one thing.
+
+362
+00:12:42,250 --> 00:12:43,890
+The second thing
+is that when
+
+363
+00:12:43,890 --> 00:12:45,450
+we deal with
+the second law,
+
+364
+00:12:45,450 --> 00:12:46,450
+we're going to talk
+
+365
+00:12:46,450 --> 00:12:48,010
+a lot about
+reversible, okay?
+
+366
+00:12:48,010 --> 00:12:49,570
+Reversible,
+right? So what's
+
+367
+00:12:49,570 --> 00:12:51,570
+reversible mean? It
+means that, right?
+
+368
+00:12:51,570 --> 00:12:53,170
+I do something so
+
+369
+00:12:53,170 --> 00:12:54,890
+slowly that I don't
+
+370
+00:12:54,890 --> 00:12:56,010
+really have any
+friction, right?
+
+371
+00:12:56,010 --> 00:12:57,450
+So it's like I
+take a spring
+
+372
+00:12:57,450 --> 00:12:59,130
+and I compress
+it really slow,
+
+373
+00:12:59,130 --> 00:13:00,690
+and then I let it
+go and it comes
+
+374
+00:13:00,690 --> 00:13:02,250
+back to exactly where
+I started, right?
+
+375
+00:13:02,250 --> 00:13:03,490
+The reason why
+we're obsessed
+
+376
+00:13:03,490 --> 00:13:04,770
+with this or why
+we'll use it
+
+377
+00:13:04,770 --> 00:13:05,930
+is it's going
+to help us to
+
+378
+00:13:05,930 --> 00:13:07,490
+understand theoretical
+limits, right?
+
+379
+00:13:07,490 --> 00:13:08,370
+So we're going to be able
+
+380
+00:13:08,370 --> 00:13:09,250
+to understand
+and say, like,
+
+381
+00:13:09,250 --> 00:13:11,330
+is this perpetual
+motion or not, right?
+
+382
+00:13:11,330 --> 00:13:12,985
+Is this something
+that, uh,
+
+383
+00:13:12,985 --> 00:13:15,160
+um, you know, can
+happen physically.
+
+384
+00:13:15,160 --> 00:13:17,120
+One, and then two tells
+you things about,
+
+385
+00:13:17,120 --> 00:13:18,560
+like, what optimum
+could be, right?
+
+386
+00:13:18,560 --> 00:13:20,480
+It's kind of like
+a glass half full,
+
+387
+00:13:20,480 --> 00:13:22,040
+but you look at it
+and you say, okay,
+
+388
+00:13:22,040 --> 00:13:24,000
+assuming these kind
+of idealities,
+
+389
+00:13:24,000 --> 00:13:26,240
+is this like a
+good system, okay?
+
+390
+00:13:26,240 --> 00:13:27,120
+And we're going to talk
+
+391
+00:13:27,120 --> 00:13:29,160
+about reversible,
+all right?
+
+392
+00:13:29,160 --> 00:13:31,120
+Just to remind you what
+that would look like,
+
+393
+00:13:31,120 --> 00:13:33,320
+right in this
+video, right?
+
+394
+00:13:33,320 --> 00:13:34,720
+So we have essentially
+
+395
+00:13:34,720 --> 00:13:35,680
+the same initial states.
+
+396
+00:13:35,680 --> 00:13:37,040
+You do something
+reversibly
+
+397
+00:13:37,040 --> 00:13:38,440
+versus something
+irreversibly,
+
+398
+00:13:38,440 --> 00:13:40,160
+and here you can compress
+a lot more, right?
+
+399
+00:13:40,160 --> 00:13:42,720
+I can do more PDV
+work transfer in,
+
+400
+00:13:42,720 --> 00:13:44,520
+in the case when I
+do it reversibly
+
+401
+00:13:44,520 --> 00:13:46,520
+compared to where it's
+irreversible, right?
+
+402
+00:13:46,520 --> 00:13:47,360
+And what's happening in
+
+403
+00:13:47,360 --> 00:13:49,440
+an irreversible
+case on the right,
+
+404
+00:13:49,440 --> 00:13:59,490
+physically, Yeah.
+
+405
+00:13:59,490 --> 00:14:01,610
+And so basically you
+move them quickly.
+
+406
+00:14:01,610 --> 00:14:03,530
+You create some,
+like, vortices,
+
+407
+00:14:03,530 --> 00:14:05,850
+right, some eddies, the
+fluid moves, right?
+
+408
+00:14:05,850 --> 00:14:06,970
+So you give it
+
+409
+00:14:06,970 --> 00:14:09,730
+some kinetic energy
+or movement there,
+
+410
+00:14:09,730 --> 00:14:11,210
+and then it
+dissipates viscously.
+
+411
+00:14:11,210 --> 00:14:12,330
+Basically, you
+warm it, right?
+
+412
+00:14:12,330 --> 00:14:13,650
+Instead of, like,
+all of that work
+
+413
+00:14:13,650 --> 00:14:15,410
+going in and
+compressing it,
+
+414
+00:14:15,410 --> 00:14:17,010
+it's like in the
+spring example,
+
+415
+00:14:17,010 --> 00:14:18,050
+you heat up the spring.
+
+416
+00:14:18,050 --> 00:14:19,370
+You move too
+quickly, and you
+
+417
+00:14:19,370 --> 00:14:24,210
+have some heating
+there, okay?
+
+418
+00:14:24,210 --> 00:14:25,250
+And so that's why you see
+
+419
+00:14:25,250 --> 00:14:26,410
+the temperature
+here is higher.
+
+420
+00:14:26,410 --> 00:14:27,690
+So when you do
+that irreversibly,
+
+421
+00:14:27,690 --> 00:14:29,130
+it's a higher
+temperature than
+
+422
+00:14:29,130 --> 00:14:31,450
+than the other
+case, all right?
+
+423
+00:14:32,040 --> 00:14:34,120
+Yes, okay?
+
+424
+00:14:34,120 --> 00:14:36,760
+And again, we talked,
+
+425
+00:14:36,760 --> 00:14:38,000
+you know, a
+little bit, you
+
+426
+00:14:38,000 --> 00:14:39,560
+know, about
+efficiency before.
+
+427
+00:14:39,560 --> 00:14:41,200
+But again, when we
+
+428
+00:14:41,200 --> 00:14:42,400
+assume these idealities,
+
+429
+00:14:42,400 --> 00:14:43,520
+we're going to be
+able to set, like,
+
+430
+00:14:43,520 --> 00:14:44,920
+an absolute upper limit
+
+431
+00:14:44,920 --> 00:14:46,400
+of efficiency
+for the system,
+
+432
+00:14:46,400 --> 00:14:47,640
+and this is called
+second law,
+
+433
+00:14:47,640 --> 00:14:50,080
+second law efficiency,
+
+434
+00:14:50,080 --> 00:14:51,520
+it allows you to rank
+and say what's better.
+
+435
+00:14:51,520 --> 00:14:53,080
+And again, kind of
+like a North Star,
+
+436
+00:14:53,080 --> 00:14:54,920
+it guides you. All right?
+
+437
+00:14:54,920 --> 00:14:58,480
+Yeah, so friction,
+mixing, blah, blah, blah,
+
+438
+00:14:58,480 --> 00:15:01,000
+all the fun stuff
+
+439
+00:15:01,000 --> 00:15:03,455
+is what's irreversible,
+all right?
+
+440
+00:15:03,455 --> 00:15:06,270
+Okay, so we did
+perpetual emotion.
+
+441
+00:15:06,270 --> 00:15:10,110
+We talked about
+the second law.
+
+442
+00:15:10,110 --> 00:15:12,910
+I want to get into
+the most ideal, like,
+
+443
+00:15:12,910 --> 00:15:16,270
+the most ideal
+cycle that sets
+
+444
+00:15:16,270 --> 00:15:18,510
+the absolute upper limit
+
+445
+00:15:18,510 --> 00:15:20,510
+of efficiency is
+the Carnal, right?
+
+446
+00:15:20,510 --> 00:15:22,510
+So remember Carnal
+Sadi Carino,
+
+447
+00:15:22,510 --> 00:15:23,950
+he was a French guy.
+
+448
+00:15:23,950 --> 00:15:27,070
+Old man worked, you
+know, for Napoleon.
+
+449
+00:15:27,070 --> 00:15:28,750
+And he was obsessed with
+
+450
+00:15:28,750 --> 00:15:31,510
+making steam engines
+more efficient, okay?
+
+451
+00:15:31,510 --> 00:15:33,290
+Um, And I'll take
+
+452
+00:15:33,290 --> 00:15:35,050
+you through essentially
+what his cycle is,
+
+453
+00:15:35,050 --> 00:15:36,450
+and then we can talk
+about the finding.
+
+454
+00:15:36,450 --> 00:15:39,290
+But in a car no, you
+have four stages, okay?
+
+455
+00:15:39,290 --> 00:15:40,450
+So you have four stages.
+
+456
+00:15:40,450 --> 00:15:42,210
+The first stage is what
+we already looked at
+
+457
+00:15:42,210 --> 00:15:44,770
+the heat in and the
+expansion, right?
+
+458
+00:15:44,770 --> 00:15:47,890
+So I take heat from some
+energy source at TH,
+
+459
+00:15:47,890 --> 00:15:49,930
+and let's say I transfer
+it into the system.
+
+460
+00:15:49,930 --> 00:15:51,490
+This could be a
+piston cylinder,
+
+461
+00:15:51,490 --> 00:15:53,450
+but I transfer
+heat in, and I
+
+462
+00:15:53,450 --> 00:15:55,570
+undergo what's called
+isothermal expansion.
+
+463
+00:15:55,570 --> 00:15:57,485
+So that's the first
+thing that we looked at.
+
+464
+00:15:57,485 --> 00:16:01,000
+The second stage is now
+I take that cylinder,
+
+465
+00:16:01,000 --> 00:16:02,240
+and instead of
+transferring
+
+466
+00:16:02,240 --> 00:16:03,645
+heat in isothermally,
+
+467
+00:16:03,645 --> 00:16:04,920
+I suddenly
+insulate it, okay?
+
+468
+00:16:04,920 --> 00:16:06,240
+It's not a
+practical cycle,
+
+469
+00:16:06,240 --> 00:16:07,965
+but it's a thought
+experiment, okay?
+
+470
+00:16:07,965 --> 00:16:10,000
+And I insulate it,
+and then I allow it
+
+471
+00:16:10,000 --> 00:16:11,800
+to expand
+adiabatically, okay?
+
+472
+00:16:11,800 --> 00:16:13,405
+So I have isothermal
+expansion,
+
+473
+00:16:13,405 --> 00:16:15,840
+then I have
+adiabatic expansion.
+
+474
+00:16:15,840 --> 00:16:17,800
+And during the
+adiabatic expansion,
+
+475
+00:16:17,800 --> 00:16:19,160
+what do you think
+happens to temperature?
+
+476
+00:16:19,160 --> 00:16:20,285
+If I let gas expand,
+
+477
+00:16:20,285 --> 00:16:22,250
+what happens to
+the temperature?
+
+478
+00:16:22,250 --> 00:16:24,690
+All right. So you're
+going to expect
+
+479
+00:16:24,690 --> 00:16:27,570
+basically an
+adiabatic expansion.
+
+480
+00:16:27,570 --> 00:16:28,770
+Your temperature
+is going to
+
+481
+00:16:28,770 --> 00:16:32,450
+go, you know, down.
+
+482
+00:16:32,450 --> 00:16:33,690
+And then at that stage,
+
+483
+00:16:33,690 --> 00:16:35,010
+you're going to
+put this cylinder.
+
+484
+00:16:35,010 --> 00:16:36,330
+You're going to take
+the insulation off.
+
+485
+00:16:36,330 --> 00:16:37,450
+You're going
+to set it onto
+
+486
+00:16:37,450 --> 00:16:38,690
+a colder reservoir.
+
+487
+00:16:38,690 --> 00:16:40,290
+You're going to
+transfer heat out
+
+488
+00:16:40,290 --> 00:16:42,290
+QL that's transferred out,
+
+489
+00:16:42,290 --> 00:16:43,210
+and then you're going to
+
+490
+00:16:43,210 --> 00:16:45,490
+do an adiabatic
+compression.
+
+491
+00:16:45,490 --> 00:16:46,810
+So then you're basically
+going to go in.
+
+492
+00:16:46,810 --> 00:16:49,850
+You're going to compress
+this thing and then
+
+493
+00:16:49,850 --> 00:16:51,410
+basically bring it
+back to the initial
+
+494
+00:16:51,410 --> 00:16:53,410
+state that you had there.
+
+495
+00:16:53,410 --> 00:16:54,570
+So this whole
+part where we had
+
+496
+00:16:54,570 --> 00:16:56,330
+the heat sink and
+the heat out,
+
+497
+00:16:56,330 --> 00:16:57,810
+that's a key aspect of
+
+498
+00:16:57,810 --> 00:16:59,605
+getting it back
+there, all right?
+
+499
+00:16:59,605 --> 00:17:01,960
+Another key attribute
+of the carne,
+
+500
+00:17:01,960 --> 00:17:03,240
+is it doesn't matter about
+
+501
+00:17:03,240 --> 00:17:04,600
+the substance, right?
+
+502
+00:17:04,600 --> 00:17:07,000
+It's independent
+of the substance.
+
+503
+00:17:07,000 --> 00:17:09,680
+All that you care about is
+
+504
+00:17:09,680 --> 00:17:12,760
+the temperature of
+the hot reservoir
+
+505
+00:17:12,760 --> 00:17:14,640
+and the temperature of
+the cold reservoir.
+
+506
+00:17:14,640 --> 00:17:16,480
+And these two
+things together set
+
+507
+00:17:16,480 --> 00:17:18,560
+the efficiency, right?
+
+508
+00:17:18,560 --> 00:17:20,400
+And all systems, okay,
+
+509
+00:17:20,400 --> 00:17:21,280
+if you want to make
+
+510
+00:17:21,280 --> 00:17:24,520
+any thermal engine
+more efficient,
+
+511
+00:17:24,520 --> 00:17:27,640
+you essentially maximize
+the temperature
+
+512
+00:17:27,640 --> 00:17:29,240
+that you get heat from,
+
+513
+00:17:29,240 --> 00:17:30,920
+and you minimize
+the temperature
+
+514
+00:17:30,920 --> 00:17:32,080
+that you transfer
+the heat to.
+
+515
+00:17:32,080 --> 00:17:34,780
+But really, the key
+thing is you know,
+
+516
+00:17:34,780 --> 00:17:36,860
+transferring heat
+from something
+
+517
+00:17:36,860 --> 00:17:38,740
+that's very,
+very hot, okay?
+
+518
+00:17:38,740 --> 00:17:39,620
+That's another thing
+
+519
+00:17:39,620 --> 00:17:40,940
+the first law
+didn't tell you.
+
+520
+00:17:40,940 --> 00:17:42,620
+The first law
+just said that
+
+521
+00:17:42,620 --> 00:17:44,580
+conservation of
+energy, right?
+
+522
+00:17:44,580 --> 00:17:46,940
+So, um, you know,
+
+523
+00:17:46,940 --> 00:17:49,020
+work and heat
+are essentially,
+
+524
+00:17:49,020 --> 00:17:52,100
+you know, equivalent.
+
+525
+00:17:52,100 --> 00:17:54,260
+The second law
+basically says
+
+526
+00:17:54,260 --> 00:17:56,620
+that energy has
+a quality to it,
+
+527
+00:17:56,620 --> 00:17:59,020
+okay, especially with
+heat, all right?
+
+528
+00:17:59,020 --> 00:18:01,260
+The warmer, you know,
+
+529
+00:18:01,260 --> 00:18:02,300
+that something is that
+
+530
+00:18:02,300 --> 00:18:03,460
+you transfer heat from,
+
+531
+00:18:03,460 --> 00:18:04,940
+the better the
+quality is, the
+
+532
+00:18:04,940 --> 00:18:06,460
+more useful it
+is, all right?
+
+533
+00:18:06,460 --> 00:18:07,620
+Okay.
+
+534
+00:18:07,620 --> 00:18:09,300
+Yeah, if you want to then
+
+535
+00:18:09,300 --> 00:18:10,420
+put that onto a cycle.
+
+536
+00:18:10,420 --> 00:18:11,300
+So if you want to then
+
+537
+00:18:11,300 --> 00:18:12,220
+basically see what
+that would look
+
+538
+00:18:12,220 --> 00:18:14,340
+like in a cycle,
+a PV diagram.
+
+539
+00:18:14,340 --> 00:18:15,540
+So here would
+be one to two.
+
+540
+00:18:15,540 --> 00:18:17,780
+So the black lines are
+your isotherms, right?
+
+541
+00:18:17,780 --> 00:18:19,500
+So I'm transferring
+heat in one to two.
+
+542
+00:18:19,500 --> 00:18:22,180
+I'm also doing
+expansion PV work.
+
+543
+00:18:22,180 --> 00:18:25,340
+Adiabatic expansion,
+
+544
+00:18:25,340 --> 00:18:28,300
+isothermal compression,
+
+545
+00:18:28,300 --> 00:18:31,420
+adiabatic
+compression, right?
+
+546
+00:18:31,420 --> 00:18:33,660
+And the network then
+is the area that's
+
+547
+00:18:33,660 --> 00:18:34,700
+shaded there and
+
+548
+00:18:34,700 --> 00:18:36,900
+the heat transfer
+processes are shown.
+
+549
+00:18:36,900 --> 00:18:39,140
+You can also do
+that on unpols
+
+550
+00:18:39,140 --> 00:18:40,500
+if you want to launch
+that notebook,
+
+551
+00:18:40,500 --> 00:18:42,300
+you can also see then what
+
+552
+00:18:42,300 --> 00:18:44,380
+this process
+looks like, okay?
+
+553
+00:18:44,380 --> 00:18:47,540
+Cool. So I put
+
+554
+00:18:47,540 --> 00:18:49,140
+some of you to
+sleep. Yes, please.
+
+555
+00:18:49,140 --> 00:18:56,500
+Question? So if you
+were a efficiency.
+
+556
+00:18:56,500 --> 00:18:57,940
+But it's not a
+cycle, right?
+
+557
+00:18:57,940 --> 00:18:58,940
+Because you
+don't basically
+
+558
+00:18:58,940 --> 00:19:00,900
+come back to the
+initial state.
+
+559
+00:19:02,400 --> 00:19:05,280
+If you want to get back
+to where you started,
+
+560
+00:19:05,280 --> 00:19:06,000
+and this is what
+
+561
+00:19:06,000 --> 00:19:07,120
+we'll work through
+to basically
+
+562
+00:19:07,120 --> 00:19:09,200
+get back where you
+started and run a cycle,
+
+563
+00:19:09,200 --> 00:19:10,760
+if you put heat
+in, you're going
+
+564
+00:19:10,760 --> 00:19:12,680
+to have to take
+heat out, okay?
+
+565
+00:19:12,680 --> 00:19:14,600
+And for the ones
+we've looked at here,
+
+566
+00:19:14,600 --> 00:19:16,600
+we're going to also be
+putting some work in.
+
+567
+00:19:16,600 --> 00:19:19,400
+So there's going to
+be like heat in,
+
+568
+00:19:19,400 --> 00:19:22,680
+work out, heat out,
+work in, right?
+
+569
+00:19:22,680 --> 00:19:25,720
+And those four
+things that I
+
+570
+00:19:25,720 --> 00:19:26,440
+mentioned there are going
+
+571
+00:19:26,440 --> 00:19:27,240
+to form the basis and
+
+572
+00:19:27,240 --> 00:19:27,720
+of a lot of
+
+573
+00:19:27,720 --> 00:19:29,040
+the cycles we're
+going to look at.
+
+574
+00:19:29,040 --> 00:19:31,160
+Okay? Yes, please.
+What does a graph look
+
+575
+00:19:31,160 --> 00:19:31,720
+like when it's more
+
+576
+00:19:31,720 --> 00:19:33,480
+efficient versus
+less efficient?
+
+577
+00:19:33,480 --> 00:19:34,840
+What does it look
+like when it's more
+
+578
+00:19:34,840 --> 00:19:38,600
+efficient versus
+less efficient?
+
+579
+00:19:38,600 --> 00:19:41,880
+So how to answer that.
+
+580
+00:19:41,880 --> 00:19:45,640
+Um, I'm avoiding
+saying a word.
+
+581
+00:19:45,640 --> 00:19:48,680
+I have to avoid a
+property to get it.
+
+582
+00:19:48,680 --> 00:19:54,000
+I will say for now,
+that really, you know,
+
+583
+00:19:54,000 --> 00:19:57,440
+if I have a very high
+temperature source and
+
+584
+00:19:57,440 --> 00:20:01,040
+a relatively low
+temperature sink
+
+585
+00:20:01,040 --> 00:20:02,280
+that I'm
+transferring from,
+
+586
+00:20:02,280 --> 00:20:03,640
+this is essentially
+going to be
+
+587
+00:20:03,640 --> 00:20:06,160
+what, you know, what
+matters the most.
+
+588
+00:20:06,160 --> 00:20:07,320
+The rest of these
+things are going
+
+589
+00:20:07,320 --> 00:20:08,680
+to be little details
+that are there,
+
+590
+00:20:08,680 --> 00:20:10,120
+but to a leading order,
+
+591
+00:20:10,120 --> 00:20:11,040
+that's what it is.
+
+592
+00:20:11,040 --> 00:20:12,000
+And that's what
+you think about.
+
+593
+00:20:12,000 --> 00:20:14,100
+If you look, for
+example, um,
+
+594
+00:20:14,100 --> 00:20:15,920
+You know, what
+sets essentially,
+
+595
+00:20:15,920 --> 00:20:17,280
+like the limits of
+efficiencies on
+
+596
+00:20:17,280 --> 00:20:19,280
+our engines now is
+that metal melts,
+
+597
+00:20:19,280 --> 00:20:21,120
+right? Like, you
+could go higher.
+
+598
+00:20:21,120 --> 00:20:22,240
+You do combustion, right?
+
+599
+00:20:22,240 --> 00:20:23,080
+You could do, you know,
+
+600
+00:20:23,080 --> 00:20:25,360
+nuclear, you concentrate
+solar, right?
+
+601
+00:20:25,360 --> 00:20:27,360
+But what sets, like
+the limit then of
+
+602
+00:20:27,360 --> 00:20:28,640
+the efficiencies
+of these things
+
+603
+00:20:28,640 --> 00:20:29,920
+is that at some point,
+
+604
+00:20:29,920 --> 00:20:32,960
+you know, steel stainless
+steel melts, right?
+
+605
+00:20:32,960 --> 00:20:35,040
+That's in there, the
+turbines go away,
+
+606
+00:20:35,040 --> 00:20:37,000
+even like some
+combustion ones, right?
+
+607
+00:20:37,000 --> 00:20:40,200
+Think about aircraft
+and stuff, too.
+
+608
+00:20:40,200 --> 00:20:42,080
+Yeah, you'd love
+to go hotter,
+
+609
+00:20:42,080 --> 00:20:43,560
+but materials that's why
+
+610
+00:20:43,560 --> 00:20:45,200
+we have this beautiful
+building, you know,
+
+611
+00:20:45,200 --> 00:20:46,920
+material scientists who
+do really good work
+
+612
+00:20:46,920 --> 00:20:48,360
+to try to make these
+things survive it.
+
+613
+00:20:48,360 --> 00:20:48,880
+Yes, please.
+
+614
+00:20:48,880 --> 00:20:54,100
+So 100% efficiency.
+Is not possible.
+
+615
+00:20:54,100 --> 00:20:55,060
+Full stop.
+
+616
+00:20:55,060 --> 00:21:00,380
+What's the highest
+efficiency? Of what?
+
+617
+00:21:00,380 --> 00:21:02,300
+Of an engine. So if you
+
+618
+00:21:02,300 --> 00:21:03,740
+want to talk about
+efficiencies of,
+
+619
+00:21:03,740 --> 00:21:05,700
+like, a modern
+power plant,
+
+620
+00:21:05,700 --> 00:21:07,100
+steam electric
+power plant,
+
+621
+00:21:07,100 --> 00:21:08,300
+those things are north of
+
+622
+00:21:08,300 --> 00:21:11,300
+40 to 50%, right,
+efficient.
+
+623
+00:21:11,300 --> 00:21:14,420
+What did they start
+with? 1%, right?
+
+624
+00:21:14,420 --> 00:21:15,820
+Like, what, in
+his day when he
+
+625
+00:21:15,820 --> 00:21:16,700
+was doing steam engines,
+
+626
+00:21:16,700 --> 00:21:17,380
+these things were, like,
+
+627
+00:21:17,380 --> 00:21:19,380
+less than a
+percent efficient,
+
+628
+00:21:19,380 --> 00:21:20,340
+and then with time,
+
+629
+00:21:20,340 --> 00:21:22,100
+they've gotten
+much better.
+
+630
+00:21:22,100 --> 00:21:24,500
+It also depends on what
+you call efficiency.
+
+631
+00:21:24,500 --> 00:21:25,420
+So on this campus,
+
+632
+00:21:25,420 --> 00:21:26,900
+we used to do
+co generation.
+
+633
+00:21:26,900 --> 00:21:29,300
+So it's co generation.
+I put heat in.
+
+634
+00:21:29,300 --> 00:21:32,180
+I run, you know, so I
+do combustion, right?
+
+635
+00:21:32,180 --> 00:21:36,300
+I run a a turbine, I
+generate electricity.
+
+636
+00:21:36,300 --> 00:21:37,780
+I have that heat
+that comes out.
+
+637
+00:21:37,780 --> 00:21:39,540
+That heat that comes
+out, if it comes out at
+
+638
+00:21:39,540 --> 00:21:40,580
+a high enough temperature,
+
+639
+00:21:40,580 --> 00:21:41,340
+can be useful, right?
+
+640
+00:21:41,340 --> 00:21:43,580
+You can then do district
+heating, right?
+
+641
+00:21:43,580 --> 00:21:45,260
+And so in those cases,
+
+642
+00:21:45,260 --> 00:21:47,260
+depending on how one
+defines efficiencies,
+
+643
+00:21:47,260 --> 00:21:49,100
+those things might
+be north of 80%,
+
+644
+00:21:49,100 --> 00:21:50,540
+90%, okay?
+
+645
+00:21:50,540 --> 00:21:52,100
+Because then
+the heat, it's
+
+646
+00:21:52,100 --> 00:21:53,900
+not wasted, it's
+used, okay?
+
+647
+00:21:53,900 --> 00:21:55,220
+And we want to
+know what, like,
+
+648
+00:21:55,220 --> 00:21:57,140
+the biggest problem is
+we have today is we
+
+649
+00:21:57,140 --> 00:21:57,740
+have a ton of
+
+650
+00:21:57,740 --> 00:21:59,260
+waste heat out of
+a data center,
+
+651
+00:21:59,260 --> 00:22:00,980
+and we just, like, reject
+
+652
+00:22:00,980 --> 00:22:02,460
+it to, like,
+the atmosphere.
+
+653
+00:22:02,460 --> 00:22:03,420
+And they call it
+free cooling.
+
+654
+00:22:03,420 --> 00:22:04,780
+And there's nothing
+free about that.
+
+655
+00:22:04,780 --> 00:22:07,060
+That's, like, insane.
+
+656
+00:22:07,060 --> 00:22:12,060
+Yes. Okay. Other
+questions?
+
+657
+00:22:12,310 --> 00:22:15,390
+All right. So here's
+what I want to do.
+
+658
+00:22:15,390 --> 00:22:16,550
+So basically, let's look.
+
+659
+00:22:16,550 --> 00:22:17,630
+So let's get into a little
+
+660
+00:22:17,630 --> 00:22:18,750
+bit of perpetual motion.
+
+661
+00:22:18,750 --> 00:22:19,910
+I mean, bear with
+me for this.
+
+662
+00:22:19,910 --> 00:22:22,270
+I appreciate you guys
+staying with me today,
+
+663
+00:22:22,270 --> 00:22:23,990
+but we have one of
+these carno cycle.
+
+664
+00:22:23,990 --> 00:22:25,430
+Remember, we're
+transferring heat
+
+665
+00:22:25,430 --> 00:22:27,470
+in from something at
+constant temperature,
+
+666
+00:22:27,470 --> 00:22:29,350
+and then we're
+rejecting it to
+
+667
+00:22:29,350 --> 00:22:29,990
+something that's also
+
+668
+00:22:29,990 --> 00:22:31,110
+at a constant temperature,
+
+669
+00:22:31,110 --> 00:22:32,350
+but but it's lower.
+
+670
+00:22:32,350 --> 00:22:33,590
+Let me launch the poll and
+
+671
+00:22:33,590 --> 00:22:35,470
+then can discuss
+with this.
+
+672
+00:22:35,470 --> 00:22:37,390
+Blah, blah, blah.
+
+673
+00:22:37,390 --> 00:22:41,030
+Here. Okay. There we go.
+
+674
+00:22:41,030 --> 00:22:50,050
+Um All right, so you
+want to be stingy, okay?
+
+675
+00:22:50,050 --> 00:22:50,930
+Just like I showed
+
+676
+00:22:50,930 --> 00:22:52,650
+you with the
+other machine,
+
+677
+00:22:52,650 --> 00:22:54,570
+the perpetual motion, and
+
+678
+00:22:54,570 --> 00:22:56,530
+you want to
+decrease QL, okay?
+
+679
+00:22:56,530 --> 00:22:57,730
+Instead of compressing
+
+680
+00:22:57,730 --> 00:22:59,810
+isothermally from
+state three to four,
+
+681
+00:22:59,810 --> 00:23:02,130
+you decided to do it
+adiabatically, okay?
+
+682
+00:23:02,130 --> 00:23:03,970
+Right? So you're
+at state three,
+
+683
+00:23:03,970 --> 00:23:05,330
+and instead of
+going to four,
+
+684
+00:23:05,330 --> 00:23:07,690
+you do adiabatic
+compression.
+
+685
+00:23:07,690 --> 00:23:08,570
+So the first question is
+
+686
+00:23:08,570 --> 00:23:09,890
+what state do
+you end up at?
+
+687
+00:23:09,890 --> 00:23:11,450
+And two, what do
+you expect to
+
+688
+00:23:11,450 --> 00:23:14,725
+happen to Wt out, okay?
+
+689
+00:23:14,725 --> 00:23:18,520
+Really appreciate your
+support in the class.
+
+690
+00:23:18,520 --> 00:23:19,320
+Look through this.
+
+691
+00:23:19,320 --> 00:23:20,080
+And if you get this,
+
+692
+00:23:20,080 --> 00:23:21,520
+you understand the
+second law, and,
+
+693
+00:23:21,520 --> 00:23:22,800
+you know, the rest
+of this course
+
+694
+00:23:22,800 --> 00:23:24,040
+is going to be
+very easy for you.
+
+695
+00:23:24,040 --> 00:23:26,040
+Okay? If you have
+questions, I'm circulating.
+
+696
+00:23:26,040 --> 00:23:29,200
+D do, did do. Okay.
+
+697
+00:23:29,200 --> 00:23:31,090
+Um Yeah,
+
+698
+00:23:31,090 --> 00:23:32,130
+so this is what's called
+
+699
+00:23:32,130 --> 00:23:34,210
+the fully
+reversible cycle.
+
+700
+00:23:34,210 --> 00:23:37,970
+You know, you can
+
+701
+00:23:37,970 --> 00:23:40,370
+basically you can
+reverse this thing.
+
+702
+00:23:40,370 --> 00:23:41,770
+And if you run
+it in reverse,
+
+703
+00:23:41,770 --> 00:23:43,970
+instead of it being
+a thermal engine,
+
+704
+00:23:43,970 --> 00:23:45,330
+it is a heat pump, okay?
+
+705
+00:23:45,330 --> 00:23:46,770
+So you can run a Karno to
+
+706
+00:23:46,770 --> 00:23:48,250
+produce, you know, power,
+
+707
+00:23:48,250 --> 00:23:52,250
+but you can also run
+a Karno to pump heat.
+
+708
+00:23:52,250 --> 00:23:55,090
+It's just that
+one is clockwise,
+
+709
+00:23:55,090 --> 00:23:57,810
+and the heat pump is
+counterclockwise, right,
+
+710
+00:23:57,810 --> 00:24:00,690
+in terms of the way
+the directions look.
+
+711
+00:24:00,690 --> 00:24:02,530
+And with that, I'm
+going to close it.
+
+712
+00:24:02,530 --> 00:24:03,130
+Thank you so much,
+
+713
+00:24:03,130 --> 00:24:04,330
+Dave, for your
+participation,
+
+714
+00:24:04,330 --> 00:24:05,530
+me giving you
+two questions.
+
+715
+00:24:05,530 --> 00:24:07,210
+I love that. Also the
+answers in the debate.
+
+716
+00:24:07,210 --> 00:24:08,610
+If you have any
+questions, I'm up here.
+
+717
+00:24:08,610 --> 00:24:10,010
+Thank you.

@@ -1,0 +1,4810 @@
+1
+00:00:01,080 --> 00:00:03,279
+All right, I got 210.
+
+2
+00:00:03,279 --> 00:00:05,040
+So today we're
+talking about
+
+3
+00:00:05,040 --> 00:00:08,920
+property tables
+and ideal gas.
+
+4
+00:00:08,920 --> 00:00:10,160
+Before we get started,
+
+5
+00:00:10,160 --> 00:00:11,520
+just some words.
+All right.
+
+6
+00:00:11,520 --> 00:00:12,560
+So in the first problem,
+
+7
+00:00:12,560 --> 00:00:13,720
+a lot of these problems,
+
+8
+00:00:13,720 --> 00:00:19,139
+when you do it Okay.
+
+9
+00:00:19,940 --> 00:00:22,180
+So when you use problems
+
+10
+00:00:22,180 --> 00:00:23,300
+there, a lot of the ones,
+
+11
+00:00:23,300 --> 00:00:24,139
+especially when you like
+
+12
+00:00:24,139 --> 00:00:24,979
+property tables in that,
+
+13
+00:00:24,979 --> 00:00:26,339
+you're able to open
+this workbook.
+
+14
+00:00:26,339 --> 00:00:27,779
+This workbook is
+essentially like
+
+15
+00:00:27,779 --> 00:00:30,339
+a constrained
+Jupyter notebook.
+
+16
+00:00:30,339 --> 00:00:32,099
+It has, like, pre
+installed packages,
+
+17
+00:00:32,099 --> 00:00:34,059
+like PiKlor and
+all of that.
+
+18
+00:00:34,059 --> 00:00:35,859
+Right? So if you open
+that and launch it,
+
+19
+00:00:35,859 --> 00:00:36,379
+you're going to see
+
+20
+00:00:36,379 --> 00:00:37,779
+the actual Jupyter
+Notebook there.
+
+21
+00:00:37,779 --> 00:00:38,819
+If you double click on it,
+
+22
+00:00:38,819 --> 00:00:39,579
+you have this
+thing, right?
+
+23
+00:00:39,579 --> 00:00:40,859
+So in most of the
+problems, you have
+
+24
+00:00:40,859 --> 00:00:42,339
+an identical template to
+
+25
+00:00:42,339 --> 00:00:43,779
+this also in the
+practice ones,
+
+26
+00:00:43,779 --> 00:00:45,259
+and this is going to
+be the same exact one
+
+27
+00:00:45,259 --> 00:00:46,659
+that you will see
+in a quiz, right?
+
+28
+00:00:46,659 --> 00:00:48,099
+So the idea is that
+you practice on
+
+29
+00:00:48,099 --> 00:00:49,299
+actually what
+I'll test you on.
+
+30
+00:00:49,299 --> 00:00:50,699
+I'm not to trick you.
+
+31
+00:00:50,699 --> 00:00:53,739
+Like, not in this
+class anyways, okay?
+
+32
+00:00:53,739 --> 00:00:55,739
+So yeah, if you
+click on that,
+
+33
+00:00:55,739 --> 00:00:57,659
+you can then run through a
+
+34
+00:00:57,659 --> 00:01:01,219
+and see that? That's one.
+
+35
+00:01:01,780 --> 00:01:03,659
+The second thing is
+
+36
+00:01:03,659 --> 00:01:05,459
+that I don't see this now.
+
+37
+00:01:05,459 --> 00:01:05,979
+I did out of
+
+38
+00:01:05,979 --> 00:01:07,939
+these slides and
+now I don't see it,
+
+39
+00:01:07,939 --> 00:01:14,460
+is that when you use Pi
+Killor with numbers,
+
+40
+00:01:14,460 --> 00:01:17,059
+it needs units. This
+is not a math class.
+
+41
+00:01:17,059 --> 00:01:19,180
+It may be quite mathy,
+but it's engineering.
+
+42
+00:01:19,180 --> 00:01:21,459
+In engineering, you got
+to give a unit to it.
+
+43
+00:01:21,459 --> 00:01:22,899
+And so a lot of the book
+
+44
+00:01:22,899 --> 00:01:24,379
+problems and all of
+that will give things
+
+45
+00:01:24,379 --> 00:01:28,179
+an MPA as an input,
+especially on pressure.
+
+46
+00:01:28,179 --> 00:01:31,499
+Calvin is an
+input for like
+
+47
+00:01:31,499 --> 00:01:33,660
+a default input
+for Pi killor
+
+48
+00:01:33,660 --> 00:01:36,390
+also as the um
+as the output.
+
+49
+00:01:36,390 --> 00:01:38,549
+Unfortunately,
+the default input
+
+50
+00:01:38,549 --> 00:01:39,310
+or fortunately,
+
+51
+00:01:39,310 --> 00:01:40,389
+it really depends
+on the problem.
+
+52
+00:01:40,389 --> 00:01:41,749
+The default input in
+
+53
+00:01:41,749 --> 00:01:43,309
+pressure is
+like KPA, okay?
+
+54
+00:01:43,309 --> 00:01:44,669
+So I recommend, you know,
+
+55
+00:01:44,669 --> 00:01:45,949
+when you work at
+these problems, like,
+
+56
+00:01:45,949 --> 00:01:47,749
+declare your
+units, you know,
+
+57
+00:01:47,749 --> 00:01:49,189
+if you have them in
+there and, you know,
+
+58
+00:01:49,189 --> 00:01:51,469
+and sort of best
+practice with that.
+
+59
+00:01:51,469 --> 00:01:52,349
+So if anyone had
+
+60
+00:01:52,349 --> 00:01:53,709
+trouble with a
+problem like this,
+
+61
+00:01:53,709 --> 00:01:55,589
+especially a
+programming one,
+
+62
+00:01:55,589 --> 00:01:57,069
+that's probably
+the source of
+
+63
+00:01:57,069 --> 00:01:59,190
+the errors that you
+haven't declared.
+
+64
+00:01:59,190 --> 00:02:00,909
+The unit for that,
+you've just put
+
+65
+00:02:00,909 --> 00:02:02,429
+P equals, you know,
+
+66
+00:02:02,429 --> 00:02:03,870
+P and then not declared
+
+67
+00:02:03,870 --> 00:02:05,069
+that actually that
+pressure variable
+
+68
+00:02:05,069 --> 00:02:08,030
+is an NPA, okay? Units.
+
+69
+00:02:08,030 --> 00:02:12,490
+Questions about
+this? Okay. The GSI,
+
+70
+00:02:12,490 --> 00:02:13,970
+Cassiine McCormick
+could post
+
+71
+00:02:13,970 --> 00:02:15,009
+like a YouTube video that
+
+72
+00:02:15,009 --> 00:02:16,169
+goes along with
+the problem
+
+73
+00:02:16,169 --> 00:02:17,570
+from Homework one,
+
+74
+00:02:17,570 --> 00:02:19,650
+hopefully that'll
+assist you, okay?
+
+75
+00:02:19,650 --> 00:02:22,330
+All right. So
+are we today?
+
+76
+00:02:22,330 --> 00:02:23,970
+We're going to talk
+about ideal gas, right?
+
+77
+00:02:23,970 --> 00:02:26,410
+Give it go deeper
+
+78
+00:02:26,410 --> 00:02:28,130
+into that and
+how it stands in
+
+79
+00:02:28,130 --> 00:02:32,050
+contrast to other
+equations of state
+
+80
+00:02:32,050 --> 00:02:34,209
+that you can use
+and essentially
+
+81
+00:02:34,209 --> 00:02:35,010
+get into the ones
+where we can
+
+82
+00:02:35,010 --> 00:02:36,370
+predict, like
+phase transitions.
+
+83
+00:02:36,370 --> 00:02:37,770
+That's what we care
+about with water, right?
+
+84
+00:02:37,770 --> 00:02:39,929
+The fact that
+there is a phase
+
+85
+00:02:39,929 --> 00:02:41,610
+transition right
+a lot of times.
+
+86
+00:02:41,610 --> 00:02:43,410
+And we'll also talk
+about go deeper
+
+87
+00:02:43,410 --> 00:02:45,250
+into these two concepts
+of this constant.
+
+88
+00:02:45,250 --> 00:02:47,610
+I said before, like Q
+is equal to C Delta T,
+
+89
+00:02:47,610 --> 00:02:49,489
+the meaning of those C's.
+
+90
+00:02:49,489 --> 00:02:51,769
+All right? Okay,
+so a refresher,
+
+91
+00:02:51,769 --> 00:02:53,810
+right, for a pure
+substance, right?
+
+92
+00:02:53,810 --> 00:02:54,890
+Before, if I take
+
+93
+00:02:54,890 --> 00:02:56,370
+two independent
+variables, right?
+
+94
+00:02:56,370 --> 00:02:58,090
+I can compute a
+dependent one.
+
+95
+00:02:58,090 --> 00:03:00,210
+An ideal gas is,
+um, let's say,
+
+96
+00:03:00,210 --> 00:03:02,889
+like air or nitrogen
+is a pure substance.
+
+97
+00:03:02,889 --> 00:03:03,810
+So that means that if
+
+98
+00:03:03,810 --> 00:03:05,009
+I take pressure
+and volume,
+
+99
+00:03:05,009 --> 00:03:05,730
+I should be able to know
+
+100
+00:03:05,730 --> 00:03:06,809
+temperature out
+of there, right?
+
+101
+00:03:06,809 --> 00:03:08,330
+So PV I should be
+able to get the,
+
+102
+00:03:08,330 --> 00:03:10,810
+um, uh, the
+temperature of it.
+
+103
+00:03:10,810 --> 00:03:11,610
+If you want to, like,
+
+104
+00:03:11,610 --> 00:03:12,849
+understand the form
+of the equation,
+
+105
+00:03:12,849 --> 00:03:14,050
+right? It's PV and T.
+
+106
+00:03:14,050 --> 00:03:15,490
+I put them on the
+left hand side,
+
+107
+00:03:15,490 --> 00:03:18,210
+then that equation
+should be equal to,
+
+108
+00:03:18,210 --> 00:03:20,420
+uh to zero, right?
+
+109
+00:03:20,420 --> 00:03:22,870
+Okay. There's
+two ways that
+
+110
+00:03:22,870 --> 00:03:25,390
+you will see
+the ideal gas.
+
+111
+00:03:25,390 --> 00:03:26,870
+Normally, how
+it's taught in
+
+112
+00:03:26,870 --> 00:03:28,110
+chemistry is
+like this form,
+
+113
+00:03:28,110 --> 00:03:30,190
+PV equals N, right,
+
+114
+00:03:30,190 --> 00:03:31,750
+which is moles, all right?
+
+115
+00:03:31,750 --> 00:03:33,030
+RU, which is
+
+116
+00:03:33,030 --> 00:03:35,950
+the universal gas
+constant right in
+
+117
+00:03:35,950 --> 00:03:38,110
+joules per mole
+per degrees
+
+118
+00:03:38,110 --> 00:03:41,430
+Celsius N times
+temperature, all right?
+
+119
+00:03:41,430 --> 00:03:43,830
+So when you see it
+in this form, right,
+
+120
+00:03:43,830 --> 00:03:44,950
+you need to take
+care of the fact
+
+121
+00:03:44,950 --> 00:03:46,230
+that that N is in moles.
+
+122
+00:03:46,230 --> 00:03:48,190
+And remember that the
+temperature here that
+
+123
+00:03:48,190 --> 00:03:51,334
+you're dealing with
+is in what unit?
+
+124
+00:03:51,334 --> 00:03:53,440
+Kelvin, okay?
+
+125
+00:03:53,440 --> 00:03:55,720
+The way to check
+yourself is, like,
+
+126
+00:03:55,720 --> 00:03:57,320
+put in Celsius at
+
+127
+00:03:57,320 --> 00:03:58,200
+the freezing point of
+
+128
+00:03:58,200 --> 00:03:59,879
+water or the melting
+point of water.
+
+129
+00:03:59,879 --> 00:04:01,280
+And then, like, what is
+
+130
+00:04:01,280 --> 00:04:02,120
+the pressure that you
+
+131
+00:04:02,120 --> 00:04:03,840
+would have at
+that condition?
+
+132
+00:04:04,320 --> 00:04:07,239
+What are, like, the two
+potential solutions
+
+133
+00:04:07,239 --> 00:04:08,320
+to pressure that you could
+
+134
+00:04:08,320 --> 00:04:10,639
+have for substituting
+zero degrees
+
+135
+00:04:10,639 --> 00:04:12,560
+Celsius into that formula?
+
+136
+00:04:12,560 --> 00:04:17,079
+Zero or Infinity, you
+know, and beyond, okay?
+
+137
+00:04:17,079 --> 00:04:18,800
+So to avoid Buzz Aldrin
+
+138
+00:04:18,800 --> 00:04:20,200
+and whatever, you know,
+
+139
+00:04:20,200 --> 00:04:21,039
+type stuff there,
+
+140
+00:04:21,039 --> 00:04:23,799
+basically stay with
+Kelvin, all right?
+
+141
+00:04:23,799 --> 00:04:29,539
+Um Okay, that's one thing,
+
+142
+00:04:29,539 --> 00:04:32,739
+right? It is related.
+
+143
+00:04:32,739 --> 00:04:34,380
+This universal
+gas constant
+
+144
+00:04:34,380 --> 00:04:35,499
+in joules per mole per
+
+145
+00:04:35,499 --> 00:04:39,300
+keelvin can be defined
+also in physics.
+
+146
+00:04:39,300 --> 00:04:41,019
+If you've seen it in
+a physics context,
+
+147
+00:04:41,019 --> 00:04:43,259
+sometimes you
+will see pv is
+
+148
+00:04:43,259 --> 00:04:46,060
+kt where N is the
+number of molecules.
+
+149
+00:04:46,060 --> 00:04:47,859
+The K there is
+Boltzman's constant.
+
+150
+00:04:47,859 --> 00:04:49,259
+Boltzman' constant, I told
+
+151
+00:04:49,259 --> 00:04:50,859
+you before it is jule
+Kelvin Actually,
+
+152
+00:04:50,859 --> 00:04:53,179
+it's joule per
+something per keelvin,
+
+153
+00:04:53,179 --> 00:04:55,499
+joule per molecule,
+you know, with it.
+
+154
+00:04:55,499 --> 00:04:57,789
+And it's related to the
+
+155
+00:04:57,789 --> 00:04:58,949
+universal gas constant
+
+156
+00:04:58,949 --> 00:05:00,389
+through Abagro's constant,
+
+157
+00:05:00,389 --> 00:05:02,270
+right, 6.02 times
+ten to the 23rd.
+
+158
+00:05:02,270 --> 00:05:03,470
+I learned that in
+second grade I think
+
+159
+00:05:03,470 --> 00:05:04,949
+if I haven't forgot
+that shit since, right?
+
+160
+00:05:04,949 --> 00:05:06,749
+So it's like in here
+burned in. All right.
+
+161
+00:05:06,749 --> 00:05:08,070
+So you've got, you know,
+
+162
+00:05:08,070 --> 00:05:08,749
+this thing that you can
+
+163
+00:05:08,749 --> 00:05:09,750
+use to interchange between
+
+164
+00:05:09,750 --> 00:05:10,910
+the chemists approach and
+
+165
+00:05:10,910 --> 00:05:11,989
+the physicist approach,
+
+166
+00:05:11,989 --> 00:05:14,389
+namely with RU
+and KB, right?
+
+167
+00:05:14,389 --> 00:05:18,749
+Um, Great. All right.
+
+168
+00:05:18,749 --> 00:05:20,109
+If we want to write the
+
+169
+00:05:20,109 --> 00:05:21,789
+chemist approach in
+this class, right,
+
+170
+00:05:21,789 --> 00:05:22,470
+a lot of times
+
+171
+00:05:22,470 --> 00:05:24,550
+we're going to
+be dealing with,
+
+172
+00:05:25,670 --> 00:05:28,470
+you know, maybe
+specific volume.
+
+173
+00:05:28,470 --> 00:05:30,869
+When I have something
+that is like,
+
+174
+00:05:30,869 --> 00:05:32,829
+a specific per mole,
+
+175
+00:05:32,829 --> 00:05:34,669
+I'm going to put a
+bar above it, right?
+
+176
+00:05:34,669 --> 00:05:37,589
+So if I have my V
+bar here, right,
+
+177
+00:05:37,589 --> 00:05:39,109
+this is going to mean
+that it's meters
+
+178
+00:05:39,109 --> 00:05:41,829
+cubed per mole, right?
+
+179
+00:05:41,829 --> 00:05:43,230
+I'm not really going
+to use this very much.
+
+180
+00:05:43,230 --> 00:05:44,509
+It's not really going
+to come up again,
+
+181
+00:05:44,509 --> 00:05:45,790
+I think, until, like,
+
+182
+00:05:45,790 --> 00:05:47,430
+I don't know, combustion,
+
+183
+00:05:47,430 --> 00:05:49,189
+whenever that's a
+distant future problem
+
+184
+00:05:49,189 --> 00:05:50,789
+for us, very distant.
+
+185
+00:05:50,789 --> 00:05:52,429
+But for now, right,
+
+186
+00:05:52,429 --> 00:05:53,830
+that's what the
+bar will mean.
+
+187
+00:05:53,830 --> 00:05:55,149
+It doesn't mean,
+like, a mean value.
+
+188
+00:05:55,149 --> 00:06:01,149
+It means that it's on a
+per mole basis, okay?
+
+189
+00:06:01,149 --> 00:06:03,749
+One thing. The second
+thing is that,
+
+190
+00:06:03,749 --> 00:06:05,919
+um, a lot of
+
+191
+00:06:05,919 --> 00:06:08,040
+times, we're not
+going to use this.
+
+192
+00:06:08,040 --> 00:06:08,880
+So how do we use it?
+
+193
+00:06:08,880 --> 00:06:10,159
+How do we typically
+would use it?
+
+194
+00:06:10,159 --> 00:06:11,159
+Let's say we're going to
+
+195
+00:06:11,159 --> 00:06:12,359
+have P little V, right?
+
+196
+00:06:12,359 --> 00:06:13,839
+So that's going to
+be meters cubed per
+
+197
+00:06:13,839 --> 00:06:16,359
+kilogram is equal to,
+
+198
+00:06:16,359 --> 00:06:18,199
+you know, let's say,
+
+199
+00:06:18,199 --> 00:06:20,119
+R times T, right?
+
+200
+00:06:20,119 --> 00:06:21,519
+This is one way or
+we're going to see
+
+201
+00:06:21,519 --> 00:06:23,079
+P capital V is
+
+202
+00:06:23,079 --> 00:06:27,324
+equal to mass M
+times R T, okay?
+
+203
+00:06:27,324 --> 00:06:32,449
+Now, this R is not
+universal, okay?
+
+204
+00:06:32,449 --> 00:06:35,770
+It depends on the
+substance involved.
+
+205
+00:06:35,770 --> 00:06:36,849
+Actually, that was like a
+
+206
+00:06:36,849 --> 00:06:38,569
+problem historical
+development of
+
+207
+00:06:38,569 --> 00:06:39,969
+the ideal gas equation is
+
+208
+00:06:39,969 --> 00:06:41,809
+no one could figure
+out exactly what R is.
+
+209
+00:06:41,809 --> 00:06:43,690
+Also, interestingly,
+in my reading,
+
+210
+00:06:43,690 --> 00:06:45,249
+no one is quite
+sure why we use
+
+211
+00:06:45,249 --> 00:06:47,549
+R. Maybe a French guy,
+
+212
+00:06:47,549 --> 00:06:49,149
+you know, but, like,
+
+213
+00:06:49,149 --> 00:06:51,669
+so there's the
+universal R,
+
+214
+00:06:51,669 --> 00:06:53,629
+and that is universal,
+and that's per mole.
+
+215
+00:06:53,629 --> 00:06:55,149
+But as soon as we
+get into this R,
+
+216
+00:06:55,149 --> 00:06:59,549
+at the unit of
+this R is right,
+
+217
+00:06:59,549 --> 00:07:01,270
+it's going to be energy.
+
+218
+00:07:01,270 --> 00:07:02,709
+So it can be joule
+or let's say,
+
+219
+00:07:02,709 --> 00:07:04,069
+a lot of times in the
+book, you'll see,
+
+220
+00:07:04,069 --> 00:07:08,229
+like kilojoule per
+kilogram elvin okay,
+
+221
+00:07:08,229 --> 00:07:10,950
+or kilojoule per
+kilogram degree Celsius,
+
+222
+00:07:10,950 --> 00:07:12,709
+are the same, um, um,
+
+223
+00:07:12,709 --> 00:07:14,629
+right, one degree
+change in Kelvin is
+
+224
+00:07:14,629 --> 00:07:17,660
+one degree change
+in, uh, in Celsius.
+
+225
+00:07:17,660 --> 00:07:18,539
+So there's going to be
+
+226
+00:07:18,539 --> 00:07:20,019
+this value for
+water, right?
+
+227
+00:07:20,019 --> 00:07:21,899
+There's going to be this
+value for, you know,
+
+228
+00:07:21,899 --> 00:07:25,779
+whatever substance that
+exists there, okay?
+
+229
+00:07:25,779 --> 00:07:27,179
+And obviously,
+like in a quiz
+
+230
+00:07:27,179 --> 00:07:27,459
+or something,
+
+231
+00:07:27,459 --> 00:07:28,419
+I would just give
+you this value.
+
+232
+00:07:28,419 --> 00:07:30,019
+I don't expect you
+to memorize it.
+
+233
+00:07:30,019 --> 00:07:31,579
+I didn't learn that
+in elementary school,
+
+234
+00:07:31,579 --> 00:07:32,899
+so I don't
+remember it, okay?
+
+235
+00:07:32,899 --> 00:07:35,609
+Um, Cool.
+
+236
+00:07:35,609 --> 00:07:37,049
+So but that's basically
+the difference.
+
+237
+00:07:37,049 --> 00:07:37,849
+So like I said,
+
+238
+00:07:37,849 --> 00:07:39,129
+we're going to be
+using pretty much
+
+239
+00:07:39,129 --> 00:07:41,449
+for most of the time
+this form of it.
+
+240
+00:07:41,449 --> 00:07:42,049
+You're gonna have
+
+241
+00:07:42,049 --> 00:07:43,450
+the specific gas
+constant rate,
+
+242
+00:07:43,450 --> 00:07:44,890
+which depends on
+the substance.
+
+243
+00:07:44,890 --> 00:07:46,810
+And these things
+exist, like in a table
+
+244
+00:07:46,810 --> 00:07:49,009
+or in a you know,
+
+245
+00:07:49,009 --> 00:07:51,049
+you'll just have a
+value, and it'll be
+
+246
+00:07:51,049 --> 00:07:53,889
+given normally in
+the problem, okay?
+
+247
+00:07:53,889 --> 00:07:56,890
+Questions about
+that? Yes, please.
+
+248
+00:07:56,890 --> 00:08:06,669
+Name in question.
+An M. Okay.
+
+249
+00:08:06,669 --> 00:08:08,549
+The reason why I use an
+M is because there's
+
+250
+00:08:08,549 --> 00:08:09,789
+an M in mechanical
+engineering
+
+251
+00:08:09,789 --> 00:08:11,109
+and we are biased, okay?
+
+252
+00:08:11,109 --> 00:08:13,029
+The real reason is
+that it's mass, right?
+
+253
+00:08:13,029 --> 00:08:14,629
+A lot of times we're
+going to be dealing
+
+254
+00:08:14,629 --> 00:08:16,589
+like this problem
+later on when we work.
+
+255
+00:08:16,589 --> 00:08:17,909
+Maybe there's some on a
+
+256
+00:08:17,909 --> 00:08:19,630
+mass of air
+that's in here.
+
+257
+00:08:19,630 --> 00:08:21,069
+I'm a mass of water.
+
+258
+00:08:21,069 --> 00:08:23,389
+Don't my ruler stick
+is not moles, right?
+
+259
+00:08:23,389 --> 00:08:24,630
+If told me to
+tell you how many
+
+260
+00:08:24,630 --> 00:08:26,629
+moles of, you know,
+stuff in here,
+
+261
+00:08:26,629 --> 00:08:31,149
+I wouldn't know
+what to put, okay?
+
+262
+00:08:31,149 --> 00:08:33,949
+So we use M because
+it's practical.
+
+263
+00:08:33,949 --> 00:08:34,710
+And a lot of
+
+264
+00:08:34,710 --> 00:08:36,110
+problems in mechanical
+engineering.
+
+265
+00:08:36,110 --> 00:08:38,710
+Like, if you measure,
+um, You know,
+
+266
+00:08:38,710 --> 00:08:39,829
+a lot of the systems and
+
+267
+00:08:39,829 --> 00:08:40,949
+instrumentations
+are going to
+
+268
+00:08:40,949 --> 00:08:42,149
+be about weighing
+things when
+
+269
+00:08:42,149 --> 00:08:43,270
+you're in the
+industry, right?
+
+270
+00:08:43,270 --> 00:08:45,189
+I measure, like,
+a mass flow rate.
+
+271
+00:08:45,189 --> 00:08:46,750
+You know, I don't
+measure like
+
+272
+00:08:46,750 --> 00:08:50,030
+a molar a molar
+flow rate, right?
+
+273
+00:08:50,030 --> 00:08:52,190
+Does that answer
+your question or no?
+
+274
+00:08:52,190 --> 00:08:54,670
+Good. Other questions?
+
+275
+00:08:55,070 --> 00:08:58,190
+Okay. Cool.
+
+276
+00:08:58,270 --> 00:09:04,150
+Okay. Yes. Yeah, and
+
+277
+00:09:04,150 --> 00:09:06,229
+you can go back and
+forth, right, you know,
+
+278
+00:09:06,229 --> 00:09:08,229
+from being in a molar,
+
+279
+00:09:08,229 --> 00:09:10,550
+from a molar basis to
+
+280
+00:09:10,550 --> 00:09:13,749
+a kilogram by using
+the molar mass.
+
+281
+00:09:13,749 --> 00:09:15,950
+So that's exactly
+how you get to
+
+282
+00:09:15,950 --> 00:09:17,630
+an R value like
+this is you
+
+283
+00:09:17,630 --> 00:09:19,389
+would take the
+universal gas constant,
+
+284
+00:09:19,389 --> 00:09:21,390
+you know, RU, right,
+
+285
+00:09:21,390 --> 00:09:25,030
+and transform it
+using molar mass.
+
+286
+00:09:25,030 --> 00:09:27,470
+So that's the value for
+
+287
+00:09:27,470 --> 00:09:29,070
+carbon dioxide
+there, okay?
+
+288
+00:09:29,070 --> 00:09:31,350
+Mostly informational,
+but, you know,
+
+289
+00:09:31,350 --> 00:09:32,190
+I have to say it
+
+290
+00:09:32,190 --> 00:09:34,630
+because if there's
+one equation,
+
+291
+00:09:34,630 --> 00:09:37,789
+the most abused
+equation in this class,
+
+292
+00:09:37,789 --> 00:09:39,789
+it is this equation.
+
+293
+00:09:39,789 --> 00:09:41,590
+Okay? You're
+going to do shit
+
+294
+00:09:41,590 --> 00:09:44,790
+like I want to use
+this for water, okay?
+
+295
+00:09:44,790 --> 00:09:47,349
+And you shouldn't
+do that, all right?
+
+296
+00:09:47,349 --> 00:09:48,630
+That's like a
+no, no, alright.
+
+297
+00:09:48,630 --> 00:09:49,310
+We'll get into why you
+
+298
+00:09:49,310 --> 00:09:50,469
+don't use that
+basically for water.
+
+299
+00:09:50,469 --> 00:09:52,470
+But the other way
+that it's abused is
+
+300
+00:09:52,470 --> 00:09:54,790
+people are using
+basically the right,
+
+301
+00:09:54,790 --> 00:09:57,150
+the wrong value for
+the gas constant.
+
+302
+00:09:57,150 --> 00:09:59,989
+Allright? Yeah, so
+where is this valid?
+
+303
+00:09:59,989 --> 00:10:02,670
+This equation,
+right, is valid for
+
+304
+00:10:02,670 --> 00:10:06,750
+things with very
+low density, right?
+
+305
+00:10:06,750 --> 00:10:10,150
+Is a liquid low
+density? No, okay?
+
+306
+00:10:10,150 --> 00:10:12,430
+A liquid is about
+1,000 times
+
+307
+00:10:12,430 --> 00:10:14,910
+denser than it's
+like vapor form,
+
+308
+00:10:14,910 --> 00:10:17,329
+okay? One. So liquids?
+
+309
+00:10:17,329 --> 00:10:19,010
+No, definitely out
+of the question.
+
+310
+00:10:19,010 --> 00:10:22,849
+When it comes to
+gases, you know,
+
+311
+00:10:22,849 --> 00:10:25,930
+usually it's sort of
+okay as long as you're
+
+312
+00:10:25,930 --> 00:10:27,490
+not approaching the point
+
+313
+00:10:27,490 --> 00:10:30,250
+where a gas will
+condense, okay?
+
+314
+00:10:30,250 --> 00:10:32,970
+So that's exactly why
+
+315
+00:10:32,970 --> 00:10:34,290
+water vapor doesn't
+work, right?
+
+316
+00:10:34,290 --> 00:10:36,970
+There's an attraction,
+to it, okay?
+
+317
+00:10:36,970 --> 00:10:38,889
+And so, really the
+conditions where you have
+
+318
+00:10:38,889 --> 00:10:39,970
+low density is you have a
+
+319
+00:10:39,970 --> 00:10:41,209
+vacuum, right,
+low pressure.
+
+320
+00:10:41,209 --> 00:10:42,730
+So lower pressure
+conditions
+
+321
+00:10:42,730 --> 00:10:44,210
+or at very high
+temperature.
+
+322
+00:10:44,210 --> 00:10:46,050
+It's a pretty
+decent equation.
+
+323
+00:10:46,050 --> 00:10:47,329
+And then these are
+the substances
+
+324
+00:10:47,329 --> 00:10:48,849
+it works for right,
+air, nitrogen,
+
+325
+00:10:48,849 --> 00:10:52,170
+oxygen, and so
+on and so forth.
+
+326
+00:10:52,170 --> 00:10:53,570
+You probably haven't
+seen like well,
+
+327
+00:10:53,570 --> 00:10:55,090
+maybe you've seen
+a liquid version
+
+328
+00:10:55,090 --> 00:10:56,450
+of this. You've
+seen a rocket.
+
+329
+00:10:56,450 --> 00:10:57,770
+I don't know about CO two.
+
+330
+00:10:57,770 --> 00:10:59,530
+But otherwise, you know,
+most of these ones,
+
+331
+00:10:59,530 --> 00:11:02,410
+you never would have
+seen a liquid form.
+
+332
+00:11:02,410 --> 00:11:03,770
+And water vapor and
+
+333
+00:11:03,770 --> 00:11:05,610
+refrigerants should not be
+
+334
+00:11:05,610 --> 00:11:07,910
+used because you know,
+
+335
+00:11:07,910 --> 00:11:09,990
+a lot of times
+in our systems,
+
+336
+00:11:09,990 --> 00:11:11,230
+when we put in
+the values of
+
+337
+00:11:11,230 --> 00:11:13,069
+pressure and temperature
+that are relevant,
+
+338
+00:11:13,069 --> 00:11:15,030
+we're near a
+saturation point.
+
+339
+00:11:15,030 --> 00:11:16,189
+We're basically
+near a point
+
+340
+00:11:16,189 --> 00:11:17,469
+where they're
+going to condense.
+
+341
+00:11:17,469 --> 00:11:19,349
+And this model doesn't
+
+342
+00:11:19,349 --> 00:11:22,630
+include an attractive
+term, okay?
+
+343
+00:11:22,630 --> 00:11:25,430
+Yeah, so let's think
+back again a bit.
+
+344
+00:11:25,430 --> 00:11:27,069
+Like, what is
+an ideal gas?
+
+345
+00:11:27,069 --> 00:11:28,230
+An ideal gas is, like,
+
+346
+00:11:28,230 --> 00:11:30,150
+molecular dynamic
+simulations you did, right?
+
+347
+00:11:30,150 --> 00:11:31,509
+A bunch of billard balls
+
+348
+00:11:31,509 --> 00:11:32,390
+that all they do is they
+
+349
+00:11:32,390 --> 00:11:35,509
+crash into each other
+and they never stick,
+
+350
+00:11:35,509 --> 00:11:37,490
+right? They never
+stick, right?
+
+351
+00:11:37,490 --> 00:11:39,370
+All you're doing
+is writing, like,
+
+352
+00:11:39,370 --> 00:11:41,249
+you know, the
+sum of forces,
+
+353
+00:11:41,249 --> 00:11:43,009
+you know, with
+some point mass,
+
+354
+00:11:43,009 --> 00:11:44,490
+and they hit, but there's
+
+355
+00:11:44,490 --> 00:11:45,810
+never like a transfer of
+
+356
+00:11:45,810 --> 00:11:48,170
+that kinetic energy or
+
+357
+00:11:48,170 --> 00:11:49,650
+an attractor where
+basically they
+
+358
+00:11:49,650 --> 00:11:52,050
+start to stay together.
+
+359
+00:11:52,050 --> 00:11:53,490
+And because of that, it
+
+360
+00:11:53,490 --> 00:11:54,810
+will not work for
+water, right?
+
+361
+00:11:54,810 --> 00:11:56,090
+You need a different
+equation of
+
+362
+00:11:56,090 --> 00:11:57,729
+state if you
+wanted to then add
+
+363
+00:11:57,729 --> 00:12:02,170
+an attractive term
+to that, okay?
+
+364
+00:12:02,170 --> 00:12:03,769
+Yeah, so if there's
+phase change
+
+365
+00:12:03,769 --> 00:12:05,130
+involved, no.
+
+366
+00:12:05,130 --> 00:12:07,089
+And by default,
+in this class,
+
+367
+00:12:07,089 --> 00:12:09,350
+I swear to you
+know, whatever.
+
+368
+00:12:09,350 --> 00:12:11,350
+You write the
+ideal gas equation
+
+369
+00:12:11,350 --> 00:12:12,790
+for water, and
+it's like a zero.
+
+370
+00:12:12,790 --> 00:12:14,549
+Like, I'm not even
+I'm sympathetic.
+
+371
+00:12:14,549 --> 00:12:16,109
+I'm sympathetic
+in so many ways.
+
+372
+00:12:16,109 --> 00:12:17,629
+But, like, you do
+that, and it's like,
+
+373
+00:12:17,629 --> 00:12:18,869
+I need to send a message.
+
+374
+00:12:18,869 --> 00:12:20,270
+I've sent a message today,
+
+375
+00:12:20,270 --> 00:12:23,230
+but, you know, it's
+just don't do it.
+
+376
+00:12:23,230 --> 00:12:25,030
+And especially don't
+do it because you have
+
+377
+00:12:25,030 --> 00:12:26,590
+a thermo calculator to
+
+378
+00:12:26,590 --> 00:12:28,390
+deal with water, right?
+
+379
+00:12:28,390 --> 00:12:32,550
+Yeah. Okay.
+Cool. All right.
+
+380
+00:12:32,550 --> 00:12:33,390
+Any questions about that?
+
+381
+00:12:33,390 --> 00:12:34,830
+Otherwise, I'll dive into
+
+382
+00:12:34,830 --> 00:12:36,670
+this beautiful
+example here.
+
+383
+00:12:36,670 --> 00:12:37,430
+All right?
+
+384
+00:12:37,430 --> 00:12:41,110
+Okay. So what problem
+are we looking at here?
+
+385
+00:12:41,110 --> 00:12:42,830
+We're looking at
+a problem where
+
+386
+00:12:42,830 --> 00:12:44,590
+initially we have
+
+387
+00:12:44,590 --> 00:12:48,430
+some container of
+volume V one, okay?
+
+388
+00:12:48,430 --> 00:12:50,230
+So I'm declaring,
+like two containers.
+
+389
+00:12:50,230 --> 00:12:52,310
+One is container,
+let's say,
+
+390
+00:12:52,310 --> 00:12:54,630
+capital I to the left,
+
+391
+00:12:54,630 --> 00:12:56,350
+Roman numeral
+one to the left.
+
+392
+00:12:56,350 --> 00:12:57,829
+Then let's say
+Roman numeral
+
+393
+00:12:57,829 --> 00:13:00,070
+two, you know,
+to the right.
+
+394
+00:13:00,070 --> 00:13:02,070
+The volume of
+Roman numeral one.
+
+395
+00:13:02,070 --> 00:13:03,229
+So this container
+on the left is
+
+396
+00:13:03,229 --> 00:13:04,670
+equal to V one, all right?
+
+397
+00:13:04,670 --> 00:13:06,710
+And the volume on
+this side is equal to
+
+398
+00:13:06,710 --> 00:13:09,230
+five times the
+volume here, right?
+
+399
+00:13:09,230 --> 00:13:13,990
+So we'd say basically
+five, five V one.
+
+400
+00:13:14,790 --> 00:13:18,149
+This side contains
+mass, right?
+
+401
+00:13:18,149 --> 00:13:20,150
+So we have basically
+some mass,
+
+402
+00:13:20,150 --> 00:13:22,515
+some gas or whatever
+that's, um,
+
+403
+00:13:22,515 --> 00:13:25,760
+you know, ideal gas
+that's in here.
+
+404
+00:13:25,760 --> 00:13:28,400
+And on this side, we
+have a vacuum, alright?
+
+405
+00:13:28,400 --> 00:13:30,320
+The left hand
+side, we say is
+
+406
+00:13:30,320 --> 00:13:32,199
+at 460 degrees Celsius.
+
+407
+00:13:32,199 --> 00:13:34,560
+Why not? And a pressure
+
+408
+00:13:34,560 --> 00:13:36,120
+P one that we don't know.
+
+409
+00:13:36,120 --> 00:13:39,960
+Alright? And what we're
+
+410
+00:13:39,960 --> 00:13:40,840
+going to do is we're
+
+411
+00:13:40,840 --> 00:13:41,920
+going to take
+this partition.
+
+412
+00:13:41,920 --> 00:13:43,000
+So the thing separating
+
+413
+00:13:43,000 --> 00:13:43,640
+the left from the right,
+
+414
+00:13:43,640 --> 00:13:44,680
+we're gonna
+remove it, right?
+
+415
+00:13:44,680 --> 00:13:46,120
+We're suddenly
+going to remove it.
+
+416
+00:13:46,120 --> 00:13:47,360
+We're going to
+let this gas
+
+417
+00:13:47,360 --> 00:13:50,200
+expand to the right
+hand side. Fine.
+
+418
+00:13:50,200 --> 00:13:51,800
+And at the end
+of this, what
+
+419
+00:13:51,800 --> 00:13:52,920
+we're going to do
+is we're going to
+
+420
+00:13:52,920 --> 00:13:54,720
+transfer some
+amount of heat into
+
+421
+00:13:54,720 --> 00:13:56,440
+this combined
+system such that
+
+422
+00:13:56,440 --> 00:13:57,680
+the final pressure is
+
+423
+00:13:57,680 --> 00:13:59,774
+equal to the
+initial pressure.
+
+424
+00:13:59,774 --> 00:14:01,910
+I'm exhausted saying that.
+
+425
+00:14:01,910 --> 00:14:03,270
+So who would bother
+
+426
+00:14:03,270 --> 00:14:05,510
+in their right mind
+with doing this?
+
+427
+00:14:05,510 --> 00:14:07,429
+I asked myself as I
+
+428
+00:14:07,429 --> 00:14:09,070
+wrote all that
+out and said it.
+
+429
+00:14:09,070 --> 00:14:10,790
+Jewel, right?
+
+430
+00:14:10,790 --> 00:14:12,030
+So I'll put this
+to the side
+
+431
+00:14:12,030 --> 00:14:13,510
+so maybe it's easier
+for everyone to
+
+432
+00:14:13,510 --> 00:14:16,429
+see Jewel James Jewel,
+
+433
+00:14:16,429 --> 00:14:17,990
+this was a problem
+that really concerned
+
+434
+00:14:17,990 --> 00:14:19,789
+him, his thoughts, right?
+
+435
+00:14:19,789 --> 00:14:22,470
+Um, and it had to
+
+436
+00:14:22,470 --> 00:14:23,630
+do with the fact that if
+
+437
+00:14:23,630 --> 00:14:25,629
+you think about
+sort of, you know,
+
+438
+00:14:25,629 --> 00:14:28,590
+these kind of ideal gas
+relations and stuff,
+
+439
+00:14:28,590 --> 00:14:30,590
+and we're thinking
+about how properties,
+
+440
+00:14:30,590 --> 00:14:32,149
+maybe like
+internal energy,
+
+441
+00:14:32,149 --> 00:14:33,750
+might depend upon
+temperature.
+
+442
+00:14:33,750 --> 00:14:34,470
+He was coming up with
+
+443
+00:14:34,470 --> 00:14:35,789
+kind of clever experiments
+
+444
+00:14:35,789 --> 00:14:37,150
+where he would keep,
+
+445
+00:14:37,150 --> 00:14:39,469
+you know, have a big
+change in volume,
+
+446
+00:14:39,469 --> 00:14:42,520
+um, you know,
+associated with,
+
+447
+00:14:42,520 --> 00:14:44,320
+you know, with
+a process or
+
+448
+00:14:44,320 --> 00:14:45,360
+maybe a big change in
+
+449
+00:14:45,360 --> 00:14:47,040
+pressure associated
+with the process.
+
+450
+00:14:47,040 --> 00:14:48,680
+And he wanted to see if
+there was a change in
+
+451
+00:14:48,680 --> 00:14:51,240
+temperature with
+that, right? There.
+
+452
+00:14:51,240 --> 00:14:52,760
+And I'll get to,
+you know, in
+
+453
+00:14:52,760 --> 00:14:54,720
+the following part of
+what his result was,
+
+454
+00:14:54,720 --> 00:14:57,160
+what he basically
+learned that
+
+455
+00:14:57,160 --> 00:15:00,000
+ideal gases depend
+on, all right?
+
+456
+00:15:00,000 --> 00:15:01,640
+Okay, so what can we do?
+
+457
+00:15:01,640 --> 00:15:02,919
+So I've got the values
+
+458
+00:15:02,919 --> 00:15:04,520
+here that I've
+written, okay?
+
+459
+00:15:04,520 --> 00:15:05,760
+I've got, you know,
+
+460
+00:15:05,760 --> 00:15:09,240
+what I want to determine
+what I've well,
+
+461
+00:15:09,240 --> 00:15:11,639
+maybe I can put
+it to the middle.
+
+462
+00:15:13,100 --> 00:15:15,580
+Okay, into the middle.
+
+463
+00:15:15,580 --> 00:15:18,540
+But what I want to
+determine is T two here.
+
+464
+00:15:18,540 --> 00:15:19,860
+I've got some
+assumptions, right?
+
+465
+00:15:19,860 --> 00:15:21,260
+The other assumption
+is that I'm going to
+
+466
+00:15:21,260 --> 00:15:23,660
+assume that this
+is an ideal gas.
+
+467
+00:15:23,660 --> 00:15:28,740
+Okay. Now get rid of this.
+
+468
+00:15:28,740 --> 00:15:36,260
+We don't need this
+anymore. Right?
+
+469
+00:15:36,260 --> 00:15:38,860
+Okay, I feel good
+about this, right?
+
+470
+00:15:38,860 --> 00:15:41,180
+And we know that we have
+this initial state,
+
+471
+00:15:41,180 --> 00:15:42,860
+in the final state
+that we want to go to.
+
+472
+00:15:42,860 --> 00:15:44,660
+So the step one with
+this is we'll go
+
+473
+00:15:44,660 --> 00:15:46,579
+to our, our physical laws.
+
+474
+00:15:46,579 --> 00:15:49,339
+So we'll say for the
+initial state, right,
+
+475
+00:15:49,339 --> 00:15:52,660
+I'll have a P one
+times a V one,
+
+476
+00:15:52,660 --> 00:15:55,139
+which is equal to the mass
+
+477
+00:15:55,139 --> 00:15:58,979
+one times the ideal
+gas constant.
+
+478
+00:15:58,979 --> 00:16:03,379
+Um. I'm not sure
+
+479
+00:16:03,379 --> 00:16:04,939
+if we're told the
+gas, but it's okay.
+
+480
+00:16:04,939 --> 00:16:07,219
+So we have some
+value R, and then we
+
+481
+00:16:07,219 --> 00:16:11,179
+have T one there, okay?
+
+482
+00:16:11,179 --> 00:16:14,819
+And what we can also do is
+
+483
+00:16:14,819 --> 00:16:16,179
+we can write the
+same equation at
+
+484
+00:16:16,179 --> 00:16:17,939
+state two when we're
+in equilibrium.
+
+485
+00:16:17,939 --> 00:16:21,459
+So I can do p2v2 is equal
+
+486
+00:16:21,459 --> 00:16:25,899
+to two R times T two,
+
+487
+00:16:25,899 --> 00:16:27,419
+and we assume it's
+the same gas,
+
+488
+00:16:27,419 --> 00:16:29,379
+so it's the same value of
+
+489
+00:16:29,379 --> 00:16:31,819
+R. We can do a
+substitution, right?
+
+490
+00:16:31,819 --> 00:16:34,059
+So we know the volume
+
+491
+00:16:34,059 --> 00:16:35,819
+two as a function of
+volume one, right?
+
+492
+00:16:35,819 --> 00:16:42,180
+So I would have,
+P two times five.
+
+493
+00:16:42,820 --> 00:16:44,860
+You know, V one, that's
+
+494
+00:16:44,860 --> 00:16:46,299
+the partition that's on
+the right hand side.
+
+495
+00:16:46,299 --> 00:16:47,779
+But if it's an
+expansion process,
+
+496
+00:16:47,779 --> 00:16:50,330
+what's actually my total
+volume? All right.
+
+497
+00:16:50,330 --> 00:16:51,450
+So if this is right, my
+
+498
+00:16:51,450 --> 00:16:52,729
+initial control volume
+
+499
+00:16:52,729 --> 00:16:55,329
+that I've drawn here
+with my boundary,
+
+500
+00:16:55,329 --> 00:16:57,649
+and then I'm going to
+allow that to expand.
+
+501
+00:16:57,649 --> 00:16:59,850
+You'll get some
+nice colors.
+
+502
+00:16:59,850 --> 00:17:02,249
+So that's my state
+control volume
+
+503
+00:17:02,249 --> 00:17:05,569
+from one if I then
+expand that out,
+
+504
+00:17:09,970 --> 00:17:12,450
+you know, is basically
+where we're at
+
+505
+00:17:12,450 --> 00:17:14,729
+that at state two.
+
+506
+00:17:14,729 --> 00:17:16,610
+And then this control
+volume is what we,
+
+507
+00:17:16,610 --> 00:17:18,489
+you know, the size
+of it for state one.
+
+508
+00:17:18,489 --> 00:17:21,090
+What's then the volume
+
+509
+00:17:21,090 --> 00:17:24,809
+at state two? So let
+me write it this way.
+
+510
+00:17:24,809 --> 00:17:28,279
+So V two is equal to what?
+
+511
+00:17:28,279 --> 00:17:30,309
+661, right?
+
+512
+00:17:30,309 --> 00:17:33,909
+Yeah. Okay, so 61 there.
+
+513
+00:17:33,909 --> 00:17:36,869
+So this is plus
+V one, right?
+
+514
+00:17:36,869 --> 00:17:38,589
+So six V one, and again,
+
+515
+00:17:38,589 --> 00:17:43,949
+that's equal to
+R T two, okay?
+
+516
+00:17:43,949 --> 00:17:48,390
+So that's a pretty
+decent equation.
+
+517
+00:17:48,390 --> 00:17:51,469
+And we have this one
+here. What do we
+
+518
+00:17:51,469 --> 00:17:54,799
+know about P
+two? It's P one.
+
+519
+00:17:54,799 --> 00:17:58,120
+Then we have
+here P one times
+
+520
+00:17:58,120 --> 00:18:01,919
+six the one is
+then equal to two.
+
+521
+00:18:01,919 --> 00:18:05,479
+Sorry, two R T two.
+
+522
+00:18:05,479 --> 00:18:07,839
+Now in this
+process, we don't
+
+523
+00:18:07,839 --> 00:18:10,360
+have any mass transfer.
+
+524
+00:18:10,360 --> 00:18:11,600
+The amount of
+mass that I have
+
+525
+00:18:11,600 --> 00:18:13,279
+here my initial state
+
+526
+00:18:13,279 --> 00:18:14,960
+is equal to the amount
+
+527
+00:18:14,960 --> 00:18:17,159
+that I have at
+my final state.
+
+528
+00:18:17,159 --> 00:18:19,479
+So what I can do
+then is I can just
+
+529
+00:18:19,479 --> 00:18:21,599
+call this I can leave it
+
+530
+00:18:21,599 --> 00:18:23,439
+as one or two or I can
+
+531
+00:18:23,439 --> 00:18:25,879
+just call it as if
+I wanted it, right?
+
+532
+00:18:25,879 --> 00:18:29,219
+Now to compute T two
+from this Let's see,
+
+533
+00:18:29,219 --> 00:18:30,100
+what we're going to do is
+
+534
+00:18:30,100 --> 00:18:31,299
+I'm going to take
+equation one.
+
+535
+00:18:31,299 --> 00:18:32,899
+Let's call this
+equation one.
+
+536
+00:18:32,899 --> 00:18:35,099
+And let's call this
+then equation two,
+
+537
+00:18:35,099 --> 00:18:36,619
+and I'm going to take
+the ratio, right?
+
+538
+00:18:36,619 --> 00:18:39,500
+So I'm going to take
+the ratio of equation
+
+539
+00:18:39,500 --> 00:18:42,939
+two divided by
+equation one.
+
+540
+00:18:42,939 --> 00:18:44,499
+And so what I'll
+have here then,
+
+541
+00:18:44,499 --> 00:18:47,619
+right is P one,
+
+542
+00:18:47,619 --> 00:18:56,779
+six, V one is equal to
+two R T two, right?
+
+543
+00:18:56,779 --> 00:18:58,460
+And both sides
+are then divided
+
+544
+00:18:58,460 --> 00:19:01,379
+by P one times,
+
+545
+00:19:01,379 --> 00:19:02,859
+right? This is V one.
+
+546
+00:19:02,859 --> 00:19:04,499
+And then on the right
+hand side, right,
+
+547
+00:19:04,499 --> 00:19:09,380
+I have one R T one, right?
+
+548
+00:19:09,380 --> 00:19:11,460
+Is this visible?
+
+549
+00:19:11,460 --> 00:19:13,180
+No, not visible.
+
+550
+00:19:13,180 --> 00:19:16,339
+Yeah, that's visible.
+This part is.
+
+551
+00:19:16,339 --> 00:19:17,579
+Okay. Maybe I'll just go
+
+552
+00:19:17,579 --> 00:19:20,219
+to full screen
+for a second.
+
+553
+00:19:21,070 --> 00:19:25,149
+Hmm. Okay. Now,
+what cancels here,
+
+554
+00:19:25,149 --> 00:19:27,029
+right is we're going
+to lose the V one,
+
+555
+00:19:27,029 --> 00:19:28,789
+which is out, right?
+
+556
+00:19:28,789 --> 00:19:30,070
+There's no mass transfer,
+
+557
+00:19:30,070 --> 00:19:33,070
+so the M's are the
+same. Idel gas.
+
+558
+00:19:33,070 --> 00:19:35,189
+We assume that
+there's no change
+
+559
+00:19:35,189 --> 00:19:36,829
+in the composition of
+
+560
+00:19:36,829 --> 00:19:38,309
+the ideal gas that
+we have there.
+
+561
+00:19:38,309 --> 00:19:39,670
+So the R goes away.
+
+562
+00:19:39,670 --> 00:19:42,589
+And so then if we
+rearrange, what do I have?
+
+563
+00:19:42,589 --> 00:19:44,829
+And also the
+pressure, right?
+
+564
+00:19:44,829 --> 00:19:49,709
+So here, the pressures
+also drop, right?
+
+565
+00:19:49,709 --> 00:19:52,309
+So the pressures drop,
+and it's like that.
+
+566
+00:19:52,309 --> 00:19:54,189
+And so then what
+we'll have is that T
+
+567
+00:19:54,189 --> 00:19:56,829
+one or T two is going
+
+568
+00:19:56,829 --> 00:20:02,509
+to be equal to six
+times T one, right?
+
+569
+00:20:04,270 --> 00:20:06,989
+I think. Yeah.
+Pretty right.
+
+570
+00:20:06,989 --> 00:20:09,389
+Sure. Yes, please.
+
+571
+00:20:15,750 --> 00:20:19,869
+So what did I say was
+on this side, though?
+
+572
+00:20:19,869 --> 00:20:23,390
+The vacuum,
+right? So vacuum,
+
+573
+00:20:23,390 --> 00:20:26,109
+you know, here
+and you do that.
+
+574
+00:20:26,109 --> 00:20:28,110
+Okay. The other way
+that this experiment
+
+575
+00:20:28,110 --> 00:20:29,230
+is done is if you've seen,
+
+576
+00:20:29,230 --> 00:20:30,229
+like, a shock tube.
+
+577
+00:20:30,229 --> 00:20:31,670
+So if you ever
+want to study
+
+578
+00:20:31,670 --> 00:20:33,109
+the species that
+come out of, like,
+
+579
+00:20:33,109 --> 00:20:34,950
+the end of a rocket
+nozzle and all of that,
+
+580
+00:20:34,950 --> 00:20:36,549
+they do these really
+cool experiments
+
+581
+00:20:36,549 --> 00:20:37,750
+where you basically
+generate,
+
+582
+00:20:37,750 --> 00:20:39,629
+like, a shock wave there.
+
+583
+00:20:39,629 --> 00:20:40,909
+And the way that you
+can do that is you
+
+584
+00:20:40,909 --> 00:20:42,429
+have really high pressure
+up here and then,
+
+585
+00:20:42,429 --> 00:20:44,149
+like a very thin
+membrane that you like,
+
+586
+00:20:44,149 --> 00:20:45,469
+blow open, and then you
+
+587
+00:20:45,469 --> 00:20:47,070
+can watch the
+shock and measure,
+
+588
+00:20:47,070 --> 00:20:49,550
+like, evolution and
+cool stuff like that.
+
+589
+00:20:49,550 --> 00:20:52,589
+So for the aero
+students in the room.
+
+590
+00:20:52,589 --> 00:20:54,789
+Yes. Yes, please.
+
+591
+00:21:00,790 --> 00:21:03,230
+Yeah, I mean, it's math.
+
+592
+00:21:03,230 --> 00:21:05,029
+You can do that, but
+then at the end of it,
+
+593
+00:21:05,029 --> 00:21:07,989
+you wanted T two as
+some form of that.
+
+594
+00:21:07,989 --> 00:21:11,029
+Yeah. Other questions?
+
+595
+00:21:11,190 --> 00:21:17,380
+No. Okay. Yeah,
+and I'm assuming,
+
+596
+00:21:17,380 --> 00:21:19,140
+right, that you can
+do the substitution.
+
+597
+00:21:19,140 --> 00:21:21,179
+It's just important
+that for T one, right,
+
+598
+00:21:21,179 --> 00:21:22,580
+when we do the
+substitution,
+
+599
+00:21:22,580 --> 00:21:25,260
+that T one, what
+is it equal to?
+
+600
+00:21:25,260 --> 00:21:30,819
+We said two or
+460 degrees C
+
+601
+00:21:30,819 --> 00:21:35,499
+plus 273.15 there,
+
+602
+00:21:35,499 --> 00:21:38,539
+and then that'll get
+you into Kelvin, right?
+
+603
+00:21:38,539 --> 00:21:39,419
+So you basically have to
+
+604
+00:21:39,419 --> 00:21:40,700
+multiply six times that,
+
+605
+00:21:40,700 --> 00:21:42,659
+and then you'll
+have actually a
+
+606
+00:21:42,659 --> 00:21:45,340
+very large that's
+a pretty six,
+
+607
+00:21:45,340 --> 00:21:49,460
+it's like seven, that's
+
+608
+00:21:49,460 --> 00:21:50,500
+like a number approaching
+
+609
+00:21:50,500 --> 00:21:51,820
+the temperature
+of the sun.
+
+610
+00:21:51,820 --> 00:21:53,140
+That'd be a fun
+experiment.
+
+611
+00:21:53,140 --> 00:21:55,179
+Okay. Great. All right,
+
+612
+00:21:55,179 --> 00:21:56,340
+so if there's no
+other questions
+
+613
+00:21:56,340 --> 00:21:58,379
+then with that,
+we'll move on.
+
+614
+00:21:58,379 --> 00:21:59,739
+So what I'll do now with
+
+615
+00:21:59,739 --> 00:22:01,499
+this while I get
+myself set up is,
+
+616
+00:22:01,499 --> 00:22:02,579
+again, kind of
+repeating on
+
+617
+00:22:02,579 --> 00:22:04,820
+the property value
+determination.
+
+618
+00:22:04,820 --> 00:22:06,619
+Hopefully, some of you
+had had a chance to
+
+619
+00:22:06,619 --> 00:22:09,459
+try with the
+PCulor otherwise,
+
+620
+00:22:09,459 --> 00:22:12,620
+you're free to go, you
+know, with the table.
+
+621
+00:22:12,620 --> 00:22:13,379
+So in this problem,
+
+622
+00:22:13,379 --> 00:22:14,580
+what you're going
+to start off with
+
+623
+00:22:14,580 --> 00:22:17,579
+is a superheated vapor
+at this condition.
+
+624
+00:22:17,579 --> 00:22:19,699
+You're going to
+cool it down with
+
+625
+00:22:19,699 --> 00:22:20,819
+constant pressure until
+
+626
+00:22:20,819 --> 00:22:22,259
+it's a saturated vapor.
+
+627
+00:22:22,259 --> 00:22:23,859
+And the question
+here, there's two.
+
+628
+00:22:23,859 --> 00:22:25,339
+The first is, what
+
+629
+00:22:25,339 --> 00:22:26,980
+is T two for the
+water vapor?
+
+630
+00:22:26,980 --> 00:22:27,779
+And then what would T
+
+631
+00:22:27,779 --> 00:22:29,060
+two be for the ideal gas?
+
+632
+00:22:29,060 --> 00:22:31,099
+And the idea out of
+that second part is to
+
+633
+00:22:31,099 --> 00:22:33,299
+compare and contrast
+what the ideal gas is
+
+634
+00:22:33,299 --> 00:22:35,299
+able to do for you
+versus what is
+
+635
+00:22:35,299 --> 00:22:38,299
+actually the ground
+truth for that, okay?
+
+636
+00:22:38,299 --> 00:22:40,339
+I have to launch
+this, so just
+
+637
+00:22:40,339 --> 00:22:42,100
+bear with me of
+any substance.
+
+638
+00:22:42,100 --> 00:22:43,980
+In this case, the
+equals to one,
+
+639
+00:22:43,980 --> 00:22:45,379
+an ideal gas equation
+
+640
+00:22:45,379 --> 00:22:46,459
+is not going to
+cut it, right?
+
+641
+00:22:46,459 --> 00:22:47,419
+How much air did I
+
+642
+00:22:47,419 --> 00:22:48,819
+say was allowed
+in this class?
+
+643
+00:22:48,819 --> 00:22:51,899
+2%, okay? That's
+much more than 2%.
+
+644
+00:22:51,899 --> 00:23:00,499
+Okay? Great. Any questions
+about this? Okay.
+
+645
+00:23:00,499 --> 00:23:03,099
+Cool. So if you
+
+646
+00:23:03,099 --> 00:23:05,459
+do want to use an equation
+of state, though,
+
+647
+00:23:05,459 --> 00:23:07,739
+to get at this process of
+
+648
+00:23:07,739 --> 00:23:11,939
+interaction and
+condensation there,
+
+649
+00:23:11,939 --> 00:23:13,699
+you can add an
+attractor term.
+
+650
+00:23:13,699 --> 00:23:16,060
+So you can take the
+ideal gas equation,
+
+651
+00:23:16,060 --> 00:23:18,219
+go in and put a
+term that says,
+
+652
+00:23:18,219 --> 00:23:18,580
+Hey,
+
+653
+00:23:18,580 --> 00:23:20,419
+the molecules now like
+each other, right?
+
+654
+00:23:20,419 --> 00:23:23,780
+They're not indifferent
+to each other.
+
+655
+00:23:23,780 --> 00:23:25,099
+They like each
+other. And this
+
+656
+00:23:25,099 --> 00:23:26,780
+was the work of
+Vandervals, right?
+
+657
+00:23:26,780 --> 00:23:27,820
+So Vander Walls,
+
+658
+00:23:27,820 --> 00:23:29,300
+maybe you've heard
+of it before.
+
+659
+00:23:29,300 --> 00:23:30,979
+But he did his like,
+
+660
+00:23:30,979 --> 00:23:33,059
+doctoral dissertation
+on this,
+
+661
+00:23:33,059 --> 00:23:34,659
+which actually, if
+you look at it,
+
+662
+00:23:34,659 --> 00:23:36,779
+is kind of
+unbelievable, right?
+
+663
+00:23:36,779 --> 00:23:38,499
+I mean, So what?
+
+664
+00:23:38,499 --> 00:23:40,140
+Like, 26-years-old,
+you know,
+
+665
+00:23:40,140 --> 00:23:42,739
+going in there and
+then writing this up.
+
+666
+00:23:42,739 --> 00:23:44,419
+And all at a time
+
+667
+00:23:44,419 --> 00:23:45,699
+when people weren't
+really sure that,
+
+668
+00:23:45,699 --> 00:23:47,019
+like, Adams
+existed, right?
+
+669
+00:23:47,019 --> 00:23:48,340
+So if you read about,
+like, people like
+
+670
+00:23:48,340 --> 00:23:50,419
+Ernest Mach of
+the Mach number,
+
+671
+00:23:50,419 --> 00:23:52,379
+Mach didn't believe
+in the Adam, right?
+
+672
+00:23:52,379 --> 00:23:53,619
+So he was a positivist.
+
+673
+00:23:53,619 --> 00:23:54,579
+He thought if you couldn't
+
+674
+00:23:54,579 --> 00:23:56,100
+measure something,
+it didn't exist.
+
+675
+00:23:56,100 --> 00:23:57,979
+Or, you know, it
+can't you know,
+
+676
+00:23:57,979 --> 00:23:59,660
+it's not even a question,
+
+677
+00:23:59,660 --> 00:24:02,299
+you know, worth
+asking there.
+
+678
+00:24:02,299 --> 00:24:03,540
+But Vandervo' probably
+
+679
+00:24:03,540 --> 00:24:04,659
+because he was
+young, you know?
+
+680
+00:24:04,659 --> 00:24:05,860
+He's like, Okay, I don't
+
+681
+00:24:05,860 --> 00:24:07,180
+care what those
+old guys think.
+
+682
+00:24:07,180 --> 00:24:08,989
+But, um, you know,
+
+683
+00:24:08,989 --> 00:24:10,749
+so you went in
+and did it, okay?
+
+684
+00:24:10,749 --> 00:24:11,989
+So that's one part. So you
+
+685
+00:24:11,989 --> 00:24:13,149
+had, like, an
+attractor term.
+
+686
+00:24:13,149 --> 00:24:14,910
+The other thing is that
+with an ideal gas,
+
+687
+00:24:14,910 --> 00:24:17,429
+the gas molecules
+don't occupy a volume.
+
+688
+00:24:17,429 --> 00:24:18,950
+Even if I show you
+that Biller bolt
+
+689
+00:24:18,950 --> 00:24:20,949
+simulation, they
+don't have a volume.
+
+690
+00:24:20,949 --> 00:24:22,189
+They're point
+sources, okay?
+
+691
+00:24:22,189 --> 00:24:23,469
+So if you want to
+get this right,
+
+692
+00:24:23,469 --> 00:24:24,349
+especially when you
+
+693
+00:24:24,349 --> 00:24:25,670
+look into the condensation
+
+694
+00:24:25,670 --> 00:24:27,189
+and processes like that,
+
+695
+00:24:27,189 --> 00:24:27,709
+they have to have
+
+696
+00:24:27,709 --> 00:24:29,819
+a finite volume
+to them, okay?
+
+697
+00:24:29,819 --> 00:24:33,249
+Okay. So B is
+the volume term.
+
+698
+00:24:33,249 --> 00:24:35,530
+So that says that
+there's a finite volume
+
+699
+00:24:35,530 --> 00:24:37,369
+to these atoms
+or molecules.
+
+700
+00:24:37,369 --> 00:24:41,849
+And the AV squared
+term is the attractor.
+
+701
+00:24:41,849 --> 00:24:42,849
+This is basically what
+
+702
+00:24:42,849 --> 00:24:44,729
+says that at some point,
+
+703
+00:24:44,729 --> 00:24:47,089
+there's some amount of
+
+704
+00:24:47,089 --> 00:24:49,089
+that we like each
+other, right?
+
+705
+00:24:49,089 --> 00:24:51,090
+So if I plot a PV diagram,
+
+706
+00:24:51,090 --> 00:24:52,875
+so let's say I take, um,
+
+707
+00:24:52,875 --> 00:24:54,660
+you know, a high
+temperature,
+
+708
+00:24:54,660 --> 00:24:55,379
+let's say I take
+
+709
+00:24:55,379 --> 00:24:57,099
+the temperature at
+the critical point
+
+710
+00:24:57,099 --> 00:25:02,259
+for for water,
+okay, right?
+
+711
+00:25:02,259 --> 00:25:03,739
+I can produce a plot
+
+712
+00:25:03,739 --> 00:25:05,140
+that shows this
+behavior, right?
+
+713
+00:25:05,140 --> 00:25:07,700
+This is nothing but Pi
+killor and computing,
+
+714
+00:25:07,700 --> 00:25:10,260
+and that's like
+how my isotherm
+
+715
+00:25:10,260 --> 00:25:13,179
+would look like in
+a PV diagram, okay?
+
+716
+00:25:13,179 --> 00:25:15,379
+If I now take Vander
+Wall's formula,
+
+717
+00:25:15,379 --> 00:25:17,099
+which I had before, okay,
+
+718
+00:25:17,099 --> 00:25:20,859
+I take that and I
+can compute A and B.
+
+719
+00:25:20,859 --> 00:25:22,459
+I'll go into a second
+how you compute
+
+720
+00:25:22,459 --> 00:25:23,539
+those A and B constants,
+
+721
+00:25:23,539 --> 00:25:24,580
+but I can compute them.
+
+722
+00:25:24,580 --> 00:25:26,459
+And the red line,
+so the blue line
+
+723
+00:25:26,459 --> 00:25:28,620
+is Pi killor the
+water properties,
+
+724
+00:25:28,620 --> 00:25:31,364
+and the red line is
+Vandervals, okay?
+
+725
+00:25:31,364 --> 00:25:34,189
+Right? So, without, like,
+
+726
+00:25:34,189 --> 00:25:35,949
+any knowledge of an atom,
+
+727
+00:25:35,949 --> 00:25:37,469
+right, math and, like,
+
+728
+00:25:37,469 --> 00:25:39,029
+a bit of creative thinking
+
+729
+00:25:39,029 --> 00:25:40,590
+and some understanding
+
+730
+00:25:40,590 --> 00:25:41,749
+on things that were
+measured, right,
+
+731
+00:25:41,749 --> 00:25:43,349
+he produced a line
+that looked like that,
+
+732
+00:25:43,349 --> 00:25:45,549
+which I write a
+lot of papers,
+
+733
+00:25:45,549 --> 00:25:48,150
+and that's pretty like
+that's pretty not bad.
+
+734
+00:25:48,150 --> 00:25:49,429
+That's like our
+better than our
+
+735
+00:25:49,429 --> 00:25:51,029
+2% error kind
+of, you know,
+
+736
+00:25:51,029 --> 00:25:52,309
+without knowing
+anything, getting to
+
+737
+00:25:52,309 --> 00:25:54,469
+that level is
+pretty good, right?
+
+738
+00:25:54,469 --> 00:25:57,189
+Captures the trends
+and all of that.
+
+739
+00:25:57,189 --> 00:25:59,310
+So that's pretty neat.
+
+740
+00:25:59,310 --> 00:26:03,079
+One, So that's the
+super critical point.
+
+741
+00:26:03,079 --> 00:26:03,999
+Now, you can go in
+
+742
+00:26:03,999 --> 00:26:05,319
+and start to look
+at this process.
+
+743
+00:26:05,319 --> 00:26:06,439
+You can analyze
+
+744
+00:26:06,439 --> 00:26:07,519
+this equation
+when you actually
+
+745
+00:26:07,519 --> 00:26:09,720
+get near the
+phase transition,
+
+746
+00:26:09,720 --> 00:26:10,279
+which I mentioned
+
+747
+00:26:10,279 --> 00:26:11,600
+before is what's
+interesting.
+
+748
+00:26:11,600 --> 00:26:12,920
+So the blue line
+here, so we'll
+
+749
+00:26:12,920 --> 00:26:14,159
+go to a lower temperature.
+
+750
+00:26:14,159 --> 00:26:16,480
+Let's say 90% of the
+critical temperature,
+
+751
+00:26:16,480 --> 00:26:19,119
+which is 647
+Kelvin for water.
+
+752
+00:26:19,119 --> 00:26:20,919
+I can plot the
+blue line, right?
+
+753
+00:26:20,919 --> 00:26:22,119
+So I have the
+blue line, right?
+
+754
+00:26:22,119 --> 00:26:24,000
+I'm decreasing my
+specific volume.
+
+755
+00:26:24,000 --> 00:26:26,240
+I hit a quality
+of one of vapor.
+
+756
+00:26:26,240 --> 00:26:28,839
+I get to quality
+of zero, right?
+
+757
+00:26:28,839 --> 00:26:30,200
+It's a saturated liquid,
+
+758
+00:26:30,200 --> 00:26:31,199
+and then I shoot up.
+
+759
+00:26:31,199 --> 00:26:32,354
+That's all fine and well.
+
+760
+00:26:32,354 --> 00:26:34,189
+You go through your
+Vandervals, right?
+
+761
+00:26:34,189 --> 00:26:36,309
+That looks pretty good
+until we get kind
+
+762
+00:26:36,309 --> 00:26:38,550
+of to the
+saturated regime.
+
+763
+00:26:38,550 --> 00:26:39,990
+It overshoots.
+
+764
+00:26:39,990 --> 00:26:41,590
+It then undershoots,
+
+765
+00:26:41,590 --> 00:26:43,429
+and then it shoots
+back up, okay?
+
+766
+00:26:43,429 --> 00:26:45,550
+And you could
+say to yourself,
+
+767
+00:26:45,550 --> 00:26:47,429
+that's a pretty, like,
+shitty model, right?
+
+768
+00:26:47,429 --> 00:26:47,990
+I look at that.
+
+769
+00:26:47,990 --> 00:26:48,709
+Like, actually, you,
+
+770
+00:26:48,709 --> 00:26:49,669
+you were raving
+about this,
+
+771
+00:26:49,669 --> 00:26:51,469
+and maybe that guy
+shouldn't have passed with
+
+772
+00:26:51,469 --> 00:26:53,949
+his PhD, you know, there.
+
+773
+00:26:53,949 --> 00:26:54,510
+But there's
+
+774
+00:26:54,510 --> 00:26:55,669
+some interesting
+features of this.
+
+775
+00:26:55,669 --> 00:26:57,590
+So the first is that
+at least he tried
+
+776
+00:26:57,590 --> 00:27:00,629
+to hit the dome here,
+you know, with it.
+
+777
+00:27:00,629 --> 00:27:02,099
+Um, And
+
+778
+00:27:02,099 --> 00:27:03,460
+one thing that's
+interesting about this,
+
+779
+00:27:03,460 --> 00:27:04,660
+and now this is
+just me being
+
+780
+00:27:04,660 --> 00:27:05,939
+like an older guy
+telling stories.
+
+781
+00:27:05,939 --> 00:27:07,179
+So if you want
+to go to sleep,
+
+782
+00:27:07,179 --> 00:27:08,620
+you can, but I think
+it's interesting.
+
+783
+00:27:08,620 --> 00:27:09,980
+You can go from this point
+
+784
+00:27:09,980 --> 00:27:11,739
+C to D, okay, right?
+
+785
+00:27:11,739 --> 00:27:12,979
+It's still kind
+of moving with
+
+786
+00:27:12,979 --> 00:27:15,179
+a similar slope that
+you had here coming in.
+
+787
+00:27:15,179 --> 00:27:16,859
+And B to A, right?
+
+788
+00:27:16,859 --> 00:27:18,739
+It's moving with kind
+of a similar slope as
+
+789
+00:27:18,739 --> 00:27:20,819
+it exits from
+the dome, right?
+
+790
+00:27:20,819 --> 00:27:22,179
+But from B to C,
+
+791
+00:27:22,179 --> 00:27:24,099
+you have an
+inversion, okay?
+
+792
+00:27:24,099 --> 00:27:25,580
+And what's the consequence
+
+793
+00:27:25,580 --> 00:27:26,699
+of this, all right?
+
+794
+00:27:26,699 --> 00:27:29,539
+So from A to B and C to D,
+
+795
+00:27:29,539 --> 00:27:31,620
+so the change in pressure
+
+796
+00:27:31,620 --> 00:27:32,899
+divided by the change in
+
+797
+00:27:32,899 --> 00:27:34,140
+volume for a constant
+
+798
+00:27:34,140 --> 00:27:36,099
+temperature is
+negative, okay?
+
+799
+00:27:36,099 --> 00:27:37,619
+Now, that makes
+sense, right?
+
+800
+00:27:37,619 --> 00:27:39,339
+If I take something and
+
+801
+00:27:39,339 --> 00:27:41,619
+I increase the
+volume, right?
+
+802
+00:27:41,619 --> 00:27:43,419
+So let's say that
+experiment we did before,
+
+803
+00:27:43,419 --> 00:27:44,620
+I increased the volume.
+
+804
+00:27:44,620 --> 00:27:46,179
+Without heat addition, I
+
+805
+00:27:46,179 --> 00:27:47,860
+would expect a
+decrease in pressure.
+
+806
+00:27:47,860 --> 00:27:49,259
+That's a negative
+slope, right?
+
+807
+00:27:49,259 --> 00:27:51,139
+So DPDV should
+be negative.
+
+808
+00:27:51,139 --> 00:27:54,060
+However, this shows
+positive, right?
+
+809
+00:27:54,060 --> 00:27:55,499
+So that means, like, as I
+
+810
+00:27:55,499 --> 00:27:57,060
+would increase the volume,
+
+811
+00:27:57,060 --> 00:27:58,585
+the pressure should go up.
+
+812
+00:27:58,585 --> 00:28:00,589
+And that makes no
+fucking sense, right?
+
+813
+00:28:00,589 --> 00:28:02,069
+That doesn't make
+any sense, okay?
+
+814
+00:28:02,069 --> 00:28:05,029
+So this, probably B
+to C, is not allowed.
+
+815
+00:28:05,029 --> 00:28:08,149
+Thermodynamically, it
+is unstable. All right?
+
+816
+00:28:08,149 --> 00:28:13,060
+Um, Yeah, so that's
+kind of neat.
+
+817
+00:28:13,060 --> 00:28:15,299
+But the other two
+parts, A to B,
+
+818
+00:28:15,299 --> 00:28:18,539
+and C to D aren't
+they're stable.
+
+819
+00:28:18,539 --> 00:28:19,539
+That's allowed, right?
+
+820
+00:28:19,539 --> 00:28:20,899
+That still follows
+what we said.
+
+821
+00:28:20,899 --> 00:28:22,299
+And so what makes
+this kind of
+
+822
+00:28:22,299 --> 00:28:24,179
+neat is that with this
+kind of procedure
+
+823
+00:28:24,179 --> 00:28:26,459
+with Vandervals
+defining point B
+
+824
+00:28:26,459 --> 00:28:28,620
+and point C for
+substances,
+
+825
+00:28:28,620 --> 00:28:31,019
+you can produce
+regions of what
+
+826
+00:28:31,019 --> 00:28:33,739
+we would call
+metatability, okay?
+
+827
+00:28:33,739 --> 00:28:35,139
+And again,
+you're not going
+
+828
+00:28:35,139 --> 00:28:36,259
+to be on an examine stuff,
+
+829
+00:28:36,259 --> 00:28:37,140
+but some things you should
+
+830
+00:28:37,140 --> 00:28:38,179
+just know, like water,
+
+831
+00:28:38,179 --> 00:28:39,459
+for example,
+does not freeze
+
+832
+00:28:39,459 --> 00:28:40,779
+at 0 Celsius, right?
+
+833
+00:28:40,779 --> 00:28:41,860
+If I wanted to freeze,
+
+834
+00:28:41,860 --> 00:28:43,250
+you need to cool
+it much below.
+
+835
+00:28:43,250 --> 00:28:45,159
+Much below zero, okay?
+
+836
+00:28:45,159 --> 00:28:46,399
+So when you have
+liquid water,
+
+837
+00:28:46,399 --> 00:28:48,440
+that's a liquid water
+below 0 Celsius,
+
+838
+00:28:48,440 --> 00:28:50,079
+that's a meta stable
+liquid, right?
+
+839
+00:28:50,079 --> 00:28:51,079
+If anyone watches, like,
+
+840
+00:28:51,079 --> 00:28:52,439
+the Buffalo
+Bills, you know,
+
+841
+00:28:52,439 --> 00:28:53,600
+play football, it's
+
+842
+00:28:53,600 --> 00:28:54,920
+like actually,
+they're good now.
+
+843
+00:28:54,920 --> 00:28:57,479
+They're very good. But
+for a long time, not.
+
+844
+00:28:57,479 --> 00:28:58,839
+But the point is,
+you'll see like
+
+845
+00:28:58,839 --> 00:28:59,840
+sometimes there's
+these videos
+
+846
+00:28:59,840 --> 00:29:00,600
+in like the fridge,
+
+847
+00:29:00,600 --> 00:29:01,839
+and they'll take a
+water bottle out of
+
+848
+00:29:01,839 --> 00:29:03,740
+a fridge at a game.
+It's like hilarious.
+
+849
+00:29:03,740 --> 00:29:05,479
+Fridge in a place
+where it's like,
+
+850
+00:29:05,479 --> 00:29:08,000
+minus, you know, whatever
+degrees Celsius.
+
+851
+00:29:08,000 --> 00:29:09,240
+They'll take the
+water out and
+
+852
+00:29:09,240 --> 00:29:10,320
+then they'll
+like flick it.
+
+853
+00:29:10,320 --> 00:29:11,280
+And then all of a sudden,
+
+854
+00:29:11,280 --> 00:29:12,240
+you see, like
+solidification.
+
+855
+00:29:12,240 --> 00:29:14,040
+Like, suddenly that
+otling it caused
+
+856
+00:29:14,040 --> 00:29:15,920
+it to freeze and that's
+a metastable flu.
+
+857
+00:29:15,920 --> 00:29:17,239
+It's like beautiful tube.
+
+858
+00:29:17,239 --> 00:29:18,440
+You want to come
+my lab I'll show
+
+859
+00:29:18,440 --> 00:29:19,599
+you some wacky stuff.
+
+860
+00:29:19,599 --> 00:29:21,200
+But that's a
+metastable fluid.
+
+861
+00:29:21,200 --> 00:29:22,160
+It's the same
+when you boil.
+
+862
+00:29:22,160 --> 00:29:23,720
+If you boil
+something, it doesn't
+
+863
+00:29:23,720 --> 00:29:25,399
+happen at 100
+degrees C here.
+
+864
+00:29:25,399 --> 00:29:27,159
+You need to push
+way beyond that.
+
+865
+00:29:27,159 --> 00:29:27,720
+You have to make
+
+866
+00:29:27,720 --> 00:29:29,320
+the surface much
+hotter in order to
+
+867
+00:29:29,320 --> 00:29:30,999
+get the liquid to
+
+868
+00:29:30,999 --> 00:29:33,440
+transition into
+being a vapor.
+
+869
+00:29:33,440 --> 00:29:35,039
+And the same also
+in condensation.
+
+870
+00:29:35,039 --> 00:29:36,359
+It doesn't happen
+at the dew point.
+
+871
+00:29:36,359 --> 00:29:39,079
+You usually got to
+cool it below, there.
+
+872
+00:29:39,079 --> 00:29:39,719
+And anyways,
+
+873
+00:29:39,719 --> 00:29:40,640
+the take home message
+
+874
+00:29:40,640 --> 00:29:41,640
+out of this is
+that this kind of
+
+875
+00:29:41,640 --> 00:29:43,519
+pretty smart young guy in
+
+876
+00:29:43,519 --> 00:29:44,720
+his graduate studies,
+
+877
+00:29:44,720 --> 00:29:46,319
+not too much older
+than you, you know,
+
+878
+00:29:46,319 --> 00:29:48,519
+went in and wrote
+this kind of
+
+879
+00:29:48,519 --> 00:29:51,079
+seemingly simple
+formula that
+
+880
+00:29:51,079 --> 00:29:52,840
+produced this kind of,
+
+881
+00:29:52,840 --> 00:29:54,800
+you know, results,
+this insight,
+
+882
+00:29:54,800 --> 00:29:56,319
+which to this day
+we look into.
+
+883
+00:29:56,319 --> 00:29:57,080
+So in my lab,
+
+884
+00:29:57,080 --> 00:29:58,199
+we look into a lot
+of what we call
+
+885
+00:29:58,199 --> 00:29:59,679
+these metastable
+transitions.
+
+886
+00:29:59,679 --> 00:30:00,800
+When does water boil?
+
+887
+00:30:00,800 --> 00:30:02,519
+When does it condense?
+How does it freeze?
+
+888
+00:30:02,519 --> 00:30:03,959
+I'm going to
+talk like we got
+
+889
+00:30:03,959 --> 00:30:05,960
+Boeing executives below
+us at the moment.
+
+890
+00:30:05,960 --> 00:30:07,080
+So in like 30 minutes,
+
+891
+00:30:07,080 --> 00:30:08,440
+I'm going to go
+talk to them about
+
+892
+00:30:08,440 --> 00:30:10,039
+some of the problems
+and icing that
+
+893
+00:30:10,039 --> 00:30:13,199
+we have that are you
+know, that exists there.
+
+894
+00:30:13,199 --> 00:30:15,079
+But it's kind of like,
+you know, A, B, C,
+
+895
+00:30:15,079 --> 00:30:17,479
+D, it's kind of it's
+kind of neat, okay?
+
+896
+00:30:17,479 --> 00:30:19,999
+And again, all
+from young man
+
+897
+00:30:19,999 --> 00:30:22,479
+doing grad school
+with it, okay?
+
+898
+00:30:22,479 --> 00:30:23,639
+It's also interesting to
+
+899
+00:30:23,639 --> 00:30:24,600
+look at the ideal gas.
+
+900
+00:30:24,600 --> 00:30:26,759
+So, you know, again, we
+had property tables,
+
+901
+00:30:26,759 --> 00:30:30,679
+we had Vandervals you
+
+902
+00:30:30,679 --> 00:30:31,119
+can also put on
+
+903
+00:30:31,119 --> 00:30:32,679
+the same plot on
+the ideal gas.
+
+904
+00:30:32,679 --> 00:30:33,759
+And from this, you'll see,
+
+905
+00:30:33,759 --> 00:30:35,254
+again, so very, um,
+
+906
+00:30:35,254 --> 00:30:38,549
+low densities out here,
+very low pressures.
+
+907
+00:30:38,549 --> 00:30:39,949
+Everything aligns, okay?
+
+908
+00:30:39,949 --> 00:30:42,749
+So that's all valid.
+But who cares?
+
+909
+00:30:42,749 --> 00:30:44,270
+I mean, like, who cares?
+
+910
+00:30:44,270 --> 00:30:45,829
+Like, that's not where a
+
+911
+00:30:45,829 --> 00:30:46,949
+lot of the action
+happens, right?
+
+912
+00:30:46,949 --> 00:30:47,710
+A lot of the action
+
+913
+00:30:47,710 --> 00:30:48,869
+happens over when
+you get here.
+
+914
+00:30:48,869 --> 00:30:49,670
+And at this point,
+
+915
+00:30:49,670 --> 00:30:51,069
+you see a strong
+divergence of
+
+916
+00:30:51,069 --> 00:30:53,030
+the ideal gas equation
+
+917
+00:30:53,030 --> 00:30:56,039
+from the other
+two cases, okay?
+
+918
+00:30:56,039 --> 00:30:58,329
+Great. What I want to
+
+919
+00:30:58,329 --> 00:31:00,489
+wrap up with here and
+let's see if I have,
+
+920
+00:31:00,489 --> 00:31:01,689
+you know, the amount
+of time for it.
+
+921
+00:31:01,689 --> 00:31:03,369
+Otherwise, I can
+continue next week
+
+922
+00:31:03,369 --> 00:31:05,370
+is this business
+
+923
+00:31:05,370 --> 00:31:08,369
+into these constants so
+
+924
+00:31:08,369 --> 00:31:09,689
+these specific
+heats, right?
+
+925
+00:31:09,689 --> 00:31:11,689
+So in that problem
+we did before,
+
+926
+00:31:11,689 --> 00:31:14,330
+right, we took
+basically a container.
+
+927
+00:31:14,330 --> 00:31:16,210
+We defined a mass.
+
+928
+00:31:16,210 --> 00:31:19,009
+We transferred
+some heat into it,
+
+929
+00:31:19,009 --> 00:31:21,049
+and we wanted to know what
+
+930
+00:31:21,049 --> 00:31:23,170
+was the change
+in temperature.
+
+931
+00:31:23,170 --> 00:31:24,450
+We knew the change
+in temperature,
+
+932
+00:31:24,450 --> 00:31:25,050
+and we wanted to know
+
+933
+00:31:25,050 --> 00:31:26,290
+how much heat
+that we put in.
+
+934
+00:31:26,290 --> 00:31:28,050
+We did a conservation
+of energy.
+
+935
+00:31:28,050 --> 00:31:29,130
+We said the
+change in energy
+
+936
+00:31:29,130 --> 00:31:30,249
+of this control volume is
+
+937
+00:31:30,249 --> 00:31:31,690
+equal to how much enters
+
+938
+00:31:31,690 --> 00:31:32,729
+minus how much is out.
+
+939
+00:31:32,729 --> 00:31:35,250
+These are little E, so
+this is like per mass.
+
+940
+00:31:35,250 --> 00:31:36,849
+Um Right,
+
+941
+00:31:36,849 --> 00:31:38,089
+this system is kept at
+
+942
+00:31:38,089 --> 00:31:39,170
+constant volume, right?
+
+943
+00:31:39,170 --> 00:31:40,329
+So the change in
+the energy of
+
+944
+00:31:40,329 --> 00:31:42,209
+the system is nothing
+but the change in,
+
+945
+00:31:42,209 --> 00:31:45,370
+um, uh, the
+internal energy.
+
+946
+00:31:45,370 --> 00:31:47,409
+The E and then the E
+out of this are only
+
+947
+00:31:47,409 --> 00:31:49,529
+going to be heat
+transfer processes.
+
+948
+00:31:49,529 --> 00:31:50,330
+And so what you're
+
+949
+00:31:50,330 --> 00:31:51,250
+going to end up
+with is that
+
+950
+00:31:51,250 --> 00:31:53,369
+that heat in is this
+constant times dt.
+
+951
+00:31:53,369 --> 00:31:55,169
+And we'll call
+this a CV, right?
+
+952
+00:31:55,169 --> 00:31:56,449
+So it's constant volume,
+
+953
+00:31:56,449 --> 00:31:58,529
+we'll say C,
+little V times dt,
+
+954
+00:31:58,529 --> 00:32:00,170
+and then that's going
+to be equal to d,
+
+955
+00:32:00,170 --> 00:32:05,049
+um, to little D,
+you know, little U.
+
+956
+00:32:05,049 --> 00:32:06,450
+And then, by definition,
+
+957
+00:32:06,450 --> 00:32:07,730
+so the definition then of
+
+958
+00:32:07,730 --> 00:32:09,889
+the specific heat at
+constant volume, right,
+
+959
+00:32:09,889 --> 00:32:11,249
+is the partial
+derivative of
+
+960
+00:32:11,249 --> 00:32:13,169
+the internal energy
+of your control,
+
+961
+00:32:13,169 --> 00:32:15,410
+you know, of the
+system with respect
+
+962
+00:32:15,410 --> 00:32:17,809
+to temperature for
+constant volume.
+
+963
+00:32:17,809 --> 00:32:19,609
+We're going to
+use this like
+
+964
+00:32:19,609 --> 00:32:21,449
+a ton, like a ton, okay?
+
+965
+00:32:21,449 --> 00:32:23,529
+So like this,
+Oh, it doesn't.
+
+966
+00:32:23,529 --> 00:32:24,649
+We're going to use
+it a lot, okay,
+
+967
+00:32:24,649 --> 00:32:25,849
+especially with
+the engines
+
+968
+00:32:25,849 --> 00:32:28,299
+and and fun
+stuff like that.
+
+969
+00:32:28,299 --> 00:32:29,859
+So this is kind
+of like let's
+
+970
+00:32:29,859 --> 00:32:31,219
+call it factual, okay?
+
+971
+00:32:31,219 --> 00:32:33,459
+Factual, right? And we
+
+972
+00:32:33,459 --> 00:32:34,819
+do the same heat
+addition process,
+
+973
+00:32:34,819 --> 00:32:36,140
+but not constant volume,
+
+974
+00:32:36,140 --> 00:32:37,459
+we have constant pressure.
+
+975
+00:32:37,459 --> 00:32:38,699
+You expect there,
+there's going
+
+976
+00:32:38,699 --> 00:32:40,059
+to be not just
+the warming,
+
+977
+00:32:40,059 --> 00:32:41,419
+but potentially
+work, right?
+
+978
+00:32:41,419 --> 00:32:43,179
+I have a P Delta
+V. So what
+
+979
+00:32:43,179 --> 00:32:44,179
+you're going to
+expect is that
+
+980
+00:32:44,179 --> 00:32:45,340
+that value should
+be higher, right?
+
+981
+00:32:45,340 --> 00:32:46,819
+Because when I
+transfer some heat in,
+
+982
+00:32:46,819 --> 00:32:48,620
+I'm going to do
+some work at
+
+983
+00:32:48,620 --> 00:32:50,379
+the same time that
+I'm heating, right?
+
+984
+00:32:50,379 --> 00:32:52,929
+Um, We'll get into,
+
+985
+00:32:52,929 --> 00:32:55,049
+like, what this term
+means as a little H,
+
+986
+00:32:55,049 --> 00:32:56,610
+but essentially
+its definition
+
+987
+00:32:56,610 --> 00:32:58,370
+is the partial
+derivative of enthalpy,
+
+988
+00:32:58,370 --> 00:33:00,249
+essentially kind
+of energy with
+
+989
+00:33:00,249 --> 00:33:02,649
+respect to temperature
+for constant pressure,
+
+990
+00:33:02,649 --> 00:33:03,729
+and we're also
+going to use that
+
+991
+00:33:03,729 --> 00:33:05,489
+one a ton, okay?
+
+992
+00:33:05,489 --> 00:33:08,289
+Their units are
+energy per mass per
+
+993
+00:33:08,289 --> 00:33:11,530
+keelvin or energy energy
+per mass per degree.
+
+994
+00:33:11,530 --> 00:33:14,250
+So it could be degree
+Kelvin degrees Celsius.
+
+995
+00:33:14,250 --> 00:33:15,569
+It doesn't
+matter. A lot of
+
+996
+00:33:15,569 --> 00:33:16,650
+times, actually,
+all the times,
+
+997
+00:33:16,650 --> 00:33:18,290
+it's going to be
+a Delta T. We're
+
+998
+00:33:18,290 --> 00:33:18,889
+always going to be working
+
+999
+00:33:18,889 --> 00:33:20,129
+with differences
+in temperature.
+
+1000
+00:33:20,129 --> 00:33:21,850
+So it can be differences
+in temperature,
+
+1001
+00:33:21,850 --> 00:33:23,609
+Kelvin temperatures
+and temperature,
+
+1002
+00:33:23,609 --> 00:33:24,770
+Celsius, as long as you're
+
+1003
+00:33:24,770 --> 00:33:26,089
+consistent, you're
+good, okay?
+
+1004
+00:33:26,089 --> 00:33:27,289
+But again, it's like heat.
+
+1005
+00:33:27,289 --> 00:33:28,449
+Because I put heat in, I
+
+1006
+00:33:28,449 --> 00:33:29,809
+expect the temperature
+change, right?
+
+1007
+00:33:29,809 --> 00:33:31,569
+And the constant
+in front of it is
+
+1008
+00:33:31,569 --> 00:33:34,849
+the specific heat, okay?
+
+1009
+00:33:34,849 --> 00:33:37,450
+And so, coming back
+to Jules experiment,
+
+1010
+00:33:37,450 --> 00:33:38,729
+right, he was
+basically very,
+
+1011
+00:33:38,729 --> 00:33:40,090
+you know, very
+concerned with
+
+1012
+00:33:40,090 --> 00:33:42,409
+how this thing here.
+
+1013
+00:33:42,409 --> 00:33:45,769
+So basically calculating,
+especially CV here.
+
+1014
+00:33:45,769 --> 00:33:46,849
+So if I kept things at
+
+1015
+00:33:46,849 --> 00:33:48,889
+constant volume and
+I made changes,
+
+1016
+00:33:48,889 --> 00:33:50,449
+you know, will I actually
+
+1017
+00:33:50,449 --> 00:33:53,369
+measure a change in
+temperature, okay?
+
+1018
+00:33:53,369 --> 00:33:54,649
+And it turns out,
+I'm going to
+
+1019
+00:33:54,649 --> 00:33:56,050
+foreshadow. We'll
+get into it.
+
+1020
+00:33:56,050 --> 00:33:58,849
+But for an ideal
+gas, um, You know,
+
+1021
+00:33:58,849 --> 00:34:00,369
+this internal
+energy, you know,
+
+1022
+00:34:00,369 --> 00:34:03,369
+is only dependent upon
+temperature there,
+
+1023
+00:34:03,369 --> 00:34:03,610
+right?
+
+1024
+00:34:03,610 --> 00:34:04,850
+So when you get to the CV,
+
+1025
+00:34:04,850 --> 00:34:05,609
+it only depends on that.
+
+1026
+00:34:05,609 --> 00:34:07,409
+It doesn't depend on
+temperature or it depend
+
+1027
+00:34:07,409 --> 00:34:09,569
+on pressure or
+volume, okay?
+
+1028
+00:34:09,569 --> 00:34:10,529
+With 4 seconds ago,
+
+1029
+00:34:10,529 --> 00:34:11,369
+I'm going to
+close it there.
+
+1030
+00:34:11,369 --> 00:34:12,329
+If you have questions
+I'm up here.
+
+1031
+00:34:12,329 --> 00:34:13,770
+Otherwise, I got
+to run downstairs.
+
+1032
+00:34:13,770 --> 00:34:17,609
+Thank you, everyone.
+Thank you.
+
+1033
+00:34:17,609 --> 00:34:19,049
+Thank you.

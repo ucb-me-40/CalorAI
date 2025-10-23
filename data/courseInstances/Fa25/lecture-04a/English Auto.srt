@@ -1,0 +1,3904 @@
+1
+00:00:00,000 --> 00:00:02,720
+Alright, I got 210.
+Let's get started.
+
+2
+00:00:02,720 --> 00:00:07,399
+So today, energy analysis
+of closed systems.
+
+3
+00:00:07,480 --> 00:00:10,320
+So quiz one.
+
+4
+00:00:10,320 --> 00:00:12,400
+It's coming like winter,
+
+5
+00:00:12,400 --> 00:00:14,440
+all right, in some
+parts of the world.
+
+6
+00:00:14,440 --> 00:00:16,000
+Basically, right, you're
+going to take this
+
+7
+00:00:16,000 --> 00:00:17,519
+at the computer based
+testing facility.
+
+8
+00:00:17,519 --> 00:00:18,200
+Click that link.
+
+9
+00:00:18,200 --> 00:00:19,719
+You can learn about
+it. It's wonderful.
+
+10
+00:00:19,719 --> 00:00:21,200
+You'll be able to
+start registering
+
+11
+00:00:21,200 --> 00:00:22,644
+for this on the 25th.
+
+12
+00:00:22,644 --> 00:00:24,289
+Look to Quiz one page.
+
+13
+00:00:24,289 --> 00:00:25,489
+This is one stop shopping.
+
+14
+00:00:25,489 --> 00:00:26,329
+So all the stuff you want
+
+15
+00:00:26,329 --> 00:00:27,289
+to see, details are there.
+
+16
+00:00:27,289 --> 00:00:28,649
+So you're welcome to
+
+17
+00:00:28,649 --> 00:00:30,769
+email me or the GSIs,
+but please just,
+
+18
+00:00:30,769 --> 00:00:33,610
+have a look at
+that before asking
+
+19
+00:00:33,610 --> 00:00:34,489
+because it might be
+
+20
+00:00:34,489 --> 00:00:35,169
+able to answer
+your question
+
+21
+00:00:35,169 --> 00:00:37,370
+much quicker than I
+will be able to reply.
+
+22
+00:00:37,370 --> 00:00:38,610
+We have four problems.
+
+23
+00:00:38,610 --> 00:00:39,609
+I'm not going to read them
+
+24
+00:00:39,609 --> 00:00:41,610
+here, but yeah,
+essentially,
+
+25
+00:00:41,610 --> 00:00:44,569
+this is what you'll
+be asked to do today,
+
+26
+00:00:44,569 --> 00:00:46,770
+we're going to talk
+about Adbtic expansion
+
+27
+00:00:46,770 --> 00:00:48,929
+in one of the
+problems, okay?
+
+28
+00:00:48,929 --> 00:00:50,929
+Module one review
+is posted today.
+
+29
+00:00:50,929 --> 00:00:52,329
+So if you want to
+generate, like,
+
+30
+00:00:52,329 --> 00:00:53,969
+practice quizzes and get
+
+31
+00:00:53,969 --> 00:00:55,049
+into game shape with it,
+
+32
+00:00:55,049 --> 00:00:55,849
+you'll be able to do that.
+
+33
+00:00:55,849 --> 00:00:57,409
+So just go to
+the P one module
+
+34
+00:00:57,409 --> 00:00:58,650
+and review how this works.
+
+35
+00:00:58,650 --> 00:00:59,929
+When you click
+on it, right?
+
+36
+00:00:59,929 --> 00:01:00,889
+It's going to generate
+
+37
+00:01:00,889 --> 00:01:02,369
+these four questions
+that are for you.
+
+38
+00:01:02,369 --> 00:01:04,129
+You can take that, and
+then you can go up
+
+39
+00:01:04,129 --> 00:01:05,049
+and click it again and
+
+40
+00:01:05,049 --> 00:01:06,289
+generate new ones, right?
+
+41
+00:01:06,289 --> 00:01:08,809
+So for those who are yeah,
+
+42
+00:01:08,809 --> 00:01:12,969
+like quizzes, that's
+what you can do, right?
+
+43
+00:01:12,969 --> 00:01:14,889
+And the way the point
+of this is that this is
+
+44
+00:01:14,889 --> 00:01:15,689
+exactly how it'll look
+
+45
+00:01:15,689 --> 00:01:16,890
+like then on
+the assessment.
+
+46
+00:01:16,890 --> 00:01:18,049
+So the way you
+look at this,
+
+47
+00:01:18,049 --> 00:01:20,209
+also the workbooks
+and all of that,
+
+48
+00:01:20,209 --> 00:01:22,329
+it should be like one
+to one with it, right?
+
+49
+00:01:22,329 --> 00:01:24,529
+Okay, so after
+today, right,
+
+50
+00:01:24,529 --> 00:01:26,249
+we're going to be
+able to do PDV work
+
+51
+00:01:26,249 --> 00:01:28,769
+for kind of commonly
+encountered things.
+
+52
+00:01:28,769 --> 00:01:31,489
+You know, you're going
+to be able to say that
+
+53
+00:01:31,489 --> 00:01:32,769
+basically the first law is
+
+54
+00:01:32,769 --> 00:01:34,370
+conservation of energy.
+
+55
+00:01:34,370 --> 00:01:35,929
+And then, again,
+I'm going to
+
+56
+00:01:35,929 --> 00:01:37,249
+continue with
+practicing how to
+
+57
+00:01:37,249 --> 00:01:40,130
+do general energy balances
+
+58
+00:01:40,130 --> 00:01:41,450
+to control volumes.
+
+59
+00:01:41,450 --> 00:01:43,369
+This kind of
+repetition, okay?
+
+60
+00:01:43,369 --> 00:01:46,089
+Okay, so why do we
+care about that?
+
+61
+00:01:46,089 --> 00:01:49,859
+Um, Oh, sweet. Okay.
+
+62
+00:01:49,859 --> 00:01:50,979
+That playback isn't there.
+
+63
+00:01:50,979 --> 00:01:52,420
+So now you get to use
+your imagination.
+
+64
+00:01:52,420 --> 00:01:54,259
+This worked last
+year. D's here.
+
+65
+00:01:54,259 --> 00:01:56,459
+He could tell you if
+this video worked.
+
+66
+00:01:56,459 --> 00:01:59,140
+Anyway, so piston
+basically piston
+
+67
+00:01:59,140 --> 00:02:01,819
+or PDV work, this kind
+of boundary work.
+
+68
+00:02:01,819 --> 00:02:03,739
+It's pretty much how we
+
+69
+00:02:03,739 --> 00:02:05,739
+move everything
+still, right?
+
+70
+00:02:05,739 --> 00:02:06,939
+We have electrification,
+
+71
+00:02:06,939 --> 00:02:08,900
+but everything that's
+like terrestrial,
+
+72
+00:02:08,900 --> 00:02:10,540
+so that means like,
+not an airplane,
+
+73
+00:02:10,540 --> 00:02:13,540
+like long haul trucking,
+internal combustion,
+
+74
+00:02:13,540 --> 00:02:14,940
+all basically
+involves, right,
+
+75
+00:02:14,940 --> 00:02:18,300
+this expansion and
+contraction with it,
+
+76
+00:02:18,300 --> 00:02:18,500
+right?
+
+77
+00:02:18,500 --> 00:02:22,300
+So engines, compressors,
+and things of that,
+
+78
+00:02:22,300 --> 00:02:25,080
+um you know, nature. Okay?
+
+79
+00:02:25,080 --> 00:02:26,119
+So these little devices,
+
+80
+00:02:26,119 --> 00:02:27,599
+the pistons and
+the piston side,
+
+81
+00:02:27,599 --> 00:02:28,679
+that's what we've
+been looking at
+
+82
+00:02:28,679 --> 00:02:31,319
+and why it's important.
+
+83
+00:02:31,319 --> 00:02:33,240
+Okay. Maybe I'll try
+it in the browser.
+
+84
+00:02:33,240 --> 00:02:35,880
+Are we brave? I think
+it's noisy, though.
+
+85
+00:02:35,880 --> 00:02:39,239
+Okay, Howden, I don't
+know what Howden is.
+
+86
+00:02:39,880 --> 00:02:42,279
+Yeah, there we
+go. Let's see.
+
+87
+00:02:42,279 --> 00:02:45,279
+Do we have sound?
+That doesn't
+
+88
+00:02:45,279 --> 00:02:47,014
+give me sound.
+That's terrible.
+
+89
+00:02:47,014 --> 00:02:49,629
+It's only on mine. Okay.
+And it's fun music.
+
+90
+00:02:49,629 --> 00:02:50,750
+Anyways, yeah, so you can,
+
+91
+00:02:50,750 --> 00:02:51,510
+like, have a look and see,
+
+92
+00:02:51,510 --> 00:02:52,790
+there's lots of, you know,
+
+93
+00:02:52,790 --> 00:02:53,550
+neat things out there.
+
+94
+00:02:53,550 --> 00:02:55,150
+But, you know,
+this is sort of,
+
+95
+00:02:55,150 --> 00:02:57,710
+you know, super
+important for movement.
+
+96
+00:02:57,710 --> 00:02:58,949
+You know, it's
+kind of like
+
+97
+00:02:58,949 --> 00:03:00,470
+how an engine
+takes a step.
+
+98
+00:03:00,470 --> 00:03:01,870
+Also, if're like, really
+
+99
+00:03:01,870 --> 00:03:04,030
+into if you're
+like a real, like,
+
+100
+00:03:04,030 --> 00:03:06,070
+big nerd like meaner and
+steam engines, like,
+
+101
+00:03:06,070 --> 00:03:07,189
+you can go see this
+stuff at, like,
+
+102
+00:03:07,189 --> 00:03:08,350
+Tilton Park, right?
+
+103
+00:03:08,350 --> 00:03:09,509
+So they have, like, legit
+
+104
+00:03:09,509 --> 00:03:10,790
+operating steam engines.
+
+105
+00:03:10,790 --> 00:03:11,869
+I think they run on oil,
+
+106
+00:03:11,869 --> 00:03:13,229
+though, not coal with it.
+
+107
+00:03:13,229 --> 00:03:14,630
+But if you want to, like,
+
+108
+00:03:14,630 --> 00:03:15,789
+really geek out
+about trains
+
+109
+00:03:15,789 --> 00:03:17,109
+and all that, like,
+you can go and see,
+
+110
+00:03:17,109 --> 00:03:19,910
+you know, essentially
+the piston movement
+
+111
+00:03:19,910 --> 00:03:21,470
+and stuff they have there.
+
+112
+00:03:21,470 --> 00:03:23,510
+Okay. Surely, you have
+
+113
+00:03:23,510 --> 00:03:25,430
+better things to do on
+a Friday than that.
+
+114
+00:03:25,430 --> 00:03:28,030
+Um Yeah, so again,
+
+115
+00:03:28,030 --> 00:03:29,870
+we're talking about the
+moving boundary work.
+
+116
+00:03:29,870 --> 00:03:31,270
+Some clarifications,
+though, right?
+
+117
+00:03:31,270 --> 00:03:34,630
+So in cars, you know,
+
+118
+00:03:34,630 --> 00:03:37,789
+in that, these things
+tend to move quickly.
+
+119
+00:03:37,789 --> 00:03:39,790
+You know, if you
+ever, like, read
+
+120
+00:03:39,790 --> 00:03:41,309
+like a tachometer
+on, like, a vehicle,
+
+121
+00:03:41,309 --> 00:03:42,550
+like internal
+combustion, right,
+
+122
+00:03:42,550 --> 00:03:44,149
+you're measuring
+essentially, like
+
+123
+00:03:44,149 --> 00:03:45,910
+thousands of RPMs, right?
+
+124
+00:03:45,910 --> 00:03:47,069
+It means like a movement
+
+125
+00:03:47,069 --> 00:03:48,310
+like that is
+probably going,
+
+126
+00:03:48,310 --> 00:03:50,990
+you know, ten times
+in a second, right?
+
+127
+00:03:50,990 --> 00:03:53,470
+At least sort of ten
+times in a second.
+
+128
+00:03:53,470 --> 00:03:55,990
+And that is
+definitely not,
+
+129
+00:03:55,990 --> 00:03:58,269
+right, equilibrium.
+
+130
+00:03:58,269 --> 00:04:00,580
+However, it's not
+too bad, right?
+
+131
+00:04:00,580 --> 00:04:02,300
+The assumptions that
+we'll make are basically
+
+132
+00:04:02,300 --> 00:04:04,419
+not um, you know, too bad.
+
+133
+00:04:04,419 --> 00:04:06,140
+And really, the
+goal of thermo
+
+134
+00:04:06,140 --> 00:04:07,380
+is for us to kind
+of see what is,
+
+135
+00:04:07,380 --> 00:04:08,180
+like, the right direction.
+
+136
+00:04:08,180 --> 00:04:09,819
+So even if you make
+these assumptions,
+
+137
+00:04:09,819 --> 00:04:10,539
+you know, with the math
+
+138
+00:04:10,539 --> 00:04:11,540
+and the physics there,
+
+139
+00:04:11,540 --> 00:04:13,739
+we get to really know
+if we're kind of moving
+
+140
+00:04:13,739 --> 00:04:17,619
+into a right, you
+know, direction.
+
+141
+00:04:17,619 --> 00:04:19,299
+But for the purposes
+of this analysis,
+
+142
+00:04:19,299 --> 00:04:20,300
+we have to start
+somewhere.
+
+143
+00:04:20,300 --> 00:04:21,220
+So we start with kind of
+
+144
+00:04:21,220 --> 00:04:23,539
+quasi equilibrium with it.
+
+145
+00:04:23,539 --> 00:04:25,984
+Okay? All right, um,
+
+146
+00:04:25,984 --> 00:04:28,149
+So how do we, like,
+classify this?
+
+147
+00:04:28,149 --> 00:04:29,669
+So there's a couple of
+
+148
+00:04:29,669 --> 00:04:32,269
+different terms
+that'll come up.
+
+149
+00:04:32,269 --> 00:04:34,429
+One here that we see is
+
+150
+00:04:34,429 --> 00:04:36,309
+this term sort
+of polytropic.
+
+151
+00:04:36,309 --> 00:04:37,749
+I'll get into
+a second what
+
+152
+00:04:37,749 --> 00:04:40,669
+that, you know, means.
+
+153
+00:04:40,669 --> 00:04:42,149
+But, you know, when
+
+154
+00:04:42,149 --> 00:04:43,749
+we're thinking
+about work, right?
+
+155
+00:04:43,749 --> 00:04:45,269
+So this sort of
+boundary work
+
+156
+00:04:45,269 --> 00:04:47,469
+or expansion work that's,
+
+157
+00:04:47,469 --> 00:04:49,269
+you know, that's
+there, right,
+
+158
+00:04:49,269 --> 00:04:51,334
+is the integral of what?
+
+159
+00:04:51,334 --> 00:04:53,839
+PDV, right? So basically,
+
+160
+00:04:53,839 --> 00:04:56,439
+you have P dV, right?
+
+161
+00:04:56,439 --> 00:04:57,559
+And the name of
+the game here,
+
+162
+00:04:57,559 --> 00:05:00,799
+in order to do this
+integral is we need
+
+163
+00:05:00,799 --> 00:05:02,599
+to know pressure as
+
+164
+00:05:02,599 --> 00:05:04,159
+a function of
+volume, right?
+
+165
+00:05:04,159 --> 00:05:06,559
+So we want some
+function here,
+
+166
+00:05:06,559 --> 00:05:08,600
+that's essentially,
+
+167
+00:05:08,600 --> 00:05:10,119
+right, the function
+of the volume,
+
+168
+00:05:10,119 --> 00:05:11,759
+and then we do a
+substitution, okay?
+
+169
+00:05:11,759 --> 00:05:13,959
+So this polytropic
+is nothing
+
+170
+00:05:13,959 --> 00:05:16,079
+but let me make
+
+171
+00:05:16,079 --> 00:05:16,719
+sure I'm not getting
+
+172
+00:05:16,719 --> 00:05:18,319
+ahead of myself too quick.
+
+173
+00:05:18,319 --> 00:05:20,239
+All right. It's sort
+of fair game now.
+
+174
+00:05:20,239 --> 00:05:22,360
+All right. Right? So we're
+
+175
+00:05:22,360 --> 00:05:24,399
+basically going to write
+something like this.
+
+176
+00:05:24,399 --> 00:05:25,919
+We're going to say
+pressure times
+
+177
+00:05:25,919 --> 00:05:27,680
+volume with volume to
+
+178
+00:05:27,680 --> 00:05:29,839
+the N exponent is
+
+179
+00:05:29,839 --> 00:05:33,119
+equal to a constant,
+all right?
+
+180
+00:05:33,119 --> 00:05:37,559
+Now, this is
+polytropic, okay?
+
+181
+00:05:37,559 --> 00:05:40,359
+Who can tell me
+off the top of
+
+182
+00:05:40,359 --> 00:05:42,080
+their head maybe
+something that looks
+
+183
+00:05:42,080 --> 00:05:44,839
+like PV equals something?
+
+184
+00:05:45,800 --> 00:05:49,479
+Sure. Name and
+what's the answer?
+
+185
+00:05:49,880 --> 00:05:53,039
+Exactly. So what, though?
+
+186
+00:05:53,039 --> 00:05:55,119
+When would that be useful?
+
+187
+00:05:55,119 --> 00:05:58,919
+When would the NRT
+equal to a constant?
+
+188
+00:06:00,820 --> 00:06:03,859
+Isothermal Isothermal.
+
+189
+00:06:03,859 --> 00:06:05,099
+So the isothermal case.
+
+190
+00:06:05,099 --> 00:06:06,380
+Exactly. The exponent is
+
+191
+00:06:06,380 --> 00:06:07,819
+what then in an
+isothermal case.
+
+192
+00:06:07,819 --> 00:06:10,219
+N equals one.
+
+193
+00:06:10,219 --> 00:06:11,980
+Uno, right? Eins.
+
+194
+00:06:11,980 --> 00:06:14,299
+So N equals one, and
+you have that, okay?
+
+195
+00:06:14,299 --> 00:06:15,779
+So that's one
+of the cases.
+
+196
+00:06:15,779 --> 00:06:17,379
+We'll talk about two other
+
+197
+00:06:17,379 --> 00:06:19,179
+we'll talk about
+another case later on,
+
+198
+00:06:19,179 --> 00:06:19,820
+which is where we have
+
+199
+00:06:19,820 --> 00:06:21,499
+no heat transfer,
+adiabatic, okay?
+
+200
+00:06:21,499 --> 00:06:22,219
+And they're going to have
+
+201
+00:06:22,219 --> 00:06:24,379
+sort of a different
+constant, okay?
+
+202
+00:06:24,379 --> 00:06:26,459
+But the sort of general
+formula of PV to
+
+203
+00:06:26,459 --> 00:06:30,019
+the N equals a constant
+is this polytropic,
+
+204
+00:06:30,019 --> 00:06:32,420
+you know,
+polytropic process.
+
+205
+00:06:32,420 --> 00:06:33,899
+What I'm showing
+you here is
+
+206
+00:06:33,899 --> 00:06:35,299
+the case of N
+equals to one,
+
+207
+00:06:35,299 --> 00:06:36,699
+and that's your
+isothermal case.
+
+208
+00:06:36,699 --> 00:06:39,219
+So as was mentioned there.
+
+209
+00:06:39,219 --> 00:06:40,659
+All right.
+
+210
+00:06:41,060 --> 00:06:44,579
+Okay. So if we
+take this way,
+
+211
+00:06:44,579 --> 00:06:45,860
+we can do the
+substitution.
+
+212
+00:06:45,860 --> 00:06:47,860
+So if we do the
+substitution
+
+213
+00:06:47,860 --> 00:06:50,459
+there for the
+polytropic, right?
+
+214
+00:06:50,459 --> 00:06:54,499
+So the boundary work
+is then equal to
+
+215
+00:06:54,660 --> 00:06:58,820
+a constant times
+an integral
+
+216
+00:06:58,820 --> 00:07:01,179
+from state one to
+state two, right?
+
+217
+00:07:01,179 --> 00:07:02,499
+So I'll rearrange
+this, right?
+
+218
+00:07:02,499 --> 00:07:04,340
+So basically, I
+have a constant.
+
+219
+00:07:04,340 --> 00:07:06,379
+So P is equal
+to a constant,
+
+220
+00:07:06,379 --> 00:07:11,139
+then divided by V
+to the end, right?
+
+221
+00:07:11,139 --> 00:07:13,660
+So then what we'll
+have is D V divided by
+
+222
+00:07:13,660 --> 00:07:17,539
+V to the end, okay?
+
+223
+00:07:19,710 --> 00:07:22,549
+That should be
+an N. It's an N
+
+224
+00:07:22,549 --> 00:07:25,269
+there, right? All right?
+
+225
+00:07:25,269 --> 00:07:26,869
+And if we know state one,
+
+226
+00:07:26,869 --> 00:07:32,989
+so if we know state one,
+
+227
+00:07:32,989 --> 00:07:34,509
+which a lot of
+times we do.
+
+228
+00:07:34,509 --> 00:07:35,509
+So what does that mean?
+
+229
+00:07:35,509 --> 00:07:36,989
+It means basically
+if we know P
+
+230
+00:07:36,989 --> 00:07:40,709
+one and we know
+and we know V one,
+
+231
+00:07:40,709 --> 00:07:42,189
+we can substitute that
+
+232
+00:07:42,189 --> 00:07:44,029
+for the constant, right?
+
+233
+00:07:44,029 --> 00:07:47,149
+Because you basically
+you would have a, uh,
+
+234
+00:07:47,149 --> 00:07:57,049
+um, a C that's equal
+to p1v1, right?
+
+235
+00:07:57,049 --> 00:07:58,609
+P1v1 to the N,
+
+236
+00:07:58,609 --> 00:08:00,370
+and if, right?
+So that's fine.
+
+237
+00:08:00,370 --> 00:08:01,970
+So we can do the
+substitution.
+
+238
+00:08:01,970 --> 00:08:07,129
+And if we have
+isothermal, right?
+
+239
+00:08:07,129 --> 00:08:08,609
+As was just mentioned by
+
+240
+00:08:08,609 --> 00:08:10,009
+your classmate, right,
+
+241
+00:08:10,009 --> 00:08:17,049
+we'll have N equal
+to one. All right.
+
+242
+00:08:17,049 --> 00:08:21,269
+And so if we do With
+that N equals one,
+
+243
+00:08:21,269 --> 00:08:22,149
+I'll just write it out
+
+244
+00:08:22,149 --> 00:08:23,749
+just for clarity, right?
+
+245
+00:08:23,749 --> 00:08:27,669
+So boundary work
+is then p1v1.
+
+246
+00:08:27,669 --> 00:08:30,189
+That's the
+substitution for C.
+
+247
+00:08:30,189 --> 00:08:31,790
+We then have the integral
+
+248
+00:08:31,790 --> 00:08:34,870
+1-2 to two of
+
+249
+00:08:34,870 --> 00:08:37,949
+dv divided by V because
+that's also there.
+
+250
+00:08:37,949 --> 00:08:39,070
+And so what you're
+going to end
+
+251
+00:08:39,070 --> 00:08:42,109
+up with then is p1v1,
+
+252
+00:08:42,109 --> 00:08:45,230
+natural log natural log
+
+253
+00:08:45,230 --> 00:08:50,110
+of V two divided by
+V one. All right?
+
+254
+00:08:50,110 --> 00:08:52,149
+Cool. And then that's
+the plot, right?
+
+255
+00:08:52,149 --> 00:08:53,550
+So that's
+essentially the plot
+
+256
+00:08:53,550 --> 00:08:54,190
+that you have there,
+
+257
+00:08:54,190 --> 00:08:57,990
+and where that right
+
+258
+00:09:02,620 --> 00:09:07,180
+What is the
+integral of this?
+
+259
+00:09:11,500 --> 00:09:14,980
+What's the integral of
+
+260
+00:09:14,980 --> 00:09:17,980
+any variable dx
+divided by X?
+
+261
+00:09:22,720 --> 00:09:26,160
+Natural log of X, and
+in this case, right,
+
+262
+00:09:26,160 --> 00:09:28,160
+plus a constant, or
+
+263
+00:09:28,160 --> 00:09:30,040
+if I integrate
+it 1-2, right?
+
+264
+00:09:30,040 --> 00:09:31,759
+So let's say it's 1-2,
+
+265
+00:09:31,759 --> 00:09:33,160
+then this would be X two
+
+266
+00:09:33,160 --> 00:09:35,640
+divided by X one, right?
+
+267
+00:09:35,640 --> 00:09:43,839
+Okay. So natural log
+
+268
+00:09:43,839 --> 00:09:47,280
+of V two divided by V one.
+
+269
+00:09:47,280 --> 00:09:53,020
+Good. Any questions
+about that? All right.
+
+270
+00:09:53,020 --> 00:09:54,500
+And what's one way that
+
+271
+00:09:54,500 --> 00:09:55,659
+you could double
+check yourself
+
+272
+00:09:55,659 --> 00:09:59,300
+on this area, right?
+
+273
+00:09:59,300 --> 00:10:01,140
+So use color.
+Kindergarten.
+
+274
+00:10:01,140 --> 00:10:02,019
+I love coloring.
+
+275
+00:10:02,019 --> 00:10:03,500
+Okay? So you just go
+in and there you need
+
+276
+00:10:03,500 --> 00:10:06,580
+color and you'll end up.
+
+277
+00:10:06,580 --> 00:10:07,420
+And then that area under
+
+278
+00:10:07,420 --> 00:10:08,740
+the curve then
+should be equal
+
+279
+00:10:08,740 --> 00:10:11,660
+to what you have what
+you have here, okay?
+
+280
+00:10:11,660 --> 00:10:13,860
+Great. So that's one case.
+
+281
+00:10:13,860 --> 00:10:17,900
+That's the isothermal
+the isothermal case.
+
+282
+00:10:17,900 --> 00:10:18,260
+All right.
+
+283
+00:10:18,260 --> 00:10:21,780
+So I can move I guess
+we can see with this.
+
+284
+00:10:21,780 --> 00:10:26,180
+Okay, the next one that's
+
+285
+00:10:26,180 --> 00:10:28,540
+important is the
+isoberic, right?
+
+286
+00:10:28,540 --> 00:10:30,259
+So the isoberic case
+is where we have
+
+287
+00:10:30,259 --> 00:10:32,940
+a constant, um, right,
+
+288
+00:10:32,940 --> 00:10:35,100
+a constant volume or
+
+289
+00:10:35,100 --> 00:10:37,539
+a constant pressure
+expansion,
+
+290
+00:10:37,539 --> 00:10:39,059
+you know, process.
+
+291
+00:10:39,059 --> 00:10:40,619
+So, in that case, right,
+
+292
+00:10:40,619 --> 00:10:41,860
+if we define this as
+
+293
+00:10:41,860 --> 00:10:43,859
+the control volume,
+
+294
+00:10:43,859 --> 00:10:44,980
+we can do an
+energy balance.
+
+295
+00:10:44,980 --> 00:10:47,900
+So we can do an energy
+balance on that.
+
+296
+00:10:47,900 --> 00:10:50,940
+So the change in
+the energy of,
+
+297
+00:10:50,940 --> 00:10:52,900
+let's say that
+control volume.
+
+298
+00:10:52,900 --> 00:10:55,379
+So this dashed region
+
+299
+00:10:55,379 --> 00:10:57,500
+is equal to the
+energy, right,
+
+300
+00:10:57,500 --> 00:11:00,499
+that we transfer in
+minus the energy that
+
+301
+00:11:00,499 --> 00:11:03,740
+we transfer that we
+transfer out, okay?
+
+302
+00:11:03,740 --> 00:11:05,540
+What are the
+ways that energy
+
+303
+00:11:05,540 --> 00:11:07,899
+can change in
+control volume?
+
+304
+00:11:09,780 --> 00:11:13,300
+Name? Cody and.
+
+305
+00:11:13,940 --> 00:11:17,539
+Right? So he would be
+a transfer mechanism.
+
+306
+00:11:17,539 --> 00:11:20,220
+I would say, sorry,
+
+307
+00:11:20,220 --> 00:11:21,500
+we're transferring
+energy in
+
+308
+00:11:21,500 --> 00:11:22,820
+and we're transferring
+energy out.
+
+309
+00:11:22,820 --> 00:11:24,100
+So, what are ways
+that we would
+
+310
+00:11:24,100 --> 00:11:25,659
+quantify changes
+in the energy
+
+311
+00:11:25,659 --> 00:11:27,699
+of that control volume?
+
+312
+00:11:29,820 --> 00:11:36,219
+Energy, internal
+energy, kinetic energy.
+
+313
+00:11:36,219 --> 00:11:37,779
+And because this is
+a closed system,
+
+314
+00:11:37,779 --> 00:11:40,740
+will we have changes in
+
+315
+00:11:40,740 --> 00:11:42,380
+changes in mass or no?
+
+316
+00:11:42,380 --> 00:11:44,340
+No. For now,
+
+317
+00:11:44,340 --> 00:11:45,780
+I'm not going to
+get too far ahead.
+
+318
+00:11:45,780 --> 00:11:46,939
+I love to foreshadow,
+
+319
+00:11:46,939 --> 00:11:48,100
+but that's a little
+too far for me.
+
+320
+00:11:48,100 --> 00:11:48,980
+That'll be Week five.
+
+321
+00:11:48,980 --> 00:11:50,340
+All right. So we have
+changes that can
+
+322
+00:11:50,340 --> 00:11:51,860
+change in energy
+control volumes,
+
+323
+00:11:51,860 --> 00:11:52,939
+change internal energy,
+
+324
+00:11:52,939 --> 00:11:53,979
+change in kinetic energy,
+
+325
+00:11:53,979 --> 00:11:55,300
+change in
+potential energy.
+
+326
+00:11:55,300 --> 00:11:56,500
+And then this is equal to
+
+327
+00:11:56,500 --> 00:11:58,620
+the ways we can transfer
+energy in and out,
+
+328
+00:11:58,620 --> 00:12:02,750
+which is work,
+W in plus Q in,
+
+329
+00:12:02,750 --> 00:12:06,270
+right, minus W out
+
+330
+00:12:06,270 --> 00:12:13,229
+plus Q Q out,
+all right? Cool.
+
+331
+00:12:13,229 --> 00:12:14,830
+I won't have anything
+
+332
+00:12:14,830 --> 00:12:15,869
+to do with this, you know,
+
+333
+00:12:15,869 --> 00:12:20,549
+in, you know,
+in these cases.
+
+334
+00:12:20,549 --> 00:12:22,069
+And obviously, if
+we had sort of
+
+335
+00:12:22,069 --> 00:12:24,150
+heat transfer processes
+and stuff involved,
+
+336
+00:12:24,150 --> 00:12:25,390
+which usually is the case,
+
+337
+00:12:25,390 --> 00:12:26,390
+when you do something
+
+338
+00:12:26,390 --> 00:12:29,070
+isoberically, you
+could analyze it.
+
+339
+00:12:29,070 --> 00:12:30,510
+What I would like to
+focus on, though,
+
+340
+00:12:30,510 --> 00:12:33,190
+here is the work
+
+341
+00:12:33,190 --> 00:12:36,390
+it's just the work
+transferred out process.
+
+342
+00:12:36,390 --> 00:12:39,549
+I like to define I
+like to define that.
+
+343
+00:12:42,220 --> 00:12:44,779
+And in the second
+half of the lecture,
+
+344
+00:12:44,779 --> 00:12:46,020
+we'll get into
+the combined heat
+
+345
+00:12:46,020 --> 00:12:47,260
+and work processes and
+
+346
+00:12:47,260 --> 00:12:49,899
+those changes in
+internal energy.
+
+347
+00:12:49,899 --> 00:12:54,060
+Okay? So we'll
+focus on the W out.
+
+348
+00:12:54,060 --> 00:12:55,260
+And in this case,
+
+349
+00:12:55,260 --> 00:12:56,980
+right, the only way
+that we can have work
+
+350
+00:12:56,980 --> 00:13:00,580
+transferred out
+of this system
+
+351
+00:13:00,580 --> 00:13:02,500
+is due to the
+expansion, right?
+
+352
+00:13:02,500 --> 00:13:07,300
+So we can have the W
+out here is again,
+
+353
+00:13:07,300 --> 00:13:11,300
+equal to the integral
+from state one
+
+354
+00:13:11,300 --> 00:13:16,419
+to state two of P PDV.
+
+355
+00:13:16,419 --> 00:13:18,700
+So it's a constant
+pressure process.
+
+356
+00:13:18,700 --> 00:13:20,225
+What can I do here?
+
+357
+00:13:20,225 --> 00:13:22,149
+No, this is not Jeopardy.
+
+358
+00:13:22,149 --> 00:13:23,270
+I'm like watching
+Jeopardy.
+
+359
+00:13:23,270 --> 00:13:24,390
+I saw the same guy
+answer the question,
+
+360
+00:13:24,390 --> 00:13:25,270
+like ten times in a row.
+
+361
+00:13:25,270 --> 00:13:27,030
+Your name? Hussain.
+Say it again?
+
+362
+00:13:27,030 --> 00:13:29,830
+Hussein Hussein
+The P, right?
+
+363
+00:13:29,830 --> 00:13:31,269
+So basically,
+it's isobaric,
+
+364
+00:13:31,269 --> 00:13:33,070
+so it doesn't have a
+dependence on volume
+
+365
+00:13:33,070 --> 00:13:35,749
+integral of one
+to two of dV.
+
+366
+00:13:35,749 --> 00:13:36,750
+So then this is what?
+
+367
+00:13:36,750 --> 00:13:41,150
+This is pressure V
+two minus V one.
+
+368
+00:13:41,150 --> 00:13:42,790
+And that's very
+easy. I mean,
+
+369
+00:13:42,790 --> 00:13:45,550
+that's that's prek
+stuff, right?
+
+370
+00:13:45,550 --> 00:13:47,310
+So basically, you
+then just shade right
+
+371
+00:13:47,310 --> 00:13:50,310
+the area then
+under, right?
+
+372
+00:13:50,310 --> 00:13:52,230
+Basically, you
+shade the area
+
+373
+00:13:52,230 --> 00:13:54,390
+then under that, okay?
+
+374
+00:13:54,390 --> 00:13:56,590
+So that's isobaric.
+So we did what?
+
+375
+00:13:56,590 --> 00:13:58,790
+Isothermal? We
+did isobaric.
+
+376
+00:13:58,790 --> 00:14:01,830
+Um And what I would
+like to do now
+
+377
+00:14:01,830 --> 00:14:05,750
+is go to another
+important case,
+
+378
+00:14:05,750 --> 00:14:07,629
+which is the adiabatic.
+
+379
+00:14:07,629 --> 00:14:08,710
+Are there any
+questions about this
+
+380
+00:14:08,710 --> 00:14:10,949
+before I do adabetic?
+
+381
+00:14:11,510 --> 00:14:13,230
+All good?
+
+382
+00:14:13,230 --> 00:14:14,990
+Okay. Based on your
+answers on that,
+
+383
+00:14:14,990 --> 00:14:16,430
+I think you guys get this.
+
+384
+00:14:16,430 --> 00:14:18,390
+All right, let me erase.
+
+385
+00:14:18,390 --> 00:14:20,869
+Let me erase.
+
+386
+00:14:30,070 --> 00:14:32,470
+All right.
+
+387
+00:14:39,110 --> 00:14:41,190
+Okay.
+
+388
+00:14:46,470 --> 00:14:54,010
+Cool. Yes, please.
+
+389
+00:14:54,010 --> 00:14:56,489
+What is a
+polytropic process?
+
+390
+00:14:56,489 --> 00:14:58,410
+Polytropic. I don't know
+
+391
+00:14:58,410 --> 00:15:00,570
+enough Greek to
+say what it means.
+
+392
+00:15:00,570 --> 00:15:04,329
+I mean, what it
+means is this PVN
+
+393
+00:15:04,329 --> 00:15:06,730
+is C. So an ME 40,
+
+394
+00:15:06,730 --> 00:15:09,369
+this is what polytropic
+means to you.
+
+395
+00:15:11,130 --> 00:15:13,090
+Well, I mean, so now
+
+396
+00:15:13,090 --> 00:15:14,130
+I'll give you
+cases, right?
+
+397
+00:15:14,130 --> 00:15:15,930
+I give you basically
+physical versions,
+
+398
+00:15:15,930 --> 00:15:16,130
+right?
+
+399
+00:15:16,130 --> 00:15:18,250
+So, you know, so,
+
+400
+00:15:18,810 --> 00:15:21,610
+you know, what is when
+
+401
+00:15:21,610 --> 00:15:24,250
+N equals zero,
+what is that case?
+
+402
+00:15:25,450 --> 00:15:27,570
+Which is? How do we
+
+403
+00:15:27,570 --> 00:15:29,650
+call that isobaric, right?
+
+404
+00:15:29,650 --> 00:15:36,170
+When N equals one
+we had Which was?
+
+405
+00:15:36,330 --> 00:15:41,449
+Isothermal Isothermal.
+
+406
+00:15:41,449 --> 00:15:43,090
+Okay? So I'm going to
+give you the last case,
+
+407
+00:15:43,090 --> 00:15:45,130
+which is adiabatic, okay?
+
+408
+00:15:45,130 --> 00:15:46,490
+And then I'm going
+to think and
+
+409
+00:15:46,490 --> 00:15:47,930
+figure out if I know
+any other ends.
+
+410
+00:15:47,930 --> 00:15:48,849
+But I know 01,
+
+411
+00:15:48,849 --> 00:15:49,930
+and then what I'm
+going to tell you,
+
+412
+00:15:49,930 --> 00:15:52,130
+I think for air is
+like 1.4, okay?
+
+413
+00:15:52,130 --> 00:15:53,890
+Cool. Other questions?
+
+414
+00:15:53,890 --> 00:15:56,290
+That's a nice
+question. I'll think.
+
+415
+00:15:56,290 --> 00:15:58,810
+You maybe think
+over the weekend,
+
+416
+00:15:58,810 --> 00:16:00,930
+you know? Okay. All right.
+
+417
+00:16:00,930 --> 00:16:08,330
+Um, Okay, so
+idiabatic All right,
+
+418
+00:16:08,330 --> 00:16:09,769
+so we have our right,
+
+419
+00:16:09,769 --> 00:16:10,890
+we have our
+schematic there,
+
+420
+00:16:10,890 --> 00:16:11,930
+and I'm already
+showing you,
+
+421
+00:16:11,930 --> 00:16:15,609
+right, kind of what the
+process looks like.
+
+422
+00:16:15,609 --> 00:16:16,530
+In this case, I'm
+
+423
+00:16:16,530 --> 00:16:17,609
+doing a compression
+process.
+
+424
+00:16:17,609 --> 00:16:19,250
+So I have adiabatic.
+
+425
+00:16:19,250 --> 00:16:21,689
+What I'm showing here is,
+
+426
+00:16:21,930 --> 00:16:24,850
+why am I showing you a
+compression process?
+
+427
+00:16:24,850 --> 00:16:26,369
+Because I plotted
+it wrong.
+
+428
+00:16:26,369 --> 00:16:27,930
+What I have here
+is the expansion.
+
+429
+00:16:27,930 --> 00:16:29,529
+But basically, right,
+this is compression.
+
+430
+00:16:29,529 --> 00:16:33,210
+If it went BA that
+would be the um,
+
+431
+00:16:33,210 --> 00:16:37,290
+that would be the
+expansion, all right?
+
+432
+00:16:37,290 --> 00:16:38,570
+And what I want to
+
+433
+00:16:38,570 --> 00:16:40,850
+prove to you, so
+in this problem,
+
+434
+00:16:40,850 --> 00:16:46,020
+is that, um, PV to.
+
+435
+00:16:46,020 --> 00:16:48,179
+Yeah. So basically PV,
+
+436
+00:16:48,179 --> 00:16:50,940
+what I want to prove
+a problem statement
+
+437
+00:16:50,940 --> 00:16:52,500
+or show, maybe
+I'll say show.
+
+438
+00:16:52,500 --> 00:16:54,260
+Proof feels like
+a strong word.
+
+439
+00:16:54,260 --> 00:16:59,220
+Show that P V to
+
+440
+00:16:59,220 --> 00:17:02,859
+some constant Gamma is
+
+441
+00:17:02,859 --> 00:17:07,779
+equal to a constant
+C, okay? All right?
+
+442
+00:17:07,779 --> 00:17:09,579
+We've already worked
+with this, right?
+
+443
+00:17:09,579 --> 00:17:10,699
+The N equals zero,
+
+444
+00:17:10,699 --> 00:17:12,059
+the N equals one, right?
+
+445
+00:17:12,059 --> 00:17:12,819
+So what I'm saying
+
+446
+00:17:12,819 --> 00:17:13,739
+here is that this
+is basically
+
+447
+00:17:13,739 --> 00:17:15,900
+the N equals Gamma,
+
+448
+00:17:15,900 --> 00:17:17,700
+N equals Gamma
+case, all right?
+
+449
+00:17:17,700 --> 00:17:18,779
+I'm not going to draw the
+
+450
+00:17:18,779 --> 00:17:20,779
+schematic since
+it exists there.
+
+451
+00:17:20,779 --> 00:17:22,179
+What am I going
+to assume, right?
+
+452
+00:17:22,179 --> 00:17:27,740
+So I assume that
+we have ideal gas.
+
+453
+00:17:27,740 --> 00:17:30,259
+So we have an ideal
+gas inside of
+
+454
+00:17:30,259 --> 00:17:32,820
+the inside of that
+control volume.
+
+455
+00:17:32,820 --> 00:17:37,139
+We have no heat
+transfer, all right?
+
+456
+00:17:38,610 --> 00:17:41,090
+And that's what
+adiabatic means.
+
+457
+00:17:41,090 --> 00:17:42,249
+So in other parts
+of the course,
+
+458
+00:17:42,249 --> 00:17:43,450
+when I say adiabatic,
+
+459
+00:17:43,450 --> 00:17:44,929
+I mean no heat in or
+
+460
+00:17:44,929 --> 00:17:47,889
+out of my control
+volume, all right?
+
+461
+00:17:47,889 --> 00:17:51,010
+We're going to neglect
+
+462
+00:17:51,730 --> 00:18:01,250
+Delta KE and Delta PE.
+
+463
+00:18:01,250 --> 00:18:02,889
+And we're going
+to say that
+
+464
+00:18:02,889 --> 00:18:09,490
+work is transferred.
+
+465
+00:18:12,090 --> 00:18:18,330
+Through expansion.
+
+466
+00:18:18,730 --> 00:18:20,849
+All right, so I don't have
+
+467
+00:18:20,849 --> 00:18:22,529
+any wires or anything
+like that in there.
+
+468
+00:18:22,529 --> 00:18:26,089
+We're just talking
+about expansion, right?
+
+469
+00:18:26,089 --> 00:18:28,770
+So P dV.
+
+470
+00:18:28,770 --> 00:18:30,809
+All right.
+
+471
+00:18:38,490 --> 00:18:40,569
+Okay.
+
+472
+00:18:40,570 --> 00:18:43,090
+Yeah, so what are
+the physical laws
+
+473
+00:18:43,090 --> 00:18:44,569
+that we have involved
+with this, right?
+
+474
+00:18:44,569 --> 00:18:46,729
+So what laws are
+we talking about?
+
+475
+00:18:46,729 --> 00:18:47,689
+We're going to talk about
+
+476
+00:18:47,689 --> 00:18:50,490
+the conservation
+of energy.
+
+477
+00:19:00,730 --> 00:19:06,329
+All right. A ideal guess.
+
+478
+00:19:09,850 --> 00:19:15,769
+Mm hmm, mm, mm. Okay.
+
+479
+00:19:15,769 --> 00:19:17,050
+So with this,
+we can go on.
+
+480
+00:19:17,050 --> 00:19:18,090
+So what we'll
+start with is,
+
+481
+00:19:18,090 --> 00:19:19,689
+we'll start with our
+conservation of energy.
+
+482
+00:19:19,689 --> 00:19:22,449
+That's usually how
+we begin with this.
+
+483
+00:19:22,449 --> 00:19:23,809
+And then after that, we'll
+
+484
+00:19:23,809 --> 00:19:25,449
+apply some ideal
+gas relation.
+
+485
+00:19:25,449 --> 00:19:27,009
+And then from that,
+if you wanted,
+
+486
+00:19:27,009 --> 00:19:28,370
+you could start
+to substitute
+
+487
+00:19:28,370 --> 00:19:30,249
+properties and
+insert to produce
+
+488
+00:19:30,249 --> 00:19:33,809
+plots and stuff
+like that. Okay?
+
+489
+00:19:33,809 --> 00:19:35,609
+So our conservation
+of energy, right,
+
+490
+00:19:35,609 --> 00:19:38,130
+is we have a Delta E CV.
+
+491
+00:19:38,130 --> 00:19:39,769
+So the control
+volume I'm talking
+
+492
+00:19:39,769 --> 00:19:41,729
+about here is the
+dashed red line.
+
+493
+00:19:41,729 --> 00:19:43,049
+So the change in
+the energy of
+
+494
+00:19:43,049 --> 00:19:45,409
+that control
+volume is equal to
+
+495
+00:19:45,409 --> 00:19:52,849
+E N minus E out, right?
+
+496
+00:19:52,849 --> 00:19:54,010
+The way that
+this can change,
+
+497
+00:19:54,010 --> 00:19:54,930
+right is we'll have
+
+498
+00:19:54,930 --> 00:20:02,609
+Delta U plus Delta
+K plus Delta P.
+
+499
+00:20:02,609 --> 00:20:04,530
+So changes in
+internal energy,
+
+500
+00:20:04,530 --> 00:20:06,049
+kinetic energy
+and potential
+
+501
+00:20:06,049 --> 00:20:07,490
+is equal to the ways
+
+502
+00:20:07,490 --> 00:20:09,009
+that we can transfer
+energy in and out
+
+503
+00:20:09,009 --> 00:20:10,610
+of its system, which
+is just work in heat.
+
+504
+00:20:10,610 --> 00:20:18,569
+So I'll W in plus
+Q in minus W,
+
+505
+00:20:19,560 --> 00:20:24,079
+minus Q out, right?
+
+506
+00:20:24,079 --> 00:20:26,120
+Do I have another color?
+
+507
+00:20:26,120 --> 00:20:28,039
+I do. All right.
+
+508
+00:20:28,039 --> 00:20:30,840
+So this is out, right
+from our assumptions,
+
+509
+00:20:30,840 --> 00:20:32,879
+and this is out.
+What else is out?
+
+510
+00:20:32,879 --> 00:20:37,719
+Yes, please? I'm sorry.
+
+511
+00:20:37,719 --> 00:20:39,120
+Yes. Thank you
+for catching
+
+512
+00:20:39,120 --> 00:20:40,279
+that. You got my back.
+
+513
+00:20:40,279 --> 00:20:43,199
+I appreciate that.
+Comments on this?
+
+514
+00:20:43,199 --> 00:20:45,640
+Okay, so what else goes?
+
+515
+00:20:45,640 --> 00:20:48,479
+Actually, would that
+have even have mattered?
+
+516
+00:20:48,479 --> 00:20:50,279
+No, right?
+
+517
+00:20:50,279 --> 00:20:51,359
+Because you don't have
+
+518
+00:20:51,359 --> 00:20:53,519
+any heat
+transferred, right?
+
+519
+00:20:53,519 --> 00:20:56,239
+And if we assume
+this to be, right?
+
+520
+00:20:56,239 --> 00:20:58,720
+If we assume this to be
+an expansion process,
+
+521
+00:20:58,720 --> 00:21:01,879
+what does it mean
+for W in and W out?
+
+522
+00:21:03,000 --> 00:21:04,680
+Louder.
+
+523
+00:21:04,680 --> 00:21:05,999
+W is zero.
+
+524
+00:21:05,999 --> 00:21:08,639
+W is zero. Exactly.
+All right.
+
+525
+00:21:08,639 --> 00:21:12,000
+So then if we assume
+that it's expansion,
+
+526
+00:21:12,000 --> 00:21:13,559
+then we only have work we
+
+527
+00:21:13,559 --> 00:21:15,639
+only have workout, right?
+
+528
+00:21:18,680 --> 00:21:21,119
+Cool. All right, so
+
+529
+00:21:21,119 --> 00:21:22,879
+then our Delta U, right
+from this, right?
+
+530
+00:21:22,879 --> 00:21:25,440
+Our Delta U is equal
+to the negative
+
+531
+00:21:25,440 --> 00:21:29,039
+of W equals to the
+negative W out,
+
+532
+00:21:29,039 --> 00:21:32,599
+right? Do, do, do.
+
+533
+00:21:41,850 --> 00:21:43,969
+Okay, so we can write
+
+534
+00:21:43,969 --> 00:21:45,130
+this in differential form.
+
+535
+00:21:45,130 --> 00:21:48,889
+So I can say
+that d, um, um,
+
+536
+00:21:48,889 --> 00:21:55,809
+d is then equal
+to Delta W, um,
+
+537
+00:21:55,809 --> 00:21:59,130
+the negative of, uh, uh,
+
+538
+00:21:59,130 --> 00:22:02,249
+Delta W, um, out, which,
+
+539
+00:22:02,249 --> 00:22:03,769
+with our assumption
+of this only being
+
+540
+00:22:03,769 --> 00:22:05,330
+boundary work is
+basically the equal
+
+541
+00:22:05,330 --> 00:22:09,729
+to the negative of P
+dv, all right? Okay.
+
+542
+00:22:09,729 --> 00:22:12,919
+Um, So that all
+looks fine and well.
+
+543
+00:22:12,919 --> 00:22:14,279
+But what we need to do to
+
+544
+00:22:14,279 --> 00:22:15,479
+make this work is we need
+
+545
+00:22:15,479 --> 00:22:17,719
+to deal with
+
+546
+00:22:17,719 --> 00:22:21,079
+this internal energy
+term here, okay?
+
+547
+00:22:21,400 --> 00:22:24,239
+And the way that we
+can deal with this is
+
+548
+00:22:24,239 --> 00:22:26,480
+we can recall the changes
+
+549
+00:22:26,480 --> 00:22:28,439
+in internal energy for
+
+550
+00:22:28,439 --> 00:22:31,000
+any control volume that's
+at constant volume.
+
+551
+00:22:31,000 --> 00:22:32,599
+So forget this. Changes in
+
+552
+00:22:32,599 --> 00:22:33,959
+internal energy for
+
+553
+00:22:33,959 --> 00:22:38,959
+a constant volume is
+equal to CV dt, okay?
+
+554
+00:22:38,959 --> 00:22:41,239
+So if you remember
+the definition of
+
+555
+00:22:41,239 --> 00:22:45,000
+the specific heat
+at constant volume,
+
+556
+00:22:45,000 --> 00:22:51,279
+right, this is d dt
+for constant V, okay?
+
+557
+00:22:51,279 --> 00:22:53,599
+And that's right.
+
+558
+00:22:53,599 --> 00:22:55,119
+And the way that we
+introduced this,
+
+559
+00:22:55,119 --> 00:22:56,119
+right, is we had said
+
+560
+00:22:56,119 --> 00:22:58,159
+that, you know, basically,
+
+561
+00:22:58,159 --> 00:23:01,295
+when you analyze
+a control volume,
+
+562
+00:23:01,295 --> 00:23:03,829
+where you don't allow
+the boundary to move,
+
+563
+00:23:03,829 --> 00:23:05,550
+the relationship
+between internal
+
+564
+00:23:05,550 --> 00:23:06,990
+energy is equal to Cv dt.
+
+565
+00:23:06,990 --> 00:23:08,950
+All right? That's
+definition. Bless you.
+
+566
+00:23:08,950 --> 00:23:11,109
+Okay? So what this
+
+567
+00:23:11,109 --> 00:23:13,189
+means is we can
+rearrange this,
+
+568
+00:23:13,189 --> 00:23:15,309
+and I want to write
+this as little U.
+
+569
+00:23:15,309 --> 00:23:18,869
+So D, little U dt because
+this is a little C,
+
+570
+00:23:19,030 --> 00:23:22,949
+is that d so change
+
+571
+00:23:22,949 --> 00:23:26,390
+internal energy of
+the control volume
+
+572
+00:23:26,390 --> 00:23:28,709
+there is equal to
+
+573
+00:23:28,709 --> 00:23:33,989
+CV little Cv
+times dt, okay?
+
+574
+00:23:34,010 --> 00:23:37,009
+And what I will be able to
+
+575
+00:23:37,009 --> 00:23:39,409
+do up here then is to
+substitute this in.
+
+576
+00:23:39,409 --> 00:23:41,369
+To here, I can write the M
+
+577
+00:23:41,369 --> 00:23:48,610
+little d is equal to
+the negative of P dv.
+
+578
+00:23:48,610 --> 00:23:50,450
+And then I can
+substitute into
+
+579
+00:23:50,450 --> 00:23:52,129
+that little d,
+the CvdT, right?
+
+580
+00:23:52,129 --> 00:23:56,010
+So then I have M, Cv dt
+
+581
+00:23:56,010 --> 00:24:01,009
+is equal to the negative
+of P dv. All right.
+
+582
+00:24:08,210 --> 00:24:10,929
+And we'd like to get
+rid of temperature now.
+
+583
+00:24:10,929 --> 00:24:12,009
+So basically,
+now we'd like
+
+584
+00:24:12,009 --> 00:24:13,170
+to get rid of temperature,
+
+585
+00:24:13,170 --> 00:24:14,770
+and this is where we
+use the ideal gas
+
+586
+00:24:14,770 --> 00:24:16,609
+for the ideal
+gas law, okay?
+
+587
+00:24:16,609 --> 00:24:18,969
+So I can write the
+ideal gas law,
+
+588
+00:24:18,969 --> 00:24:23,690
+right is PV is equal
+to M times RT,
+
+589
+00:24:23,690 --> 00:24:28,450
+where R is the
+specific gas constant.
+
+590
+00:24:28,450 --> 00:24:31,490
+And I can write
+a differential,
+
+591
+00:24:31,490 --> 00:24:38,174
+a D on both sides like
+that, okay? All right.
+
+592
+00:24:38,174 --> 00:24:40,259
+On the left hand side, we
+
+593
+00:24:40,259 --> 00:24:41,419
+got to use a chain
+roll, right?
+
+594
+00:24:41,419 --> 00:24:43,860
+So this is basically
+going to be V dp
+
+595
+00:24:43,860 --> 00:24:46,820
+plus P dv.
+
+596
+00:24:46,820 --> 00:24:48,940
+This is equal to
+M is a constant.
+
+597
+00:24:48,940 --> 00:24:50,579
+We don't have
+mass in or out.
+
+598
+00:24:50,579 --> 00:24:52,900
+The constant
+is a constant.
+
+599
+00:24:52,900 --> 00:24:54,619
+And so what you
+have left is then
+
+600
+00:24:54,619 --> 00:24:59,739
+r dt, all right?
+
+601
+00:24:59,739 --> 00:25:01,859
+And we can rearrange.
+
+602
+00:25:01,859 --> 00:25:03,700
+So if I just put the
+m to the other side,
+
+603
+00:25:03,700 --> 00:25:08,220
+I can have dt is
+then equal to V dp
+
+604
+00:25:08,220 --> 00:25:14,619
+plus P dv divided
+by R, all right?
+
+605
+00:25:16,570 --> 00:25:18,690
+So if we combine
+
+606
+00:25:18,690 --> 00:25:22,089
+this and the equation
+I have over there,
+
+607
+00:25:22,089 --> 00:25:24,194
+maybe I'll go full screen.
+
+608
+00:25:24,194 --> 00:25:26,579
+What that have?
+
+609
+00:25:26,579 --> 00:25:33,499
+Okay? So if I combine
+this and this,
+
+610
+00:25:33,499 --> 00:25:43,660
+I can write that M
+Cv times up here,
+
+611
+00:25:43,660 --> 00:25:50,899
+V dp plus P dv
+divided by R, right?
+
+612
+00:25:50,899 --> 00:25:53,259
+So that's nothing but
+cv dt from before,
+
+613
+00:25:53,259 --> 00:25:54,940
+and then that's
+going to be equal to
+
+614
+00:25:54,940 --> 00:25:57,460
+the negative of P dv.
+
+615
+00:25:57,460 --> 00:26:04,269
+All right? Okay. I'll
+spare you the details.
+
+616
+00:26:04,269 --> 00:26:05,829
+You can click through
+the link and see, like,
+
+617
+00:26:05,829 --> 00:26:07,949
+sort of the full steps,
+
+618
+00:26:07,949 --> 00:26:09,270
+but I'd like to
+
+619
+00:26:09,270 --> 00:26:11,469
+organize this in
+the following way.
+
+620
+00:26:11,469 --> 00:26:15,309
+So I want to
+write that I have
+
+621
+00:26:15,309 --> 00:26:19,469
+CV plus R divided by
+
+622
+00:26:19,469 --> 00:26:23,789
+Cv times dv divided by
+
+623
+00:26:23,789 --> 00:26:26,710
+V plus dp divided
+
+624
+00:26:26,710 --> 00:26:29,629
+by P is equal
+to zero, okay?
+
+625
+00:26:29,820 --> 00:26:32,020
+And again, this is
+
+626
+00:26:32,020 --> 00:26:33,459
+just rearranging
+with this.
+
+627
+00:26:33,459 --> 00:26:41,299
+If I take the
+integral of that.
+
+628
+00:26:41,299 --> 00:26:43,419
+And if we assume that
+
+629
+00:26:43,419 --> 00:26:46,979
+the specific heaps
+are constant,
+
+630
+00:26:46,979 --> 00:26:54,669
+so we could write
+here, constant CV.
+
+631
+00:26:54,669 --> 00:26:59,270
+All right. What you're
+
+632
+00:26:59,270 --> 00:27:02,869
+going to have is
+that CV plus R
+
+633
+00:27:02,869 --> 00:27:08,749
+divided by CV times
+the natural log of
+
+634
+00:27:08,749 --> 00:27:12,070
+V plus the natural log
+
+635
+00:27:12,070 --> 00:27:14,949
+of P is equal to
+a constant, okay?
+
+636
+00:27:14,949 --> 00:27:16,189
+Because that's what
+this is, right?
+
+637
+00:27:16,189 --> 00:27:16,869
+I pulled this out.
+
+638
+00:27:16,869 --> 00:27:19,270
+This is a natural log.
+That's a natural log.
+
+639
+00:27:19,270 --> 00:27:22,379
+Um, This here we
+
+640
+00:27:22,379 --> 00:27:25,020
+can call as a
+constant Gamma.
+
+641
+00:27:25,020 --> 00:27:26,780
+So we'll call CV plus
+
+642
+00:27:26,780 --> 00:27:30,419
+the gas constant
+divided by CV as Gamma.
+
+643
+00:27:30,419 --> 00:27:32,820
+And one of the properties
+is a natural log
+
+644
+00:27:32,820 --> 00:27:33,979
+is right I can put this to
+
+645
+00:27:33,979 --> 00:27:35,139
+the power of that, right?
+
+646
+00:27:35,139 --> 00:27:38,619
+So I can write
+natural log of V to
+
+647
+00:27:38,619 --> 00:27:40,939
+the power Gamma plus
+
+648
+00:27:40,939 --> 00:27:44,219
+natural log of P
+is equal to C.
+
+649
+00:27:44,219 --> 00:27:45,899
+And another nice
+thing about
+
+650
+00:27:45,899 --> 00:27:47,499
+logs is that
+when I add them,
+
+651
+00:27:47,499 --> 00:27:49,379
+I can multiply
+them, right?
+
+652
+00:27:49,379 --> 00:27:52,619
+So here I can write
+natural log of P,
+
+653
+00:27:52,619 --> 00:27:56,534
+V to the Gamma
+is equal to C.
+
+654
+00:27:56,534 --> 00:27:58,569
+If I take the exponent
+
+655
+00:27:58,569 --> 00:28:00,769
+of exponential of
+both sides, right?
+
+656
+00:28:00,769 --> 00:28:03,049
+I can add basically PV to
+
+657
+00:28:03,049 --> 00:28:04,489
+the Gamma is equal to
+
+658
+00:28:04,489 --> 00:28:06,689
+the exponential
+of a constant,
+
+659
+00:28:06,689 --> 00:28:07,969
+which is basically
+equal to
+
+660
+00:28:07,969 --> 00:28:09,609
+some new constant, right?
+
+661
+00:28:09,609 --> 00:28:11,169
+The exponential
+of a constant is
+
+662
+00:28:11,169 --> 00:28:14,370
+basically a
+constant, right?
+
+663
+00:28:18,570 --> 00:28:23,250
+Basically constant.
+
+664
+00:28:23,250 --> 00:28:25,889
+And that's it, okay?
+
+665
+00:28:25,889 --> 00:28:28,730
+And so PV to the Gamma,
+
+666
+00:28:28,730 --> 00:28:30,690
+equal to a constant
+
+667
+00:28:30,690 --> 00:28:32,130
+is a specific
+case of one of
+
+668
+00:28:32,130 --> 00:28:34,210
+these polytropic
+processes where we have
+
+669
+00:28:34,210 --> 00:28:36,730
+PV to some N
+equals a constant,
+
+670
+00:28:36,730 --> 00:28:39,809
+in this case, the N is
+equal to Gamma, okay?
+
+671
+00:28:39,809 --> 00:28:41,569
+This Gamma, we sometimes
+
+672
+00:28:41,569 --> 00:28:43,489
+give it a name.
+We call this the.
+
+673
+00:28:43,489 --> 00:28:48,449
+Anyone know? If you
+had to give it a name,
+
+674
+00:28:48,449 --> 00:28:50,289
+what would you call
+it as the first word?
+
+675
+00:28:50,289 --> 00:28:52,049
+A constant.
+
+676
+00:28:52,049 --> 00:28:53,930
+Say it again. A constant.
+
+677
+00:28:53,930 --> 00:28:55,089
+An A constant? Okay.
+
+678
+00:28:55,089 --> 00:28:56,689
+We're creative
+in here today.
+
+679
+00:28:56,689 --> 00:29:03,289
+Other names? Adiabatic
+adiabatic index, okay?
+
+680
+00:29:03,530 --> 00:29:06,009
+Yes. Okay? And actually,
+
+681
+00:29:06,009 --> 00:29:08,129
+this CV plus R is then
+
+682
+00:29:08,129 --> 00:29:10,929
+actually the
+specific heat,
+
+683
+00:29:10,929 --> 00:29:12,329
+okay, at constant
+pressure.
+
+684
+00:29:12,329 --> 00:29:13,369
+We'll get into
+it in a second.
+
+685
+00:29:13,369 --> 00:29:15,889
+But this Gamma, you
+can look up and
+
+686
+00:29:15,889 --> 00:29:17,449
+see because the world's a
+
+687
+00:29:17,449 --> 00:29:19,609
+confusing place, you know?
+
+688
+00:29:19,609 --> 00:29:22,050
+In some textbooks,
+this gamma
+
+689
+00:29:22,050 --> 00:29:25,209
+will actually be
+written as Kappa, okay?
+
+690
+00:29:25,209 --> 00:29:27,930
+Sorry. But, like, if
+you look in the book,
+
+691
+00:29:27,930 --> 00:29:30,570
+I'm pretty sure it's
+Gamma as a as a value.
+
+692
+00:29:30,570 --> 00:29:31,289
+I wish they had
+
+693
+00:29:31,289 --> 00:29:32,809
+more letters in their
+alphabet, okay?
+
+694
+00:29:32,809 --> 00:29:34,330
+It's a beautiful language.
+
+695
+00:29:34,330 --> 00:29:37,849
+All right. All right.
+
+696
+00:29:37,849 --> 00:29:40,374
+Any questions about
+that? Yes, please.
+
+697
+00:29:40,374 --> 00:29:42,219
+What did we do?
+
+698
+00:29:42,219 --> 00:29:44,019
+What did we just do?
+
+699
+00:29:44,019 --> 00:29:47,539
+You basically came up
+with an expression for
+
+700
+00:29:47,539 --> 00:29:49,339
+a work transfer process
+
+701
+00:29:49,339 --> 00:29:52,139
+where you have no
+heat in or out, okay?
+
+702
+00:29:52,139 --> 00:29:54,300
+And what I'm
+telling you is
+
+703
+00:29:54,300 --> 00:29:55,259
+that there are
+
+704
+00:29:55,259 --> 00:29:57,180
+systems where
+that's important,
+
+705
+00:29:57,180 --> 00:29:58,619
+where it's important
+that I know
+
+706
+00:29:58,619 --> 00:30:00,659
+a state and I
+expand it without
+
+707
+00:30:00,659 --> 00:30:02,100
+having any heat in or
+
+708
+00:30:02,100 --> 00:30:04,419
+out, and it produces work.
+
+709
+00:30:04,419 --> 00:30:06,259
+And this will help you
+to string together
+
+710
+00:30:06,259 --> 00:30:08,655
+points when you
+analyze cycles later.
+
+711
+00:30:08,655 --> 00:30:10,969
+So knowing if I have
+an expansion process
+
+712
+00:30:10,969 --> 00:30:12,930
+that's at constant
+pressure,
+
+713
+00:30:12,930 --> 00:30:15,049
+knowing that I have
+a expansion process
+
+714
+00:30:15,049 --> 00:30:16,530
+at constant temperature,
+
+715
+00:30:16,530 --> 00:30:17,409
+and knowing that I have
+
+716
+00:30:17,409 --> 00:30:18,609
+an expansion process with
+
+717
+00:30:18,609 --> 00:30:21,169
+no heat in or out, these
+are kind of three,
+
+718
+00:30:21,169 --> 00:30:23,449
+I want to call
+them, almost
+
+719
+00:30:23,449 --> 00:30:25,930
+axiomatic in
+
+720
+00:30:25,930 --> 00:30:29,070
+analysis of work
+transfer processes.
+
+721
+00:30:29,070 --> 00:30:30,769
+Okay.
+
+722
+00:30:31,890 --> 00:30:34,209
+I mean, no, because
+you can watch
+
+723
+00:30:34,209 --> 00:30:36,809
+your video. So
+three, right?
+
+724
+00:30:36,809 --> 00:30:38,210
+You have constant
+pressure,
+
+725
+00:30:38,210 --> 00:30:40,690
+constant temperature,
+no heat addition.
+
+726
+00:30:40,690 --> 00:30:42,289
+Got it. And in
+all of them,
+
+727
+00:30:42,289 --> 00:30:44,010
+you have work transfer
+
+728
+00:30:44,010 --> 00:30:46,049
+through a boundary
+moving, okay?
+
+729
+00:30:46,049 --> 00:30:48,570
+Yes, please.
+Depending on which
+
+730
+00:30:48,570 --> 00:30:50,049
+process that equation for
+
+731
+00:30:50,049 --> 00:30:51,729
+every single one of them.
+
+732
+00:30:51,810 --> 00:30:54,250
+I mean, it depends
+on the process.
+
+733
+00:30:54,250 --> 00:30:55,089
+You got to say, like,
+
+734
+00:30:55,089 --> 00:30:56,449
+what it is,
+isothermal, right?
+
+735
+00:30:56,449 --> 00:30:58,610
+So isobaric N is zero,
+
+736
+00:30:58,610 --> 00:31:00,889
+isothermal N is one,
+
+737
+00:31:00,889 --> 00:31:04,050
+adiabatic, it's
+equal to Gamma,
+
+738
+00:31:04,050 --> 00:31:05,850
+which in the case of
+air, I think is 1.4.
+
+739
+00:31:05,850 --> 00:31:07,844
+Yes, please. On this side?
+
+740
+00:31:07,844 --> 00:31:09,560
+This side's got it.
+
+741
+00:31:09,560 --> 00:31:11,039
+It's like the right
+side of my brain.
+
+742
+00:31:11,039 --> 00:31:16,979
+Okay, cool. Alright. Good.
+
+743
+00:31:16,979 --> 00:31:19,019
+Okay. So here's what
+
+744
+00:31:19,019 --> 00:31:20,099
+I want to do
+now that I put
+
+745
+00:31:20,099 --> 00:31:22,579
+you all to sleep in
+that is analyze.
+
+746
+00:31:22,579 --> 00:31:23,859
+So here you have a case of
+
+747
+00:31:23,859 --> 00:31:26,299
+PV with three
+different processes,
+
+748
+00:31:26,299 --> 00:31:29,259
+A, B, C, and three
+different work processes.
+
+749
+00:31:29,259 --> 00:31:30,779
+So the first question
+that I have for you
+
+750
+00:31:30,779 --> 00:31:32,739
+is which one
+transfers more work?
+
+751
+00:31:32,739 --> 00:31:33,859
+If everything is done in
+
+752
+00:31:33,859 --> 00:31:35,780
+quasi equilibrium
+and isothermal,
+
+753
+00:31:35,780 --> 00:31:37,139
+which one of
+these corresponds
+
+754
+00:31:37,139 --> 00:31:38,140
+to an ideal gas?
+
+755
+00:31:38,140 --> 00:31:39,980
+And three and
+most importantly,
+
+756
+00:31:39,980 --> 00:31:42,940
+can you, for an
+isothermal process,
+
+757
+00:31:42,940 --> 00:31:44,499
+tell me how much
+work is done, okay?
+
+758
+00:31:44,499 --> 00:31:45,940
+And to remind
+you on the quiz,
+
+759
+00:31:45,940 --> 00:31:47,499
+we're going to do some
+stuff with adiabatic.
+
+760
+00:31:47,499 --> 00:31:49,379
+This is an isothermal
+variant, okay?
+
+761
+00:31:49,379 --> 00:31:51,274
+Let me launch this.
+
+762
+00:31:51,274 --> 00:31:53,610
+Right, so an
+expansion process
+
+763
+00:31:53,610 --> 00:31:54,929
+like that might
+look like this,
+
+764
+00:31:54,929 --> 00:31:56,649
+let's say, V one
+to V two, right?
+
+765
+00:31:56,649 --> 00:31:58,490
+So we start at the
+high pressure,
+
+766
+00:31:58,490 --> 00:32:01,689
+and we go to a
+lower one, right?
+
+767
+00:32:01,689 --> 00:32:04,089
+Okay, so that's with work.
+
+768
+00:32:06,150 --> 00:32:08,470
+And those videos
+that I showed you,
+
+769
+00:32:08,470 --> 00:32:09,669
+like the
+reciprocating, right?
+
+770
+00:32:09,669 --> 00:32:10,989
+So the pistons expand,
+
+771
+00:32:10,989 --> 00:32:11,669
+but we basically got
+
+772
+00:32:11,669 --> 00:32:13,269
+to bring them back, okay?
+
+773
+00:32:13,269 --> 00:32:15,670
+And if we want to
+get work out of
+
+774
+00:32:15,670 --> 00:32:18,670
+that kind of a cycle,
+
+775
+00:32:18,670 --> 00:32:19,549
+right, we need
+to basically
+
+776
+00:32:19,549 --> 00:32:20,989
+return to the
+initial state, okay?
+
+777
+00:32:20,989 --> 00:32:22,070
+So what I'm showing you
+
+778
+00:32:22,070 --> 00:32:23,550
+here is a process where,
+
+779
+00:32:23,550 --> 00:32:25,109
+right, I have an
+expansion of work,
+
+780
+00:32:25,109 --> 00:32:27,549
+V one to V two,
+right, which is,
+
+781
+00:32:27,549 --> 00:32:29,030
+you know, kind
+of like what we
+
+782
+00:32:29,030 --> 00:32:30,749
+computed in
+this case here.
+
+783
+00:32:30,749 --> 00:32:32,549
+I have V two to V three,
+
+784
+00:32:32,549 --> 00:32:34,959
+where I, um, You know,
+
+785
+00:32:34,959 --> 00:32:36,799
+I have an isochoric
+process where
+
+786
+00:32:36,799 --> 00:32:39,200
+I reduce the pressure.
+
+787
+00:32:39,200 --> 00:32:40,479
+Maybe I'm cooling, right?
+
+788
+00:32:40,479 --> 00:32:42,799
+Maybe I'm cooling
+isochorically there,
+
+789
+00:32:42,799 --> 00:32:44,479
+and then I
+compress, right?
+
+790
+00:32:44,479 --> 00:32:46,440
+Then basically I compress.
+
+791
+00:32:46,440 --> 00:32:48,239
+I go up to V four,
+
+792
+00:32:48,239 --> 00:32:49,880
+and then at
+constant volume,
+
+793
+00:32:49,880 --> 00:32:51,040
+I increase the pressure.
+
+794
+00:32:51,040 --> 00:32:54,329
+Maybe I'm adding heat
+isochorically, okay?
+
+795
+00:32:54,329 --> 00:32:56,340
+The most of the internal
+
+796
+00:32:56,340 --> 00:32:57,700
+combustion engines
+you see on
+
+797
+00:32:57,700 --> 00:32:59,619
+the road and like
+
+798
+00:32:59,619 --> 00:33:01,459
+that basically run on
+that process, right?
+
+799
+00:33:01,459 --> 00:33:04,259
+Iochoric key
+addition, okay,
+
+800
+00:33:04,259 --> 00:33:06,460
+you know, with that.
+
+801
+00:33:06,460 --> 00:33:08,420
+So anyways, the
+take home message
+
+802
+00:33:08,420 --> 00:33:09,100
+out of this is that
+
+803
+00:33:09,100 --> 00:33:10,179
+that still takes
+work, right?
+
+804
+00:33:10,179 --> 00:33:11,939
+So go from V
+three to V four,
+
+805
+00:33:11,939 --> 00:33:14,459
+I need to transfer
+work in, okay?
+
+806
+00:33:14,459 --> 00:33:15,980
+And I have to
+pay for that.
+
+807
+00:33:15,980 --> 00:33:17,380
+So if you do a cycle,
+
+808
+00:33:17,380 --> 00:33:19,060
+the network you
+would get out of
+
+809
+00:33:19,060 --> 00:33:20,739
+it is the area under
+the curve from
+
+810
+00:33:20,739 --> 00:33:21,859
+V one to V two
+
+811
+00:33:21,859 --> 00:33:24,179
+minus the area under
+the curve from the
+
+812
+00:33:24,179 --> 00:33:27,859
+V three or state three
+to state four there.
+
+813
+00:33:27,859 --> 00:33:29,419
+So the shaded
+green area has
+
+814
+00:33:29,419 --> 00:33:31,169
+actually done the
+net work, okay?
+
+815
+00:33:31,169 --> 00:33:32,449
+And we're going to use
+that a lot, right?
+
+816
+00:33:32,449 --> 00:33:33,890
+We're going to give
+you these cycles,
+
+817
+00:33:33,890 --> 00:33:35,730
+engines and Brighton and
+
+818
+00:33:35,730 --> 00:33:37,249
+beautiful stuff for arrow.
+
+819
+00:33:37,249 --> 00:33:39,810
+It's the area then
+between these curves,
+
+820
+00:33:39,810 --> 00:33:42,729
+which is then going to
+be the network out,
+
+821
+00:33:42,729 --> 00:33:46,249
+okay? Good. What else?
+
+822
+00:33:46,249 --> 00:33:47,609
+So if I told you that
+
+823
+00:33:47,609 --> 00:33:51,649
+the shaded green area
+is the network out,
+
+824
+00:33:51,649 --> 00:33:54,329
+what else do you think
+the shaded green area
+
+825
+00:33:54,329 --> 00:33:58,159
+is in a in a
+cycle like this?
+
+826
+00:33:58,159 --> 00:34:00,109
+The net heat in, right?
+
+827
+00:34:00,109 --> 00:34:01,630
+Because ultimately,
+you need to end
+
+828
+00:34:01,630 --> 00:34:03,589
+up at your original
+state, okay?
+
+829
+00:34:03,589 --> 00:34:05,509
+And from the
+first law, right?
+
+830
+00:34:05,509 --> 00:34:07,709
+We have the Delta
+U, right is,
+
+831
+00:34:07,709 --> 00:34:09,629
+you know, all the
+work in the heat in
+
+832
+00:34:09,629 --> 00:34:11,309
+minus all the work
+in the heat out.
+
+833
+00:34:11,309 --> 00:34:14,029
+So to get back to
+the original state,
+
+834
+00:34:14,029 --> 00:34:15,109
+I can't have
+any difference
+
+835
+00:34:15,109 --> 00:34:15,989
+in the energy, right?
+
+836
+00:34:15,989 --> 00:34:17,469
+I want to go back to
+the initial state.
+
+837
+00:34:17,469 --> 00:34:18,789
+So whatever I take out of
+
+838
+00:34:18,789 --> 00:34:20,149
+that control
+volume, right,
+
+839
+00:34:20,149 --> 00:34:21,029
+let's say in work,
+
+840
+00:34:21,029 --> 00:34:22,429
+network transferred
+out has to
+
+841
+00:34:22,429 --> 00:34:23,469
+be equal to the net heat
+
+842
+00:34:23,469 --> 00:34:24,949
+transferred in, okay?
+
+843
+00:34:24,949 --> 00:34:26,749
+Think about that
+over the weekend
+
+844
+00:34:26,749 --> 00:34:28,469
+since you all
+gave me homework.
+
+845
+00:34:28,469 --> 00:34:31,904
+Okay. Are there any
+questions about that?
+
+846
+00:34:31,904 --> 00:34:34,700
+Okay, if not, I am
+2 minutes early,
+
+847
+00:34:34,700 --> 00:34:36,100
+so enjoy your beautiful
+
+848
+00:34:36,100 --> 00:34:37,499
+enjoy your
+beautiful weekend.
+
+849
+00:34:37,499 --> 00:34:39,819
+And I'm up here if
+you have questions.

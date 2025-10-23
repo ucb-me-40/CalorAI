@@ -1,0 +1,6218 @@
+1
+00:00:02,440 --> 00:00:07,960
+Okay, I got 210, so
+I will get started.
+
+2
+00:00:07,960 --> 00:00:10,080
+So what I have
+here, right,
+
+3
+00:00:10,080 --> 00:00:12,720
+is this example we left
+off with last time,
+
+4
+00:00:12,720 --> 00:00:14,640
+where we took
+a hot piece of
+
+5
+00:00:14,640 --> 00:00:17,120
+iron and dropped it
+into a cold bath.
+
+6
+00:00:17,120 --> 00:00:18,639
+What we know from
+this process
+
+7
+00:00:18,639 --> 00:00:20,160
+is that it's an adiabatic
+
+8
+00:00:20,160 --> 00:00:21,879
+adiabatic basically from
+
+9
+00:00:21,879 --> 00:00:24,239
+the overall
+system, all right?
+
+10
+00:00:24,239 --> 00:00:25,599
+It's a no work exchange
+
+11
+00:00:25,599 --> 00:00:27,320
+because it's
+incompressible
+
+12
+00:00:27,320 --> 00:00:29,359
+between CV one and
+
+13
+00:00:29,359 --> 00:00:31,160
+CV two in the
+surroundings.
+
+14
+00:00:31,160 --> 00:00:32,879
+We represent that
+by saying, right,
+
+15
+00:00:32,879 --> 00:00:34,959
+that the change in
+the internal energy
+
+16
+00:00:34,959 --> 00:00:36,759
+of this combined system
+
+17
+00:00:36,759 --> 00:00:38,159
+is no heat, no
+work, right?
+
+18
+00:00:38,159 --> 00:00:39,679
+So that's zero, okay?
+
+19
+00:00:39,679 --> 00:00:42,559
+Um, We know the
+initial states, right?
+
+20
+00:00:42,559 --> 00:00:44,119
+We know the rock
+to start with,
+
+21
+00:00:44,119 --> 00:00:46,279
+you know, the
+water, right?
+
+22
+00:00:46,279 --> 00:00:48,519
+And so what we're
+looking for
+
+23
+00:00:48,519 --> 00:00:50,399
+is the final temperature
+that's there, right?
+
+24
+00:00:50,399 --> 00:00:52,039
+So what we did is, at
+
+25
+00:00:52,039 --> 00:00:53,239
+the end of the
+last lecture,
+
+26
+00:00:53,239 --> 00:00:54,720
+right, the change in
+the internal energy
+
+27
+00:00:54,720 --> 00:00:55,839
+of control volume one,
+
+28
+00:00:55,839 --> 00:00:57,400
+which I'm representing
+with pink
+
+29
+00:00:57,400 --> 00:00:59,559
+here is the mass
+of the iron,
+
+30
+00:00:59,559 --> 00:01:01,839
+the specific heat of
+
+31
+00:01:01,839 --> 00:01:04,680
+the iron times the
+final temperature,
+
+32
+00:01:04,680 --> 00:01:06,480
+which we don't know minus
+
+33
+00:01:06,480 --> 00:01:07,839
+the initial
+temperature, okay?
+
+34
+00:01:07,839 --> 00:01:09,159
+And we're going to
+come up with a similar
+
+35
+00:01:09,159 --> 00:01:11,799
+expression for the water.
+
+36
+00:01:11,799 --> 00:01:13,639
+We're going to substitute
+
+37
+00:01:13,639 --> 00:01:14,719
+both those
+formulas together,
+
+38
+00:01:14,719 --> 00:01:15,439
+and then we're going to
+
+39
+00:01:15,439 --> 00:01:16,919
+solve for T two, okay?
+
+40
+00:01:16,919 --> 00:01:19,299
+Um, Yes.
+
+41
+00:01:19,299 --> 00:01:24,099
+Okay. So for the
+water baths,
+
+42
+00:01:24,099 --> 00:01:27,019
+and now we're basically
+dealing with CV two.
+
+43
+00:01:27,019 --> 00:01:31,259
+So for control volume
+to the water bath,
+
+44
+00:01:31,260 --> 00:01:35,259
+we know from
+incompressible fluids that
+
+45
+00:01:35,259 --> 00:01:37,379
+the specific heat Cp is
+
+46
+00:01:37,379 --> 00:01:40,179
+equal to CV is
+equal to C, right?
+
+47
+00:01:40,179 --> 00:01:44,380
+So it's it's a constant.
+
+48
+00:01:44,380 --> 00:01:46,620
+And so changes in
+internal energy.
+
+49
+00:01:46,620 --> 00:01:47,979
+Random writing
+little U here,
+
+50
+00:01:47,979 --> 00:01:50,219
+so jules per
+kilogram is equal
+
+51
+00:01:50,219 --> 00:01:52,739
+to CV which is
+
+52
+00:01:52,739 --> 00:01:54,819
+a function of temperature
+times dt, right?
+
+53
+00:01:54,819 --> 00:01:57,739
+This is just a
+definition that we have.
+
+54
+00:01:57,739 --> 00:02:00,579
+If we integrate
+through here and if we
+
+55
+00:02:00,579 --> 00:02:03,579
+treat the specific heat
+
+56
+00:02:03,579 --> 00:02:04,779
+as being constant over the
+
+57
+00:02:04,779 --> 00:02:06,540
+temperature range
+that we're studying,
+
+58
+00:02:06,540 --> 00:02:08,099
+which is basically
+valid for
+
+59
+00:02:08,099 --> 00:02:10,179
+most of the problems,
+
+60
+00:02:10,179 --> 00:02:12,700
+right, that we
+work with, right?
+
+61
+00:02:12,700 --> 00:02:16,020
+We can pull that out of
+the integral, right?
+
+62
+00:02:16,020 --> 00:02:20,020
+And we'll call
+it dt, right?
+
+63
+00:02:20,020 --> 00:02:22,100
+And so in this case,
+
+64
+00:02:22,100 --> 00:02:24,420
+if we have that, you know,
+
+65
+00:02:24,420 --> 00:02:26,900
+Delta U, it is then equal
+
+66
+00:02:26,900 --> 00:02:31,169
+to, approximate
+symbol, approximate.
+
+67
+00:02:31,169 --> 00:02:35,689
+So basically approximately
+equal to some CV.
+
+68
+00:02:35,689 --> 00:02:37,090
+Let's call it,
+you know, for
+
+69
+00:02:37,090 --> 00:02:39,010
+the now maybe average.
+
+70
+00:02:39,010 --> 00:02:41,250
+And then we can
+times that by T
+
+71
+00:02:41,250 --> 00:02:43,970
+two minus T one, right?
+
+72
+00:02:43,970 --> 00:02:45,130
+And we did this
+for the rock.
+
+73
+00:02:45,130 --> 00:02:46,769
+What I said is
+in the tables.
+
+74
+00:02:46,769 --> 00:02:48,569
+So if you go to the
+tables and you look
+
+75
+00:02:48,569 --> 00:02:50,489
+up what you have
+for the iron.
+
+76
+00:02:50,489 --> 00:02:53,090
+So, not the rock,
+the iron, right,
+
+77
+00:02:53,090 --> 00:02:56,340
+is there's 11 value
+of CP, right?
+
+78
+00:02:56,340 --> 00:02:57,460
+Basically, one value of
+
+79
+00:02:57,460 --> 00:02:58,820
+the specific heat
+that's there.
+
+80
+00:02:58,820 --> 00:03:00,899
+For water, you have
+other ones, right, zero,
+
+81
+00:03:00,899 --> 00:03:03,340
+25, 50, 75 and 100.
+
+82
+00:03:03,340 --> 00:03:05,340
+My recommendation,
+especially when
+
+83
+00:03:05,340 --> 00:03:06,900
+getting started in these
+problems and working
+
+84
+00:03:06,900 --> 00:03:08,820
+on it for now
+is just to pick
+
+85
+00:03:08,820 --> 00:03:10,780
+the value that's at
+
+86
+00:03:10,780 --> 00:03:12,180
+room temperature unless
+
+87
+00:03:12,180 --> 00:03:13,340
+you're told
+otherwise, right?
+
+88
+00:03:13,340 --> 00:03:14,220
+So all I'm going to
+
+89
+00:03:14,220 --> 00:03:15,460
+say is that basically this
+
+90
+00:03:15,460 --> 00:03:20,174
+is for the case of
+water, right, CV,
+
+91
+00:03:20,174 --> 00:03:25,290
+at T equals to
+25 degrees C,
+
+92
+00:03:25,290 --> 00:03:27,650
+which because of
+that, it's CP,
+
+93
+00:03:27,650 --> 00:03:30,290
+and there it's what, 4.1,
+
+94
+00:03:30,290 --> 00:03:36,810
+4.18 kilojoules per
+kilogram Kelvin.
+
+95
+00:03:36,810 --> 00:03:38,210
+All right? I mean, it's
+
+96
+00:03:38,210 --> 00:03:39,490
+very detailed,
+but, you know,
+
+97
+00:03:39,490 --> 00:03:43,930
+I want to be explicit
+with this, all right?
+
+98
+00:03:43,930 --> 00:03:46,930
+Is that clear
+for all or no?
+
+99
+00:03:47,810 --> 00:03:55,335
+Great. Um Yeah.
+
+100
+00:03:55,335 --> 00:03:56,255
+And so then right
+
+101
+00:03:56,255 --> 00:03:57,574
+if we want to
+turn this into
+
+102
+00:03:57,574 --> 00:04:01,179
+the right Delta U,
+which is what we want.
+
+103
+00:04:01,179 --> 00:04:04,410
+Right? So the
+big Delta U of
+
+104
+00:04:04,410 --> 00:04:07,215
+CV two is then
+
+105
+00:04:07,215 --> 00:04:09,459
+equal to the mass
+of the water.
+
+106
+00:04:09,459 --> 00:04:13,809
+So mh2o times CV,
+
+107
+00:04:13,809 --> 00:04:18,615
+h2o times T two, the
+final temperature,
+
+108
+00:04:18,615 --> 00:04:19,299
+which we don't know
+
+109
+00:04:19,299 --> 00:04:20,735
+minus the initial
+temperature,
+
+110
+00:04:20,735 --> 00:04:24,454
+t1h 20, right?
+
+111
+00:04:24,454 --> 00:04:29,214
+Okay, so if I call this
+as if I call this is,
+
+112
+00:04:29,214 --> 00:04:31,380
+let's call it
+equation one, right?
+
+113
+00:04:31,380 --> 00:04:34,819
+If I call this basically
+as equation two,
+
+114
+00:04:34,819 --> 00:04:37,419
+and if I call this
+as equation three,
+
+115
+00:04:37,419 --> 00:04:40,059
+I combine two and three.
+
+116
+00:04:40,059 --> 00:04:43,139
+If I combine two
+and three into one,
+
+117
+00:04:43,139 --> 00:04:44,739
+what we're going
+to have is
+
+118
+00:04:44,739 --> 00:04:46,620
+the mass of the iron.
+
+119
+00:04:46,620 --> 00:04:50,579
+So M of F,
+
+120
+00:04:50,580 --> 00:04:54,574
+CV of F. I'm writing F
+
+121
+00:04:54,574 --> 00:04:58,220
+as the um uh the
+symbol for iron,
+
+122
+00:04:58,220 --> 00:05:00,219
+T two minus T one,
+
+123
+00:05:00,219 --> 00:05:02,679
+comma F E, and then
+
+124
+00:05:02,679 --> 00:05:05,160
+that's going to be plus
+this formula here.
+
+125
+00:05:05,160 --> 00:05:10,000
+So that's going to
+be plus h2o, CV,
+
+126
+00:05:10,000 --> 00:05:15,159
+h2o times T two,
+
+127
+00:05:15,159 --> 00:05:16,759
+the final
+temperature minus
+
+128
+00:05:16,759 --> 00:05:18,679
+the initial
+temperature T one,
+
+129
+00:05:18,679 --> 00:05:22,440
+H two oh, and that's
+all equal to zero.
+
+130
+00:05:22,440 --> 00:05:27,509
+All right. Maybe a kid.
+
+131
+00:05:31,110 --> 00:05:33,109
+And all you do is
+
+132
+00:05:33,109 --> 00:05:34,349
+you basically
+rearrange them.
+
+133
+00:05:34,349 --> 00:05:35,550
+So if we rearrange
+
+134
+00:05:35,550 --> 00:05:36,829
+four and we
+solve for T two,
+
+135
+00:05:36,829 --> 00:05:38,069
+what we're going
+to have then is T
+
+136
+00:05:38,069 --> 00:05:39,589
+two is equal
+
+137
+00:05:39,589 --> 00:05:44,630
+to the mass of the iron CV
+
+138
+00:05:44,630 --> 00:05:48,989
+of the iron T one of
+
+139
+00:05:48,989 --> 00:05:54,825
+the iron plus the
+mass of water h2o.
+
+140
+00:05:54,825 --> 00:06:02,019
+CV, h2o, and t1h 20,
+
+141
+00:06:02,019 --> 00:06:04,020
+and all that's essentially
+
+142
+00:06:04,020 --> 00:06:06,580
+divided by the CVs.
+
+143
+00:06:06,580 --> 00:06:09,820
+Then we're going
+to have M of iron,
+
+144
+00:06:09,820 --> 00:06:16,259
+CV of iron plus
+the mass of h2o,
+
+145
+00:06:16,259 --> 00:06:20,539
+and then the CV
+of h2o, okay?
+
+146
+00:06:23,270 --> 00:06:26,189
+Yeah, and if I substitute
+the value, right?
+
+147
+00:06:26,189 --> 00:06:27,949
+So we're given the
+
+148
+00:06:27,949 --> 00:06:29,509
+masses are given
+in the problem.
+
+149
+00:06:29,509 --> 00:06:32,189
+The initial
+temperatures are,
+
+150
+00:06:32,189 --> 00:06:35,270
+let's see, given in the
+problem in Celsius.
+
+151
+00:06:35,270 --> 00:06:36,869
+That's perfectly fine here
+
+152
+00:06:36,869 --> 00:06:38,669
+because we're going
+to expect a value
+
+153
+00:06:38,669 --> 00:06:42,869
+that's going to be
+intermediate 80-25, right?
+
+154
+00:06:42,869 --> 00:06:44,949
+So you could see maybe
+these initial factors
+
+155
+00:06:44,949 --> 00:06:46,589
+as kind of like
+waiting factors for
+
+156
+00:06:46,589 --> 00:06:51,950
+which ones are going
+to um end up at.
+
+157
+00:06:51,950 --> 00:06:53,389
+So we know the mass,
+
+158
+00:06:53,389 --> 00:06:55,189
+the CVs, we know
+
+159
+00:06:55,189 --> 00:06:56,750
+the mass, we know
+the temperatures.
+
+160
+00:06:56,750 --> 00:06:57,909
+The CVs I just showed you,
+
+161
+00:06:57,909 --> 00:06:59,949
+CVs are CPs for
+these cases.
+
+162
+00:06:59,949 --> 00:07:06,310
+So that's your water,
+and that's your iron.
+
+163
+00:07:06,310 --> 00:07:07,749
+So you substitute that
+
+164
+00:07:07,749 --> 00:07:08,830
+in, and then it's
+the same here.
+
+165
+00:07:08,830 --> 00:07:10,390
+You have the M's and
+the C's with it.
+
+166
+00:07:10,390 --> 00:07:12,189
+If you substitute
+those values,
+
+167
+00:07:12,189 --> 00:07:19,929
+what I have is a T
+two that is 58 Oh,
+
+168
+00:07:19,929 --> 00:07:22,169
+I'm sorry, Geez,
+I'm reading wrong.
+
+169
+00:07:22,169 --> 00:07:28,409
+25.6 degrees Celsius as
+
+170
+00:07:28,409 --> 00:07:31,209
+my final
+temperature, okay?
+
+171
+00:07:31,209 --> 00:07:35,049
+And I can analyze this
+and say Gee whiz,
+
+172
+00:07:35,049 --> 00:07:37,210
+that's not a huge
+temperature increase.
+
+173
+00:07:37,210 --> 00:07:38,609
+That's like 0.6.
+
+174
+00:07:38,609 --> 00:07:41,129
+Calvin, but what you
+have to recognize is
+
+175
+00:07:41,129 --> 00:07:42,929
+that the drawing here
+
+176
+00:07:42,929 --> 00:07:45,129
+is obviously not to scale.
+
+177
+00:07:45,129 --> 00:07:47,289
+There's an order of
+magnitude more water
+
+178
+00:07:47,289 --> 00:07:49,049
+there by mass than
+
+179
+00:07:49,049 --> 00:07:50,490
+there is essentially
+of iron.
+
+180
+00:07:50,490 --> 00:07:55,010
+That's that's half
+a ton of water
+
+181
+00:07:55,010 --> 00:08:03,170
+and only 50 kilogram
+then of iron?
+
+182
+00:08:03,170 --> 00:08:06,649
+Yes, please. When you
+
+183
+00:08:06,649 --> 00:08:10,220
+put the C for iron
+at eight degrees.
+
+184
+00:08:10,220 --> 00:08:12,549
+You don't get so
+in this case,
+
+185
+00:08:12,549 --> 00:08:14,669
+in this class, there
+is no such thing.
+
+186
+00:08:14,669 --> 00:08:16,069
+Right? So there
+is this value.
+
+187
+00:08:16,069 --> 00:08:17,790
+That's what's
+in the table.
+
+188
+00:08:17,790 --> 00:08:20,190
+If you wanted to be
+that sophisticated,
+
+189
+00:08:20,190 --> 00:08:21,109
+you could go up
+and look at it.
+
+190
+00:08:21,109 --> 00:08:22,229
+What I would tell
+you, though, and
+
+191
+00:08:22,229 --> 00:08:23,669
+this is what I
+introduced earlier,
+
+192
+00:08:23,669 --> 00:08:25,149
+is if you want
+to look up like
+
+193
+00:08:25,149 --> 00:08:26,389
+specific heats and how
+
+194
+00:08:26,389 --> 00:08:28,470
+they depend upon
+temperature,
+
+195
+00:08:28,470 --> 00:08:30,469
+let's call this roughly
+like I don't know,
+
+196
+00:08:30,469 --> 00:08:32,469
+100 Kelvin that's here.
+
+197
+00:08:32,469 --> 00:08:34,590
+You'll see kind of
+a big drop off,
+
+198
+00:08:34,590 --> 00:08:36,710
+and then kind of,
+you know, you do it.
+
+199
+00:08:36,710 --> 00:08:39,749
+So basically, by some
+critical temperature,
+
+200
+00:08:39,749 --> 00:08:41,150
+you've already
+activated most of
+
+201
+00:08:41,150 --> 00:08:44,030
+the modes of energy
+storage in the material.
+
+202
+00:08:44,030 --> 00:08:46,150
+And so when you go
+to really high ones,
+
+203
+00:08:46,150 --> 00:08:47,670
+you don't see that
+much of a gain, right?
+
+204
+00:08:47,670 --> 00:08:49,189
+So water's a nice example.
+
+205
+00:08:49,189 --> 00:08:58,070
+So 25-100, you go
+from 4.18 to 4.22.
+
+206
+00:08:58,070 --> 00:09:01,109
+So that's less
+than 1% change
+
+207
+00:09:01,109 --> 00:09:03,710
+in the specific
+heat, okay?
+
+208
+00:09:03,710 --> 00:09:04,470
+But if you get to,
+
+209
+00:09:04,470 --> 00:09:05,789
+like, temperature
+differences that
+
+210
+00:09:05,789 --> 00:09:07,950
+are maybe like 1,000
+Kelvin, right,
+
+211
+00:09:07,950 --> 00:09:10,230
+then maybe that tiny
+amount that you have
+
+212
+00:09:10,230 --> 00:09:12,789
+there becomes relevant
+for your calculations.
+
+213
+00:09:12,789 --> 00:09:16,470
+Okay? But fair question.
+Other questions?
+
+214
+00:09:16,470 --> 00:09:19,829
+How might you do
+this differently?
+
+215
+00:09:22,230 --> 00:09:25,070
+You had a very good
+point last lecture,
+
+216
+00:09:25,070 --> 00:09:26,270
+if you cared to share.
+
+217
+00:09:26,270 --> 00:09:27,670
+Yeah.
+
+218
+00:09:33,610 --> 00:09:36,850
+Yes. Exactly.
+
+219
+00:09:36,850 --> 00:09:39,889
+So instead of writing
+
+220
+00:09:39,889 --> 00:09:41,490
+our conservation of
+
+221
+00:09:41,490 --> 00:09:43,890
+energy equation
+in this way,
+
+222
+00:09:43,890 --> 00:09:45,850
+or we could write
+it in this way.
+
+223
+00:09:45,850 --> 00:09:47,569
+The way you could
+look at it is that
+
+224
+00:09:47,569 --> 00:09:49,410
+the change in the
+internal energy of
+
+225
+00:09:49,410 --> 00:09:50,970
+the water has to equal
+
+226
+00:09:50,970 --> 00:09:52,409
+the change in
+internal energy
+
+227
+00:09:52,409 --> 00:09:53,330
+of the iron, right?
+
+228
+00:09:53,330 --> 00:09:56,410
+Which is to say
+that the heat
+
+229
+00:09:56,410 --> 00:09:57,890
+that I transfer
+into the water
+
+230
+00:09:57,890 --> 00:10:00,250
+has to be equal
+to the heat that
+
+231
+00:10:00,250 --> 00:10:01,809
+leaves that's transferred
+
+232
+00:10:01,809 --> 00:10:03,370
+out of the iron, right?
+
+233
+00:10:03,370 --> 00:10:04,450
+And for me, that's
+
+234
+00:10:04,450 --> 00:10:05,810
+a more intuitive
+way to do it,
+
+235
+00:10:05,810 --> 00:10:06,930
+especially later on when
+
+236
+00:10:06,930 --> 00:10:08,289
+we get into heat
+exchangers.
+
+237
+00:10:08,289 --> 00:10:09,770
+That's a much more
+intuitive way,
+
+238
+00:10:09,770 --> 00:10:12,330
+but I'm just
+following, you know,
+
+239
+00:10:12,330 --> 00:10:14,090
+basically, I'm following
+the book here.
+
+240
+00:10:14,090 --> 00:10:15,930
+And also this framework of
+
+241
+00:10:15,930 --> 00:10:18,209
+kind of this
+additive approach
+
+242
+00:10:18,209 --> 00:10:21,249
+into changes
+internal energy
+
+243
+00:10:21,249 --> 00:10:23,090
+for control volumes
+is a good one, right?
+
+244
+00:10:23,090 --> 00:10:25,329
+So the GSI, I
+think Cassidy
+
+245
+00:10:25,329 --> 00:10:26,650
+worked through a
+problem with a room
+
+246
+00:10:26,650 --> 00:10:28,210
+and a radiator and a fan,
+
+247
+00:10:28,210 --> 00:10:30,929
+and there it's very
+helpful to visualize,
+
+248
+00:10:30,929 --> 00:10:32,830
+break it down into
+the different parts.
+
+249
+00:10:32,830 --> 00:10:34,649
+Analyze, right from
+your initial to
+
+250
+00:10:34,649 --> 00:10:35,570
+your final states and
+
+251
+00:10:35,570 --> 00:10:36,770
+then just start
+adding things up.
+
+252
+00:10:36,770 --> 00:10:37,810
+And just like in
+that problem,
+
+253
+00:10:37,810 --> 00:10:38,650
+I'm pretty sure it was
+
+254
+00:10:38,650 --> 00:10:39,770
+an adiabatic no work
+
+255
+00:10:39,770 --> 00:10:41,450
+transfer process
+at the end of
+
+256
+00:10:41,450 --> 00:10:42,530
+it with the goal
+
+257
+00:10:42,530 --> 00:10:44,890
+basically to fight
+T two, all right?
+
+258
+00:10:44,890 --> 00:10:48,250
+Wonderful. Okay,
+so if there are
+
+259
+00:10:48,250 --> 00:10:50,770
+no other questions,
+
+260
+00:11:11,820 --> 00:11:13,900
+Okay.
+
+261
+00:11:14,140 --> 00:11:18,220
+Great. So today,
+essentially,
+
+262
+00:11:18,220 --> 00:11:18,740
+we're going to go
+
+263
+00:11:18,740 --> 00:11:20,099
+through some
+conservation principles,
+
+264
+00:11:20,099 --> 00:11:20,779
+and then at the end,
+
+265
+00:11:20,779 --> 00:11:22,700
+we're going to finish
+with turbines,
+
+266
+00:11:22,700 --> 00:11:24,340
+right? There's
+a bit of math.
+
+267
+00:11:24,340 --> 00:11:25,860
+You know, we're
+going over a very
+
+268
+00:11:25,860 --> 00:11:28,580
+important is a very
+important stage,
+
+269
+00:11:28,580 --> 00:11:30,420
+right, in the class
+when we get into
+
+270
+00:11:30,420 --> 00:11:32,220
+what are called
+steady flow devices.
+
+271
+00:11:32,220 --> 00:11:33,979
+But this is
+rockets, nozzles,
+
+272
+00:11:33,979 --> 00:11:35,260
+diffusers, turbines.
+
+273
+00:11:35,260 --> 00:11:36,900
+Basically, everything
+that goes fast
+
+274
+00:11:36,900 --> 00:11:38,780
+is and how we produce
+
+275
+00:11:38,780 --> 00:11:41,780
+the energy is based on
+
+276
+00:11:41,780 --> 00:11:43,220
+this analysis, all right?
+
+277
+00:11:43,220 --> 00:11:45,739
+Okay, so we've
+done conservation.
+
+278
+00:11:45,739 --> 00:11:49,819
+Of energy. That's
+the first principle.
+
+279
+00:11:49,819 --> 00:11:51,899
+In your courses
+and later on,
+
+280
+00:11:51,899 --> 00:11:53,380
+you basically have
+two other ones that
+
+281
+00:11:53,380 --> 00:11:54,820
+you'll deal with
+conservation of
+
+282
+00:11:54,820 --> 00:11:59,300
+mass and conservation
+of energy we've done.
+
+283
+00:11:59,300 --> 00:12:01,340
+Mass, now we're
+going to do.
+
+284
+00:12:01,340 --> 00:12:05,919
+The last one is momentum.
+
+285
+00:12:05,919 --> 00:12:07,480
+When you take
+M one oh six,
+
+286
+00:12:07,480 --> 00:12:09,080
+you're going to de a lot
+with conservation of
+
+287
+00:12:09,080 --> 00:12:10,839
+mass and conservation
+of momentum.
+
+288
+00:12:10,839 --> 00:12:13,560
+In this class, we only
+do conservation of
+
+289
+00:12:13,560 --> 00:12:16,880
+energy and conservation
+of mass with it.
+
+290
+00:12:16,880 --> 00:12:20,960
+Okay, what I want
+you to look at here,
+
+291
+00:12:20,960 --> 00:12:23,400
+what I'm defining
+essentially here is, again,
+
+292
+00:12:23,400 --> 00:12:26,240
+one of my, um, uh,
+control volumes.
+
+293
+00:12:26,240 --> 00:12:27,519
+So I have, let's say,
+
+294
+00:12:27,519 --> 00:12:30,960
+um, you know,
+I don't know,
+
+295
+00:12:30,960 --> 00:12:33,079
+I define some type of,
+
+296
+00:12:33,079 --> 00:12:34,520
+uh, uh, you know,
+
+297
+00:12:34,520 --> 00:12:36,320
+wonky looking,
+um, you know,
+
+298
+00:12:36,320 --> 00:12:38,719
+basically control
+volume here, right?
+
+299
+00:12:38,719 --> 00:12:40,520
+This is the interface
+and basically maybe
+
+300
+00:12:40,520 --> 00:12:42,530
+at this interface,
+Um, right?
+
+301
+00:12:42,530 --> 00:12:44,650
+I have a vector which
+is normal, right?
+
+302
+00:12:44,650 --> 00:12:45,689
+So I have a vector
+
+303
+00:12:45,689 --> 00:12:47,090
+that's normal
+at that point,
+
+304
+00:12:47,090 --> 00:12:48,490
+right, which I can define.
+
+305
+00:12:48,490 --> 00:12:50,729
+That's possible. Have
+you ever read Gauss,
+
+306
+00:12:50,729 --> 00:12:53,569
+you know, beautiful
+stuff from him.
+
+307
+00:12:53,569 --> 00:12:55,170
+If I take any
+surface, right?
+
+308
+00:12:55,170 --> 00:12:56,050
+I can take a point.
+
+309
+00:12:56,050 --> 00:12:58,250
+I can define the
+curvature at that point,
+
+310
+00:12:58,250 --> 00:13:00,090
+and I can define
+a vector that's
+
+311
+00:13:00,090 --> 00:13:02,255
+normal away from it, okay?
+
+312
+00:13:02,255 --> 00:13:03,140
+We have that.
+
+313
+00:13:03,140 --> 00:13:04,780
+So this is basically
+like let's say
+
+314
+00:13:04,780 --> 00:13:07,540
+a normal vector, one, two,
+
+315
+00:13:07,540 --> 00:13:09,339
+let's say at this point,
+
+316
+00:13:09,339 --> 00:13:11,380
+I have the following,
+
+317
+00:13:11,380 --> 00:13:13,180
+you know, velocity, right?
+
+318
+00:13:13,180 --> 00:13:16,340
+So let's say that I
+have a fluid velocity,
+
+319
+00:13:16,340 --> 00:13:19,060
+V, I'll denote it
+as a vector with
+
+320
+00:13:19,060 --> 00:13:21,780
+the arrow over it, okay?
+
+321
+00:13:21,780 --> 00:13:23,339
+The first step in all of
+
+322
+00:13:23,339 --> 00:13:25,600
+this, would be right?
+
+323
+00:13:25,600 --> 00:13:27,080
+To essentially, right,
+
+324
+00:13:27,080 --> 00:13:28,760
+to do the analysis
+at this point,
+
+325
+00:13:28,760 --> 00:13:30,280
+what we actually
+need to know
+
+326
+00:13:30,280 --> 00:13:32,799
+is the velocity,
+
+327
+00:13:32,799 --> 00:13:34,120
+right, of, let's say,
+
+328
+00:13:34,120 --> 00:13:36,480
+this fluid in
+
+329
+00:13:36,480 --> 00:13:37,880
+the normal direction
+to this, right?
+
+330
+00:13:37,880 --> 00:13:39,960
+So, essentially, we do
+a projection, right,
+
+331
+00:13:39,960 --> 00:13:44,100
+of this velocity
+here into um,
+
+332
+00:13:44,100 --> 00:13:46,620
+onto the normal direction,
+
+333
+00:13:46,620 --> 00:13:48,420
+right, which we
+can then call as,
+
+334
+00:13:48,420 --> 00:13:50,420
+let's say, V bar,
+
+335
+00:13:50,420 --> 00:13:53,740
+N, N denoting,
+uh, the normal.
+
+336
+00:13:53,740 --> 00:13:55,460
+And I'm putting an
+arrow above this,
+
+337
+00:13:55,460 --> 00:13:56,700
+at least for the
+moment so I don't
+
+338
+00:13:56,700 --> 00:13:57,859
+confuse you with volume.
+
+339
+00:13:57,859 --> 00:13:59,699
+Again, I have
+26 characters,
+
+340
+00:13:59,699 --> 00:14:00,979
+a couple of Greek letters,
+
+341
+00:14:00,979 --> 00:14:03,740
+but that's where we're
+we're at, right?
+
+342
+00:14:03,740 --> 00:14:05,020
+And I represent
+this, you know,
+
+343
+00:14:05,020 --> 00:14:06,179
+here in the plot again.
+
+344
+00:14:06,179 --> 00:14:06,940
+If you want to go through,
+
+345
+00:14:06,940 --> 00:14:07,579
+you can run through
+
+346
+00:14:07,579 --> 00:14:09,709
+that code and
+see it, right?
+
+347
+00:14:09,709 --> 00:14:13,319
+Okay, that's the mathy
+part of it, right?
+
+348
+00:14:13,319 --> 00:14:14,759
+In reality, the
+way that we
+
+349
+00:14:14,759 --> 00:14:16,440
+deal with this is we don't
+
+350
+00:14:16,440 --> 00:14:18,560
+draw boundaries
+in a weird way
+
+351
+00:14:18,560 --> 00:14:19,559
+where we need to
+do math, right?
+
+352
+00:14:19,559 --> 00:14:20,359
+We're engineers.
+
+353
+00:14:20,359 --> 00:14:21,160
+We're efficient.
+
+354
+00:14:21,160 --> 00:14:22,480
+Okay? If you want
+torture yourself,
+
+355
+00:14:22,480 --> 00:14:24,479
+you can get down the
+road there, right?
+
+356
+00:14:24,479 --> 00:14:26,480
+So in this case, what I'm
+
+357
+00:14:26,480 --> 00:14:28,555
+showing you is a
+classic problem,
+
+358
+00:14:28,555 --> 00:14:32,030
+and a classic problem
+of a pipe flow, okay?
+
+359
+00:14:32,030 --> 00:14:34,470
+And I'm going to draw
+the boundary such as
+
+360
+00:14:34,470 --> 00:14:36,150
+this velocity that I see
+
+361
+00:14:36,150 --> 00:14:39,030
+here matches Vn, right?
+
+362
+00:14:39,030 --> 00:14:40,470
+So basically, I'm
+going to draw
+
+363
+00:14:40,470 --> 00:14:41,390
+this in this
+way, all right?
+
+364
+00:14:41,390 --> 00:14:42,190
+How do I do that?
+
+365
+00:14:42,190 --> 00:14:44,350
+The first thing
+to know is to
+
+366
+00:14:44,350 --> 00:14:45,190
+describe for you what
+
+367
+00:14:45,190 --> 00:14:46,869
+a velocity looks
+like in a pipe flow.
+
+368
+00:14:46,869 --> 00:14:48,230
+There's a fascinating
+history to
+
+369
+00:14:48,230 --> 00:14:49,830
+this Poisll was
+looking at this,
+
+370
+00:14:49,830 --> 00:14:51,710
+like flow in your blood
+in your veins and,
+
+371
+00:14:51,710 --> 00:14:53,630
+like, how that goes.
+
+372
+00:14:53,630 --> 00:14:55,550
+And it turns out, right,
+
+373
+00:14:55,550 --> 00:14:58,030
+there's two
+important well,
+
+374
+00:14:58,030 --> 00:14:59,190
+basically,
+there's, like, one
+
+375
+00:14:59,190 --> 00:15:00,590
+very important
+thing in fluids.
+
+376
+00:15:00,590 --> 00:15:02,590
+Thermo, we draw a
+boundary in fluids,
+
+377
+00:15:02,590 --> 00:15:03,910
+there's no slip
+at the wall.
+
+378
+00:15:03,910 --> 00:15:05,310
+There is no slip, okay?
+
+379
+00:15:05,310 --> 00:15:09,120
+So Here, I have no
+slip. Okay, one.
+
+380
+00:15:09,120 --> 00:15:11,080
+I have some flow that
+I'm bringing in.
+
+381
+00:15:11,080 --> 00:15:12,279
+I have no slip there.
+
+382
+00:15:12,279 --> 00:15:13,359
+What it basically means is
+
+383
+00:15:13,359 --> 00:15:14,560
+that I'm going
+to assume that
+
+384
+00:15:14,560 --> 00:15:15,879
+I'm going to end
+up with a maximum
+
+385
+00:15:15,879 --> 00:15:17,319
+velocity at the middle,
+
+386
+00:15:17,319 --> 00:15:19,519
+and probably to a
+good approximation,
+
+387
+00:15:19,519 --> 00:15:21,160
+actually maybe
+analytically correct,
+
+388
+00:15:21,160 --> 00:15:22,080
+you're going
+to end up with
+
+389
+00:15:22,080 --> 00:15:23,919
+a parabolic flow
+profile, right?
+
+390
+00:15:23,919 --> 00:15:26,384
+So again, this is
+All right, maximum,
+
+391
+00:15:26,384 --> 00:15:27,219
+the way we represent
+
+392
+00:15:27,219 --> 00:15:29,344
+these velocities at
+these different points
+
+393
+00:15:29,344 --> 00:15:30,710
+is we draw arrows
+
+394
+00:15:30,710 --> 00:15:32,830
+that look like
+this, all right?
+
+395
+00:15:32,830 --> 00:15:35,985
+Okay. But this
+is my right?
+
+396
+00:15:35,985 --> 00:15:37,225
+This is my boundary.
+
+397
+00:15:37,225 --> 00:15:39,025
+And I've drawn
+this, right?
+
+398
+00:15:39,025 --> 00:15:40,665
+It turns out
+maybe I'm a bit
+
+399
+00:15:40,665 --> 00:15:42,265
+lucky in the way that
+I've drawn it here,
+
+400
+00:15:42,265 --> 00:15:44,545
+it turns out that all
+those velocity vectors,
+
+401
+00:15:44,545 --> 00:15:46,380
+the magnitude or
+the direction of
+
+402
+00:15:46,380 --> 00:15:47,864
+those velocity
+vectors also
+
+403
+00:15:47,864 --> 00:15:49,505
+lies on the normal, right?
+
+404
+00:15:49,505 --> 00:15:52,265
+The plane that's normal or
+
+405
+00:15:52,265 --> 00:15:54,905
+the line that's normal
+to that plane, okay?
+
+406
+00:15:54,905 --> 00:15:56,785
+Again, if you
+want to plot it,
+
+407
+00:15:56,785 --> 00:15:58,625
+you can see it
+see it there.
+
+408
+00:15:58,625 --> 00:16:03,290
+Okay. Um great. All right?
+
+409
+00:16:03,290 --> 00:16:06,330
+Ooh. All right.
+
+410
+00:16:06,330 --> 00:16:11,170
+Where should I go
+with this, right?
+
+411
+00:16:11,170 --> 00:16:13,330
+So maybe it's better if I
+
+412
+00:16:13,330 --> 00:16:15,090
+keep up before I get
+into this, right?
+
+413
+00:16:15,090 --> 00:16:16,290
+So we can talk
+
+414
+00:16:16,290 --> 00:16:17,889
+about so this is
+like velocities,
+
+415
+00:16:17,889 --> 00:16:19,690
+but actually what
+we care about is
+
+416
+00:16:19,690 --> 00:16:21,850
+not necessarily
+velocity all the time.
+
+417
+00:16:21,850 --> 00:16:24,250
+We care a lot about
+mass flow rates, okay?
+
+418
+00:16:24,250 --> 00:16:26,090
+So we can take this and
+
+419
+00:16:26,090 --> 00:16:28,050
+this velocity, and
+by knowing, right,
+
+420
+00:16:28,050 --> 00:16:29,330
+the density of
+the fluid or
+
+421
+00:16:29,330 --> 00:16:30,570
+specific volume
+of the fluid,
+
+422
+00:16:30,570 --> 00:16:32,169
+I can turn this into
+mass fluorides.
+
+423
+00:16:32,169 --> 00:16:33,569
+That's a conserved
+principle.
+
+424
+00:16:33,569 --> 00:16:35,450
+There is no conservation
+of volume, okay?
+
+425
+00:16:35,450 --> 00:16:36,329
+You get into that.
+
+426
+00:16:36,329 --> 00:16:37,409
+You think about
+a compressor.
+
+427
+00:16:37,409 --> 00:16:38,929
+I have a low
+specific volume
+
+428
+00:16:38,929 --> 00:16:39,970
+going into a compressor,
+
+429
+00:16:39,970 --> 00:16:41,610
+a high one,
+leaving it Like,
+
+430
+00:16:41,610 --> 00:16:43,490
+if you go with
+conservation of volume,
+
+431
+00:16:43,490 --> 00:16:46,250
+you're out of job.
+Okay? All right.
+
+432
+00:16:46,250 --> 00:16:47,810
+So we can write a
+differential of
+
+433
+00:16:47,810 --> 00:16:49,650
+the mass flow rate,
+generally, right?
+
+434
+00:16:49,650 --> 00:16:51,170
+Delta, again, I'm going to
+
+435
+00:16:51,170 --> 00:16:53,049
+go with inexact
+differentials.
+
+436
+00:16:53,049 --> 00:16:55,570
+Delta M dot, M dot,
+
+437
+00:16:55,570 --> 00:16:57,890
+meaning that, you know,
+
+438
+00:16:57,890 --> 00:16:59,490
+like the Newton
+notation, right?
+
+439
+00:16:59,490 --> 00:17:03,970
+So dm dt is equal
+to M dot, right?
+
+440
+00:17:03,970 --> 00:17:04,729
+So this is what
+
+441
+00:17:04,729 --> 00:17:06,289
+Leibnitz, that's
+Neton, right?
+
+442
+00:17:06,289 --> 00:17:07,930
+So we're going with
+Newton notation
+
+443
+00:17:07,930 --> 00:17:09,489
+here in M dot is
+
+444
+00:17:09,489 --> 00:17:13,130
+equal to the inverse
+of specific volume.
+
+445
+00:17:13,130 --> 00:17:19,209
+The magnitude of the
+velocity normal, right?
+
+446
+00:17:19,209 --> 00:17:23,209
+So basically, the
+normal velocity
+
+447
+00:17:23,209 --> 00:17:24,730
+and the cross
+
+448
+00:17:24,730 --> 00:17:26,250
+sectional the
+differential then of
+
+449
+00:17:26,250 --> 00:17:30,889
+the cross sectional area
+that's that's there.
+
+450
+00:17:30,889 --> 00:17:32,370
+And again, we
+chose this plane
+
+451
+00:17:32,370 --> 00:17:33,929
+intelligently so
+that, you know,
+
+452
+00:17:33,929 --> 00:17:35,209
+this matches that
+and we don't
+
+453
+00:17:35,209 --> 00:17:36,889
+have to do any
+kind of cosines
+
+454
+00:17:36,889 --> 00:17:41,379
+or projections. All right.
+
+455
+00:17:41,379 --> 00:17:42,819
+If we go with
+
+456
+00:17:42,819 --> 00:17:44,379
+that formula that I
+had there, right?
+
+457
+00:17:44,379 --> 00:17:45,539
+So what I can say is that
+
+458
+00:17:45,539 --> 00:17:47,019
+the magnitude then of
+
+459
+00:17:47,019 --> 00:17:48,659
+this normal
+velocity is then
+
+460
+00:17:48,659 --> 00:17:50,979
+equal to some V max, okay?
+
+461
+00:17:50,979 --> 00:17:52,340
+So value that's here.
+
+462
+00:17:52,340 --> 00:17:54,700
+It doesn't really concern
+us for this class.
+
+463
+00:17:54,700 --> 00:17:55,699
+And then this would be
+
+464
+00:17:55,699 --> 00:17:58,259
+one minus little R, right?
+
+465
+00:17:58,259 --> 00:18:00,539
+Divided by big R, right?
+
+466
+00:18:00,539 --> 00:18:03,219
+So this would be,
+right, big R,
+
+467
+00:18:03,219 --> 00:18:04,659
+and then little R is
+
+468
+00:18:04,659 --> 00:18:07,539
+just a coordinate, right?
+
+469
+00:18:09,410 --> 00:18:13,169
+In the pipe, okay?
+So when I have,
+
+470
+00:18:14,450 --> 00:18:16,689
+R equals little R
+
+471
+00:18:16,689 --> 00:18:18,249
+equals zero,
+write a maximum,
+
+472
+00:18:18,249 --> 00:18:20,289
+when I have little
+R equal to big R,
+
+473
+00:18:20,289 --> 00:18:21,449
+this is zero,
+and that's how
+
+474
+00:18:21,449 --> 00:18:23,370
+you produce that profile.
+
+475
+00:18:23,370 --> 00:18:25,050
+All right. So if we
+do a substitution
+
+476
+00:18:25,050 --> 00:18:26,689
+into this and we
+integrate, okay?
+
+477
+00:18:26,689 --> 00:18:28,129
+So if I go write
+
+478
+00:18:28,129 --> 00:18:31,009
+an integral and DM
+dot, all right?
+
+479
+00:18:31,009 --> 00:18:32,250
+So I'm going to
+basically be doing
+
+480
+00:18:32,250 --> 00:18:33,849
+a double integral because
+
+481
+00:18:33,849 --> 00:18:37,530
+it's an area of
+specific volume,
+
+482
+00:18:37,530 --> 00:18:40,490
+the magnitude of
+the normal velocity
+
+483
+00:18:40,490 --> 00:18:44,439
+R the DR or P,
+
+484
+00:18:44,439 --> 00:18:45,359
+right, is like this
+
+485
+00:18:45,359 --> 00:18:46,759
+is polar
+coordinates, right?
+
+486
+00:18:46,759 --> 00:18:48,479
+I could like wrote, you
+know, look into the
+
+487
+00:18:48,479 --> 00:18:51,439
+um if I had basically
+looking down the pipe,
+
+488
+00:18:51,439 --> 00:18:52,959
+this is my R, right?
+
+489
+00:18:52,959 --> 00:18:54,999
+This would be
+your Phi, right?
+
+490
+00:18:54,999 --> 00:18:58,160
+So you assume it's
+an axymmetric,
+
+491
+00:18:58,320 --> 00:19:00,639
+you know, problem, okay?
+
+492
+00:19:00,639 --> 00:19:02,000
+So we don't have
+any sort of
+
+493
+00:19:02,000 --> 00:19:03,879
+dependence on the
+P that's in here.
+
+494
+00:19:03,879 --> 00:19:05,999
+So these integral limits
+will be like zero to
+
+495
+00:19:05,999 --> 00:19:09,319
+two Pi and then
+zero to R, right?
+
+496
+00:19:09,319 --> 00:19:10,679
+So basically zero to R,
+
+497
+00:19:10,679 --> 00:19:12,359
+and then zero to two Pi in
+
+498
+00:19:12,359 --> 00:19:15,599
+terms of of the
+radian, right?
+
+499
+00:19:18,640 --> 00:19:21,999
+Okay. So the
+first one, right,
+
+500
+00:19:21,999 --> 00:19:23,080
+the first integral because
+
+501
+00:19:23,080 --> 00:19:24,079
+we don't have
+any Phi in here,
+
+502
+00:19:24,079 --> 00:19:26,039
+this is going to be
+two Pi minus zero.
+
+503
+00:19:26,039 --> 00:19:28,360
+So you'll end up
+with a two Pi.
+
+504
+00:19:28,360 --> 00:19:33,020
+And then the other one
+is that, um, right?
+
+505
+00:19:33,020 --> 00:19:34,059
+We're going to
+end up here.
+
+506
+00:19:34,059 --> 00:19:35,059
+Well, let's just
+write it out.
+
+507
+00:19:35,059 --> 00:19:36,259
+Basically, you're
+going to have here
+
+508
+00:19:36,259 --> 00:19:39,779
+an m.in this case,
+
+509
+00:19:40,420 --> 00:19:42,900
+right, which is going
+to then be equal to
+
+510
+00:19:42,900 --> 00:19:45,219
+two Pi V max, right?
+
+511
+00:19:45,219 --> 00:19:46,660
+V max is a constant.
+
+512
+00:19:46,660 --> 00:19:47,659
+So we should basically
+
+513
+00:19:47,659 --> 00:19:50,059
+substitute this
+formula into here,
+
+514
+00:19:50,059 --> 00:19:51,700
+and we integrate
+into two Pi.
+
+515
+00:19:51,700 --> 00:19:53,220
+So you have two Pi V max
+
+516
+00:19:53,220 --> 00:19:55,180
+divided by
+specific volume.
+
+517
+00:19:55,180 --> 00:19:58,739
+There's an integral
+zero to R of R
+
+518
+00:19:58,739 --> 00:20:03,579
+minus R squared
+divided by R,
+
+519
+00:20:03,579 --> 00:20:06,894
+okay, and D R, right?
+
+520
+00:20:06,894 --> 00:20:08,529
+You can go through and you
+
+521
+00:20:08,529 --> 00:20:09,850
+integrate again with this,
+
+522
+00:20:09,850 --> 00:20:10,770
+and what you're
+going to end
+
+523
+00:20:10,770 --> 00:20:11,770
+up with is an M dot
+
+524
+00:20:11,770 --> 00:20:14,250
+that's equal to
+Pi times V max,
+
+525
+00:20:14,250 --> 00:20:16,849
+right, your
+maximum velocity R
+
+526
+00:20:16,849 --> 00:20:18,769
+squared divided by
+
+527
+00:20:18,769 --> 00:20:21,729
+three times the
+specific volume, okay?
+
+528
+00:20:21,729 --> 00:20:31,769
+Cool. All right, um do.
+
+529
+00:20:32,570 --> 00:20:34,969
+Yeah, in a pipe, so
+
+530
+00:20:34,969 --> 00:20:37,209
+basically in a pipe,
+we know that AC,
+
+531
+00:20:37,209 --> 00:20:38,489
+so the cross sectional
+
+532
+00:20:38,489 --> 00:20:39,769
+area is going
+to be equal to
+
+533
+00:20:39,769 --> 00:20:43,850
+Pi R is equal
+to Pi squared.
+
+534
+00:20:43,850 --> 00:20:46,209
+And so if with
+this knowledge,
+
+535
+00:20:46,209 --> 00:20:47,930
+so I go with Pi R squared,
+
+536
+00:20:47,930 --> 00:20:50,609
+I can rewrite then
+my dot as being
+
+537
+00:20:50,609 --> 00:20:54,449
+equal to a row.
+
+538
+00:20:54,449 --> 00:20:56,810
+So, let's go with this.
+Let's go with AC.
+
+539
+00:20:56,810 --> 00:21:00,009
+Pi squared V max,
+
+540
+00:21:00,009 --> 00:21:04,199
+and then this is
+divided by three V.
+
+541
+00:21:04,199 --> 00:21:06,469
+Again, because this is
+going to come up and
+
+542
+00:21:06,469 --> 00:21:07,309
+sometimes you might see it
+
+543
+00:21:07,309 --> 00:21:08,470
+in a fluids context,
+
+544
+00:21:08,470 --> 00:21:09,829
+right, the density
+is equal to
+
+545
+00:21:09,829 --> 00:21:12,710
+the inverse of
+specific volume.
+
+546
+00:21:12,710 --> 00:21:15,109
+And so what this will
+look like then is
+
+547
+00:21:15,109 --> 00:21:19,309
+times AC times V max
+
+548
+00:21:19,309 --> 00:21:24,974
+divided by basically
+divided by three, okay?
+
+549
+00:21:24,974 --> 00:21:27,319
+Um, at the end of this,
+
+550
+00:21:27,319 --> 00:21:28,000
+this will all make
+
+551
+00:21:28,000 --> 00:21:30,159
+sense why we
+bother, right?
+
+552
+00:21:30,159 --> 00:21:33,639
+It turns out this V
+max divided by three.
+
+553
+00:21:33,639 --> 00:21:35,919
+You can do the math
+and go through
+
+554
+00:21:35,919 --> 00:21:39,400
+with the definition of
+the average velocity,
+
+555
+00:21:39,400 --> 00:21:40,159
+but it turns out
+
+556
+00:21:40,159 --> 00:21:41,479
+this is basically
+going to be
+
+557
+00:21:41,479 --> 00:21:45,759
+the average velocity
+in the pipe, right?
+
+558
+00:21:45,759 --> 00:21:47,280
+And so this is
+by definition,
+
+559
+00:21:47,280 --> 00:21:50,319
+equal to one
+over AC, right?
+
+560
+00:21:50,319 --> 00:21:51,520
+So the integral over
+
+561
+00:21:51,520 --> 00:21:53,599
+the cross sectional
+area, right?
+
+562
+00:21:53,599 --> 00:21:55,759
+The normal vector,
+the magnitude of
+
+563
+00:21:55,759 --> 00:21:59,599
+the normal vector
+to the plane there.
+
+564
+00:21:59,599 --> 00:22:02,099
+And then this is dC.
+
+565
+00:22:02,099 --> 00:22:03,919
+I'll spare you, but
+
+566
+00:22:03,919 --> 00:22:05,439
+if you go through my
+notes there and see,
+
+567
+00:22:05,439 --> 00:22:06,199
+what you would see at
+
+568
+00:22:06,199 --> 00:22:07,119
+the end of this
+is that the
+
+569
+00:22:07,119 --> 00:22:09,400
+max or that the
+average velocity is
+
+570
+00:22:09,400 --> 00:22:11,160
+basically going to
+be equal to V max
+
+571
+00:22:11,160 --> 00:22:13,759
+divided by three there,
+
+572
+00:22:13,759 --> 00:22:17,199
+okay? So, who cares?
+
+573
+00:22:17,199 --> 00:22:19,999
+The who cares
+is that, again,
+
+574
+00:22:19,999 --> 00:22:20,879
+when we think about
+
+575
+00:22:20,879 --> 00:22:23,799
+control volumes
+and we draw them,
+
+576
+00:22:23,799 --> 00:22:25,920
+we draw them
+intelligently.
+
+577
+00:22:25,920 --> 00:22:27,039
+When they cross through
+
+578
+00:22:27,039 --> 00:22:28,199
+something like
+a pipe, right?
+
+579
+00:22:28,199 --> 00:22:30,600
+This should be done,
+right, essentially
+
+580
+00:22:30,600 --> 00:22:32,960
+perpendicular to the flow,
+
+581
+00:22:32,960 --> 00:22:35,239
+right, that you have
+there. That's one.
+
+582
+00:22:35,239 --> 00:22:36,119
+The second thing is
+
+583
+00:22:36,119 --> 00:22:37,479
+that for most
+of this course,
+
+584
+00:22:37,479 --> 00:22:39,120
+I think probably
+the entirety,
+
+585
+00:22:39,120 --> 00:22:40,839
+we're going to give
+you velocity values,
+
+586
+00:22:40,839 --> 00:22:42,440
+and these are going
+to indicate averages.
+
+587
+00:22:42,440 --> 00:22:43,880
+So if you see a
+pipe that says
+
+588
+00:22:43,880 --> 00:22:45,559
+100 meters a
+second, you know,
+
+589
+00:22:45,559 --> 00:22:46,919
+into a nozzle there,
+
+590
+00:22:46,919 --> 00:22:48,800
+it means that it's
+the average velocity
+
+591
+00:22:48,800 --> 00:22:50,099
+into the nozzle, okay?
+
+592
+00:22:50,099 --> 00:22:51,760
+And I'm telling
+you with math
+
+593
+00:22:51,760 --> 00:22:53,240
+and knowledge and physics,
+
+594
+00:22:53,240 --> 00:22:55,679
+you could go back and
+show that, right?
+
+595
+00:22:55,679 --> 00:22:57,239
+If I had detailed
+knowledge about
+
+596
+00:22:57,239 --> 00:22:59,559
+the flow profile and
+what's there, I could,
+
+597
+00:22:59,559 --> 00:23:01,279
+you know, come up
+with this average,
+
+598
+00:23:01,279 --> 00:23:02,640
+and that's ME one oh six,
+
+599
+00:23:02,640 --> 00:23:04,279
+not this class, okay?
+
+600
+00:23:04,279 --> 00:23:07,600
+All right. Any
+comments about that?
+
+601
+00:23:09,150 --> 00:23:12,149
+All right. Cool.
+All right.
+
+602
+00:23:12,149 --> 00:23:13,349
+So there we go. So again,
+
+603
+00:23:13,349 --> 00:23:15,429
+average velocities are
+what we care about,
+
+604
+00:23:15,429 --> 00:23:19,230
+and we draw control
+volumes intelligently.
+
+605
+00:23:19,230 --> 00:23:20,550
+The conservation of mass
+
+606
+00:23:20,550 --> 00:23:21,949
+principle is written
+like this, right?
+
+607
+00:23:21,949 --> 00:23:23,310
+So we have a
+control volume.
+
+608
+00:23:23,310 --> 00:23:24,429
+The net change in the mass
+
+609
+00:23:24,429 --> 00:23:25,789
+in the control volume is
+
+610
+00:23:25,789 --> 00:23:27,190
+equal to how much
+
+611
+00:23:27,190 --> 00:23:29,189
+enters it minus how
+much it leaves it.
+
+612
+00:23:29,189 --> 00:23:30,429
+That's the same thing
+that we did, right?
+
+613
+00:23:30,429 --> 00:23:32,750
+This is accounting fluid
+
+614
+00:23:32,750 --> 00:23:34,629
+mechanics accounting,
+
+615
+00:23:34,629 --> 00:23:36,549
+right? It's
+written like this.
+
+616
+00:23:36,549 --> 00:23:38,149
+So in non rate form in
+
+617
+00:23:38,149 --> 00:23:41,454
+minus M out is Delta MCV.
+
+618
+00:23:41,454 --> 00:23:43,479
+We will, again,
+a lot of this,
+
+619
+00:23:43,479 --> 00:23:44,920
+we'll be writing
+it in rate form.
+
+620
+00:23:44,920 --> 00:23:46,959
+We're going to talk
+about dot ins minus
+
+621
+00:23:46,959 --> 00:23:51,320
+M dot outs are
+equal to dm, cv dt.
+
+622
+00:23:51,320 --> 00:23:55,199
+I'm noting here the
+units in this case,
+
+623
+00:23:55,199 --> 00:23:58,199
+again, in Leibniz and
+in Newton notation.
+
+624
+00:23:58,199 --> 00:24:08,069
+All right. Okay. Yes.
+
+625
+00:24:08,230 --> 00:24:10,509
+You can take
+everything that
+
+626
+00:24:10,509 --> 00:24:12,590
+I've written
+and done here,
+
+627
+00:24:12,590 --> 00:24:13,870
+I did it for a pipe flow,
+
+628
+00:24:13,870 --> 00:24:15,949
+but you could go
+and do it for,
+
+629
+00:24:15,949 --> 00:24:20,230
+and develop an
+MDOT formula
+
+630
+00:24:20,230 --> 00:24:22,349
+for something that's
+leaving or entering.
+
+631
+00:24:22,349 --> 00:24:23,829
+That would end up
+being something
+
+632
+00:24:23,829 --> 00:24:24,949
+that's on the
+right hand side,
+
+633
+00:24:24,949 --> 00:24:26,190
+and that would be equal
+
+634
+00:24:26,190 --> 00:24:27,709
+to the rate of change
+of what's actually
+
+635
+00:24:27,709 --> 00:24:30,749
+inside of the control
+volume, okay?
+
+636
+00:24:30,749 --> 00:24:32,789
+So I'm going to
+spare you know,
+
+637
+00:24:32,789 --> 00:24:34,350
+having to go through that.
+
+638
+00:24:34,350 --> 00:24:36,919
+But again, this is
+nothing but, uh, right?
+
+639
+00:24:36,919 --> 00:24:38,959
+Essentially, this
+formula that I'm writing
+
+640
+00:24:38,959 --> 00:24:41,359
+here and done
+more generally.
+
+641
+00:24:41,359 --> 00:24:43,919
+And here, row in
+this case is, again,
+
+642
+00:24:43,919 --> 00:24:46,559
+the density, V here,
+
+643
+00:24:46,559 --> 00:24:48,799
+dv here does not
+have a vector.
+
+644
+00:24:48,799 --> 00:24:50,679
+This is indicating
+the volume, right?
+
+645
+00:24:50,679 --> 00:24:52,560
+So essentially the density
+
+646
+00:24:52,560 --> 00:24:55,480
+the rate of change
+of the density
+
+647
+00:24:55,480 --> 00:24:58,319
+times the change in the
+volume is then equal
+
+648
+00:24:58,319 --> 00:24:59,679
+to the change in
+
+649
+00:24:59,679 --> 00:25:01,560
+the mass in the
+control volume.
+
+650
+00:25:01,560 --> 00:25:02,644
+Okay.
+
+651
+00:25:02,644 --> 00:25:04,570
+All right. Another
+thing that's
+
+652
+00:25:04,570 --> 00:25:05,690
+going to come up
+a lot is you're
+
+653
+00:25:05,690 --> 00:25:07,530
+going to have things
+sometimes cases
+
+654
+00:25:07,530 --> 00:25:10,009
+where multiple streams
+
+655
+00:25:10,009 --> 00:25:12,209
+are coming into a
+control volume and maybe
+
+656
+00:25:12,209 --> 00:25:15,089
+leaving as one or
+vice versa, okay?
+
+657
+00:25:15,089 --> 00:25:17,250
+This is called a
+mixing chamber.
+
+658
+00:25:17,250 --> 00:25:18,330
+You know, we're
+going to have
+
+659
+00:25:18,330 --> 00:25:19,329
+systems that we do it.
+
+660
+00:25:19,329 --> 00:25:20,769
+What do you need
+to know is that
+
+661
+00:25:20,769 --> 00:25:22,569
+when these are
+steady processes,
+
+662
+00:25:22,569 --> 00:25:24,089
+so again, what was
+
+663
+00:25:24,089 --> 00:25:25,729
+the formula that we
+had here, right?
+
+664
+00:25:25,729 --> 00:25:31,729
+We said that dm
+CV dt is equal to
+
+665
+00:25:31,729 --> 00:25:39,249
+dm in dt minus
+dM out dt, okay?
+
+666
+00:25:39,249 --> 00:25:42,319
+Um a steady process in
+
+667
+00:25:42,319 --> 00:25:43,679
+this case does not mean
+
+668
+00:25:43,679 --> 00:25:45,639
+that all of them
+go away, okay?
+
+669
+00:25:45,639 --> 00:25:48,040
+That technically is a
+steady process, right?
+
+670
+00:25:48,040 --> 00:25:50,399
+But the system is
+dead, okay, right?
+
+671
+00:25:50,399 --> 00:25:51,799
+If nothing's coming
+in, nothing's
+
+672
+00:25:51,799 --> 00:25:53,399
+leaving, obviously
+nothing's changing.
+
+673
+00:25:53,399 --> 00:25:55,520
+Steady in this
+case here means
+
+674
+00:25:55,520 --> 00:26:00,399
+that this term
+is out, okay?
+
+675
+00:26:00,399 --> 00:26:02,080
+So it's like I have
+
+676
+00:26:02,080 --> 00:26:03,200
+the same amount leaving
+
+677
+00:26:03,200 --> 00:26:04,519
+as I have entering, okay?
+
+678
+00:26:04,519 --> 00:26:06,439
+That's what's
+steady for, right?
+
+679
+00:26:06,439 --> 00:26:08,840
+So, MD basically MDOT
+
+680
+00:26:08,840 --> 00:26:13,854
+in is equal to
+your MDT out.
+
+681
+00:26:13,854 --> 00:26:16,190
+All right. And that's
+what's shown here,
+
+682
+00:26:16,190 --> 00:26:17,509
+right, in this
+case, right?
+
+683
+00:26:17,509 --> 00:26:19,830
+So I have some 2
+kilograms/second
+
+684
+00:26:19,830 --> 00:26:21,749
+in, 3 kilograms/second in.
+
+685
+00:26:21,749 --> 00:26:23,030
+What must be leaving under
+
+686
+00:26:23,030 --> 00:26:24,509
+steady conditions, right,
+
+687
+00:26:24,509 --> 00:26:26,070
+is then that
+two plus three
+
+688
+00:26:26,070 --> 00:26:28,669
+must be equal to the
+five, all right?
+
+689
+00:26:28,850 --> 00:26:31,170
+And, I mean, turbines,
+
+690
+00:26:31,170 --> 00:26:32,729
+diffusers, nozzles, again,
+
+691
+00:26:32,729 --> 00:26:33,769
+a lot of what
+we're going to
+
+692
+00:26:33,769 --> 00:26:35,329
+analyze are going to have,
+
+693
+00:26:35,329 --> 00:26:37,169
+I would say 90%
+
+694
+00:26:37,169 --> 00:26:39,569
+of what we analyze
+is going to be this.
+
+695
+00:26:39,569 --> 00:26:40,809
+There's very few cases.
+
+696
+00:26:40,809 --> 00:26:42,009
+They are important cases,
+
+697
+00:26:42,009 --> 00:26:43,689
+but there's a few
+cases where you have,
+
+698
+00:26:43,689 --> 00:26:45,209
+like what we call unsteady
+
+699
+00:26:45,209 --> 00:26:46,530
+flow where essentially,
+
+700
+00:26:46,530 --> 00:26:47,810
+let's say you
+have more leaving
+
+701
+00:26:47,810 --> 00:26:49,249
+than you have
+entering, okay?
+
+702
+00:26:49,249 --> 00:26:51,369
+I won't make the accounting
+joke about that,
+
+703
+00:26:51,369 --> 00:26:51,809
+alright?
+
+704
+00:26:51,809 --> 00:26:53,849
+Fine. So that's
+one part of it.
+
+705
+00:26:53,849 --> 00:26:55,089
+The second thing
+is that there is
+
+706
+00:26:55,089 --> 00:26:56,370
+no, as I mentioned before,
+
+707
+00:26:56,370 --> 00:26:57,849
+there is no
+conservation of
+
+708
+00:26:57,849 --> 00:27:00,309
+volume, uh,
+principle, okay?
+
+709
+00:27:00,309 --> 00:27:01,430
+And the case that
+I give here,
+
+710
+00:27:01,430 --> 00:27:02,189
+like I mentioned before,
+
+711
+00:27:02,189 --> 00:27:03,909
+is this air
+compressor case.
+
+712
+00:27:03,909 --> 00:27:06,069
+I have 2
+kilograms/second in,
+
+713
+00:27:06,069 --> 00:27:07,949
+2 kilograms/second
+out, right?
+
+714
+00:27:07,949 --> 00:27:10,910
+So that's steady according
+to my definition.
+
+715
+00:27:10,910 --> 00:27:13,389
+But because the density
+
+716
+00:27:13,389 --> 00:27:16,190
+in here or the
+specific volume here
+
+717
+00:27:16,190 --> 00:27:21,629
+is much higher than the
+specific volume here,
+
+718
+00:27:21,629 --> 00:27:23,909
+the denser phase, you're
+going to end up with
+
+719
+00:27:23,909 --> 00:27:26,190
+a lower volumetric
+flow rate
+
+720
+00:27:26,190 --> 00:27:29,269
+leaving than what
+enters, okay?
+
+721
+00:27:29,269 --> 00:27:32,149
+So M dots,
+conservation of mass,
+
+722
+00:27:32,149 --> 00:27:33,429
+conservation
+of energy, not
+
+723
+00:27:33,429 --> 00:27:35,910
+conservation of
+volume, right?
+
+724
+00:27:40,210 --> 00:27:43,570
+Yeah. And you can play
+fast with the rules.
+
+725
+00:27:43,570 --> 00:27:45,730
+If you do something
+that's incompressible,
+
+726
+00:27:45,730 --> 00:27:47,649
+let's say like
+water, go ahead.
+
+727
+00:27:47,649 --> 00:27:51,089
+How does this make
+sense to play you?
+
+728
+00:27:55,520 --> 00:27:57,840
+I don't understand
+the question.
+
+729
+00:27:57,840 --> 00:27:59,119
+Say it again.
+
+730
+00:27:59,119 --> 00:28:01,640
+Because you said the air
+
+731
+00:28:01,640 --> 00:28:04,120
+leaving the system faster
+
+732
+00:28:04,120 --> 00:28:06,319
+than it's entering it.
+
+733
+00:28:06,319 --> 00:28:07,959
+So I'm saying the mass is
+
+734
+00:28:07,959 --> 00:28:08,960
+entering at the same rate
+
+735
+00:28:08,960 --> 00:28:10,079
+that it's leaving, right?
+
+736
+00:28:10,079 --> 00:28:11,920
+The mass. So just
+follow with me.
+
+737
+00:28:11,920 --> 00:28:13,359
+So let's say we
+accept that.
+
+738
+00:28:13,359 --> 00:28:14,400
+You also accept that
+
+739
+00:28:14,400 --> 00:28:15,319
+when you compress
+something,
+
+740
+00:28:15,319 --> 00:28:17,120
+is the density
+higher or lower?
+
+741
+00:28:17,120 --> 00:28:19,920
+Is the specific volume
+higher or lower?
+
+742
+00:28:19,920 --> 00:28:23,800
+Lower. Specific volume
+
+743
+00:28:23,800 --> 00:28:26,080
+times the mass flow rate,
+
+744
+00:28:26,080 --> 00:28:26,839
+the product of that is
+
+745
+00:28:26,839 --> 00:28:28,640
+the volumetric flow rate.
+
+746
+00:28:28,640 --> 00:28:31,120
+So it is lower.
+
+747
+00:28:31,120 --> 00:28:33,440
+The big compressor
+industry
+
+748
+00:28:33,440 --> 00:28:34,920
+has been lying
+to you, alright?
+
+749
+00:28:34,920 --> 00:28:37,520
+Okay. Other comments
+about this?
+
+750
+00:28:37,680 --> 00:28:40,399
+Okay, so that's sweet.
+
+751
+00:28:40,399 --> 00:28:41,639
+You got EE one
+
+752
+00:28:41,639 --> 00:28:44,359
+oh six your setup to
+succeed on, alright?
+
+753
+00:28:44,359 --> 00:28:44,880
+Alright.
+
+754
+00:28:44,880 --> 00:28:46,799
+So, now we're going
+to use this, alright?
+
+755
+00:28:46,799 --> 00:28:49,119
+So I'm going to
+go through Oh,
+
+756
+00:28:49,119 --> 00:28:50,159
+boy, I don't like that.
+
+757
+00:28:50,159 --> 00:28:51,719
+Why is that cut
+off like that?
+
+758
+00:28:51,719 --> 00:28:58,559
+Okay. Um Okay.
+
+759
+00:28:58,559 --> 00:29:00,959
+Apologies. I'm
+not sure why
+
+760
+00:29:00,959 --> 00:29:04,639
+my Can I do this
+in two present?
+
+761
+00:29:06,720 --> 00:29:09,919
+Of course not. Okay, so
+
+762
+00:29:09,919 --> 00:29:11,359
+here there
+
+763
+00:29:11,359 --> 00:29:12,919
+were basically we're
+talking about,
+
+764
+00:29:12,919 --> 00:29:15,159
+you know, one inlet,
+one outlet here.
+
+765
+00:29:15,159 --> 00:29:16,919
+What I would like
+to go through in
+
+766
+00:29:16,919 --> 00:29:18,159
+this example is to go
+
+767
+00:29:18,159 --> 00:29:19,799
+into multiple
+streams, okay?
+
+768
+00:29:19,799 --> 00:29:21,239
+And at the end of this,
+
+769
+00:29:21,239 --> 00:29:22,439
+I'm going to show you why
+
+770
+00:29:22,439 --> 00:29:23,680
+you care about enthalpy,
+
+771
+00:29:23,680 --> 00:29:25,160
+why you're going
+to use enthalpy
+
+772
+00:29:25,160 --> 00:29:26,200
+for all analysis of
+
+773
+00:29:26,200 --> 00:29:27,839
+all steady flow
+devices and
+
+774
+00:29:27,839 --> 00:29:29,400
+not changes in
+internal energy
+
+775
+00:29:29,400 --> 00:29:30,039
+like we've done, right?
+
+776
+00:29:30,039 --> 00:29:31,719
+So enthalpy is where
+we're going with this,
+
+777
+00:29:31,719 --> 00:29:33,400
+like a very meaningful
+
+778
+00:29:33,400 --> 00:29:34,759
+use of enthalpy, right?
+
+779
+00:29:34,759 --> 00:29:36,599
+Um, So let's say I have
+
+780
+00:29:36,599 --> 00:29:38,039
+a control volume
+here that I
+
+781
+00:29:38,039 --> 00:29:39,920
+draw with my dashed lines,
+
+782
+00:29:39,920 --> 00:29:42,559
+and I have these
+dots that are in,
+
+783
+00:29:42,559 --> 00:29:45,119
+and so N number
+of M dots in
+
+784
+00:29:45,119 --> 00:29:48,839
+and K number of dots out.
+
+785
+00:29:48,839 --> 00:29:51,080
+Eganga means inlet,
+
+786
+00:29:51,080 --> 00:29:54,360
+Aus Ganga means
+exit, apologies.
+
+787
+00:29:54,360 --> 00:29:56,040
+So we have M dot.
+
+788
+00:29:56,040 --> 00:29:58,120
+Our general mass
+balance is going to be
+
+789
+00:29:58,120 --> 00:29:59,440
+the rate of change of mass
+
+790
+00:29:59,440 --> 00:30:00,720
+in the control volume.
+
+791
+00:30:00,720 --> 00:30:04,159
+Ms of T is going to be
+equal to the sum of
+
+792
+00:30:04,159 --> 00:30:05,799
+those dots in minus
+
+793
+00:30:05,799 --> 00:30:08,319
+the sum of the M dots out?
+
+794
+00:30:08,319 --> 00:30:11,199
+When we have a
+steady balance,
+
+795
+00:30:11,199 --> 00:30:13,240
+the rate that
+the mass enters
+
+796
+00:30:13,240 --> 00:30:15,955
+is equal to the rate
+that it leaves.
+
+797
+00:30:15,955 --> 00:30:18,549
+Okay, so that's what
+the mass, right?
+
+798
+00:30:18,549 --> 00:30:19,829
+Now we can go and do the
+
+799
+00:30:19,829 --> 00:30:21,269
+energy balance, all right?
+
+800
+00:30:21,269 --> 00:30:25,830
+The thing is that fluids
+also carry energy.
+
+801
+00:30:25,830 --> 00:30:27,309
+Remember before we do
+
+802
+00:30:27,309 --> 00:30:28,629
+a control volume,
+and I said,
+
+803
+00:30:28,629 --> 00:30:30,109
+In this control volume,
+
+804
+00:30:30,109 --> 00:30:31,630
+when I don't have
+mass exchange,
+
+805
+00:30:31,630 --> 00:30:32,429
+what are the ways I can
+
+806
+00:30:32,429 --> 00:30:34,549
+transfer energy
+in and out?
+
+807
+00:30:34,710 --> 00:30:37,429
+Louder. I'm like,
+getting I don't know.
+
+808
+00:30:37,429 --> 00:30:38,990
+Maybe there's, like,
+a thing in my ear.
+
+809
+00:30:38,990 --> 00:30:42,570
+Okay. How can I
+
+810
+00:30:42,570 --> 00:30:45,530
+transfer energy in and
+out of control volume?
+
+811
+00:30:45,530 --> 00:30:49,089
+Work Or heat. That's it.
+
+812
+00:30:49,089 --> 00:30:49,289
+Okay?
+
+813
+00:30:49,289 --> 00:30:50,090
+What I'm telling you
+
+814
+00:30:50,090 --> 00:30:51,650
+is when you have
+an open system,
+
+815
+00:30:51,650 --> 00:30:52,970
+you can also carry
+
+816
+00:30:52,970 --> 00:30:54,369
+energy in with
+mass, right?
+
+817
+00:30:54,369 --> 00:30:55,529
+Mass, if I move it really
+
+818
+00:30:55,529 --> 00:30:57,009
+quick carries kinetic
+energy, right?
+
+819
+00:30:57,009 --> 00:30:58,210
+There can be
+kinetic energy.
+
+820
+00:30:58,210 --> 00:31:00,129
+Mass that I bring from
+very high, right?
+
+821
+00:31:00,129 --> 00:31:01,570
+There's potential energy
+
+822
+00:31:01,570 --> 00:31:02,969
+that could be
+brought into it,
+
+823
+00:31:02,969 --> 00:31:04,409
+and a fluid also
+
+824
+00:31:04,409 --> 00:31:06,489
+contains internal
+energy, right?
+
+825
+00:31:06,489 --> 00:31:07,809
+It's mass, okay?
+
+826
+00:31:07,809 --> 00:31:10,930
+So, um, the
+rate of change.
+
+827
+00:31:10,930 --> 00:31:13,689
+So let's say the difference
+in the energy in
+
+828
+00:31:13,689 --> 00:31:14,849
+this control volume at
+
+829
+00:31:14,849 --> 00:31:16,889
+some future time
+minus now is
+
+830
+00:31:16,889 --> 00:31:18,690
+equal to the net
+heat we transfer
+
+831
+00:31:18,690 --> 00:31:22,209
+in minus the network
+
+832
+00:31:22,209 --> 00:31:25,249
+we transfer out plus
+an additional term,
+
+833
+00:31:25,249 --> 00:31:27,970
+which is the mass
+
+834
+00:31:27,970 --> 00:31:30,009
+the change in
+the mass that
+
+835
+00:31:30,009 --> 00:31:32,050
+enters with its
+little energy.
+
+836
+00:31:32,050 --> 00:31:33,490
+I'll get into
+that in a second,
+
+837
+00:31:33,490 --> 00:31:35,009
+minus the change in
+
+838
+00:31:35,009 --> 00:31:37,610
+mass times the
+energy content
+
+839
+00:31:37,610 --> 00:31:39,289
+that it has leaving, okay?
+
+840
+00:31:39,289 --> 00:31:41,530
+So we have basically
+two new terms,
+
+841
+00:31:41,530 --> 00:31:44,649
+and it has to do with
+the flow energy there,
+
+842
+00:31:44,649 --> 00:31:47,489
+okay? What is little E?
+
+843
+00:31:47,489 --> 00:31:49,609
+So little E, right?
+
+844
+00:31:49,609 --> 00:31:51,809
+We already did
+this in the first,
+
+845
+00:31:51,809 --> 00:31:56,050
+right in the first
+parts of the lecture.
+
+846
+00:31:56,050 --> 00:31:57,769
+We said, Look,
+when we deal
+
+847
+00:31:57,769 --> 00:32:01,489
+with systems here, right?
+
+848
+00:32:01,489 --> 00:32:02,810
+We don't want to
+talk about all
+
+849
+00:32:02,810 --> 00:32:03,969
+the kinds of
+energy, right?
+
+850
+00:32:03,969 --> 00:32:05,130
+You know, you
+have magnetic,
+
+851
+00:32:05,130 --> 00:32:06,569
+right, you got all
+kinds of stuff.
+
+852
+00:32:06,569 --> 00:32:08,009
+For in thermal,
+we just said,
+
+853
+00:32:08,009 --> 00:32:09,489
+like, look, we want
+to deal, right?
+
+854
+00:32:09,489 --> 00:32:11,839
+So changes, right? We had,
+
+855
+00:32:11,839 --> 00:32:13,919
+like, changes in,
+um, you know,
+
+856
+00:32:13,919 --> 00:32:16,799
+Delta E CV, right,
+
+857
+00:32:16,799 --> 00:32:20,119
+is equal to E in
+minus the E out.
+
+858
+00:32:20,119 --> 00:32:21,680
+And the way that we
+said that energy
+
+859
+00:32:21,680 --> 00:32:23,000
+could change in the
+control volume,
+
+860
+00:32:23,000 --> 00:32:26,240
+right, was this Delta
+U plus the Delta KE,
+
+861
+00:32:26,240 --> 00:32:29,719
+plus the, um, uh,
+Delta P. We said,
+
+862
+00:32:29,719 --> 00:32:31,400
+these are the three
+types of energy changes
+
+863
+00:32:31,400 --> 00:32:33,719
+we're interested in
+in this class, okay?
+
+864
+00:32:33,719 --> 00:32:34,680
+And we said, Look,
+
+865
+00:32:34,680 --> 00:32:36,600
+with the internal energy
+for pure substances,
+
+866
+00:32:36,600 --> 00:32:37,240
+it depends on,
+
+867
+00:32:37,240 --> 00:32:38,640
+like, temperature
+and pressure,
+
+868
+00:32:38,640 --> 00:32:39,919
+pressure and
+specific volume,
+
+869
+00:32:39,919 --> 00:32:40,719
+they say two things.
+
+870
+00:32:40,719 --> 00:32:42,079
+Okay? This depends on how
+
+871
+00:32:42,079 --> 00:32:43,840
+high you are and
+how fast you are.
+
+872
+00:32:43,840 --> 00:32:45,400
+You know, are you
+using bolt or,
+
+873
+00:32:45,400 --> 00:32:47,159
+you know, a
+skydiver, right?
+
+874
+00:32:47,159 --> 00:32:49,059
+Um, Okay,
+
+875
+00:32:49,059 --> 00:32:51,619
+it's no different with
+the fluids, right?
+
+876
+00:32:51,619 --> 00:32:54,179
+A fluid can possess
+internal energy, right?
+
+877
+00:32:54,179 --> 00:32:56,419
+It can be hot, it
+can be cold, right?
+
+878
+00:32:56,419 --> 00:32:58,659
+It can possess
+kinetic energy.
+
+879
+00:32:58,659 --> 00:33:00,260
+It can have a speed
+to it, a velocity,
+
+880
+00:33:00,260 --> 00:33:01,939
+nozzles, very
+important nozzles,
+
+881
+00:33:01,939 --> 00:33:03,339
+right, rockets
+and all of that.
+
+882
+00:33:03,339 --> 00:33:05,379
+And it can possess
+potential energy, right?
+
+883
+00:33:05,379 --> 00:33:07,299
+If it's very high, think
+pump hydro, right?
+
+884
+00:33:07,299 --> 00:33:08,740
+Switzerland where
+I was before,
+
+885
+00:33:08,740 --> 00:33:09,979
+the country's blessed with
+
+886
+00:33:09,979 --> 00:33:10,899
+mountains and all of this,
+
+887
+00:33:10,899 --> 00:33:12,499
+but also a lot of
+mountain lakes.
+
+888
+00:33:12,499 --> 00:33:13,780
+And so they used
+to store a ton
+
+889
+00:33:13,780 --> 00:33:15,500
+of energy with hydro,
+
+890
+00:33:15,500 --> 00:33:16,819
+pump it up, bring
+it back down.
+
+891
+00:33:16,819 --> 00:33:18,979
+It's a beautiful way
+to store energy.
+
+892
+00:33:18,979 --> 00:33:20,899
+So those are like the
+three ways, again,
+
+893
+00:33:20,899 --> 00:33:23,019
+in this class that we're
+going to talk about
+
+894
+00:33:23,019 --> 00:33:26,939
+the energy of a
+flowing fluid, okay?
+
+895
+00:33:26,939 --> 00:33:28,700
+That's literally, right?
+
+896
+00:33:28,700 --> 00:33:30,740
+And again, because
+it's a little letter,
+
+897
+00:33:30,740 --> 00:33:32,060
+it indicates
+that it's energy
+
+898
+00:33:32,060 --> 00:33:33,699
+per mass, right?
+
+899
+00:33:33,699 --> 00:33:35,779
+Okay, so you can
+
+900
+00:33:35,779 --> 00:33:37,499
+go from this form
+that I have here.
+
+901
+00:33:37,499 --> 00:33:38,739
+So if we divide basically
+
+902
+00:33:38,739 --> 00:33:40,579
+both sides here
+by Delta T,
+
+903
+00:33:40,579 --> 00:33:44,299
+so some small time,
+increment, right?
+
+904
+00:33:44,299 --> 00:33:45,659
+We can turn each
+of these things
+
+905
+00:33:45,659 --> 00:33:46,819
+into a rate form, right?
+
+906
+00:33:46,819 --> 00:33:48,139
+So the change in
+the energy of
+
+907
+00:33:48,139 --> 00:33:50,739
+the control volume
+can be E dot, right?
+
+908
+00:33:50,739 --> 00:33:52,659
+The the change in
+
+909
+00:33:52,659 --> 00:33:54,619
+heat transfer can
+be Q dot, right,
+
+910
+00:33:54,619 --> 00:33:57,900
+w dot, and so on
+and so forth,
+
+911
+00:33:57,900 --> 00:34:01,409
+including also, the
+mass flow rates, right?
+
+912
+00:34:01,409 --> 00:34:02,959
+And so that's what
+we write here.
+
+913
+00:34:02,959 --> 00:34:04,759
+So basically, this
+form of the formula is
+
+914
+00:34:04,759 --> 00:34:06,080
+the conservation of energy
+
+915
+00:34:06,080 --> 00:34:07,520
+for control volume,
+
+916
+00:34:07,520 --> 00:34:09,519
+where I can bring
+heat in or out,
+
+917
+00:34:09,519 --> 00:34:12,999
+work in or out, or a
+fluid in or out, okay?
+
+918
+00:34:12,999 --> 00:34:15,919
+So here, okay?
+
+919
+00:34:15,919 --> 00:34:17,079
+So the Q dot, right?
+
+920
+00:34:17,079 --> 00:34:18,399
+This could be
+essentially like
+
+921
+00:34:18,399 --> 00:34:20,040
+heat loss through
+a housing.
+
+922
+00:34:20,040 --> 00:34:22,199
+But the W dot, I
+want to pause for
+
+923
+00:34:22,199 --> 00:34:23,679
+a second because this is
+
+924
+00:34:23,679 --> 00:34:25,999
+a little bit
+complicated, all right?
+
+925
+00:34:25,999 --> 00:34:28,159
+This W dot, right?
+
+926
+00:34:28,159 --> 00:34:29,079
+When we were dealing with
+
+927
+00:34:29,079 --> 00:34:30,639
+these systems
+and the pistons,
+
+928
+00:34:30,639 --> 00:34:32,159
+what were ways that we
+
+929
+00:34:32,159 --> 00:34:33,679
+were dealing with work?
+
+930
+00:34:33,679 --> 00:34:35,879
+Let's say, what
+were types of
+
+931
+00:34:35,879 --> 00:34:37,399
+work transfer
+processes that
+
+932
+00:34:37,399 --> 00:34:38,279
+we could do with,
+
+933
+00:34:38,279 --> 00:34:40,640
+like, a piston cylinder?
+
+934
+00:34:44,330 --> 00:34:47,049
+Name and what?
+
+935
+00:34:49,450 --> 00:34:52,250
+Yes. Okay. That's
+wonderful.
+
+936
+00:34:52,250 --> 00:34:54,890
+What's another type
+of work interaction?
+
+937
+00:34:57,930 --> 00:35:00,130
+Yeah. That's also PDV.
+
+938
+00:35:00,130 --> 00:35:01,289
+So I can do that and that.
+
+939
+00:35:01,289 --> 00:35:01,809
+That's good.
+
+940
+00:35:01,809 --> 00:35:04,490
+Okay. Yes, please,
+Force distance.
+
+941
+00:35:04,490 --> 00:35:05,889
+Force distance of
+
+942
+00:35:05,889 --> 00:35:07,049
+similar to him.
+Yes, please.
+
+943
+00:35:07,049 --> 00:35:09,989
+Name. Ryan electric work.
+
+944
+00:35:09,989 --> 00:35:11,910
+Yes, right? I can
+transfer electrically.
+
+945
+00:35:11,910 --> 00:35:13,149
+That was the other
+way we did it, okay?
+
+946
+00:35:13,149 --> 00:35:14,629
+What I'm telling you here
+
+947
+00:35:14,629 --> 00:35:17,509
+is that when you
+bring a fluid in,
+
+948
+00:35:17,509 --> 00:35:19,029
+right, you may have to
+
+949
+00:35:19,029 --> 00:35:21,269
+displace a fluid
+out, okay?
+
+950
+00:35:21,269 --> 00:35:22,149
+That makes sense.
+
+951
+00:35:22,149 --> 00:35:23,589
+Kind of like a
+plunger effect,
+
+952
+00:35:23,589 --> 00:35:24,749
+a piston, a little bit
+
+953
+00:35:24,749 --> 00:35:25,909
+like the boundary
+work before.
+
+954
+00:35:25,909 --> 00:35:27,029
+You may have to push it.
+
+955
+00:35:27,029 --> 00:35:28,749
+And that is
+called flow work.
+
+956
+00:35:28,749 --> 00:35:30,390
+And you don't give a shit
+
+957
+00:35:30,390 --> 00:35:31,909
+as an engineer
+about flow work.
+
+958
+00:35:31,909 --> 00:35:33,549
+That's a penalty
+for you, okay?
+
+959
+00:35:33,549 --> 00:35:35,429
+So you want to
+get flow work
+
+960
+00:35:35,429 --> 00:35:37,709
+out of this W dot, okay?
+
+961
+00:35:37,709 --> 00:35:38,870
+If you want a job with GE,
+
+962
+00:35:38,870 --> 00:35:39,869
+I saw Nviden front,
+
+963
+00:35:39,869 --> 00:35:40,990
+you want to go
+work for GE.
+
+964
+00:35:40,990 --> 00:35:43,429
+This w dot cannot be
+w dot of everything.
+
+965
+00:35:43,429 --> 00:35:44,989
+You want to get flow
+work out of it.
+
+966
+00:35:44,989 --> 00:35:45,949
+And I'm going
+to show you how
+
+967
+00:35:45,949 --> 00:35:47,294
+to get rid of that, okay?
+
+968
+00:35:47,294 --> 00:35:50,359
+Um, so let's imagine
+this experiment, okay?
+
+969
+00:35:50,359 --> 00:35:51,479
+So again, let's
+say we have
+
+970
+00:35:51,479 --> 00:35:54,840
+this bladder looking
+control volume,
+
+971
+00:35:54,840 --> 00:35:56,799
+all right? All right?
+
+972
+00:35:56,799 --> 00:35:58,959
+So you got let's
+say a fictitious,
+
+973
+00:35:58,959 --> 00:36:00,879
+an imaginary
+piston, and it has
+
+974
+00:36:00,879 --> 00:36:02,119
+some cross sectional area
+
+975
+00:36:02,119 --> 00:36:03,199
+to it, A, all right?
+
+976
+00:36:03,199 --> 00:36:04,439
+The fluid at
+this point has
+
+977
+00:36:04,439 --> 00:36:06,680
+a density or the inverse
+specific volume,
+
+978
+00:36:06,680 --> 00:36:08,399
+and it has a
+pressure, all right?
+
+979
+00:36:08,399 --> 00:36:09,759
+And let's say that there's
+
+980
+00:36:09,759 --> 00:36:10,919
+one stream that
+it can leave.
+
+981
+00:36:10,919 --> 00:36:13,079
+And now we push that
+piston a little bit.
+
+982
+00:36:13,079 --> 00:36:14,359
+So we do that
+displacement.
+
+983
+00:36:14,359 --> 00:36:16,079
+So what was
+mentioned before,
+
+984
+00:36:16,079 --> 00:36:17,759
+we displaced that
+piston a little bit.
+
+985
+00:36:17,759 --> 00:36:19,519
+So some of delta little S,
+
+986
+00:36:19,519 --> 00:36:21,720
+so that's a distance
+that it's moved.
+
+987
+00:36:21,720 --> 00:36:23,079
+The cross sectional area
+
+988
+00:36:23,079 --> 00:36:25,359
+times that Delta
+S is a Delta V,
+
+989
+00:36:25,359 --> 00:36:27,094
+a volume change, okay?
+
+990
+00:36:27,094 --> 00:36:30,389
+P dv, right, in
+a sense, right?
+
+991
+00:36:30,389 --> 00:36:31,589
+So the work you
+have there is
+
+992
+00:36:31,589 --> 00:36:33,430
+that pressure there times
+
+993
+00:36:33,430 --> 00:36:36,670
+that displacement
+in volume.
+
+994
+00:36:36,670 --> 00:36:38,029
+And we can write
+it as rate form.
+
+995
+00:36:38,029 --> 00:36:40,109
+It can be w dot is
+the pressure times
+
+996
+00:36:40,109 --> 00:36:42,310
+the cross sectional area
+times the velocity.
+
+997
+00:36:42,310 --> 00:36:43,829
+And again, just
+because I've
+
+998
+00:36:43,829 --> 00:36:45,549
+got too many Vs
+that are here,
+
+999
+00:36:45,549 --> 00:36:47,909
+I'm going to go with
+the German one vindiki
+
+1000
+00:36:47,909 --> 00:36:49,910
+W. We do W for velocity.
+
+1001
+00:36:49,910 --> 00:36:52,549
+PAW there is then
+
+1002
+00:36:52,549 --> 00:36:54,629
+the rate of flow work
+
+1003
+00:36:54,629 --> 00:36:56,564
+that's being
+transferred in, right?
+
+1004
+00:36:56,564 --> 00:36:58,259
+And then we do
+it to the exit.
+
+1005
+00:36:58,259 --> 00:36:59,980
+We're going to have a
+density of the exit,
+
+1006
+00:36:59,980 --> 00:37:01,620
+a pressure at the exit,
+
+1007
+00:37:01,620 --> 00:37:05,019
+a surface that's a
+cross sectional area.
+
+1008
+00:37:05,019 --> 00:37:06,820
+We have an area
+at the exit,
+
+1009
+00:37:06,820 --> 00:37:11,419
+and then we can expand it.
+
+1010
+00:37:11,419 --> 00:37:13,900
+We can expand that
+some distance.
+
+1011
+00:37:13,900 --> 00:37:15,819
+Again, that delta S times
+
+1012
+00:37:15,819 --> 00:37:16,939
+that cross sectional area
+
+1013
+00:37:16,939 --> 00:37:20,339
+becomes a displacement
+volume, pdv.
+
+1014
+00:37:20,339 --> 00:37:21,539
+That's the work or
+
+1015
+00:37:21,539 --> 00:37:22,579
+we can have the
+rate of it.
+
+1016
+00:37:22,579 --> 00:37:25,779
+PA times the velocity
+that the fluid moves.
+
+1017
+00:37:25,779 --> 00:37:29,859
+So flow work, okay?
+
+1018
+00:37:30,920 --> 00:37:33,519
+So the total work, so that
+
+1019
+00:37:33,519 --> 00:37:34,799
+W dot that I showed you
+
+1020
+00:37:34,799 --> 00:37:36,280
+before in the
+conservation of energy,
+
+1021
+00:37:36,280 --> 00:37:38,599
+right, that consists
+of useful work.
+
+1022
+00:37:38,599 --> 00:37:40,119
+All right, what
+we would call
+
+1023
+00:37:40,119 --> 00:37:41,799
+shaft work or what we
+
+1024
+00:37:41,799 --> 00:37:43,479
+formerly just called,
+like boundary work.
+
+1025
+00:37:43,479 --> 00:37:45,399
+You know, basically,
+that's useful work
+
+1026
+00:37:45,399 --> 00:37:48,480
+plus the rate of
+flow work leaving
+
+1027
+00:37:48,480 --> 00:37:50,919
+the system minus
+the rate of
+
+1028
+00:37:50,919 --> 00:37:54,319
+flow work that's entering
+into that, okay?
+
+1029
+00:37:54,319 --> 00:37:57,039
+And the formula
+that's the best way I
+
+1030
+00:37:57,039 --> 00:38:00,680
+have the total rate
+of work transferred
+
+1031
+00:38:00,680 --> 00:38:01,999
+out of the system
+is equal to
+
+1032
+00:38:01,999 --> 00:38:03,750
+the useful work plus
+
+1033
+00:38:03,750 --> 00:38:07,709
+the dot specific volume of
+
+1034
+00:38:07,709 --> 00:38:09,230
+the fluid stream leaving
+
+1035
+00:38:09,230 --> 00:38:11,750
+minus M dot PV of
+the one entering.
+
+1036
+00:38:11,750 --> 00:38:13,349
+And the thing you
+should see with this
+
+1037
+00:38:13,349 --> 00:38:15,229
+is that we have
+a P, right?
+
+1038
+00:38:15,229 --> 00:38:16,710
+So the pressure times
+
+1039
+00:38:16,710 --> 00:38:19,229
+the specific volume
+that's there, right?
+
+1040
+00:38:19,229 --> 00:38:21,589
+And if you
+remember enthalpy,
+
+1041
+00:38:21,589 --> 00:38:23,430
+what's enthalpy?
+
+1042
+00:38:29,990 --> 00:38:35,990
+It's H. Yes. Thank
+you. Like my kids.
+
+1043
+00:38:35,990 --> 00:38:39,069
+Yeah. So they're right
+in the funniest ways.
+
+1044
+00:38:39,069 --> 00:38:43,049
+Okay, U plus PV,
+right? P there.
+
+1045
+00:38:43,049 --> 00:38:45,169
+And so, essentially what
+
+1046
+00:38:45,169 --> 00:38:46,289
+we're going to do
+is we're going to
+
+1047
+00:38:46,289 --> 00:38:47,530
+take that flow
+work portion.
+
+1048
+00:38:47,530 --> 00:38:48,809
+We're going to
+combine it with
+
+1049
+00:38:48,809 --> 00:38:50,570
+the internal energy
+of that flow stream,
+
+1050
+00:38:50,570 --> 00:38:52,009
+and we're going to
+form enthalpy there.
+
+1051
+00:38:52,009 --> 00:38:53,209
+So the enthalpy, right?
+
+1052
+00:38:53,209 --> 00:38:53,809
+The whole point of
+
+1053
+00:38:53,809 --> 00:38:55,409
+the enthalpy is you're
+basically taking
+
+1054
+00:38:55,409 --> 00:38:58,649
+flow work out of the
+total work term.
+
+1055
+00:38:58,649 --> 00:39:01,409
+So all that's left is
+useful work, okay?
+
+1056
+00:39:01,409 --> 00:39:02,809
+That's what I'm
+doing here, right?
+
+1057
+00:39:02,809 --> 00:39:04,889
+So this is kind of
+a mess, but right,
+
+1058
+00:39:04,889 --> 00:39:06,130
+the rate of
+change of energy
+
+1059
+00:39:06,130 --> 00:39:07,249
+in the system is
+the rate that we
+
+1060
+00:39:07,249 --> 00:39:08,650
+transfer heat in minus
+
+1061
+00:39:08,650 --> 00:39:10,129
+the rate of work
+leaving, right?
+
+1062
+00:39:10,129 --> 00:39:12,009
+That is shaft
+work, flow work
+
+1063
+00:39:12,009 --> 00:39:13,730
+leaving, flow
+work entering,
+
+1064
+00:39:13,730 --> 00:39:15,049
+plus the sum of
+
+1065
+00:39:15,049 --> 00:39:16,569
+the mass entering times
+
+1066
+00:39:16,569 --> 00:39:17,769
+the energy stream there,
+
+1067
+00:39:17,769 --> 00:39:19,290
+minus the mass leaving
+
+1068
+00:39:19,290 --> 00:39:20,889
+times its energy
+stream, okay?
+
+1069
+00:39:20,889 --> 00:39:22,809
+And if you put
+this whole term
+
+1070
+00:39:22,809 --> 00:39:24,210
+into the W dot,
+
+1071
+00:39:24,210 --> 00:39:26,170
+and I take the PV terms,
+
+1072
+00:39:26,170 --> 00:39:27,809
+and I combine
+them here, right?
+
+1073
+00:39:27,809 --> 00:39:29,649
+So now I've got rate of
+change of energy and
+
+1074
+00:39:29,649 --> 00:39:30,849
+my control volume is he
+
+1075
+00:39:30,849 --> 00:39:33,009
+leaving work shaft work,
+
+1076
+00:39:33,009 --> 00:39:35,409
+useful work
+transferred out
+
+1077
+00:39:35,409 --> 00:39:37,730
+plus all of
+that U plus PV,
+
+1078
+00:39:37,730 --> 00:39:40,530
+which is enthalpy,
+kinetic energy
+
+1079
+00:39:40,530 --> 00:39:42,409
+and potential
+energy, okay?
+
+1080
+00:39:42,409 --> 00:39:44,889
+So we take, right,
+
+1081
+00:39:44,889 --> 00:39:46,609
+the flow work out
+of the total work,
+
+1082
+00:39:46,609 --> 00:39:48,489
+and then we form enthalpy
+
+1083
+00:39:48,489 --> 00:39:50,769
+in the fluid
+stream, right?
+
+1084
+00:39:50,769 --> 00:39:52,609
+And that's a
+more natural way
+
+1085
+00:39:52,609 --> 00:39:54,209
+to introduce
+enthalpy, right?
+
+1086
+00:39:54,209 --> 00:39:55,449
+This is actually
+the way you should
+
+1087
+00:39:55,449 --> 00:39:56,809
+introduce enthalpy
+
+1088
+00:39:56,809 --> 00:39:59,770
+is actually through
+this analysis,
+
+1089
+00:39:59,770 --> 00:40:01,969
+because it has a lot
+of utility, right,
+
+1090
+00:40:01,969 --> 00:40:03,969
+much more than the
+other one, okay?
+
+1091
+00:40:03,969 --> 00:40:07,319
+Um, Yes.
+
+1092
+00:40:07,319 --> 00:40:09,360
+So if you want to
+compare and contrast,
+
+1093
+00:40:09,360 --> 00:40:10,639
+so here's the
+conservation of
+
+1094
+00:40:10,639 --> 00:40:12,599
+energy when we do
+the enthalpy form.
+
+1095
+00:40:12,599 --> 00:40:13,839
+So we have the
+useful work,
+
+1096
+00:40:13,839 --> 00:40:15,519
+right? Notation with that.
+
+1097
+00:40:15,519 --> 00:40:17,079
+If you go with
+the notation of
+
+1098
+00:40:17,079 --> 00:40:19,999
+internal energy
+in the flow term,
+
+1099
+00:40:19,999 --> 00:40:22,719
+this w dot is the
+overall work, okay?
+
+1100
+00:40:22,719 --> 00:40:25,679
+So, um, you know,
+
+1101
+00:40:25,679 --> 00:40:27,439
+so I can show
+
+1102
+00:40:27,439 --> 00:40:28,919
+an example because I
+got a bit of time.
+
+1103
+00:40:28,919 --> 00:40:30,279
+I'll show you an
+example of how it is.
+
+1104
+00:40:30,279 --> 00:40:31,799
+So let's think about
+a turbine, right?
+
+1105
+00:40:31,799 --> 00:40:34,674
+So I have a turbine, um,
+
+1106
+00:40:34,674 --> 00:40:37,030
+And we can apply
+
+1107
+00:40:37,030 --> 00:40:39,229
+this conservation of
+mass and which we
+
+1108
+00:40:39,229 --> 00:40:40,989
+introduced today and
+the conservation
+
+1109
+00:40:40,989 --> 00:40:44,629
+of energy principle
+for an open system,
+
+1110
+00:40:44,629 --> 00:40:46,150
+which we have
+today, alright?
+
+1111
+00:40:46,150 --> 00:40:55,949
+Okay. All right.
+
+1112
+00:40:56,750 --> 00:40:59,070
+So what does it look
+like a turbine?
+
+1113
+00:40:59,070 --> 00:41:00,309
+You have a star
+and a rotter
+
+1114
+00:41:00,309 --> 00:41:03,149
+A rotter rotates,
+a star stays.
+
+1115
+00:41:03,149 --> 00:41:05,509
+You start off with a
+very compressed region.
+
+1116
+00:41:05,509 --> 00:41:07,549
+So the smallest part of
+the turbine is where
+
+1117
+00:41:07,549 --> 00:41:09,789
+you're most compressed,
+and then it expands.
+
+1118
+00:41:09,789 --> 00:41:10,829
+So at some schools,
+
+1119
+00:41:10,829 --> 00:41:12,269
+that's like a question
+they ask on the final.
+
+1120
+00:41:12,269 --> 00:41:13,590
+They take you the
+show a turbine
+
+1121
+00:41:13,590 --> 00:41:14,949
+and they say, what's
+the front and the back?
+
+1122
+00:41:14,949 --> 00:41:16,189
+And then some
+people don't know.
+
+1123
+00:41:16,189 --> 00:41:17,869
+So you start off
+very, very compressed
+
+1124
+00:41:17,869 --> 00:41:18,549
+and you leave it's
+
+1125
+00:41:18,549 --> 00:41:19,789
+the opposite of
+a compressor.
+
+1126
+00:41:19,789 --> 00:41:21,309
+A compressor, you
+would start off
+
+1127
+00:41:21,309 --> 00:41:23,105
+highly expanded and
+you get smaller.
+
+1128
+00:41:23,105 --> 00:41:25,259
+So we have the inlet,
+we have the outlet.
+
+1129
+00:41:25,259 --> 00:41:26,699
+And what we're
+interested in
+
+1130
+00:41:26,699 --> 00:41:27,899
+the turbine is the rate
+
+1131
+00:41:27,899 --> 00:41:29,339
+of work that's
+transferred out,
+
+1132
+00:41:29,339 --> 00:41:30,859
+and that we call
+shaft work,
+
+1133
+00:41:30,859 --> 00:41:32,780
+spinning the
+shaft that spins,
+
+1134
+00:41:32,780 --> 00:41:34,419
+there's a force
+associated with that.
+
+1135
+00:41:34,419 --> 00:41:35,859
+It can move through
+a distance.
+
+1136
+00:41:35,859 --> 00:41:38,059
+A lot of times you're
+just spinning right
+
+1137
+00:41:38,059 --> 00:41:40,299
+a generator producing
+electricity from this,
+
+1138
+00:41:40,299 --> 00:41:42,679
+but shaft work is what
+you want to know.
+
+1139
+00:41:42,679 --> 00:41:45,619
+P in kinetic energies are
+
+1140
+00:41:45,619 --> 00:41:47,499
+trivially kind of small
+
+1141
+00:41:47,499 --> 00:41:48,859
+compared to the changes in
+
+1142
+00:41:48,859 --> 00:41:50,099
+enthalpy that happen here.
+
+1143
+00:41:50,099 --> 00:41:52,099
+So Delta KE and Delta P
+
+1144
+00:41:52,099 --> 00:41:54,419
+are usually pretty small.
+
+1145
+00:41:54,419 --> 00:41:56,380
+And then these things
+are usually insulated,
+
+1146
+00:41:56,380 --> 00:41:58,060
+so we don't have
+heat transfer.
+
+1147
+00:41:58,060 --> 00:41:59,259
+If it's poorly insulated,
+
+1148
+00:41:59,259 --> 00:42:00,499
+you may have heat
+transfer out,
+
+1149
+00:42:00,499 --> 00:42:02,139
+but then you're
+losing money, right?
+
+1150
+00:42:02,139 --> 00:42:03,859
+So the way to
+analyze this is you
+
+1151
+00:42:03,859 --> 00:42:05,659
+write your conservation
+of mass, right?
+
+1152
+00:42:05,659 --> 00:42:08,740
+Steady, um, under
+steady conditions.
+
+1153
+00:42:08,740 --> 00:42:10,300
+So the rate that
+mass enters
+
+1154
+00:42:10,300 --> 00:42:11,980
+equals the mass
+that leaves.
+
+1155
+00:42:11,980 --> 00:42:13,379
+And then for the
+conservation
+
+1156
+00:42:13,379 --> 00:42:14,299
+of energy, the same thing.
+
+1157
+00:42:14,299 --> 00:42:14,979
+There's no change in
+
+1158
+00:42:14,979 --> 00:42:16,380
+the energy to
+control volume.
+
+1159
+00:42:16,380 --> 00:42:17,699
+It's adiabatic.
+
+1160
+00:42:17,699 --> 00:42:20,740
+There's no kinetic or
+potential energy terms.
+
+1161
+00:42:20,740 --> 00:42:24,539
+And so all the w dot
+S is is dot, right,
+
+1162
+00:42:24,539 --> 00:42:25,619
+because that's equal to
+
+1163
+00:42:25,619 --> 00:42:26,740
+the inlet and the outlet,
+
+1164
+00:42:26,740 --> 00:42:28,099
+times the enthalpy at
+
+1165
+00:42:28,099 --> 00:42:30,885
+the entrance minus the
+enthalpy at the exit.
+
+1166
+00:42:30,885 --> 00:42:32,469
+Like, that's it.
+
+1167
+00:42:32,469 --> 00:42:34,469
+Like, it's so simple.
+
+1168
+00:42:34,469 --> 00:42:35,869
+You just get
+these two states.
+
+1169
+00:42:35,869 --> 00:42:36,949
+All I need to know is the
+
+1170
+00:42:36,949 --> 00:42:38,629
+enthalpy and the MDT,
+
+1171
+00:42:38,629 --> 00:42:39,989
+and you can say
+things like, that's
+
+1172
+00:42:39,989 --> 00:42:43,229
+a ten megawatt
+turbine, okay? G.
+
+1173
+00:42:43,229 --> 00:42:44,629
+That must be the states
+
+1174
+00:42:44,629 --> 00:42:45,749
+that you need to
+make that work.
+
+1175
+00:42:45,749 --> 00:42:49,820
+Yes, please. Name?
+Andy. Fluid.
+
+1176
+00:42:51,659 --> 00:42:53,979
+The thing is,
+it has. It can
+
+1177
+00:42:53,979 --> 00:42:55,099
+come in with a velocity.
+
+1178
+00:42:55,099 --> 00:42:57,819
+It's going to leave
+with a velocity.
+
+1179
+00:42:57,900 --> 00:43:00,339
+But when you go in
+and you actually
+
+1180
+00:43:00,339 --> 00:43:03,379
+calculate in joules
+how much that it is,
+
+1181
+00:43:03,379 --> 00:43:05,339
+it's not really
+comparable to
+
+1182
+00:43:05,339 --> 00:43:06,019
+the difference in
+
+1183
+00:43:06,019 --> 00:43:07,659
+the enthalpies
+that are there.
+
+1184
+00:43:07,659 --> 00:43:09,139
+The square of
+that velocity,
+
+1185
+00:43:09,139 --> 00:43:10,139
+if you now compare
+
+1186
+00:43:10,139 --> 00:43:11,139
+that with the
+difference in
+
+1187
+00:43:11,139 --> 00:43:12,499
+the enthalpies
+in these kinds
+
+1188
+00:43:12,499 --> 00:43:13,879
+of problems,
+it's not there.
+
+1189
+00:43:13,879 --> 00:43:15,259
+One place where it can
+
+1190
+00:43:15,259 --> 00:43:16,979
+happen is when you
+get into nozzles.
+
+1191
+00:43:16,979 --> 00:43:18,819
+So in nozzles, that's
+the whole point, right?
+
+1192
+00:43:18,819 --> 00:43:19,579
+The whole point of
+
+1193
+00:43:19,579 --> 00:43:21,339
+a nozzle is that
+I take a lot of
+
+1194
+00:43:21,339 --> 00:43:24,219
+enthropy to start and
+I convert all of it,
+
+1195
+00:43:24,219 --> 00:43:25,780
+all of it into velocity.
+
+1196
+00:43:25,780 --> 00:43:26,579
+So you can design
+
+1197
+00:43:26,579 --> 00:43:27,739
+systems where
+you make that,
+
+1198
+00:43:27,739 --> 00:43:28,499
+or you could design
+
+1199
+00:43:28,499 --> 00:43:29,779
+a system where
+you want to,
+
+1200
+00:43:29,779 --> 00:43:30,699
+you know, take all of
+
+1201
+00:43:30,699 --> 00:43:32,139
+the enthropy
+and convert it
+
+1202
+00:43:32,139 --> 00:43:33,780
+into potential energy.
+
+1203
+00:43:33,780 --> 00:43:35,179
+Like, these can be done.
+
+1204
+00:43:35,179 --> 00:43:38,459
+Yeah. Okay. But you
+could double check.
+
+1205
+00:43:38,459 --> 00:43:40,179
+You could go in and put
+some velocities in.
+
+1206
+00:43:40,179 --> 00:43:41,259
+Maybe that's homework, you
+
+1207
+00:43:41,259 --> 00:43:42,459
+know, next time,
+come and tell me.
+
+1208
+00:43:42,459 --> 00:43:46,299
+Okay? Other questions
+about this until now?
+
+1209
+00:43:46,299 --> 00:43:47,739
+Okay.
+
+1210
+00:43:47,739 --> 00:43:49,859
+Um Yes.
+
+1211
+00:43:49,859 --> 00:43:51,539
+So here you could go
+through and do it.
+
+1212
+00:43:51,539 --> 00:43:52,979
+So this would be
+some numbers.
+
+1213
+00:43:52,979 --> 00:43:54,539
+You know, for Andy,
+he could go in
+
+1214
+00:43:54,539 --> 00:43:56,179
+and put 10
+meters/second here,
+
+1215
+00:43:56,179 --> 00:43:58,139
+100 meters/second
+here and say how
+
+1216
+00:43:58,139 --> 00:44:00,339
+different the
+work would be.
+
+1217
+00:44:00,339 --> 00:44:01,979
+But if we neglect
+kinetic and potential
+
+1218
+00:44:01,979 --> 00:44:04,259
+energy and we assume
+it's adiabatic,
+
+1219
+00:44:04,259 --> 00:44:05,540
+that's going to
+be the formula
+
+1220
+00:44:05,540 --> 00:44:07,139
+for the shaft work.
+
+1221
+00:44:07,139 --> 00:44:08,139
+And so all you need to
+
+1222
+00:44:08,139 --> 00:44:09,379
+determine is H
+one and H two.
+
+1223
+00:44:09,379 --> 00:44:10,980
+So that whole part
+about Pi killre,
+
+1224
+00:44:10,980 --> 00:44:12,939
+why do we care at all
+about states, right?
+
+1225
+00:44:12,939 --> 00:44:13,779
+You know, I put in
+
+1226
+00:44:13,779 --> 00:44:15,259
+the two conditions
+that I know.
+
+1227
+00:44:15,259 --> 00:44:16,859
+The other two
+conditions that
+
+1228
+00:44:16,859 --> 00:44:18,539
+I know, dot
+notation, right?
+
+1229
+00:44:18,539 --> 00:44:22,219
+I basically get the
+enthalpy out of it.
+
+1230
+00:44:22,219 --> 00:44:24,860
+So here we have a
+superheated steam,
+
+1231
+00:44:24,860 --> 00:44:27,699
+so high pressure, 6
+megapascals, 400 degrees.
+
+1232
+00:44:27,699 --> 00:44:29,499
+See a good quality
+steam coming in.
+
+1233
+00:44:29,499 --> 00:44:33,139
+Um, we're leaving as a,
+
+1234
+00:44:33,940 --> 00:44:37,059
+a saturated liquid
+vapor condition,
+
+1235
+00:44:37,059 --> 00:44:39,780
+so 90% of vapor
+
+1236
+00:44:39,780 --> 00:44:42,219
+and much lower
+pressure, okay?
+
+1237
+00:44:42,219 --> 00:44:45,069
+Um, And that's
+good, right?
+
+1238
+00:44:45,069 --> 00:44:46,309
+We have a huge
+difference between
+
+1239
+00:44:46,309 --> 00:44:48,149
+60 bar to 0.2 bars,
+
+1240
+00:44:48,149 --> 00:44:49,989
+you know, that's going
+to produce a lot of
+
+1241
+00:44:49,989 --> 00:44:52,069
+work out of the system.
+
+1242
+00:44:52,069 --> 00:44:53,069
+But by knowing here
+
+1243
+00:44:53,069 --> 00:44:54,190
+the pressure and
+the quality,
+
+1244
+00:44:54,190 --> 00:44:54,949
+you have complete
+information
+
+1245
+00:44:54,949 --> 00:44:55,829
+of the system, right?
+
+1246
+00:44:55,829 --> 00:44:56,629
+You're going to be able to
+
+1247
+00:44:56,629 --> 00:44:57,589
+determine the enthalpy by
+
+1248
+00:44:57,589 --> 00:45:00,109
+the book tables or
+Pi color there.
+
+1249
+00:45:00,109 --> 00:45:01,629
+That's how it's
+represented on
+
+1250
+00:45:01,629 --> 00:45:03,549
+a TV diagram, right?
+
+1251
+00:45:03,549 --> 00:45:04,909
+So superheated out here.
+
+1252
+00:45:04,909 --> 00:45:06,829
+We're showing the isobar,
+
+1253
+00:45:06,829 --> 00:45:08,429
+and then we end
+up under the dome
+
+1254
+00:45:08,429 --> 00:45:12,189
+here with the
+saturated vapor. Okay.
+
+1255
+00:45:12,429 --> 00:45:15,029
+I just some
+numbers with this.
+
+1256
+00:45:15,029 --> 00:45:16,989
+So if I have a bit
+of time, I do.
+
+1257
+00:45:16,989 --> 00:45:23,699
+Um, So the numbers
+that I have,
+
+1258
+00:45:23,699 --> 00:45:26,619
+maybe am I going
+to be able to
+
+1259
+00:45:26,619 --> 00:45:29,179
+just show this or is it
+going to look wonky?
+
+1260
+00:45:29,179 --> 00:45:30,419
+Okay, now it looks good.
+
+1261
+00:45:30,419 --> 00:45:32,699
+I don't know
+why. All right.
+
+1262
+00:45:33,500 --> 00:45:36,539
+Okay, so we have
+here, right,
+
+1263
+00:45:36,539 --> 00:45:41,089
+for State one
+State one Right?
+
+1264
+00:45:41,089 --> 00:45:47,009
+So we know P one is
+equal to our 60 bar,
+
+1265
+00:45:47,009 --> 00:45:52,249
+T one is equal to
+400 degrees C.
+
+1266
+00:45:52,249 --> 00:45:53,609
+With this, because it's in
+
+1267
+00:45:53,609 --> 00:45:54,889
+the superheated
+region, right?
+
+1268
+00:45:54,889 --> 00:45:57,329
+I'm going to be able to
+determine everything
+
+1269
+00:45:57,329 --> 00:45:58,809
+including my enthalpy,
+
+1270
+00:45:58,809 --> 00:46:00,529
+my H one, right?
+
+1271
+00:46:00,529 --> 00:46:03,009
+For my state two,
+
+1272
+00:46:04,190 --> 00:46:06,509
+Let's see if we
+can turn H one,
+
+1273
+00:46:06,509 --> 00:46:07,469
+and we can determine also
+
+1274
+00:46:07,469 --> 00:46:09,269
+the specific
+internal energy
+
+1275
+00:46:09,269 --> 00:46:10,949
+U one, right?
+
+1276
+00:46:10,949 --> 00:46:15,429
+For state two, of P two
+is equal to 0.2 bar,
+
+1277
+00:46:15,429 --> 00:46:19,149
+and the quality of the
+vapor is equal to 0.9.
+
+1278
+00:46:19,149 --> 00:46:21,229
+Again, from this,
+I can know H two,
+
+1279
+00:46:21,229 --> 00:46:25,629
+and I can also know
+U two there, okay?
+
+1280
+00:46:26,270 --> 00:46:29,230
+And we set the dot shaft,
+
+1281
+00:46:29,230 --> 00:46:30,589
+so the useful work
+
+1282
+00:46:30,589 --> 00:46:32,469
+was equal to
+the mass flowy,
+
+1283
+00:46:32,469 --> 00:46:34,429
+which is also given
+
+1284
+00:46:34,429 --> 00:46:37,389
+as 4,600 kilograms
+an hour.
+
+1285
+00:46:37,389 --> 00:46:39,029
+All right, that's
+going to be equal to H
+
+1286
+00:46:39,029 --> 00:46:41,969
+one minus H two.
+
+1287
+00:46:41,969 --> 00:46:43,749
+If we do the substitution,
+
+1288
+00:46:43,749 --> 00:46:45,149
+what you're going
+to end up with
+
+1289
+00:46:45,149 --> 00:46:50,349
+is a let me look at this.
+
+1290
+00:46:50,349 --> 00:46:53,589
+This is like that.
+
+1291
+00:46:53,589 --> 00:46:56,309
+That's a big value.
+
+1292
+00:46:56,309 --> 00:46:57,309
+So what I'm going to end
+
+1293
+00:46:57,309 --> 00:46:58,989
+up with here is one, zero,
+
+1294
+00:46:58,989 --> 00:47:06,590
+28, 102 8 megawatts.
+
+1295
+00:47:06,590 --> 00:47:08,869
+Basically, at
+this case, that's
+
+1296
+00:47:08,869 --> 00:47:10,109
+that's a massive
+power plant.
+
+1297
+00:47:10,109 --> 00:47:15,269
+It's like a gigawatt
+of power plants.
+
+1298
+00:47:15,269 --> 00:47:17,629
+No, I'm sorry. Hold
+on. Wait a second.
+
+1299
+00:47:17,629 --> 00:47:19,149
+I've multiplied
+it in 10,000.
+
+1300
+00:47:19,149 --> 00:47:20,709
+If I put this in,
+what you're going to
+
+1301
+00:47:20,709 --> 00:47:23,429
+end up with is
+
+1302
+00:47:23,429 --> 00:47:30,749
+a 1.03 megawatt
+power plant.
+
+1303
+00:47:30,749 --> 00:47:33,664
+That's more
+reasonable? Yes.
+
+1304
+00:47:33,664 --> 00:47:35,859
+Okay. So now the thing is,
+
+1305
+00:47:35,859 --> 00:47:36,659
+if now we want to
+
+1306
+00:47:36,659 --> 00:47:37,779
+compute the total
+work, right?
+
+1307
+00:47:37,779 --> 00:47:38,419
+The total work.
+
+1308
+00:47:38,419 --> 00:47:39,739
+So this is the
+correct one, right?
+
+1309
+00:47:39,739 --> 00:47:41,379
+This is basically
+what you want.
+
+1310
+00:47:41,379 --> 00:47:43,299
+But you can go
+right with the
+
+1311
+00:47:43,299 --> 00:47:48,219
+w.net out to the w
+dot total, right?
+
+1312
+00:47:48,219 --> 00:47:53,579
+That would be.u1
+minus U two,
+
+1313
+00:47:53,579 --> 00:47:55,419
+okay, specific volume or
+
+1314
+00:47:55,419 --> 00:47:57,699
+internal energy, specific
+internal energy.
+
+1315
+00:47:57,699 --> 00:47:59,579
+And if you substitute
+and you have that,
+
+1316
+00:47:59,579 --> 00:48:04,819
+you're going to
+end up with 0.841.
+
+1317
+00:48:04,819 --> 00:48:08,539
+Let's see, megawatt,
+okay? And that's wrong.
+
+1318
+00:48:08,539 --> 00:48:10,619
+And that's not, like,
+a little bit wrong.
+
+1319
+00:48:10,619 --> 00:48:13,539
+That's, like, wrong
+by, like, a mile.
+
+1320
+00:48:13,539 --> 00:48:16,334
+I you know, there.
+
+1321
+00:48:16,334 --> 00:48:20,614
+So 1.0 megawatts versus
+0.84 with it, okay?
+
+1322
+00:48:20,614 --> 00:48:22,214
+And so that's
+why, you know,
+
+1323
+00:48:22,214 --> 00:48:23,530
+we go through we
+
+1324
+00:48:23,530 --> 00:48:26,329
+extract the flow work
+out of the work term.
+
+1325
+00:48:26,329 --> 00:48:29,095
+We put that then
+into the U plus PV.
+
+1326
+00:48:29,095 --> 00:48:30,655
+We form enthalpy.
+
+1327
+00:48:30,655 --> 00:48:34,489
+And so, with all
+of these systems,
+
+1328
+00:48:34,489 --> 00:48:36,414
+the rate of work
+transferred out,
+
+1329
+00:48:36,414 --> 00:48:37,894
+the rate of work
+transferred in,
+
+1330
+00:48:37,894 --> 00:48:38,769
+the rate of heat out,
+
+1331
+00:48:38,769 --> 00:48:40,734
+the rate of heat
+in is all going to
+
+1332
+00:48:40,734 --> 00:48:43,934
+become dot
+enthalpies, okay?
+
+1333
+00:48:43,934 --> 00:48:46,009
+So life gets simpler
+
+1334
+00:48:46,009 --> 00:48:48,869
+in a sense, with
+this, all right?
+
+1335
+00:48:48,869 --> 00:48:52,209
+Okay, so you all
+did great today.
+
+1336
+00:48:52,209 --> 00:48:53,049
+That's everything you can
+
+1337
+00:48:53,049 --> 00:48:53,889
+do after the lecture.
+
+1338
+00:48:53,889 --> 00:48:55,369
+I'm going to close
+here. So if any of you
+
+1339
+00:48:55,369 --> 00:48:55,929
+have any questions,
+
+1340
+00:48:55,929 --> 00:48:57,249
+please feel free
+to come up.
+
+1341
+00:48:57,249 --> 00:48:58,689
+Thank you.
