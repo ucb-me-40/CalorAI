@@ -15,7 +15,7 @@
       "summary": "Prof. Schutzius explains the learning objectives for today's lecture.",
       "time_range": "00:00 - 00:15",
       "topics": ["Power Cycles"],
-      "detailed_summary": "",
+      "detailed_summary": "The main learning objective for the lecture is to be able to analyze a **vapor power cycle**, such as the Rankine cycle. This is distinct from the previously studied Brayton cycle, as the working fluid in a vapor power cycle undergoes a change of phase, specifically being **boiled and condensed**.",
       "examples": [""],
       "tags":["tschutzius","beta"]
     },
@@ -25,7 +25,7 @@
       "summary": "Prof. Schutzius derives the thermal efficiency of an Ideal Rankine cycle.",
       "time_range": "00:16 - 37:20",
       "topics": ["Power Cycles"],
-      "detailed_summary": "",
+      "detailed_summary": "The **Rankine cycle** is the fundamental **vapor power cycle** responsible for producing the majority of the world's electricity, particularly in fossil fuel and nuclear power plants. It operates as a closed loop, typically using **water** as the highly purified working fluid. The cycle is composed of four main components: a **pump** (isentropic work in), a **boiler** (isobaric heat addition), a **turbine** (isentropic work out), and a **condenser** (isobaric heat out). On a T-s diagram, the work transfer processes are represented as **isentropic** (vertical). Key design principles are rooted in minimizing pump work input by compressing the fluid as a **liquid** (due to very low specific volume, $w_{in} \\approx \\int vdP$) and maximizing turbine work output (due to high specific volume). A critical constraint is keeping the turbine expansion end-state out of the two-phase dome to prevent liquid droplets from forming, which would cause **severe erosion** of the turbine blades. The Rankine cycle's thermal efficiency is inherently lower than the Carnot efficiency because the heat addition process in the boiler is not purely isothermal, meaning a portion of the heat is added at lower temperatures, which decreases the **average temperature of heat addition**, the principal factor governing efficiency.",
       "examples": ["rankineCyclePyCalor"],
       "tags":["tschutzius","beta"]
     },
@@ -35,7 +35,7 @@
       "summary": "Prof. Schutzius analyzes a Supercritical Rankine Cycle.",
       "time_range": "37:21 - 39:37",
       "topics": ["Power Cycles"],
-      "detailed_summary": "",
+      "detailed_summary": "Modern power plants typically employ a **Supercritical Rankine Cycle** to achieve higher thermal efficiency compared to the basic cycle. This is made possible by building boilers capable of withstanding the **very high operating pressures** required, which are **above the critical pressure** of water (22.064 MPa). By operating in this supercritical regime, the distinct phase change of boiling is eliminated. The key thermodynamic benefit is that the isobaric heat addition process occurs at a **much higher average temperature of heat addition**, which is the principal factor in boosting the cycle's overall thermal efficiency.",
       "examples": ["rankineCycleSupercriticalPyCalor"],
       "tags":["tschutzius","beta"]
     },
@@ -45,7 +45,7 @@
       "summary": "Prof. Schutzius analyzes a Supercritical Carbon Dioxide (sCO2) power cycle.",
       "time_range": "39:38 - 42:18",
       "topics": ["Power Cycles"],
-      "detailed_summary": "",
+      "detailed_summary": "This segment discusses advanced power generation strategies, including **Supercritical Carbon Dioxide ($\\mathbf{sCO}_2$)** cycles and **Combined Cycles**. A **Combined Cycle** improves efficiency by linking two power cycles in series: a high-temperature **Brayton gas turbine** (topping cycle) and a lower-temperature **Rankine vapor cycle** (bottoming cycle). The crucial feature is that the exhaust (waste heat) from the Brayton turbine is used to supply the necessary heat for the Rankine boiler. By converting this otherwise rejected medium-grade heat into additional work, the combined system achieves a higher overall thermal efficiency. The lecture also references $\text{sCO}_2$ as a non-water working fluid that exhibits advantageous thermodynamic behavior for power cycles near its critical point.",
       "examples": ["rankineCycleSupercriticalCO2PyCalor"],
       "tags":["tschutzius","beta"]
     },
@@ -55,7 +55,7 @@
       "summary": "Prof. Schutzius introduces a way to improve the efficiency of the ideal Rankine cycle by using a reheat process and a lower pressure turbine.",
       "time_range": "42:19 - 43:11",
       "topics": ["Power Cycles"],
-      "detailed_summary": "",
+      "detailed_summary": "The **ideal reheat Rankine cycle** is a key modification used to boost efficiency and prevent turbine erosion. Instead of a single expansion, the high-pressure steam is partially expanded in a turbine. The extracted steam is then sent back through the **boiler** (specifically, a reheater section) for a second stage of **isobaric heat addition**. The reheated steam then passes into a separate, **lower-pressure turbine** where the expansion is completed. This process achieves two main goals: it **increases the average temperature of heat addition** ($T_{avg}$), directly raising the cycle's thermal efficiency, and it **increases the steam quality** (reduces the moisture content) at the final turbine exhaust, which significantly mitigates the risk of **turbine blade erosion** caused by liquid droplets.",
       "examples": ["rankineReheatCycle"],
       "tags":["tschutzius","beta"]
     }
