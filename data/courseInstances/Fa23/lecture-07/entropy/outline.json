@@ -7,60 +7,47 @@
   "module": "module-two",
   "year": "Fa23",
   "instructor": "tschutzius",
-  "topics": [
-    {
-      "name": "Entropy",
-      "description": "Entropy."
-    }
-  ],
+  "topic": "entropy",
   "subtopics": [
     {
-      "key": "L7e-2.1",
-      "topic": "Reversible vs. Irreversible Work Example",
-      "summary": "Demonstrates the concept of reversibility using an ideal gas and tiny weights. The **irreversible process** (removing all weights at once) yields less work than the **reversible process** (removing tiny weights sequentially), showing that the latter is the maximum possible work.",
-      "time_range": "00:00 - 03:00"
+      "key": "Fa23-L7p-1.0",
+      "title": "Expansion and Compression of a Gas",
+      "summary": "Prof. Schutzius illustrates the difference between a reversible and irreversible process using the expansion and compression of a gas.",
+      "time_range": "00:00 - 02:38",
+      "topics": ["Entropy"],
+      "detailed_summary": "The lecture revisits the **Carnot cycle** and the concept of **reversible processes**, which included **isothermal** and **adiabatic** processes, combined to form an **idealized cycle**. To explore reversibility, the instructor uses an example of an **ideal gas** in a piston-cylinder setup, initially in **equilibrium** under a set of weights. A **reversible expansion** occurs by gradually removing an infinitesimal weight, causing the piston to expand slightly and perform a small amount of **boundary work**. Because the change is so small, the process can be reversed by placing the weight back on, returning the system and its surroundings to their original state.",
+      "examples": [""],
+      "tags": ["tschutzius","beta"]
     },
     {
-      "key": "L7e-2.2",
-      "topic": "Clausius Inequality",
-      "summary": "Introduces the **Clausius Inequality**, which is the mathematical statement of the second law for a cycle: $$\\oint \\\\frac{\\delta Q}{T} \\\\le 0$$. This inequality holds for all cycles (reversible and irreversible).",
-      "time_range": "03:00 - 05:00"
+      "key": "Fa23-L7p-2.0",
+      "title": "The Mechanical Theory of Heat by R. Clausius",
+      "summary": "Prof. Schutzius explains that for a cycle we have to put heat in and take heat out, and that there is a difference between the heat that we transfer from hot reservoirs and cold reservoirs. ",
+      "time_range": "02:38 - 05:21",
+      "topics": ["Entropy"],
+      "detailed_summary": "The discussion first contrasts with the **irreversible expansion**, where removing a large weight all at once causes the piston to move rapidly and settle at a new **equilibrium** state. This process cannot be reversed without causing a change in the surroundings. The lecture then introduces the seminal work of **Rudolf Clausius** in his 1854 paper, **The Mechanical Theory of Heat**. Clausius demonstrated that for any **reversible cycle**, the cyclical integral of **heat transfer ($dQ$) divided by the absolute temperature ($T$)** is zero. This finding is formalized in the **Clausius theorem**, which states that for any cycle, this integral must be less than or equal to zero ($\\oint dQ/T \\leq 0$), with the inequality applying to an **irreversible cycle**.",
+      "examples": [""],
+      "tags": ["tschutzius","beta"]
     },
     {
-      "key": "L7e-2.3",
-      "topic": "Introduction to Entropy (S)",
-      "summary": "Defines **Entropy** ($$S$$) as a property of the system, based on the equality for a reversible cycle: $$\\oint \\\\frac{\\delta Q}{T} = 0$$. Therefore, for a reversible process, the differential change in entropy is $$\\text{d}S = \\\\left(\\\\frac{\\delta Q}{T}\\\\right)_{\\\\text{rev}}$$.",
-      "time_range": "05:00 - 08:30"
+      "key": "Fa23-L7p-3.0",
+      "title": "Relation between entropy and heat",
+      "summary": "Prof. Schutzius explains that the change in entropy for a reversible process is $dS = dQ/T$.",
+      "time_range": "05:22 - 14:35",
+      "topics": ["Entropy"],
+      "detailed_summary": "Because the integral of **heat transfer ($dQ$) divided by the absolute temperature ($T$)** is zero for a reversible cycle, this quantity must be the differential of a **property**. **Clausius** called this property **entropy** ($S$), which is defined for a **reversible process** by the differential change $dS = dQ/T$. This relationship allows the **Second Law of Thermodynamics** to be stated as $dS \\geq dQ/T$, with the equality for a **reversible process** and the inequality for an **irreversible process**. For an **isolated system**, this means the change in **entropy** must be greater than or equal to zero.",
+      "examples": [""],
+      "tags": ["tschutzius","beta"]
     },
     {
-      "key": "L7e-2.4",
-      "topic": "Isentropic Process",
-      "summary": "Defines an **Isentropic Process** as a reversible, adiabatic process. Since both $$\\delta Q=0$$ (adiabatic) and irreversibilities are zero (reversible), then $$\\text{d}S=0$$. Entropy remains constant in an isentropic process.",
-      "time_range": "08:30 - 09:30"
-    },
-    {
-      "key": "L7e-2.5",
-      "topic": "The Increase of Entropy Principle",
-      "summary": "Introduces the **Increase of Entropy Principle** for an isolated system: $$\\Delta S_{\\\\text{isolated}} \\\\ge 0$$. This principle is derived from the Clausius inequality and confirms that the entropy of a closed system can never decrease.",
-      "time_range": "09:30 - 11:30"
-    },
-    {
-      "key": "L7e-2.6",
-      "topic": "Total Entropy Change (Generation)",
-      "summary": "The **total entropy change** in a process is defined by the sum of heat transfer and entropy generation ($$S_{\\\\text{gen}}$$): $$\\Delta S = \\\\int_{1}^{2} \\\\frac{\\delta Q}{T} + S_{\\\\text{gen}}$$. For a process to be possible, we must have $$\\Delta S \\\\ge 0$$ for the isolated system.",
-      "time_range": "11:30 - 13:00"
-    },
-    {
-      "key": "L7e-2.7",
-      "topic": "Entropy Change for Solids and Liquids",
-      "summary": "Derives the entropy change for solids and liquids, assuming constant specific heat ($$c$$): $$\\Delta s \\\\approx c \\\\ln \\\\left(\\\\frac{T_2}{T_1}\\\\right)$$.",
-      "time_range": "13:00 - 14:30"
-    },
-    {
-      "key": "L7e-2.8",
-      "topic": "Entropy Change During Phase Change",
-      "summary": "Calculates the entropy change during a phase change (like melting/freezing or boiling/condensation) at constant temperature ($$T_0$$): $$\\Delta S = \\\\frac{Q}{T_0} = \\\\frac{m h_{\\\\text{fusion/vaporization}}}{T_0}$$ (or $$\\Delta s = \\\\frac{h}{T_0}$$ on a per-mass basis).",
-      "time_range": "14:30 - 17:57"
+      "key": "Fa23-L7p-4.0",
+      "title": "Change in entropy during an isothermal reversible process",
+      "summary": "Prof. Schutzius analyzes the change in entropy for ice melting.",
+      "time_range": "14:36 - 19:42",
+      "topics": ["Entropy"],
+      "detailed_summary": "The main calculation in this section shows the change in **entropy** during a **phase change**, such as **ice melting**, which is an **isothermal process** occurring at a **constant temperature**. In this specific case, the change in **entropy** is calculated by dividing the **heat absorbed** (the latent heat) by the constant temperature, which is written as $\\Delta S = Q/T$. The final relationship for the melting process is shown as $\\Delta S = m \\Delta H / T$, where $m$ is the mass and $\\Delta H$ is the enthalpy of fusion.",
+      "examples": [""],
+      "tags": ["tschutzius","beta"]
     }
   ]
 }
