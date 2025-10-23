@@ -130,7 +130,17 @@ The `cengel_*_toc.json` file should contain the table of contents for that speci
 The `syllabus.json` file should contain the syllabus for the current semester formatted as a JSON file. This will need to be converted into corpus chunks and added to `rag_corpus.txt`. 
 
 ### courseInstances 
-This folder contains data from each semester that the course is taught. This includes the syllabus and the captions from the recorded lectures (`.srt`, `.json`, `.txt` files). We create an outline.json file and define subtopics within the lecture. Those subtopics have a time_range, which is easy to define if you watch the recordings. There is a feature on bCourses, which allows you to create bookmarks. We used that to generate the `time_range` field entries. You should also tag those bookmarks, e.g., `Fa25-L1a-1.0`. This will also help students to navigate to the correct part of the video as they only have to enter that tag into the search and they will find the correct part of the video. This part is a non-trivial amount of work, but we believe it is essential for student learning. We don't recommend just uploading the closed caption data and asking it to create  an `outline.json` file. If an example is solved during lecture, We recommend having the solution in a Jupyter notebook and placed in the `examples/jupyterNotebooks` folder. 
+This folder contains data from each semester that the course is taught. This includes the syllabus and the captions from the recorded lectures (`.srt`, `.json`, `.txt` files). We create an outline.json file and define subtopics within the lecture. Those subtopics have a time_range, which is easy to define if you watch the recordings. There is a feature on bCourses, called `Timeline`, which allows you to create bookmarks. You can enter a `Chapter Title`, `Chapter Description`, and `Search Tags`. These should match the fields in the `outline.json` file:
+
+| JSON Field    | bCourses Timeline Field | 
+| -------- 		| ------- 					|
+| `subtopics[].title` | `Enter Chapter Title`     |
+| `subtopics[].summary` | `Enter Chapter Description`     |
+| `subtopics[].key` | `Enter comma separated Search Tags`     |
+| `subtopics[].examples` | `Enter comma separated Search Tags`     |
+| `subtopics[].topics` | `Enter comma separated Search Tags`     |
+
+We used that to generate the `time_range` field entries. You should also tag those bookmarks, e.g., `Fa25-L1a-1.0`. This will also help students to navigate to the correct part of the video as they only have to enter that tag into the search and they will find the correct part of the video. This part is a non-trivial amount of work, but we believe it is essential for student learning. We don't recommend just uploading the closed caption data and asking it to create  an `outline.json` file. If an example is solved during lecture, We recommend having the solution in a Jupyter notebook and placed in the `examples/jupyterNotebooks` folder. 
 
 The `"subtopics"` `"tags"` `"alpha"` means that the `"subtopics"` is ready for review by the GSI or Reader. The `"tags"` `"beta"` means that the `"subtopics"` is ready for review by the Instructor. LaTeX equations will be formatted differently in a `.json` file. Each `\` requires another `\`, i.e., `\\`. The script `_convert_outlines_to_rag.py` is able to convert from JSON to LaTeX formatted equations and add them to the `rag_corpus.txt`.
 
